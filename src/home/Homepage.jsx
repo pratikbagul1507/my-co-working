@@ -491,7 +491,10 @@ const Homepage = () => {
       </section>
       </div>
 
-      {/* 5 Service Cards Section under cities and form */}
+      {/* =========================================================================
+          [COMMENTED OUT] 5 Service Cards & All Sections Under These Cards
+          =========================================================================
+      /* 5 Service Cards Section under cities and form * /
       <section className="w-full bg-[#f8fafc] px-6 sm:px-10 lg:px-16 py-12 lg:py-16">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
@@ -527,22 +530,22 @@ const Homepage = () => {
         </div>
       </section>
 
-      {/* Custom Promotional Section (Solid Black with Gold Mandala Vector Art) */}
+      /* Custom Promotional Section (Solid Black with Gold Mandala Vector Art) * /
       <section className="relative w-full bg-black text-white py-16 sm:py-20 lg:py-24 px-6 sm:px-10 lg:px-16 overflow-hidden">
-        {/* Subtle Background Vector Graphic (Dark Gold / Brown Mandala Pattern) */}
+        /* Subtle Background Vector Graphic (Dark Gold / Brown Mandala Pattern) * /
         <div 
           className="absolute right-[-10%] sm:right-[-5%] top-1/2 -translate-y-1/2 w-[480px] sm:w-[620px] lg:w-[720px] h-[480px] sm:h-[620px] lg:h-[720px] pointer-events-none opacity-20 select-none"
           aria-hidden="true"
         >
           <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full stroke-amber-600/80">
-            {/* Concentric rings & geometric circular teeth / gear rays */}
+            /* Concentric rings & geometric circular teeth / gear rays * /
             <circle cx="250" cy="250" r="230" strokeWidth="1.5" strokeDasharray="6 6" />
             <circle cx="250" cy="250" r="200" strokeWidth="2" />
             <circle cx="250" cy="250" r="160" strokeWidth="1.5" strokeDasharray="3 3" />
             <circle cx="250" cy="250" r="120" strokeWidth="2" />
             <circle cx="250" cy="250" r="70" strokeWidth="1.5" />
             <circle cx="250" cy="250" r="30" strokeWidth="1" />
-            {/* Mandala / Gear Ray spikes */}
+            /* Mandala / Gear Ray spikes * /
             {Array.from({ length: 24 }).map((_, i) => (
               <line
                 key={`ray-${i}`}
@@ -554,7 +557,7 @@ const Homepage = () => {
                 strokeOpacity="0.6"
               />
             ))}
-            {/* Intermediate geometric petals */}
+            /* Intermediate geometric petals * /
             {Array.from({ length: 12 }).map((_, i) => (
               <circle
                 key={`petal-${i}`}
@@ -570,11 +573,11 @@ const Homepage = () => {
 
         <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
           
-          {/* Left Side: Overlapping Polished Cards (Restored Larger Size) */}
+          /* Left Side: Overlapping Polished Cards (Restored Larger Size) * /
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
             <div className="relative w-full max-w-[420px] sm:max-w-[460px] h-[370px] sm:h-[420px]">
               
-              {/* Card 1 (Top Left): WeWork Forum Coworking Space */}
+              /* Card 1 (Top Left): WeWork Forum Coworking Space * /
               <div className="absolute top-0 left-0 w-[78%] sm:w-[80%] bg-white rounded-3xl overflow-hidden shadow-2xl z-10 text-slate-800 transition-transform duration-300 hover:-translate-y-1">
                 <div className="relative h-44 sm:h-48 w-full bg-slate-100 overflow-hidden">
                   <img
@@ -601,7 +604,7 @@ const Homepage = () => {
                 </div>
               </div>
 
-              {/* Card 2 (Bottom Right): Stanza Living Dunkirk House Coliving Space */}
+              /* Card 2 (Bottom Right): Stanza Living Dunkirk House Coliving Space * /
               <div className="absolute bottom-0 right-0 w-[72%] sm:w-[76%] bg-white rounded-3xl overflow-hidden shadow-[0_25px_60px_rgba(0,0,0,0.85)] z-20 text-slate-800 border-2 border-white/40 transition-transform duration-300 hover:-translate-y-1">
                 <div className="relative h-40 sm:h-44 w-full bg-slate-100 overflow-hidden">
                   <img
@@ -631,18 +634,18 @@ const Homepage = () => {
             </div>
           </div>
 
-          {/* Right Side: Heading & Statistics (Compact & Elegant Proportions) */}
+          /* Right Side: Heading & Statistics (Compact & Elegant Proportions) * /
           <div className="w-full lg:w-1/2 flex flex-col justify-center text-left">
             <h2 className="text-2xl sm:text-3xl lg:text-[32px] font-extrabold text-white leading-snug lg:leading-[1.25] tracking-tight max-w-lg">
               India's #1 online platform for Coworking &amp; Coliving Spaces
             </h2>
 
-            {/* Elegant Divider Line */}
+            /* Elegant Divider Line * /
             <div className="w-full h-px bg-white/15 my-6 sm:my-7" />
 
-            {/* Stats Sub-grid (Three columns - Clean & Proportionate) */}
+            /* Stats Sub-grid (Three columns - Clean & Proportionate) * /
             <div className="grid grid-cols-3 gap-4 sm:gap-6">
-              {/* Column 1 */}
+              /* Column 1 * /
               <div>
                 <p className="text-2xl sm:text-3xl lg:text-3xl font-bold text-white tracking-tight leading-none">
                   1,000+
@@ -652,7 +655,7 @@ const Homepage = () => {
                 </p>
               </div>
 
-              {/* Column 2 */}
+              /* Column 2 * /
               <div>
                 <p className="text-2xl sm:text-3xl lg:text-3xl font-bold text-white tracking-tight leading-none">
                   10,000+
@@ -662,7 +665,7 @@ const Homepage = () => {
                 </p>
               </div>
 
-              {/* Column 3 */}
+              /* Column 3 * /
               <div>
                 <p className="text-2xl sm:text-3xl lg:text-3xl font-bold text-white tracking-tight leading-none">
                   25+
@@ -677,7 +680,7 @@ const Homepage = () => {
         </div>
       </section>
 
-      {/* "Trusted By" Company Logo Slider Section */}
+      /* "Trusted By" Company Logo Slider Section * /
       <section className="w-full bg-white py-14 sm:py-16 px-4 sm:px-8 border-t border-slate-100 overflow-hidden">
         <style>{`
           @keyframes marqueeScroll {
@@ -694,14 +697,14 @@ const Homepage = () => {
           }
         `}</style>
         <div className="max-w-7xl mx-auto">
-          {/* Centered Heading */}
+          /* Centered Heading * /
           <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 text-center tracking-tight mb-8 sm:mb-10">
             Trusted by more than 500+ Companies
           </h3>
 
-          {/* Carousel Row: Left Arrow, Slider Container, Right Arrow */}
+          /* Carousel Row: Left Arrow, Slider Container, Right Arrow * /
           <div className="relative flex items-center gap-2 sm:gap-4">
-            {/* Left Arrow Button */}
+            /* Left Arrow Button * /
             <button
               type="button"
               onClick={handleLeftArrow}
@@ -713,7 +716,7 @@ const Homepage = () => {
               </svg>
             </button>
 
-            {/* Continuous CSS Marquee Container */}
+            /* Continuous CSS Marquee Container * /
             <div className="relative overflow-hidden w-full py-3 px-1">
               <div
                 className={`flex items-center gap-4 sm:gap-6 ${
@@ -738,7 +741,7 @@ const Homepage = () => {
               </div>
             </div>
 
-            {/* Right Arrow Button */}
+            /* Right Arrow Button * /
             <button
               type="button"
               onClick={handleRightArrow}
@@ -751,7 +754,7 @@ const Homepage = () => {
             </button>
           </div>
 
-          {/* Slider Pagination Bullet Dots (6 Dots for 6 Brands) */}
+          /* Slider Pagination Bullet Dots (6 Dots for 6 Brands) * /
           <div className="flex items-center justify-center gap-2 mt-6 sm:mt-8">
             {Array.from({ length: 6 }).map((_, dotIdx) => (
               <button
@@ -770,15 +773,15 @@ const Homepage = () => {
         </div>
       </section>
 
-      {/* Top Cities Selection Section (Light Pink Bounded Rectangle Container & Compact Landscape Cards) */}
+      /* Top Cities Selection Section (Light Pink Bounded Rectangle Container & Compact Landscape Cards) * /
       <section className="w-full bg-white py-6 sm:py-8 lg:py-10 px-4 sm:px-6 lg:px-8 border-t border-slate-100">
         <div className="max-w-7xl mx-auto bg-pink-50 rounded-2xl sm:rounded-3xl border border-pink-100/90 shadow-2xs py-6 sm:py-8 px-4 sm:px-8 lg:px-10">
-          {/* Centered Heading */}
+          /* Centered Heading * /
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 text-center tracking-tight mb-5 sm:mb-6">
             Top Coworking Spaces in India
           </h2>
 
-          {/* 8-Card Responsive Grid (Compact Landscape Rectangles) */}
+          /* 8-Card Responsive Grid (Compact Landscape Rectangles) * /
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-4.5">
             {topCities.map((city) => (
               <div
@@ -786,7 +789,7 @@ const Homepage = () => {
                 onClick={() => navigate(`/coworking/${city.name.toLowerCase()}`)}
                 className="group relative h-24 sm:h-28 lg:h-30 rounded-xl sm:rounded-2xl overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer select-none"
               >
-                {/* Background Image */}
+                /* Background Image * /
                 <img
                   src={city.image}
                   alt={`${city.name} Coworking Spaces`}
@@ -794,10 +797,10 @@ const Homepage = () => {
                   loading="lazy"
                 />
 
-                {/* Reduced Dark Overlay for Increased Brightness & Vibrancy */}
+                /* Reduced Dark Overlay for Increased Brightness & Vibrancy * /
                 <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/30 to-black/15 group-hover:from-black/65 group-hover:via-black/35 transition-colors duration-300" />
 
-                {/* Centered Overlay Typography */}
+                /* Centered Overlay Typography * /
                 <div className="absolute inset-0 flex flex-col items-center justify-center px-2.5 py-1.5 text-center z-10">
                   <h3 className="text-sm sm:text-base lg:text-lg font-black text-white tracking-wider uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.85)] leading-tight">
                     {city.name}
@@ -812,18 +815,18 @@ const Homepage = () => {
         </div>
       </section>
 
-      {/* Virtual Office Services Section */}
+      /* Virtual Office Services Section * /
       <section className="w-full bg-white py-6 sm:py-8 lg:py-10 px-4 sm:px-6 lg:px-8 border-t border-slate-100">
         <div className="max-w-7xl mx-auto bg-[#e5ded4] rounded-2xl sm:rounded-3xl border border-[#cfc6b8] shadow-sm overflow-hidden flex flex-col md:flex-row items-stretch">
           
-          {/* Left Side: Content & Features */}
+          /* Left Side: Content & Features * /
           <div className="w-full md:w-3/5 lg:w-[58%] p-5 sm:p-6 lg:p-7 flex flex-col">
-            {/* Heading */}
+            /* Heading * /
             <h2 className="text-xl sm:text-2xl lg:text-[28px] font-black text-slate-900 tracking-tight leading-snug mb-3.5 sm:mb-4">
               Book Your Virtual Office with <span className="block mt-0.5 text-slate-900">my<span className="text-orange-500">coworking</span><span className="text-orange-500 font-extrabold leading-none">.</span></span>
             </h2>
 
-            {/* 3x2 Grid of Feature Cards (Larger buttons, generous padding, bold legible text) */}
+            /* 3x2 Grid of Feature Cards (Larger buttons, generous padding, bold legible text) * /
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-3.5 mb-3 sm:mb-3.5">
               {virtualOfficeFeatures.map((feature, idx) => (
                 <div
@@ -840,7 +843,7 @@ const Homepage = () => {
               ))}
             </div>
 
-            {/* Bottom Contact Bar - Pulled directly up closer to the buttons */}
+            /* Bottom Contact Bar - Pulled directly up closer to the buttons * /
             <div className="flex flex-wrap items-center gap-5 sm:gap-7 pt-3 border-t border-slate-300/80 text-xs sm:text-sm font-bold text-slate-700">
               <a 
                 href="tel:9028760011" 
@@ -868,7 +871,7 @@ const Homepage = () => {
             </div>
           </div>
 
-          {/* Right Side: Visual Asset - Flush without cropping */}
+          /* Right Side: Visual Asset - Flush without cropping * /
           <div className="w-full md:w-2/5 lg:w-[42%] relative overflow-hidden self-stretch min-h-[180px] sm:min-h-[200px] md:min-h-0 shrink-0">
             <img 
               src={virtualOfficeBg} 
@@ -880,6 +883,7 @@ const Homepage = () => {
 
         </div>
       </section>
+      ========================================================================= */}
 
       {activeCity && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/55 px-4" onClick={closeCityModal}>
