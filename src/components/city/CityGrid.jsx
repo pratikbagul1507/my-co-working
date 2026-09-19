@@ -16,7 +16,7 @@ const CityGrid = ({ cities = [], selectedCity = '', onCitySelect }) => {
                 : 'border-white group-hover:border-[#007bff]/60 group-hover:ring-2 group-hover:ring-[#007bff]/15'
             }`}>
               <img 
-                src={city.imgage} 
+                src={city.image} 
                 alt={`${city.name} workspace`} 
                 className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-115"
               />

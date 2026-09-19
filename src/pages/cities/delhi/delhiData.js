@@ -1,5 +1,3 @@
-import { generateCitySpaces } from '../common/cityHelpers';
-
 export const delhiAreas = [
   'All',
   'Connaught Place',
@@ -11,4 +9,4 @@ export const delhiAreas = [
   'Netaji Subhash Place'
 ];
 
-export const delhiSpaces = generateCitySpaces('Delhi', delhiAreas);
+export const delhiSpaces = [];

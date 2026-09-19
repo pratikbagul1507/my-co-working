@@ -19,7 +19,7 @@ const CityDispatcher = () => {
     return <CityComponent />;
   }
 
-  const areas = cityAreas[normalizedCity] || cityAreas['Pune'] || ['All'];
+  const areas = cityAreas[normalizedCity] || ['All'];
   const spaces = getCoworkingSpacesForCity(normalizedCity);
 
   return (

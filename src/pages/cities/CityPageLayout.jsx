@@ -57,6 +57,36 @@ const CityPageLayout = ({ cityName, areas = ['All'], spaces = [] }) => {
     });
   }, [spaces, selectedArea, selectedPrice]);
 
+  // Strict conditional check: If data file has no items, render empty state without cards or filters
+  const hasValidSpaces = Array.isArray(spaces) && spaces.length > 0;
+
+  if (!hasValidSpaces) {
+    return (
+      <div className="w-full min-h-screen bg-white text-slate-800 pb-20 select-none">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-6">
+            Coworking Space In {cityName}
+          </h1>
+          <div className="text-center py-20 bg-slate-50 rounded-2xl border border-slate-200 p-8 shadow-2xs">
+            <div className="text-4xl mb-3">🏢</div>
+            <p className="text-base font-semibold text-slate-700 mb-2">
+              No coworking spaces currently available in {cityName}.
+            </p>
+            <p className="text-xs text-slate-500 mb-6">
+              We are actively partnering with workspaces in this area. Please check back soon!
+            </p>
+            <a
+              href="/"
+              className="inline-block bg-[#007bff] hover:bg-blue-600 text-white text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors cursor-pointer shadow-xs"
+            >
+              Explore Other Cities
+            </a>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="w-full min-h-screen bg-white text-slate-800 pb-20 select-none">
       {/* Container */}

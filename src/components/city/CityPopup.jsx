@@ -29,7 +29,7 @@ const CityPopup = ({
           ×
         </button>
         <div className="mx-auto mb-4 h-20 w-20 overflow-hidden rounded-full border-4 border-amber-50 shadow-sm">
-          <img src={activeCity.imgage} alt={`${activeCity.name} city`} className="h-full w-full object-cover" />
+          <img src={activeCity.image} alt={`${activeCity.name} city`} className="h-full w-full object-cover" />
         </div>
         <h2 id="city-modal-title" className="text-xl font-bold text-slate-900 sm:text-2xl">
           Find the best spaces in {activeCity.name}
@@ -47,7 +47,7 @@ const CityPopup = ({
                 <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-4 border-white shadow-md mb-3 flex items-center justify-center bg-white transition group-hover:scale-105">
                   {isCoworking ? (
                     <img 
-                      src={activeCity.imgage} 
+                      src={activeCity.image} 
                       alt={`${activeCity.name} Coworking Space`} 
                       className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-300"
                     />

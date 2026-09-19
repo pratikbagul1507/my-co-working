@@ -1,5 +1,3 @@
-import { generateCitySpaces } from '../common/cityHelpers';
-
 export const mumbaiAreas = [
   'All',
   'BKC',
@@ -12,4 +10,4 @@ export const mumbaiAreas = [
   'Navi Mumbai'
 ];
 
-export const mumbaiSpaces = generateCitySpaces('Mumbai', mumbaiAreas);
+export const mumbaiSpaces = [];

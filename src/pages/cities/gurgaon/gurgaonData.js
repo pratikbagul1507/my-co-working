@@ -13,7 +13,7 @@ export const gurgaonAreas = [
   'Sector 32',
   'Huda City Centre'
 ];
-
+``
 export const gurgaonSpaces = [
   {
     id: 1,

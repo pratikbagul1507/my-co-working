@@ -1,5 +1,3 @@
-import { generateCitySpaces } from '../common/cityHelpers';
-
 export const bangaloreAreas = [
   'All',
   'Koramangala',
@@ -12,4 +10,4 @@ export const bangaloreAreas = [
   'Bellandur'
 ];
 
-export const bangaloreSpaces = generateCitySpaces('Bangalore', bangaloreAreas);
+export const bangaloreSpaces = [];

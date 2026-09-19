@@ -5,7 +5,6 @@ import { mumbaiAreas, mumbaiSpaces } from './mumbai/mumbaiData';
 import { delhiAreas, delhiSpaces } from './delhi/delhiData';
 import { hyderabadAreas, hyderabadSpaces } from './hyderabad/hyderabadData';
 import { noidaAreas, noidaSpaces } from './noida/noidaData';
-import { generateCitySpaces } from './common/cityHelpers';
 
 import GurgaonPage from './gurgaon/GurgaonPage';
 import PunePage from './pune/PunePage';
@@ -49,11 +48,10 @@ export const cityComponentMap = {
 };
 
 export const getCoworkingSpacesForCity = (cityName) => {
-  if (!cityName) return gurgaonSpaces;
+  if (!cityName) return [];
   const key = cityName.toLowerCase();
   if (citySpacesMap[key]) {
     return citySpacesMap[key];
   }
-  const areasList = cityAreas[cityName] || puneAreas;
-  return generateCitySpaces(cityName, areasList);
+  return [];
 };

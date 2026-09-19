@@ -1,5 +1,3 @@
-import { generateCitySpaces } from '../common/cityHelpers';
-
 export const noidaAreas = [
   'All',
   'Sector 62',
@@ -11,4 +9,4 @@ export const noidaAreas = [
   'Sector 63'
 ];
 
-export const noidaSpaces = generateCitySpaces('Noida', noidaAreas);
+export const noidaSpaces = [];
