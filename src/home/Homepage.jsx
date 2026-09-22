@@ -119,10 +119,8 @@ const Homepage = () => {
   const handleSpaceSelectionFromPopup = (chosenSpaceType, city) => {
     selectSpaceType(chosenSpaceType);
     closeCityPopup();
-    if (chosenSpaceType === 'Coworking Spaces' && city.name.toLowerCase() === 'pune') {
-      navigate('/coworking/pune');
-    } else if (chosenSpaceType === 'Coworking Spaces') {
-      navigate(`/coworking/${city.name}`);
+    if (chosenSpaceType === 'Coworking Spaces') {
+      navigate(`/coworking/${city.name.toLowerCase()}`);
     }
   };
 
@@ -188,11 +186,7 @@ const Homepage = () => {
               type="button" 
               onClick={() => {
                 if (selectedSpaceType === 'Coworking Spaces') {
-                  if (selectedCityName.toLowerCase() === 'pune') {
-                    navigate('/coworking/pune');
-                  } else {
-                    navigate(`/coworking/${selectedCityName}`);
-                  }
+                  navigate(`/coworking/${selectedCityName.toLowerCase()}`);
                 } else {
                   selectCityAndOpenPopup(availableCities.find((city) => city.name === selectedCityName), true);
                 }

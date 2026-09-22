@@ -359,6 +359,13 @@ export const morePuneOfficeCards = [
 
 export const allPuneOfficeCards = [...puneOfficeCards, ...morePuneOfficeCards];
 
+export const perfectWorkspaceBanner = {
+  title: 'Discover your perfect workspace with Cofynd',
+  subtitle: 'Explore Flexible Coworking Solutions, Premium Amenities, and Prime Locations Across India',
+  ctaText: 'Enquire Now',
+  bgImage: 'https://img.cofynd.com/images/latest_images_2024/28f41de2ee6c67528d528dc3b55fc7ad2801dcbc.webp'
+};
+
 // Aliases for compatibility
 export const puneAreas = puneNeighborhoods;
 export const puneSpaces = puneOfficeCards;
@@ -372,5 +379,6 @@ export default {
   allOfficeCards: allPuneOfficeCards,
   areas: puneNeighborhoods,
   spaces: puneOfficeCards,
-  officeSolutions
+  officeSolutions,
+  perfectWorkspaceBanner
 };

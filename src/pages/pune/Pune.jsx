@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { puneNeighborhoods, puneOfficeCards, morePuneOfficeCards, officeSolutions } from './puneData.js';
+import { puneNeighborhoods, puneOfficeCards, morePuneOfficeCards, officeSolutions, perfectWorkspaceBanner } from './puneData.js';
 
 /**
  * Individual Coworking Space Card with isolated multi-image sliding closure mechanism
@@ -338,7 +338,7 @@ const Pune = () => {
 
       {/* Section: Additional Coworking Spaces Grid */}
       {displayedMoreSpaces.length > 0 && (
-        <section aria-label="Additional coworking spaces list" className="mb-12">
+        <section aria-label="Additional coworking spaces list" className="mb-10 sm:mb-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
             {displayedMoreSpaces.map((space) => (
               <OfficeCard key={space.id} space={space} />
@@ -346,6 +346,33 @@ const Pune = () => {
           </div>
         </section>
       )}
+
+      {/* Section: Discover your perfect workspace banner */}
+      <section
+        aria-label="Discover perfect workspace"
+        className="w-full rounded-2xl overflow-hidden mb-12 shadow-xs relative bg-cover bg-right bg-no-repeat min-h-[190px] sm:min-h-[220px] md:min-h-[250px] flex items-center border border-blue-100/60"
+        style={{
+          backgroundImage: `url(${perfectWorkspaceBanner.bgImage})`
+        }}
+      >
+        {/* Soft light blue gradient overlay on left fading smoothly into photo on right */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#eaf4fb] via-[#eaf4fb]/95 sm:via-[#eaf4fb]/85 to-transparent pointer-events-none"></div>
+
+        <div className="relative z-10 px-6 sm:px-10 md:px-12 py-8 sm:py-10 max-w-xl">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 leading-tight mb-2 tracking-tight">
+            {perfectWorkspaceBanner.title}
+          </h2>
+          <p className="text-xs sm:text-sm text-slate-600 mb-6 leading-relaxed max-w-md">
+            {perfectWorkspaceBanner.subtitle}
+          </p>
+          <button
+            type="button"
+            className="bg-[#007bff] hover:bg-blue-600 active:scale-95 text-white text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-lg shadow-xs transition-all w-fit cursor-pointer"
+          >
+            {perfectWorkspaceBanner.ctaText}
+          </button>
+        </div>
+      </section>
     </main>
   );
 };
