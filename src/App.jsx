@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Homepage from './home/Homepage';
 import Navbar from './navbar/Navbar';
-import PunePage from './page/pune/Pune';
+import PunePage from './pages/pune/Pune';
 
 const App = () => {
   return (
