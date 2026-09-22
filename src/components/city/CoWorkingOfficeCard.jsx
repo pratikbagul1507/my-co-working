@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { FALLBACK_IMAGE } from '../../pages/cities/common/cityConstants';
+
+const FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80';
 
 const CoWorkingOfficeCard = ({ space }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -17,7 +18,7 @@ const CoWorkingOfficeCard = ({ space }) => {
   };
 
   return (
-    <div className="group flex flex-col w-full transition-transform duration-300">
+    <article className="group flex flex-col w-full transition-transform duration-300" aria-label={space.name}>
       {/* Image Carousel Container */}
       <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 shadow-xs">
         <img
@@ -26,7 +27,7 @@ const CoWorkingOfficeCard = ({ space }) => {
             e.target.onerror = null;
             e.target.src = FALLBACK_IMAGE;
           }}
-          alt={`${space.name}`}
+          alt={`${space.name} - Coworking Space in ${space.area ? `${space.area}, ` : ''}${space.city || 'Pune'}`}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           loading="lazy"
         />
@@ -104,7 +105,7 @@ const CoWorkingOfficeCard = ({ space }) => {
           </button>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 
