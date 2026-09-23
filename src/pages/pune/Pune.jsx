@@ -19,7 +19,8 @@ import { puneNeighborhoods,
     pageThreeFinalPuneOfficeCards,
     pageThreeFeaturedPuneOfficeCards,
     pageFourPuneOfficeCards,
-    topPuneCoworkingLocations
+    topPuneCoworkingLocations,
+    areaExtraOfficeCards
    } from './puneData.js';
 
 /**
@@ -211,6 +212,7 @@ const OfficeCard = ({ space }) => {
  */
 const Pune = () => {
   const [selectedNeighborhood, setSelectedNeighborhood] = useState(null);
+  const [selectedPrice, setSelectedPrice] = useState('');
   const [currentPage, setCurrentPage] = useState(paginationData.initialPage || 1);
 
   const handlePageChange = (page) => {
@@ -229,44 +231,90 @@ const Pune = () => {
     }
   };
 
-  const activeTopSpaces = currentPage === 1 ?puneOfficeCards : currentPage === 2 ? pageTwoPuneOfficeCards : currentPage === 3 ? pageThreePuneOfficeCards: currentPage === 4 ? pageFourPuneOfficeCards : "";
+  // Helper to extract numeric price from string (e.g., "₹6,499" -> 6499)
+  const parsePrice = (priceStr) => {
+    if (!priceStr) return 0;
+    const num = parseInt(String(priceStr).replace(/[^\d]/g, ''), 10);
+    return isNaN(num) ? 0 : num;
+  };
 
-  const displayedSpaces = selectedNeighborhood
+  // Helper to filter card by selected price range
+  const matchesPrice = (card) => {
+    if (!selectedPrice) return true; // No price filter active
+    const priceNum = parsePrice(card.price);
+    if (selectedPrice === '5000') return priceNum <= 5000;
+    if (selectedPrice === '10000') return priceNum <= 10000;
+    if (selectedPrice === '15000') return priceNum >= 10000;
+    return true;
+  };
+
+  const activeTopSpaces = currentPage === 1 ? puneOfficeCards : currentPage === 2 ? pageTwoPuneOfficeCards : currentPage === 3 ? pageThreePuneOfficeCards : currentPage === 4 ? pageFourPuneOfficeCards : [];
+
+  // ============================================================================
+  // Area Filtering Logic with Extra 10 Real Internet Office Cards per Area
+  // ----------------------------------------------------------------------------
+  // 1. Jab koi Area Button ACTIVE ho (selectedNeighborhood != null):
+  //    - Existing cards me se us area ke matching cards filter honge.
+  //    - Sath me internet se laye gaye naye 10 cards (areaExtraOfficeCards[selectedNeighborhood]) judenge.
+  // 2. Jab koi Area Button ACTIVE NAHI ho (All Cards view):
+  //    - Naye 10 cards chup (hidden) rahenge, sirf default existing cards hi dikhenge.
+  // ============================================================================
+
+  // Current page ke existing top cards me se area match
+  const existingFilteredTopSpaces = selectedNeighborhood
     ? activeTopSpaces.filter(
         (space) =>
-          space.area.toLowerCase() === selectedNeighborhood.toLowerCase() ||
-          space.location.toLowerCase().includes(selectedNeighborhood.toLowerCase())
+          space.area?.toLowerCase() === selectedNeighborhood.toLowerCase() ||
+          space.location?.toLowerCase().includes(selectedNeighborhood.toLowerCase())
       )
     : activeTopSpaces;
 
-  const activeMoreSpaces = currentPage === 1 ?morePuneOfficeCards : currentPage === 2 ? pageTwoMorePuneOfficeCards : currentPage === 3 ? pageThreeMorePuneOfficeCards : "";
+  // Selected area ke extra 10 real cards (sirf tab milenge jab area button active ho)
+  const extraAreaCards = (selectedNeighborhood && areaExtraOfficeCards && areaExtraOfficeCards[selectedNeighborhood])
+    ? areaExtraOfficeCards[selectedNeighborhood]
+    : [];
 
-  const displayedMoreSpaces = selectedNeighborhood
-    ? activeMoreSpaces.filter(
-        (space) =>
-          space.area.toLowerCase() === selectedNeighborhood.toLowerCase() ||
-          space.location.toLowerCase().includes(selectedNeighborhood.toLowerCase())
-      )
-    : activeMoreSpaces;
+  // Combined cards to display in top grid (area filtered):
+  const combinedSpaces = selectedNeighborhood
+    ? [
+        ...existingFilteredTopSpaces,
+        ...extraAreaCards.filter(
+          (extra) => !existingFilteredTopSpaces.some((ex) => ex.name.toLowerCase() === extra.name.toLowerCase())
+        )
+      ]
+    : activeTopSpaces;
 
-  const activeFinalSpaces = currentPage === 1 ?finalPuneOfficeCards : currentPage === 2 ? pageTwoFinalPuneOfficeCards : currentPage === 3 ? pageThreeFinalPuneOfficeCards : "";
+  // Apply price filter to displayedSpaces
+  const displayedSpaces = selectedPrice
+    ? combinedSpaces.filter(matchesPrice)
+    : combinedSpaces;
 
-  const displayedFinalSpaces = selectedNeighborhood
-    ? activeFinalSpaces.filter(
-        (space) =>
-          space.area.toLowerCase() === selectedNeighborhood.toLowerCase() ||
-          space.location.toLowerCase().includes(selectedNeighborhood.toLowerCase())
-      )
-    : activeFinalSpaces;
+  const activeMoreSpaces = currentPage === 1 ? morePuneOfficeCards : currentPage === 2 ? pageTwoMorePuneOfficeCards : currentPage === 3 ? pageThreeMorePuneOfficeCards : [];
 
-const activeOfficeCards = currentPage === 1 ?featuredPuneOfficeCards : currentPage === 2 ? pageTwoFeaturedPuneOfficeCards : currentPage === 3 ? pageThreeFeaturedPuneOfficeCards : ""; 
+  const displayedMoreSpaces = activeMoreSpaces.filter((space) => {
+    const matchesArea = !selectedNeighborhood ||
+      space.area?.toLowerCase() === selectedNeighborhood.toLowerCase() ||
+      space.location?.toLowerCase().includes(selectedNeighborhood.toLowerCase());
+    return matchesArea && matchesPrice(space);
+  });
 
-const displayedFeaturedSpaces = selectedNeighborhood 
-  ? activeOfficeCards.filter((space) => 
-      space.area.toLowerCase() === selectedNeighborhood.toLowerCase() || 
-      space.location.toLowerCase().includes(selectedNeighborhood.toLowerCase())
-    ) 
-  : activeOfficeCards;
+  const activeFinalSpaces = currentPage === 1 ? finalPuneOfficeCards : currentPage === 2 ? pageTwoFinalPuneOfficeCards : currentPage === 3 ? pageThreeFinalPuneOfficeCards : [];
+
+  const displayedFinalSpaces = activeFinalSpaces.filter((space) => {
+    const matchesArea = !selectedNeighborhood ||
+      space.area?.toLowerCase() === selectedNeighborhood.toLowerCase() ||
+      space.location?.toLowerCase().includes(selectedNeighborhood.toLowerCase());
+    return matchesArea && matchesPrice(space);
+  });
+
+  const activeOfficeCards = currentPage === 1 ? featuredPuneOfficeCards : currentPage === 2 ? pageTwoFeaturedPuneOfficeCards : currentPage === 3 ? pageThreeFeaturedPuneOfficeCards : []; 
+
+  const displayedFeaturedSpaces = activeOfficeCards.filter((space) => {
+    const matchesArea = !selectedNeighborhood ||
+      space.area?.toLowerCase() === selectedNeighborhood.toLowerCase() ||
+      space.location?.toLowerCase().includes(selectedNeighborhood.toLowerCase());
+    return matchesArea && matchesPrice(space);
+  });
 
 
   return (
@@ -314,10 +362,11 @@ const displayedFeaturedSpaces = selectedNeighborhood
           <div className="relative">
             <select
               aria-label="Filter by price range"
+              value={selectedPrice}
+              onChange={(e) => setSelectedPrice(e.target.value)}
               className="text-xs text-slate-700 bg-white border border-slate-200 rounded px-3 py-1.5 pr-6 appearance-none shadow-2xs cursor-pointer focus:outline-none focus:border-blue-500"
-              defaultValue=""
             >
-              <option value="" disabled>Select Price</option>
+              <option value="">Select Price</option>
               <option value="5000">Up to ₹5,000</option>
               <option value="10000">Up to ₹10,000</option>
               <option value="15000">₹10,000+</option>
@@ -358,10 +407,17 @@ const displayedFeaturedSpaces = selectedNeighborhood
       <section aria-label="Coworking spaces list">
         {displayedSpaces.length === 0 ? (
           <div className="py-12 text-center text-slate-500 text-sm">
-            <p>No coworking spaces found for {selectedNeighborhood}.</p>
+            <p>
+              {selectedNeighborhood
+                ? `No coworking spaces found for ${selectedNeighborhood}${selectedPrice ? ' in the selected price range.' : '.'}`
+                : 'No coworking spaces found in the selected price range.'}
+            </p>
             <button
               type="button"
-              onClick={() => setSelectedNeighborhood(null)}
+              onClick={() => {
+                setSelectedNeighborhood(null);
+                setSelectedPrice('');
+              }}
               className="mt-2 text-xs text-blue-600 underline cursor-pointer"
             >
               Show all Pune spaces

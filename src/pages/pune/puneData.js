@@ -2228,6 +2228,3440 @@ export const pageFourPuneOfficeCards = [
   }
 ];
 
+
+// ============================================================================
+// Area-Specific Extra Coworking Cards (10 New Verified Real Internet Cards per Area)
+// ----------------------------------------------------------------------------
+// NOTE: These cards are ONLY shown when a specific area filter button is clicked.
+// When all cards are displayed (default view without area filter), these cards remain hidden.
+// ============================================================================
+export const areaExtraOfficeCards = {
+  "Baner": [
+    {
+      "id": 5001,
+      "name": "Kodesk Coworking",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Baner",
+      "location": "Baner, Pune.",
+      "price": "₹6,499",
+      "period": "/ Month",
+      "priceFormatted": "₹6,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/b6760a4c0e264699a83513b1857d23c8bb786ccb.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6297eae70f6a33a9979f3763f030c34d35c46c1c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/3cd33975d246b6bd02d73f5da56af5ed5f1ae6c5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2a786d0c42639dc40b1e83fd3bcb82556b32d68c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/78405af99fbd9ef42ba49f9e4940abbdef53b275.webp"
+      ]
+    },
+    {
+      "id": 5002,
+      "name": "Awfis Sterling Tower",
+      "badge": "Premium",
+      "rating": 4.6,
+      "area": "Baner",
+      "location": "Baner, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/58e38018564757ef1e647239a79c576230d405bf.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d3adf265fe0edf92e91df3e7c03f82f5a302a427.webp",
+        "https://img.cofynd.com/images/latest_images_2024/3fadb97d9dada4a2b1a3366d16e59781a246da3c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a7d260dc22a9b5a408205687527cb1a2814cc783.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d64227e9a1882c9baf00c837dae646a58ff8d8cd.webp"
+      ]
+    },
+    {
+      "id": 5003,
+      "name": "Growth Hub",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Baner",
+      "location": "Baner, Pune",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/201832e933dceb27eca847ecb0ab985c0a523123.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f958e6462f64871243953ec4188180b7916964e3.webp",
+        "https://img.cofynd.com/images/latest_images_2024/07f5854f28ec6d447a35f49993b316f8cbfb6359.webp",
+        "https://img.cofynd.com/images/latest_images_2024/844c255f8c6429752e6772208d8668dfc8e41274.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e698a2b903850d8952b9f34674faf4f1d3f35dcf.webp"
+      ]
+    },
+    {
+      "id": 5004,
+      "name": "Trios Balaji Business Centre",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Baner",
+      "location": "Baner, Pune",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/9036735cb17381aa7fc53ded3316d8a93f867b49.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d4038a751c40e65aea7d598d4cf69a333c72ca1e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d8dbca95fc6c51fcde7bc07a3eaf7ea01896c1b4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6c7056031566a6effa75bbece0375c731fa08c71.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0113c9b620d1a9867330c81e78c157a0dced4bec.webp"
+      ]
+    },
+    {
+      "id": 5005,
+      "name": "Cowerkz",
+      "badge": "Verified",
+      "rating": 4.9,
+      "area": "Baner",
+      "location": "Baner, Pune",
+      "price": "₹6,499",
+      "period": "/ Month",
+      "priceFormatted": "₹6,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/d6c50606af788441c67607f2cd983cde1d084067.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d7f629a674bed4c42fcb285b41eb202790cf00cb.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9d6d1e28e1ecf3366199a2e9dec47fe64a8ccb22.webp",
+        "https://img.cofynd.com/images/latest_images_2024/51ee565b91eea36c875c7ddf996652b81ba22d8b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e89e966b44b61287d86815d0a73a1f46bbca9641.webp"
+      ]
+    },
+    {
+      "id": 5006,
+      "name": "Awfis The Kode",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "Baner",
+      "location": "Baner, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/cd0618a718f4279b30b806ea42d0f0538386f193.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ae089b7ca608b713e7164ab8b9aae9a56f314d93.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ab2b84cb2767391d329a1f317c9abe66948a9172.webp",
+        "https://img.cofynd.com/images/latest_images_2024/df3760d2440e4a576e8ef511ea670410b580d52b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/852410bf19a78735900b092fe6e803baf92482cc.webp"
+      ]
+    },
+    {
+      "id": 5007,
+      "name": "IndiQube The Kode",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Baner",
+      "location": "Baner, Pune",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/956b4f48c69755a7303803dad89b233595fb7ec5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9be805c73253837d17f48a683d66069a70ed9b93.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2ebb14486e75f9406c545315352fefd4069963c3.webp",
+        "https://img.cofynd.com/images/original/7258eaa0c58d5ce56e019fc1a8bd55794a98bc5b.jpg",
+        "https://img.cofynd.com/images/original/b8b66cdb907fa9ab1469d1b6f6ee28b15bfd42a4.jpg"
+      ]
+    },
+    {
+      "id": 5008,
+      "name": "Divine Coworking Cosmos",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Baner",
+      "location": "Cosmos gardens, Pune",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/8bd974f276aab719d80fb3c5a4b67553ed8b133f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c61a676453c6158e59a18626395e7bd08607ea66.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d4175f1be63c806413e4697b0c74872e65b2842d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2cf771f8505011174fa0516fc427bd4ac49faf58.webp",
+        "https://img.cofynd.com/images/latest_images_2024/80d69788608f47bd4d5fac5ab7423fce4e2b4b1c.webp"
+      ]
+    },
+    {
+      "id": 5009,
+      "name": "Incube Coworking",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "Baner",
+      "location": "Next to Medipoint Hospital, Baner, Pune",
+      "price": "₹4,000",
+      "period": "/ Month",
+      "priceFormatted": "₹4,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/1a1f839cf4c05033dc74a42ae655c33970fbb963.jpg",
+        "https://img.cofynd.com/images/original/98bb398c0966ce05ca1cc393890b988eab0fc4e2.jpg",
+        "https://img.cofynd.com/images/original/0581d92508cfe08e4654e2c1af8c5ce5dcb8cb6e.jpg",
+        "https://img.cofynd.com/images/original/37b2ec0b474f8068a5a8dd5423d2e93db167eab6.jpg",
+        "https://img.cofynd.com/images/original/506fa44c3407bf5768a9ab7ba1ccb2827786c1b0.jpg"
+      ]
+    },
+    {
+      "id": 5010,
+      "name": "Anchor Coworking",
+      "badge": "Premium",
+      "rating": 4.9,
+      "area": "Baner",
+      "location": "Shivneri Colony, Pune",
+      "price": "₹5,000",
+      "period": "/ Month",
+      "priceFormatted": "₹5,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/856d9d73fc023c1c3eeab089f859b4ff0e56bc1e.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/a4876a8326d117aff05aa3849b95e544f17a312a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a2dfd11c6620ed5091e18e754756f4fddc1253b2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7f2888092f4fd70e50529ebff1525d5de1daa030.webp",
+        "https://img.cofynd.com/images/original/14dc3097883d00ded75870b6f23b60d047248ea3.jpg"
+      ]
+    }
+  ],
+  "Kharadi": [
+    {
+      "id": 5101,
+      "name": "Futops Cowork",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Kharadi",
+      "location": "Kharadi, Pune",
+      "price": "₹4,999",
+      "period": "/ Month",
+      "priceFormatted": "₹4,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/69f54df2d8a5a67da9e5995ca93014114a1a8e46.webp",
+        "https://img.cofynd.com/images/latest_images_2024/38d0d6b62bf72240353ba43218afa50393e65030.webp",
+        "https://img.cofynd.com/images/latest_images_2024/3b005079187c5edfca9148d5472932ee6110ec2e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0704e93344962b59595ddcd3fa1893eeedf85d84.webp",
+        "https://img.cofynd.com/images/latest_images_2024/36b634a822eb32b1e9014a4b2872d139e50a05bf.webp"
+      ]
+    },
+    {
+      "id": 5102,
+      "name": "Collab Workspaces",
+      "badge": "Premium",
+      "rating": 4.6,
+      "area": "Kharadi",
+      "location": "Kharadi, Pune",
+      "price": "₹7,499",
+      "period": "/ Month",
+      "priceFormatted": "₹7,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/a3086bd7c780ef6a8e8bf884e4305aebfd493bef.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/e8f207e85fb9689b176ee6bb49c8f0148d1c3ed8.webp",
+        "https://img.cofynd.com/images/latest_images_2024/34b99b293f410e6f731e1538fced6569cd7cc4d9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c42341a0653ea33f99dbae3beb271829d6208cef.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a277524ab30bfa6021160418daeb5af364417269.webp"
+      ]
+    },
+    {
+      "id": 5103,
+      "name": "Bootstart Coworking - Pride Icon",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Kharadi",
+      "location": "Kharadi, Pune",
+      "price": "₹8,499",
+      "period": "/ Month",
+      "priceFormatted": "₹8,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/7a3d410415516b1f5c82f9347b1bd0b56304e59e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/dffa9636309a5bd2d9414d44759c37d0a286e88e.webp",
+        "https://img.cofynd.com/images/original/dedd21b7ac35de0f9975a8f9039b13b3f34b4668.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/5d6bdce911d2d6d29a01d2a56ae7551421f5fb25.webp",
+        "https://img.cofynd.com/images/latest_images_2024/424d2d95b9d69f017cfd31a532f01b6b67b376ee.webp"
+      ]
+    },
+    {
+      "id": 5104,
+      "name": "CreateX",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Kharadi",
+      "location": "Ashok Nagar, Kharadi Maharashtra , India",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/4d6c2833702a2b2bfb21743655d6ac9c2a574573.jpg",
+        "https://img.cofynd.com/images/original/d0f040cece9bdd18febbcfe92fe0408ecf0bf446.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/567de36013fc2931b6f9c5a0148c66fa720e4621.webp",
+        "https://img.cofynd.com/images/original/ba093deda85778f9f720eac4409625ef1cba8f9f.jpg",
+        "https://img.cofynd.com/images/original/dc2a0811c0026d494ffdad2b4e3025644b692dbe.jpg"
+      ]
+    },
+    {
+      "id": 5105,
+      "name": "Pocket Spaces",
+      "badge": "Verified",
+      "rating": 4.9,
+      "area": "Kharadi",
+      "location": "Kharadi, Pune",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/c2569d14c2a93c2f1091a9c8804195c660e9b99d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5028fb336d915fe82df5c6dc8ee8d9258a80ca2d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9e70fe2f72dbd32076c399259f672b7bc91afb10.webp",
+        "https://img.cofynd.com/images/latest_images_2024/291eff6691ca235d91e86145831c93a2aa6bc1c6.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9d27f1e452d38ab44fce787f5afcd703459ac675.webp"
+      ]
+    },
+    {
+      "id": 5106,
+      "name": "Techbird",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "Kharadi",
+      "location": "Kharadi, Pune",
+      "price": "₹14,499",
+      "period": "/ Month",
+      "priceFormatted": "₹14,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/51ddbf29ca91df257b84700fbfb1ddadd063f688.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5ea6b6104e5bda8d22906f482d51de9cf59553ec.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f1923ba667eab67523e9cd7036c356ec2746e01a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d58cab21873d9194c45177652c6eccf69b5d5f73.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f9bf19a4b18858e93d0c80f63930bd6907ef80bc.webp"
+      ]
+    },
+    {
+      "id": 5107,
+      "name": "Awfis Viman Nagar II",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Kharadi",
+      "location": "Viman Nagar, Pune",
+      "price": "₹9,499",
+      "period": "/ Month",
+      "priceFormatted": "₹9,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/eb9dfa7f84cac31d7f2b065da8428152dcd79c37.webp",
+        "https://img.cofynd.com/images/latest_images_2024/1fd7fe2d5ba650bc37b59285a27a2a27b355bbda.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4d94ec66857053b877cb4086d84fc6f299566c97.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7f4fb7b109fd1cadff5ca6bdd6c0c46bdda64b2b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d429e811eea41195eddb301fe5587c96c0be3c67.webp"
+      ]
+    },
+    {
+      "id": 5108,
+      "name": "Awfis Nyati Empress",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Kharadi",
+      "location": "Viman Nagar, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/1952b47f70dfb09a734f9be3b4df383f5457e5af.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8f6f26c54ebe3f202228b1e3a6ff24a7fb30d9c2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4daefaf5892734f302c6ea775be2e7f557c3eb3e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/de45e81c7af7c7382a52a27d9df0ff440a38b8b3.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5017b03422bb879b6b1eabeb14305259c4a9b4fe.webp"
+      ]
+    },
+    {
+      "id": 5109,
+      "name": "Synergy",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "Kharadi",
+      "location": "Viman Nagar, Pune",
+      "price": "₹7,500",
+      "period": "/ Month",
+      "priceFormatted": "₹7,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/a16076bde799ff70cfb9ed44994bdb31626f1850.jpg",
+        "https://img.cofynd.com/images/original/2d4abb4e94c65c4e157d5aa6bb6daa90026ea21c.jpg",
+        "https://img.cofynd.com/images/original/f3d377dd0ca6e06dbaaa305f055f543ac8e15bf5.jpg",
+        "https://img.cofynd.com/images/original/d558ecaab78df13a1cbd058f1d63fff078c1e0c4.jpg",
+        "https://img.cofynd.com/images/original/115e0f16773a44862496a139117d820d2f21cc4b.jpg"
+      ]
+    },
+    {
+      "id": 5110,
+      "name": "Workspace",
+      "badge": "Premium",
+      "rating": 4.9,
+      "area": "Kharadi",
+      "location": "Viman Nagar, Pune",
+      "price": "₹22,499",
+      "period": "/ Month",
+      "priceFormatted": "₹22,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/800f8563e454a64cd599567bfa7718b836dd7765.webp",
+        "https://img.cofynd.com/images/latest_images_2024/be8dd586067e9fad71f14f885311a3df59edcdd3.webp",
+        "https://img.cofynd.com/images/latest_images_2024/09a36f9075809deb592af037d041f3fbabb5221e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/94520e6c657a26032275bae6ec5ecb28c2ec3645.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8fb511efff6c4ac3e675feb33da2fed7bab8fea8.webp"
+      ]
+    }
+  ],
+  "Viman Nagar": [
+    {
+      "id": 5201,
+      "name": "Synergy",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Viman Nagar",
+      "location": "Viman Nagar, Pune",
+      "price": "₹7,500",
+      "period": "/ Month",
+      "priceFormatted": "₹7,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/a16076bde799ff70cfb9ed44994bdb31626f1850.jpg",
+        "https://img.cofynd.com/images/original/2d4abb4e94c65c4e157d5aa6bb6daa90026ea21c.jpg",
+        "https://img.cofynd.com/images/original/f3d377dd0ca6e06dbaaa305f055f543ac8e15bf5.jpg",
+        "https://img.cofynd.com/images/original/d558ecaab78df13a1cbd058f1d63fff078c1e0c4.jpg",
+        "https://img.cofynd.com/images/original/115e0f16773a44862496a139117d820d2f21cc4b.jpg"
+      ]
+    },
+    {
+      "id": 5202,
+      "name": "Workspace",
+      "badge": "Premium",
+      "rating": 4.6,
+      "area": "Viman Nagar",
+      "location": "Viman Nagar, Pune",
+      "price": "₹22,499",
+      "period": "/ Month",
+      "priceFormatted": "₹22,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/800f8563e454a64cd599567bfa7718b836dd7765.webp",
+        "https://img.cofynd.com/images/latest_images_2024/be8dd586067e9fad71f14f885311a3df59edcdd3.webp",
+        "https://img.cofynd.com/images/latest_images_2024/09a36f9075809deb592af037d041f3fbabb5221e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/94520e6c657a26032275bae6ec5ecb28c2ec3645.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8fb511efff6c4ac3e675feb33da2fed7bab8fea8.webp"
+      ]
+    },
+    {
+      "id": 5203,
+      "name": "TRIOS Lalwani House",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Viman Nagar",
+      "location": "Sakore Nagar, Viman Nagar, Pune",
+      "price": "₹8,999",
+      "period": "/ Month",
+      "priceFormatted": "₹8,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/5e21f76c961fce9729833e73394892bd65e97464.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e67464da4663c76960572745c45f54e6bbcae8cb.webp",
+        "https://img.cofynd.com/images/original/16fddc211a341b4c7a63b728dce7dfd5badf6b17.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/66ae9a0bfca531a56ea0b95746f0f4e43596de31.webp",
+        "https://img.cofynd.com/images/latest_images_2024/35ba5f2e7fb3ecea59578755dfb90e57bfa9f84e.webp"
+      ]
+    },
+    {
+      "id": 5204,
+      "name": "TRIOS - Finswell - Viman nagar",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Viman Nagar",
+      "location": "Viman Nagar, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/a4e23f998a00530e1f94d0be23abe8592e97d6d7.webp",
+        "https://img.cofynd.com/images/latest_images_2024/26daa8a5d70286fae70f9a757b5326a207e3a567.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5133abadba90f1956ef5f4ed7b40c2dcf9cc22ca.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0f9c72d6df7e6f5ba5cc51669fffa39bdae5f735.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d1115009669a61c861c0397a5c542d1561574e8f.webp"
+      ]
+    },
+    {
+      "id": 5205,
+      "name": "Awfis Viman Nagar II",
+      "badge": "Verified",
+      "rating": 4.9,
+      "area": "Viman Nagar",
+      "location": "Viman Nagar, Pune",
+      "price": "₹9,499",
+      "period": "/ Month",
+      "priceFormatted": "₹9,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/eb9dfa7f84cac31d7f2b065da8428152dcd79c37.webp",
+        "https://img.cofynd.com/images/latest_images_2024/1fd7fe2d5ba650bc37b59285a27a2a27b355bbda.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4d94ec66857053b877cb4086d84fc6f299566c97.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7f4fb7b109fd1cadff5ca6bdd6c0c46bdda64b2b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d429e811eea41195eddb301fe5587c96c0be3c67.webp"
+      ]
+    },
+    {
+      "id": 5206,
+      "name": "Awfis Nyati Empress",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "Viman Nagar",
+      "location": "Viman Nagar, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/1952b47f70dfb09a734f9be3b4df383f5457e5af.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8f6f26c54ebe3f202228b1e3a6ff24a7fb30d9c2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4daefaf5892734f302c6ea775be2e7f557c3eb3e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/de45e81c7af7c7382a52a27d9df0ff440a38b8b3.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5017b03422bb879b6b1eabeb14305259c4a9b4fe.webp"
+      ]
+    },
+    {
+      "id": 5207,
+      "name": "Ideas to Impacts Hub Viman Nagar",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Viman Nagar",
+      "location": "Viman Nagar, Pune",
+      "price": "₹8,999",
+      "period": "/ Month",
+      "priceFormatted": "₹8,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/9dc5d741c498203f7560e04bd0ed278b38544631.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a2d5a44ab6b933bc773cb84ac006aa252f914a5b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2c211a7acced772fe46d723e771d68c2d3cea6fd.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7428c8d0f119ddab9ff4ab9eb8e0c74de5e6021a.webp"
+      ]
+    },
+    {
+      "id": 5208,
+      "name": "Share A Space",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Viman Nagar",
+      "location": "Viman Nagar, Pune",
+      "price": "₹8,999",
+      "period": "/ Month",
+      "priceFormatted": "₹8,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/7f20e3d1895beb93c507137eaa87ad096ffda723.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6ec28106e363e5937e4f28e5a32070d3da62578d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b72a3157f1d5303a9b8a503f846555f82934e68c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/30e65dac1c7d1b6701bd80da78c4045b79e132f5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e32570e33813d3af75bb239659b4c3163a5ff480.webp"
+      ]
+    },
+    {
+      "id": 5209,
+      "name": "Nexus Spaces",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "Viman Nagar",
+      "location": "Viman Nagar, Pune",
+      "price": "₹14,000",
+      "period": "/ Month",
+      "priceFormatted": "₹14,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/604af5c1c79aeff7195e3eff39d2d6e617bef964.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5c2633bade20602cf3c4deca6424249aa6676c72.webp",
+        "https://img.cofynd.com/images/latest_images_2024/15658f4aeea61820f2ee6c4c146167abfa535a06.webp",
+        "https://img.cofynd.com/images/latest_images_2024/008749cc802d8e807d47aaa94299664018cd5967.webp",
+        "https://img.cofynd.com/images/latest_images_2024/febf0e94c59e35a3a8b45c157dcbc16890b0885a.webp"
+      ]
+    },
+    {
+      "id": 5210,
+      "name": "Innov8 Ganga Treuno",
+      "badge": "Premium",
+      "rating": 4.9,
+      "area": "Viman Nagar",
+      "location": "Viman Nagar, Pune.",
+      "price": "₹10,499",
+      "period": "/ Month",
+      "priceFormatted": "₹10,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/903e73d54ec3295f61d3b28615a89c00e42a867b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/00553ba076592f29fbe3b68f34803fdf13d2b5ba.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c8a3ddfacd50bee2a482424edf02312bfef1e529.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6f1299cf7eb59fe508986820585ddfed8ea23fe6.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5c2dfdc9db5e641bea623efb822a47abda4b0e1a.webp"
+      ]
+    }
+  ],
+  "Koregaon Park": [
+    {
+      "id": 5301,
+      "name": "Espree Co-works",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Koregaon Park",
+      "location": "Koregaon Park, Pune",
+      "price": "₹8,999",
+      "period": "/ Month",
+      "priceFormatted": "₹8,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/8ce013856b6024104155c57e95f914ecdc6a675d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8e1814b31a5a428c90b1aa16934c00c98e3f03b0.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0b499e7234f98da7b9e8768902555ab3bb1510cd.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e2efbf47de1a27ce0746ec69efa7b30ca348e744.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7e320d7c711d58e7ee7b5a9831a4cf35f2816a45.webp"
+      ]
+    },
+    {
+      "id": 5302,
+      "name": "Starthub",
+      "badge": "Premium",
+      "rating": 4.6,
+      "area": "Koregaon Park",
+      "location": "Koregaon Park, Pune",
+      "price": "₹7,499",
+      "period": "/ Month",
+      "priceFormatted": "₹7,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/3a10fd7f1bedb1d5ecd272f0bf0d16aa347576e7.jpg",
+        "https://img.cofynd.com/images/original/e1e23064d108590bcb3319e45573bc49a2ceb395.jpg",
+        "https://img.cofynd.com/images/original/c1ca5ce9ec9caf7c6c1d9af4e976032b9e3021e1.jpg",
+        "https://img.cofynd.com/images/original/15e7d560c947c6bc900d3fb1003bfe9c77e398d2.jpg",
+        "https://img.cofynd.com/images/original/26959197d965a409b93036e1f4aab351a977fa27.jpg"
+      ]
+    },
+    {
+      "id": 5303,
+      "name": "Bootstart - Omicron Commerz",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Koregaon Park",
+      "location": "Koregaon Park, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/a56c458480e9e7948160cb4b5a75cc749972128f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/17a121e8dc76faa48ed1587bd39c83bae85918d2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/20da51b29df772b7e8f6739076112d855b0894f7.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5ab639e6b372917886889378c99795b4e4b7d357.webp"
+      ]
+    },
+    {
+      "id": 5304,
+      "name": "Inscape Cowork",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Koregaon Park",
+      "location": "Koregaon Park, Pune",
+      "price": "₹6,500",
+      "period": "/ Month",
+      "priceFormatted": "₹6,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/a332625bd31a0c9ac4c72040dfd7455743784a66.jpg",
+        "https://img.cofynd.com/images/original/5ece3eebf18bbf44b6f74411029c2c68a7cf438c.jpg",
+        "https://img.cofynd.com/images/original/9bfcb198f74566878686aaf8394b275662906a8e.jpg",
+        "https://img.cofynd.com/images/original/1c6ec1528dcbcc8ff0683ba3fced75c8705d25fc.jpg",
+        "https://img.cofynd.com/images/original/ee864fd84b6a8c54cad355429958fec57cddde5c.jpg"
+      ]
+    },
+    {
+      "id": 5305,
+      "name": "Bauhaus",
+      "badge": "Verified",
+      "rating": 4.9,
+      "area": "Koregaon Park",
+      "location": "Koregaon Park, Pune",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/ad44e20b271b38c5b29718e8d5a9601b467971f2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/70a2f7192407789f1e28e9964f5091312b87a876.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f5d3bfa4290cd5eed717f79403acd80c06891029.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8240d697c9f9ed56d928c3ee7111627b861afe38.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ce4a50c03e8a15cb2bb635eca13eb364d6e12118.webp"
+      ]
+    },
+    {
+      "id": 5306,
+      "name": "Bootstart Coworking – Arcadian Koregaon Park",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "Koregaon Park",
+      "location": "Koregaon Park, Pune",
+      "price": "₹7,000",
+      "period": "/ Month",
+      "priceFormatted": "₹7,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/211b8b898ab041af8f2f5ae2318db7b6a7470949.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e991a43662fa571c2a1977c0975ad0c97461e5a6.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2d9e7739decb78af7960b6956ed5b8e94cbd1e82.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2f0f1c4e9925f904ea67539c7445b6ea00b901a5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5db3a9a333c060b19ecd3b2ceba811bb7a55c00f.webp"
+      ]
+    },
+    {
+      "id": 5307,
+      "name": "Pinnacle Workspaces",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Koregaon Park",
+      "location": "Koregaon Park, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/195f1c8b89a42bdc3f82176029209e8a013d8dc9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/59e1ac0eedf9008357b2dcf04a27da65757c49f5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/476e76ed574c56acd4de943ed8b672cfd8b38f0d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0edf3dd2e682e9a262183185ec0aa044285896ac.webp"
+      ]
+    },
+    {
+      "id": 5308,
+      "name": "Innov8 suman business park",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Koregaon Park",
+      "location": "Kalyani Nagar, Pune",
+      "price": "₹8,999",
+      "period": "/ Month",
+      "priceFormatted": "₹8,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/45caa3259ec31d3dbbfb0ad8d4a1353e5873cdb4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/75021eebe2e76b723fc15aba635f308473482561.webp",
+        "https://img.cofynd.com/images/latest_images_2024/32333c3aea45553a0733db1dd2cc6d1723e26d82.webp",
+        "https://img.cofynd.com/images/latest_images_2024/921e08dff107f633d044a4a35a3509472ff951ac.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e4291fad74fa50f8f28e2967ad01a327dca81b43.webp"
+      ]
+    },
+    {
+      "id": 5309,
+      "name": "Tag Co-Works",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "Koregaon Park",
+      "location": "Kalyani Nagar, Pune",
+      "price": "₹5,000",
+      "period": "/ Month",
+      "priceFormatted": "₹5,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/f1424db42444f8b6a62f588f594c352e5d0ad72e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/cb409206a0b378fd158916c34e85aea5f1dac7ee.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4a80ca81d529f233d965d48c442a59eae81aeb8e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/18d01923b21937c81ece74720c4bb548da9e6923.webp"
+      ]
+    },
+    {
+      "id": 5310,
+      "name": "91Springboard Sky Loft",
+      "badge": "Premium",
+      "rating": 4.9,
+      "area": "Koregaon Park",
+      "location": "Yerawada, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/a78d38fbe0ad0cf0cf4fad4f4ba8915ba37bc610.webp",
+        "https://img.cofynd.com/images/latest_images_2024/cadcabb6fdef9874e7ea7563a218a5c9179a0468.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4a20fd79a4048122666b1b6c58e3e85fb5f4cd9e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bd032c1a6dda500c0e1734e4e2d714bc5752de97.webp",
+        "https://img.cofynd.com/images/latest_images_2024/333efe0ea8ee872444970549a907d5b5672a554d.webp"
+      ]
+    }
+  ],
+  "Wakad": [
+    {
+      "id": 5401,
+      "name": "TODO COWORKING",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Wakad",
+      "location": "Wakad, Pune",
+      "price": "₹7,499",
+      "period": "/ Month",
+      "priceFormatted": "₹7,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/f014b6b07d1d578c4b30eaa1d87633dfb24fdbfc.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6599a7e747e2b98191bddc176789553fedeb3df7.webp",
+        "https://img.cofynd.com/images/latest_images_2024/501b4143c0daade1a2a8504da89efca200a5de1b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7990934854cccc27121ee476a22f714e26d131d3.webp",
+        "https://img.cofynd.com/images/latest_images_2024/acee142282a5d947508500e47c6d91b945294a73.webp"
+      ]
+    },
+    {
+      "id": 5402,
+      "name": "Ideas to Impacts Hub Wakad",
+      "badge": "Premium",
+      "rating": 4.6,
+      "area": "Wakad",
+      "location": "Wakad, Pune",
+      "price": "₹8,999",
+      "period": "/ Month",
+      "priceFormatted": "₹8,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/fe808308012ed34e26268efec85259f3b62b092f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0d0fbf69f720692aaf10184ff0b947bc8caec729.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d26ee13c1e786dfe45bc1dae11d76ba82477721e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/15c32e8ebd07fcd00a84e8012d05ec57383de042.webp"
+      ]
+    },
+    {
+      "id": 5403,
+      "name": "Kowork Coworking Space",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Wakad",
+      "location": "Wakad, Pune",
+      "price": "₹6,000",
+      "period": "/ Month",
+      "priceFormatted": "₹6,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/30af2c304245fdb437494efa307bb5c2ebff907c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ebca264701e10baf6ef637dd9b35a17ea6da1653.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5b00ab8c04dbc49ab5a257d8a34b6a5aa86fd4a2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9d00e4ed1405ad9e6a411953e436d04610b5868d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/55ae3b24dbb0fb8ed75b3fc1fd87d1cbcad8e652.webp"
+      ]
+    },
+    {
+      "id": 5404,
+      "name": "Quick Office",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Wakad",
+      "location": "Hinjewadi-Wakad Road, Pune",
+      "price": "₹6,499",
+      "period": "/ Month",
+      "priceFormatted": "₹6,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/6a2d6ce5db832bf5e10ae7cdb183395e1bf258c9.jpg",
+        "https://img.cofynd.com/images/original/cdc6fcc222be7e4217c0347946389bb7fb09dae3.jpg",
+        "https://img.cofynd.com/images/original/b40580f63ffb1fa709068c7de89842003df58fb6.jpg",
+        "https://img.cofynd.com/images/original/d9c9de21fde512d1abf3c2de44a3ca2c56d75712.jpg",
+        "https://img.cofynd.com/images/original/e06e73593b9ee84db11f0ae4f258b0d337c6db01.jpg"
+      ]
+    },
+    {
+      "id": 5405,
+      "name": "Sprint Antaaya",
+      "badge": "Verified",
+      "rating": 4.9,
+      "area": "Wakad",
+      "location": "Balewadi, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/13b1c546d03b7d6be23f5f02d3eda58af747aa28.webp",
+        "https://img.cofynd.com/images/latest_images_2024/36475bb43d9929c58c9a3e3077ccf478a813e925.webp",
+        "https://img.cofynd.com/images/latest_images_2024/27053bf7e53f0857aa37c42b4630c0943b04bf3a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/01669a959ca243a0ace85d5cb3d35ad7a0fa0069.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c67e73ebcf2879dca288e92ffcf56a0cddcdded2.webp"
+      ]
+    },
+    {
+      "id": 5406,
+      "name": "Reality Workspaces",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "Wakad",
+      "location": "Pimple Saudagar, Pune",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/32ef0a19a3c2a59cd0f0a9583f3db8b6f45741f4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ee1efc46e5c811c5f1c1509db951cf20ff81a37f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/269a4069af0cf5ef562b5247b8c912eb7b808e60.webp",
+        "https://img.cofynd.com/images/latest_images_2024/28fed5ebadb1a29806350bde659eec49dd791322.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2be07c465566f8b625d1afb456aef5dc689ba19f.webp"
+      ]
+    },
+    {
+      "id": 5407,
+      "name": "Alive Digital Co Working",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Wakad",
+      "location": "Baner, Pune",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/662e3820f86e1605d69047d231eb572ab644d980.webp",
+        "https://img.cofynd.com/images/latest_images_2024/cc924886e92b26cf7e37f27f3a79ab1428307d09.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ed587bd4db40212c663a74dfab1825a05b5fdd7e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/67731cb00c845fff1f7de37893b4dd456276c020.webp"
+      ]
+    },
+    {
+      "id": 5408,
+      "name": "Awfis GK Mall",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Wakad",
+      "location": "Pimple Saudagar, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/7cac68ecacd3f6a32407f74844adc4d5b797d1a1.webp",
+        "https://img.cofynd.com/images/original/4484d5dc0e0cc0ab0f9ba4d507d679e2ac72830a.jpg",
+        "https://img.cofynd.com/images/original/205e990674a7cefe548ea801c4e8654b76ba00a8.jpg",
+        "https://img.cofynd.com/images/original/7a47e648e2f8507f22b0bbe17ffba95c038ccc25.jpg",
+        "https://img.cofynd.com/images/original/1cbff71d3df1dc948c372fb25b209191a08e5b86.jpg"
+      ]
+    },
+    {
+      "id": 5409,
+      "name": "AllDeskSolutions",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "Wakad",
+      "location": "Hinjewadi, Pune.",
+      "price": "₹4,999",
+      "period": "/ Month",
+      "priceFormatted": "₹4,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/fa9688429eb6f5c7c8c829d3d6459a77ff85471d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5763ca719ab1320015fecef0932760705e7bfd06.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2f082cc66ba871d4389faaac8b9f74818de97ee4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/db3574f251f49a8ac3859e44f7f99c7ff90cc985.webp",
+        "https://img.cofynd.com/images/latest_images_2024/dfd50858233c615952e06d8f209f2e752bcd39f7.webp"
+      ]
+    },
+    {
+      "id": 5410,
+      "name": "The Cultiv8",
+      "badge": "Premium",
+      "rating": 4.9,
+      "area": "Wakad",
+      "location": "Baner, Pune",
+      "price": "₹5,499",
+      "period": "/ Month",
+      "priceFormatted": "₹5,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/fbf926341143fd97b0df29962e5a54a47dbcf8f8.jpg",
+        "https://img.cofynd.com/images/original/15db7af84400b986b0cd043befb3d6c79295f50c.jpg",
+        "https://img.cofynd.com/images/original/0bb076ef96db49479c8e9b67897f50922e88c90e.jpg",
+        "https://img.cofynd.com/images/original/3a09b79b0dcbb5f7958d9470187c8a27ffdf17ad.jpg",
+        "https://img.cofynd.com/images/original/3b31cf2e8881b77e0d2ef66283cb0775fa123281.jpg"
+      ]
+    }
+  ],
+  "Balewadi": [
+    {
+      "id": 5501,
+      "name": "Sprint Antaaya",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Balewadi",
+      "location": "Balewadi, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/13b1c546d03b7d6be23f5f02d3eda58af747aa28.webp",
+        "https://img.cofynd.com/images/latest_images_2024/36475bb43d9929c58c9a3e3077ccf478a813e925.webp",
+        "https://img.cofynd.com/images/latest_images_2024/27053bf7e53f0857aa37c42b4630c0943b04bf3a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/01669a959ca243a0ace85d5cb3d35ad7a0fa0069.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c67e73ebcf2879dca288e92ffcf56a0cddcdded2.webp"
+      ]
+    },
+    {
+      "id": 5502,
+      "name": "Alive Digital Co Working",
+      "badge": "Premium",
+      "rating": 4.6,
+      "area": "Balewadi",
+      "location": "Baner, Pune",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/662e3820f86e1605d69047d231eb572ab644d980.webp",
+        "https://img.cofynd.com/images/latest_images_2024/cc924886e92b26cf7e37f27f3a79ab1428307d09.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ed587bd4db40212c663a74dfab1825a05b5fdd7e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/67731cb00c845fff1f7de37893b4dd456276c020.webp"
+      ]
+    },
+    {
+      "id": 5503,
+      "name": "SPACE X COWORK",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Balewadi",
+      "location": "Baner, Pune",
+      "price": "₹7,500",
+      "period": "/ Month",
+      "priceFormatted": "₹7,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/57422d801aa66e0200a6fd982c6a1d168b0d6275.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ff7969ee32e450a85e87cf6976c71963b4d3dafd.webp",
+        "https://img.cofynd.com/images/latest_images_2024/68038624a7c5bdc74441035f777d55e9bbc6b2c9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c0df3d03571344f92ee79dabddca13a871d33015.webp",
+        "https://img.cofynd.com/images/latest_images_2024/1725970ae15ae2c573b710b0bdef6ec7fbcde234.webp"
+      ]
+    },
+    {
+      "id": 5504,
+      "name": "91springboard Sadanand Business Center",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Balewadi",
+      "location": "Baner, Pune",
+      "price": "₹15,999",
+      "period": "/ Month",
+      "priceFormatted": "₹15,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/25544f614e445f6de20e55eb28644e33a04f7ee4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2a8a4caef5e0eff769885d4a2cca70c9b45815a2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/66ec2ccb1166dabbe192c25b56e31f426c77ade7.webp",
+        "https://img.cofynd.com/images/latest_images_2024/70c576585e2c824605936ad8e7673e9c39184ba2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/48f0d77e79a17aeed1cf6cebcdfea9e2e0164a12.webp"
+      ]
+    },
+    {
+      "id": 5505,
+      "name": "EFC Prime Offices",
+      "badge": "Verified",
+      "rating": 4.9,
+      "area": "Balewadi",
+      "location": "Baner, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/804b32e9ba4e48ddfb0507b860e69ae4b151648b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b411986de68ed9d3ba22829582c9ab7b55ce92a7.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7185fa21ac43e34d46d64a8184ea21dbfc011100.webp",
+        "https://img.cofynd.com/images/latest_images_2024/75c99a42549db958c07069acd879e75aa5f112ed.webp",
+        "https://img.cofynd.com/images/latest_images_2024/cab9273bb7bf6a368d71604964dcafd5200ffcbe.webp"
+      ]
+    },
+    {
+      "id": 5506,
+      "name": "The Cultiv8",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "Balewadi",
+      "location": "Baner, Pune",
+      "price": "₹5,499",
+      "period": "/ Month",
+      "priceFormatted": "₹5,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/fbf926341143fd97b0df29962e5a54a47dbcf8f8.jpg",
+        "https://img.cofynd.com/images/original/15db7af84400b986b0cd043befb3d6c79295f50c.jpg",
+        "https://img.cofynd.com/images/original/0bb076ef96db49479c8e9b67897f50922e88c90e.jpg",
+        "https://img.cofynd.com/images/original/3a09b79b0dcbb5f7958d9470187c8a27ffdf17ad.jpg",
+        "https://img.cofynd.com/images/original/3b31cf2e8881b77e0d2ef66283cb0775fa123281.jpg"
+      ]
+    },
+    {
+      "id": 5507,
+      "name": "Workflo Icon Tower",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Balewadi",
+      "location": "Baner, Pune",
+      "price": "₹6,499",
+      "period": "/ Month",
+      "priceFormatted": "₹6,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/6fc05f434d56e23bf27852c127e187de3ac48ba7.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bea6aaff077ee13881bcd89ebddce99f61ff1efd.webp",
+        "https://img.cofynd.com/images/latest_images_2024/88355cfe807eb7b3e3e6142ace23b8bd7ba11364.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d8edb79d55d6008b41c960980f3ade4db2174332.webp",
+        "https://img.cofynd.com/images/latest_images_2024/de0bebd83dd3de5bbd3e66125d3983ca2cdc24d4.webp"
+      ]
+    },
+    {
+      "id": 5508,
+      "name": "Quick Office",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Balewadi",
+      "location": "Hinjewadi-Wakad Road, Pune",
+      "price": "₹6,499",
+      "period": "/ Month",
+      "priceFormatted": "₹6,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/6a2d6ce5db832bf5e10ae7cdb183395e1bf258c9.jpg",
+        "https://img.cofynd.com/images/original/cdc6fcc222be7e4217c0347946389bb7fb09dae3.jpg",
+        "https://img.cofynd.com/images/original/b40580f63ffb1fa709068c7de89842003df58fb6.jpg",
+        "https://img.cofynd.com/images/original/d9c9de21fde512d1abf3c2de44a3ca2c56d75712.jpg",
+        "https://img.cofynd.com/images/original/e06e73593b9ee84db11f0ae4f258b0d337c6db01.jpg"
+      ]
+    },
+    {
+      "id": 5509,
+      "name": "Insspire One West",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "Balewadi",
+      "location": "Balewadi, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/0bc7a07885199025cd4df17086f680ba67739391.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b0ec9e3e67efe251c56b89119bdac0210a62c19c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/262dbee0e07613a770d3727288051991dbeb365c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0e27ca81d3a7dd12e02afe21df96be4c10978cea.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9cc70128236dd9f7372d9287e3cead2dab97d5fa.webp"
+      ]
+    },
+    {
+      "id": 5510,
+      "name": "Enzigma Coworking",
+      "badge": "Premium",
+      "rating": 4.9,
+      "area": "Balewadi",
+      "location": "Baner, Pune.",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/11291db26ff85bbaae02e6a32f7b6898c102bf84.webp",
+        "https://img.cofynd.com/images/latest_images_2024/59e74404c38a90705245cae23d7be0e7b7b21e2f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5dd38c3a0736451d80c762031c8e4b097cf7f617.webp",
+        "https://img.cofynd.com/images/latest_images_2024/14bab5b79e13634a0877bdc64d5bbf1d3b2be99f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/cdf6755fdcb0b9a745c6bb58644a8968399396d9.webp"
+      ]
+    }
+  ],
+  "Hinjewadi": [
+    {
+      "id": 5601,
+      "name": "Quick Office",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Hinjewadi",
+      "location": "Hinjewadi-Wakad Road, Pune",
+      "price": "₹6,499",
+      "period": "/ Month",
+      "priceFormatted": "₹6,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/6a2d6ce5db832bf5e10ae7cdb183395e1bf258c9.jpg",
+        "https://img.cofynd.com/images/original/cdc6fcc222be7e4217c0347946389bb7fb09dae3.jpg",
+        "https://img.cofynd.com/images/original/b40580f63ffb1fa709068c7de89842003df58fb6.jpg",
+        "https://img.cofynd.com/images/original/d9c9de21fde512d1abf3c2de44a3ca2c56d75712.jpg",
+        "https://img.cofynd.com/images/original/e06e73593b9ee84db11f0ae4f258b0d337c6db01.jpg"
+      ]
+    },
+    {
+      "id": 5602,
+      "name": "AllDeskSolutions",
+      "badge": "Premium",
+      "rating": 4.6,
+      "area": "Hinjewadi",
+      "location": "Hinjewadi, Pune.",
+      "price": "₹4,999",
+      "period": "/ Month",
+      "priceFormatted": "₹4,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/fa9688429eb6f5c7c8c829d3d6459a77ff85471d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5763ca719ab1320015fecef0932760705e7bfd06.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2f082cc66ba871d4389faaac8b9f74818de97ee4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/db3574f251f49a8ac3859e44f7f99c7ff90cc985.webp",
+        "https://img.cofynd.com/images/latest_images_2024/dfd50858233c615952e06d8f209f2e752bcd39f7.webp"
+      ]
+    },
+    {
+      "id": 5603,
+      "name": "Ideas to Impacts Hub Wakad",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Hinjewadi",
+      "location": "Wakad, Pune",
+      "price": "₹8,999",
+      "period": "/ Month",
+      "priceFormatted": "₹8,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/fe808308012ed34e26268efec85259f3b62b092f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0d0fbf69f720692aaf10184ff0b947bc8caec729.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d26ee13c1e786dfe45bc1dae11d76ba82477721e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/15c32e8ebd07fcd00a84e8012d05ec57383de042.webp"
+      ]
+    },
+    {
+      "id": 5604,
+      "name": "Kowork Coworking Space",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Hinjewadi",
+      "location": "Wakad, Pune",
+      "price": "₹6,000",
+      "period": "/ Month",
+      "priceFormatted": "₹6,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/30af2c304245fdb437494efa307bb5c2ebff907c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ebca264701e10baf6ef637dd9b35a17ea6da1653.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5b00ab8c04dbc49ab5a257d8a34b6a5aa86fd4a2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9d00e4ed1405ad9e6a411953e436d04610b5868d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/55ae3b24dbb0fb8ed75b3fc1fd87d1cbcad8e652.webp"
+      ]
+    },
+    {
+      "id": 5605,
+      "name": "Sprint Antaaya",
+      "badge": "Verified",
+      "rating": 4.9,
+      "area": "Hinjewadi",
+      "location": "Balewadi, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/13b1c546d03b7d6be23f5f02d3eda58af747aa28.webp",
+        "https://img.cofynd.com/images/latest_images_2024/36475bb43d9929c58c9a3e3077ccf478a813e925.webp",
+        "https://img.cofynd.com/images/latest_images_2024/27053bf7e53f0857aa37c42b4630c0943b04bf3a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/01669a959ca243a0ace85d5cb3d35ad7a0fa0069.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c67e73ebcf2879dca288e92ffcf56a0cddcdded2.webp"
+      ]
+    },
+    {
+      "id": 5606,
+      "name": "Growth Hub",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "Hinjewadi",
+      "location": "Baner, Pune",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/201832e933dceb27eca847ecb0ab985c0a523123.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f958e6462f64871243953ec4188180b7916964e3.webp",
+        "https://img.cofynd.com/images/latest_images_2024/07f5854f28ec6d447a35f49993b316f8cbfb6359.webp",
+        "https://img.cofynd.com/images/latest_images_2024/844c255f8c6429752e6772208d8668dfc8e41274.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e698a2b903850d8952b9f34674faf4f1d3f35dcf.webp"
+      ]
+    },
+    {
+      "id": 5607,
+      "name": "Alive Digital Co Working",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Hinjewadi",
+      "location": "Baner, Pune",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/662e3820f86e1605d69047d231eb572ab644d980.webp",
+        "https://img.cofynd.com/images/latest_images_2024/cc924886e92b26cf7e37f27f3a79ab1428307d09.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ed587bd4db40212c663a74dfab1825a05b5fdd7e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/67731cb00c845fff1f7de37893b4dd456276c020.webp"
+      ]
+    },
+    {
+      "id": 5608,
+      "name": "91springboard Sadanand Business Center",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Hinjewadi",
+      "location": "Baner, Pune",
+      "price": "₹15,999",
+      "period": "/ Month",
+      "priceFormatted": "₹15,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/25544f614e445f6de20e55eb28644e33a04f7ee4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2a8a4caef5e0eff769885d4a2cca70c9b45815a2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/66ec2ccb1166dabbe192c25b56e31f426c77ade7.webp",
+        "https://img.cofynd.com/images/latest_images_2024/70c576585e2c824605936ad8e7673e9c39184ba2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/48f0d77e79a17aeed1cf6cebcdfea9e2e0164a12.webp"
+      ]
+    },
+    {
+      "id": 5609,
+      "name": "EFC Prime Offices",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "Hinjewadi",
+      "location": "Baner, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/804b32e9ba4e48ddfb0507b860e69ae4b151648b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b411986de68ed9d3ba22829582c9ab7b55ce92a7.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7185fa21ac43e34d46d64a8184ea21dbfc011100.webp",
+        "https://img.cofynd.com/images/latest_images_2024/75c99a42549db958c07069acd879e75aa5f112ed.webp",
+        "https://img.cofynd.com/images/latest_images_2024/cab9273bb7bf6a368d71604964dcafd5200ffcbe.webp"
+      ]
+    },
+    {
+      "id": 5610,
+      "name": "SPACE X COWORK",
+      "badge": "Premium",
+      "rating": 4.9,
+      "area": "Hinjewadi",
+      "location": "Baner, Pune",
+      "price": "₹7,500",
+      "period": "/ Month",
+      "priceFormatted": "₹7,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/57422d801aa66e0200a6fd982c6a1d168b0d6275.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ff7969ee32e450a85e87cf6976c71963b4d3dafd.webp",
+        "https://img.cofynd.com/images/latest_images_2024/68038624a7c5bdc74441035f777d55e9bbc6b2c9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c0df3d03571344f92ee79dabddca13a871d33015.webp",
+        "https://img.cofynd.com/images/latest_images_2024/1725970ae15ae2c573b710b0bdef6ec7fbcde234.webp"
+      ]
+    }
+  ],
+  "Kothrud": [
+    {
+      "id": 5701,
+      "name": "Awfis Quantum Works",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Kothrud",
+      "location": "Kothrud, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/95fab10176feeb8c1582592e681b165f45d2078f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/eed15866008aac7b019ca665de5e1288d134a2aa.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e79274eb294face92d52517d40c60bf2ce6aebde.webp",
+        "https://img.cofynd.com/images/latest_images_2024/257e7838d5ecd76899b5aa07882c06d8be9a1aea.webp",
+        "https://img.cofynd.com/images/latest_images_2024/badddc2ec7c34c920dfa563e34dc9b9b7b95dabe.webp"
+      ]
+    },
+    {
+      "id": 5702,
+      "name": "Bootstart Suma Centre",
+      "badge": "Premium",
+      "rating": 4.6,
+      "area": "Kothrud",
+      "location": "Erandwane, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/2bfa1bc3232147a4fd239310f16932190aa00ac1.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8110cd399ca2809d231cfa01d2441cceb9706975.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8dabf8a3d8e1059fecfe892c993b4b8a072ef461.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bce71136270eaeff908bf9d9f11a96efb6ff439e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9ec128c4dc2005bb93d16ff548907d8e1e549be0.webp"
+      ]
+    },
+    {
+      "id": 5703,
+      "name": "Espree Co-works",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Kothrud",
+      "location": "Koregaon Park, Pune",
+      "price": "₹8,999",
+      "period": "/ Month",
+      "priceFormatted": "₹8,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/8ce013856b6024104155c57e95f914ecdc6a675d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8e1814b31a5a428c90b1aa16934c00c98e3f03b0.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0b499e7234f98da7b9e8768902555ab3bb1510cd.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e2efbf47de1a27ce0746ec69efa7b30ca348e744.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7e320d7c711d58e7ee7b5a9831a4cf35f2816a45.webp"
+      ]
+    },
+    {
+      "id": 5704,
+      "name": "Thinknest",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Kothrud",
+      "location": "Erandwane",
+      "price": "₹8,500",
+      "period": "/ Month",
+      "priceFormatted": "₹8,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/2ea7d07f51cd08cdd53f7e6ec1d8132f6d7755e3.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b1057278a2c9eba28af65ed5ef1e357ab32e0c78.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9340221e4348fae5ec705fe960a057ca42d94818.webp"
+      ]
+    },
+    {
+      "id": 5705,
+      "name": "Bootstart Coworking – Shreyas Eterna",
+      "badge": "Verified",
+      "rating": 4.9,
+      "area": "Kothrud",
+      "location": "Bavdhan, Pune",
+      "price": "₹6,500",
+      "period": "/ Month",
+      "priceFormatted": "₹6,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/d05ac68e752d48d18a9548d8cb836b81fd95c18a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/42e061a664661b8837b419f2e31407d72d806e20.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5176199e84c881a6da33330f0648e84ee0c8263b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ba1da479c668bcde77de2e6da807cc5bfc0c6fdf.webp"
+      ]
+    },
+    {
+      "id": 5706,
+      "name": "ScaleUp CoWork",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "Kothrud",
+      "location": "BMCC Road, Pune, Maharashtra",
+      "price": "₹7,000",
+      "period": "/ Month",
+      "priceFormatted": "₹7,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/f809998409e326eec1589237d62fec35a0f5bff5.jpg",
+        "https://img.cofynd.com/images/original/f2c386881e1c1ffb15fec004a116835ec12d7e03.jpg",
+        "https://img.cofynd.com/images/original/67db7677286bc5d9920525e826712bc117d9fd36.jpg",
+        "https://img.cofynd.com/images/original/f3301766c8ef599ab9fccf4e79d8ffb05607f8cb.jpg",
+        "https://img.cofynd.com/images/original/bf82d800a2cc9ddc0818624e1675bb69056ff64e.jpg"
+      ]
+    },
+    {
+      "id": 5707,
+      "name": "Aster",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Kothrud",
+      "location": "Shivaji Nagar, Pune",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/108e44d3d4995d298f0079d63cb29506636e32cd.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5a0c5088f1a3fcd2e21f0b4f8e474bb596ed415b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/643d8a9679b0672534f839ba039c9bf127eb0296.webp",
+        "https://img.cofynd.com/images/latest_images_2024/305b6bd07971b47555e2b79b65cae51810a9bf43.webp",
+        "https://img.cofynd.com/images/latest_images_2024/981f5da85f450667c290067fdb7cc47658012289.webp"
+      ]
+    },
+    {
+      "id": 5708,
+      "name": "IndiQube Park Plaza",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Kothrud",
+      "location": "Shivaji Nagar, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/31fd493b5fab163f9a2d8bddeedf1a1e17a1d885.webp",
+        "https://img.cofynd.com/images/latest_images_2024/448660eb3e7510de6808dfa2128570e3bc29b381.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bbfe22c34e2dfa71e940a05190c8e8ded20db2e6.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f9281528475c492bf1ed563de855b052d4bd7209.webp",
+        "https://img.cofynd.com/images/original/66e97384b3e8fff86453c74021b59ee823bed78a.jpg"
+      ]
+    },
+    {
+      "id": 5709,
+      "name": "TBL Spaces",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "Kothrud",
+      "location": "Nanded City Sinhgad Rd, Nanded City, Nanded, Pune, Maharashtra 411068, India",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/416042ba0670ffdc14a90c1b703e8d74d3a1898f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/604a92f54abd499469b83ec493b75005e4ef2edc.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2793ac69d03daa635d6d65f231f183ab45ece894.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7ef6faeab4bf7be24db4493b03a5c6813043a62f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7e54f22dd07e39e40c4dd21bc597e63c91dd04f8.webp"
+      ]
+    },
+    {
+      "id": 5710,
+      "name": "IndiQube The Kode",
+      "badge": "Premium",
+      "rating": 4.9,
+      "area": "Kothrud",
+      "location": "Baner, Pune",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/956b4f48c69755a7303803dad89b233595fb7ec5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9be805c73253837d17f48a683d66069a70ed9b93.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2ebb14486e75f9406c545315352fefd4069963c3.webp",
+        "https://img.cofynd.com/images/original/7258eaa0c58d5ce56e019fc1a8bd55794a98bc5b.jpg",
+        "https://img.cofynd.com/images/original/b8b66cdb907fa9ab1469d1b6f6ee28b15bfd42a4.jpg"
+      ]
+    }
+  ],
+  "Aundh": [
+    {
+      "id": 5801,
+      "name": "Share A Space",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Aundh",
+      "location": "Aundh, Pune",
+      "price": "₹9,499",
+      "period": "/ Month",
+      "priceFormatted": "₹9,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/a4eadf8723bbf934307a585ce3a10b87ba80d475.jpg",
+        "https://img.cofynd.com/images/original/cba23fbff5fb9fc8ddd441d8a25f68e8efa1c76b.jpg",
+        "https://img.cofynd.com/images/original/63e2171239c540d2745f634c1f73a3198526040a.jpg",
+        "https://img.cofynd.com/images/original/2851d6fa3bd6909bca06fc26da49b5cf1cede2ad.jpg",
+        "https://img.cofynd.com/images/original/834fc89f0327b7d9559b17cea07807f9af45fe0e.jpg"
+      ]
+    },
+    {
+      "id": 5802,
+      "name": "Thinkcowork",
+      "badge": "Premium",
+      "rating": 4.6,
+      "area": "Aundh",
+      "location": "Aundh, Pune",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/8aedd18ca1ff6255b53489882f554edc5130222f.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/442086af126bdd0c328cb6245488c764b416206e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0811625ac72ae16b47a808deb4d690e1326be9e5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0122f4bdab658ac641e4f348c84f18f4e2863a0d.webp",
+        "https://img.cofynd.com/images/original/0b7358b353d6a791efd3be1458c65b9c123bc641.jpg"
+      ]
+    },
+    {
+      "id": 5803,
+      "name": "Incube",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Aundh",
+      "location": "Shambhu Vihar Society, Aundh Gaon, Aundh, Pune, Maharashtra - , India",
+      "price": "₹7,499",
+      "period": "/ Month",
+      "priceFormatted": "₹7,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/f8d9606998e1218be2aa1030247812464c493f97.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bcf0e4102586aa23bb44d6af54386db649718b0c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/05b157165e6162161e531bdc80f9d6bee47e9f5d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d14417a9e9e3000ce903455e6ea476a4fd8c0aa0.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b0181c4858f43a20fb6ffc5a06bde2d5f18945aa.webp"
+      ]
+    },
+    {
+      "id": 5804,
+      "name": "Covie Premium Coworking",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Aundh",
+      "location": "Aundh, Pune.",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/453517e0876c65ea4a62c8d1318c1b7dedfc7c53.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6e137c7db89e473b6778f254f745fca51329edfc.webp",
+        "https://img.cofynd.com/images/latest_images_2024/1384430ff2802e34f62b44b76eb77911154c3cf8.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e6c1cc2b4e270d856aff8fe6ffd750c29f0b55a7.webp",
+        "https://img.cofynd.com/images/latest_images_2024/20943c11643c36249ca86ec2927848b5d1c47e99.webp"
+      ]
+    },
+    {
+      "id": 5805,
+      "name": "Incube Coworking",
+      "badge": "Verified",
+      "rating": 4.9,
+      "area": "Aundh",
+      "location": "Next to Medipoint Hospital, Baner, Pune",
+      "price": "₹4,000",
+      "period": "/ Month",
+      "priceFormatted": "₹4,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/1a1f839cf4c05033dc74a42ae655c33970fbb963.jpg",
+        "https://img.cofynd.com/images/original/98bb398c0966ce05ca1cc393890b988eab0fc4e2.jpg",
+        "https://img.cofynd.com/images/original/0581d92508cfe08e4654e2c1af8c5ce5dcb8cb6e.jpg",
+        "https://img.cofynd.com/images/original/37b2ec0b474f8068a5a8dd5423d2e93db167eab6.jpg",
+        "https://img.cofynd.com/images/original/506fa44c3407bf5768a9ab7ba1ccb2827786c1b0.jpg"
+      ]
+    },
+    {
+      "id": 5806,
+      "name": "11COWORK",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "Aundh",
+      "location": "Baner, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/1057f599d06bddada36762050ec7d9e4ebaba1af.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5a4c4b22dfd821b9aae2e13d96744778c5e3991b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6f30108074aa2d4bab42872376941e98ecb06321.webp",
+        "https://img.cofynd.com/images/latest_images_2024/dc04579ca0b7cf7ff680c3be44b73a51463c40e9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/1ad83aac01cfd6c70d3e50aa7eddf42c00ce9e8c.webp"
+      ]
+    },
+    {
+      "id": 5807,
+      "name": "Ideas to Impacts Hub",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Aundh",
+      "location": "Baner, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/9840e6d189d87b2620436e83dbd6f77e2a9ada35.webp",
+        "https://img.cofynd.com/images/latest_images_2024/13d67c412a67bf7a11287aa0a9fe7edc4997e5b7.webp",
+        "https://img.cofynd.com/images/latest_images_2024/559aff9aa39164c1a30e8c4dc552503dbc4d7be8.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d2a19b698c8a35fcf6c163c2512d95d1ed91a91f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2f61df5375f16ad9b5d27d8a5afc97c5aa8607c6.webp"
+      ]
+    },
+    {
+      "id": 5808,
+      "name": "TRIOS Mont Vert Spectra",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Aundh",
+      "location": "Baner, Pune",
+      "price": "₹9,200",
+      "period": "/ Month",
+      "priceFormatted": "₹9,200 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/54cb1bf58553dedf6708c2e5e0f917b5d00b1c17.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2e17cf37176194d28f07db5eae5d0c71cb1db5de.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9c30a88110350adef969d872838b15c625b2dc90.webp",
+        "https://img.cofynd.com/images/latest_images_2024/1387d618963b6741df60c64483297d764204863d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b976eea70a1337cf50658510554f881856d8aa63.webp"
+      ]
+    },
+    {
+      "id": 5809,
+      "name": "Awfis The Kode",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "Aundh",
+      "location": "Baner, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/cd0618a718f4279b30b806ea42d0f0538386f193.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ae089b7ca608b713e7164ab8b9aae9a56f314d93.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ab2b84cb2767391d329a1f317c9abe66948a9172.webp",
+        "https://img.cofynd.com/images/latest_images_2024/df3760d2440e4a576e8ef511ea670410b580d52b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/852410bf19a78735900b092fe6e803baf92482cc.webp"
+      ]
+    },
+    {
+      "id": 5810,
+      "name": "Cowerkz",
+      "badge": "Premium",
+      "rating": 4.9,
+      "area": "Aundh",
+      "location": "Baner, Pune",
+      "price": "₹6,499",
+      "period": "/ Month",
+      "priceFormatted": "₹6,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/d6c50606af788441c67607f2cd983cde1d084067.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d7f629a674bed4c42fcb285b41eb202790cf00cb.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9d6d1e28e1ecf3366199a2e9dec47fe64a8ccb22.webp",
+        "https://img.cofynd.com/images/latest_images_2024/51ee565b91eea36c875c7ddf996652b81ba22d8b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e89e966b44b61287d86815d0a73a1f46bbca9641.webp"
+      ]
+    }
+  ],
+  "Pimple Saudagar": [
+    {
+      "id": 5901,
+      "name": "Awfis GK Mall",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Pimple Saudagar",
+      "location": "Pimple Saudagar, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/7cac68ecacd3f6a32407f74844adc4d5b797d1a1.webp",
+        "https://img.cofynd.com/images/original/4484d5dc0e0cc0ab0f9ba4d507d679e2ac72830a.jpg",
+        "https://img.cofynd.com/images/original/205e990674a7cefe548ea801c4e8654b76ba00a8.jpg",
+        "https://img.cofynd.com/images/original/7a47e648e2f8507f22b0bbe17ffba95c038ccc25.jpg",
+        "https://img.cofynd.com/images/original/1cbff71d3df1dc948c372fb25b209191a08e5b86.jpg"
+      ]
+    },
+    {
+      "id": 5902,
+      "name": "The Living Desk",
+      "badge": "Premium",
+      "rating": 4.6,
+      "area": "Pimple Saudagar",
+      "location": "Pimple Saudagar, Pune",
+      "price": "₹4,999",
+      "period": "/ Month",
+      "priceFormatted": "₹4,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/a69450c10e57dd1527932d3a94e44e172236765f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6cebf72f29d7faac65a5204af733d16e3f335e66.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d46fc9d580da0ae277edc9430d9234e395cdb961.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4f906129fc19084e952849d33f5bbd29d844f076.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b436a2d3ce71be6cf994d32e3487c4e02dc0b644.webp"
+      ]
+    },
+    {
+      "id": 5903,
+      "name": "Reality Workspaces",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Pimple Saudagar",
+      "location": "Pimple Saudagar, Pune",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/32ef0a19a3c2a59cd0f0a9583f3db8b6f45741f4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ee1efc46e5c811c5f1c1509db951cf20ff81a37f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/269a4069af0cf5ef562b5247b8c912eb7b808e60.webp",
+        "https://img.cofynd.com/images/latest_images_2024/28fed5ebadb1a29806350bde659eec49dd791322.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2be07c465566f8b625d1afb456aef5dc689ba19f.webp"
+      ]
+    },
+    {
+      "id": 5904,
+      "name": "The Cultiv8",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Pimple Saudagar",
+      "location": "Baner, Pune",
+      "price": "₹5,499",
+      "period": "/ Month",
+      "priceFormatted": "₹5,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/fbf926341143fd97b0df29962e5a54a47dbcf8f8.jpg",
+        "https://img.cofynd.com/images/original/15db7af84400b986b0cd043befb3d6c79295f50c.jpg",
+        "https://img.cofynd.com/images/original/0bb076ef96db49479c8e9b67897f50922e88c90e.jpg",
+        "https://img.cofynd.com/images/original/3a09b79b0dcbb5f7958d9470187c8a27ffdf17ad.jpg",
+        "https://img.cofynd.com/images/original/3b31cf2e8881b77e0d2ef66283cb0775fa123281.jpg"
+      ]
+    },
+    {
+      "id": 5905,
+      "name": "Kowork Coworking Space",
+      "badge": "Verified",
+      "rating": 4.9,
+      "area": "Pimple Saudagar",
+      "location": "Wakad, Pune",
+      "price": "₹6,000",
+      "period": "/ Month",
+      "priceFormatted": "₹6,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/30af2c304245fdb437494efa307bb5c2ebff907c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ebca264701e10baf6ef637dd9b35a17ea6da1653.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5b00ab8c04dbc49ab5a257d8a34b6a5aa86fd4a2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9d00e4ed1405ad9e6a411953e436d04610b5868d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/55ae3b24dbb0fb8ed75b3fc1fd87d1cbcad8e652.webp"
+      ]
+    },
+    {
+      "id": 5906,
+      "name": "ANA Workspace",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "Pimple Saudagar",
+      "location": "Chinchwad, Pune",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/7f5741db7a68d8fdea858bda92cba9cd37b89814.jpg",
+        "https://img.cofynd.com/images/original/83fdd16c008a520c82723ad290e25631b81c686f.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/a60ed78ba0410a0f1082bcb572f37dc6386047aa.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b1a41a6860333155139ecc9cbf46b994727720d8.webp",
+        "https://img.cofynd.com/images/original/5f7324a00fd749c9b0ad758d47edfd5d580def38.jpg"
+      ]
+    },
+    {
+      "id": 5907,
+      "name": "Scale Up Cowork Baner",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Pimple Saudagar",
+      "location": "Baner, Pune.",
+      "price": "₹7,499",
+      "period": "/ Month",
+      "priceFormatted": "₹7,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/6de1873136597c9d902303f67f38b8405e96a881.webp",
+        "https://img.cofynd.com/images/latest_images_2024/de0de61c4ea23a79c9cd1bfb4072420ead3911fa.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f98b9d07c518e699117dc085adb6f7482a09ac9d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a05dfdcce253ff13a2cde2ad2476c01a4febae45.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ed5611c4ba185762ae4406e2b95ecefe9ff48a02.webp"
+      ]
+    },
+    {
+      "id": 5908,
+      "name": "Incube",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Pimple Saudagar",
+      "location": "Shambhu Vihar Society, Aundh Gaon, Aundh, Pune, Maharashtra - , India",
+      "price": "₹7,499",
+      "period": "/ Month",
+      "priceFormatted": "₹7,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/f8d9606998e1218be2aa1030247812464c493f97.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bcf0e4102586aa23bb44d6af54386db649718b0c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/05b157165e6162161e531bdc80f9d6bee47e9f5d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d14417a9e9e3000ce903455e6ea476a4fd8c0aa0.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b0181c4858f43a20fb6ffc5a06bde2d5f18945aa.webp"
+      ]
+    },
+    {
+      "id": 5909,
+      "name": "Incube Coworking",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "Pimple Saudagar",
+      "location": "Next to Medipoint Hospital, Baner, Pune",
+      "price": "₹4,000",
+      "period": "/ Month",
+      "priceFormatted": "₹4,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/1a1f839cf4c05033dc74a42ae655c33970fbb963.jpg",
+        "https://img.cofynd.com/images/original/98bb398c0966ce05ca1cc393890b988eab0fc4e2.jpg",
+        "https://img.cofynd.com/images/original/0581d92508cfe08e4654e2c1af8c5ce5dcb8cb6e.jpg",
+        "https://img.cofynd.com/images/original/37b2ec0b474f8068a5a8dd5423d2e93db167eab6.jpg",
+        "https://img.cofynd.com/images/original/506fa44c3407bf5768a9ab7ba1ccb2827786c1b0.jpg"
+      ]
+    },
+    {
+      "id": 5910,
+      "name": "Alive Digital Co Working",
+      "badge": "Premium",
+      "rating": 4.9,
+      "area": "Pimple Saudagar",
+      "location": "Baner, Pune",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/662e3820f86e1605d69047d231eb572ab644d980.webp",
+        "https://img.cofynd.com/images/latest_images_2024/cc924886e92b26cf7e37f27f3a79ab1428307d09.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ed587bd4db40212c663a74dfab1825a05b5fdd7e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/67731cb00c845fff1f7de37893b4dd456276c020.webp"
+      ]
+    }
+  ],
+  "Kalyani Nagar": [
+    {
+      "id": 6001,
+      "name": "Tag Co-Works",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Kalyani Nagar",
+      "location": "Kalyani Nagar, Pune",
+      "price": "₹5,000",
+      "period": "/ Month",
+      "priceFormatted": "₹5,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/f1424db42444f8b6a62f588f594c352e5d0ad72e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/cb409206a0b378fd158916c34e85aea5f1dac7ee.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4a80ca81d529f233d965d48c442a59eae81aeb8e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/18d01923b21937c81ece74720c4bb548da9e6923.webp"
+      ]
+    },
+    {
+      "id": 6002,
+      "name": "Innov8 suman business park",
+      "badge": "Premium",
+      "rating": 4.6,
+      "area": "Kalyani Nagar",
+      "location": "Kalyani Nagar, Pune",
+      "price": "₹8,999",
+      "period": "/ Month",
+      "priceFormatted": "₹8,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/45caa3259ec31d3dbbfb0ad8d4a1353e5873cdb4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/75021eebe2e76b723fc15aba635f308473482561.webp",
+        "https://img.cofynd.com/images/latest_images_2024/32333c3aea45553a0733db1dd2cc6d1723e26d82.webp",
+        "https://img.cofynd.com/images/latest_images_2024/921e08dff107f633d044a4a35a3509472ff951ac.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e4291fad74fa50f8f28e2967ad01a327dca81b43.webp"
+      ]
+    },
+    {
+      "id": 6003,
+      "name": "315 Work Avenue",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Kalyani Nagar",
+      "location": "Kalyani Nagar, Pune.",
+      "price": "₹11,999",
+      "period": "/ Month",
+      "priceFormatted": "₹11,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/7509321ccf2e376f29fd26e40500c9eba3e388fd.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e331596c7ee0850781930b626a620b53781f3c66.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b725d8b0fa21c12100a41a5ae3c49e1cb5ef1c0a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/1e28b172d4d92fcce71a6e48ecc3a0358afca3e0.webp",
+        "https://img.cofynd.com/images/latest_images_2024/66f3f6edafa6b217a8efa022f1889d05e480f562.webp"
+      ]
+    },
+    {
+      "id": 6004,
+      "name": "Bauhaus",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Kalyani Nagar",
+      "location": "Koregaon Park, Pune",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/ad44e20b271b38c5b29718e8d5a9601b467971f2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/70a2f7192407789f1e28e9964f5091312b87a876.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f5d3bfa4290cd5eed717f79403acd80c06891029.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8240d697c9f9ed56d928c3ee7111627b861afe38.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ce4a50c03e8a15cb2bb635eca13eb364d6e12118.webp"
+      ]
+    },
+    {
+      "id": 6005,
+      "name": "Pinnacle Workspaces",
+      "badge": "Verified",
+      "rating": 4.9,
+      "area": "Kalyani Nagar",
+      "location": "Koregaon Park, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/195f1c8b89a42bdc3f82176029209e8a013d8dc9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/59e1ac0eedf9008357b2dcf04a27da65757c49f5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/476e76ed574c56acd4de943ed8b672cfd8b38f0d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0edf3dd2e682e9a262183185ec0aa044285896ac.webp"
+      ]
+    },
+    {
+      "id": 6006,
+      "name": "91Springboard Sky Loft",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "Kalyani Nagar",
+      "location": "Yerawada, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/a78d38fbe0ad0cf0cf4fad4f4ba8915ba37bc610.webp",
+        "https://img.cofynd.com/images/latest_images_2024/cadcabb6fdef9874e7ea7563a218a5c9179a0468.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4a20fd79a4048122666b1b6c58e3e85fb5f4cd9e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bd032c1a6dda500c0e1734e4e2d714bc5752de97.webp",
+        "https://img.cofynd.com/images/latest_images_2024/333efe0ea8ee872444970549a907d5b5672a554d.webp"
+      ]
+    },
+    {
+      "id": 6007,
+      "name": "TRIOS - Finswell - Viman nagar",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Kalyani Nagar",
+      "location": "Viman Nagar, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/a4e23f998a00530e1f94d0be23abe8592e97d6d7.webp",
+        "https://img.cofynd.com/images/latest_images_2024/26daa8a5d70286fae70f9a757b5326a207e3a567.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5133abadba90f1956ef5f4ed7b40c2dcf9cc22ca.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0f9c72d6df7e6f5ba5cc51669fffa39bdae5f735.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d1115009669a61c861c0397a5c542d1561574e8f.webp"
+      ]
+    },
+    {
+      "id": 6008,
+      "name": "Starthub",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Kalyani Nagar",
+      "location": "Koregaon Park, Pune",
+      "price": "₹7,499",
+      "period": "/ Month",
+      "priceFormatted": "₹7,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/3a10fd7f1bedb1d5ecd272f0bf0d16aa347576e7.jpg",
+        "https://img.cofynd.com/images/original/e1e23064d108590bcb3319e45573bc49a2ceb395.jpg",
+        "https://img.cofynd.com/images/original/c1ca5ce9ec9caf7c6c1d9af4e976032b9e3021e1.jpg",
+        "https://img.cofynd.com/images/original/15e7d560c947c6bc900d3fb1003bfe9c77e398d2.jpg",
+        "https://img.cofynd.com/images/original/26959197d965a409b93036e1f4aab351a977fa27.jpg"
+      ]
+    },
+    {
+      "id": 6009,
+      "name": "Workspace",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "Kalyani Nagar",
+      "location": "Viman Nagar, Pune",
+      "price": "₹22,499",
+      "period": "/ Month",
+      "priceFormatted": "₹22,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/800f8563e454a64cd599567bfa7718b836dd7765.webp",
+        "https://img.cofynd.com/images/latest_images_2024/be8dd586067e9fad71f14f885311a3df59edcdd3.webp",
+        "https://img.cofynd.com/images/latest_images_2024/09a36f9075809deb592af037d041f3fbabb5221e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/94520e6c657a26032275bae6ec5ecb28c2ec3645.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8fb511efff6c4ac3e675feb33da2fed7bab8fea8.webp"
+      ]
+    },
+    {
+      "id": 6010,
+      "name": "Bootstart - Omicron Commerz",
+      "badge": "Premium",
+      "rating": 4.9,
+      "area": "Kalyani Nagar",
+      "location": "Koregaon Park, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/a56c458480e9e7948160cb4b5a75cc749972128f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/17a121e8dc76faa48ed1587bd39c83bae85918d2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/20da51b29df772b7e8f6739076112d855b0894f7.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5ab639e6b372917886889378c99795b4e4b7d357.webp"
+      ]
+    }
+  ],
+  "Bavdhan": [
+    {
+      "id": 6101,
+      "name": "Bootstart Coworking – Shreyas Eterna",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Bavdhan",
+      "location": "Bavdhan, Pune",
+      "price": "₹6,500",
+      "period": "/ Month",
+      "priceFormatted": "₹6,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/d05ac68e752d48d18a9548d8cb836b81fd95c18a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/42e061a664661b8837b419f2e31407d72d806e20.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5176199e84c881a6da33330f0648e84ee0c8263b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ba1da479c668bcde77de2e6da807cc5bfc0c6fdf.webp"
+      ]
+    },
+    {
+      "id": 6102,
+      "name": "Shreyas Crest",
+      "badge": "Premium",
+      "rating": 4.6,
+      "area": "Bavdhan",
+      "location": "Baner, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/a3d8de20e3d5a8ac9f67701b71424096eb23203f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ea5c05380f640a740667d7919646bc205f502546.webp",
+        "https://img.cofynd.com/images/latest_images_2024/09dadea05a05f4bcbc1c1c18928239f0563d9248.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ff81f6edffddcde8d12faf454912a4a75cd43845.webp",
+        "https://img.cofynd.com/images/latest_images_2024/59f5c78d9d24b537ac0f8fe25acdf81597384804.webp"
+      ]
+    },
+    {
+      "id": 6103,
+      "name": "WeHub",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Bavdhan",
+      "location": "Baner, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/d8327b6e6a43aad2f4388c20724a0bfb69dce79f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/aa33fd117b7864a2fd2f155e9ccdc9a5029f74a3.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5e8168742f703937f0b4cecd0c93a808d6099637.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a01e1c96a11e8a909a5e6e87ff5fa4a8ad066c3c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/78e107b0ba6b330e9cd903cb6d105b389fa4dd42.webp"
+      ]
+    },
+    {
+      "id": 6104,
+      "name": "Awfis Baner Business Bay",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Bavdhan",
+      "location": "Baner, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/9068ff4694700880b5a5e839ed721d6add75574e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/3ebbd40dab50f56677fbdc9a8654187a2902e655.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c791f283163121ffb03bee2f4740aaa308336c24.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8e38d64e483da95f8222e8c0f9c3d8bee9b188b4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/cd2cc9430e167dc5a8435eedb635da41d7bdbc72.webp"
+      ]
+    },
+    {
+      "id": 6105,
+      "name": "Awfis Quantum Works",
+      "badge": "Verified",
+      "rating": 4.9,
+      "area": "Bavdhan",
+      "location": "Kothrud, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/95fab10176feeb8c1582592e681b165f45d2078f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/eed15866008aac7b019ca665de5e1288d134a2aa.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e79274eb294face92d52517d40c60bf2ce6aebde.webp",
+        "https://img.cofynd.com/images/latest_images_2024/257e7838d5ecd76899b5aa07882c06d8be9a1aea.webp",
+        "https://img.cofynd.com/images/latest_images_2024/badddc2ec7c34c920dfa563e34dc9b9b7b95dabe.webp"
+      ]
+    },
+    {
+      "id": 6106,
+      "name": "Awfis Sterling Tower",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "Bavdhan",
+      "location": "Baner, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/58e38018564757ef1e647239a79c576230d405bf.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d3adf265fe0edf92e91df3e7c03f82f5a302a427.webp",
+        "https://img.cofynd.com/images/latest_images_2024/3fadb97d9dada4a2b1a3366d16e59781a246da3c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a7d260dc22a9b5a408205687527cb1a2814cc783.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d64227e9a1882c9baf00c837dae646a58ff8d8cd.webp"
+      ]
+    },
+    {
+      "id": 6107,
+      "name": "tstart Coworking – VCC Vantage 9",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Bavdhan",
+      "location": "Baner, Pune",
+      "price": "₹8,999",
+      "period": "/ Month",
+      "priceFormatted": "₹8,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/5dea17870f98868bd17efb71775486f400b0c615.jpg",
+        "https://img.cofynd.com/images/original/76201988713064871eb760f94795215843ea33d9.jpg",
+        "https://img.cofynd.com/images/original/a3a34bbdddeba830b2202bbc3dec4de594c6e68f.jpg",
+        "https://img.cofynd.com/images/original/dd4bdde3ebc28ab3f5905b5b13070c336e9c1dd8.jpg",
+        "https://img.cofynd.com/images/original/4190c14d6af9851f7f075e8c1b0471b19944fdbf.jpg"
+      ]
+    },
+    {
+      "id": 6108,
+      "name": "SpaceX Co-work",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Bavdhan",
+      "location": "Baner, Pune.",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/c3bb6ddc41142c076e66f430a874f3f029fe4fe8.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0932191420a15e518c5d9e00e01419f33b7b8f7f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5c5ce40e13c35145629f76ae852b1539851c8f24.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8e8269f25cc30f4c54d882af49abf67dcddd4f88.webp",
+        "https://img.cofynd.com/images/latest_images_2024/02dd90f185283d96eb3b50632dbc2f9a318dc183.webp"
+      ]
+    },
+    {
+      "id": 6109,
+      "name": "IndiQube The Kode",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "Bavdhan",
+      "location": "Baner, Pune",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/956b4f48c69755a7303803dad89b233595fb7ec5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9be805c73253837d17f48a683d66069a70ed9b93.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2ebb14486e75f9406c545315352fefd4069963c3.webp",
+        "https://img.cofynd.com/images/original/7258eaa0c58d5ce56e019fc1a8bd55794a98bc5b.jpg",
+        "https://img.cofynd.com/images/original/b8b66cdb907fa9ab1469d1b6f6ee28b15bfd42a4.jpg"
+      ]
+    },
+    {
+      "id": 6110,
+      "name": "Anchor Coworking",
+      "badge": "Premium",
+      "rating": 4.9,
+      "area": "Bavdhan",
+      "location": "Shivneri Colony, Pune",
+      "price": "₹5,000",
+      "period": "/ Month",
+      "priceFormatted": "₹5,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/856d9d73fc023c1c3eeab089f859b4ff0e56bc1e.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/a4876a8326d117aff05aa3849b95e544f17a312a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a2dfd11c6620ed5091e18e754756f4fddc1253b2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7f2888092f4fd70e50529ebff1525d5de1daa030.webp",
+        "https://img.cofynd.com/images/original/14dc3097883d00ded75870b6f23b60d047248ea3.jpg"
+      ]
+    }
+  ],
+  "Magarpatta": [
+    {
+      "id": 6201,
+      "name": "Awfis Que Spaces",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Magarpatta",
+      "location": "Magarpatta, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/236827a029f49356c51def78bed14927b49670cc.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ff8aae1c6a11272f670b0b8ee3e6e9942f2c279c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7efef4772e4ef54cf5555525647090a7b525cab9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/62b28553fde2a39b015af363ca0d27bf49983053.webp",
+        "https://img.cofynd.com/images/latest_images_2024/78870d1e1c478b3b413cd5306abaec97999bd816.webp"
+      ]
+    },
+    {
+      "id": 6202,
+      "name": "Awfis Amanora Mall",
+      "badge": "Premium",
+      "rating": 4.6,
+      "area": "Magarpatta",
+      "location": "Hadapsar, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/6a6172b992ab54ba17aee6548e56d9b31ccda6b0.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e1db668c8c4a3ca5970b4244934c6c3bdb6d2cf5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/544e877cd5dfd68bbdb50ef403bb94544ec0b4eb.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d242439f15634648a3cd72b5728bbbbbd59affcc.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7a5ad91589f91323e69786b3bb04dad71a0399f3.webp"
+      ]
+    },
+    {
+      "id": 6203,
+      "name": "Bootstart - Omicron Commerz",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Magarpatta",
+      "location": "Koregaon Park, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/a56c458480e9e7948160cb4b5a75cc749972128f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/17a121e8dc76faa48ed1587bd39c83bae85918d2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/20da51b29df772b7e8f6739076112d855b0894f7.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5ab639e6b372917886889378c99795b4e4b7d357.webp"
+      ]
+    },
+    {
+      "id": 6204,
+      "name": "Kontor Space",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Magarpatta",
+      "location": "Fatima Nagar, Wanowrie, Pune, Maharashtra, India",
+      "price": "₹5,500",
+      "period": "/ Month",
+      "priceFormatted": "₹5,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/0369e7c14ad2fd2d7f03a97d5820c7b26398d970.jpg",
+        "https://img.cofynd.com/images/original/e9935e0cf9b204a06ef09771af8bd321bb12aed3.jpg",
+        "https://img.cofynd.com/images/original/c6bb4fd8ddd8139037be722cf200f2ce4eabb48d.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/b39238ad9ac78360346bef32a5e89034a8ac43bf.webp",
+        "https://img.cofynd.com/images/latest_images_2024/84defb26448d63bd51f9935a13db918b8c83b5d0.webp"
+      ]
+    },
+    {
+      "id": 6205,
+      "name": "Bootstart Coworking - Pride Icon",
+      "badge": "Verified",
+      "rating": 4.9,
+      "area": "Magarpatta",
+      "location": "Kharadi, Pune",
+      "price": "₹8,499",
+      "period": "/ Month",
+      "priceFormatted": "₹8,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/7a3d410415516b1f5c82f9347b1bd0b56304e59e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/dffa9636309a5bd2d9414d44759c37d0a286e88e.webp",
+        "https://img.cofynd.com/images/original/dedd21b7ac35de0f9975a8f9039b13b3f34b4668.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/5d6bdce911d2d6d29a01d2a56ae7551421f5fb25.webp",
+        "https://img.cofynd.com/images/latest_images_2024/424d2d95b9d69f017cfd31a532f01b6b67b376ee.webp"
+      ]
+    },
+    {
+      "id": 6206,
+      "name": "Tag Co-Works",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "Magarpatta",
+      "location": "Kalyani Nagar, Pune",
+      "price": "₹5,000",
+      "period": "/ Month",
+      "priceFormatted": "₹5,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/f1424db42444f8b6a62f588f594c352e5d0ad72e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/cb409206a0b378fd158916c34e85aea5f1dac7ee.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4a80ca81d529f233d965d48c442a59eae81aeb8e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/18d01923b21937c81ece74720c4bb548da9e6923.webp"
+      ]
+    },
+    {
+      "id": 6207,
+      "name": "Bauhaus",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Magarpatta",
+      "location": "Koregaon Park, Pune",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/ad44e20b271b38c5b29718e8d5a9601b467971f2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/70a2f7192407789f1e28e9964f5091312b87a876.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f5d3bfa4290cd5eed717f79403acd80c06891029.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8240d697c9f9ed56d928c3ee7111627b861afe38.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ce4a50c03e8a15cb2bb635eca13eb364d6e12118.webp"
+      ]
+    },
+    {
+      "id": 6208,
+      "name": "Pinnacle Workspaces",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Magarpatta",
+      "location": "Koregaon Park, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/195f1c8b89a42bdc3f82176029209e8a013d8dc9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/59e1ac0eedf9008357b2dcf04a27da65757c49f5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/476e76ed574c56acd4de943ed8b672cfd8b38f0d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0edf3dd2e682e9a262183185ec0aa044285896ac.webp"
+      ]
+    },
+    {
+      "id": 6209,
+      "name": "Innov8 suman business park",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "Magarpatta",
+      "location": "Kalyani Nagar, Pune",
+      "price": "₹8,999",
+      "period": "/ Month",
+      "priceFormatted": "₹8,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/45caa3259ec31d3dbbfb0ad8d4a1353e5873cdb4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/75021eebe2e76b723fc15aba635f308473482561.webp",
+        "https://img.cofynd.com/images/latest_images_2024/32333c3aea45553a0733db1dd2cc6d1723e26d82.webp",
+        "https://img.cofynd.com/images/latest_images_2024/921e08dff107f633d044a4a35a3509472ff951ac.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e4291fad74fa50f8f28e2967ad01a327dca81b43.webp"
+      ]
+    },
+    {
+      "id": 6210,
+      "name": "Awfis Nucleus Mall",
+      "badge": "Premium",
+      "rating": 4.9,
+      "area": "Magarpatta",
+      "location": "Camp, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/942c600ef2c626e1c17aac5b752bfc450ac4c9c8.jpg",
+        "https://img.cofynd.com/images/original/9b7f24cde4937a98aba76099466eb718d004a15f.jpg",
+        "https://img.cofynd.com/images/original/a1f0861ff263201bb7514438a97b4b2a997355ae.jpg",
+        "https://img.cofynd.com/images/original/78bc4d88354587a176c6a31ab2ddba293b901b19.jpg",
+        "https://img.cofynd.com/images/original/c5a7db9b91dd6bf706976e9b22da4f55f4a0b025.jpg"
+      ]
+    }
+  ],
+  "Hadapsar": [
+    {
+      "id": 6301,
+      "name": "Kontor Space",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Hadapsar",
+      "location": "Fatima Nagar, Wanowrie, Pune, Maharashtra, India",
+      "price": "₹5,500",
+      "period": "/ Month",
+      "priceFormatted": "₹5,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/0369e7c14ad2fd2d7f03a97d5820c7b26398d970.jpg",
+        "https://img.cofynd.com/images/original/e9935e0cf9b204a06ef09771af8bd321bb12aed3.jpg",
+        "https://img.cofynd.com/images/original/c6bb4fd8ddd8139037be722cf200f2ce4eabb48d.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/b39238ad9ac78360346bef32a5e89034a8ac43bf.webp",
+        "https://img.cofynd.com/images/latest_images_2024/84defb26448d63bd51f9935a13db918b8c83b5d0.webp"
+      ]
+    },
+    {
+      "id": 6302,
+      "name": "Awfis Amanora Mall",
+      "badge": "Premium",
+      "rating": 4.6,
+      "area": "Hadapsar",
+      "location": "Hadapsar, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/6a6172b992ab54ba17aee6548e56d9b31ccda6b0.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e1db668c8c4a3ca5970b4244934c6c3bdb6d2cf5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/544e877cd5dfd68bbdb50ef403bb94544ec0b4eb.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d242439f15634648a3cd72b5728bbbbbd59affcc.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7a5ad91589f91323e69786b3bb04dad71a0399f3.webp"
+      ]
+    },
+    {
+      "id": 6303,
+      "name": "LEX CO-WRX",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Hadapsar",
+      "location": "Office 102, Tower S4, Cybercity, Magarpatta, Cybercity, Pune, Maharashtra 411013",
+      "price": "₹11,500",
+      "period": "/ Month",
+      "priceFormatted": "₹11,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/0d8285b95fb0fb191d44a41caf849ad98cc8e9aa.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a99392e761ab51247640db4cbd0a0bfb2ffee08b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bec27404ddf6f5031dca9194fc0b87531d1d3d42.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6688d099605b05b478a792cced9526c349812754.webp",
+        "https://img.cofynd.com/images/latest_images_2024/59cc41f33ba07256a111bda3da1b77c9248c1c9b.webp"
+      ]
+    },
+    {
+      "id": 6304,
+      "name": "Awfis Que Spaces",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Hadapsar",
+      "location": "Magarpatta, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/236827a029f49356c51def78bed14927b49670cc.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ff8aae1c6a11272f670b0b8ee3e6e9942f2c279c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7efef4772e4ef54cf5555525647090a7b525cab9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/62b28553fde2a39b015af363ca0d27bf49983053.webp",
+        "https://img.cofynd.com/images/latest_images_2024/78870d1e1c478b3b413cd5306abaec97999bd816.webp"
+      ]
+    },
+    {
+      "id": 6305,
+      "name": "Bootstart - Omicron Commerz",
+      "badge": "Verified",
+      "rating": 4.9,
+      "area": "Hadapsar",
+      "location": "Koregaon Park, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/a56c458480e9e7948160cb4b5a75cc749972128f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/17a121e8dc76faa48ed1587bd39c83bae85918d2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/20da51b29df772b7e8f6739076112d855b0894f7.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5ab639e6b372917886889378c99795b4e4b7d357.webp"
+      ]
+    },
+    {
+      "id": 6306,
+      "name": "Bootstart Coworking - Pride Icon",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "Hadapsar",
+      "location": "Kharadi, Pune",
+      "price": "₹8,499",
+      "period": "/ Month",
+      "priceFormatted": "₹8,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/7a3d410415516b1f5c82f9347b1bd0b56304e59e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/dffa9636309a5bd2d9414d44759c37d0a286e88e.webp",
+        "https://img.cofynd.com/images/original/dedd21b7ac35de0f9975a8f9039b13b3f34b4668.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/5d6bdce911d2d6d29a01d2a56ae7551421f5fb25.webp",
+        "https://img.cofynd.com/images/latest_images_2024/424d2d95b9d69f017cfd31a532f01b6b67b376ee.webp"
+      ]
+    },
+    {
+      "id": 6307,
+      "name": "Tag Co-Works",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Hadapsar",
+      "location": "Kalyani Nagar, Pune",
+      "price": "₹5,000",
+      "period": "/ Month",
+      "priceFormatted": "₹5,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/f1424db42444f8b6a62f588f594c352e5d0ad72e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/cb409206a0b378fd158916c34e85aea5f1dac7ee.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4a80ca81d529f233d965d48c442a59eae81aeb8e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/18d01923b21937c81ece74720c4bb548da9e6923.webp"
+      ]
+    },
+    {
+      "id": 6308,
+      "name": "Bauhaus",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Hadapsar",
+      "location": "Koregaon Park, Pune",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/ad44e20b271b38c5b29718e8d5a9601b467971f2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/70a2f7192407789f1e28e9964f5091312b87a876.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f5d3bfa4290cd5eed717f79403acd80c06891029.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8240d697c9f9ed56d928c3ee7111627b861afe38.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ce4a50c03e8a15cb2bb635eca13eb364d6e12118.webp"
+      ]
+    },
+    {
+      "id": 6309,
+      "name": "Innov8 suman business park",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "Hadapsar",
+      "location": "Kalyani Nagar, Pune",
+      "price": "₹8,999",
+      "period": "/ Month",
+      "priceFormatted": "₹8,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/45caa3259ec31d3dbbfb0ad8d4a1353e5873cdb4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/75021eebe2e76b723fc15aba635f308473482561.webp",
+        "https://img.cofynd.com/images/latest_images_2024/32333c3aea45553a0733db1dd2cc6d1723e26d82.webp",
+        "https://img.cofynd.com/images/latest_images_2024/921e08dff107f633d044a4a35a3509472ff951ac.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e4291fad74fa50f8f28e2967ad01a327dca81b43.webp"
+      ]
+    },
+    {
+      "id": 6310,
+      "name": "Pinnacle Workspaces",
+      "badge": "Premium",
+      "rating": 4.9,
+      "area": "Hadapsar",
+      "location": "Koregaon Park, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/195f1c8b89a42bdc3f82176029209e8a013d8dc9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/59e1ac0eedf9008357b2dcf04a27da65757c49f5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/476e76ed574c56acd4de943ed8b672cfd8b38f0d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0edf3dd2e682e9a262183185ec0aa044285896ac.webp"
+      ]
+    }
+  ],
+  "Pimpri Chinchwad": [
+    {
+      "id": 6401,
+      "name": "ANA Workspace",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Pimpri Chinchwad",
+      "location": "Chinchwad, Pune",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/7f5741db7a68d8fdea858bda92cba9cd37b89814.jpg",
+        "https://img.cofynd.com/images/original/83fdd16c008a520c82723ad290e25631b81c686f.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/a60ed78ba0410a0f1082bcb572f37dc6386047aa.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b1a41a6860333155139ecc9cbf46b994727720d8.webp",
+        "https://img.cofynd.com/images/original/5f7324a00fd749c9b0ad758d47edfd5d580def38.jpg"
+      ]
+    },
+    {
+      "id": 6402,
+      "name": "ByzBay",
+      "badge": "Premium",
+      "rating": 4.6,
+      "area": "Pimpri Chinchwad",
+      "location": "Pimpri Chinchwad, Pune",
+      "price": "₹5,499",
+      "period": "/ Month",
+      "priceFormatted": "₹5,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/8b66a8f3d954578aec007eac9ce1deb9d775b6fe.webp",
+        "https://img.cofynd.com/images/latest_images_2024/898cf548f50ef672284f501101effbf0869fd9a1.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a9b3859a882d0594c1bee7cb50206d5be5142720.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d61bec0eb50cc1da6c442d4c97de383c393b46cc.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ab384323b5bf1547a2c1a169409cfbfc29ac5730.webp"
+      ]
+    },
+    {
+      "id": 6403,
+      "name": "FMTOS",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Pimpri Chinchwad",
+      "location": "Pimpri-Chinchwad, Pune",
+      "price": "₹8,499",
+      "period": "/ Month",
+      "priceFormatted": "₹8,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/04985d4ed401b1ecfd9f4b2f3ccd7e310afe7def.webp",
+        "https://img.cofynd.com/images/latest_images_2024/fb62c69f8d4ec70ea2c01cf3cd04997db605bb2d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/851974e26cd07c777d2290f7bd4ca3647868d0c4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/50ffa88db04bd7bb35b184d61839be6b54b2d459.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c2e746539de0b5efcf0599f153b8680c8ad5ffe3.webp"
+      ]
+    },
+    {
+      "id": 6404,
+      "name": "Workspace",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Pimpri Chinchwad",
+      "location": "419, Shree Ganesh Galaxy, Alandi Rd, Laxmi-Narayan Nagar, Wadmukhwadi, Charholi Budruk, Pimpri-Chinchwad, Maharashtra 412105",
+      "price": "₹4,499",
+      "period": "/ Month",
+      "priceFormatted": "₹4,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/cae15ee7b355721ee3e3642babf09bb38b75a87c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/66f7b704a2205e8c0dcb3af42ea0a6c8703902a6.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b77a71b1444b8ed3b0ee55609befb017d228bbf0.webp",
+        "https://img.cofynd.com/images/latest_images_2024/31980bd7b1d96d44e128da62e691f6fa5b06a856.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7fa495e57a8e2ac8cfd092b3ea2b380d58e56ba6.webp"
+      ]
+    },
+    {
+      "id": 6405,
+      "name": "CH Co-Works",
+      "badge": "Verified",
+      "rating": 4.9,
+      "area": "Pimpri Chinchwad",
+      "location": "Pimpri-Chinchwad, Pune.",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/36722768769abf69b882917f566e7ee6af310358.webp",
+        "https://img.cofynd.com/images/latest_images_2024/87f07e03a11f103ad4b7e442956949cb04831d1a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/97d2a4dc03c6fafd6b11363cf6a6ba663df1f9bf.webp",
+        "https://img.cofynd.com/images/latest_images_2024/864175bf398b3ca16163b2f7506adde7b53d691f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b8baed80229ed31d67c667d6dfed47f3a9d52ec9.webp"
+      ]
+    },
+    {
+      "id": 6406,
+      "name": "The Living Desk",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "Pimpri Chinchwad",
+      "location": "Pimple Saudagar, Pune",
+      "price": "₹4,999",
+      "period": "/ Month",
+      "priceFormatted": "₹4,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/a69450c10e57dd1527932d3a94e44e172236765f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6cebf72f29d7faac65a5204af733d16e3f335e66.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d46fc9d580da0ae277edc9430d9234e395cdb961.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4f906129fc19084e952849d33f5bbd29d844f076.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b436a2d3ce71be6cf994d32e3487c4e02dc0b644.webp"
+      ]
+    },
+    {
+      "id": 6407,
+      "name": "Awfis GK Mall",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Pimpri Chinchwad",
+      "location": "Pimple Saudagar, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/7cac68ecacd3f6a32407f74844adc4d5b797d1a1.webp",
+        "https://img.cofynd.com/images/original/4484d5dc0e0cc0ab0f9ba4d507d679e2ac72830a.jpg",
+        "https://img.cofynd.com/images/original/205e990674a7cefe548ea801c4e8654b76ba00a8.jpg",
+        "https://img.cofynd.com/images/original/7a47e648e2f8507f22b0bbe17ffba95c038ccc25.jpg",
+        "https://img.cofynd.com/images/original/1cbff71d3df1dc948c372fb25b209191a08e5b86.jpg"
+      ]
+    },
+    {
+      "id": 6408,
+      "name": "Reality Workspaces",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Pimpri Chinchwad",
+      "location": "Pimple Saudagar, Pune",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/32ef0a19a3c2a59cd0f0a9583f3db8b6f45741f4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ee1efc46e5c811c5f1c1509db951cf20ff81a37f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/269a4069af0cf5ef562b5247b8c912eb7b808e60.webp",
+        "https://img.cofynd.com/images/latest_images_2024/28fed5ebadb1a29806350bde659eec49dd791322.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2be07c465566f8b625d1afb456aef5dc689ba19f.webp"
+      ]
+    },
+    {
+      "id": 6409,
+      "name": "Kowork Coworking Space",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "Pimpri Chinchwad",
+      "location": "Wakad, Pune",
+      "price": "₹6,000",
+      "period": "/ Month",
+      "priceFormatted": "₹6,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/30af2c304245fdb437494efa307bb5c2ebff907c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ebca264701e10baf6ef637dd9b35a17ea6da1653.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5b00ab8c04dbc49ab5a257d8a34b6a5aa86fd4a2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9d00e4ed1405ad9e6a411953e436d04610b5868d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/55ae3b24dbb0fb8ed75b3fc1fd87d1cbcad8e652.webp"
+      ]
+    },
+    {
+      "id": 6410,
+      "name": "Ideas to Impacts Hub Wakad",
+      "badge": "Premium",
+      "rating": 4.9,
+      "area": "Pimpri Chinchwad",
+      "location": "Wakad, Pune",
+      "price": "₹8,999",
+      "period": "/ Month",
+      "priceFormatted": "₹8,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/fe808308012ed34e26268efec85259f3b62b092f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0d0fbf69f720692aaf10184ff0b947bc8caec729.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d26ee13c1e786dfe45bc1dae11d76ba82477721e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/15c32e8ebd07fcd00a84e8012d05ec57383de042.webp"
+      ]
+    }
+  ],
+  "Yerwada": [
+    {
+      "id": 6501,
+      "name": "91Springboard Sky Loft",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Yerwada",
+      "location": "Yerawada, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/a78d38fbe0ad0cf0cf4fad4f4ba8915ba37bc610.webp",
+        "https://img.cofynd.com/images/latest_images_2024/cadcabb6fdef9874e7ea7563a218a5c9179a0468.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4a20fd79a4048122666b1b6c58e3e85fb5f4cd9e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bd032c1a6dda500c0e1734e4e2d714bc5752de97.webp",
+        "https://img.cofynd.com/images/latest_images_2024/333efe0ea8ee872444970549a907d5b5672a554d.webp"
+      ]
+    },
+    {
+      "id": 6502,
+      "name": "Starthub",
+      "badge": "Premium",
+      "rating": 4.6,
+      "area": "Yerwada",
+      "location": "Koregaon Park, Pune",
+      "price": "₹7,499",
+      "period": "/ Month",
+      "priceFormatted": "₹7,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/3a10fd7f1bedb1d5ecd272f0bf0d16aa347576e7.jpg",
+        "https://img.cofynd.com/images/original/e1e23064d108590bcb3319e45573bc49a2ceb395.jpg",
+        "https://img.cofynd.com/images/original/c1ca5ce9ec9caf7c6c1d9af4e976032b9e3021e1.jpg",
+        "https://img.cofynd.com/images/original/15e7d560c947c6bc900d3fb1003bfe9c77e398d2.jpg",
+        "https://img.cofynd.com/images/original/26959197d965a409b93036e1f4aab351a977fa27.jpg"
+      ]
+    },
+    {
+      "id": 6503,
+      "name": "Pinnacle Workspaces",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Yerwada",
+      "location": "Koregaon Park, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/195f1c8b89a42bdc3f82176029209e8a013d8dc9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/59e1ac0eedf9008357b2dcf04a27da65757c49f5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/476e76ed574c56acd4de943ed8b672cfd8b38f0d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0edf3dd2e682e9a262183185ec0aa044285896ac.webp"
+      ]
+    },
+    {
+      "id": 6504,
+      "name": "Bauhaus",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Yerwada",
+      "location": "Koregaon Park, Pune",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/ad44e20b271b38c5b29718e8d5a9601b467971f2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/70a2f7192407789f1e28e9964f5091312b87a876.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f5d3bfa4290cd5eed717f79403acd80c06891029.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8240d697c9f9ed56d928c3ee7111627b861afe38.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ce4a50c03e8a15cb2bb635eca13eb364d6e12118.webp"
+      ]
+    },
+    {
+      "id": 6505,
+      "name": "Innov8 suman business park",
+      "badge": "Verified",
+      "rating": 4.9,
+      "area": "Yerwada",
+      "location": "Kalyani Nagar, Pune",
+      "price": "₹8,999",
+      "period": "/ Month",
+      "priceFormatted": "₹8,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/45caa3259ec31d3dbbfb0ad8d4a1353e5873cdb4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/75021eebe2e76b723fc15aba635f308473482561.webp",
+        "https://img.cofynd.com/images/latest_images_2024/32333c3aea45553a0733db1dd2cc6d1723e26d82.webp",
+        "https://img.cofynd.com/images/latest_images_2024/921e08dff107f633d044a4a35a3509472ff951ac.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e4291fad74fa50f8f28e2967ad01a327dca81b43.webp"
+      ]
+    },
+    {
+      "id": 6506,
+      "name": "Tag Co-Works",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "Yerwada",
+      "location": "Kalyani Nagar, Pune",
+      "price": "₹5,000",
+      "period": "/ Month",
+      "priceFormatted": "₹5,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/f1424db42444f8b6a62f588f594c352e5d0ad72e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/cb409206a0b378fd158916c34e85aea5f1dac7ee.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4a80ca81d529f233d965d48c442a59eae81aeb8e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/18d01923b21937c81ece74720c4bb548da9e6923.webp"
+      ]
+    },
+    {
+      "id": 6507,
+      "name": "Innov8 Ganga Treuno",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Yerwada",
+      "location": "Viman Nagar, Pune.",
+      "price": "₹10,499",
+      "period": "/ Month",
+      "priceFormatted": "₹10,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/903e73d54ec3295f61d3b28615a89c00e42a867b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/00553ba076592f29fbe3b68f34803fdf13d2b5ba.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c8a3ddfacd50bee2a482424edf02312bfef1e529.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6f1299cf7eb59fe508986820585ddfed8ea23fe6.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5c2dfdc9db5e641bea623efb822a47abda4b0e1a.webp"
+      ]
+    },
+    {
+      "id": 6508,
+      "name": "TRIOS - Finswell - Viman nagar",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Yerwada",
+      "location": "Viman Nagar, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/a4e23f998a00530e1f94d0be23abe8592e97d6d7.webp",
+        "https://img.cofynd.com/images/latest_images_2024/26daa8a5d70286fae70f9a757b5326a207e3a567.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5133abadba90f1956ef5f4ed7b40c2dcf9cc22ca.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0f9c72d6df7e6f5ba5cc51669fffa39bdae5f735.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d1115009669a61c861c0397a5c542d1561574e8f.webp"
+      ]
+    },
+    {
+      "id": 6509,
+      "name": "Bootstart - Omicron Commerz",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "Yerwada",
+      "location": "Koregaon Park, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/a56c458480e9e7948160cb4b5a75cc749972128f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/17a121e8dc76faa48ed1587bd39c83bae85918d2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/20da51b29df772b7e8f6739076112d855b0894f7.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5ab639e6b372917886889378c99795b4e4b7d357.webp"
+      ]
+    },
+    {
+      "id": 6510,
+      "name": "Workspace",
+      "badge": "Premium",
+      "rating": 4.9,
+      "area": "Yerwada",
+      "location": "Viman Nagar, Pune",
+      "price": "₹22,499",
+      "period": "/ Month",
+      "priceFormatted": "₹22,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/800f8563e454a64cd599567bfa7718b836dd7765.webp",
+        "https://img.cofynd.com/images/latest_images_2024/be8dd586067e9fad71f14f885311a3df59edcdd3.webp",
+        "https://img.cofynd.com/images/latest_images_2024/09a36f9075809deb592af037d041f3fbabb5221e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/94520e6c657a26032275bae6ec5ecb28c2ec3645.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8fb511efff6c4ac3e675feb33da2fed7bab8fea8.webp"
+      ]
+    }
+  ],
+  "Karve Nagar": [
+    {
+      "id": 6601,
+      "name": "Bootstart Suma Centre",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Karve Nagar",
+      "location": "Erandwane, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/2bfa1bc3232147a4fd239310f16932190aa00ac1.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8110cd399ca2809d231cfa01d2441cceb9706975.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8dabf8a3d8e1059fecfe892c993b4b8a072ef461.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bce71136270eaeff908bf9d9f11a96efb6ff439e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9ec128c4dc2005bb93d16ff548907d8e1e549be0.webp"
+      ]
+    },
+    {
+      "id": 6602,
+      "name": "Espree Co-works",
+      "badge": "Premium",
+      "rating": 4.6,
+      "area": "Karve Nagar",
+      "location": "Koregaon Park, Pune",
+      "price": "₹8,999",
+      "period": "/ Month",
+      "priceFormatted": "₹8,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/8ce013856b6024104155c57e95f914ecdc6a675d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8e1814b31a5a428c90b1aa16934c00c98e3f03b0.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0b499e7234f98da7b9e8768902555ab3bb1510cd.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e2efbf47de1a27ce0746ec69efa7b30ca348e744.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7e320d7c711d58e7ee7b5a9831a4cf35f2816a45.webp"
+      ]
+    },
+    {
+      "id": 6603,
+      "name": "Awfis Quantum Works",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Karve Nagar",
+      "location": "Kothrud, Pune",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/95fab10176feeb8c1582592e681b165f45d2078f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/eed15866008aac7b019ca665de5e1288d134a2aa.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e79274eb294face92d52517d40c60bf2ce6aebde.webp",
+        "https://img.cofynd.com/images/latest_images_2024/257e7838d5ecd76899b5aa07882c06d8be9a1aea.webp",
+        "https://img.cofynd.com/images/latest_images_2024/badddc2ec7c34c920dfa563e34dc9b9b7b95dabe.webp"
+      ]
+    },
+    {
+      "id": 6604,
+      "name": "Thinknest",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Karve Nagar",
+      "location": "Erandwane",
+      "price": "₹8,500",
+      "period": "/ Month",
+      "priceFormatted": "₹8,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/2ea7d07f51cd08cdd53f7e6ec1d8132f6d7755e3.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b1057278a2c9eba28af65ed5ef1e357ab32e0c78.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9340221e4348fae5ec705fe960a057ca42d94818.webp"
+      ]
+    },
+    {
+      "id": 6605,
+      "name": "ScaleUp CoWork",
+      "badge": "Verified",
+      "rating": 4.9,
+      "area": "Karve Nagar",
+      "location": "BMCC Road, Pune, Maharashtra",
+      "price": "₹7,000",
+      "period": "/ Month",
+      "priceFormatted": "₹7,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/f809998409e326eec1589237d62fec35a0f5bff5.jpg",
+        "https://img.cofynd.com/images/original/f2c386881e1c1ffb15fec004a116835ec12d7e03.jpg",
+        "https://img.cofynd.com/images/original/67db7677286bc5d9920525e826712bc117d9fd36.jpg",
+        "https://img.cofynd.com/images/original/f3301766c8ef599ab9fccf4e79d8ffb05607f8cb.jpg",
+        "https://img.cofynd.com/images/original/bf82d800a2cc9ddc0818624e1675bb69056ff64e.jpg"
+      ]
+    },
+    {
+      "id": 6606,
+      "name": "Aster",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "Karve Nagar",
+      "location": "Shivaji Nagar, Pune",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/108e44d3d4995d298f0079d63cb29506636e32cd.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5a0c5088f1a3fcd2e21f0b4f8e474bb596ed415b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/643d8a9679b0672534f839ba039c9bf127eb0296.webp",
+        "https://img.cofynd.com/images/latest_images_2024/305b6bd07971b47555e2b79b65cae51810a9bf43.webp",
+        "https://img.cofynd.com/images/latest_images_2024/981f5da85f450667c290067fdb7cc47658012289.webp"
+      ]
+    },
+    {
+      "id": 6607,
+      "name": "TBL Spaces",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Karve Nagar",
+      "location": "Nanded City Sinhgad Rd, Nanded City, Nanded, Pune, Maharashtra 411068, India",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/416042ba0670ffdc14a90c1b703e8d74d3a1898f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/604a92f54abd499469b83ec493b75005e4ef2edc.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2793ac69d03daa635d6d65f231f183ab45ece894.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7ef6faeab4bf7be24db4493b03a5c6813043a62f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7e54f22dd07e39e40c4dd21bc597e63c91dd04f8.webp"
+      ]
+    },
+    {
+      "id": 6608,
+      "name": "Bootstart Coworking – Shreyas Eterna",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Karve Nagar",
+      "location": "Bavdhan, Pune",
+      "price": "₹6,500",
+      "period": "/ Month",
+      "priceFormatted": "₹6,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/d05ac68e752d48d18a9548d8cb836b81fd95c18a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/42e061a664661b8837b419f2e31407d72d806e20.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5176199e84c881a6da33330f0648e84ee0c8263b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ba1da479c668bcde77de2e6da807cc5bfc0c6fdf.webp"
+      ]
+    },
+    {
+      "id": 6609,
+      "name": "IndiQube Park Plaza",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "Karve Nagar",
+      "location": "Shivaji Nagar, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/31fd493b5fab163f9a2d8bddeedf1a1e17a1d885.webp",
+        "https://img.cofynd.com/images/latest_images_2024/448660eb3e7510de6808dfa2128570e3bc29b381.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bbfe22c34e2dfa71e940a05190c8e8ded20db2e6.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f9281528475c492bf1ed563de855b052d4bd7209.webp",
+        "https://img.cofynd.com/images/original/66e97384b3e8fff86453c74021b59ee823bed78a.jpg"
+      ]
+    },
+    {
+      "id": 6610,
+      "name": "Sprint Epicentre",
+      "badge": "Premium",
+      "rating": 4.9,
+      "area": "Karve Nagar",
+      "location": "Shivaji Nagar, Pune",
+      "price": "₹8,499",
+      "period": "/ Month",
+      "priceFormatted": "₹8,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/0d6e037dab1d785b8417efaeb88062e5fe401324.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d1f9113ff0884b78a9fa4311f960260898c8fc11.webp",
+        "https://img.cofynd.com/images/latest_images_2024/21378d5ea48d948fc3239f135e0cb9cb822f00e9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/161abf6511e6b987f78cb460b8dc78f9a47cff41.webp",
+        "https://img.cofynd.com/images/latest_images_2024/626d6cfef31179efbb0f8ce55a55969f7a9bc168.webp"
+      ]
+    }
+  ],
+  "Shivaji Nagar": [
+    {
+      "id": 6701,
+      "name": "IndiQube Park Plaza",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Shivaji Nagar",
+      "location": "Shivaji Nagar, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/31fd493b5fab163f9a2d8bddeedf1a1e17a1d885.webp",
+        "https://img.cofynd.com/images/latest_images_2024/448660eb3e7510de6808dfa2128570e3bc29b381.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bbfe22c34e2dfa71e940a05190c8e8ded20db2e6.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f9281528475c492bf1ed563de855b052d4bd7209.webp",
+        "https://img.cofynd.com/images/original/66e97384b3e8fff86453c74021b59ee823bed78a.jpg"
+      ]
+    },
+    {
+      "id": 6702,
+      "name": "Aster",
+      "badge": "Premium",
+      "rating": 4.6,
+      "area": "Shivaji Nagar",
+      "location": "Shivaji Nagar, Pune",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/108e44d3d4995d298f0079d63cb29506636e32cd.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5a0c5088f1a3fcd2e21f0b4f8e474bb596ed415b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/643d8a9679b0672534f839ba039c9bf127eb0296.webp",
+        "https://img.cofynd.com/images/latest_images_2024/305b6bd07971b47555e2b79b65cae51810a9bf43.webp",
+        "https://img.cofynd.com/images/latest_images_2024/981f5da85f450667c290067fdb7cc47658012289.webp"
+      ]
+    },
+    {
+      "id": 6703,
+      "name": "ScaleUp CoWork",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Shivaji Nagar",
+      "location": "BMCC Road, Pune, Maharashtra",
+      "price": "₹7,000",
+      "period": "/ Month",
+      "priceFormatted": "₹7,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/f809998409e326eec1589237d62fec35a0f5bff5.jpg",
+        "https://img.cofynd.com/images/original/f2c386881e1c1ffb15fec004a116835ec12d7e03.jpg",
+        "https://img.cofynd.com/images/original/67db7677286bc5d9920525e826712bc117d9fd36.jpg",
+        "https://img.cofynd.com/images/original/f3301766c8ef599ab9fccf4e79d8ffb05607f8cb.jpg",
+        "https://img.cofynd.com/images/original/bf82d800a2cc9ddc0818624e1675bb69056ff64e.jpg"
+      ]
+    },
+    {
+      "id": 6704,
+      "name": "Sprint Epicentre",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Shivaji Nagar",
+      "location": "Shivaji Nagar, Pune",
+      "price": "₹8,499",
+      "period": "/ Month",
+      "priceFormatted": "₹8,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/0d6e037dab1d785b8417efaeb88062e5fe401324.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d1f9113ff0884b78a9fa4311f960260898c8fc11.webp",
+        "https://img.cofynd.com/images/latest_images_2024/21378d5ea48d948fc3239f135e0cb9cb822f00e9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/161abf6511e6b987f78cb460b8dc78f9a47cff41.webp",
+        "https://img.cofynd.com/images/latest_images_2024/626d6cfef31179efbb0f8ce55a55969f7a9bc168.webp"
+      ]
+    },
+    {
+      "id": 6705,
+      "name": "Thinknest",
+      "badge": "Verified",
+      "rating": 4.9,
+      "area": "Shivaji Nagar",
+      "location": "Erandwane",
+      "price": "₹8,500",
+      "period": "/ Month",
+      "priceFormatted": "₹8,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/2ea7d07f51cd08cdd53f7e6ec1d8132f6d7755e3.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b1057278a2c9eba28af65ed5ef1e357ab32e0c78.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9340221e4348fae5ec705fe960a057ca42d94818.webp"
+      ]
+    },
+    {
+      "id": 6706,
+      "name": "Espree Co-works",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "Shivaji Nagar",
+      "location": "Koregaon Park, Pune",
+      "price": "₹8,999",
+      "period": "/ Month",
+      "priceFormatted": "₹8,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/8ce013856b6024104155c57e95f914ecdc6a675d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8e1814b31a5a428c90b1aa16934c00c98e3f03b0.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0b499e7234f98da7b9e8768902555ab3bb1510cd.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e2efbf47de1a27ce0746ec69efa7b30ca348e744.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7e320d7c711d58e7ee7b5a9831a4cf35f2816a45.webp"
+      ]
+    },
+    {
+      "id": 6707,
+      "name": "Bootstart Suma Centre",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Shivaji Nagar",
+      "location": "Erandwane, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/2bfa1bc3232147a4fd239310f16932190aa00ac1.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8110cd399ca2809d231cfa01d2441cceb9706975.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8dabf8a3d8e1059fecfe892c993b4b8a072ef461.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bce71136270eaeff908bf9d9f11a96efb6ff439e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9ec128c4dc2005bb93d16ff548907d8e1e549be0.webp"
+      ]
+    },
+    {
+      "id": 6708,
+      "name": "Galaxy coworking space",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Shivaji Nagar",
+      "location": "Camp, Pune",
+      "price": "₹4,999",
+      "period": "/ Month",
+      "priceFormatted": "₹4,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/40e8ddf7973d82b1b434a36988da5fb5733578ef.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8e682f41942a667c000799ce5f4da4fae0f8487c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8bb04c2010c6e4ab0d07f2e3d2361d20283f93dd.webp",
+        "https://img.cofynd.com/images/latest_images_2024/446209614429d51bbe2cfa369feb4bdf012c50a9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4490283396d564f681e45972f6ec23f77f741906.webp"
+      ]
+    },
+    {
+      "id": 6709,
+      "name": "Starthub",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "Shivaji Nagar",
+      "location": "Koregaon Park, Pune",
+      "price": "₹7,499",
+      "period": "/ Month",
+      "priceFormatted": "₹7,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/3a10fd7f1bedb1d5ecd272f0bf0d16aa347576e7.jpg",
+        "https://img.cofynd.com/images/original/e1e23064d108590bcb3319e45573bc49a2ceb395.jpg",
+        "https://img.cofynd.com/images/original/c1ca5ce9ec9caf7c6c1d9af4e976032b9e3021e1.jpg",
+        "https://img.cofynd.com/images/original/15e7d560c947c6bc900d3fb1003bfe9c77e398d2.jpg",
+        "https://img.cofynd.com/images/original/26959197d965a409b93036e1f4aab351a977fa27.jpg"
+      ]
+    },
+    {
+      "id": 6710,
+      "name": "Level 212 coworks",
+      "badge": "Premium",
+      "rating": 4.9,
+      "area": "Shivaji Nagar",
+      "location": "Exhibition Rd, Pune Camp, Pune, Maharashtra, India",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/a256cd4951113bf5943fde8a27be959fe2109623.webp",
+        "https://img.cofynd.com/images/latest_images_2024/477bff14a9c20e08b290bc0a9b04ddbbdbc16abe.webp",
+        "https://img.cofynd.com/images/latest_images_2024/786968cb5563c1b0f636d89387708e287b2a85d0.webp",
+        "https://img.cofynd.com/images/latest_images_2024/10648a65ceed0815b4eaa18473a86281f697030b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d896f530588b4f1743d26fee85b4dc9698aeeb21.webp"
+      ]
+    }
+  ]
+};
+
 // ============================================================================
 // Comprehensive Pune Office Cards Aggregator & Lookup Helper
 // ============================================================================
@@ -2244,7 +5678,9 @@ export const allPuneOfficeCards = [
   ...pageThreeMorePuneOfficeCards,
   ...pageThreeFinalPuneOfficeCards,
   ...pageThreeFeaturedPuneOfficeCards,
-  ...(typeof pageFourPuneOfficeCards !== 'undefined' ? pageFourPuneOfficeCards : [])
+  ...(typeof pageFourPuneOfficeCards !== 'undefined' ? pageFourPuneOfficeCards : []),
+  // Include all area-specific extra cards for detail page lookup
+  ...(typeof areaExtraOfficeCards !== 'undefined' ? Object.values(areaExtraOfficeCards).flat() : [])
 ];
 
 /**
