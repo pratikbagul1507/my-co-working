@@ -17,7 +17,8 @@ import { puneNeighborhoods,
     pageThreePuneOfficeCards,
     pageThreeMorePuneOfficeCards,
     pageThreeFinalPuneOfficeCards,
-    pageThreeFeaturedPuneOfficeCards
+    pageThreeFeaturedPuneOfficeCards,
+    pageFourPuneOfficeCards
    } from './puneData.js';
 
 /**
@@ -196,7 +197,7 @@ const Pune = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const activeTopSpaces = currentPage === 2 ? pageTwoPuneOfficeCards : currentPage === 3 ? pageThreePuneOfficeCards : puneOfficeCards;
+  const activeTopSpaces = currentPage === 1 ?puneOfficeCards : currentPage === 2 ? pageTwoPuneOfficeCards : currentPage === 3 ? pageThreePuneOfficeCards: currentPage === 4 ? pageFourPuneOfficeCards : "";
 
   const displayedSpaces = selectedNeighborhood
     ? activeTopSpaces.filter(
@@ -206,7 +207,7 @@ const Pune = () => {
       )
     : activeTopSpaces;
 
-  const activeMoreSpaces = currentPage === 2 ? pageTwoMorePuneOfficeCards : currentPage === 3 ? pageThreeMorePuneOfficeCards : morePuneOfficeCards;
+  const activeMoreSpaces = currentPage === 1 ?morePuneOfficeCards : currentPage === 2 ? pageTwoMorePuneOfficeCards : currentPage === 3 ? pageThreeMorePuneOfficeCards : "";
 
   const displayedMoreSpaces = selectedNeighborhood
     ? activeMoreSpaces.filter(
@@ -216,7 +217,7 @@ const Pune = () => {
       )
     : activeMoreSpaces;
 
-  const activeFinalSpaces = currentPage === 2 ? pageTwoFinalPuneOfficeCards : currentPage === 3 ? pageThreeFinalPuneOfficeCards : finalPuneOfficeCards;
+  const activeFinalSpaces = currentPage === 1 ?finalPuneOfficeCards : currentPage === 2 ? pageTwoFinalPuneOfficeCards : currentPage === 3 ? pageThreeFinalPuneOfficeCards : "";
 
   const displayedFinalSpaces = selectedNeighborhood
     ? activeFinalSpaces.filter(
@@ -226,7 +227,7 @@ const Pune = () => {
       )
     : activeFinalSpaces;
 
-const activeOfficeCards = currentPage === 2 ? pageTwoFeaturedPuneOfficeCards : currentPage === 3 ? pageThreeFeaturedPuneOfficeCards : featuredPuneOfficeCards; 
+const activeOfficeCards = currentPage === 1 ?featuredPuneOfficeCards : currentPage === 2 ? pageTwoFeaturedPuneOfficeCards : currentPage === 3 ? pageThreeFeaturedPuneOfficeCards : ""; 
 
 const displayedFeaturedSpaces = selectedNeighborhood 
   ? activeOfficeCards.filter((space) => 
