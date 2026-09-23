@@ -20,6 +20,7 @@ import LucknowPage from './pages/lucknow/Lucknow';
 import MumbaiPage from './pages/mumbai/Mumbai';
 import NoidaPage from './pages/noida/Noida';
 import PunePage from './pages/pune/Pune';
+import PuneOfficeDetail from './pages/pune/OfficeDetail';
 
 const App = () => {
   return (
@@ -45,6 +46,7 @@ const App = () => {
         <Route path="/coworking/mumbai" element={<MumbaiPage />} />
         <Route path="/coworking/noida" element={<NoidaPage />} />
         <Route path="/coworking/pune" element={<PunePage />} />
+        <Route path="/coworking/pune/:id" element={<PuneOfficeDetail />} />
         <Route path="*" element={<Homepage />} />
       </Routes>
     </div>

@@ -18,7 +18,8 @@ import { puneNeighborhoods,
     pageThreeMorePuneOfficeCards,
     pageThreeFinalPuneOfficeCards,
     pageThreeFeaturedPuneOfficeCards,
-    pageFourPuneOfficeCards
+    pageFourPuneOfficeCards,
+    topPuneCoworkingLocations
    } from './puneData.js';
 
 /**
@@ -78,8 +79,17 @@ const OfficeCard = ({ space }) => {
     }
   };
 
+  const handleCardClick = (event) => {
+    // Avoid triggering if clicked on inner action buttons
+    if (event.target.closest('button')) return;
+    window.open(`/coworking/pune/${space.id}`, '_blank', 'noopener,noreferrer');
+  };
+
   return (
-    <article className="group bg-white rounded-xl border border-slate-100 shadow-xs hover:shadow-md transition-shadow duration-300 flex flex-col overflow-hidden">
+    <article
+      onClick={handleCardClick}
+      className="group bg-white rounded-xl border border-slate-100 shadow-xs hover:shadow-md transition-shadow duration-300 flex flex-col overflow-hidden cursor-pointer"
+    >
       {/* Media slider block */}
       <figure className="relative w-full aspect-[16/10] overflow-hidden bg-slate-100 select-none">
         {/* Absolute badge overlay */}
@@ -149,8 +159,16 @@ const OfficeCard = ({ space }) => {
         <div>
           {/* Header Row: Office Name & Star Rating */}
           <div className="flex items-start justify-between gap-2">
-            <h3 className="text-sm font-bold text-slate-900 leading-snug line-clamp-1">
-              {space.name}
+            <h3 className="text-sm font-bold text-slate-900 leading-snug line-clamp-1 group-hover:text-[#007bff] transition-colors">
+              <a
+                href={`/coworking/pune/${space.id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="hover:underline"
+              >
+                {space.name}
+              </a>
             </h3>
             {space.rating ? (
               <div className="flex items-center gap-1 shrink-0 text-xs font-bold text-amber-500">
@@ -174,6 +192,10 @@ const OfficeCard = ({ space }) => {
           </div>
           <button
             type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              window.open(`/coworking/pune/${space.id}`, '_blank', 'noopener,noreferrer');
+            }}
             className="bg-[#007bff] hover:bg-blue-600 active:scale-95 text-white text-xs font-semibold px-3 py-1.5 rounded-[4px] shadow-2xs transition-all cursor-pointer"
           >
             {space.ctaText}
@@ -195,6 +217,16 @@ const Pune = () => {
     if (page < 1 || page > paginationData.totalPages || page === currentPage) return;
     setCurrentPage(page);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleLocationClick = (locationName) => {
+    setSelectedNeighborhood((prev) => (prev?.toLowerCase() === locationName.toLowerCase() ? null : locationName));
+    const headerElement = document.getElementById('coworking-listings-header');
+    if (headerElement) {
+      headerElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      window.scrollTo({ top: 200, behavior: 'smooth' });
+    }
   };
 
   const activeTopSpaces = currentPage === 1 ?puneOfficeCards : currentPage === 2 ? pageTwoPuneOfficeCards : currentPage === 3 ? pageThreePuneOfficeCards: currentPage === 4 ? pageFourPuneOfficeCards : "";
@@ -256,7 +288,7 @@ const displayedFeaturedSpaces = selectedNeighborhood
       </nav>
 
       {/* Header Section: Title and Filter Controls */}
-      <header className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
+      <header id="coworking-listings-header" className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
         <h1 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
           Coworking Spaces In Pune
         </h1>

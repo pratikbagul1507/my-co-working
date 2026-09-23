@@ -2228,22 +2228,109 @@ export const pageFourPuneOfficeCards = [
   }
 ];
 
-// export default {
-//   neighborhoods: puneNeighborhoods,
-//   officeCards: puneOfficeCards,
-//   moreOfficeCards: morePuneOfficeCards,
-//   finalOfficeCards: finalPuneOfficeCards,
-//   featuredOfficeCards: featuredPuneOfficeCards,
-//   pageTwoOfficeCards: pageTwoPuneOfficeCards,
-//   pageTwoMoreOfficeCards: pageTwoMorePuneOfficeCards,
-//   pageTwoFinalOfficeCards: pageTwoFinalPuneOfficeCards,
-//   pageTwoFeaturedOfficeCards: pageTwoFeaturedPuneOfficeCards,
-//   allOfficeCards: allPuneOfficeCards,
-//   areas: puneNeighborhoods,
-//   spaces: puneOfficeCards,
-//   officeSolutions,
-//   perfectWorkspaceBanner,
-//   customizedOfficeBanner,
-//   stillNotFindingBanner,
-//   paginationData
-// };
+// ============================================================================
+// Comprehensive Pune Office Cards Aggregator & Lookup Helper
+// ============================================================================
+export const allPuneOfficeCards = [
+  ...puneOfficeCards,
+  ...morePuneOfficeCards,
+  ...finalPuneOfficeCards,
+  ...featuredPuneOfficeCards,
+  ...pageTwoPuneOfficeCards,
+  ...pageTwoMorePuneOfficeCards,
+  ...pageTwoFinalPuneOfficeCards,
+  ...pageTwoFeaturedPuneOfficeCards,
+  ...pageThreePuneOfficeCards,
+  ...pageThreeMorePuneOfficeCards,
+  ...pageThreeFinalPuneOfficeCards,
+  ...pageThreeFeaturedPuneOfficeCards,
+  ...(typeof pageFourPuneOfficeCards !== 'undefined' ? pageFourPuneOfficeCards : [])
+];
+
+/**
+ * Find a Pune office card by ID across all pagination pages
+ * @param {string|number} id
+ * @returns {object|null}
+ */
+export const getPuneOfficeCardById = (id) => {
+  const numericId = Number(id);
+  return allPuneOfficeCards.find((card) => card.id === numericId) || null;
+};
+
+// ============================================================================
+// Top Coworking Locations in Pune (Explore by Neighborhood)
+// Sourced from verified active coworking spaces in each key hub
+// ============================================================================
+export const topPuneCoworkingLocations = [
+  {
+    id: 'loc-baner',
+    name: 'Baner',
+    title: 'Coworking Space in Baner',
+    image: 'https://img.cofynd.com/images/latest_images_2024/b51cfb296e1d87a35723c9d4a3b957be96ea73cd.webp',
+    ctaText: 'Explore Spaces'
+  },
+  {
+    id: 'loc-kharadi',
+    name: 'Kharadi',
+    title: 'Coworking Space in Kharadi',
+    image: 'https://img.cofynd.com/images/latest_images_2024/a36d09bad7175ca9643ad8e88f77462bd8ec36e1.webp',
+    ctaText: 'Explore Spaces'
+  },
+  {
+    id: 'loc-viman-nagar',
+    name: 'Viman Nagar',
+    title: 'Coworking Space in Viman Nagar',
+    image: 'https://img.cofynd.com/images/latest_images_2024/8a42a52f0d08b1fe8fbc67d8a16ee3a22553597b.webp',
+    ctaText: 'Explore Spaces'
+  },
+  {
+    id: 'loc-koregaon-park',
+    name: 'Koregaon Park',
+    title: 'Coworking Space in Koregaon Park',
+    image: 'https://img.cofynd.com/images/latest_images_2024/323979251e5458d1485f20d1ff9fcc33b230dfb8.webp',
+    ctaText: 'Explore Spaces'
+  },
+  {
+    id: 'loc-wakad',
+    name: 'Wakad',
+    title: 'Coworking Space in Wakad',
+    image: 'https://img.cofynd.com/images/latest_images_2024/d72385e6df621c44142ed89e03ee20dd32220d9d.webp',
+    ctaText: 'Explore Spaces'
+  },
+  {
+    id: 'loc-balewadi',
+    name: 'Balewadi',
+    title: 'Coworking Space in Balewadi',
+    image: 'https://img.cofynd.com/images/latest_images_2024/1288e19a7b909ea9ebbe71a2fa95c50736afc7c7.webp',
+    ctaText: 'Explore Spaces'
+  },
+  {
+    id: 'loc-hinjewadi',
+    name: 'Hinjewadi',
+    title: 'Coworking Space in Hinjewadi',
+    image: 'https://img.cofynd.com/images/latest_images_2024/ad7fa46d9bdb766ddb3da837e007525c9d1a0a11.webp',
+    ctaText: 'Explore Spaces'
+  },
+  {
+    id: 'loc-kothrud',
+    name: 'Kothrud',
+    title: 'Coworking Space in Kothrud',
+    image: 'https://img.cofynd.com/images/latest_images_2024/d0477af6807946ce717972841b30b7b5613cdfb9.webp',
+    ctaText: 'Explore Spaces'
+  },
+  {
+    id: 'loc-aundh',
+    name: 'Aundh',
+    title: 'Coworking Space in Aundh',
+    image: 'https://img.cofynd.com/images/latest_images_2024/a65d621179742f9abdf246d47ca5ed37d4afc550.webp',
+    ctaText: 'Explore Spaces'
+  },
+  {
+    id: 'loc-pimple-saudagar',
+    name: 'Pimple Saudagar',
+    title: 'Coworking Space in Pimple Saudagar',
+    image: 'https://img.cofynd.com/images/latest_images_2024/a87f477a78e4651b34c63890a6f9a119e33262b4.webp',
+    ctaText: 'Explore Spaces'
+  }
+];
+
