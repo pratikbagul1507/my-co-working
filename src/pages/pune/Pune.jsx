@@ -1,6 +1,24 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { puneNeighborhoods, puneOfficeCards, morePuneOfficeCards, officeSolutions, perfectWorkspaceBanner } from './puneData.js';
+import { puneNeighborhoods,
+   puneOfficeCards,
+   morePuneOfficeCards,
+   finalPuneOfficeCards, 
+   featuredPuneOfficeCards,
+    pageTwoPuneOfficeCards, 
+    pageTwoMorePuneOfficeCards, 
+    pageTwoFinalPuneOfficeCards, 
+    pageTwoFeaturedPuneOfficeCards, 
+    officeSolutions, 
+    perfectWorkspaceBanner, 
+    customizedOfficeBanner, 
+    stillNotFindingBanner, 
+    paginationData,
+    pageThreePuneOfficeCards,
+    pageThreeMorePuneOfficeCards,
+    pageThreeFinalPuneOfficeCards,
+    pageThreeFeaturedPuneOfficeCards
+   } from './puneData.js';
 
 /**
  * Individual Coworking Space Card with isolated multi-image sliding closure mechanism
@@ -170,18 +188,53 @@ const OfficeCard = ({ space }) => {
  */
 const Pune = () => {
   const [selectedNeighborhood, setSelectedNeighborhood] = useState(null);
+  const [currentPage, setCurrentPage] = useState(paginationData.initialPage || 1);
+
+  const handlePageChange = (page) => {
+    if (page < 1 || page > paginationData.totalPages || page === currentPage) return;
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const activeTopSpaces = currentPage === 2 ? pageTwoPuneOfficeCards : currentPage === 3 ? pageThreePuneOfficeCards : puneOfficeCards;
 
   const displayedSpaces = selectedNeighborhood
-    ? puneOfficeCards.filter(
-        (space) => space.area.toLowerCase() === selectedNeighborhood.toLowerCase()
+    ? activeTopSpaces.filter(
+        (space) =>
+          space.area.toLowerCase() === selectedNeighborhood.toLowerCase() ||
+          space.location.toLowerCase().includes(selectedNeighborhood.toLowerCase())
       )
-    : puneOfficeCards;
+    : activeTopSpaces;
+
+  const activeMoreSpaces = currentPage === 2 ? pageTwoMorePuneOfficeCards : currentPage === 3 ? pageThreeMorePuneOfficeCards : morePuneOfficeCards;
 
   const displayedMoreSpaces = selectedNeighborhood
-    ? morePuneOfficeCards.filter(
-        (space) => space.area.toLowerCase() === selectedNeighborhood.toLowerCase()
+    ? activeMoreSpaces.filter(
+        (space) =>
+          space.area.toLowerCase() === selectedNeighborhood.toLowerCase() ||
+          space.location.toLowerCase().includes(selectedNeighborhood.toLowerCase())
       )
-    : morePuneOfficeCards;
+    : activeMoreSpaces;
+
+  const activeFinalSpaces = currentPage === 2 ? pageTwoFinalPuneOfficeCards : currentPage === 3 ? pageThreeFinalPuneOfficeCards : finalPuneOfficeCards;
+
+  const displayedFinalSpaces = selectedNeighborhood
+    ? activeFinalSpaces.filter(
+        (space) =>
+          space.area.toLowerCase() === selectedNeighborhood.toLowerCase() ||
+          space.location.toLowerCase().includes(selectedNeighborhood.toLowerCase())
+      )
+    : activeFinalSpaces;
+
+const activeOfficeCards = currentPage === 2 ? pageTwoFeaturedPuneOfficeCards : currentPage === 3 ? pageThreeFeaturedPuneOfficeCards : featuredPuneOfficeCards; 
+
+const displayedFeaturedSpaces = selectedNeighborhood 
+  ? activeOfficeCards.filter((space) => 
+      space.area.toLowerCase() === selectedNeighborhood.toLowerCase() || 
+      space.location.toLowerCase().includes(selectedNeighborhood.toLowerCase())
+    ) 
+  : activeOfficeCards;
+
 
   return (
     <main className="w-full min-h-screen bg-[#fafbfc] px-4 py-4 sm:px-8 sm:py-6 lg:px-12 antialiased font-sans">
@@ -373,6 +426,151 @@ const Pune = () => {
           </button>
         </div>
       </section>
+
+      {/* Section: Spotlight Coworking Spaces Grid */}
+      {displayedFinalSpaces.length > 0 && (
+        <section aria-label="Spotlight coworking spaces list" className="mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+            {displayedFinalSpaces.map((space) => (
+              <OfficeCard key={space.id} space={space} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Section: Customized Office Solutions Banner */}
+      <section
+        aria-label="Customized office solutions"
+        className="w-full rounded-2xl overflow-hidden mb-12 shadow-xs relative bg-cover bg-right bg-no-repeat min-h-[190px] sm:min-h-[220px] md:min-h-[240px] flex items-center border border-blue-100/60"
+        style={{
+          backgroundImage: `url(${customizedOfficeBanner.bgImage})`
+        }}
+      >
+        {/* Soft light blue gradient overlay on left fading smoothly into photo on right */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#e3f4fc] via-[#e3f4fc]/95 sm:via-[#e3f4fc]/85 to-transparent pointer-events-none"></div>
+
+        <div className="relative z-10 px-6 sm:px-10 md:px-12 py-8 sm:py-10 max-w-2xl">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 leading-tight mb-4 tracking-tight">
+            {customizedOfficeBanner.title}
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-6 sm:gap-x-10 mb-6">
+            {customizedOfficeBanner.features.map((feature) => (
+              <div key={feature.id} className="flex items-center gap-2.5">
+                <span className="w-5 h-5 rounded-full bg-[#027fff] flex items-center justify-center shrink-0 shadow-2xs">
+                  <svg className="w-3 h-3 text-white" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <polyline points="3.5 8.5 6.5 11.5 12.5 4.5" />
+                  </svg>
+                </span>
+                <span className="text-xs sm:text-sm text-slate-800 font-medium">
+                  {feature.text}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          <button
+            type="button"
+            className="bg-[#027fff] hover:bg-blue-600 active:scale-95 text-white text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-lg shadow-xs transition-all w-fit cursor-pointer"
+          >
+            {customizedOfficeBanner.ctaText}
+          </button>
+        </div>
+      </section>
+
+      {/* Section: Featured Coworking Spaces Grid */}
+      {displayedFeaturedSpaces.length > 0 && (
+        <section aria-label="Featured coworking spaces list" className="mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+            {displayedFeaturedSpaces.map((space) => (
+              <OfficeCard key={space.id} space={space} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Section: Still Not Finding Coworking Space Banner */}
+      <section
+        aria-label="Still not able to find coworking space"
+        className="w-full rounded-2xl overflow-hidden mb-8 shadow-xs relative bg-cover bg-right bg-no-repeat min-h-[170px] sm:min-h-[190px] md:min-h-[210px] flex items-center border border-blue-100/60"
+        style={{
+          backgroundImage: `url(${stillNotFindingBanner.bgImage})`
+        }}
+      >
+        {/* Soft light blue gradient overlay on left fading smoothly into photo on right */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#eaf4fb] via-[#eaf4fb]/95 sm:via-[#eaf4fb]/85 to-transparent pointer-events-none"></div>
+
+        <div className="relative z-10 px-6 sm:px-10 md:px-12 py-8 sm:py-10 max-w-xl">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 leading-tight mb-2 tracking-tight">
+            {stillNotFindingBanner.title}
+          </h2>
+          <p className="text-xs sm:text-sm text-slate-600 mb-6 leading-relaxed max-w-md">
+            {stillNotFindingBanner.subtitle}
+          </p>
+          <button
+            type="button"
+            className="bg-[#007bff] hover:bg-blue-600 active:scale-95 text-white text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-lg shadow-xs transition-all w-fit cursor-pointer"
+          >
+            {stillNotFindingBanner.ctaText}
+          </button>
+        </div>
+      </section>
+
+      {/* Section: Pagination Controls */}
+      <nav aria-label="Coworking spaces pagination" className="flex items-center justify-center my-8">
+        <div className="inline-flex items-center rounded-md border border-slate-200 shadow-2xs overflow-hidden bg-white text-xs sm:text-sm">
+          {/* Previous Button */}
+          <button
+            type="button"
+            disabled={currentPage === 1}
+            onClick={() => handlePageChange(currentPage - 1)}
+            aria-label="Previous page"
+            className={`px-3.5 py-2 font-medium border-r border-slate-200 transition-colors ${
+              currentPage === 1
+                ? 'text-slate-300 cursor-not-allowed bg-slate-50/50'
+                : 'text-slate-700 hover:bg-slate-50 hover:text-blue-600 cursor-pointer'
+            }`}
+          >
+            Previous
+          </button>
+
+          {/* Page Number Buttons */}
+          {Array.from({ length: paginationData.totalPages }, (_, index) => index + 1).map((page) => {
+            const isActive = currentPage === page;
+            return (
+              <button
+                key={`pagination-page-${page}`}
+                type="button"
+                onClick={() => handlePageChange(page)}
+                aria-current={isActive ? 'page' : undefined}
+                aria-label={`Page ${page}`}
+                className={`min-w-[38px] py-2 font-semibold border-r border-slate-200 transition-colors text-center ${
+                  isActive
+                    ? 'bg-[#007bff] text-white cursor-default'
+                    : 'text-slate-700 hover:bg-slate-50 hover:text-blue-600 cursor-pointer'
+                }`}
+              >
+                {page}
+              </button>
+            );
+          })}
+
+          {/* Next Button */}
+          <button
+            type="button"
+            disabled={currentPage === paginationData.totalPages}
+            onClick={() => handlePageChange(currentPage + 1)}
+            aria-label="Next page"
+            className={`px-3.5 py-2 font-medium transition-colors ${
+              currentPage === paginationData.totalPages
+                ? 'text-slate-300 cursor-not-allowed bg-slate-50/50'
+                : 'text-slate-700 hover:bg-slate-50 hover:text-blue-600 cursor-pointer'
+            }`}
+          >
+            Next
+          </button>
+        </div>
+      </nav>
     </main>
   );
 };
