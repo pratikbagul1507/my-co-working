@@ -604,6 +604,71 @@ const displayedFeaturedSpaces = selectedNeighborhood
           </button>
         </div>
       </nav>
+
+      {/* Section: Explore Top Coworking Locations in Pune */}
+      <section aria-label="Explore top coworking locations in Pune" className="my-10 pt-4 border-t border-slate-200/80">
+        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-5">
+          Explore Top Coworking Locations in Pune
+        </h2>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5 sm:gap-4.5">
+          {topPuneCoworkingLocations.map((location) => {
+            const isSelected = selectedNeighborhood?.toLowerCase() === location.name.toLowerCase();
+            return (
+              <div
+                key={location.id}
+                role="button"
+                tabIndex={0}
+                aria-pressed={isSelected}
+                onClick={() => handleLocationClick(location.name)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    handleLocationClick(location.name);
+                  }
+                }}
+                className={`group bg-white rounded-lg border overflow-hidden shadow-2xs hover:shadow-md transition-all duration-200 cursor-pointer flex flex-col ${
+                  isSelected
+                    ? 'border-blue-600 ring-2 ring-blue-500/20 shadow-xs'
+                    : 'border-slate-200 hover:border-blue-300'
+                }`}
+              >
+                {/* Location Image */}
+                <div className="relative h-32 sm:h-36 w-full overflow-hidden bg-slate-100">
+                  <img
+                    src={location.image}
+                    alt={`Coworking spaces in ${location.name}`}
+                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  {isSelected && (
+                    <span className="absolute top-2 right-2 bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-xs">
+                      Selected
+                    </span>
+                  )}
+                </div>
+
+                {/* Location Content */}
+                <div className="p-3 sm:p-3.5 flex flex-col flex-1 justify-between bg-white">
+                  <div>
+                    <p className="text-xs sm:text-[13px] text-slate-600 leading-snug font-normal">
+                      Coworking Space in
+                    </p>
+                    <h3 className="text-sm sm:text-[15px] font-bold text-slate-900 leading-tight mt-0.5">
+                      {location.name}
+                    </h3>
+                  </div>
+
+                  <div className="mt-3 pt-2 border-t border-slate-50 flex items-center gap-1.5 text-xs font-semibold text-blue-600 group-hover:text-blue-700 transition-colors">
+                    <span>{location.ctaText}</span>
+                    <span className="text-[11px] group-hover:translate-x-0.5 transition-transform" aria-hidden="true">→</span>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
     </main>
   );
 };
