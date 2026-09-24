@@ -56,13 +56,13 @@ const Navbar = () => {
           </span>
         </Link>
 
-        {/* 3. Desktop Contact Info Box: hidden on mobile (< xl), visible on wide screens */}
-        <div className="hidden xl:flex items-center border border-slate-200 rounded-lg px-3 py-1.5 space-x-3 text-xs font-medium text-slate-700 shrink-0">
-          <a href="tel:+919028760011" className="flex items-center space-x-1.5 hover:text-blue-600 transition-colors border-r border-slate-200 pr-3">
+        {/* 3. Desktop Contact Info Box: visible on large screens (lg+) */}
+        <div className="hidden lg:flex items-center border border-slate-200 rounded-lg px-2.5 sm:px-3 py-1.5 space-x-2.5 sm:space-x-3 text-xs font-medium text-slate-700 shrink-0">
+          <a href="tel:+919028760011" className="flex items-center space-x-1.5 hover:text-blue-600 transition-colors border-r border-slate-200 pr-2.5 sm:pr-3">
             <svg className="w-3.5 h-3.5 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 24 24">
               <path d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27 11.72 11.72 0 003.74.6 1 1 0 011 1v3.59a1 1 0 01-1 1A16 16 0 013 4a1 1 0 011-1h3.59a1 1 0 011 1 11.72 11.72 0 00.6 3.74 1 1 0 01-.27 1.1l-2.2 2.2z"/>
             </svg>
-            <span className="font-semibold">9028 760011</span>
+            <span className="font-semibold">+91 9028760011</span>
           </a>
           <a href="mailto:info@mycoworking.in" className="flex items-center space-x-1.5 hover:text-blue-600 transition-colors">
             <svg className="w-3.5 h-3.5 text-blue-600 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -195,7 +195,7 @@ const Navbar = () => {
             <div className="flex items-center gap-2">
               <span className="text-[#007bff] font-bold">📞 Phone:</span>
               <a href="tel:+919028760011" className="font-semibold text-slate-800 hover:text-blue-600">
-                9028 760011
+                +91 9028760011
               </a>
             </div>
             <div className="flex items-center gap-2">
