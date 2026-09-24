@@ -5663,6 +5663,176 @@ export const areaExtraOfficeCards = {
 };
 
 // ============================================================================
+// SIMILAR SPACES DATA (9 Verified Pune Coworking Spaces for OfficeDetail Page)
+// Sourced from verified active coworking listings across Pune
+// Recognized by ID range 9001 - 9009
+// ============================================================================
+export const similarPuneOfficeCards = [
+  {
+    id: 9001,
+    name: 'Awfis Nucleus Mall',
+    badge: 'Premium',
+    rating: 4.3,
+    area: 'Camp',
+    location: 'Camp, Pune',
+    price: '₹10,999',
+    period: '/ month',
+    priceFormatted: '₹10,999 / month',
+    ctaText: 'Get Quote',
+    images: [
+      'https://img.cofynd.com/images/latest_images_2024/4a80ca81d529f233d965d48c442a59eae81aeb8e.webp',
+      'https://img.cofynd.com/images/latest_images_2024/18d01923b21937c81ece74720c4bb548da9e6923.webp',
+      'https://img.cofynd.com/images/latest_images_2024/f1424db42444f8b6a62f588f594c352e5d0ad72e.webp',
+      'https://img.cofynd.com/images/latest_images_2024/cb409206a0b378fd158916c34e85aea5f1dac7ee.webp'
+    ]
+  },
+  {
+    id: 9002,
+    name: 'Awfis Quantum Works',
+    badge: 'Popular',
+    rating: 5.0,
+    area: 'Kothrud',
+    location: 'Kothrud, Pune',
+    price: '₹10,999',
+    period: '/ month',
+    priceFormatted: '₹10,999 / month',
+    ctaText: 'Get Quote',
+    images: [
+      'https://img.cofynd.com/images/latest_images_2024/36b634a822eb32b1e9014a4b2872d139e50a05bf.webp',
+      'https://img.cofynd.com/images/latest_images_2024/d364e998ed08b0dc4305c4e7499603e893b01358.webp',
+      'https://img.cofynd.com/images/latest_images_2024/99e7831a54909d51961ae7ad800e4ed8c9072bb2.webp',
+      'https://img.cofynd.com/images/latest_images_2024/4a80ca81d529f233d965d48c442a59eae81aeb8e.webp'
+    ]
+  },
+  {
+    id: 9003,
+    name: 'Awfis Que Spaces',
+    badge: 'Trending',
+    rating: 5.0,
+    area: 'Magarpatta',
+    location: 'Magarpatta, Pune',
+    price: '₹10,999',
+    period: '/ month',
+    priceFormatted: '₹10,999 / month',
+    ctaText: 'Get Quote',
+    images: [
+      'https://img.cofynd.com/images/latest_images_2024/b51cfb296e1d87a35723c9d4a3b957be96ea73cd.webp',
+      'https://img.cofynd.com/images/latest_images_2024/18d01923b21937c81ece74720c4bb548da9e6923.webp',
+      'https://img.cofynd.com/images/latest_images_2024/f1424db42444f8b6a62f588f594c352e5d0ad72e.webp',
+      'https://img.cofynd.com/images/latest_images_2024/cb409206a0b378fd158916c34e85aea5f1dac7ee.webp'
+    ]
+  },
+  {
+    id: 9004,
+    name: 'Awfis Sterling Tower',
+    badge: 'Premium',
+    rating: 4.4,
+    area: 'Baner',
+    location: 'Baner, Pune',
+    price: '₹10,999',
+    period: '/ month',
+    priceFormatted: '₹10,999 / month',
+    ctaText: 'Get Quote',
+    images: [
+      'https://img.cofynd.com/images/latest_images_2024/a36d09bad7175ca9643ad8e88f77462bd8ec36e1.webp',
+      'https://img.cofynd.com/images/latest_images_2024/36b634a822eb32b1e9014a4b2872d139e50a05bf.webp',
+      'https://img.cofynd.com/images/latest_images_2024/d364e998ed08b0dc4305c4e7499603e893b01358.webp',
+      'https://img.cofynd.com/images/latest_images_2024/99e7831a54909d51961ae7ad800e4ed8c9072bb2.webp'
+    ]
+  },
+  {
+    id: 9005,
+    name: 'Awfis Viman Nagar II',
+    badge: 'Premium',
+    rating: 4.8,
+    area: 'Viman Nagar',
+    location: 'Viman Nagar, Pune',
+    price: '₹9,999',
+    period: '/ month',
+    priceFormatted: '₹9,999 / month',
+    ctaText: 'Get Quote',
+    images: [
+      'https://img.cofynd.com/images/latest_images_2024/8a42a52f0d08b1fe8fbc67d8a16ee3a22553597b.webp',
+      'https://img.cofynd.com/images/latest_images_2024/4a80ca81d529f233d965d48c442a59eae81aeb8e.webp',
+      'https://img.cofynd.com/images/latest_images_2024/18d01923b21937c81ece74720c4bb548da9e6923.webp',
+      'https://img.cofynd.com/images/latest_images_2024/cb409206a0b378fd158916c34e85aea5f1dac7ee.webp'
+    ]
+  },
+  {
+    id: 9006,
+    name: 'Smartworks M-Agile',
+    badge: 'Verified',
+    rating: 4.8,
+    area: 'Baner',
+    location: 'Baner, Pune',
+    price: '₹11,500',
+    period: '/ month',
+    priceFormatted: '₹11,500 / month',
+    ctaText: 'Get Quote',
+    images: [
+      'https://img.cofynd.com/images/latest_images_2024/99e7831a54909d51961ae7ad800e4ed8c9072bb2.webp',
+      'https://img.cofynd.com/images/latest_images_2024/36b634a822eb32b1e9014a4b2872d139e50a05bf.webp',
+      'https://img.cofynd.com/images/latest_images_2024/d364e998ed08b0dc4305c4e7499603e893b01358.webp',
+      'https://img.cofynd.com/images/latest_images_2024/4a80ca81d529f233d965d48c442a59eae81aeb8e.webp'
+    ]
+  },
+  {
+    id: 9007,
+    name: 'WeWork Futura',
+    badge: 'Popular',
+    rating: 4.9,
+    area: 'Magarpatta',
+    location: 'Magarpatta, Pune',
+    price: '₹13,000',
+    period: '/ month',
+    priceFormatted: '₹13,000 / month',
+    ctaText: 'Get Quote',
+    images: [
+      'https://img.cofynd.com/images/latest_images_2024/b51cfb296e1d87a35723c9d4a3b957be96ea73cd.webp',
+      'https://img.cofynd.com/images/latest_images_2024/a36d09bad7175ca9643ad8e88f77462bd8ec36e1.webp',
+      'https://img.cofynd.com/images/latest_images_2024/18d01923b21937c81ece74720c4bb548da9e6923.webp',
+      'https://img.cofynd.com/images/latest_images_2024/cb409206a0b378fd158916c34e85aea5f1dac7ee.webp'
+    ]
+  },
+  {
+    id: 9008,
+    name: 'IndiQube South Edge',
+    badge: 'Top Rated',
+    rating: 4.6,
+    area: 'Kalyani Nagar',
+    location: 'Kalyani Nagar, Pune',
+    price: '₹8,500',
+    period: '/ month',
+    priceFormatted: '₹8,500 / month',
+    ctaText: 'Get Quote',
+    images: [
+      'https://img.cofynd.com/images/latest_images_2024/4a80ca81d529f233d965d48c442a59eae81aeb8e.webp',
+      'https://img.cofynd.com/images/latest_images_2024/f1424db42444f8b6a62f588f594c352e5d0ad72e.webp',
+      'https://img.cofynd.com/images/latest_images_2024/36b634a822eb32b1e9014a4b2872d139e50a05bf.webp',
+      'https://img.cofynd.com/images/latest_images_2024/cb409206a0b378fd158916c34e85aea5f1dac7ee.webp'
+    ]
+  },
+  {
+    id: 9009,
+    name: 'Workhub Cerebrum IT Park',
+    badge: 'Budget Friendly',
+    rating: 4.5,
+    area: 'Kalyani Nagar',
+    location: 'Kalyani Nagar, Pune',
+    price: '₹7,999',
+    period: '/ month',
+    priceFormatted: '₹7,999 / month',
+    ctaText: 'Get Quote',
+    images: [
+      'https://img.cofynd.com/images/latest_images_2024/d364e998ed08b0dc4305c4e7499603e893b01358.webp',
+      'https://img.cofynd.com/images/latest_images_2024/8a42a52f0d08b1fe8fbc67d8a16ee3a22553597b.webp',
+      'https://img.cofynd.com/images/latest_images_2024/18d01923b21937c81ece74720c4bb548da9e6923.webp',
+      'https://img.cofynd.com/images/latest_images_2024/cb409206a0b378fd158916c34e85aea5f1dac7ee.webp'
+    ]
+  }
+];
+
+// ============================================================================
 // Comprehensive Pune Office Cards Aggregator & Lookup Helper
 // ============================================================================
 export const allPuneOfficeCards = [
@@ -5679,6 +5849,8 @@ export const allPuneOfficeCards = [
   ...pageThreeFinalPuneOfficeCards,
   ...pageThreeFeaturedPuneOfficeCards,
   ...(typeof pageFourPuneOfficeCards !== 'undefined' ? pageFourPuneOfficeCards : []),
+  // Include all 9 recognized similar spaces for detail page lookup
+  ...similarPuneOfficeCards,
   // Include all area-specific extra cards for detail page lookup
   ...(typeof areaExtraOfficeCards !== 'undefined' ? Object.values(areaExtraOfficeCards).flat() : [])
 ];

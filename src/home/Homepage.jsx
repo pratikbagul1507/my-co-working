@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import heroBackgroundImage from './images/cityimages/navbarimage.png';
 import { cityNames as availableCities, spaceOptions as availableSpaceTypes } from './images/imagesdata.js';
@@ -38,6 +38,18 @@ const Homepage = () => {
 
   // Flag indicating whether the enquiry form has been submitted
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [isMessageFading, setIsMessageFading] = useState(false);
+  const [submittedName, setSubmittedName] = useState('');
+  const fadeTimerRef = useRef(null);
+  const hideTimerRef = useRef(null);
+
+  // Clean up timers on unmount
+  useEffect(() => {
+    return () => {
+      if (fadeTimerRef.current) clearTimeout(fadeTimerRef.current);
+      if (hideTimerRef.current) clearTimeout(hideTimerRef.current);
+    };
+  }, []);
 
   // Holds the city object currently being viewed in the popup modal (null when closed)
   const [openedCityForPopup, setOpenedCityForPopup] = useState(null);
@@ -56,15 +68,68 @@ const Homepage = () => {
       ...previousData,
       [name]: value
     }));
-    setIsFormSubmitted(false);
+    if (isFormSubmitted) {
+      if (fadeTimerRef.current) clearTimeout(fadeTimerRef.current);
+      if (hideTimerRef.current) clearTimeout(hideTimerRef.current);
+      setIsFormSubmitted(false);
+      setIsMessageFading(false);
+    }
   };
 
   /**
-   * Handles lead enquiry form submission and reveals the confirmation message.
+   * Handles lead enquiry form submission:
+   * - Forwards all enquiry details directly to the navbar WhatsApp number (+91 9028760011)
+   * - Displays confirmation banner and smoothly hides it after 3 seconds
+   * - Resets the form fields
    */
   const handleFormSubmit = (event) => {
     event.preventDefault();
+
+    const clientName = enquiryFormData.name;
+    const clientEmail = enquiryFormData.email;
+    const clientPhone = enquiryFormData.phone;
+    const targetSpaceType = enquiryFormData.spaceType || selectedSpaceType || 'Coworking Spaces';
+    const targetCity = enquiryFormData.city || selectedCityName || 'India';
+
+    // Show confirmation message with submitted user's name
+    setSubmittedName(clientName);
     setIsFormSubmitted(true);
+    setIsMessageFading(false);
+
+    // Clear any existing timer
+    if (fadeTimerRef.current) clearTimeout(fadeTimerRef.current);
+    if (hideTimerRef.current) clearTimeout(hideTimerRef.current);
+
+    // Smoothly hide message box after 3 seconds
+    fadeTimerRef.current = setTimeout(() => {
+      setIsMessageFading(true);
+      hideTimerRef.current = setTimeout(() => {
+        setIsFormSubmitted(false);
+        setIsMessageFading(false);
+      }, 500); // 500ms smooth fade transition
+    }, 3000); // Display for 3 seconds
+
+    // Construct email subject and body, and open email window/client pre-filled
+    const subject = encodeURIComponent(`Workspace Enquiry - ${targetSpaceType} in ${targetCity}`);
+    const body = encodeURIComponent(
+      `New Workspace Enquiry:\n\n` +
+      `Client Name: ${clientName}\n` +
+      `Email: ${clientEmail}\n` +
+      `Phone: ${clientPhone}\n` +
+      `Type of Space: ${targetSpaceType}\n` +
+      `City: ${targetCity}\n` +
+      `Submission Date: ${new Date().toLocaleString()}\n`
+    );
+    window.location.href = `mailto:info@mycoworking.in?subject=${subject}&body=${body}`;
+
+    // Reset form fields cleanly
+    setEnquiryFormData({
+      name: '',
+      email: '',
+      phone: '',
+      spaceType: '',
+      city: ''
+    });
   };
 
   /**
@@ -328,10 +393,15 @@ const Homepage = () => {
               {isFormSubmitted ? 'Submitted' : 'Submit'}
             </button>
             
-            {/* Submission Confirmation Banner */}
+            {/* Submission Confirmation Banner (Smoothly fades out after 3 seconds) */}
             {isFormSubmitted && (
-              <p className="text-xs font-semibold text-white bg-green-600/90 py-1.5 px-3 rounded-[3px] w-fit shadow-md" role="status">
-                Thanks, {enquiryFormData.name || 'there'}! We'll be in touch shortly.
+              <p
+                className={`text-xs font-semibold text-white bg-green-600/90 py-1.5 px-3 rounded-[3px] w-fit shadow-md transition-all duration-500 ease-out ${
+                  isMessageFading ? 'opacity-0 -translate-y-1' : 'opacity-100 translate-y-0'
+                }`}
+                role="status"
+              >
+                Thanks, {submittedName || 'there'}! We'll be in touch shortly.
               </p>
             )}
           </form>

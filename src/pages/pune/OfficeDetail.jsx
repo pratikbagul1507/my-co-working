@@ -1,6 +1,14 @@
 import { useState, useEffect, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getPuneOfficeCardById } from './puneData.js';
+import { getPuneOfficeCardById, similarPuneOfficeCards, topPuneCoworkingLocations } from './puneData.js';
+
+// Pre-looped array (4 copies) for infinite, seamless continuous scrolling
+const loopedSimilarOfficeCards = [
+  ...similarPuneOfficeCards,
+  ...similarPuneOfficeCards,
+  ...similarPuneOfficeCards,
+  ...similarPuneOfficeCards
+];
 
 /**
  * Coworking Office Details Page
@@ -24,6 +32,81 @@ const OfficeDetail = () => {
   });
   const [formErrors, setFormErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isAboutExpanded, setIsAboutExpanded] = useState(false);
+
+  // Similar spaces carousel ref and continuous auto-scroll handlers
+  const similarSliderRef = useRef(null);
+  const isSliderPausedRef = useRef(false);
+  const pauseTimerRef = useRef(null);
+
+  const pauseTemporarily = (duration = 1500) => {
+    isSliderPausedRef.current = true;
+    if (pauseTimerRef.current) clearTimeout(pauseTimerRef.current);
+    pauseTimerRef.current = setTimeout(() => {
+      isSliderPausedRef.current = false;
+    }, duration);
+  };
+
+  const scrollSimilarLeft = () => {
+    const slider = similarSliderRef.current;
+    if (slider) {
+      pauseTemporarily(1500);
+      const oneSetWidth = slider.scrollWidth / 4;
+      if (slider.scrollLeft <= 50 && oneSetWidth > 0) {
+        slider.scrollLeft += oneSetWidth;
+      }
+      slider.scrollBy({ left: -300, behavior: 'smooth' });
+    }
+  };
+
+  const scrollSimilarRight = () => {
+    const slider = similarSliderRef.current;
+    if (slider) {
+      pauseTemporarily(1500);
+      const oneSetWidth = slider.scrollWidth / 4;
+      if (slider.scrollLeft >= oneSetWidth * 2 && oneSetWidth > 0) {
+        slider.scrollLeft -= oneSetWidth;
+      }
+      slider.scrollBy({ left: 300, behavior: 'smooth' });
+    }
+  };
+
+  // Continuous auto-movement animation effect
+  useEffect(() => {
+    const slider = similarSliderRef.current;
+    if (!slider) return;
+
+    let animId;
+    let lastTime = performance.now();
+    let scrollPos = slider.scrollLeft;
+    const speed = 45; // Pixels per second for smooth, readable continuous glide
+
+    const step = (currentTime) => {
+      const dt = Math.min((currentTime - lastTime) / 1000, 0.1);
+      lastTime = currentTime;
+
+      if (!isSliderPausedRef.current && slider) {
+        scrollPos += speed * dt;
+        const oneSetWidth = slider.scrollWidth / 4;
+        if (oneSetWidth > 0 && scrollPos >= oneSetWidth) {
+          scrollPos -= oneSetWidth;
+        }
+        slider.scrollLeft = scrollPos;
+      } else if (slider) {
+        // Keep scrollPos in sync when manually scrolled or paused
+        scrollPos = slider.scrollLeft;
+      }
+
+      animId = requestAnimationFrame(step);
+    };
+
+    animId = requestAnimationFrame(step);
+
+    return () => {
+      cancelAnimationFrame(animId);
+      if (pauseTimerRef.current) clearTimeout(pauseTimerRef.current);
+    };
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -153,6 +236,32 @@ const OfficeDetail = () => {
       price: '₹19,999/* year',
       image: images[3] || images[0]
     }
+  ];
+
+  // Amenities list matching reference layout
+  const amenitiesList = [
+    { name: 'High Speed WiFi', icon: 'M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.14 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0' },
+    { name: 'Meeting Rooms', icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z' },
+    { name: 'Ergo Workstations', icon: 'M4 6h16M4 10h16M4 14h16M8 18h8M12 14v4' },
+    { name: 'Printer', icon: 'M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4H7v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z' },
+    { name: 'Car / Bike Parking', icon: 'M8 17a2 2 0 100-4 2 2 0 000 4zm8 0a2 2 0 100-4 2 2 0 000 4zM5 11l2-5h10l2 5v6H5v-6zm0 0h14' },
+    { name: 'Pantry', icon: 'M12 6v12m-3-9a3 3 0 016 0v3a3 3 0 01-6 0V9zm9 4h-2m-10 0H6' },
+    { name: 'Housekeeping', icon: 'M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z' },
+    { name: 'Reception', icon: 'M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z' },
+    { name: 'Air Conditioning', icon: 'M3 8h18M5 12h14M8 16h8m-11 4h14' },
+    { name: 'Tea/Coffee', icon: 'M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3' },
+    { name: 'Phone Booth', icon: 'M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z' },
+    { name: 'Lounge', icon: 'M4 11V7a3 3 0 013-3h10a3 3 0 013 3v4M4 11h16M4 11v6a2 2 0 002 2h12a2 2 0 002-2v-6M2 13h2v4H2zm18 0h2v4h-2z' }
+  ];
+
+  // Community Events list matching reference layout
+  const communityEventsList = [
+    { name: 'Innovation & Creativity', icon: 'M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z' },
+    { name: 'Workshop & Training', icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4' },
+    { name: 'Meeting & Gatherings', icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z' },
+    { name: 'Networking Events', icon: 'M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1' },
+    { name: 'Community Building', icon: 'M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z' },
+    { name: 'Health & Wellness', icon: 'M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z' }
   ];
 
   return (
@@ -288,7 +397,7 @@ const OfficeDetail = () => {
         </section>
 
         {/* Main 2-Column Area: Seating Plans (Left) & Enquiry Form (Right) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 mt-1">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 items-start mt-1">
           
           {/* Left Column: Seating Plans Cards */}
           <div className="lg:col-span-8 flex flex-col gap-3.5">
@@ -340,14 +449,45 @@ const OfficeDetail = () => {
           </div>
 
           {/* Right Column: Enquiry Form */}
-          <div className="lg:col-span-4">
-            <div ref={formRef} className="sticky top-24 z-20 bg-[#eef7ff] border border-blue-100 rounded-2xl p-5 sm:p-6 shadow-xs flex flex-col">
+          <div ref={formRef} className="lg:col-span-4 sticky top-24">
+            <div className="bg-[#eef7ff] border border-blue-100 rounded-2xl p-5 sm:p-6 shadow-xs flex flex-col">
               <h3 className="text-base sm:text-lg font-bold text-slate-900">
                 Interested in this Property
               </h3>
-              <p className="text-xs text-slate-500 mb-4 mt-0.5">
+              <p className="text-xs text-slate-500 mb-2.5 mt-0.5">
                 Fill your details for a customized quote
               </p>
+
+              {/* 4 Trust Points */}
+              <div className="grid grid-cols-2 gap-x-2.5 gap-y-2 mb-3.5 py-2 border-y border-blue-200/50 select-none">
+                <div className="flex items-start gap-1.5 text-[11px] text-slate-700 font-medium leading-tight">
+                  <svg className="w-3.5 h-3.5 text-[#007bff] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span>Exclusive Pricing & Zero Booking fee</span>
+                </div>
+
+                <div className="flex items-start gap-1.5 text-[11px] text-slate-700 font-medium leading-tight">
+                  <svg className="w-3.5 h-3.5 text-[#007bff] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span>Guided Office Space Tours</span>
+                </div>
+
+                <div className="flex items-start gap-1.5 text-[11px] text-slate-700 font-medium leading-tight">
+                  <svg className="w-3.5 h-3.5 text-[#007bff] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span>Verified Spaces and Trusted Operators</span>
+                </div>
+
+                <div className="flex items-start gap-1.5 text-[11px] text-slate-700 font-medium leading-tight">
+                  <svg className="w-3.5 h-3.5 text-[#007bff] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span>Dedicated Relationship Manager</span>
+                </div>
+              </div>
 
               {isSubmitted ? (
                 <div className="bg-white/95 border border-green-200 rounded-xl p-4 text-center my-2 shadow-2xs">
@@ -564,6 +704,355 @@ const OfficeDetail = () => {
               <span className="text-sm font-black">❯❯</span>
               <span>Classplus</span>
             </div>
+          </div>
+        </section>
+
+        {/* Office Overview, Timing & Amenities Section */}
+        <section aria-label="Office Overview, Timings and Amenities" className="w-full bg-white rounded-2xl border border-slate-200/80 p-5 sm:p-7 shadow-xs mt-1 flex flex-col gap-6 sm:gap-7 divide-y divide-slate-100">
+          {/* 1. Office Overview & Description */}
+          <div className="flex flex-col gap-2">
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
+              {space.name}
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              {space.name}, {space.location || 'Pune'}, is one of the most elegant workspaces available. It offers fully furnished dedicated desks and private cabins. The modern facility features amenities such as a parking area, housekeeping service, pantry, power backup, sanitized floors, air conditioning, reception, high-level security, a printer, projector, scanner, speaker, unlimited internet access, and much more.
+            </p>
+          </div>
+
+          {/* 2. Office Timing */}
+          <div className="pt-6 sm:pt-7">
+            <h3 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight mb-4">
+              Office Timing
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+              {/* Mon - Fri */}
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-lg bg-sky-50 border border-sky-100 flex items-center justify-center shrink-0 text-[#007bff]">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                    <circle cx="16" cy="16" r="4" fill="#e0f2fe" stroke="currentColor" strokeWidth="1.5" />
+                    <polyline points="16 14 16 16 17.5 17" stroke="currentColor" strokeWidth="1.5" />
+                  </svg>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-xs sm:text-sm font-semibold text-slate-800">Mon - Fri</span>
+                  <span className="text-xs text-slate-500">08:00 AM to 08:00 PM</span>
+                </div>
+              </div>
+
+              {/* Sat */}
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-lg bg-sky-50 border border-sky-100 flex items-center justify-center shrink-0 text-[#007bff]">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                    <circle cx="16" cy="16" r="4" fill="#e0f2fe" stroke="currentColor" strokeWidth="1.5" />
+                    <polyline points="16 14 16 16 17.5 17" stroke="currentColor" strokeWidth="1.5" />
+                  </svg>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-xs sm:text-sm font-semibold text-slate-800">Sat</span>
+                  <span className="text-xs text-slate-500">08:00 AM to 08:00 PM</span>
+                </div>
+              </div>
+
+              {/* Sun */}
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-lg bg-sky-50 border border-sky-100 flex items-center justify-center shrink-0 text-[#007bff]">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                    <circle cx="16" cy="16" r="4" fill="#e0f2fe" stroke="currentColor" strokeWidth="1.5" />
+                    <polyline points="16 14 16 16 17.5 17" stroke="currentColor" strokeWidth="1.5" />
+                  </svg>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-xs sm:text-sm font-semibold text-slate-800">Sun</span>
+                  <span className="text-xs text-slate-500">Closed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 3. Amenities */}
+          <div className="pt-6 sm:pt-7">
+            <h3 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight mb-4 sm:mb-5">
+              Amenities
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-3.5 sm:gap-y-4 gap-x-6">
+              {amenitiesList.map((item) => (
+                <div key={item.name} className="flex items-center gap-2.5 text-xs sm:text-sm text-slate-700 font-medium">
+                  <div className="w-8 h-8 rounded-lg bg-sky-50 border border-sky-100 flex items-center justify-center shrink-0 text-[#007bff]">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d={item.icon} />
+                    </svg>
+                  </div>
+                  <span>{item.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* 4. Location & Google Map */}
+          <div className="pt-6 sm:pt-7">
+            <h3 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
+              {space.name} Location
+            </h3>
+            <div className="flex items-center gap-1.5 text-xs sm:text-sm text-slate-500 mt-1">
+              <svg className="w-4 h-4 text-slate-600 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+              <span>{space.location}</span>
+            </div>
+
+            {/* Clickable Google Map Container */}
+            <div
+              onClick={() => window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${space.name} ${space.location}`)}`, '_blank', 'noopener,noreferrer')}
+              className="relative w-full h-72 sm:h-80 md:h-96 rounded-xl overflow-hidden border border-slate-200 cursor-pointer group mt-4 select-none shadow-2xs"
+              title="Click to open this office in Google Maps"
+            >
+              <iframe
+                title={`${space.name} Location Map`}
+                src={`https://maps.google.com/maps?q=${encodeURIComponent(`${space.name} ${space.location}`)}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
+                className="w-full h-full border-0 pointer-events-none"
+                loading="lazy"
+              />
+
+              {/* Pin Tooltip Popup as in screenshot */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full -mt-2 flex flex-col items-center pointer-events-none transition-transform duration-200 group-hover:scale-105">
+                <div className="bg-white/95 backdrop-blur-xs text-slate-900 text-xs sm:text-sm font-bold px-3 py-1.5 rounded-lg shadow-md border border-slate-200/90 whitespace-nowrap">
+                  {space.name}
+                </div>
+                <div className="w-0 h-0 border-x-4 border-x-transparent border-t-6 border-t-white/95" />
+                <div className="w-7 h-7 rounded-full bg-[#007bff] text-white flex items-center justify-center shadow-lg mt-0.5">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                </div>
+              </div>
+
+              {/* Open in Google Maps Badge */}
+              <div className="absolute bottom-3 right-3 z-10 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/95 hover:bg-white text-slate-800 text-xs font-semibold shadow-md border border-slate-200 transition-all group-hover:bg-[#007bff] group-hover:text-white group-hover:border-[#007bff]">
+                <span>📍</span>
+                <span>Open in Google Maps ↗</span>
+              </div>
+            </div>
+          </div>
+
+          {/* 5. Operator / Brand Profile */}
+          <div className="pt-6 sm:pt-7 flex flex-col gap-3">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-full border border-slate-200 bg-white flex items-center justify-center p-1.5 shrink-0 shadow-2xs">
+                <span className="text-xs font-black text-orange-500 tracking-tight text-center leading-none uppercase">
+                  {space.name.split(' ')[0]}
+                </span>
+              </div>
+              <div className="flex flex-col">
+                <h4 className="text-base sm:text-lg font-bold text-slate-900 leading-tight">
+                  {space.name.split(' ')[0]}
+                </h4>
+                <p className="text-xs text-slate-500 mt-0.5 font-medium">
+                  Trusted by Clients Across Every Corner of India
+                </p>
+              </div>
+            </div>
+
+            <p className={`text-xs sm:text-sm text-slate-600 leading-relaxed ${!isAboutExpanded ? 'line-clamp-3 sm:line-clamp-none' : ''}`}>
+              {space.name} helps businesses with the largest flexible workspaces all over India, ranging from single seats to multiple seats. Coworking space solutions by {space.name} are present in 48 micro markets in India, covering the topmost 16 cities. They provide a wide spectrum of solutions to help all types of industries be it startups, small companies (SMEs), or large corporations. {space.name} Coworking solutions are interactive and uniquely designed to enhance productivity so that your business can grow in the target market.
+            </p>
+
+            <button
+              type="button"
+              onClick={() => setIsAboutExpanded((prev) => !prev)}
+              className="text-xs text-[#007bff] hover:underline font-semibold self-start cursor-pointer sm:hidden"
+            >
+              {isAboutExpanded ? 'See Less' : 'See More'}
+            </button>
+          </div>
+
+          {/* 6. Community Events */}
+          <div className="pt-6 sm:pt-7">
+            <h3 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight mb-4 sm:mb-5">
+              Community Events
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-3.5 sm:gap-y-4 gap-x-6">
+              {communityEventsList.map((event) => (
+                <div key={event.name} className="flex items-center gap-2.5 text-xs sm:text-sm text-slate-700 font-medium">
+                  <div className="w-8 h-8 rounded-lg bg-sky-50 border border-sky-100 flex items-center justify-center shrink-0 text-[#007bff]">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d={event.icon} />
+                    </svg>
+                  </div>
+                  <span>{event.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Similar Coworking Spaces Section - Matching Reference */}
+        <section aria-label="Similar Coworking Spaces" className="w-full bg-[#fdfaf5] border border-amber-100/80 rounded-2xl p-5 sm:p-7 shadow-xs relative overflow-hidden mt-2">
+          {/* Decorative Colored Confetti Dots Matching Screenshot */}
+          <div className="absolute top-4 right-8 w-2 h-2 rounded-full bg-cyan-400 opacity-80 pointer-events-none" />
+          <div className="absolute top-12 right-4 w-2.5 h-2.5 rounded-full bg-teal-400 opacity-70 pointer-events-none" />
+          <div className="absolute top-20 right-10 w-2 h-2 rounded-full bg-pink-400 opacity-60 pointer-events-none" />
+          <div className="absolute top-24 right-5 w-2.5 h-2.5 rounded-full bg-orange-300 opacity-75 pointer-events-none" />
+          <div className="absolute bottom-6 right-3 w-2.5 h-2.5 rounded-full bg-cyan-300 opacity-70 pointer-events-none" />
+          <div className="absolute bottom-10 right-8 w-2 h-2 rounded-full bg-pink-400 opacity-60 pointer-events-none" />
+
+          {/* Golden Laurel Wreath Rating Header */}
+          <div className="flex flex-col items-center justify-center text-center mb-6 sm:mb-8 select-none">
+            <div className="flex items-center gap-2 sm:gap-3 text-amber-500">
+              {/* Left Laurel Leaves */}
+              <svg className="w-8 h-8 sm:w-10 sm:h-10 text-amber-400 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7.5 4c-.8 1.5-1.2 3.1-1.2 4.8 0 2.8 1.2 5.4 3.2 7.2-1.5-.5-2.8-1.5-3.8-2.8-1.4-1.9-2.2-4.2-2.2-6.7 0-1.8.4-3.5 1.2-5 .9.8 1.8 1.6 2.8 2.5zm4.8 2.2c-.6 1.8-1.8 3.3-3.3 4.3-1.6 1.1-3.6 1.7-5.6 1.7-.5 0-1-.1-1.5-.2.5-1.8 1.5-3.5 2.9-4.8 1.9-1.8 4.5-2.8 7.2-2.8.1.6.2 1.2.3 1.8z"/>
+              </svg>
+              <span className="text-4xl sm:text-5xl font-black text-slate-800 tracking-tight leading-none">
+                4.8
+              </span>
+              {/* Right Laurel Leaves (Mirrored) */}
+              <svg className="w-8 h-8 sm:w-10 sm:h-10 text-amber-400 shrink-0 -scale-x-100" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7.5 4c-.8 1.5-1.2 3.1-1.2 4.8 0 2.8 1.2 5.4 3.2 7.2-1.5-.5-2.8-1.5-3.8-2.8-1.4-1.9-2.2-4.2-2.2-6.7 0-1.8.4-3.5 1.2-5 .9.8 1.8 1.6 2.8 2.5zm4.8 2.2c-.6 1.8-1.8 3.3-3.3 4.3-1.6 1.1-3.6 1.7-5.6 1.7-.5 0-1-.1-1.5-.2.5-1.8 1.5-3.5 2.9-4.8 1.9-1.8 4.5-2.8 7.2-2.8.1.6.2 1.2.3 1.8z"/>
+              </svg>
+            </div>
+            <span className="text-xs sm:text-sm font-semibold text-slate-600 mt-1.5 tracking-wide">
+              Premium Coworking
+            </span>
+            <h3 className="text-base sm:text-lg font-bold text-slate-900 mt-3 tracking-tight">
+              More Spaces by {space.name.split(' ')[0] || 'Awfis'}
+            </h3>
+          </div>
+
+          {/* Cards Carousel Container with Continuous Auto-Move & Arrows */}
+          <div
+            className="relative group/carousel px-1"
+            onMouseEnter={() => { isSliderPausedRef.current = true; }}
+            onMouseLeave={() => { isSliderPausedRef.current = false; }}
+            onTouchStart={() => { isSliderPausedRef.current = true; }}
+            onTouchEnd={() => { isSliderPausedRef.current = false; }}
+          >
+            {/* Left Scroll Button */}
+            <button
+              type="button"
+              onClick={scrollSimilarLeft}
+              aria-label="Scroll left"
+              className="absolute -left-2 sm:-left-3 top-1/2 -translate-y-1/2 z-20 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/95 hover:bg-white text-slate-700 shadow-md border border-slate-200/80 flex items-center justify-center text-lg font-bold cursor-pointer hover:scale-105 active:scale-95 transition-all select-none"
+            >
+              ‹
+            </button>
+
+            {/* Continuously Moving Scrollable Row */}
+            <div
+              ref={similarSliderRef}
+              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+              className="flex gap-4 sm:gap-5 overflow-x-auto scrollbar-none py-1.5 px-1 select-none [&::-webkit-scrollbar]:hidden"
+            >
+              {loopedSimilarOfficeCards.map((item, idx) => (
+                <article
+                  key={`${item.id}-${idx}`}
+                  onClick={() => window.open(`/coworking/pune/${item.id}`, '_blank', 'noopener,noreferrer')}
+                  className="w-[250px] sm:w-[270px] md:w-[285px] shrink-0 bg-transparent rounded-2xl overflow-hidden cursor-pointer group flex flex-col"
+                >
+                  {/* Card Image */}
+                  <div className="w-full aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100 shadow-2xs group-hover:shadow-md transition-shadow">
+                    <img
+                      src={item.images[0]}
+                      alt={item.name}
+                      loading="lazy"
+                      className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                    />
+                  </div>
+
+                  {/* Card Info matching screenshot */}
+                  <div className="pt-2 px-0.5 flex flex-col gap-0.5">
+                    <div className="flex items-center justify-between gap-1.5">
+                      <h4 className="text-xs sm:text-sm font-bold text-slate-900 truncate group-hover:text-[#007bff] transition-colors" title={item.name}>
+                        {item.name}
+                      </h4>
+                      <div className="flex items-center gap-1 text-xs font-bold text-amber-500 shrink-0">
+                        <span>★</span>
+                        <span className="text-slate-700 text-[11px] font-semibold">{item.rating}</span>
+                      </div>
+                    </div>
+                    <p className="text-[11px] sm:text-xs text-slate-500 truncate">
+                      {item.location}
+                    </p>
+                    <div className="text-xs sm:text-sm font-bold text-slate-900 mt-0.5">
+                      {item.price}<span className="text-[11px] text-slate-500 font-normal"> / month</span>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            {/* Right Scroll Button */}
+            <button
+              type="button"
+              onClick={scrollSimilarRight}
+              aria-label="Scroll right"
+              className="absolute -right-2 sm:-right-3 top-1/2 -translate-y-1/2 z-20 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/95 hover:bg-white text-slate-700 shadow-md border border-slate-200/80 flex items-center justify-center text-lg font-bold cursor-pointer hover:scale-105 active:scale-95 transition-all select-none"
+            >
+              ›
+            </button>
+          </div>
+        </section>
+
+        {/* Section: Explore Top Coworking Locations in Pune */}
+        <section aria-label="Explore top coworking locations in Pune" className="my-10 pt-4 border-t border-slate-200/80">
+          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-5">
+            Explore Top Coworking Locations in Pune
+          </h2>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5 sm:gap-4.5">
+            {topPuneCoworkingLocations.map((location) => (
+              <div
+                key={location.id}
+                role="button"
+                tabIndex={0}
+                onClick={() => window.open('/coworking/pune', '_blank', 'noopener,noreferrer')}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    window.open('/coworking/pune', '_blank', 'noopener,noreferrer');
+                  }
+                }}
+                className="group bg-white rounded-lg border border-slate-200 hover:border-blue-300 overflow-hidden shadow-2xs hover:shadow-md transition-all duration-200 cursor-pointer flex flex-col"
+              >
+                {/* Location Image */}
+                <div className="relative h-32 sm:h-36 w-full overflow-hidden bg-slate-100">
+                  <img
+                    src={location.image}
+                    alt={`Coworking spaces in ${location.name}`}
+                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+
+                {/* Location Content */}
+                <div className="p-3 sm:p-3.5 flex flex-col flex-1 justify-between bg-white">
+                  <div>
+                    <p className="text-xs sm:text-[13px] text-slate-600 leading-snug font-normal">
+                      Coworking Space in
+                    </p>
+                    <h3 className="text-sm sm:text-[15px] font-bold text-slate-900 leading-tight mt-0.5">
+                      {location.name}
+                    </h3>
+                  </div>
+
+                  <div className="mt-3 pt-2 border-t border-slate-50 flex items-center gap-1.5 text-xs font-semibold text-blue-600 group-hover:text-blue-700 transition-colors">
+                    <span>{location.ctaText || 'Explore Spaces'}</span>
+                    <span className="text-[11px] group-hover:translate-x-0.5 transition-transform" aria-hidden="true">→</span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
 

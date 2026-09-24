@@ -24,7 +24,7 @@ import PuneOfficeDetail from './pages/pune/OfficeDetail';
 
 const App = () => {
   return (
-    <div className="w-full min-h-screen overflow-x-clip flex flex-col bg-white">
+    <div className="w-full min-h-screen overflow-x-hidden flex flex-col bg-white">
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
