@@ -20,7 +20,7 @@ import LucknowPage from './pages/lucknow/Lucknow';
 import MumbaiPage from './pages/mumbai/Mumbai';
 import NoidaPage from './pages/noida/Noida';
 import PunePage from './pages/pune/Pune';
-import PuneOfficeDetail from './pages/pune/OfficeDetail';
+import PuneOfficeDetail from './pages/pune/PuneOfficeDetail';
 
 const App = () => {
   return (

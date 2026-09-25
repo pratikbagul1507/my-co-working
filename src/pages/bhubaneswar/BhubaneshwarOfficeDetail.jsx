@@ -17,7 +17,6 @@ const loopedSimilarOfficeCards = [
  */
 const OfficeDetail = () => {
   const { id } = useParams();
-  const [space, setSpace] = useState(null);
   const [isCarouselOpen, setIsCarouselOpen] = useState(false);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
@@ -108,15 +107,20 @@ const OfficeDetail = () => {
     };
   }, []);
 
+  const space = getPuneOfficeCardById(id);
+
   useEffect(() => {
     window.scrollTo(0, 0);
-    setSpace(getPuneOfficeCardById(id));
   }, [id]);
 
-  const images = space?.images || [];
+  const singleImage = (Array.isArray(space?.images) && space.images[0]) || space?.image || '';
+  const images = (Array.isArray(space?.images) && space.images.length > 0)
+    ? space.images
+    : (singleImage ? [singleImage] : []);
 
   const openCarousel = (index = 0) => {
-    setActiveImageIndex(index);
+    const validIndex = images.length > 0 ? Math.min(Math.max(0, index), images.length - 1) : 0;
+    setActiveImageIndex(validIndex);
     setIsCarouselOpen(true);
   };
 
@@ -220,21 +224,21 @@ const OfficeDetail = () => {
       description: 'Fixed workspace in a Coworking Office with all amenities',
       seating: 'Seating : 1 - 100+ Seats',
       price: `${space.price}/* seat`,
-      image: images[1] || images[0]
+      image: images[1] || images[0] || singleImage
     },
     {
       title: 'Private Cabin',
       description: 'Ready to move fully furnished private office with all amenities',
       seating: 'Seating : 4, 6, 8, 10+ (Customization Available)',
       price: '₹9,999/* seat',
-      image: images[2] || images[0]
+      image: images[2] || images[0] || singleImage
     },
     {
       title: 'Virtual Office',
       description: 'Build your Company presence with Virtual Office in any city across India',
       seating: 'Company Registration & Mailing Address',
       price: '₹19,999/* year',
-      image: images[3] || images[0]
+      image: images[3] || images[0] || singleImage
     }
   ];
 
@@ -303,7 +307,7 @@ const OfficeDetail = () => {
             className="group relative md:col-span-6 h-full min-h-0 rounded-2xl overflow-hidden cursor-pointer bg-slate-100 shadow-2xs"
           >
             <img
-              src={images[0]}
+              src={images[0] || singleImage}
               alt={`${space.name} 1`}
               className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
             />
@@ -315,11 +319,11 @@ const OfficeDetail = () => {
             {[1, 2].map((idx) => (
               <div
                 key={idx}
-                onClick={() => openCarousel(idx)}
+                onClick={() => openCarousel(images[idx] ? idx : 0)}
                 className="group relative h-full min-h-0 rounded-xl md:rounded-2xl overflow-hidden cursor-pointer bg-slate-100 shadow-2xs"
               >
                 <img
-                  src={images[idx] || images[0]}
+                  src={images[idx] || images[0] || singleImage}
                   alt={`${space.name} ${idx + 1}`}
                   className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                 />
@@ -330,11 +334,11 @@ const OfficeDetail = () => {
 
           {/* 3. Right Tall Image with View All Photos Button */}
           <div
-            onClick={() => openCarousel(3)}
+            onClick={() => openCarousel(images[3] ? 3 : 0)}
             className="group relative md:col-span-3 h-full min-h-0 rounded-2xl overflow-hidden cursor-pointer bg-slate-100 shadow-2xs"
           >
             <img
-              src={images[3] || images[0]}
+              src={images[3] || images[0] || singleImage}
               alt={`${space.name} 4`}
               className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
             />
@@ -350,7 +354,7 @@ const OfficeDetail = () => {
               className="absolute bottom-3 right-3 z-10 inline-flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 rounded-lg bg-white/95 hover:bg-white text-slate-800 text-xs sm:text-sm font-semibold shadow-md backdrop-blur-xs transition-all active:scale-95 cursor-pointer"
             >
               <span>📷</span>
-              <span>View All Photos ({images.length})</span>
+              <span>View All Photos ({images.length || 1})</span>
             </button>
           </div>
         </section>
@@ -1069,7 +1073,7 @@ const OfficeDetail = () => {
           {/* Modal Header */}
           <div onClick={(e) => e.stopPropagation()} className="flex items-center justify-between text-white w-full max-w-6xl mx-auto z-20 shrink-0 py-1">
             <span className="text-xs sm:text-sm font-semibold text-white/90 bg-white/10 px-3 py-1 rounded-full">
-              {activeImageIndex + 1} / {images.length}
+              {activeImageIndex + 1} / {images.length || 1}
             </span>
             <button
               type="button"
@@ -1097,7 +1101,7 @@ const OfficeDetail = () => {
             {/* Standardized Image Stage: Fits 100% on screen in uniform format */}
             <div className="w-full h-full max-h-[66vh] sm:max-h-[70vh] flex items-center justify-center px-10 sm:px-16 overflow-hidden">
               <img
-                src={images[activeImageIndex]}
+                src={images[activeImageIndex] || singleImage}
                 alt={`${space.name} photo ${activeImageIndex + 1}`}
                 className="max-h-full max-w-full w-auto h-auto object-contain rounded-xl shadow-2xl select-none"
               />
@@ -1116,20 +1120,22 @@ const OfficeDetail = () => {
           </div>
 
           {/* Modal Bottom: Thumbnail Strip */}
-          <div onClick={(e) => e.stopPropagation()} className="w-full max-w-3xl mx-auto z-20 shrink-0 py-1.5 flex items-center justify-center gap-2 overflow-x-auto overflow-y-hidden scrollbar-none">
-            {images.map((imgUrl, idx) => (
-              <button
-                key={`thumb-${idx}`}
-                type="button"
-                onClick={() => setActiveImageIndex(idx)}
-                className={`shrink-0 w-12 h-9 sm:w-14 sm:h-10 rounded-md overflow-hidden transition-all cursor-pointer ${
-                  activeImageIndex === idx ? 'ring-2 ring-[#007bff] scale-105 opacity-100' : 'opacity-40 hover:opacity-85'
-                }`}
-              >
-                <img src={imgUrl} alt={`Thumb ${idx + 1}`} className="w-full h-full object-cover" />
-              </button>
-            ))}
-          </div>
+          {images.length > 1 && (
+            <div onClick={(e) => e.stopPropagation()} className="w-full max-w-3xl mx-auto z-20 shrink-0 py-1.5 flex items-center justify-center gap-2 overflow-x-auto overflow-y-hidden scrollbar-none">
+              {images.map((imgUrl, idx) => (
+                <button
+                  key={`thumb-${idx}`}
+                  type="button"
+                  onClick={() => setActiveImageIndex(idx)}
+                  className={`shrink-0 w-12 h-9 sm:w-14 sm:h-10 rounded-md overflow-hidden transition-all cursor-pointer ${
+                    activeImageIndex === idx ? 'ring-2 ring-[#007bff] scale-105 opacity-100' : 'opacity-40 hover:opacity-85'
+                  }`}
+                >
+                  <img src={imgUrl} alt={`Thumb ${idx + 1}`} className="w-full h-full object-cover" />
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       )}
     </main>
