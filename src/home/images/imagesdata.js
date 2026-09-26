@@ -166,5 +166,51 @@ export const trustedCompaniesData = {
   ]
 };
 
+// 6. Data for "Top Coworking Spaces in India" 18-cities section
+export const topCoworkingCitiesData = {
+  title: "Top Coworking Spaces in India",
+  taglines: {
+    Gurugram: "Millennium City",
+    Hyderabad: "A city of pearls",
+    Bangalore: "India's Silicon Valley",
+    Mumbai: "A City of Dreams",
+    Pune: "Queen of the Deccan",
+    Delhi: "The Nation Capital",
+    Noida: "The Hitech City",
+    Lucknow: "The City of Nawabs",
+    Bhubaneswar: "Temple City of India",
+    Chennai: "Detroit of India",
+    Ahmedabad: "Manchester of India",
+    Jaipur: "The Pink City",
+    Chandigarh: "The City Beautiful",
+    Kochi: "Queen of the Arabian Sea",
+    Kolkata: "City of Joy",
+    Coimbatore: "Manchester of South India",
+    Goa: "Pearl of the Orient",
+    Indore: "Cleanest City of India"
+  },
+  workspaceImages: {
+    Gurugram: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=700&q=80",
+    Hyderabad: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=700&q=80",
+    Bangalore: "https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&w=700&q=80",
+    Mumbai: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=700&q=80",
+    Pune: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80",
+    Delhi: "https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=700&q=80",
+    Noida: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=700&q=80",
+    Lucknow: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=700&q=80",
+    Bhubaneswar: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=700&q=80",
+    Chennai: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=700&q=80",
+    Ahmedabad: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=700&q=80",
+    Jaipur: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=700&q=80",
+    Chandigarh: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&q=80",
+    Kochi: "https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=700&q=80",
+    Kolkata: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80",
+    Coimbatore: "https://images.unsplash.com/photo-1571624436279-b272aff752b5?auto=format&fit=crop&w=700&q=80",
+    Goa: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=700&q=80",
+    Indore: "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=700&q=80"
+  }
+};
+
+
 
 

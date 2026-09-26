@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import heroBackgroundImage from './images/cityimages/navbarimage.png';
-import { cityNames as availableCities, spaceOptions as availableSpaceTypes, homePromotionalData, platformShowcaseData, trustedCompaniesData } from './images/imagesdata.js';
+import { cityNames as availableCities, spaceOptions as availableSpaceTypes, homePromotionalData, platformShowcaseData, trustedCompaniesData, topCoworkingCitiesData } from './images/imagesdata.js';
 import CityGrid from '../components/city/CityGrid';
 import CityPopup from '../components/city/CityPopup';
 
@@ -1030,6 +1030,55 @@ const Homepage = () => {
                 />
               );
             })}
+          </div>
+
+        </div>
+      </section>
+
+      {/* =================================================================== */}
+      {/* SECTION: Top Coworking Spaces in India                              */}
+      {/* =================================================================== */}
+      <section 
+        aria-label="Top Coworking Spaces in India" 
+        className="w-full bg-[#fbf9f6] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-200/60 select-none"
+      >
+        <div className="max-w-7xl mx-auto">
+          
+          {/* Section Heading */}
+          <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-black text-slate-900 tracking-tight text-center mb-8 sm:mb-10">
+            {topCoworkingCitiesData.title}
+          </h2>
+
+          {/* 18-City Coworking Spaces Card Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-6">
+            {availableCities.map((city) => (
+              <article
+                key={city.name}
+                onClick={() => selectCityAndOpenPopup(city, true)}
+                className="group relative h-48 sm:h-52 md:h-56 rounded-[22px] overflow-hidden cursor-pointer shadow-xs hover:shadow-xl transition-all duration-300 hover:-translate-y-1 select-none bg-slate-900"
+              >
+                {/* City Workspace Image */}
+                <img
+                  src={topCoworkingCitiesData.workspaceImages[city.name] || city.image}
+                  alt={`Coworking spaces in ${city.name}`}
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                />
+
+                {/* Dark Gradient Overlay for optimal text readability */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent" />
+
+                {/* Centered City Name & Nickname / Tagline */}
+                <div className="absolute inset-0 flex flex-col items-center justify-end pb-5 px-4 text-center z-10">
+                  <h3 className="text-lg sm:text-xl font-black text-white tracking-tight leading-snug drop-shadow-sm group-hover:text-blue-400 transition-colors">
+                    {city.name}
+                  </h3>
+                  <p className="text-xs sm:text-[13px] text-slate-200 font-medium tracking-tight mt-0.5 drop-shadow-sm">
+                    {topCoworkingCitiesData.taglines[city.name] || 'Millennium City'}
+                  </p>
+                </div>
+              </article>
+            ))}
           </div>
 
         </div>

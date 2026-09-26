@@ -713,15 +713,7 @@ const OfficeDetail = () => {
 
         {/* Office Overview, Timing & Amenities Section */}
         <section aria-label="Office Overview, Timings and Amenities" className="w-full bg-white rounded-2xl border border-slate-200/80 p-5 sm:p-7 shadow-xs mt-1 flex flex-col gap-6 sm:gap-7 divide-y divide-slate-100">
-          {/* 1. Office Overview & Description */}
-          <div className="flex flex-col gap-2">
-            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
-              {space.name}
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              {space.name}, {space.location || 'Pune'}, is one of the most elegant workspaces available. It offers fully furnished dedicated desks and private cabins. The modern facility features amenities such as a parking area, housekeeping service, pantry, power backup, sanitized floors, air conditioning, reception, high-level security, a printer, projector, scanner, speaker, unlimited internet access, and much more.
-            </p>
-          </div>
+       
 
           {/* 2. Office Timing */}
           <div className="pt-6 sm:pt-7">
