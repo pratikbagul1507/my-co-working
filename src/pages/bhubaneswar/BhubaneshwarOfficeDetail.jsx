@@ -1,13 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getPuneOfficeCardById, similarPuneOfficeCards, topPuneCoworkingLocations } from './puneData.js';
+import { getBhubaneshwarOfficeCardById, similarBhubaneshwarOfficeCards, topBhubaneshwarCoworkingLocations } from './bhubaneswarData.js';
 
 // Pre-looped array (4 copies) for infinite, seamless continuous scrolling
 const loopedSimilarOfficeCards = [
-  ...similarPuneOfficeCards,
-  ...similarPuneOfficeCards,
-  ...similarPuneOfficeCards,
-  ...similarPuneOfficeCards
+  ...similarBhubaneshwarOfficeCards,
+  ...similarBhubaneshwarOfficeCards,
+  ...similarBhubaneshwarOfficeCards,
+  ...similarBhubaneshwarOfficeCards
 ];
 
 /**
@@ -107,7 +107,7 @@ const OfficeDetail = () => {
     };
   }, []);
 
-  const space = getPuneOfficeCardById(id);
+  const space = getBhubaneshwarOfficeCardById(id);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -208,10 +208,10 @@ const OfficeDetail = () => {
         <h1 className="text-2xl font-bold text-slate-800 mb-2">Office Space Not Found</h1>
         <p className="text-sm text-slate-500 mb-6">The requested coworking space could not be found.</p>
         <Link
-          to="/coworking/pune"
+          to="/coworking/bhubaneshwar"
           className="bg-[#007bff] hover:bg-blue-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg shadow-xs transition-colors"
         >
-          Back to Pune Coworking Spaces
+          Back to Bhubaneshwar Coworking Spaces
         </Link>
       </main>
     );
@@ -277,7 +277,7 @@ const OfficeDetail = () => {
           <ol className="flex items-center gap-1.5 text-xs sm:text-sm text-slate-500">
             <li><Link to="/" className="hover:text-blue-600 transition-colors">Home</Link></li>
             <li>/</li>
-            <li><Link to="/coworking/pune" className="hover:text-blue-600 transition-colors">Coworking</Link></li>
+            <li><Link to="/coworking/bhubaneshwar" className="hover:text-blue-600 transition-colors">Coworking</Link></li>
             <li>/</li>
             <li className="text-slate-700 font-medium truncate max-w-[200px] sm:max-w-md">{space.name}</li>
           </ol>
@@ -719,7 +719,7 @@ const OfficeDetail = () => {
               {space.name}
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              {space.name}, {space.location || 'Pune'}, is one of the most elegant workspaces available. It offers fully furnished dedicated desks and private cabins. The modern facility features amenities such as a parking area, housekeeping service, pantry, power backup, sanitized floors, air conditioning, reception, high-level security, a printer, projector, scanner, speaker, unlimited internet access, and much more.
+              {space.name}, {space.location || 'Bhubaneshwar'}, is one of the most elegant workspaces available. It offers fully furnished dedicated desks and private cabins. The modern facility features amenities such as a parking area, housekeeping service, pantry, power backup, sanitized floors, air conditioning, reception, high-level security, a printer, projector, scanner, speaker, unlimited internet access, and much more.
             </p>
           </div>
 
@@ -961,7 +961,7 @@ const OfficeDetail = () => {
               {loopedSimilarOfficeCards.map((item, idx) => (
                 <article
                   key={`${item.id}-${idx}`}
-                  onClick={() => window.open(`/coworking/pune/${item.id}`, '_blank', 'noopener,noreferrer')}
+                  onClick={() => window.open(`/coworking/bhubaneshwar/${item.id}`, '_blank', 'noopener,noreferrer')}
                   className="w-[250px] sm:w-[270px] md:w-[285px] shrink-0 bg-transparent rounded-2xl overflow-hidden cursor-pointer group flex flex-col"
                 >
                   {/* Card Image */}
@@ -1008,23 +1008,23 @@ const OfficeDetail = () => {
           </div>
         </section>
 
-        {/* Section: Explore Top Coworking Locations in Pune */}
-        <section aria-label="Explore top coworking locations in Pune" className="my-10 pt-4 border-t border-slate-200/80">
+        {/* Section: Explore Top Coworking Locations in Bhubaneshwar */}
+        <section aria-label="Explore top coworking locations in Bhubaneshwar" className="my-10 pt-4 border-t border-slate-200/80">
           <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-5">
-            Explore Top Coworking Locations in Pune
+            Explore Top Coworking Locations in Bhubaneshwar
           </h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5 sm:gap-4.5">
-            {topPuneCoworkingLocations.map((location) => (
+            {topBhubaneshwarCoworkingLocations.map((location) => (
               <div
                 key={location.id}
                 role="button"
                 tabIndex={0}
-                onClick={() => window.open('/coworking/pune', '_blank', 'noopener,noreferrer')}
+                onClick={() => window.open('/coworking/bhubaneshwar', '_blank', 'noopener,noreferrer')}
                 onKeyDown={(e) => {
                   if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
-                    window.open('/coworking/pune', '_blank', 'noopener,noreferrer');
+                    window.open('/coworking/bhubaneshwar', '_blank', 'noopener,noreferrer');
                   }
                 }}
                 className="group bg-white rounded-lg border border-slate-200 hover:border-blue-300 overflow-hidden shadow-2xs hover:shadow-md transition-all duration-200 cursor-pointer flex flex-col"

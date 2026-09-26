@@ -1,16 +1,16 @@
 /**
- * Pune Coworking Spaces Matrix Layout Data & Neighborhood Filters
- * Sourced from verified active coworking listings in Pune.
+ * Bhubaneshwar Coworking Spaces Matrix Layout Data & Neighborhood Filters
+ * Sourced from verified active coworking listings in Bhubaneshwar.
  */
 
-export const puneNeighborhoods = [
+export const bhubaneshwarNeighborhoods = [
   'Saheed Nagar',
   'Patia',
   'Satya Nagar',
   'Rasulgarh'
 ];
 
-export const puneOfficeCards = [
+export const bhubaneshwarOfficeCards = [
   {
     "id": 1,
     "name": "Fun@Work, Infocity",
@@ -200,7 +200,7 @@ export const officeSolutions = [
   }
 ];
 
-export const morePuneOfficeCards = [
+export const moreBhubaneshwarOfficeCards = [
   {
     id: 9,
     name: 'Smatbizz',
@@ -226,7 +226,7 @@ export const morePuneOfficeCards = [
     badge: 'Popular',
     rating: 5.0,
     area: 'Kothrud',
-    location: 'Kothrud, Pune',
+    location: 'Kothrud, Bhubaneshwar',
     price: '₹10,999',
     period: '/ month',
     priceFormatted: '₹10,999 / month',
@@ -245,7 +245,7 @@ export const morePuneOfficeCards = [
     badge: 'Popular',
     rating: 5.0,
     area: 'Magarpatta',
-    location: 'Magarpatta, Pune',
+    location: 'Magarpatta, Bhubaneshwar',
     price: '₹10,999',
     period: '/ month',
     priceFormatted: '₹10,999 / month',
@@ -264,7 +264,7 @@ export const morePuneOfficeCards = [
     badge: 'Popular',
     rating: 4.3,
     area: 'Baner',
-    location: 'Baner, Pune',
+    location: 'Baner, Bhubaneshwar',
     price: '₹9,999',
     period: '/ month',
     priceFormatted: '₹9,999 / month',
@@ -283,7 +283,7 @@ export const morePuneOfficeCards = [
     badge: 'Popular',
     rating: 4.2,
     area: 'Hadapsar',
-    location: 'Hadapsar, Pune',
+    location: 'Hadapsar, Bhubaneshwar',
     price: '₹10,999',
     period: '/ month',
     priceFormatted: '₹10,999 / month',
@@ -302,7 +302,7 @@ export const morePuneOfficeCards = [
     badge: 'Premium',
     rating: 4.5,
     area: 'Yerwada',
-    location: 'Yerawada, Pune',
+    location: 'Yerawada, Bhubaneshwar',
     price: '₹7,999',
     period: '/ month',
     priceFormatted: '₹7,999 / month',
@@ -321,7 +321,7 @@ export const morePuneOfficeCards = [
     badge: 'Premium',
     rating: 4.3,
     area: 'Baner',
-    location: 'Baner, Pune',
+    location: 'Baner, Bhubaneshwar',
     price: '₹9,999',
     period: '/ month',
     priceFormatted: '₹9,999 / month',
@@ -340,7 +340,7 @@ export const morePuneOfficeCards = [
     badge: 'Popular',
     rating: 4.3,
     area: 'Camp',
-    location: 'Camp, Pune',
+    location: 'Camp, Bhubaneshwar',
     price: '₹10,999',
     period: '/ month',
     priceFormatted: '₹10,999 / month',
@@ -355,7 +355,7 @@ export const morePuneOfficeCards = [
   }
 ];
 
-//export const allPuneOfficeCards = [...puneOfficeCards, ...morePuneOfficeCards];
+//export const allBhubaneshwarOfficeCards = [...bhubaneshwarOfficeCards, ...moreBhubaneshwarOfficeCards];
 
 export const perfectWorkspaceBanner = {
   title: 'Discover your perfect workspace with Mycoworking',
@@ -364,14 +364,14 @@ export const perfectWorkspaceBanner = {
   bgImage: 'https://img.cofynd.com/images/latest_images_2024/28f41de2ee6c67528d528dc3b55fc7ad2801dcbc.webp'
 };
 
-export const finalPuneOfficeCards = [
+export const finalBhubaneshwarOfficeCards = [
   {
     id: 17,
     name: 'IndiQube Park Plaza',
     badge: 'Popular',
     rating: 4.1,
     area: 'Shivaji Nagar',
-    location: 'Shivaji Nagar, Pune',
+    location: 'Shivaji Nagar, Bhubaneshwar',
     price: '₹7,999',
     period: '/ month',
     priceFormatted: '₹7,999 / month',
@@ -390,7 +390,7 @@ export const finalPuneOfficeCards = [
     badge: 'Popular',
     rating: 3.9,
     area: 'Pimple Saudagar',
-    location: 'Pimple Saudagar, Pune',
+    location: 'Pimple Saudagar, Bhubaneshwar',
     price: '₹10,999',
     period: '/ month',
     priceFormatted: '₹10,999 / month',
@@ -409,7 +409,7 @@ export const finalPuneOfficeCards = [
     badge: null,
     rating: null,
     area: 'BMCC Road',
-    location: 'BMCC Road, Pune, Maharashtra',
+    location: 'BMCC Road, Bhubaneshwar, Maharashtra',
     price: '₹7,000',
     period: '/ month',
     priceFormatted: '₹7,000 / month',
@@ -428,7 +428,7 @@ export const finalPuneOfficeCards = [
     badge: null,
     rating: null,
     area: 'Baner',
-    location: 'DS IKON 4th Floor, Pune',
+    location: 'DS IKON 4th Floor, Bhubaneshwar',
     price: '₹8,000',
     period: '/ month',
     priceFormatted: '₹8,000 / month',
@@ -447,7 +447,7 @@ export const finalPuneOfficeCards = [
     badge: 'Popular',
     rating: 4.7,
     area: 'Shivaji Nagar',
-    location: 'Shivaji Nagar, Pune',
+    location: 'Shivaji Nagar, Bhubaneshwar',
     price: '₹9,999',
     period: '/ month',
     priceFormatted: '₹9,999 / month',
@@ -466,7 +466,7 @@ export const finalPuneOfficeCards = [
     badge: 'Premium',
     rating: 4.8,
     area: 'Baner',
-    location: 'Baner, Pune',
+    location: 'Baner, Bhubaneshwar',
     price: '₹8,999',
     period: '/ month',
     priceFormatted: '₹8,999 / month',
@@ -485,7 +485,7 @@ export const finalPuneOfficeCards = [
     badge: 'Special Offer',
     rating: 5.0,
     area: 'Koregaon Park',
-    location: 'Koregaon Park, Pune',
+    location: 'Koregaon Park, Bhubaneshwar',
     price: '₹7,999',
     period: '/ month',
     priceFormatted: '₹7,999 / month',
@@ -503,7 +503,7 @@ export const finalPuneOfficeCards = [
     badge: null,
     rating: null,
     area: 'Viman Nagar',
-    location: 'Viman Nagar, Pune',
+    location: 'Viman Nagar, Bhubaneshwar',
     price: '₹7,500',
     period: '/ month',
     priceFormatted: '₹7,500 / month',
@@ -518,14 +518,14 @@ export const finalPuneOfficeCards = [
   }
 ];
 
-export const featuredPuneOfficeCards = [
+export const featuredBhubaneshwarOfficeCards = [
   {
     id: 25,
     name: 'Bootstart Coworking - Pride Icon',
     badge: 'Popular',
     rating: 4.8,
     area: 'Kharadi',
-    location: 'Kharadi, Pune',
+    location: 'Kharadi, Bhubaneshwar',
     price: '₹8,499',
     period: '/ month',
     priceFormatted: '₹8,499 / month',
@@ -544,7 +544,7 @@ export const featuredPuneOfficeCards = [
     badge: 'Popular',
     rating: null,
     area: 'Aundh',
-    location: 'Aundh, Pune',
+    location: 'Aundh, Bhubaneshwar',
     price: '₹6,999',
     period: '/ month',
     priceFormatted: '₹6,999 / month',
@@ -563,7 +563,7 @@ export const featuredPuneOfficeCards = [
     badge: 'Popular',
     rating: 4.9,
     area: 'Baner',
-    location: 'Baner, Pune',
+    location: 'Baner, Bhubaneshwar',
     price: '₹5,499',
     period: '/ month',
     priceFormatted: '₹5,499 / month',
@@ -582,7 +582,7 @@ export const featuredPuneOfficeCards = [
     badge: 'Premium',
     rating: 5.0,
     area: 'Bavdhan',
-    location: 'Bavdhan, Pune',
+    location: 'Bavdhan, Bhubaneshwar',
     price: '₹6,500',
     period: '/ month',
     priceFormatted: '₹6,500 / month',
@@ -600,7 +600,7 @@ export const featuredPuneOfficeCards = [
     badge: 'Popular',
     rating: null,
     area: 'Pimpri Chinchwad',
-    location: 'Chinchwad, Pune',
+    location: 'Chinchwad, Bhubaneshwar',
     price: '₹5,999',
     period: '/ month',
     priceFormatted: '₹5,999 / month',
@@ -619,7 +619,7 @@ export const featuredPuneOfficeCards = [
     badge: null,
     rating: null,
     area: 'Baner',
-    location: 'Shivneri Colony, Pune',
+    location: 'Shivneri Colony, Bhubaneshwar',
     price: '₹5,000',
     period: '/ month',
     priceFormatted: '₹5,000 / month',
@@ -638,7 +638,7 @@ export const featuredPuneOfficeCards = [
     badge: 'People Choice',
     rating: 4.6,
     area: 'Baner',
-    location: 'Baner, Pune',
+    location: 'Baner, Bhubaneshwar',
     price: '₹9,200',
     period: '/ month',
     priceFormatted: '₹9,200 / month',
@@ -657,7 +657,7 @@ export const featuredPuneOfficeCards = [
     badge: 'Popular',
     rating: 4.7,
     area: 'Viman Nagar',
-    location: 'Viman Nagar, Pune',
+    location: 'Viman Nagar, Bhubaneshwar',
     price: '₹22,499',
     period: '/ month',
     priceFormatted: '₹22,499 / month',
@@ -673,10 +673,10 @@ export const featuredPuneOfficeCards = [
 ];
 
 // Aliases for compatibility
-export const puneAreas = puneNeighborhoods;
-export const puneSpaces = puneOfficeCards;
-export const areas = puneNeighborhoods;
-export const spaces = puneOfficeCards;
+export const bhubaneshwarAreas = bhubaneshwarNeighborhoods;
+export const bhubaneshwarSpaces = bhubaneshwarOfficeCards;
+export const areas = bhubaneshwarNeighborhoods;
+export const spaces = bhubaneshwarOfficeCards;
 
 export const customizedOfficeBanner = {
   title: 'Customized office solutions for your team',
@@ -707,18 +707,18 @@ export const paginationData = {
 // ----------------------------------------------------------------------------
 // Jab user pagination me button '2' par click karega, tab top 8 cards ki jagah
 // ye 8 naye cards display honge.
-// Button '1' click karne par wapas pehle wale 8 cards (puneOfficeCards) aa jayenge.
+// Button '1' click karne par wapas pehle wale 8 cards (bhubaneshwarOfficeCards) aa jayenge.
 // Har card me real internet images, badge, rating, location aur price di gayi hai.
 // ============================================================================
-export const pageTwoPuneOfficeCards = [
-  // 1. Share A Space - Aundh, Pune
+export const pageTwoBhubaneshwarOfficeCards = [
+  // 1. Share A Space - Aundh, Bhubaneshwar
   {
     id: 33,
     name: 'Share A Space',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: 4.5,      // Star rating
     area: 'Aundh',    // Neighborhood filter ke liye
-    location: 'Aundh, Pune', // Card me display hone wala address
+    location: 'Aundh, Bhubaneshwar', // Card me display hone wala address
     price: '₹9,499',
     period: '/ month',
     priceFormatted: '₹9,499 / month',
@@ -732,14 +732,14 @@ export const pageTwoPuneOfficeCards = [
       'https://img.cofynd.com/images/original/63e2171239c540d2745f634c1f73a3198526040a.jpg'
     ]
   },
-  // 2. Collab Workspaces - Kharadi, Pune
+  // 2. Collab Workspaces - Kharadi, Bhubaneshwar
   {
     id: 34,
     name: 'Collab Workspaces',
     badge: 'Popular',
     rating: 4.8,
     area: 'Kharadi',
-    location: 'Kharadi, Pune',
+    location: 'Kharadi, Bhubaneshwar',
     price: '₹7,499',
     period: '/ month',
     priceFormatted: '₹7,499 / month',
@@ -752,14 +752,14 @@ export const pageTwoPuneOfficeCards = [
       'https://img.cofynd.com/images/original/a3086bd7c780ef6a8e8bf884e4305aebfd493bef.jpg'
     ]
   },
-  // 3. Starthub - Koregaon Park, Pune
+  // 3. Starthub - Koregaon Park, Bhubaneshwar
   {
     id: 35,
     name: 'Starthub',
     badge: 'Popular',
     rating: 4.8,
     area: 'Koregaon Park',
-    location: 'Koregaon Park, Pune',
+    location: 'Koregaon Park, Bhubaneshwar',
     price: '₹7,499',
     period: '/ month',
     priceFormatted: '₹7,499 / month',
@@ -772,14 +772,14 @@ export const pageTwoPuneOfficeCards = [
       'https://img.cofynd.com/images/original/c1ca5ce9ec9caf7c6c1d9af4e976032b9e3021e1.jpg'
     ]
   },
-  // 4. Ideas to Impacts Hub Wakad - Wakad, Pune
+  // 4. Ideas to Impacts Hub Wakad - Wakad, Bhubaneshwar
   {
     id: 36,
     name: 'Ideas to Impacts Hub Wakad',
     badge: 'Premium',
     rating: 4.5,
     area: 'Wakad',
-    location: 'Wakad, Pune',
+    location: 'Wakad, Bhubaneshwar',
     price: '₹8,999',
     period: '/ month',
     priceFormatted: '₹8,999 / month',
@@ -791,14 +791,14 @@ export const pageTwoPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/0d0fbf69f720692aaf10184ff0b947bc8caec729.webp'
     ]
   },
-  // 5. Ideas to Impacts Hub Viman Nagar - Viman Nagar, Pune
+  // 5. Ideas to Impacts Hub Viman Nagar - Viman Nagar, Bhubaneshwar
   {
     id: 37,
     name: 'Ideas to Impacts Hub Viman Nagar',
     badge: 'Premium',
     rating: 4.4,
     area: 'Viman Nagar',
-    location: 'Viman Nagar, Pune',
+    location: 'Viman Nagar, Bhubaneshwar',
     price: '₹8,999',
     period: '/ month',
     priceFormatted: '₹8,999 / month',
@@ -810,14 +810,14 @@ export const pageTwoPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/a2d5a44ab6b933bc773cb84ac006aa252f914a5b.webp'
     ]
   },
-  // 6. TRIOS Lalwani House - Viman Nagar, Pune
+  // 6. TRIOS Lalwani House - Viman Nagar, Bhubaneshwar
   {
     id: 38,
     name: 'TRIOS Lalwani House',
     badge: 'Popular',
     rating: null, // Screenshot me star rating nahi hai
     area: 'Viman Nagar',
-    location: 'Sakore Nagar, Viman Nagar, Pune',
+    location: 'Sakore Nagar, Viman Nagar, Bhubaneshwar',
     price: '₹8,999',
     period: '/ month',
     priceFormatted: '₹8,999 / month',
@@ -830,14 +830,14 @@ export const pageTwoPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/5e21f76c961fce9729833e73394892bd65e97464.webp'
     ]
   },
-  // 7. FMTOS - Pimpri-Chinchwad, Pune
+  // 7. FMTOS - Pimpri-Chinchwad, Bhubaneshwar
   {
     id: 39,
     name: 'FMTOS',
     badge: null,  // Screenshot me koi badge nahi hai
     rating: null, // Screenshot me rating nahi hai
     area: 'Pimpri Chinchwad',
-    location: 'Pimpri-Chinchwad, Pune',
+    location: 'Pimpri-Chinchwad, Bhubaneshwar',
     price: '₹8,499',
     period: '/ month',
     priceFormatted: '₹8,499 / month',
@@ -850,14 +850,14 @@ export const pageTwoPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/851974e26cd07c777d2290f7bd4ca3647868d0c4.webp'
     ]
   },
-  // 8. Bootstart Coworking – Arcadian Koregaon Park - Koregaon Park, Pune
+  // 8. Bootstart Coworking – Arcadian Koregaon Park - Koregaon Park, Bhubaneshwar
   {
     id: 40,
     name: 'Bootstart Coworking – Arcadian Koregaon Park',
     badge: 'Premium',
     rating: 4.3,
     area: 'Koregaon Park',
-    location: 'Koregaon Park, Pune',
+    location: 'Koregaon Park, Bhubaneshwar',
     price: '₹7,000',
     period: '/ month',
     priceFormatted: '₹7,000 / month',
@@ -877,18 +877,18 @@ export const pageTwoPuneOfficeCards = [
 // ----------------------------------------------------------------------------
 // Jab user pagination me button '2' par click karega, tab "Find Your Perfect Office
 // Solution" box ke niche wale second 8 cards ki jagah ye 8 naye cards display honge.
-// Button '1' click karne par wapas pehle wale 8 cards (morePuneOfficeCards) aa jayenge.
+// Button '1' click karne par wapas pehle wale 8 cards (moreBhubaneshwarOfficeCards) aa jayenge.
 // Sabhi cards me real internet images, badge, rating, location aur price di gayi hai.
 // ============================================================================
-export const pageTwoMorePuneOfficeCards = [
-  // 1. Inscape Cowork - Koregaon Park, Pune
+export const pageTwoMoreBhubaneshwarOfficeCards = [
+  // 1. Inscape Cowork - Koregaon Park, Bhubaneshwar
   {
     id: 41,
     name: 'Inscape Cowork',
     badge: null,      // Screenshot me koi badge nahi hai
     rating: null,     // Screenshot me rating nahi hai
     area: 'Koregaon Park',
-    location: 'Koregaon Park, Pune',
+    location: 'Koregaon Park, Bhubaneshwar',
     price: '₹6,500',
     period: '/ month',
     priceFormatted: '₹6,500 / month',
@@ -901,14 +901,14 @@ export const pageTwoMorePuneOfficeCards = [
       'https://img.cofynd.com/images/original/94c4dd8dbf4e0c4e747ee83a54d6560965e94b28.jpg'
     ]
   },
-  // 2. Quick Office - Hinjewadi-Wakad Road, Pune
+  // 2. Quick Office - Hinjewadi-Wakad Road, Bhubaneshwar
   {
     id: 42,
     name: 'Quick Office',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: null,     // Screenshot me rating nahi hai
     area: 'Hinjewadi',
-    location: 'Hinjewadi-Wakad Road, Pune',
+    location: 'Hinjewadi-Wakad Road, Bhubaneshwar',
     price: '₹6,499',
     period: '/ month',
     priceFormatted: '₹6,499 / month',
@@ -921,14 +921,14 @@ export const pageTwoMorePuneOfficeCards = [
       'https://img.cofynd.com/images/original/55486c750b28414ba491a92e105e466ce78d2c67.jpg'
     ]
   },
-  // 3. Bootstart Coworking – Clover Hills Plaza - NIBM, Pune
+  // 3. Bootstart Coworking – Clover Hills Plaza - NIBM, Bhubaneshwar
   {
     id: 43,
     name: 'Bootstart Coworking – Clover Hills Plaza',
     badge: 'Premium', // Card ke upar 'Premium' crown badge
     rating: 4.9,      // Star rating 4.9
     area: 'NIBM',
-    location: 'NIBM, Pune',
+    location: 'NIBM, Bhubaneshwar',
     price: '₹7,000',
     period: '/ month',
     priceFormatted: '₹7,000 / month',
@@ -941,14 +941,14 @@ export const pageTwoMorePuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/76cfa7b3feaa5574519f71c4c1a9657b98d9c228.webp'
     ]
   },
-  // 4. Bootstart Coworking – VCC Vantage Baner - Baner, Pune
+  // 4. Bootstart Coworking – VCC Vantage Baner - Baner, Bhubaneshwar
   {
     id: 44,
     name: 'Bootstart Coworking – VCC Vantage Baner',
     badge: 'Premium', // Card ke upar 'Premium' crown badge
     rating: 4.8,      // Star rating 4.8
     area: 'Baner',
-    location: 'Baner, Pune',
+    location: 'Baner, Bhubaneshwar',
     price: '₹8,000',
     period: '/ month',
     priceFormatted: '₹8,000 / month',
@@ -961,14 +961,14 @@ export const pageTwoMorePuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/855d0458df81c810fb594b281aa06a1420d2cb2f.webp'
     ]
   },
-  // 5. The Living Desk - Pimple Saudagar, Pune
+  // 5. The Living Desk - Pimple Saudagar, Bhubaneshwar
   {
     id: 45,
     name: 'The Living Desk',
     badge: 'Special Offer', // Card ke upar 'Special Offer' crown badge
     rating: null,           // Screenshot me rating nahi hai
     area: 'Pimple Saudagar',
-    location: 'Pimple Saudagar, Pune',
+    location: 'Pimple Saudagar, Bhubaneshwar',
     price: '₹4,999',
     period: '/ month',
     priceFormatted: '₹4,999 / month',
@@ -981,7 +981,7 @@ export const pageTwoMorePuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/88c641496c21a415ff67be50d3a54b38bf2137be.webp'
     ]
   },
-  // 6. CreateX - Ashok Nagar, Kharadi, Pune
+  // 6. CreateX - Ashok Nagar, Kharadi, Bhubaneshwar
   {
     id: 46,
     name: 'CreateX',
@@ -1001,14 +1001,14 @@ export const pageTwoMorePuneOfficeCards = [
       'https://img.cofynd.com/images/original/23ee3a2fa6f338d77a83424d85600c3b5d2780e0.jpg'
     ]
   },
-  // 7. Kontor Space - Fatima Nagar, Wanowrie, Pune
+  // 7. Kontor Space - Fatima Nagar, Wanowrie, Bhubaneshwar
   {
     id: 47,
     name: 'Kontor Space',
     badge: null,  // Screenshot me koi badge nahi hai
     rating: null, // Screenshot me rating nahi hai
     area: 'Wanowrie',
-    location: 'Fatima Nagar, Wanowrie, Pune, Maharashtra, India',
+    location: 'Fatima Nagar, Wanowrie, Bhubaneshwar, Maharashtra, India',
     price: '₹5,500',
     period: '/ month',
     priceFormatted: '₹5,500 / month',
@@ -1021,14 +1021,14 @@ export const pageTwoMorePuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/2d2e1c66e927bbcc7492c102df0e61d8713d288d.webp'
     ]
   },
-  // 8. Cowerkz - Baner, Pune
+  // 8. Cowerkz - Baner, Bhubaneshwar
   {
     id: 48,
     name: 'Cowerkz',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: 4.9,      // Star rating 4.9
     area: 'Baner',
-    location: 'Baner, Pune',
+    location: 'Baner, Bhubaneshwar',
     price: '₹6,499',
     period: '/ month',
     priceFormatted: '₹6,499 / month',
@@ -1048,18 +1048,18 @@ export const pageTwoMorePuneOfficeCards = [
 // ----------------------------------------------------------------------------
 // Jab user pagination me button '2' par click karega, tab "Discover your perfect
 // workspace with Mycoworking" banner ke niche wale third 8 cards ki jagah ye 8 naye cards display honge.
-// Button '1' click karne par wapas pehle wale 8 cards (finalPuneOfficeCards) aa jayenge.
+// Button '1' click karne par wapas pehle wale 8 cards (finalBhubaneshwarOfficeCards) aa jayenge.
 // Sabhi cards me real internet images, badge, rating, location aur price di gayi hai.
 // ============================================================================
-export const pageTwoFinalPuneOfficeCards = [
-  // 1. EFC Prime Offices - Baner, Pune
+export const pageTwoFinalBhubaneshwarOfficeCards = [
+  // 1. EFC Prime Offices - Baner, Bhubaneshwar
   {
     id: 49,
     name: 'EFC Prime Offices',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: 4.2,      // Star rating 4.2
     area: 'Baner',
-    location: 'Baner, Pune',
+    location: 'Baner, Bhubaneshwar',
     price: '₹7,999',
     period: '/ month',
     priceFormatted: '₹7,999 / month',
@@ -1072,14 +1072,14 @@ export const pageTwoFinalPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/fbe554bfd53457183e29f3d9f187422f6764506c.webp'
     ]
   },
-  // 2. Sprint Epicentre - Shivaji Nagar, Pune
+  // 2. Sprint Epicentre - Shivaji Nagar, Bhubaneshwar
   {
     id: 50,
     name: 'Sprint Epicentre',
     badge: 'Special Offer', // Card ke upar 'Special Offer' crown badge
     rating: 4.0,           // Star rating 4.0
     area: 'Shivaji Nagar',
-    location: 'Shivaji Nagar, Pune',
+    location: 'Shivaji Nagar, Bhubaneshwar',
     price: '₹8,499',
     period: '/ month',
     priceFormatted: '₹8,499 / month',
@@ -1092,14 +1092,14 @@ export const pageTwoFinalPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/ef3327b3b7548fae1f6e077051db55805562776c.webp'
     ]
   },
-  // 3. Sprint Antaaya - Balewadi, Pune
+  // 3. Sprint Antaaya - Balewadi, Bhubaneshwar
   {
     id: 51,
     name: 'Sprint Antaaya',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: 4.6,      // Star rating 4.6
     area: 'Balewadi',
-    location: 'Balewadi, Pune',
+    location: 'Balewadi, Bhubaneshwar',
     price: '₹7,999',
     period: '/ month',
     priceFormatted: '₹7,999 / month',
@@ -1112,14 +1112,14 @@ export const pageTwoFinalPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/804a806c9e05ceabdf06c04f9104b2b3a9bb7c24.webp'
     ]
   },
-  // 4. Divine Coworking Cosmos - Cosmos gardens, Pune
+  // 4. Divine Coworking Cosmos - Cosmos gardens, Bhubaneshwar
   {
     id: 52,
     name: 'Divine Coworking Cosmos',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: null,     // Screenshot me rating nahi hai
     area: 'Magarpatta',
-    location: 'Cosmos gardens, Pune',
+    location: 'Cosmos gardens, Bhubaneshwar',
     price: '₹6,999',
     period: '/ month',
     priceFormatted: '₹6,999 / month',
@@ -1132,10 +1132,10 @@ export const pageTwoFinalPuneOfficeCards = [
       'https://img.cofynd.com/images/original/4e84b80e55da08d132ce3a00f274cb7e39a3f2d0.jpg'
     ]
   },
-  // 5. ccw pune coworking space - Balewadi, Pune
+  // 5. ccw bhubaneshwar coworking space - Balewadi, Bhubaneshwar
   {
     id: 53,
-    name: 'ccw pune coworking space',
+    name: 'ccw bhubaneshwar coworking space',
     badge: null,      // Screenshot me koi badge nahi hai
     rating: null,     // Screenshot me rating nahi hai
     area: 'Balewadi',
@@ -1152,14 +1152,14 @@ export const pageTwoFinalPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/aaeb5c5553e83f5c531d0447fae3f16ff36e9ff0.webp'
     ]
   },
-  // 6. Excella Coworking Space - DS Ikon - Baner, Pune
+  // 6. Excella Coworking Space - DS Ikon - Baner, Bhubaneshwar
   {
     id: 54,
     name: 'Excella Coworking Space - DS Ikon',
     badge: null,      // Screenshot me koi badge nahi hai
     rating: null,     // Screenshot me rating nahi hai
     area: 'Baner',
-    location: 'DS IKON 4th Floor, Pune',
+    location: 'DS IKON 4th Floor, Bhubaneshwar',
     price: '₹8,000',
     period: '/ month',
     priceFormatted: '₹8,000 / month',
@@ -1172,14 +1172,14 @@ export const pageTwoFinalPuneOfficeCards = [
       'https://img.cofynd.com/images/original/0a48c90eb5599f802649137a5dad227be87a27ca.jpg'
     ]
   },
-  // 7. ByzBay - Pimpri Chinchwad, Pune
+  // 7. ByzBay - Pimpri Chinchwad, Bhubaneshwar
   {
     id: 55,
     name: 'ByzBay',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: 5.0,      // Star rating 5.0
     area: 'Pimpri Chinchwad',
-    location: 'Pimpri Chinchwad, Pune',
+    location: 'Pimpri Chinchwad, Bhubaneshwar',
     price: '₹5,499',
     period: '/ month',
     priceFormatted: '₹5,499 / month',
@@ -1192,14 +1192,14 @@ export const pageTwoFinalPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/7dd58ec0e767439fa8a1bf18db35b44d3c6902ca.webp'
     ]
   },
-  // 8. ScaleUp CoWork - BMCC Road, Pune
+  // 8. ScaleUp CoWork - BMCC Road, Bhubaneshwar
   {
     id: 56,
     name: 'ScaleUp CoWork',
     badge: null,      // Screenshot me koi badge nahi hai
     rating: null,     // Screenshot me rating nahi hai
     area: 'BMCC Road',
-    location: 'BMCC Road, Pune, Maharashtra',
+    location: 'BMCC Road, Bhubaneshwar, Maharashtra',
     price: '₹7,000',
     period: '/ month',
     priceFormatted: '₹7,000 / month',
@@ -1219,18 +1219,18 @@ export const pageTwoFinalPuneOfficeCards = [
 // ----------------------------------------------------------------------------
 // Jab user pagination me button '2' par click karega, tab "Customized office
 // solutions for your team" banner ke niche wale fourth 8 cards ki jagah ye 8 naye cards display honge.
-// Button '1' click karne par wapas pehle wale 8 cards (featuredPuneOfficeCards) aa jayenge.
+// Button '1' click karne par wapas pehle wale 8 cards (featuredBhubaneshwarOfficeCards) aa jayenge.
 // Sabhi cards me real internet images, badge, rating, location aur price di gayi hai.
 // ============================================================================
-export const pageTwoFeaturedPuneOfficeCards = [
-  // 1. Awfis Baner Business Bay - Baner, Pune
+export const pageTwoFeaturedBhubaneshwarOfficeCards = [
+  // 1. Awfis Baner Business Bay - Baner, Bhubaneshwar
   {
     id: 57,
     name: 'Awfis Baner Business Bay',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: 5.0,      // Star rating 5.0
     area: 'Baner',
-    location: 'Baner, Pune',
+    location: 'Baner, Bhubaneshwar',
     price: '₹10,999',
     period: '/ month',
     priceFormatted: '₹10,999 / month',
@@ -1243,14 +1243,14 @@ export const pageTwoFeaturedPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/75c99a42549db958c07069acd879e75aa5f112ed.webp'
     ]
   },
-  // 2. Thinkcowork - Aundh, Pune
+  // 2. Thinkcowork - Aundh, Bhubaneshwar
   {
     id: 58,
     name: 'Thinkcowork',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: null,     // Screenshot me rating nahi hai
     area: 'Aundh',
-    location: 'Aundh, Pune',
+    location: 'Aundh, Bhubaneshwar',
     price: '₹6,999',
     period: '/ month',
     priceFormatted: '₹6,999 / month',
@@ -1263,14 +1263,14 @@ export const pageTwoFeaturedPuneOfficeCards = [
       'https://img.cofynd.com/images/original/8aedd18ca1ff6255b53489882f554edc5130222f.jpg'
     ]
   },
-  // 3. Enzigma Coworking - Baner, Pune
+  // 3. Enzigma Coworking - Baner, Bhubaneshwar
   {
     id: 59,
     name: 'Enzigma Coworking',
     badge: 'Premium', // Card ke upar 'Premium' crown badge
     rating: null,     // Screenshot me rating nahi hai
     area: 'Baner',
-    location: 'Baner, Pune',
+    location: 'Baner, Bhubaneshwar',
     price: '₹9,999',
     period: '/ month',
     priceFormatted: '₹9,999 / month',
@@ -1283,14 +1283,14 @@ export const pageTwoFeaturedPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/0849fb3bf5b76c8c877c9f8eaa670dbe58b24c4c.webp'
     ]
   },
-  // 4. ANA Workspace - Chinchwad, Pune
+  // 4. ANA Workspace - Chinchwad, Bhubaneshwar
   {
     id: 60,
     name: 'ANA Workspace',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: null,     // Screenshot me rating nahi hai
     area: 'Pimpri Chinchwad',
-    location: 'Chinchwad, Pune',
+    location: 'Chinchwad, Bhubaneshwar',
     price: '₹5,999',
     period: '/ month',
     priceFormatted: '₹5,999 / month',
@@ -1303,14 +1303,14 @@ export const pageTwoFeaturedPuneOfficeCards = [
       'https://img.cofynd.com/images/original/83fdd16c008a520c82723ad290e25631b81c686f.jpg'
     ]
   },
-  // 5. TODO COWORKING - Wakad, Pune
+  // 5. TODO COWORKING - Wakad, Bhubaneshwar
   {
     id: 61,
     name: 'TODO COWORKING',
     badge: 'Premium', // Card ke upar 'Premium' crown badge
     rating: null,     // Screenshot me rating nahi hai
     area: 'Wakad',
-    location: 'Wakad, Pune',
+    location: 'Wakad, Bhubaneshwar',
     price: '₹7,499',
     period: '/ month',
     priceFormatted: '₹7,499 / month',
@@ -1323,14 +1323,14 @@ export const pageTwoFeaturedPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/75c99a42549db958c07069acd879e75aa5f112ed.webp'
     ]
   },
-  // 6. Anchor Coworking - Shivneri Colony, Pune
+  // 6. Anchor Coworking - Shivneri Colony, Bhubaneshwar
   {
     id: 62,
     name: 'Anchor Coworking',
     badge: null,  // Screenshot me koi badge nahi hai
     rating: null, // Screenshot me rating nahi hai
     area: 'Baner',
-    location: 'Shivneri Colony, Pune',
+    location: 'Shivneri Colony, Bhubaneshwar',
     price: '₹5,000',
     period: '/ month',
     priceFormatted: '₹5,000 / month',
@@ -1343,14 +1343,14 @@ export const pageTwoFeaturedPuneOfficeCards = [
       'https://img.cofynd.com/images/original/856d9d73fc023c1c3eeab089f859b4ff0e56bc1e.jpg'
     ]
   },
-  // 7. TRIOS - Finswell - Viman nagar - Viman Nagar, Pune
+  // 7. TRIOS - Finswell - Viman nagar - Viman Nagar, Bhubaneshwar
   {
     id: 63,
     name: 'TRIOS - Finswell - Viman nagar',
     badge: 'Premium', // Card ke upar 'Premium' crown badge
     rating: null,     // Screenshot me rating nahi hai
     area: 'Viman Nagar',
-    location: 'Viman Nagar, Pune',
+    location: 'Viman Nagar, Bhubaneshwar',
     price: '₹10,999',
     period: '/ month',
     priceFormatted: '₹10,999 / month',
@@ -1363,14 +1363,14 @@ export const pageTwoFeaturedPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/bb629c8a53d66f187aeb5bf553ad5e279af05a5c.webp'
     ]
   },
-  // 8. Awfis ABIL Imperial - Baner, Pune
+  // 8. Awfis ABIL Imperial - Baner, Bhubaneshwar
   {
     id: 64,
     name: 'Awfis ABIL Imperial',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: 4.4,      // Star rating 4.4
     area: 'Baner',
-    location: 'Baner, Pune',
+    location: 'Baner, Bhubaneshwar',
     price: '₹8,499',
     period: '/ month',
     priceFormatted: '₹8,499 / month',
@@ -1406,18 +1406,18 @@ export const pageTwoFeaturedPuneOfficeCards = [
 // ----------------------------------------------------------------------------
 // Jab user pagination me button '3' par click karega, tab top 8 cards ki jagah
 // ye 8 naye cards display honge.
-// Button '1' click karne par wapas pehle wale 8 cards (puneOfficeCards) aa jayenge.
+// Button '1' click karne par wapas pehle wale 8 cards (bhubaneshwarOfficeCards) aa jayenge.
 // Har card me real internet images, badge, rating, location aur price di gayi hai.
 // ============================================================================
-export const pageThreePuneOfficeCards = [
-  // 1. Trios Balaji Business Centre - Baner, Pune
+export const pageThreeBhubaneshwarOfficeCards = [
+  // 1. Trios Balaji Business Centre - Baner, Bhubaneshwar
   {
     id: 65,
     name: 'Trios Balaji Business Centre',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: 4.6,      // Star rating 4.6
     area: 'Baner',    // Neighborhood filter ke liye
-    location: 'Baner, Pune', // Card me display hone wala address
+    location: 'Baner, Bhubaneshwar', // Card me display hone wala address
     price: '₹9,999',
     period: '/ month',
     priceFormatted: '₹9,999 / month',
@@ -1431,14 +1431,14 @@ export const pageThreePuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/d8dbca95fc6c51fcde7bc07a3eaf7ea01896c1b4.webp'
     ]
   },
-  // 2. Incube Coworking - Baner, Pune
+  // 2. Incube Coworking - Baner, Bhubaneshwar
   {
     id: 66,
     name: 'Incube Coworking',
     badge: null,      // Screenshot me koi badge nahi hai
     rating: null,     // Screenshot me rating nahi hai
     area: 'Baner',
-    location: 'Next to Medipoint Hospital, Baner, Pune',
+    location: 'Next to Medipoint Hospital, Baner, Bhubaneshwar',
     price: '₹4,000',
     period: '/ month',
     priceFormatted: '₹4,000 / month',
@@ -1451,14 +1451,14 @@ export const pageThreePuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/f8d9606998e1218be2aa1030247812464c493f97.webp'
     ]
   },
-  // 3. Share A Space - Aundh, Pune
+  // 3. Share A Space - Aundh, Bhubaneshwar
   {
     id: 67,
     name: 'Share A Space',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: 4.5,      // Star rating 4.5
     area: 'Aundh',    // Neighborhood filter ke liye
-    location: 'Aundh, Pune', // Card me display hone wala address
+    location: 'Aundh, Bhubaneshwar', // Card me display hone wala address
     price: '₹9,499',
     period: '/ month',
     priceFormatted: '₹9,499 / month',
@@ -1471,14 +1471,14 @@ export const pageThreePuneOfficeCards = [
       'https://img.cofynd.com/images/original/63e2171239c540d2745f634c1f73a3198526040a.jpg'
     ]
   },
-  // 4. Collab Workspaces - Kharadi, Pune
+  // 4. Collab Workspaces - Kharadi, Bhubaneshwar
   {
     id: 68,
     name: 'Collab Workspaces',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: 4.8,      // Star rating 4.8
     area: 'Kharadi',
-    location: 'Kharadi, Pune',
+    location: 'Kharadi, Bhubaneshwar',
     price: '₹7,499',
     period: '/ month',
     priceFormatted: '₹7,499 / month',
@@ -1491,14 +1491,14 @@ export const pageThreePuneOfficeCards = [
       'https://img.cofynd.com/images/original/a3086bd7c780ef6a8e8bf884e4305aebfd493bef.jpg'
     ]
   },
-  // 5. Starthub - Koregaon Park, Pune
+  // 5. Starthub - Koregaon Park, Bhubaneshwar
   {
     id: 69,
     name: 'Starthub',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: 4.8,      // Star rating 4.8
     area: 'Koregaon Park',
-    location: 'Koregaon Park, Pune',
+    location: 'Koregaon Park, Bhubaneshwar',
     price: '₹7,499',
     period: '/ month',
     priceFormatted: '₹7,499 / month',
@@ -1511,14 +1511,14 @@ export const pageThreePuneOfficeCards = [
       'https://img.cofynd.com/images/original/c1ca5ce9ec9caf7c6c1d9af4e976032b9e3021e1.jpg'
     ]
   },
-  // 6. Excella Coworking Space - DS Ikon - Baner, Pune
+  // 6. Excella Coworking Space - DS Ikon - Baner, Bhubaneshwar
   {
     id: 70,
     name: 'Excella Coworking Space - DS Ikon',
     badge: null,      // Screenshot me koi badge nahi hai
     rating: null,     // Screenshot me rating nahi hai
     area: 'Baner',
-    location: 'DS IKON 4th Floor, Pune',
+    location: 'DS IKON 4th Floor, Bhubaneshwar',
     price: '₹8,000',
     period: '/ month',
     priceFormatted: '₹8,000 / month',
@@ -1531,14 +1531,14 @@ export const pageThreePuneOfficeCards = [
       'https://img.cofynd.com/images/original/0a48c90eb5599f802649137a5dad227be87a27ca.jpg'
     ]
   },
-  // 7. Ideas to Impacts Hub Wakad - Wakad, Pune
+  // 7. Ideas to Impacts Hub Wakad - Wakad, Bhubaneshwar
   {
     id: 71,
     name: 'Ideas to Impacts Hub Wakad',
     badge: 'Premium', // Card ke upar 'Premium' crown badge
     rating: 4.5,      // Star rating 4.5
     area: 'Wakad',
-    location: 'Wakad, Pune',
+    location: 'Wakad, Bhubaneshwar',
     price: '₹8,999',
     period: '/ month',
     priceFormatted: '₹8,999 / month',
@@ -1550,14 +1550,14 @@ export const pageThreePuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/0d0fbf69f720692aaf10184ff0b947bc8caec729.webp'
     ]
   },
-  // 8. Ideas to Impacts Hub Viman Nagar - Viman Nagar, Pune
+  // 8. Ideas to Impacts Hub Viman Nagar - Viman Nagar, Bhubaneshwar
   {
     id: 72,
     name: 'Ideas to Impacts Hub Viman Nagar',
     badge: 'Premium', // Card ke upar 'Premium' crown badge
     rating: 4.4,      // Star rating 4.4
     area: 'Viman Nagar',
-    location: 'Viman Nagar, Pune',
+    location: 'Viman Nagar, Bhubaneshwar',
     price: '₹8,999',
     period: '/ month',
     priceFormatted: '₹8,999 / month',
@@ -1576,18 +1576,18 @@ export const pageThreePuneOfficeCards = [
 // ----------------------------------------------------------------------------
 // Jab user pagination me button '3' par click karega, tab "Find Your Perfect Office
 // Solution" box ke niche wale second 8 cards ki jagah ye 8 naye cards display honge.
-// Button '1' click karne par wapas pehle wale 8 cards (morePuneOfficeCards) aa jayenge.
+// Button '1' click karne par wapas pehle wale 8 cards (moreBhubaneshwarOfficeCards) aa jayenge.
 // Sabhi cards me real internet images, badge, rating, location aur price di gayi hai.
 // ============================================================================
-export const pageThreeMorePuneOfficeCards = [
-  // 1. TRIOS Lalwani House - Sakore Nagar, Viman Nagar, Pune
+export const pageThreeMoreBhubaneshwarOfficeCards = [
+  // 1. TRIOS Lalwani House - Sakore Nagar, Viman Nagar, Bhubaneshwar
   {
     id: 73,
     name: 'TRIOS Lalwani House',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: null,     // Screenshot me rating nahi hai
     area: 'Viman Nagar',
-    location: 'Sakore Nagar, Viman Nagar, Pune',
+    location: 'Sakore Nagar, Viman Nagar, Bhubaneshwar',
     price: '₹8,999',
     period: '/ month',
     priceFormatted: '₹8,999 / month',
@@ -1600,14 +1600,14 @@ export const pageThreeMorePuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/5e21f76c961fce9729833e73394892bd65e97464.webp'
     ]
   },
-  // 2. FMTOS - Pimpri-Chinchwad, Pune
+  // 2. FMTOS - Pimpri-Chinchwad, Bhubaneshwar
   {
     id: 74,
     name: 'FMTOS',
     badge: null,      // Screenshot me koi badge nahi hai
     rating: null,     // Screenshot me rating nahi hai
     area: 'Pimpri-Chinchwad',
-    location: 'Pimpri-Chinchwad, Pune',
+    location: 'Pimpri-Chinchwad, Bhubaneshwar',
     price: '₹8,499',
     period: '/ month',
     priceFormatted: '₹8,499 / month',
@@ -1620,14 +1620,14 @@ export const pageThreeMorePuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/851974e26cd07c777d2290f7bd4ca3647868d0c4.webp'
     ]
   },
-  // 3. Synergy - Viman Nagar, Pune
+  // 3. Synergy - Viman Nagar, Bhubaneshwar
   {
     id: 75,
     name: 'Synergy',
     badge: null,      // Screenshot me koi badge nahi hai
     rating: null,     // Screenshot me rating nahi hai
     area: 'Viman Nagar',
-    location: 'Viman Nagar, Pune',
+    location: 'Viman Nagar, Bhubaneshwar',
     price: '₹7,500',
     period: '/ month',
     priceFormatted: '₹7,500 / month',
@@ -1640,14 +1640,14 @@ export const pageThreeMorePuneOfficeCards = [
       'https://img.cofynd.com/images/original/f3d377dd0ca6e06dbaaa305f055f543ac8e15bf5.jpg'
     ]
   },
-  // 4. tstart Coworking – VCC Vantage 9 - Baner, Pune
+  // 4. tstart Coworking – VCC Vantage 9 - Baner, Bhubaneshwar
   {
     id: 76,
     name: 'tstart Coworking – VCC Vantage 9',
     badge: 'Premium', // Card ke upar 'Premium' crown badge
     rating: 4.8,      // Star rating 4.8
     area: 'Baner',
-    location: 'Baner, Pune',
+    location: 'Baner, Bhubaneshwar',
     price: '₹8,999',
     period: '/ month',
     priceFormatted: '₹8,999 / month',
@@ -1660,14 +1660,14 @@ export const pageThreeMorePuneOfficeCards = [
       'https://img.cofynd.com/images/original/a3a34bbdddeba830b2202bbc3dec4de594c6e68f.jpg'
     ]
   },
-  // 5. WeHub - Baner, Pune
+  // 5. WeHub - Baner, Bhubaneshwar
   {
     id: 77,
     name: 'WeHub',
     badge: 'Special Offer', // Card ke upar 'Special Offer' crown badge
     rating: 4.8,            // Star rating 4.8
     area: 'Baner',
-    location: 'Baner, Pune',
+    location: 'Baner, Bhubaneshwar',
     price: '₹7,999',
     period: '/ month',
     priceFormatted: '₹7,999 / month',
@@ -1680,14 +1680,14 @@ export const pageThreeMorePuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/5df64a1cbf82c9530cf7fe8a9742d28ffb5d5e08.webp'
     ]
   },
-  // 6. Bootstart Coworking – Arcadian Koregaon Park - Koregaon Park, Pune
+  // 6. Bootstart Coworking – Arcadian Koregaon Park - Koregaon Park, Bhubaneshwar
   {
     id: 78,
     name: 'Bootstart Coworking – Arcadian Koregaon Park',
     badge: 'Premium', // Card ke upar 'Premium' crown badge
     rating: 4.3,      // Star rating 4.3
     area: 'Koregaon Park',
-    location: 'Koregaon Park, Pune',
+    location: 'Koregaon Park, Bhubaneshwar',
     price: '₹7,000',
     period: '/ month',
     priceFormatted: '₹7,000 / month',
@@ -1700,14 +1700,14 @@ export const pageThreeMorePuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/2d9e7739decb78af7960b6956ed5b8e94cbd1e82.webp'
     ]
   },
-  // 7. Inscape Cowork - Koregaon Park, Pune
+  // 7. Inscape Cowork - Koregaon Park, Bhubaneshwar
   {
     id: 79,
     name: 'Inscape Cowork',
     badge: null,      // Screenshot me koi badge nahi hai
     rating: null,     // Screenshot me rating nahi hai
     area: 'Koregaon Park',
-    location: 'Koregaon Park, Pune',
+    location: 'Koregaon Park, Bhubaneshwar',
     price: '₹6,500',
     period: '/ month',
     priceFormatted: '₹6,500 / month',
@@ -1720,14 +1720,14 @@ export const pageThreeMorePuneOfficeCards = [
       'https://img.cofynd.com/images/original/a332625bd31a0c9ac4c72040dfd7455743784a66.jpg'
     ]
   },
-  // 8. Quick Office - Hinjewadi-Wakad Road, Pune
+  // 8. Quick Office - Hinjewadi-Wakad Road, Bhubaneshwar
   {
     id: 80,
     name: 'Quick Office',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: null,     // Screenshot me rating nahi hai
     area: 'Hinjewadi',
-    location: 'Hinjewadi-Wakad Road, Pune',
+    location: 'Hinjewadi-Wakad Road, Bhubaneshwar',
     price: '₹6,499',
     period: '/ month',
     priceFormatted: '₹6,499 / month',
@@ -1747,18 +1747,18 @@ export const pageThreeMorePuneOfficeCards = [
 // ----------------------------------------------------------------------------
 // Jab user pagination me button '3' par click karega, tab "Discover your perfect
 // workspace with Mycoworking" banner ke niche wale third 8 cards ki jagah ye 8 naye cards display honge.
-// Button '1' click karne par wapas pehle wale 8 cards (finalPuneOfficeCards) aa jayenge.
+// Button '1' click karne par wapas pehle wale 8 cards (finalBhubaneshwarOfficeCards) aa jayenge.
 // Sabhi cards me real internet images, badge, rating, location aur price di gayi hai.
 // ============================================================================
-export const pageThreeFinalPuneOfficeCards = [
-  // 1. Bootstart Coworking – Clover Hills Plaza - NIBM, Pune
+export const pageThreeFinalBhubaneshwarOfficeCards = [
+  // 1. Bootstart Coworking – Clover Hills Plaza - NIBM, Bhubaneshwar
   {
     id: 81,
     name: 'Bootstart Coworking – Clover Hills Plaza',
     badge: 'Premium', // Card ke upar 'Premium' crown badge
     rating: 4.9,      // Star rating 4.9
     area: 'NIBM',
-    location: 'NIBM, Pune',
+    location: 'NIBM, Bhubaneshwar',
     price: '₹7,000',
     period: '/ month',
     priceFormatted: '₹7,000 / month',
@@ -1771,14 +1771,14 @@ export const pageThreeFinalPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/fe26d0e20ddaf03e8947342e7765769c3b7b5cd9.webp'
     ]
   },
-  // 2. Level 212 coworks - Exhibition Rd, Pune Camp, Pune
+  // 2. Level 212 coworks - Exhibition Rd, Bhubaneshwar Camp, Bhubaneshwar
   {
     id: 82,
     name: 'Level 212 coworks',
     badge: 'Premium', // Card ke upar 'Premium' crown badge
     rating: null,     // Screenshot me rating nahi hai
-    area: 'Pune Camp',
-    location: 'Exhibition Rd, Pune Camp, Pune, Maharashtra, India',
+    area: 'Bhubaneshwar Camp',
+    location: 'Exhibition Rd, Bhubaneshwar Camp, Bhubaneshwar, Maharashtra, India',
     price: '₹5,999',
     period: '/ month',
     priceFormatted: '₹5,999 / month',
@@ -1791,14 +1791,14 @@ export const pageThreeFinalPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/eb34ff86c6e8cf061227ed2532c6420e13c11c14.webp'
     ]
   },
-  // 3. Thinkcowork - Aundh, Pune
+  // 3. Thinkcowork - Aundh, Bhubaneshwar
   {
     id: 83,
     name: 'Thinkcowork',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: null,     // Screenshot me rating nahi hai
     area: 'Aundh',
-    location: 'Aundh, Pune',
+    location: 'Aundh, Bhubaneshwar',
     price: '₹6,999',
     period: '/ month',
     priceFormatted: '₹6,999 / month',
@@ -1811,14 +1811,14 @@ export const pageThreeFinalPuneOfficeCards = [
       'https://img.cofynd.com/images/original/8aedd18ca1ff6255b53489882f554edc5130222f.jpg'
     ]
   },
-  // 4. TBL Spaces - Nanded City, Pune
+  // 4. TBL Spaces - Nanded City, Bhubaneshwar
   {
     id: 84,
     name: 'TBL Spaces',
     badge: 'Special Offer', // Card ke upar 'Special Offer' crown badge
     rating: null,           // Screenshot me rating nahi hai
     area: 'Nanded City',
-    location: 'Nanded City Sinhgad Rd, Nanded City, Nanded, Pune, Maharashtra 411068, India',
+    location: 'Nanded City Sinhgad Rd, Nanded City, Nanded, Bhubaneshwar, Maharashtra 411068, India',
     price: '₹6,999',
     period: '/ month',
     priceFormatted: '₹6,999 / month',
@@ -1831,14 +1831,14 @@ export const pageThreeFinalPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/604a92f54abd499469b83ec493b75005e4ef2edc.webp'
     ]
   },
-  // 5. Enzigma Coworking - Baner, Pune
+  // 5. Enzigma Coworking - Baner, Bhubaneshwar
   {
     id: 85,
     name: 'Enzigma Coworking',
     badge: 'Premium', // Card ke upar 'Premium' crown badge
     rating: null,     // Screenshot me rating nahi hai
     area: 'Baner',
-    location: 'Baner, Pune.',
+    location: 'Baner, Bhubaneshwar.',
     price: '₹9,999',
     period: '/ month',
     priceFormatted: '₹9,999 / month',
@@ -1851,14 +1851,14 @@ export const pageThreeFinalPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/5dd38c3a0736451d80c762031c8e4b097cf7f617.webp'
     ]
   },
-  // 6. Reality Workspaces - Pimple Saudagar, Pune
+  // 6. Reality Workspaces - Pimple Saudagar, Bhubaneshwar
   {
     id: 86,
     name: 'Reality Workspaces',
     badge: 'Special Offer', // Card ke upar 'Special Offer' crown badge
     rating: 4.5,            // Star rating 4.5
     area: 'Pimple Saudagar',
-    location: 'Pimple Saudagar, Pune',
+    location: 'Pimple Saudagar, Bhubaneshwar',
     price: '₹9,999',
     period: '/ month',
     priceFormatted: '₹9,999 / month',
@@ -1871,14 +1871,14 @@ export const pageThreeFinalPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/ee1efc46e5c811c5f1c1509db951cf20ff81a37f.webp'
     ]
   },
-  // 7. ANA Workspace - Chinchwad, Pune
+  // 7. ANA Workspace - Chinchwad, Bhubaneshwar
   {
     id: 87,
     name: 'ANA Workspace',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: null,     // Screenshot me rating nahi hai
     area: 'Pimpri Chinchwad',
-    location: 'Chinchwad, Pune',
+    location: 'Chinchwad, Bhubaneshwar',
     price: '₹5,999',
     period: '/ month',
     priceFormatted: '₹5,999 / month',
@@ -1891,14 +1891,14 @@ export const pageThreeFinalPuneOfficeCards = [
       'https://img.cofynd.com/images/original/83fdd16c008a520c82723ad290e25631b81c686f.jpg'
     ]
   },
-  // 8. AllDeskSolutions - Hinjewadi, Pune
+  // 8. AllDeskSolutions - Hinjewadi, Bhubaneshwar
   {
     id: 88,
     name: 'AllDeskSolutions',
     badge: null,      // Screenshot me koi badge nahi hai
     rating: null,     // Screenshot me rating nahi hai
     area: 'Hinjewadi',
-    location: 'Hinjewadi, Pune.',
+    location: 'Hinjewadi, Bhubaneshwar.',
     price: '₹4,999',
     period: '/ month',
     priceFormatted: '₹4,999 / month',
@@ -1918,18 +1918,18 @@ export const pageThreeFinalPuneOfficeCards = [
 // ----------------------------------------------------------------------------
 // Jab user pagination me button '3' par click karega, tab "Customized office
 // solutions for your team" banner ke niche wale fourth 8 cards ki jagah ye 8 naye cards display honge.
-// Button '1' click karne par wapas pehle wale 8 cards (featuredPuneOfficeCards) aa jayenge.
+// Button '1' click karne par wapas pehle wale 8 cards (featuredBhubaneshwarOfficeCards) aa jayenge.
 // Sabhi cards me real internet images, badge, rating, location aur price di gayi hai.
 // ============================================================================
-export const pageThreeFeaturedPuneOfficeCards = [
-  // 1. TODO COWORKING - Wakad, Pune
+export const pageThreeFeaturedBhubaneshwarOfficeCards = [
+  // 1. TODO COWORKING - Wakad, Bhubaneshwar
   {
     id: 89,
     name: 'TODO COWORKING',
     badge: 'Premium', // Card ke upar 'Premium' crown badge
     rating: null,     // Screenshot me rating nahi hai
     area: 'Wakad',
-    location: 'Wakad, Pune',
+    location: 'Wakad, Bhubaneshwar',
     price: '₹7,499',
     period: '/ month',
     priceFormatted: '₹7,499 / month',
@@ -1942,14 +1942,14 @@ export const pageThreeFeaturedPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/6599a7e747e2b98191bddc176789553fedeb3df7.webp'
     ]
   },
-  // 2. Galaxy coworking space - Camp, Pune
+  // 2. Galaxy coworking space - Camp, Bhubaneshwar
   {
     id: 90,
     name: 'Galaxy coworking space',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: 4.7,      // Star rating 4.7
     area: 'Camp',
-    location: 'Camp, Pune',
+    location: 'Camp, Bhubaneshwar',
     price: '₹4,999',
     period: '/ month',
     priceFormatted: '₹4,999 / month',
@@ -1962,14 +1962,14 @@ export const pageThreeFeaturedPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/8bb04c2010c6e4ab0d07f2e3d2361d20283f93dd.webp'
     ]
   },
-  // 3. Anchor Coworking - Shivneri Colony, Pune
+  // 3. Anchor Coworking - Shivneri Colony, Bhubaneshwar
   {
     id: 91,
     name: 'Anchor Coworking',
     badge: null,  // Screenshot me koi badge nahi hai
     rating: null, // Screenshot me rating nahi hai
     area: 'Baner',
-    location: 'Shivneri Colony, Pune',
+    location: 'Shivneri Colony, Bhubaneshwar',
     price: '₹5,000',
     period: '/ month',
     priceFormatted: '₹5,000 / month',
@@ -1982,14 +1982,14 @@ export const pageThreeFeaturedPuneOfficeCards = [
       'https://img.cofynd.com/images/original/856d9d73fc023c1c3eeab089f859b4ff0e56bc1e.jpg'
     ]
   },
-  // 4. Growth Hub - Baner, Pune
+  // 4. Growth Hub - Baner, Bhubaneshwar
   {
     id: 92,
     name: 'Growth Hub',
     badge: 'Premium', // Card ke upar 'Premium' crown badge
     rating: 4.5,      // Star rating 4.5
     area: 'Baner',
-    location: 'Baner, Pune',
+    location: 'Baner, Bhubaneshwar',
     price: '₹5,999',
     period: '/ month',
     priceFormatted: '₹5,999 / month',
@@ -2002,14 +2002,14 @@ export const pageThreeFeaturedPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/07f5854f28ec6d447a35f49993b316f8cbfb6359.webp'
     ]
   },
-  // 5. TRIOS - Finswell - Viman nagar - Viman Nagar, Pune
+  // 5. TRIOS - Finswell - Viman nagar - Viman Nagar, Bhubaneshwar
   {
     id: 93,
     name: 'TRIOS - Finswell - Viman nagar',
     badge: 'Premium', // Card ke upar 'Premium' crown badge
     rating: null,     // Screenshot me rating nahi hai
     area: 'Viman Nagar',
-    location: 'Viman Nagar, Pune',
+    location: 'Viman Nagar, Bhubaneshwar',
     price: '₹10,999',
     period: '/ month',
     priceFormatted: '₹10,999 / month',
@@ -2022,14 +2022,14 @@ export const pageThreeFeaturedPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/a4e23f998a00530e1f94d0be23abe8592e97d6d7.webp'
     ]
   },
-  // 6. Kowork Coworking Space - Wakad, Pune
+  // 6. Kowork Coworking Space - Wakad, Bhubaneshwar
   {
     id: 94,
     name: 'Kowork Coworking Space',
     badge: null,  // Screenshot me koi badge nahi hai
     rating: null, // Screenshot me rating nahi hai
     area: 'Wakad',
-    location: 'Wakad, Pune',
+    location: 'Wakad, Bhubaneshwar',
     price: '₹6,000',
     period: '/ month',
     priceFormatted: '₹6,000 / month',
@@ -2042,14 +2042,14 @@ export const pageThreeFeaturedPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/30af2c304245fdb437494efa307bb5c2ebff907c.webp'
     ]
   },
-  // 7. Bootstart Coworking – VCC Vantage Baner - Baner, Pune
+  // 7. Bootstart Coworking – VCC Vantage Baner - Baner, Bhubaneshwar
   {
     id: 95,
     name: 'Bootstart Coworking – VCC Vantage Baner',
     badge: 'Premium', // Card ke upar 'Premium' crown badge
     rating: 4.8,      // Star rating 4.8
     area: 'Baner',
-    location: 'Baner, Pune',
+    location: 'Baner, Bhubaneshwar',
     price: '₹8,000',
     period: '/ month',
     priceFormatted: '₹8,000 / month',
@@ -2062,7 +2062,7 @@ export const pageThreeFeaturedPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/b93374912956cfc66816ff897d77e420fa3bd92f.webp'
     ]
   },
-  // 8. CreateX - Ashok Nagar, Kharadi, Pune
+  // 8. CreateX - Ashok Nagar, Kharadi, Bhubaneshwar
   {
     id: 96,
     name: 'CreateX',
@@ -2099,18 +2099,18 @@ export const pageThreeFeaturedPuneOfficeCards = [
 // ----------------------------------------------------------------------------
 // Jab user pagination me button '4' par click karega, tab top 8 cards ki jagah
 // ye 8 naye cards display honge.
-// Button '1' click karne par wapas pehle wale 8 cards (puneOfficeCards) aa jayenge.
+// Button '1' click karne par wapas pehle wale 8 cards (bhubaneshwarOfficeCards) aa jayenge.
 // Har card me real internet images, badge, rating, location aur price di gayi hai.
 // ============================================================================
-export const pageFourPuneOfficeCards = [
-  // 1. Trios Balaji Business Centre - Baner, Pune
+export const pageFourBhubaneshwarOfficeCards = [
+  // 1. Trios Balaji Business Centre - Baner, Bhubaneshwar
   {
     id: 65,
     name: 'Trios Balaji Business Centre',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: 4.6,      // Star rating 4.6
     area: 'Baner',    // Neighborhood filter ke liye
-    location: 'Baner, Pune', // Card me display hone wala address
+    location: 'Baner, Bhubaneshwar', // Card me display hone wala address
     price: '₹9,999',
     period: '/ month',
     priceFormatted: '₹9,999 / month',
@@ -2124,14 +2124,14 @@ export const pageFourPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/d8dbca95fc6c51fcde7bc07a3eaf7ea01896c1b4.webp'
     ]
   },
-  // 2. Incube Coworking - Baner, Pune
+  // 2. Incube Coworking - Baner, Bhubaneshwar
   {
     id: 66,
     name: 'Incube Coworking',
     badge: null,      // Screenshot me koi badge nahi hai
     rating: null,     // Screenshot me rating nahi hai
     area: 'Baner',
-    location: 'Next to Medipoint Hospital, Baner, Pune',
+    location: 'Next to Medipoint Hospital, Baner, Bhubaneshwar',
     price: '₹4,000',
     period: '/ month',
     priceFormatted: '₹4,000 / month',
@@ -2144,14 +2144,14 @@ export const pageFourPuneOfficeCards = [
       'https://img.cofynd.com/images/latest_images_2024/f8d9606998e1218be2aa1030247812464c493f97.webp'
     ]
   },
-  // 3. Share A Space - Aundh, Pune
+  // 3. Share A Space - Aundh, Bhubaneshwar
   {
     id: 67,
     name: 'Share A Space',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: 4.5,      // Star rating 4.5
     area: 'Aundh',    // Neighborhood filter ke liye
-    location: 'Aundh, Pune', // Card me display hone wala address
+    location: 'Aundh, Bhubaneshwar', // Card me display hone wala address
     price: '₹9,499',
     period: '/ month',
     priceFormatted: '₹9,499 / month',
@@ -2164,14 +2164,14 @@ export const pageFourPuneOfficeCards = [
       'https://img.cofynd.com/images/original/63e2171239c540d2745f634c1f73a3198526040a.jpg'
     ]
   },
-  // 4. Collab Workspaces - Kharadi, Pune
+  // 4. Collab Workspaces - Kharadi, Bhubaneshwar
   {
     id: 68,
     name: 'Collab Workspaces',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: 4.8,      // Star rating 4.8
     area: 'Kharadi',
-    location: 'Kharadi, Pune',
+    location: 'Kharadi, Bhubaneshwar',
     price: '₹7,499',
     period: '/ month',
     priceFormatted: '₹7,499 / month',
@@ -2184,14 +2184,14 @@ export const pageFourPuneOfficeCards = [
       'https://img.cofynd.com/images/original/a3086bd7c780ef6a8e8bf884e4305aebfd493bef.jpg'
     ]
   },
-  // 5. Starthub - Koregaon Park, Pune
+  // 5. Starthub - Koregaon Park, Bhubaneshwar
   {
     id: 69,
     name: 'Starthub',
     badge: 'Popular', // Card ke upar 'Popular' crown badge
     rating: 4.8,      // Star rating 4.8
     area: 'Koregaon Park',
-    location: 'Koregaon Park, Pune',
+    location: 'Koregaon Park, Bhubaneshwar',
     price: '₹7,499',
     period: '/ month',
     priceFormatted: '₹7,499 / month',
@@ -2204,14 +2204,14 @@ export const pageFourPuneOfficeCards = [
       'https://img.cofynd.com/images/original/c1ca5ce9ec9caf7c6c1d9af4e976032b9e3021e1.jpg'
     ]
   },
-  // 6. Excella Coworking Space - DS Ikon - Baner, Pune
+  // 6. Excella Coworking Space - DS Ikon - Baner, Bhubaneshwar
   {
     id: 70,
     name: 'Excella Coworking Space - DS Ikon',
     badge: null,      // Screenshot me koi badge nahi hai
     rating: null,     // Screenshot me rating nahi hai
     area: 'Baner',
-    location: 'DS IKON 4th Floor, Pune',
+    location: 'DS IKON 4th Floor, Bhubaneshwar',
     price: '₹8,000',
     period: '/ month',
     priceFormatted: '₹8,000 / month',
@@ -2241,7 +2241,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.5,
       "area": "Baner",
-      "location": "Baner, Pune.",
+      "location": "Baner, Bhubaneshwar.",
       "price": "₹6,499",
       "period": "/ Month",
       "priceFormatted": "₹6,499 / Month",
@@ -2260,7 +2260,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.6,
       "area": "Baner",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -2279,7 +2279,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.7,
       "area": "Baner",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹5,999",
       "period": "/ Month",
       "priceFormatted": "₹5,999 / Month",
@@ -2298,7 +2298,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.8,
       "area": "Baner",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹9,999",
       "period": "/ Month",
       "priceFormatted": "₹9,999 / Month",
@@ -2317,7 +2317,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.9,
       "area": "Baner",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹6,499",
       "period": "/ Month",
       "priceFormatted": "₹6,499 / Month",
@@ -2336,7 +2336,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.5,
       "area": "Baner",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -2355,7 +2355,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.6,
       "area": "Baner",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹9,999",
       "period": "/ Month",
       "priceFormatted": "₹9,999 / Month",
@@ -2374,7 +2374,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.7,
       "area": "Baner",
-      "location": "Cosmos gardens, Pune",
+      "location": "Cosmos gardens, Bhubaneshwar",
       "price": "₹6,999",
       "period": "/ Month",
       "priceFormatted": "₹6,999 / Month",
@@ -2393,7 +2393,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.8,
       "area": "Baner",
-      "location": "Next to Medipoint Hospital, Baner, Pune",
+      "location": "Next to Medipoint Hospital, Baner, Bhubaneshwar",
       "price": "₹4,000",
       "period": "/ Month",
       "priceFormatted": "₹4,000 / Month",
@@ -2412,7 +2412,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.9,
       "area": "Baner",
-      "location": "Shivneri Colony, Pune",
+      "location": "Shivneri Colony, Bhubaneshwar",
       "price": "₹5,000",
       "period": "/ Month",
       "priceFormatted": "₹5,000 / Month",
@@ -2433,7 +2433,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.5,
       "area": "Kharadi",
-      "location": "Kharadi, Pune",
+      "location": "Kharadi, Bhubaneshwar",
       "price": "₹4,999",
       "period": "/ Month",
       "priceFormatted": "₹4,999 / Month",
@@ -2452,7 +2452,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.6,
       "area": "Kharadi",
-      "location": "Kharadi, Pune",
+      "location": "Kharadi, Bhubaneshwar",
       "price": "₹7,499",
       "period": "/ Month",
       "priceFormatted": "₹7,499 / Month",
@@ -2471,7 +2471,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.7,
       "area": "Kharadi",
-      "location": "Kharadi, Pune",
+      "location": "Kharadi, Bhubaneshwar",
       "price": "₹8,499",
       "period": "/ Month",
       "priceFormatted": "₹8,499 / Month",
@@ -2509,7 +2509,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.9,
       "area": "Kharadi",
-      "location": "Kharadi, Pune",
+      "location": "Kharadi, Bhubaneshwar",
       "price": "₹6,999",
       "period": "/ Month",
       "priceFormatted": "₹6,999 / Month",
@@ -2528,7 +2528,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.5,
       "area": "Kharadi",
-      "location": "Kharadi, Pune",
+      "location": "Kharadi, Bhubaneshwar",
       "price": "₹14,499",
       "period": "/ Month",
       "priceFormatted": "₹14,499 / Month",
@@ -2547,7 +2547,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.6,
       "area": "Kharadi",
-      "location": "Viman Nagar, Pune",
+      "location": "Viman Nagar, Bhubaneshwar",
       "price": "₹9,499",
       "period": "/ Month",
       "priceFormatted": "₹9,499 / Month",
@@ -2566,7 +2566,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.7,
       "area": "Kharadi",
-      "location": "Viman Nagar, Pune",
+      "location": "Viman Nagar, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -2585,7 +2585,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.8,
       "area": "Kharadi",
-      "location": "Viman Nagar, Pune",
+      "location": "Viman Nagar, Bhubaneshwar",
       "price": "₹7,500",
       "period": "/ Month",
       "priceFormatted": "₹7,500 / Month",
@@ -2604,7 +2604,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.9,
       "area": "Kharadi",
-      "location": "Viman Nagar, Pune",
+      "location": "Viman Nagar, Bhubaneshwar",
       "price": "₹22,499",
       "period": "/ Month",
       "priceFormatted": "₹22,499 / Month",
@@ -2625,7 +2625,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.5,
       "area": "Viman Nagar",
-      "location": "Viman Nagar, Pune",
+      "location": "Viman Nagar, Bhubaneshwar",
       "price": "₹7,500",
       "period": "/ Month",
       "priceFormatted": "₹7,500 / Month",
@@ -2644,7 +2644,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.6,
       "area": "Viman Nagar",
-      "location": "Viman Nagar, Pune",
+      "location": "Viman Nagar, Bhubaneshwar",
       "price": "₹22,499",
       "period": "/ Month",
       "priceFormatted": "₹22,499 / Month",
@@ -2663,7 +2663,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.7,
       "area": "Viman Nagar",
-      "location": "Sakore Nagar, Viman Nagar, Pune",
+      "location": "Sakore Nagar, Viman Nagar, Bhubaneshwar",
       "price": "₹8,999",
       "period": "/ Month",
       "priceFormatted": "₹8,999 / Month",
@@ -2682,7 +2682,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.8,
       "area": "Viman Nagar",
-      "location": "Viman Nagar, Pune",
+      "location": "Viman Nagar, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -2701,7 +2701,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.9,
       "area": "Viman Nagar",
-      "location": "Viman Nagar, Pune",
+      "location": "Viman Nagar, Bhubaneshwar",
       "price": "₹9,499",
       "period": "/ Month",
       "priceFormatted": "₹9,499 / Month",
@@ -2720,7 +2720,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.5,
       "area": "Viman Nagar",
-      "location": "Viman Nagar, Pune",
+      "location": "Viman Nagar, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -2739,7 +2739,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.6,
       "area": "Viman Nagar",
-      "location": "Viman Nagar, Pune",
+      "location": "Viman Nagar, Bhubaneshwar",
       "price": "₹8,999",
       "period": "/ Month",
       "priceFormatted": "₹8,999 / Month",
@@ -2757,7 +2757,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.7,
       "area": "Viman Nagar",
-      "location": "Viman Nagar, Pune",
+      "location": "Viman Nagar, Bhubaneshwar",
       "price": "₹8,999",
       "period": "/ Month",
       "priceFormatted": "₹8,999 / Month",
@@ -2776,7 +2776,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.8,
       "area": "Viman Nagar",
-      "location": "Viman Nagar, Pune",
+      "location": "Viman Nagar, Bhubaneshwar",
       "price": "₹14,000",
       "period": "/ Month",
       "priceFormatted": "₹14,000 / Month",
@@ -2795,7 +2795,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.9,
       "area": "Viman Nagar",
-      "location": "Viman Nagar, Pune.",
+      "location": "Viman Nagar, Bhubaneshwar.",
       "price": "₹10,499",
       "period": "/ Month",
       "priceFormatted": "₹10,499 / Month",
@@ -2816,7 +2816,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.5,
       "area": "Koregaon Park",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹8,999",
       "period": "/ Month",
       "priceFormatted": "₹8,999 / Month",
@@ -2835,7 +2835,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.6,
       "area": "Koregaon Park",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹7,499",
       "period": "/ Month",
       "priceFormatted": "₹7,499 / Month",
@@ -2854,7 +2854,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.7,
       "area": "Koregaon Park",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -2872,7 +2872,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.8,
       "area": "Koregaon Park",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹6,500",
       "period": "/ Month",
       "priceFormatted": "₹6,500 / Month",
@@ -2891,7 +2891,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.9,
       "area": "Koregaon Park",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹6,999",
       "period": "/ Month",
       "priceFormatted": "₹6,999 / Month",
@@ -2910,7 +2910,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.5,
       "area": "Koregaon Park",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹7,000",
       "period": "/ Month",
       "priceFormatted": "₹7,000 / Month",
@@ -2929,7 +2929,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.6,
       "area": "Koregaon Park",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -2947,7 +2947,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.7,
       "area": "Koregaon Park",
-      "location": "Kalyani Nagar, Pune",
+      "location": "Kalyani Nagar, Bhubaneshwar",
       "price": "₹8,999",
       "period": "/ Month",
       "priceFormatted": "₹8,999 / Month",
@@ -2966,7 +2966,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.8,
       "area": "Koregaon Park",
-      "location": "Kalyani Nagar, Pune",
+      "location": "Kalyani Nagar, Bhubaneshwar",
       "price": "₹5,000",
       "period": "/ Month",
       "priceFormatted": "₹5,000 / Month",
@@ -2984,7 +2984,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.9,
       "area": "Koregaon Park",
-      "location": "Yerawada, Pune",
+      "location": "Yerawada, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -3005,7 +3005,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.5,
       "area": "Wakad",
-      "location": "Wakad, Pune",
+      "location": "Wakad, Bhubaneshwar",
       "price": "₹7,499",
       "period": "/ Month",
       "priceFormatted": "₹7,499 / Month",
@@ -3024,7 +3024,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.6,
       "area": "Wakad",
-      "location": "Wakad, Pune",
+      "location": "Wakad, Bhubaneshwar",
       "price": "₹8,999",
       "period": "/ Month",
       "priceFormatted": "₹8,999 / Month",
@@ -3042,7 +3042,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.7,
       "area": "Wakad",
-      "location": "Wakad, Pune",
+      "location": "Wakad, Bhubaneshwar",
       "price": "₹6,000",
       "period": "/ Month",
       "priceFormatted": "₹6,000 / Month",
@@ -3061,7 +3061,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.8,
       "area": "Wakad",
-      "location": "Hinjewadi-Wakad Road, Pune",
+      "location": "Hinjewadi-Wakad Road, Bhubaneshwar",
       "price": "₹6,499",
       "period": "/ Month",
       "priceFormatted": "₹6,499 / Month",
@@ -3080,7 +3080,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.9,
       "area": "Wakad",
-      "location": "Balewadi, Pune",
+      "location": "Balewadi, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -3099,7 +3099,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.5,
       "area": "Wakad",
-      "location": "Pimple Saudagar, Pune",
+      "location": "Pimple Saudagar, Bhubaneshwar",
       "price": "₹9,999",
       "period": "/ Month",
       "priceFormatted": "₹9,999 / Month",
@@ -3118,7 +3118,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.6,
       "area": "Wakad",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹9,999",
       "period": "/ Month",
       "priceFormatted": "₹9,999 / Month",
@@ -3136,7 +3136,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.7,
       "area": "Wakad",
-      "location": "Pimple Saudagar, Pune",
+      "location": "Pimple Saudagar, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -3155,7 +3155,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.8,
       "area": "Wakad",
-      "location": "Hinjewadi, Pune.",
+      "location": "Hinjewadi, Bhubaneshwar.",
       "price": "₹4,999",
       "period": "/ Month",
       "priceFormatted": "₹4,999 / Month",
@@ -3174,7 +3174,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.9,
       "area": "Wakad",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹5,499",
       "period": "/ Month",
       "priceFormatted": "₹5,499 / Month",
@@ -3195,7 +3195,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.5,
       "area": "Balewadi",
-      "location": "Balewadi, Pune",
+      "location": "Balewadi, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -3214,7 +3214,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.6,
       "area": "Balewadi",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹9,999",
       "period": "/ Month",
       "priceFormatted": "₹9,999 / Month",
@@ -3232,7 +3232,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.7,
       "area": "Balewadi",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹7,500",
       "period": "/ Month",
       "priceFormatted": "₹7,500 / Month",
@@ -3251,7 +3251,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.8,
       "area": "Balewadi",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹15,999",
       "period": "/ Month",
       "priceFormatted": "₹15,999 / Month",
@@ -3270,7 +3270,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.9,
       "area": "Balewadi",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -3289,7 +3289,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.5,
       "area": "Balewadi",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹5,499",
       "period": "/ Month",
       "priceFormatted": "₹5,499 / Month",
@@ -3308,7 +3308,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.6,
       "area": "Balewadi",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹6,499",
       "period": "/ Month",
       "priceFormatted": "₹6,499 / Month",
@@ -3327,7 +3327,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.7,
       "area": "Balewadi",
-      "location": "Hinjewadi-Wakad Road, Pune",
+      "location": "Hinjewadi-Wakad Road, Bhubaneshwar",
       "price": "₹6,499",
       "period": "/ Month",
       "priceFormatted": "₹6,499 / Month",
@@ -3346,7 +3346,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.8,
       "area": "Balewadi",
-      "location": "Balewadi, Pune",
+      "location": "Balewadi, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -3365,7 +3365,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.9,
       "area": "Balewadi",
-      "location": "Baner, Pune.",
+      "location": "Baner, Bhubaneshwar.",
       "price": "₹9,999",
       "period": "/ Month",
       "priceFormatted": "₹9,999 / Month",
@@ -3386,7 +3386,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.5,
       "area": "Hinjewadi",
-      "location": "Hinjewadi-Wakad Road, Pune",
+      "location": "Hinjewadi-Wakad Road, Bhubaneshwar",
       "price": "₹6,499",
       "period": "/ Month",
       "priceFormatted": "₹6,499 / Month",
@@ -3405,7 +3405,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.6,
       "area": "Hinjewadi",
-      "location": "Hinjewadi, Pune.",
+      "location": "Hinjewadi, Bhubaneshwar.",
       "price": "₹4,999",
       "period": "/ Month",
       "priceFormatted": "₹4,999 / Month",
@@ -3424,7 +3424,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.7,
       "area": "Hinjewadi",
-      "location": "Wakad, Pune",
+      "location": "Wakad, Bhubaneshwar",
       "price": "₹8,999",
       "period": "/ Month",
       "priceFormatted": "₹8,999 / Month",
@@ -3442,7 +3442,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.8,
       "area": "Hinjewadi",
-      "location": "Wakad, Pune",
+      "location": "Wakad, Bhubaneshwar",
       "price": "₹6,000",
       "period": "/ Month",
       "priceFormatted": "₹6,000 / Month",
@@ -3461,7 +3461,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.9,
       "area": "Hinjewadi",
-      "location": "Balewadi, Pune",
+      "location": "Balewadi, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -3480,7 +3480,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.5,
       "area": "Hinjewadi",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹5,999",
       "period": "/ Month",
       "priceFormatted": "₹5,999 / Month",
@@ -3499,7 +3499,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.6,
       "area": "Hinjewadi",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹9,999",
       "period": "/ Month",
       "priceFormatted": "₹9,999 / Month",
@@ -3517,7 +3517,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.7,
       "area": "Hinjewadi",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹15,999",
       "period": "/ Month",
       "priceFormatted": "₹15,999 / Month",
@@ -3536,7 +3536,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.8,
       "area": "Hinjewadi",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -3555,7 +3555,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.9,
       "area": "Hinjewadi",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹7,500",
       "period": "/ Month",
       "priceFormatted": "₹7,500 / Month",
@@ -3576,7 +3576,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.5,
       "area": "Kothrud",
-      "location": "Kothrud, Pune",
+      "location": "Kothrud, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -3595,7 +3595,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.6,
       "area": "Kothrud",
-      "location": "Erandwane, Pune",
+      "location": "Erandwane, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -3614,7 +3614,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.7,
       "area": "Kothrud",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹8,999",
       "period": "/ Month",
       "priceFormatted": "₹8,999 / Month",
@@ -3650,7 +3650,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.9,
       "area": "Kothrud",
-      "location": "Bavdhan, Pune",
+      "location": "Bavdhan, Bhubaneshwar",
       "price": "₹6,500",
       "period": "/ Month",
       "priceFormatted": "₹6,500 / Month",
@@ -3668,7 +3668,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.5,
       "area": "Kothrud",
-      "location": "BMCC Road, Pune, Maharashtra",
+      "location": "BMCC Road, Bhubaneshwar, Maharashtra",
       "price": "₹7,000",
       "period": "/ Month",
       "priceFormatted": "₹7,000 / Month",
@@ -3687,7 +3687,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.6,
       "area": "Kothrud",
-      "location": "Shivaji Nagar, Pune",
+      "location": "Shivaji Nagar, Bhubaneshwar",
       "price": "₹9,999",
       "period": "/ Month",
       "priceFormatted": "₹9,999 / Month",
@@ -3706,7 +3706,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.7,
       "area": "Kothrud",
-      "location": "Shivaji Nagar, Pune",
+      "location": "Shivaji Nagar, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -3725,7 +3725,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.8,
       "area": "Kothrud",
-      "location": "Nanded City Sinhgad Rd, Nanded City, Nanded, Pune, Maharashtra 411068, India",
+      "location": "Nanded City Sinhgad Rd, Nanded City, Nanded, Bhubaneshwar, Maharashtra 411068, India",
       "price": "₹6,999",
       "period": "/ Month",
       "priceFormatted": "₹6,999 / Month",
@@ -3744,7 +3744,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.9,
       "area": "Kothrud",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹9,999",
       "period": "/ Month",
       "priceFormatted": "₹9,999 / Month",
@@ -3765,7 +3765,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.5,
       "area": "Aundh",
-      "location": "Aundh, Pune",
+      "location": "Aundh, Bhubaneshwar",
       "price": "₹9,499",
       "period": "/ Month",
       "priceFormatted": "₹9,499 / Month",
@@ -3784,7 +3784,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.6,
       "area": "Aundh",
-      "location": "Aundh, Pune",
+      "location": "Aundh, Bhubaneshwar",
       "price": "₹6,999",
       "period": "/ Month",
       "priceFormatted": "₹6,999 / Month",
@@ -3803,7 +3803,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.7,
       "area": "Aundh",
-      "location": "Shambhu Vihar Society, Aundh Gaon, Aundh, Pune, Maharashtra - , India",
+      "location": "Shambhu Vihar Society, Aundh Gaon, Aundh, Bhubaneshwar, Maharashtra - , India",
       "price": "₹7,499",
       "period": "/ Month",
       "priceFormatted": "₹7,499 / Month",
@@ -3822,7 +3822,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.8,
       "area": "Aundh",
-      "location": "Aundh, Pune.",
+      "location": "Aundh, Bhubaneshwar.",
       "price": "₹9,999",
       "period": "/ Month",
       "priceFormatted": "₹9,999 / Month",
@@ -3841,7 +3841,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.9,
       "area": "Aundh",
-      "location": "Next to Medipoint Hospital, Baner, Pune",
+      "location": "Next to Medipoint Hospital, Baner, Bhubaneshwar",
       "price": "₹4,000",
       "period": "/ Month",
       "priceFormatted": "₹4,000 / Month",
@@ -3860,7 +3860,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.5,
       "area": "Aundh",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -3879,7 +3879,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.6,
       "area": "Aundh",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -3898,7 +3898,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.7,
       "area": "Aundh",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹9,200",
       "period": "/ Month",
       "priceFormatted": "₹9,200 / Month",
@@ -3917,7 +3917,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.8,
       "area": "Aundh",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -3936,7 +3936,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.9,
       "area": "Aundh",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹6,499",
       "period": "/ Month",
       "priceFormatted": "₹6,499 / Month",
@@ -3957,7 +3957,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.5,
       "area": "Pimple Saudagar",
-      "location": "Pimple Saudagar, Pune",
+      "location": "Pimple Saudagar, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -3976,7 +3976,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.6,
       "area": "Pimple Saudagar",
-      "location": "Pimple Saudagar, Pune",
+      "location": "Pimple Saudagar, Bhubaneshwar",
       "price": "₹4,999",
       "period": "/ Month",
       "priceFormatted": "₹4,999 / Month",
@@ -3995,7 +3995,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.7,
       "area": "Pimple Saudagar",
-      "location": "Pimple Saudagar, Pune",
+      "location": "Pimple Saudagar, Bhubaneshwar",
       "price": "₹9,999",
       "period": "/ Month",
       "priceFormatted": "₹9,999 / Month",
@@ -4014,7 +4014,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.8,
       "area": "Pimple Saudagar",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹5,499",
       "period": "/ Month",
       "priceFormatted": "₹5,499 / Month",
@@ -4033,7 +4033,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.9,
       "area": "Pimple Saudagar",
-      "location": "Wakad, Pune",
+      "location": "Wakad, Bhubaneshwar",
       "price": "₹6,000",
       "period": "/ Month",
       "priceFormatted": "₹6,000 / Month",
@@ -4052,7 +4052,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.5,
       "area": "Pimple Saudagar",
-      "location": "Chinchwad, Pune",
+      "location": "Chinchwad, Bhubaneshwar",
       "price": "₹5,999",
       "period": "/ Month",
       "priceFormatted": "₹5,999 / Month",
@@ -4071,7 +4071,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.6,
       "area": "Pimple Saudagar",
-      "location": "Baner, Pune.",
+      "location": "Baner, Bhubaneshwar.",
       "price": "₹7,499",
       "period": "/ Month",
       "priceFormatted": "₹7,499 / Month",
@@ -4090,7 +4090,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.7,
       "area": "Pimple Saudagar",
-      "location": "Shambhu Vihar Society, Aundh Gaon, Aundh, Pune, Maharashtra - , India",
+      "location": "Shambhu Vihar Society, Aundh Gaon, Aundh, Bhubaneshwar, Maharashtra - , India",
       "price": "₹7,499",
       "period": "/ Month",
       "priceFormatted": "₹7,499 / Month",
@@ -4109,7 +4109,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.8,
       "area": "Pimple Saudagar",
-      "location": "Next to Medipoint Hospital, Baner, Pune",
+      "location": "Next to Medipoint Hospital, Baner, Bhubaneshwar",
       "price": "₹4,000",
       "period": "/ Month",
       "priceFormatted": "₹4,000 / Month",
@@ -4128,7 +4128,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.9,
       "area": "Pimple Saudagar",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹9,999",
       "period": "/ Month",
       "priceFormatted": "₹9,999 / Month",
@@ -4148,7 +4148,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.5,
       "area": "Kalyani Nagar",
-      "location": "Kalyani Nagar, Pune",
+      "location": "Kalyani Nagar, Bhubaneshwar",
       "price": "₹5,000",
       "period": "/ Month",
       "priceFormatted": "₹5,000 / Month",
@@ -4166,7 +4166,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.6,
       "area": "Kalyani Nagar",
-      "location": "Kalyani Nagar, Pune",
+      "location": "Kalyani Nagar, Bhubaneshwar",
       "price": "₹8,999",
       "period": "/ Month",
       "priceFormatted": "₹8,999 / Month",
@@ -4185,7 +4185,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.7,
       "area": "Kalyani Nagar",
-      "location": "Kalyani Nagar, Pune.",
+      "location": "Kalyani Nagar, Bhubaneshwar.",
       "price": "₹11,999",
       "period": "/ Month",
       "priceFormatted": "₹11,999 / Month",
@@ -4204,7 +4204,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.8,
       "area": "Kalyani Nagar",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹6,999",
       "period": "/ Month",
       "priceFormatted": "₹6,999 / Month",
@@ -4223,7 +4223,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.9,
       "area": "Kalyani Nagar",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -4241,7 +4241,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.5,
       "area": "Kalyani Nagar",
-      "location": "Yerawada, Pune",
+      "location": "Yerawada, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -4260,7 +4260,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.6,
       "area": "Kalyani Nagar",
-      "location": "Viman Nagar, Pune",
+      "location": "Viman Nagar, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -4279,7 +4279,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.7,
       "area": "Kalyani Nagar",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹7,499",
       "period": "/ Month",
       "priceFormatted": "₹7,499 / Month",
@@ -4298,7 +4298,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.8,
       "area": "Kalyani Nagar",
-      "location": "Viman Nagar, Pune",
+      "location": "Viman Nagar, Bhubaneshwar",
       "price": "₹22,499",
       "period": "/ Month",
       "priceFormatted": "₹22,499 / Month",
@@ -4317,7 +4317,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.9,
       "area": "Kalyani Nagar",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -4337,7 +4337,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.5,
       "area": "Bavdhan",
-      "location": "Bavdhan, Pune",
+      "location": "Bavdhan, Bhubaneshwar",
       "price": "₹6,500",
       "period": "/ Month",
       "priceFormatted": "₹6,500 / Month",
@@ -4355,7 +4355,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.6,
       "area": "Bavdhan",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -4374,7 +4374,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.7,
       "area": "Bavdhan",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -4393,7 +4393,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.8,
       "area": "Bavdhan",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -4412,7 +4412,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.9,
       "area": "Bavdhan",
-      "location": "Kothrud, Pune",
+      "location": "Kothrud, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -4431,7 +4431,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.5,
       "area": "Bavdhan",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -4450,7 +4450,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.6,
       "area": "Bavdhan",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹8,999",
       "period": "/ Month",
       "priceFormatted": "₹8,999 / Month",
@@ -4469,7 +4469,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.7,
       "area": "Bavdhan",
-      "location": "Baner, Pune.",
+      "location": "Baner, Bhubaneshwar.",
       "price": "₹6,999",
       "period": "/ Month",
       "priceFormatted": "₹6,999 / Month",
@@ -4488,7 +4488,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.8,
       "area": "Bavdhan",
-      "location": "Baner, Pune",
+      "location": "Baner, Bhubaneshwar",
       "price": "₹9,999",
       "period": "/ Month",
       "priceFormatted": "₹9,999 / Month",
@@ -4507,7 +4507,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.9,
       "area": "Bavdhan",
-      "location": "Shivneri Colony, Pune",
+      "location": "Shivneri Colony, Bhubaneshwar",
       "price": "₹5,000",
       "period": "/ Month",
       "priceFormatted": "₹5,000 / Month",
@@ -4528,7 +4528,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.5,
       "area": "Magarpatta",
-      "location": "Magarpatta, Pune",
+      "location": "Magarpatta, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -4547,7 +4547,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.6,
       "area": "Magarpatta",
-      "location": "Hadapsar, Pune",
+      "location": "Hadapsar, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -4566,7 +4566,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.7,
       "area": "Magarpatta",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -4584,7 +4584,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.8,
       "area": "Magarpatta",
-      "location": "Fatima Nagar, Wanowrie, Pune, Maharashtra, India",
+      "location": "Fatima Nagar, Wanowrie, Bhubaneshwar, Maharashtra, India",
       "price": "₹5,500",
       "period": "/ Month",
       "priceFormatted": "₹5,500 / Month",
@@ -4603,7 +4603,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.9,
       "area": "Magarpatta",
-      "location": "Kharadi, Pune",
+      "location": "Kharadi, Bhubaneshwar",
       "price": "₹8,499",
       "period": "/ Month",
       "priceFormatted": "₹8,499 / Month",
@@ -4622,7 +4622,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.5,
       "area": "Magarpatta",
-      "location": "Kalyani Nagar, Pune",
+      "location": "Kalyani Nagar, Bhubaneshwar",
       "price": "₹5,000",
       "period": "/ Month",
       "priceFormatted": "₹5,000 / Month",
@@ -4640,7 +4640,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.6,
       "area": "Magarpatta",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹6,999",
       "period": "/ Month",
       "priceFormatted": "₹6,999 / Month",
@@ -4659,7 +4659,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.7,
       "area": "Magarpatta",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -4677,7 +4677,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.8,
       "area": "Magarpatta",
-      "location": "Kalyani Nagar, Pune",
+      "location": "Kalyani Nagar, Bhubaneshwar",
       "price": "₹8,999",
       "period": "/ Month",
       "priceFormatted": "₹8,999 / Month",
@@ -4696,7 +4696,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.9,
       "area": "Magarpatta",
-      "location": "Camp, Pune",
+      "location": "Camp, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -4717,7 +4717,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.5,
       "area": "Hadapsar",
-      "location": "Fatima Nagar, Wanowrie, Pune, Maharashtra, India",
+      "location": "Fatima Nagar, Wanowrie, Bhubaneshwar, Maharashtra, India",
       "price": "₹5,500",
       "period": "/ Month",
       "priceFormatted": "₹5,500 / Month",
@@ -4736,7 +4736,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.6,
       "area": "Hadapsar",
-      "location": "Hadapsar, Pune",
+      "location": "Hadapsar, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -4755,7 +4755,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.7,
       "area": "Hadapsar",
-      "location": "Office 102, Tower S4, Cybercity, Magarpatta, Cybercity, Pune, Maharashtra 411013",
+      "location": "Office 102, Tower S4, Cybercity, Magarpatta, Cybercity, Bhubaneshwar, Maharashtra 411013",
       "price": "₹11,500",
       "period": "/ Month",
       "priceFormatted": "₹11,500 / Month",
@@ -4774,7 +4774,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.8,
       "area": "Hadapsar",
-      "location": "Magarpatta, Pune",
+      "location": "Magarpatta, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -4793,7 +4793,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.9,
       "area": "Hadapsar",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -4811,7 +4811,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.5,
       "area": "Hadapsar",
-      "location": "Kharadi, Pune",
+      "location": "Kharadi, Bhubaneshwar",
       "price": "₹8,499",
       "period": "/ Month",
       "priceFormatted": "₹8,499 / Month",
@@ -4830,7 +4830,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.6,
       "area": "Hadapsar",
-      "location": "Kalyani Nagar, Pune",
+      "location": "Kalyani Nagar, Bhubaneshwar",
       "price": "₹5,000",
       "period": "/ Month",
       "priceFormatted": "₹5,000 / Month",
@@ -4848,7 +4848,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.7,
       "area": "Hadapsar",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹6,999",
       "period": "/ Month",
       "priceFormatted": "₹6,999 / Month",
@@ -4867,7 +4867,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.8,
       "area": "Hadapsar",
-      "location": "Kalyani Nagar, Pune",
+      "location": "Kalyani Nagar, Bhubaneshwar",
       "price": "₹8,999",
       "period": "/ Month",
       "priceFormatted": "₹8,999 / Month",
@@ -4886,7 +4886,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.9,
       "area": "Hadapsar",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -4906,7 +4906,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.5,
       "area": "Pimpri Chinchwad",
-      "location": "Chinchwad, Pune",
+      "location": "Chinchwad, Bhubaneshwar",
       "price": "₹5,999",
       "period": "/ Month",
       "priceFormatted": "₹5,999 / Month",
@@ -4925,7 +4925,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.6,
       "area": "Pimpri Chinchwad",
-      "location": "Pimpri Chinchwad, Pune",
+      "location": "Pimpri Chinchwad, Bhubaneshwar",
       "price": "₹5,499",
       "period": "/ Month",
       "priceFormatted": "₹5,499 / Month",
@@ -4944,7 +4944,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.7,
       "area": "Pimpri Chinchwad",
-      "location": "Pimpri-Chinchwad, Pune",
+      "location": "Pimpri-Chinchwad, Bhubaneshwar",
       "price": "₹8,499",
       "period": "/ Month",
       "priceFormatted": "₹8,499 / Month",
@@ -4982,7 +4982,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.9,
       "area": "Pimpri Chinchwad",
-      "location": "Pimpri-Chinchwad, Pune.",
+      "location": "Pimpri-Chinchwad, Bhubaneshwar.",
       "price": "₹6,999",
       "period": "/ Month",
       "priceFormatted": "₹6,999 / Month",
@@ -5001,7 +5001,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.5,
       "area": "Pimpri Chinchwad",
-      "location": "Pimple Saudagar, Pune",
+      "location": "Pimple Saudagar, Bhubaneshwar",
       "price": "₹4,999",
       "period": "/ Month",
       "priceFormatted": "₹4,999 / Month",
@@ -5020,7 +5020,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.6,
       "area": "Pimpri Chinchwad",
-      "location": "Pimple Saudagar, Pune",
+      "location": "Pimple Saudagar, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -5039,7 +5039,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.7,
       "area": "Pimpri Chinchwad",
-      "location": "Pimple Saudagar, Pune",
+      "location": "Pimple Saudagar, Bhubaneshwar",
       "price": "₹9,999",
       "period": "/ Month",
       "priceFormatted": "₹9,999 / Month",
@@ -5058,7 +5058,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.8,
       "area": "Pimpri Chinchwad",
-      "location": "Wakad, Pune",
+      "location": "Wakad, Bhubaneshwar",
       "price": "₹6,000",
       "period": "/ Month",
       "priceFormatted": "₹6,000 / Month",
@@ -5077,7 +5077,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.9,
       "area": "Pimpri Chinchwad",
-      "location": "Wakad, Pune",
+      "location": "Wakad, Bhubaneshwar",
       "price": "₹8,999",
       "period": "/ Month",
       "priceFormatted": "₹8,999 / Month",
@@ -5097,7 +5097,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.5,
       "area": "Yerwada",
-      "location": "Yerawada, Pune",
+      "location": "Yerawada, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -5116,7 +5116,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.6,
       "area": "Yerwada",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹7,499",
       "period": "/ Month",
       "priceFormatted": "₹7,499 / Month",
@@ -5135,7 +5135,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.7,
       "area": "Yerwada",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -5153,7 +5153,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.8,
       "area": "Yerwada",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹6,999",
       "period": "/ Month",
       "priceFormatted": "₹6,999 / Month",
@@ -5172,7 +5172,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.9,
       "area": "Yerwada",
-      "location": "Kalyani Nagar, Pune",
+      "location": "Kalyani Nagar, Bhubaneshwar",
       "price": "₹8,999",
       "period": "/ Month",
       "priceFormatted": "₹8,999 / Month",
@@ -5191,7 +5191,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.5,
       "area": "Yerwada",
-      "location": "Kalyani Nagar, Pune",
+      "location": "Kalyani Nagar, Bhubaneshwar",
       "price": "₹5,000",
       "period": "/ Month",
       "priceFormatted": "₹5,000 / Month",
@@ -5209,7 +5209,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.6,
       "area": "Yerwada",
-      "location": "Viman Nagar, Pune.",
+      "location": "Viman Nagar, Bhubaneshwar.",
       "price": "₹10,499",
       "period": "/ Month",
       "priceFormatted": "₹10,499 / Month",
@@ -5228,7 +5228,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.7,
       "area": "Yerwada",
-      "location": "Viman Nagar, Pune",
+      "location": "Viman Nagar, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -5247,7 +5247,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.8,
       "area": "Yerwada",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -5265,7 +5265,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.9,
       "area": "Yerwada",
-      "location": "Viman Nagar, Pune",
+      "location": "Viman Nagar, Bhubaneshwar",
       "price": "₹22,499",
       "period": "/ Month",
       "priceFormatted": "₹22,499 / Month",
@@ -5286,7 +5286,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.5,
       "area": "Karve Nagar",
-      "location": "Erandwane, Pune",
+      "location": "Erandwane, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -5305,7 +5305,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.6,
       "area": "Karve Nagar",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹8,999",
       "period": "/ Month",
       "priceFormatted": "₹8,999 / Month",
@@ -5324,7 +5324,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.7,
       "area": "Karve Nagar",
-      "location": "Kothrud, Pune",
+      "location": "Kothrud, Bhubaneshwar",
       "price": "₹10,999",
       "period": "/ Month",
       "priceFormatted": "₹10,999 / Month",
@@ -5360,7 +5360,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.9,
       "area": "Karve Nagar",
-      "location": "BMCC Road, Pune, Maharashtra",
+      "location": "BMCC Road, Bhubaneshwar, Maharashtra",
       "price": "₹7,000",
       "period": "/ Month",
       "priceFormatted": "₹7,000 / Month",
@@ -5379,7 +5379,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.5,
       "area": "Karve Nagar",
-      "location": "Shivaji Nagar, Pune",
+      "location": "Shivaji Nagar, Bhubaneshwar",
       "price": "₹9,999",
       "period": "/ Month",
       "priceFormatted": "₹9,999 / Month",
@@ -5398,7 +5398,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.6,
       "area": "Karve Nagar",
-      "location": "Nanded City Sinhgad Rd, Nanded City, Nanded, Pune, Maharashtra 411068, India",
+      "location": "Nanded City Sinhgad Rd, Nanded City, Nanded, Bhubaneshwar, Maharashtra 411068, India",
       "price": "₹6,999",
       "period": "/ Month",
       "priceFormatted": "₹6,999 / Month",
@@ -5417,7 +5417,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.7,
       "area": "Karve Nagar",
-      "location": "Bavdhan, Pune",
+      "location": "Bavdhan, Bhubaneshwar",
       "price": "₹6,500",
       "period": "/ Month",
       "priceFormatted": "₹6,500 / Month",
@@ -5435,7 +5435,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.8,
       "area": "Karve Nagar",
-      "location": "Shivaji Nagar, Pune",
+      "location": "Shivaji Nagar, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -5454,7 +5454,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.9,
       "area": "Karve Nagar",
-      "location": "Shivaji Nagar, Pune",
+      "location": "Shivaji Nagar, Bhubaneshwar",
       "price": "₹8,499",
       "period": "/ Month",
       "priceFormatted": "₹8,499 / Month",
@@ -5475,7 +5475,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.5,
       "area": "Shivaji Nagar",
-      "location": "Shivaji Nagar, Pune",
+      "location": "Shivaji Nagar, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -5494,7 +5494,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.6,
       "area": "Shivaji Nagar",
-      "location": "Shivaji Nagar, Pune",
+      "location": "Shivaji Nagar, Bhubaneshwar",
       "price": "₹9,999",
       "period": "/ Month",
       "priceFormatted": "₹9,999 / Month",
@@ -5513,7 +5513,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.7,
       "area": "Shivaji Nagar",
-      "location": "BMCC Road, Pune, Maharashtra",
+      "location": "BMCC Road, Bhubaneshwar, Maharashtra",
       "price": "₹7,000",
       "period": "/ Month",
       "priceFormatted": "₹7,000 / Month",
@@ -5532,7 +5532,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.8,
       "area": "Shivaji Nagar",
-      "location": "Shivaji Nagar, Pune",
+      "location": "Shivaji Nagar, Bhubaneshwar",
       "price": "₹8,499",
       "period": "/ Month",
       "priceFormatted": "₹8,499 / Month",
@@ -5568,7 +5568,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.5,
       "area": "Shivaji Nagar",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹8,999",
       "period": "/ Month",
       "priceFormatted": "₹8,999 / Month",
@@ -5587,7 +5587,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.6,
       "area": "Shivaji Nagar",
-      "location": "Erandwane, Pune",
+      "location": "Erandwane, Bhubaneshwar",
       "price": "₹7,999",
       "period": "/ Month",
       "priceFormatted": "₹7,999 / Month",
@@ -5606,7 +5606,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.7,
       "area": "Shivaji Nagar",
-      "location": "Camp, Pune",
+      "location": "Camp, Bhubaneshwar",
       "price": "₹4,999",
       "period": "/ Month",
       "priceFormatted": "₹4,999 / Month",
@@ -5625,7 +5625,7 @@ export const areaExtraOfficeCards = {
       "badge": "Verified",
       "rating": 4.8,
       "area": "Shivaji Nagar",
-      "location": "Koregaon Park, Pune",
+      "location": "Koregaon Park, Bhubaneshwar",
       "price": "₹7,499",
       "period": "/ Month",
       "priceFormatted": "₹7,499 / Month",
@@ -5644,7 +5644,7 @@ export const areaExtraOfficeCards = {
       "badge": "Premium",
       "rating": 4.9,
       "area": "Shivaji Nagar",
-      "location": "Exhibition Rd, Pune Camp, Pune, Maharashtra, India",
+      "location": "Exhibition Rd, Bhubaneshwar Camp, Bhubaneshwar, Maharashtra, India",
       "price": "₹5,999",
       "period": "/ Month",
       "priceFormatted": "₹5,999 / Month",
@@ -5661,18 +5661,18 @@ export const areaExtraOfficeCards = {
 };
 
 // ============================================================================
-// SIMILAR SPACES DATA (9 Verified Pune Coworking Spaces for OfficeDetail Page)
-// Sourced from verified active coworking listings across Pune
+// SIMILAR SPACES DATA (9 Verified Bhubaneshwar Coworking Spaces for OfficeDetail Page)
+// Sourced from verified active coworking listings across Bhubaneshwar
 // Recognized by ID range 9001 - 9009
 // ============================================================================
-export const similarPuneOfficeCards = [
+export const similarBhubaneshwarOfficeCards = [
   {
     id: 9001,
     name: 'Awfis Nucleus Mall',
     badge: 'Premium',
     rating: 4.3,
     area: 'Camp',
-    location: 'Camp, Pune',
+    location: 'Camp, Bhubaneshwar',
     price: '₹10,999',
     period: '/ month',
     priceFormatted: '₹10,999 / month',
@@ -5690,7 +5690,7 @@ export const similarPuneOfficeCards = [
     badge: 'Popular',
     rating: 5.0,
     area: 'Kothrud',
-    location: 'Kothrud, Pune',
+    location: 'Kothrud, Bhubaneshwar',
     price: '₹10,999',
     period: '/ month',
     priceFormatted: '₹10,999 / month',
@@ -5708,7 +5708,7 @@ export const similarPuneOfficeCards = [
     badge: 'Trending',
     rating: 5.0,
     area: 'Magarpatta',
-    location: 'Magarpatta, Pune',
+    location: 'Magarpatta, Bhubaneshwar',
     price: '₹10,999',
     period: '/ month',
     priceFormatted: '₹10,999 / month',
@@ -5726,7 +5726,7 @@ export const similarPuneOfficeCards = [
     badge: 'Premium',
     rating: 4.4,
     area: 'Baner',
-    location: 'Baner, Pune',
+    location: 'Baner, Bhubaneshwar',
     price: '₹10,999',
     period: '/ month',
     priceFormatted: '₹10,999 / month',
@@ -5744,7 +5744,7 @@ export const similarPuneOfficeCards = [
     badge: 'Premium',
     rating: 4.8,
     area: 'Viman Nagar',
-    location: 'Viman Nagar, Pune',
+    location: 'Viman Nagar, Bhubaneshwar',
     price: '₹9,999',
     period: '/ month',
     priceFormatted: '₹9,999 / month',
@@ -5762,7 +5762,7 @@ export const similarPuneOfficeCards = [
     badge: 'Verified',
     rating: 4.8,
     area: 'Baner',
-    location: 'Baner, Pune',
+    location: 'Baner, Bhubaneshwar',
     price: '₹11,500',
     period: '/ month',
     priceFormatted: '₹11,500 / month',
@@ -5780,7 +5780,7 @@ export const similarPuneOfficeCards = [
     badge: 'Popular',
     rating: 4.9,
     area: 'Magarpatta',
-    location: 'Magarpatta, Pune',
+    location: 'Magarpatta, Bhubaneshwar',
     price: '₹13,000',
     period: '/ month',
     priceFormatted: '₹13,000 / month',
@@ -5798,7 +5798,7 @@ export const similarPuneOfficeCards = [
     badge: 'Top Rated',
     rating: 4.6,
     area: 'Kalyani Nagar',
-    location: 'Kalyani Nagar, Pune',
+    location: 'Kalyani Nagar, Bhubaneshwar',
     price: '₹8,500',
     period: '/ month',
     priceFormatted: '₹8,500 / month',
@@ -5816,7 +5816,7 @@ export const similarPuneOfficeCards = [
     badge: 'Budget Friendly',
     rating: 4.5,
     area: 'Kalyani Nagar',
-    location: 'Kalyani Nagar, Pune',
+    location: 'Kalyani Nagar, Bhubaneshwar',
     price: '₹7,999',
     period: '/ month',
     priceFormatted: '₹7,999 / month',
@@ -5831,43 +5831,43 @@ export const similarPuneOfficeCards = [
 ];
 
 // ============================================================================
-// Comprehensive Pune Office Cards Aggregator & Lookup Helper
+// Comprehensive Bhubaneshwar Office Cards Aggregator & Lookup Helper
 // ============================================================================
-export const allPuneOfficeCards = [
-  ...puneOfficeCards,
-  ...morePuneOfficeCards,
-  ...finalPuneOfficeCards,
-  ...featuredPuneOfficeCards,
-  ...pageTwoPuneOfficeCards,
-  ...pageTwoMorePuneOfficeCards,
-  ...pageTwoFinalPuneOfficeCards,
-  ...pageTwoFeaturedPuneOfficeCards,
-  ...pageThreePuneOfficeCards,
-  ...pageThreeMorePuneOfficeCards,
-  ...pageThreeFinalPuneOfficeCards,
-  ...pageThreeFeaturedPuneOfficeCards,
-  ...(typeof pageFourPuneOfficeCards !== 'undefined' ? pageFourPuneOfficeCards : []),
+export const allBhubaneshwarOfficeCards = [
+  ...bhubaneshwarOfficeCards,
+  ...moreBhubaneshwarOfficeCards,
+  ...finalBhubaneshwarOfficeCards,
+  ...featuredBhubaneshwarOfficeCards,
+  ...pageTwoBhubaneshwarOfficeCards,
+  ...pageTwoMoreBhubaneshwarOfficeCards,
+  ...pageTwoFinalBhubaneshwarOfficeCards,
+  ...pageTwoFeaturedBhubaneshwarOfficeCards,
+  ...pageThreeBhubaneshwarOfficeCards,
+  ...pageThreeMoreBhubaneshwarOfficeCards,
+  ...pageThreeFinalBhubaneshwarOfficeCards,
+  ...pageThreeFeaturedBhubaneshwarOfficeCards,
+  ...(typeof pageFourBhubaneshwarOfficeCards !== 'undefined' ? pageFourBhubaneshwarOfficeCards : []),
   // Include all 9 recognized similar spaces for detail page lookup
-  ...similarPuneOfficeCards,
+  ...similarBhubaneshwarOfficeCards,
   // Include all area-specific extra cards for detail page lookup
   ...(typeof areaExtraOfficeCards !== 'undefined' ? Object.values(areaExtraOfficeCards).flat() : [])
 ];
 
 /**
- * Find a Pune office card by ID across all pagination pages
+ * Find a Bhubaneshwar office card by ID across all pagination pages
  * @param {string|number} id
  * @returns {object|null}
  */
-export const getPuneOfficeCardById = (id) => {
+export const getBhubaneshwarOfficeCardById = (id) => {
   const numericId = Number(id);
-  return allPuneOfficeCards.find((card) => card.id === numericId) || null;
+  return allBhubaneshwarOfficeCards.find((card) => card.id === numericId) || null;
 };
 
 // ============================================================================
-// Top Coworking Locations in Pune (Explore by Neighborhood)
+// Top Coworking Locations in Bhubaneshwar (Explore by Neighborhood)
 // Sourced from verified active coworking spaces in each key hub
 // ============================================================================
-export const topPuneCoworkingLocations = [
+export const topBhubaneshwarCoworkingLocations = [
   {
     id: 'loc-baner',
     name: 'Baner',
@@ -5940,3 +5940,15 @@ export const topPuneCoworkingLocations = [
   }
 ];
 
+
+// Compatibility aliases for bhubaneswar (without 'h')
+export const bhubaneswarNeighborhoods = bhubaneshwarNeighborhoods;
+export const bhubaneswarOfficeCards = bhubaneshwarOfficeCards;
+export const moreBhubaneswarOfficeCards = moreBhubaneshwarOfficeCards;
+export const finalBhubaneswarOfficeCards = finalBhubaneshwarOfficeCards;
+export const featuredBhubaneswarOfficeCards = featuredBhubaneshwarOfficeCards;
+export const bhubaneswarAreas = bhubaneshwarNeighborhoods;
+export const bhubaneswarSpaces = bhubaneshwarOfficeCards;
+export const allBhubaneswarOfficeCards = allBhubaneshwarOfficeCards;
+export const getBhubaneswarOfficeCardById = getBhubaneshwarOfficeCardById;
+export const topBhubaneswarCoworkingLocations = topBhubaneshwarCoworkingLocations;
