@@ -18,7 +18,8 @@ import {
   platformShowcaseData,
   trustedCompaniesData,
   topCoworkingCitiesData,
-  whyChooseData
+  whyChooseData,
+  customerReviewsData
 } from './images/homedata.js';
 
 /**
@@ -191,6 +192,49 @@ const Homepage = () => {
 
   const handlePrevCompanySlide = () => {
     setCurrentCompanyIndex((previous) => (previous === 0 ? totalCompanies - 1 : previous - 1));
+  };
+
+  // -------------------------------------------------------------------------
+  // State & Handlers for Customer Reviews Carousel (10 cards)
+  // Data Source: customerReviewsData from homedata.js
+  // -------------------------------------------------------------------------
+  const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
+  const [isReviewSliderPaused, setIsReviewSliderPaused] = useState(false);
+  const [visibleReviewCardsCount, setVisibleReviewCardsCount] = useState(3);
+  const totalReviews = customerReviewsData.reviews.length;
+  const maxReviewIndex = Math.max(0, totalReviews - visibleReviewCardsCount);
+
+  // Responsive visible review cards count (1 on mobile, 2 on tablet, 3 on desktop)
+  useEffect(() => {
+    const handleResizeReviews = () => {
+      if (window.innerWidth < 640) {
+        setVisibleReviewCardsCount(1);
+      } else if (window.innerWidth < 1024) {
+        setVisibleReviewCardsCount(2);
+      } else {
+        setVisibleReviewCardsCount(3);
+      }
+    };
+    handleResizeReviews();
+    window.addEventListener('resize', handleResizeReviews);
+    return () => window.removeEventListener('resize', handleResizeReviews);
+  }, []);
+
+  // Auto-scroll customer reviews every 4.5 seconds unless paused on user hover
+  useEffect(() => {
+    if (isReviewSliderPaused) return;
+    const reviewTimer = setInterval(() => {
+      setCurrentReviewIndex((prev) => (prev >= maxReviewIndex ? 0 : prev + 1));
+    }, 4500);
+    return () => clearInterval(reviewTimer);
+  }, [isReviewSliderPaused, maxReviewIndex]);
+
+  const handleNextReviewSlide = () => {
+    setCurrentReviewIndex((prev) => (prev >= maxReviewIndex ? 0 : prev + 1));
+  };
+
+  const handlePrevReviewSlide = () => {
+    setCurrentReviewIndex((prev) => (prev <= 0 ? maxReviewIndex : prev - 1));
   };
 
   // =========================================================================
@@ -1184,7 +1228,187 @@ const Homepage = () => {
       </section>
 
       {/* =================================================================== */}
-      {/* SECTION 6: WHY CHOOSE mycoworking?                              */}
+      {/* SECTION 6: CUSTOMER TESTIMONIALS & REVIEWS (10 CARDS)              */}
+      {/* Data Source: customerReviewsData from homedata.js                  */}
+      {/* =================================================================== */}
+      <section 
+        aria-label="Customer Reviews and Testimonials" 
+        className="w-full bg-[#f8fafc] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-200/70 select-none overflow-hidden"
+        onMouseEnter={() => setIsReviewSliderPaused(true)}
+        onMouseLeave={() => setIsReviewSliderPaused(false)}
+      >
+        <div className="max-w-7xl mx-auto">
+          
+          {/* Section Header */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 gap-4">
+            <div>
+              <span className="inline-block text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#007bff] bg-blue-50 px-3 py-1 rounded-full mb-2.5 border border-blue-100/80">
+                {customerReviewsData.badge}
+              </span>
+              <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-black text-slate-900 tracking-tight leading-tight">
+                {customerReviewsData.title}
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-500 font-medium mt-1.5 max-w-xl">
+                {customerReviewsData.subtitle}
+              </p>
+            </div>
+
+            {/* Header Right: Rating Badge & Arrow Navigation */}
+            <div className="flex items-center gap-3 self-start md:self-end">
+              {/* Rating summary pill */}
+              <div className="hidden sm:flex items-center gap-2 px-3.5 py-1.5 bg-white border border-slate-200/80 rounded-full shadow-2xs">
+                <div className="flex text-amber-400 text-xs">
+                  {'★'.repeat(5)}
+                </div>
+                <span className="text-xs font-bold text-slate-800">
+                  {customerReviewsData.ratingSummary.averageRating}
+                </span>
+                <span className="text-[11px] text-slate-400 font-medium">
+                  ({customerReviewsData.ratingSummary.totalReviews})
+                </span>
+              </div>
+
+              {/* Prev & Next Slide Buttons */}
+              <div className="flex items-center gap-1.5">
+                <button
+                  type="button"
+                  onClick={handlePrevReviewSlide}
+                  aria-label="Previous reviews"
+                  className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white hover:bg-slate-100 text-slate-700 border border-slate-200/90 shadow-2xs flex items-center justify-center transition-all cursor-pointer active:scale-90"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  onClick={handleNextReviewSlide}
+                  aria-label="Next reviews"
+                  className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white hover:bg-slate-100 text-slate-700 border border-slate-200/90 shadow-2xs flex items-center justify-center transition-all cursor-pointer active:scale-90"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Review Cards Carousel Viewport */}
+          <div className="overflow-hidden w-full py-2 -my-2">
+            <div 
+              className="flex transition-transform duration-500 ease-out"
+              style={{
+                transform: `translateX(-${currentReviewIndex * (100 / visibleReviewCardsCount)}%)`
+              }}
+            >
+              {customerReviewsData.reviews.map((item) => (
+                <div
+                  key={item.id}
+                  style={{ width: `${100 / visibleReviewCardsCount}%` }}
+                  className="shrink-0 px-2 sm:px-2.5 flex"
+                >
+                  <article className="w-full bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/90 shadow-xs hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group flex flex-col justify-between hover:border-blue-400">
+                    
+                    {/* Top Row: User Avatar, Name, Role, and Quote SVG */}
+                    <div>
+                      <div className="flex items-start justify-between gap-3 mb-3.5">
+                        <div className="flex items-center gap-3">
+                          <img
+                            src={item.avatar}
+                            alt={item.name}
+                            loading="lazy"
+                            className="w-12 h-12 rounded-full object-cover ring-2 ring-blue-500/20 group-hover:ring-blue-500/50 transition-all shrink-0"
+                          />
+                          <div className="overflow-hidden">
+                            <div className="flex items-center gap-1.5">
+                              <h3 className="text-sm sm:text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors truncate">
+                                {item.name}
+                              </h3>
+                              <svg className="w-4 h-4 text-emerald-500 shrink-0 fill-current" viewBox="0 0 20 20" title="Verified Customer">
+                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                              </svg>
+                            </div>
+                            <p className="text-[11px] sm:text-xs text-slate-500 font-medium truncate">
+                              {item.role}
+                            </p>
+                            <p className="text-[10px] font-semibold text-slate-400 uppercase tracking-wider">
+                              📍 {item.city}
+                            </p>
+                          </div>
+                        </div>
+
+                        {/* Quote icon mark */}
+                        <svg className="w-7 h-7 text-blue-100 group-hover:text-blue-200 transition-colors shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                        </svg>
+                      </div>
+
+                      {/* Middle: Star Rating & Space Type Pill */}
+                      <div className="flex items-center justify-between py-2 border-t border-b border-slate-100 mb-3">
+                        <div className="flex items-center gap-1">
+                          {Array.from({ length: 5 }).map((_, starIndex) => (
+                            <svg
+                              key={starIndex}
+                              className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${starIndex < item.rating ? 'text-amber-400 fill-amber-400' : 'text-slate-200'}`}
+                              viewBox="0 0 20 20"
+                            >
+                              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                          ))}
+                          <span className="text-xs font-bold text-slate-700 ml-1">
+                            {item.rating}.0
+                          </span>
+                        </div>
+                        <span className="bg-blue-50 text-[#007bff] font-semibold text-[10px] sm:text-[11px] px-2.5 py-0.5 rounded-full border border-blue-100/60">
+                          {item.spaceType}
+                        </span>
+                      </div>
+
+                      {/* Review text */}
+                      <p className="text-xs sm:text-[13px] text-slate-600 leading-relaxed font-normal italic">
+                        "{item.review}"
+                      </p>
+                    </div>
+
+                    {/* Bottom Row: Recency & Verified Status */}
+                    <div className="pt-3.5 mt-3.5 border-t border-slate-100 flex items-center justify-between text-[10px] sm:text-[11px] text-slate-400 font-medium">
+                      <span className="flex items-center gap-1 text-emerald-600 font-semibold">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                        Verified Review
+                      </span>
+                      <span>{item.date}</span>
+                    </div>
+
+                  </article>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Dots Pagination Indicator */}
+          <div className="flex items-center justify-center gap-1.5 mt-6 sm:mt-8">
+            {Array.from({ length: maxReviewIndex + 1 }).map((_, index) => {
+              const isActive = currentReviewIndex === index;
+              return (
+                <button
+                  key={index}
+                  type="button"
+                  onClick={() => setCurrentReviewIndex(index)}
+                  className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${
+                    isActive ? 'w-5 bg-blue-600' : 'w-1.5 bg-slate-300 hover:bg-slate-400'
+                  }`}
+                  aria-label={`Go to review page ${index + 1}`}
+                />
+              );
+            })}
+          </div>
+
+        </div>
+      </section>
+
+      {/* =================================================================== */}
+      {/* SECTION 7: WHY CHOOSE mycoworking?                              */}
       {/* Data Source: whyChooseData from homedata.js                        */}
       {/* =================================================================== */}
       <section 

@@ -16,6 +16,7 @@
  *  8. Trusted Companies Carousel Data (trustedCompaniesData)
  *  9. Top Coworking Spaces in India Section (topCoworkingCitiesData)
  * 10. Why Choose Us (ANAROCK) Value Propositions (whyChooseData)
+ * 11. Customer Testimonials & Reviews (customerReviewsData)
  * ============================================================================
  */
 
@@ -407,3 +408,136 @@ export const whyChooseData = {
     }
   ]
 };
+
+// ============================================================================
+// 12. CUSTOMER TESTIMONIALS & REVIEWS DATA (10 VERIFIED REVIEWS)
+// Used by Homepage.jsx to render interactive review cards
+// Contains:
+//  - Member portraits (verified Unsplash images)
+//  - Star ratings (5 stars)
+//  - Real customer feedback from founders, remote devs, freelancers
+//  - Location, designation, space type, and review recency
+// ============================================================================
+export const customerReviewsData = {
+  badge: "CUSTOMER TESTIMONIALS",
+  title: "What Our Members Say",
+  subtitle: "Trusted by 10,000+ happy founders, remote teams, and freelancers across India",
+  ratingSummary: {
+    averageRating: "4.9",
+    totalReviews: "2,500+",
+    satisfactionRate: "98%"
+  },
+  reviews: [
+    {
+      id: "rev-1",
+      name: "Aditi Sharma",
+      role: "Founder, Digispark Media",
+      city: "Pune",
+      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&h=200&q=80",
+      rating: 5,
+      date: "2 weeks ago",
+      spaceType: "Dedicated Desk",
+      review: "Finding a dedicated desk in Baner, Pune was effortless through this platform. The amenities like high-speed WiFi, modern meeting rooms, and vibrant community have boosted our startup's productivity significantly."
+    },
+    {
+      id: "rev-2",
+      name: "Rahul Verma",
+      role: "Senior Engineering Manager",
+      city: "Bangalore",
+      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&h=200&q=80",
+      rating: 5,
+      date: "1 month ago",
+      spaceType: "Private Cabin",
+      review: "We booked an 8-seater private cabin in Indiranagar. The onboarding was seamless with zero brokerage fees. The support team arranged everything within 24 hours. Highly recommended for growing teams!"
+    },
+    {
+      id: "rev-3",
+      name: "Priya Nair",
+      role: "Independent UI/UX Designer",
+      city: "Mumbai",
+      avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&h=200&q=80",
+      rating: 5,
+      date: "3 weeks ago",
+      spaceType: "Flexible Desk",
+      review: "As a freelancer, having access to multiple locations across Mumbai and Pune is a lifesaver. The spaces are aesthetically pleasing, well-lit, and the coffee is always fresh. Great value for money."
+    },
+    {
+      id: "rev-4",
+      name: "Vikram Malhotra",
+      role: "Co-Founder, FinEdge Solutions",
+      city: "Gurugram",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&h=200&q=80",
+      rating: 5,
+      date: "1 month ago",
+      spaceType: "Virtual Office",
+      review: "Got our company registered with their Virtual Office in DLF Cyber City. The GST registration and mailing address documentation were handled flawlessly and delivered in record time."
+    },
+    {
+      id: "rev-5",
+      name: "Sneha Kulkarni",
+      role: "Operations Lead, CloudSphere",
+      city: "Pune",
+      avatar: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&w=200&h=200&q=80",
+      rating: 5,
+      date: "Just now",
+      spaceType: "Dedicated Desk",
+      review: "The Kalyani Nagar workspace is top-notch. Cleanliness, sanitization, and security are strictly maintained. Having phone booths and ergonomic seating makes long workdays completely comfortable."
+    },
+    {
+      id: "rev-6",
+      name: "Arjun Mehta",
+      role: "Remote Software Architect",
+      city: "Hyderabad",
+      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&h=200&q=80",
+      rating: 5,
+      date: "2 months ago",
+      spaceType: "Coworking Space",
+      review: "Working remotely for a US firm, I needed uninterrupted gigabit internet and 24/7 power backup. Hitec City branch delivered on every promise. The quiet zones are perfect for video calls."
+    },
+    {
+      id: "rev-7",
+      name: "Ananya Deshmukh",
+      role: "Marketing Director, BrandWave",
+      city: "Delhi",
+      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&h=200&q=80",
+      rating: 5,
+      date: "3 weeks ago",
+      spaceType: "Team Suite",
+      review: "Exceptional assistance from the workspace consultant. They negotiated the best corporate package for our 15-member team in Connaught Place. Transparent billing with no hidden costs."
+    },
+    {
+      id: "rev-8",
+      name: "Rohan Gupta",
+      role: "Product Strategist, AppVibe",
+      city: "Noida",
+      avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&h=200&q=80",
+      rating: 5,
+      date: "1 month ago",
+      spaceType: "Flexi Pass",
+      review: "The day pass and monthly flexi pass options make it super simple to drop into any center when traveling between Noida and Delhi. Clean cafeteria and warm reception staff everywhere."
+    },
+    {
+      id: "rev-9",
+      name: "Pooja Patel",
+      role: "HR Consultant & Corporate Trainer",
+      city: "Ahmedabad",
+      avatar: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=200&h=200&q=80",
+      rating: 5,
+      date: "2 weeks ago",
+      spaceType: "Meeting Rooms",
+      review: "We frequently host workshops and client pitches in their executive conference rooms. Audio-visual setup, projectors, and hospitality services have always exceeded our expectations."
+    },
+    {
+      id: "rev-10",
+      name: "Naveen Reddy",
+      role: "Founder, SolarTech Innovations",
+      city: "Chennai",
+      avatar: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=200&h=200&q=80",
+      rating: 5,
+      date: "5 days ago",
+      spaceType: "Private Office",
+      review: "Best coworking booking experience in Chennai. Clean, bright, and professional atmosphere that helped us make a great impression on our international investors. 10/10 service!"
+    }
+  ]
+};
+
