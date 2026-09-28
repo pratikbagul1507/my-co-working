@@ -252,8 +252,7 @@ const Homepage = () => {
 
   /**
    * Handles click on any city link from the footer Quick Links directory:
-   * - Finds the city object from availableCities
-   * - Selects the city and opens its space options popup dialog
+   * - Selects the chosen city in the top hero search without opening any popup modal
    * - Smoothly scrolls to the top of the homepage
    */
   const handleFooterCityClick = (cityName) => {
@@ -261,7 +260,7 @@ const Homepage = () => {
       (c) => c.name.toLowerCase() === cityName.toLowerCase()
     );
     if (matchedCity) {
-      selectCityAndOpenPopup(matchedCity, true);
+      selectCityAndOpenPopup(matchedCity, false);
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
