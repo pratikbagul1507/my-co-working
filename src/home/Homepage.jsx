@@ -6,7 +6,7 @@ import CityPopup from '../components/city/CityPopup';
 // ============================================================================
 // DATA STORE IMPORT
 // All Homepage content, copy, statistics, images, and form configs are centralized
-// in src/home/homeData.js (which references src/home/images/homedata.js).
+// in src/home/images/homedata.js.
 // ============================================================================
 import {
   cityNames as availableCities,
@@ -19,7 +19,7 @@ import {
   trustedCompaniesData,
   topCoworkingCitiesData,
   whyChooseData
-} from './homeData.js';
+} from './images/homedata.js';
 
 /**
  * ============================================================================
