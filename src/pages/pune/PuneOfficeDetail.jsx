@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getPuneOfficeCardById, allPuneOfficeCards, similarPuneOfficeCards, topPuneCoworkingLocations } from './puneData.js';
+import { getPuneOfficeCardById, allPuneOfficeCards, similarPuneOfficeCards, topPuneCoworkingLocations, puneNeighborhoods } from './puneData.js';
 
 /**
  * Coworking Office Details Page
@@ -42,6 +42,13 @@ const OfficeDetail = () => {
         (targetAreaNorm && targetAreaNorm.includes(cardAreaNorm));
 
       if (!matchesArea) return false;
+
+      // Ensure card location does not explicitly mention another major Pune neighborhood
+      const isOtherArea = puneNeighborhoods?.some((n) => {
+        const normN = normalizeArea(n);
+        return normN !== targetAreaNorm && cardLocationNorm.includes(normN);
+      });
+      if (isOtherArea) return false;
 
       // 3. Deduplicate by unique name + location
       const uniqueKey = `${card.name?.toLowerCase().trim()}-${card.location?.toLowerCase().trim()}`;

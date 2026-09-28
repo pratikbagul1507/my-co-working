@@ -1,39 +1,128 @@
 import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import heroBackgroundImage from './images/cityimages/navbarimage.png';
-import { cityNames as availableCities, spaceOptions as availableSpaceTypes, homePromotionalData, platformShowcaseData, trustedCompaniesData, topCoworkingCitiesData } from './images/imagesdata.js';
 import CityGrid from '../components/city/CityGrid';
 import CityPopup from '../components/city/CityPopup';
 
+// ============================================================================
+// DATA STORE IMPORT
+// All Homepage content, copy, statistics, images, and form configs are centralized
+// in src/home/homeData.js (which references src/home/images/homedata.js).
+// ============================================================================
+import {
+  cityNames as availableCities,
+  spaceOptions as availableSpaceTypes,
+  heroSectionData,
+  enquiryFormConfig,
+  perkIconSvgPaths,
+  homePromotionalData,
+  platformShowcaseData,
+  trustedCompaniesData,
+  topCoworkingCitiesData,
+  whyChooseData
+} from './homeData.js';
+
 /**
- * Homepage Component
- * 
+ * ============================================================================
+ * HOMEPAGE COMPONENT
+ * ============================================================================
  * Main landing page for the coworking and flexible workspace platform.
- * Features:
- *  - Left Section: Workspace search filters, category selectors, and 18-city quick grid.
- *  - Right Section: Hero banner with workspace statistics and lead enquiry contact form.
- *  - Modal Overlay: City popup dialog to choose between Coworking Spaces and Virtual Offices.
+ *
+ * Page Structure:
+ *  1. Hero Fold:
+ *     - Left Column: Search filters, category selectors, and 18-city circular grid.
+ *     - Right Column: Hero banner with platform statistics & lead enquiry contact form.
+ *  2. Promotional Banner Section:
+ *     - Category Cards: Coworking Spaces & Coliving Spaces.
+ *     - Center Card: "List Free with Cofynd" banner with verified perks.
+ *     - Category Cards: Virtual Offices & Office Spaces.
+ *  3. India's #1 Online Platform Showcase:
+ *     - Overlapping property showcase cards & live metrics.
+ *  4. Trusted Companies Carousel:
+ *     - Auto-scrolling logo carousel (3-second interval, hover-pause).
+ *  5. Top Coworking Spaces in India:
+ *     - 18-City workspace grid with verified images and local city taglines.
+ *  6. Why Choose Us (ANAROCK):
+ *     - 6 key value propositions on royal blue background.
+ *  7. City Popup Dialog:
+ *     - Modal dialog for choosing between Coworking and Virtual Offices.
+ * ============================================================================
  */
 
-// Icon paths for promotional benefit badges
-const PERK_ICONS = {
-  enquiries: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4',
-  visibility: 'M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z',
-  growth: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6'
+// ----------------------------------------------------------------------------
+// HELPER: Renders vector SVG icons for "Why choose mycoworking" features
+// ----------------------------------------------------------------------------
+const renderWhyChooseIcon = (iconType) => {
+  switch (iconType) {
+    case 'brokerage':
+      return (
+        <svg className="w-8 h-8 sm:w-9 sm:h-9 text-white shrink-0 mt-0.5" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <circle cx="16" cy="16" r="13" />
+          <line x1="7" y1="7" x2="25" y2="25" />
+          <path d="M12.5 11.5h6.5M12.5 14.5h5.5M12.5 11.5v6.5M15.5 14.5c1.4 0 2.5-.7 2.5-1.8s-1.1-1.7-2.5-1.7M14.5 18l3.5 4" strokeWidth="1.6" />
+        </svg>
+      );
+    case 'turnaround':
+      return (
+        <svg className="w-8 h-8 sm:w-9 sm:h-9 text-white shrink-0 mt-0.5" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <circle cx="16" cy="16" r="13" />
+          <path d="M12 11h8M12 21h8M13 11c0 3 3 4.5 3 5s-3 2-3 5M19 11c0 3-3 4.5-3 5s3 2 3 5" />
+          <circle cx="16" cy="16" r="1" fill="currentColor" stroke="none" />
+        </svg>
+      );
+    case 'network':
+      return (
+        <svg className="w-8 h-8 sm:w-9 sm:h-9 text-white shrink-0 mt-0.5" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M5 11l6.5-3 7 3 7.5-3v15l-7.5 3-7-3L5 26V11z" />
+          <path d="M11.5 8v15M18.5 11v15" />
+          <circle cx="9" cy="7" r="2.5" />
+          <path d="M9 9.5v2" />
+        </svg>
+      );
+    case 'consultant':
+      return (
+        <svg className="w-8 h-8 sm:w-9 sm:h-9 text-white shrink-0 mt-0.5" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <circle cx="12" cy="11" r="4.5" />
+          <path d="M5 25c0-4 3.2-7 7-7 1.5 0 2.8.5 3.8 1.3" />
+          <circle cx="22" cy="20" r="5" />
+          <path d="M22 17.5l.8 1.5 1.7.3-1.2 1.2.3 1.7-1.6-.8-1.6.8.3-1.7-1.2-1.2 1.7-.3.8-1.5z" fill="currentColor" stroke="none" />
+        </svg>
+      );
+    case 'ethics':
+      return (
+        <svg className="w-8 h-8 sm:w-9 sm:h-9 text-white shrink-0 mt-0.5" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M18.5 14l3.5-3.5a2.5 2.5 0 0 1 3.5 3.5L22 17.5" />
+          <path d="M13.5 14l-3.5-3.5a2.5 2.5 0 0 0-3.5 3.5L10 17.5" />
+          <path d="M11.5 15.5l4 4a2 2 0 0 0 2.8 0l3.7-3.7" />
+          <path d="M8.5 18.5l3.5 3.5a3 3 0 0 0 4.2 0L20 18.2" />
+          <path d="M5.5 21.5l3 3a4 4 0 0 0 5.6 0L17 21.7" />
+        </svg>
+      );
+    case 'design':
+      return (
+        <svg className="w-8 h-8 sm:w-9 sm:h-9 text-white shrink-0 mt-0.5" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <rect x="5" y="6" width="22" height="20" rx="2.5" />
+          <line x1="16" y1="6" x2="16" y2="26" />
+          <line x1="16" y1="16" x2="27" y2="16" />
+          <line x1="5" y1="16" x2="16" y2="16" />
+        </svg>
+      );
+    default:
+      return null;
+  }
 };
 
 const Homepage = () => {
   const navigate = useNavigate();
 
   // =========================================================================
-  // 1. APPLICATION STATE
+  // 1. APPLICATION STATE (Initialized with centralized config defaults)
   // =========================================================================
 
-  // Tracks the workspace category chosen by the user in the quick search (e.g., "Coworking Spaces")
+  // Tracks the workspace category chosen in the hero quick search (e.g., "Coworking Spaces")
   const [selectedSpaceType, setSelectedSpaceType] = useState(availableSpaceTypes[0]);
 
-  // Tracks the name of the currently selected city (defaults to 'Pune')
-  const [selectedCityName, setSelectedCityName] = useState('Pune');
+  // Tracks the name of the currently selected city (defaults to 'Pune' from config)
+  const [selectedCityName, setSelectedCityName] = useState(enquiryFormConfig.defaultValues.city);
 
   // Stores contact and enquiry form inputs entered by the user
   const [enquiryFormData, setEnquiryFormData] = useState({
@@ -44,14 +133,14 @@ const Homepage = () => {
     city: ''
   });
 
-  // Flag indicating whether the enquiry form has been submitted
+  // Flags for enquiry form submission confirmation banner
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isMessageFading, setIsMessageFading] = useState(false);
   const [submittedName, setSubmittedName] = useState('');
   const fadeTimerRef = useRef(null);
   const hideTimerRef = useRef(null);
 
-  // Clean up timers on unmount
+  // Clean up timers on unmount to avoid memory leaks
   useEffect(() => {
     return () => {
       if (fadeTimerRef.current) clearTimeout(fadeTimerRef.current);
@@ -68,7 +157,7 @@ const Homepage = () => {
   const [visibleCompanyCardsCount, setVisibleCompanyCardsCount] = useState(6);
   const totalCompanies = trustedCompaniesData.companies.length;
 
-  // Responsive visible cards count for exact alignment
+  // Responsive visible cards count for exact alignment across screens
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 640) {
@@ -86,12 +175,13 @@ const Homepage = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Moves cards from right to left every 3 seconds (3000ms)
+  // Moves company cards smoothly every 3 seconds (customizable in homedata.js)
   useEffect(() => {
     if (isCompanySliderPaused) return;
+    const intervalTime = trustedCompaniesData.autoScrollIntervalMs || 3000;
     const autoScrollTimer = setInterval(() => {
       setCurrentCompanyIndex((previous) => (previous + 1) % totalCompanies);
-    }, 3000);
+    }, intervalTime);
     return () => clearInterval(autoScrollTimer);
   }, [isCompanySliderPaused, totalCompanies]);
 
@@ -104,7 +194,7 @@ const Homepage = () => {
   };
 
   // =========================================================================
-  // 2. USER INTERACTION & FORM HANDLERS
+  // 2. USER INTERACTION & LEAD ENQUIRY FORM HANDLERS
   // =========================================================================
 
   /**
@@ -127,9 +217,9 @@ const Homepage = () => {
 
   /**
    * Handles lead enquiry form submission:
-   * - Forwards all enquiry details directly to the navbar WhatsApp number (+91 9028760011)
-   * - Displays confirmation banner and smoothly hides it after 3 seconds
-   * - Resets the form fields
+   * - Prepares email to support team using enquiryFormConfig.contactEmail
+   * - Shows confirmation banner and smoothly fades out after 3 seconds
+   * - Resets the form fields cleanly
    */
   const handleFormSubmit = (event) => {
     event.preventDefault();
@@ -137,8 +227,8 @@ const Homepage = () => {
     const clientName = enquiryFormData.name;
     const clientEmail = enquiryFormData.email;
     const clientPhone = enquiryFormData.phone;
-    const targetSpaceType = enquiryFormData.spaceType || selectedSpaceType || 'Coworking Spaces';
-    const targetCity = enquiryFormData.city || selectedCityName || 'India';
+    const targetSpaceType = enquiryFormData.spaceType || selectedSpaceType || enquiryFormConfig.defaultValues.spaceType;
+    const targetCity = enquiryFormData.city || selectedCityName || enquiryFormConfig.defaultValues.countryFallback;
 
     // Show confirmation message with submitted user's name
     setSubmittedName(clientName);
@@ -149,16 +239,19 @@ const Homepage = () => {
     if (fadeTimerRef.current) clearTimeout(fadeTimerRef.current);
     if (hideTimerRef.current) clearTimeout(hideTimerRef.current);
 
-    // Smoothly hide message box after 3 seconds
+    // Smoothly hide message box after configured duration
+    const displayMs = enquiryFormConfig.feedback?.displayDurationMs || 3000;
+    const fadeMs = enquiryFormConfig.feedback?.fadeTransitionMs || 500;
+
     fadeTimerRef.current = setTimeout(() => {
       setIsMessageFading(true);
       hideTimerRef.current = setTimeout(() => {
         setIsFormSubmitted(false);
         setIsMessageFading(false);
-      }, 500); // 500ms smooth fade transition
-    }, 3000); // Display for 3 seconds
+      }, fadeMs);
+    }, displayMs);
 
-    // Construct email subject and body, and open email window/client pre-filled
+    // Construct email subject and body, and trigger user's default email client
     const subject = encodeURIComponent(`Workspace Enquiry - ${targetSpaceType} in ${targetCity}`);
     const body = encodeURIComponent(
       `New Workspace Enquiry:\n\n` +
@@ -169,7 +262,7 @@ const Homepage = () => {
       `City: ${targetCity}\n` +
       `Submission Date: ${new Date().toLocaleString()}\n`
     );
-    window.location.href = `mailto:info@mycoworking.in?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${enquiryFormConfig.contactEmail}?subject=${subject}&body=${body}`;
 
     // Reset form fields cleanly
     setEnquiryFormData({
@@ -288,7 +381,6 @@ const Homepage = () => {
       case 'tribe':
         return (
           <div className="flex flex-col items-center justify-center">
-            {/* 5 cursive continuous doodle loops */}
             <svg className="w-18 sm:w-20 h-3.5 sm:h-4 text-slate-900" viewBox="0 0 100 20" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
               <path d="M 5,14 C 7,4 17,4 18,11 C 19,17 11,18 13,11 C 15,4 25,4 26,11 C 27,17 19,18 21,11 C 23,4 33,4 34,11 C 35,17 27,18 29,11 C 31,4 41,4 42,11 C 43,17 35,18 37,11 C 39,4 49,4 50,11 C 51,17 43,18 45,11 C 47,4 57,4 58,11" />
             </svg>
@@ -430,38 +522,44 @@ const Homepage = () => {
     }
   };
 
-
   // =========================================================================
-  // 3. RENDER UI
+  // 3. UI RENDERING (Mapped dynamically from centralized homedata store)
   // =========================================================================
   return (
     <main className="w-full min-h-[calc(100dvh-4rem)] sm:min-h-[calc(100dvh-5rem)] overflow-x-hidden bg-[#f8fafc] flex flex-col antialiased font-sans select-none">
+      
+      {/* =================================================================== */}
+      {/* SECTION 1: PRIMARY HERO FOLD (LEFT SEARCH & RIGHT ENQUIRY FORM)    */}
+      {/* =================================================================== */}
       <div className="w-full h-[calc(100dvh-4rem)] sm:h-[calc(100dvh-5rem)] min-h-[560px] flex flex-col md:flex-row overflow-hidden shrink-0">
         
-        {/* ================================================================= */}
+        {/* ----------------------------------------------------------------- */}
         {/* LEFT COLUMN: Heading, Filter Dropdowns, Search Button, Cities Grid */}
-        {/* ================================================================= */}
+        {/* Data Source: heroSectionData & availableCities from homedata.js    */}
+        {/* ----------------------------------------------------------------- */}
         <section className="w-full md:w-1/2 h-full px-5 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 flex flex-col justify-between overflow-hidden">
           <div className="flex flex-col">
             {/* Decorative Brand Accent Dot */}
             <div className="w-7 h-7 bg-amber-400 rounded-full mb-2 sm:mb-2.5 shadow-[5px_5px_0_#0f172a]"></div>
             
-            {/* Tagline */}
+            {/* Tagline from heroSectionData */}
             <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-slate-500 mb-1 sm:mb-1.5">
-              India's flexible workspace network
+              {heroSectionData.tagline}
             </p>
             
-            {/* Main Headline */}
+            {/* Main Headline from heroSectionData */}
             <h1 className="text-2xl sm:text-3xl lg:text-[32px] xl:text-[35px] font-black text-slate-900 tracking-tight mb-2.5 sm:mb-3 leading-[1.12]">
-              Choose from <span className="text-[#007bff]">10,000+</span><br />
-              spaces to <span className="text-[#007bff]">Work & Live</span>
+              {heroSectionData.headline.prefix} <span className="text-[#007bff]">{heroSectionData.headline.highlight1}</span><br />
+              {heroSectionData.headline.middleText} <span className="text-[#007bff]">{heroSectionData.headline.highlight2}</span>
             </h1>
 
             {/* Quick Search Filter Dropdowns */}
             <div className="grid grid-cols-2 gap-2.5 sm:gap-3 mb-2.5 sm:mb-3 max-w-xl">
               {/* Space Type Selector Dropdown */}
               <label className="border border-slate-200 rounded-xl px-2.5 py-1.5 flex flex-col bg-white shadow-xs">
-                <span className="text-[10px] font-semibold text-slate-400 leading-tight">Looking For</span>
+                <span className="text-[10px] font-semibold text-slate-400 leading-tight">
+                  {heroSectionData.searchFilters.lookingForLabel}
+                </span>
                 <select 
                   value={selectedSpaceType} 
                   onChange={(event) => selectSpaceType(event.target.value)}
@@ -475,7 +573,9 @@ const Homepage = () => {
               
               {/* City Selector Dropdown */}
               <label className="border border-slate-200 rounded-xl px-2.5 py-1.5 flex flex-col bg-white shadow-xs">
-                <span className="text-[10px] font-semibold text-slate-400 leading-tight">Select City</span>
+                <span className="text-[10px] font-semibold text-slate-400 leading-tight">
+                  {heroSectionData.searchFilters.selectCityLabel}
+                </span>
                 <select 
                   value={selectedCityName} 
                   onChange={handleCityDropdownChange}
@@ -500,7 +600,7 @@ const Homepage = () => {
               }} 
               className="w-fit bg-[#007bff] hover:bg-blue-600 text-white font-semibold text-xs sm:text-sm px-5 py-2 sm:py-2.5 rounded-lg flex items-center gap-1.5 transition-colors mb-2.5 sm:mb-3 shadow-xs cursor-pointer active:scale-95"
             >
-              Search spaces <span aria-hidden="true">→</span>
+              {heroSectionData.searchFilters.searchButtonText} <span aria-hidden="true">{heroSectionData.searchFilters.searchButtonArrow}</span>
             </button>
           </div>
           
@@ -512,44 +612,41 @@ const Homepage = () => {
           />
         </section>
 
-        {/* ================================================================= */}
-        {/* RIGHT COLUMN: Hero Background, Statistics & Enquiry Form */}
-        {/* ================================================================= */}
+        {/* ----------------------------------------------------------------- */}
+        {/* RIGHT COLUMN: Hero Background, Statistics & Lead Enquiry Form     */}
+        {/* Data Source: heroSectionData & enquiryFormConfig from homedata.js */}
+        {/* ----------------------------------------------------------------- */}
         <section 
           className="w-full md:w-1/2 h-full bg-cover bg-center relative flex flex-col items-center justify-center px-4 py-4 sm:px-6 lg:px-10 overflow-hidden" 
-          style={{ backgroundImage: `url(${heroBackgroundImage})` }}
+          style={{ backgroundImage: `url(${heroSectionData.backgroundImage})` }}
         >
           {/* Subtle Dark Image Overlay */}
           <div className="absolute inset-0 bg-slate-950/25"></div>
 
-          {/* Workspace Statistics Header */}
+          {/* Workspace Statistics Header (Mapped from heroSectionData.statistics) */}
           <div className="relative z-10 flex items-center justify-center gap-5 sm:gap-8 text-white text-center mb-3 sm:mb-4 drop-shadow-md">
-            <div className="pr-3 sm:pr-5">
-              <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.85)] leading-tight">
-                10,000+
-              </h2>
-              <p className="text-xs sm:text-base font-serif font-bold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.85)] mt-0.5">
-                Work Spaces
-              </p>
-            </div>
-            <div className="w-px h-10 sm:h-12 bg-white/70 self-center"></div>
-            <div className="pl-3 sm:pl-5">
-              <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.85)] leading-tight">
-                1,000+
-              </h2>
-              <p className="text-xs sm:text-base font-serif font-bold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.85)] mt-0.5">
-                Locations
-              </p>
-            </div>
+            {heroSectionData.statistics.map((stat, index) => (
+              <div key={stat.id} className="flex items-center">
+                {index > 0 && <div className="w-px h-10 sm:h-12 bg-white/70 self-center mr-5 sm:mr-8" />}
+                <div>
+                  <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.85)] leading-tight">
+                    {stat.count}
+                  </h2>
+                  <p className="text-xs sm:text-base font-serif font-bold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.85)] mt-0.5">
+                    {stat.label}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
           
-          {/* Lead Enquiry Contact Form */}
+          {/* Lead Enquiry Contact Form (Configured via enquiryFormConfig) */}
           <form onSubmit={handleFormSubmit} className="w-full max-w-[400px] sm:max-w-[430px] relative z-10 flex flex-col gap-2 sm:gap-2.5">
             {/* Form Row 1: Name Input */}
             <input 
               type="text" 
               name="name" 
-              placeholder="Enter Your Name" 
+              placeholder={enquiryFormConfig.placeholders.name} 
               value={enquiryFormData.name} 
               onChange={handleFormFieldChange} 
               required 
@@ -561,7 +658,7 @@ const Homepage = () => {
               <input 
                 type="email" 
                 name="email" 
-                placeholder="Enter Your Email" 
+                placeholder={enquiryFormConfig.placeholders.email} 
                 value={enquiryFormData.email} 
                 onChange={handleFormFieldChange} 
                 required 
@@ -583,7 +680,7 @@ const Homepage = () => {
                 <input 
                   type="tel" 
                   name="phone" 
-                  placeholder="Phone Number" 
+                  placeholder={enquiryFormConfig.placeholders.phone} 
                   value={enquiryFormData.phone} 
                   onChange={handleFormFieldChange} 
                   required 
@@ -601,7 +698,7 @@ const Homepage = () => {
                   onChange={(event) => selectSpaceType(event.target.value)}
                   className="w-full h-9 sm:h-10 bg-white text-slate-800 text-xs sm:text-sm border border-[#cfd4d9] rounded-[3px] px-3 pr-7 focus:outline-none focus:border-[#007bff] focus:ring-1 focus:ring-[#007bff] appearance-none cursor-pointer shadow-xs"
                 >
-                  <option value="">Type Of Space</option>
+                  <option value="">{enquiryFormConfig.placeholders.spaceType}</option>
                   {availableSpaceTypes.map((option) => (
                     <option key={option} value={option}>{option}</option>
                   ))}
@@ -614,7 +711,7 @@ const Homepage = () => {
               <input 
                 type="text" 
                 name="city" 
-                placeholder="City" 
+                placeholder={enquiryFormConfig.placeholders.city} 
                 value={enquiryFormData.city} 
                 onChange={handleFormFieldChange} 
                 list="city-options-list"
@@ -632,10 +729,10 @@ const Homepage = () => {
               type="submit" 
               className="w-fit bg-white hover:bg-slate-50 text-slate-800 text-xs sm:text-sm border border-[#cfd4d9] rounded-[3px] px-5 py-2 shadow-xs transition-colors cursor-pointer active:scale-95 mt-0.5"
             >
-              {isFormSubmitted ? 'Submitted' : 'Submit'}
+              {isFormSubmitted ? enquiryFormConfig.buttons.submitted : enquiryFormConfig.buttons.idle}
             </button>
             
-            {/* Submission Confirmation Banner (Smoothly fades out after 3 seconds) */}
+            {/* Submission Confirmation Banner (Fades out after 3 seconds) */}
             {isFormSubmitted && (
               <p
                 className={`text-xs font-semibold text-white bg-green-600/90 py-1.5 px-3 rounded-[3px] w-fit shadow-md transition-all duration-500 ease-out ${
@@ -643,7 +740,7 @@ const Homepage = () => {
                 }`}
                 role="status"
               >
-                Thanks, {submittedName || 'there'}! We'll be in touch shortly.
+                {enquiryFormConfig.feedback.getSuccessText(submittedName)}
               </p>
             )}
           </form>
@@ -651,7 +748,8 @@ const Homepage = () => {
       </div>
 
       {/* =================================================================== */}
-      {/* SECTION: Workspace Categories & "List Free with Cofynd" Promo    */}
+      {/* SECTION 2: WORKSPACE CATEGORIES & "LIST FREE WITH COFYND" PROMO    */}
+      {/* Data Source: homePromotionalData & perkIconSvgPaths from homedata.js */}
       {/* =================================================================== */}
       <section 
         aria-label="Workspace Categories and Property Listing" 
@@ -741,7 +839,7 @@ const Homepage = () => {
                     <path d="M21 24 L26 28 L21 32" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
 
-                  {/* Outer Cyan Hexagonal / Perspective Frame */}
+                  {/* Outer Cyan Hexagonal Frame */}
                   <div 
                     className="relative w-full h-full p-[3px] bg-[#bae6fd] shadow-md overflow-hidden"
                     style={{ clipPath: 'polygon(18% 0%, 100% 0%, 100% 100%, 14% 100%, 0% 50%)' }}
@@ -784,7 +882,7 @@ const Homepage = () => {
                   <div key={perk.id} className="flex items-center gap-2 sm:gap-2.5">
                     <div className={`w-8 h-8 rounded-lg ${perk.bg} flex items-center justify-center shrink-0 shadow-2xs`}>
                       <svg className={`w-4 h-4 ${perk.color}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d={PERK_ICONS[perk.icon]} />
+                        <path strokeLinecap="round" strokeLinejoin="round" d={perkIconSvgPaths[perk.icon]} />
                       </svg>
                     </div>
                     <div className="flex flex-col text-[11px] sm:text-xs font-bold text-slate-800 leading-snug">
@@ -806,7 +904,8 @@ const Homepage = () => {
       </section>
 
       {/* =================================================================== */}
-      {/* SECTION: India's #1 Online Platform Showcase                      */}
+      {/* SECTION 3: INDIA'S #1 ONLINE PLATFORM SHOWCASE                     */}
+      {/* Data Source: platformShowcaseData from homedata.js                  */}
       {/* =================================================================== */}
       <section 
         aria-label="India's #1 Online Platform for Coworking & Coliving Spaces" 
@@ -839,12 +938,10 @@ const Homepage = () => {
           aria-hidden="true"
         >
           <g transform="translate(200, 200)">
-            {/* Outer 16-point faceted star rosette */}
             <rect x="-140" y="-140" width="280" height="280" rx="8" transform="rotate(0)" />
             <rect x="-140" y="-140" width="280" height="280" rx="8" transform="rotate(22.5)" />
             <rect x="-140" y="-140" width="280" height="280" rx="8" transform="rotate(45)" />
             <rect x="-140" y="-140" width="280" height="280" rx="8" transform="rotate(67.5)" />
-            {/* Concentric inner darker rosette layer */}
             <rect x="-115" y="-115" width="230" height="230" rx="6" transform="rotate(11.25)" fill="#1f0f08" />
             <rect x="-115" y="-115" width="230" height="230" rx="6" transform="rotate(33.75)" fill="#1f0f08" />
             <rect x="-115" y="-115" width="230" height="230" rx="6" transform="rotate(56.25)" fill="#1f0f08" />
@@ -928,7 +1025,7 @@ const Homepage = () => {
                 {platformShowcaseData.headlinePart2}
               </h2>
 
-              {/* Statistics row */}
+              {/* Live Platform Statistics Row */}
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-7 sm:gap-10 md:gap-12 mt-4 sm:mt-6">
                 {platformShowcaseData.stats.map((stat, index) => (
                   <div key={index} className="flex flex-col items-center lg:items-start">
@@ -948,7 +1045,8 @@ const Homepage = () => {
       </section>
 
       {/* =================================================================== */}
-      {/* SECTION: Trusted by more than 500+ Companies Carousel               */}
+      {/* SECTION 4: TRUSTED BY 500+ COMPANIES CAROUSEL                      */}
+      {/* Data Source: trustedCompaniesData from homedata.js                 */}
       {/* =================================================================== */}
       <section 
         aria-label="Trusted Companies"
@@ -1014,7 +1112,7 @@ const Homepage = () => {
 
           </div>
 
-          {/* Dots Indicator */}
+          {/* Dots Navigation Indicator */}
           <div className="flex items-center justify-center gap-1.5 mt-4 sm:mt-5">
             {Array.from({ length: 6 }).map((_, index) => {
               const isActive = (currentCompanyIndex % 6) === index;
@@ -1036,7 +1134,8 @@ const Homepage = () => {
       </section>
 
       {/* =================================================================== */}
-      {/* SECTION: Top Coworking Spaces in India                              */}
+      {/* SECTION 5: TOP COWORKING SPACES IN INDIA (18 CITIES)                */}
+      {/* Data Source: topCoworkingCitiesData & availableCities from homedata */}
       {/* =================================================================== */}
       <section 
         aria-label="Top Coworking Spaces in India" 
@@ -1074,7 +1173,7 @@ const Homepage = () => {
                     {city.name}
                   </h3>
                   <p className="text-xs sm:text-[13px] text-slate-200 font-medium tracking-tight mt-0.5 drop-shadow-sm">
-                    {topCoworkingCitiesData.taglines[city.name] || 'Millennium City'}
+                    {topCoworkingCitiesData.taglines[city.name] || topCoworkingCitiesData.defaultTagline}
                   </p>
                 </div>
               </article>
@@ -1085,7 +1184,42 @@ const Homepage = () => {
       </section>
 
       {/* =================================================================== */}
-      {/* MODAL: City Selection Options Popup                                */}
+      {/* SECTION 6: WHY CHOOSE MYHQ BY ANAROCK?                              */}
+      {/* Data Source: whyChooseData from homedata.js                        */}
+      {/* =================================================================== */}
+      <section 
+        aria-label="Why choose mycoworking" 
+        className="w-full bg-[#1123a9] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 select-none"
+      >
+        <div className="max-w-7xl mx-auto">
+          {/* Section Heading */}
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight mb-8 sm:mb-12">
+            {whyChooseData.title}
+          </h2>
+
+          {/* 6-Value Proposition 2-Column Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 sm:gap-y-10 gap-x-12 lg:gap-x-16">
+            {whyChooseData.features.map((feature) => (
+              <div key={feature.id} className="flex items-start gap-4 sm:gap-5 group">
+                <div className="shrink-0 group-hover:scale-105 transition-transform duration-200">
+                  {renderWhyChooseIcon(feature.icon)}
+                </div>
+                <div className="flex flex-col">
+                  <h3 className="text-base sm:text-lg font-bold text-white tracking-tight mb-1.5">
+                    {feature.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-white/80 leading-relaxed font-normal">
+                    {feature.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* =================================================================== */}
+      {/* MODAL OVERLAY: City Selection Options Popup                        */}
       {/* =================================================================== */}
       <CityPopup
         activeCity={openedCityForPopup}
