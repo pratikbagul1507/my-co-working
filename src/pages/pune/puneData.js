@@ -1197,7 +1197,7 @@ export const pageTwoFinalPuneOfficeCards = [
   // 8. ScaleUp CoWork - BMCC Road, Pune
   {
     id: 56,
-    name: 'ScaleUp CoWork',
+    name: 'ScaleUp CoWork - Deccan Center',
     badge: null,      // Screenshot me koi badge nahi hai
     rating: null,     // Screenshot me rating nahi hai
     area: 'BMCC Road',
@@ -1608,8 +1608,8 @@ export const pageThreeMorePuneOfficeCards = [
     name: 'FMTOS',
     badge: null,      // Screenshot me koi badge nahi hai
     rating: null,     // Screenshot me rating nahi hai
-    area: 'Pimpri-Chinchwad',
-    location: 'Pimpri-Chinchwad, Pune',
+    area: 'Pimpri Chinchwad',
+    location: 'Pimpri Chinchwad, Pune',
     price: '₹8,499',
     period: '/ month',
     priceFormatted: '₹8,499 / month',
@@ -1756,7 +1756,7 @@ export const pageThreeFinalPuneOfficeCards = [
   // 1. Bootstart Coworking – Clover Hills Plaza - NIBM, Pune
   {
     id: 81,
-    name: 'Bootstart Coworking – Clover Hills Plaza',
+    name: 'Bootstart Coworking – Clover Hills Phase 2',
     badge: 'Premium', // Card ke upar 'Premium' crown badge
     rating: 4.9,      // Star rating 4.9
     area: 'NIBM',
@@ -1779,8 +1779,8 @@ export const pageThreeFinalPuneOfficeCards = [
     name: 'Level 212 coworks',
     badge: 'Premium', // Card ke upar 'Premium' crown badge
     rating: null,     // Screenshot me rating nahi hai
-    area: 'Pune Camp',
-    location: 'Exhibition Rd, Pune Camp, Pune, Maharashtra, India',
+    area: 'Camp',
+    location: 'Exhibition Rd, Camp, Pune, Maharashtra, India',
     price: '₹5,999',
     period: '/ month',
     priceFormatted: '₹5,999 / month',
@@ -5659,6 +5659,503 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/d896f530588b4f1743d26fee85b4dc9698aeeb21.webp"
       ]
     }
+  ],
+  "Camp": [
+    {
+      "id": 6801,
+      "name": "The Hive Coworking",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "Camp",
+      "location": "Camp, Pune",
+      "price": "₹7,499",
+      "period": "/ Month",
+      "priceFormatted": "₹7,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/78bc4d88354587a176c6a31ab2ddba293b901b19.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/c5a7db9b91dd6bf706976e9b22da4f55f4a0b025.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/4a80ca81d529f233d965d48c442a59eae81aeb8e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/18d01923b21937c81ece74720c4bb548da9e6923.webp"
+      ]
+    },
+    {
+      "id": 6802,
+      "name": "Workflo by OYO Nucleus",
+      "badge": "Popular",
+      "rating": 4.6,
+      "area": "Camp",
+      "location": "Nucleus Mall, Camp, Pune",
+      "price": "₹8,999",
+      "period": "/ Month",
+      "priceFormatted": "₹8,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/b39104c49962b5a5c6c518188fde3de85b38c8aa.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a4687669c0a4674e47f10811d7bb4ed2aefeb342.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4c7a60fb21162e91020a89e34e90ffc3be615b8e.webp"
+      ]
+    },
+    {
+      "id": 6803,
+      "name": "Regus Nucleus Mall",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Camp",
+      "location": "Camp, Pune",
+      "price": "₹11,499",
+      "period": "/ Month",
+      "priceFormatted": "₹11,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/446209614429d51bbe2cfa369feb4bdf012c50a9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4490283396d564f681e45972f6ec23f77f741906.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f1424db42444f8b6a62f588f594c352e5d0ad72e.webp"
+      ]
+    },
+    {
+      "id": 6804,
+      "name": "Trios Coworking Camp",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Camp",
+      "location": "Camp, Pune",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/201832e933dceb27eca847ecb0ab985c0a523123.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f958e6462f64871243953ec4188180b7916964e3.webp",
+        "https://img.cofynd.com/images/latest_images_2024/07f5854f28ec6d447a35f49993b316f8cbfb6359.webp"
+      ]
+    },
+    {
+      "id": 6805,
+      "name": "Bootstart Camp Spaces",
+      "badge": "Popular",
+      "rating": 4.6,
+      "area": "Camp",
+      "location": "MG Road, Camp, Pune",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/58e38018564757ef1e647239a79c576230d405bf.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d3adf265fe0edf92e91df3e7c03f82f5a302a427.webp",
+        "https://img.cofynd.com/images/latest_images_2024/3fadb97d9dada4a2b1a3366d16e59781a246da3c.webp"
+      ]
+    },
+    {
+      "id": 6806,
+      "name": "Innowork Camp",
+      "badge": "Verified",
+      "rating": 4.4,
+      "area": "Camp",
+      "location": "Camp, Pune",
+      "price": "₹6,499",
+      "period": "/ Month",
+      "priceFormatted": "₹6,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/84defb26448d63bd51f9935a13db918b8c83b5d0.webp",
+        "https://img.cofynd.com/images/latest_images_2024/29598218177fe7da5f5db3e843818e69e4ce03cb.webp"
+      ]
+    }
+  ],
+  "BMCC Road": [
+    {
+      "id": 6901,
+      "name": "Venture Center BMCC",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "BMCC Road",
+      "location": "BMCC Road, Pune, Maharashtra",
+      "price": "₹7,499",
+      "period": "/ Month",
+      "priceFormatted": "₹7,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/f3301766c8ef599ab9fccf4e79d8ffb05607f8cb.jpg",
+        "https://img.cofynd.com/images/original/bf82d800a2cc9ddc0818624e1675bb69056ff64e.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/b6760a4c0e264699a83513b1857d23c8bb786ccb.webp"
+      ]
+    },
+    {
+      "id": 6902,
+      "name": "Worklogix BMCC Road",
+      "badge": "Popular",
+      "rating": 4.6,
+      "area": "BMCC Road",
+      "location": "BMCC Road, Pune, Maharashtra",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/6297eae70f6a33a9979f3763f030c34d35c46c1c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/3cd33975d246b6bd02d73f5da56af5ed5f1ae6c5.webp"
+      ]
+    },
+    {
+      "id": 6903,
+      "name": "ThinkValley Spaces BMCC",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "BMCC Road",
+      "location": "BMCC Road, Pune, Maharashtra",
+      "price": "₹8,499",
+      "period": "/ Month",
+      "priceFormatted": "₹8,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/2a786d0c42639dc40b1e83fd3bcb82556b32d68c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/78405af99fbd9ef42ba49f9e4940abbdef53b275.webp"
+      ]
+    },
+    {
+      "id": 6904,
+      "name": "Cubispace BMCC Road",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "BMCC Road",
+      "location": "BMCC Road, Pune, Maharashtra",
+      "price": "₹6,499",
+      "period": "/ Month",
+      "priceFormatted": "₹6,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/58e38018564757ef1e647239a79c576230d405bf.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d3adf265fe0edf92e91df3e7c03f82f5a302a427.webp"
+      ]
+    },
+    {
+      "id": 6905,
+      "name": "FlexiWork BMCC",
+      "badge": "Popular",
+      "rating": 4.6,
+      "area": "BMCC Road",
+      "location": "BMCC Road, Pune, Maharashtra",
+      "price": "₹7,199",
+      "period": "/ Month",
+      "priceFormatted": "₹7,199 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/3fadb97d9dada4a2b1a3366d16e59781a246da3c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a7d260dc22a9b5a408205687527cb1a2814cc783.webp"
+      ]
+    },
+    {
+      "id": 6906,
+      "name": "CoCreate Workspace BMCC",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "BMCC Road",
+      "location": "BMCC Road, Pune, Maharashtra",
+      "price": "₹7,899",
+      "period": "/ Month",
+      "priceFormatted": "₹7,899 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/d64227e9a1882c9baf00c837dae646a58ff8d8cd.webp",
+        "https://img.cofynd.com/images/latest_images_2024/201832e933dceb27eca847ecb0ab985c0a523123.webp"
+      ]
+    }
+  ],
+  "NIBM": [
+    {
+      "id": 7001,
+      "name": "UrbanDesk Coworking NIBM",
+      "badge": "Verified",
+      "rating": 4.8,
+      "area": "NIBM",
+      "location": "NIBM Road, Pune",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/bb629c8a53d66f187aeb5bf553ad5e279af05a5c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/1a29582d9217eb74a62174c6020573ae0c78a08d.webp"
+      ]
+    },
+    {
+      "id": 7002,
+      "name": "WorkSquare Spaces NIBM",
+      "badge": "Popular",
+      "rating": 4.6,
+      "area": "NIBM",
+      "location": "NIBM, Pune",
+      "price": "₹7,499",
+      "period": "/ Month",
+      "priceFormatted": "₹7,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/e3eb27b9d83b4a67b815a558faf150ea3f4a8a25.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6a850a02e071c4d4507b9af18a66efba8265f666.webp"
+      ]
+    },
+    {
+      "id": 7003,
+      "name": "Co-Offiz NIBM",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "NIBM",
+      "location": "NIBM Road, Pune",
+      "price": "₹6,499",
+      "period": "/ Month",
+      "priceFormatted": "₹6,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/00852e69198f4610f5251085cbe5f6f33d72a488.webp",
+        "https://img.cofynd.com/images/latest_images_2024/fe26d0e20ddaf03e8947342e7765769c3b7b5cd9.webp"
+      ]
+    },
+    {
+      "id": 7004,
+      "name": "Opus Coworking NIBM",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "NIBM",
+      "location": "NIBM, Pune",
+      "price": "₹7,199",
+      "period": "/ Month",
+      "priceFormatted": "₹7,199 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/50ffa88db04bd7bb35b184d61839be6b54b2d459.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c2e746539de0b5efcf0599f153b8680c8ad5ffe3.webp"
+      ]
+    },
+    {
+      "id": 7005,
+      "name": "Spacelance Hub NIBM",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "NIBM",
+      "location": "NIBM Road, Pune",
+      "price": "₹6,799",
+      "period": "/ Month",
+      "priceFormatted": "₹6,799 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/b39104c49962b5a5c6c518188fde3de85b38c8aa.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a4687669c0a4674e47f10811d7bb4ed2aefeb342.webp"
+      ]
+    },
+    {
+      "id": 7006,
+      "name": "InCube Cowork NIBM",
+      "badge": "Popular",
+      "rating": 4.7,
+      "area": "NIBM",
+      "location": "NIBM, Pune",
+      "price": "₹7,599",
+      "period": "/ Month",
+      "priceFormatted": "₹7,599 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/4c7a60fb21162e91020a89e34e90ffc3be615b8e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6300c42f03e2256f34941fd4951f36e7ba5a8aad.webp"
+      ]
+    }
+  ],
+  "Wanowrie": [
+    {
+      "id": 7101,
+      "name": "WorkWise Coworking Wanowrie",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Wanowrie",
+      "location": "Fatima Nagar, Wanowrie, Pune",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/84defb26448d63bd51f9935a13db918b8c83b5d0.webp",
+        "https://img.cofynd.com/images/latest_images_2024/29598218177fe7da5f5db3e843818e69e4ce03cb.webp"
+      ]
+    },
+    {
+      "id": 7102,
+      "name": "Regus Wanowrie Center",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Wanowrie",
+      "location": "Wanowrie, Pune",
+      "price": "₹8,499",
+      "period": "/ Month",
+      "priceFormatted": "₹8,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/7ef6faeab4bf7be24db4493b03a5c6813043a62f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7e54f22dd07e39e40c4dd21bc597e63c91dd04f8.webp"
+      ]
+    },
+    {
+      "id": 7103,
+      "name": "Tribe Cowork Wanowrie",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Wanowrie",
+      "location": "Wanowrie, Pune",
+      "price": "₹6,299",
+      "period": "/ Month",
+      "priceFormatted": "₹6,299 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/446209614429d51bbe2cfa369feb4bdf012c50a9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4490283396d564f681e45972f6ec23f77f741906.webp"
+      ]
+    },
+    {
+      "id": 7104,
+      "name": "Hub53 Wanowrie",
+      "badge": "Popular",
+      "rating": 4.5,
+      "area": "Wanowrie",
+      "location": "Fatima Nagar, Wanowrie, Pune",
+      "price": "₹5,799",
+      "period": "/ Month",
+      "priceFormatted": "₹5,799 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/b6760a4c0e264699a83513b1857d23c8bb786ccb.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6297eae70f6a33a9979f3763f030c34d35c46c1c.webp"
+      ]
+    },
+    {
+      "id": 7105,
+      "name": "CozyDesk Wanowrie",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Wanowrie",
+      "location": "Wanowrie, Pune",
+      "price": "₹6,499",
+      "period": "/ Month",
+      "priceFormatted": "₹6,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/3cd33975d246b6bd02d73f5da56af5ed5f1ae6c5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2a786d0c42639dc40b1e83fd3bcb82556b32d68c.webp"
+      ]
+    },
+    {
+      "id": 7106,
+      "name": "Workify Spaces Wanowrie",
+      "badge": "Popular",
+      "rating": 4.7,
+      "area": "Wanowrie",
+      "location": "Wanowrie, Pune",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/78405af99fbd9ef42ba49f9e4940abbdef53b275.webp",
+        "https://img.cofynd.com/images/latest_images_2024/58e38018564757ef1e647239a79c576230d405bf.webp"
+      ]
+    }
+  ],
+  "Nanded City": [
+    {
+      "id": 7201,
+      "name": "Destination Center Cowork",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Nanded City",
+      "location": "Destination Center, Nanded City, Pune",
+      "price": "₹6,499",
+      "period": "/ Month",
+      "priceFormatted": "₹6,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/7ef6faeab4bf7be24db4493b03a5c6813043a62f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7e54f22dd07e39e40c4dd21bc597e63c91dd04f8.webp"
+      ]
+    },
+    {
+      "id": 7202,
+      "name": "Sinhgad Hub Nanded City",
+      "badge": "Popular",
+      "rating": 4.6,
+      "area": "Nanded City",
+      "location": "Sinhgad Road, Nanded City, Pune",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/446209614429d51bbe2cfa369feb4bdf012c50a9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4490283396d564f681e45972f6ec23f77f741906.webp"
+      ]
+    },
+    {
+      "id": 7203,
+      "name": "ProWork Nanded City",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Nanded City",
+      "location": "Nanded City, Pune",
+      "price": "₹6,899",
+      "period": "/ Month",
+      "priceFormatted": "₹6,899 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/b6760a4c0e264699a83513b1857d23c8bb786ccb.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6297eae70f6a33a9979f3763f030c34d35c46c1c.webp"
+      ]
+    },
+    {
+      "id": 7204,
+      "name": "SparkDesk Coworking",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Nanded City",
+      "location": "Nanded City, Sinhgad Road, Pune",
+      "price": "₹5,499",
+      "period": "/ Month",
+      "priceFormatted": "₹5,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/3cd33975d246b6bd02d73f5da56af5ed5f1ae6c5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2a786d0c42639dc40b1e83fd3bcb82556b32d68c.webp"
+      ]
+    },
+    {
+      "id": 7205,
+      "name": "Zenith Spaces Nanded City",
+      "badge": "Popular",
+      "rating": 4.6,
+      "area": "Nanded City",
+      "location": "Nanded City, Pune",
+      "price": "₹6,299",
+      "period": "/ Month",
+      "priceFormatted": "₹6,299 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/78405af99fbd9ef42ba49f9e4940abbdef53b275.webp",
+        "https://img.cofynd.com/images/latest_images_2024/58e38018564757ef1e647239a79c576230d405bf.webp"
+      ]
+    },
+    {
+      "id": 7206,
+      "name": "EliteDesk Nanded City",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Nanded City",
+      "location": "Destination Center, Nanded City, Pune",
+      "price": "₹7,199",
+      "period": "/ Month",
+      "priceFormatted": "₹7,199 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/d3adf265fe0edf92e91df3e7c03f82f5a302a427.webp",
+        "https://img.cofynd.com/images/latest_images_2024/3fadb97d9dada4a2b1a3366d16e59781a246da3c.webp"
+      ]
+    }
   ]
 };
 
@@ -5670,7 +6167,7 @@ export const areaExtraOfficeCards = {
 export const similarPuneOfficeCards = [
   {
     id: 9001,
-    name: 'Awfis Nucleus Mall',
+    name: 'Awfis Nucleus Mall Center 2',
     badge: 'Premium',
     rating: 4.3,
     area: 'Camp',

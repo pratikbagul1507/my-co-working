@@ -1,14 +1,6 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getPuneOfficeCardById, similarPuneOfficeCards, topPuneCoworkingLocations } from './puneData.js';
-
-// Pre-looped array (4 copies) for infinite, seamless continuous scrolling
-const loopedSimilarOfficeCards = [
-  ...similarPuneOfficeCards,
-  ...similarPuneOfficeCards,
-  ...similarPuneOfficeCards,
-  ...similarPuneOfficeCards
-];
+import { getPuneOfficeCardById, allPuneOfficeCards, similarPuneOfficeCards, topPuneCoworkingLocations } from './puneData.js';
 
 /**
  * Coworking Office Details Page
@@ -17,6 +9,56 @@ const loopedSimilarOfficeCards = [
  */
 const OfficeDetail = () => {
   const { id } = useParams();
+  const space = getPuneOfficeCardById(id);
+
+  // Extract current area of the open card
+  const currentArea = (space?.area || (space?.location ? space.location.split(',')[0].trim() : '')).trim();
+
+  // Helper to normalize area strings for reliable matching (removes hyphens, trims, lowercases)
+  const normalizeArea = (str) => {
+    if (!str) return '';
+    let s = str.trim().toLowerCase().replace(/[-_]/g, ' ').replace(/\s+/g, ' ');
+    if (s === 'pune camp' || s === 'camp pune') return 'camp';
+    return s;
+  };
+
+  // Filter office cards strictly from the SAME area, excluding the current open card
+  const sameAreaOffices = useMemo(() => {
+    if (!space) return [];
+    const targetAreaNorm = normalizeArea(currentArea);
+    const seen = new Set();
+
+    const filtered = allPuneOfficeCards.filter((card) => {
+      // 1. Exclude the current/open card by id or exact name
+      if (Number(card.id) === Number(space.id)) return false;
+      if (card.name && space.name && card.name.trim().toLowerCase() === space.name.trim().toLowerCase()) return false;
+
+      // 2. Check if card belongs strictly to the exact same area
+      const cardAreaNorm = normalizeArea(card.area || (card.location ? card.location.split(',')[0].trim() : ''));
+      const cardLocationNorm = normalizeArea(card.location || '');
+
+      const matchesArea = cardAreaNorm === targetAreaNorm ||
+        cardLocationNorm.includes(targetAreaNorm) ||
+        (targetAreaNorm && targetAreaNorm.includes(cardAreaNorm));
+
+      if (!matchesArea) return false;
+
+      // 3. Deduplicate by unique name + location
+      const uniqueKey = `${card.name?.toLowerCase().trim()}-${card.location?.toLowerCase().trim()}`;
+      if (seen.has(uniqueKey)) return false;
+      seen.add(uniqueKey);
+      return true;
+    });
+
+    return filtered;
+  }, [space, currentArea]);
+
+  // Create looped array for infinite, seamless smooth scrolling
+  const loopMultiplier = Math.max(4, Math.ceil(16 / Math.max(sameAreaOffices.length, 1)));
+  const loopedSimilarOfficeCards = useMemo(() => {
+    return Array.from({ length: loopMultiplier }).flatMap(() => sameAreaOffices);
+  }, [sameAreaOffices, loopMultiplier]);
+
   const [isCarouselOpen, setIsCarouselOpen] = useState(false);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
@@ -50,7 +92,7 @@ const OfficeDetail = () => {
     const slider = similarSliderRef.current;
     if (slider) {
       pauseTemporarily(1500);
-      const oneSetWidth = slider.scrollWidth / 4;
+      const oneSetWidth = slider.scrollWidth / loopMultiplier;
       if (slider.scrollLeft <= 50 && oneSetWidth > 0) {
         slider.scrollLeft += oneSetWidth;
       }
@@ -62,7 +104,7 @@ const OfficeDetail = () => {
     const slider = similarSliderRef.current;
     if (slider) {
       pauseTemporarily(1500);
-      const oneSetWidth = slider.scrollWidth / 4;
+      const oneSetWidth = slider.scrollWidth / loopMultiplier;
       if (slider.scrollLeft >= oneSetWidth * 2 && oneSetWidth > 0) {
         slider.scrollLeft -= oneSetWidth;
       }
@@ -86,7 +128,7 @@ const OfficeDetail = () => {
 
       if (!isSliderPausedRef.current && slider) {
         scrollPos += speed * dt;
-        const oneSetWidth = slider.scrollWidth / 4;
+        const oneSetWidth = slider.scrollWidth / loopMultiplier;
         if (oneSetWidth > 0 && scrollPos >= oneSetWidth) {
           scrollPos -= oneSetWidth;
         }
@@ -105,12 +147,13 @@ const OfficeDetail = () => {
       cancelAnimationFrame(animId);
       if (pauseTimerRef.current) clearTimeout(pauseTimerRef.current);
     };
-  }, []);
-
-  const space = getPuneOfficeCardById(id);
+  }, [loopMultiplier]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    if (similarSliderRef.current) {
+      similarSliderRef.current.scrollLeft = 0;
+    }
   }, [id]);
 
   const singleImage = (Array.isArray(space?.images) && space.images[0]) || space?.image || '';
@@ -905,24 +948,9 @@ const OfficeDetail = () => {
 
           {/* Golden Laurel Wreath Rating Header */}
           <div className="flex flex-col items-center justify-center text-center mb-6 sm:mb-8 select-none">
-            <div className="flex items-center gap-2 sm:gap-3 text-amber-500">
-              {/* Left Laurel Leaves */}
-              <svg className="w-8 h-8 sm:w-10 sm:h-10 text-amber-400 shrink-0" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M7.5 4c-.8 1.5-1.2 3.1-1.2 4.8 0 2.8 1.2 5.4 3.2 7.2-1.5-.5-2.8-1.5-3.8-2.8-1.4-1.9-2.2-4.2-2.2-6.7 0-1.8.4-3.5 1.2-5 .9.8 1.8 1.6 2.8 2.5zm4.8 2.2c-.6 1.8-1.8 3.3-3.3 4.3-1.6 1.1-3.6 1.7-5.6 1.7-.5 0-1-.1-1.5-.2.5-1.8 1.5-3.5 2.9-4.8 1.9-1.8 4.5-2.8 7.2-2.8.1.6.2 1.2.3 1.8z"/>
-              </svg>
-              <span className="text-4xl sm:text-5xl font-black text-slate-800 tracking-tight leading-none">
-                4.8
-              </span>
-              {/* Right Laurel Leaves (Mirrored) */}
-              <svg className="w-8 h-8 sm:w-10 sm:h-10 text-amber-400 shrink-0 -scale-x-100" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M7.5 4c-.8 1.5-1.2 3.1-1.2 4.8 0 2.8 1.2 5.4 3.2 7.2-1.5-.5-2.8-1.5-3.8-2.8-1.4-1.9-2.2-4.2-2.2-6.7 0-1.8.4-3.5 1.2-5 .9.8 1.8 1.6 2.8 2.5zm4.8 2.2c-.6 1.8-1.8 3.3-3.3 4.3-1.6 1.1-3.6 1.7-5.6 1.7-.5 0-1-.1-1.5-.2.5-1.8 1.5-3.5 2.9-4.8 1.9-1.8 4.5-2.8 7.2-2.8.1.6.2 1.2.3 1.8z"/>
-              </svg>
-            </div>
-            <span className="text-xs sm:text-sm font-semibold text-slate-600 mt-1.5 tracking-wide">
-              Premium Coworking
-            </span>
+            
             <h3 className="text-base sm:text-lg font-bold text-slate-900 mt-3 tracking-tight">
-              More Spaces by {space.name.split(' ')[0] || 'Awfis'}
+              Similar Coworking Spaces in {currentArea || 'Pune'}
             </h3>
           </div>
 
@@ -959,7 +987,7 @@ const OfficeDetail = () => {
                   {/* Card Image */}
                   <div className="w-full aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100 shadow-2xs group-hover:shadow-md transition-shadow">
                     <img
-                      src={item.images[0]}
+                      src={(Array.isArray(item.images) && item.images[0]) || item.image || 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80'}
                       alt={item.name}
                       loading="lazy"
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"

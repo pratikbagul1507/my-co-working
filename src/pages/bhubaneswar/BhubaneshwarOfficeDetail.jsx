@@ -1,14 +1,6 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getBhubaneshwarOfficeCardById, similarBhubaneshwarOfficeCards, topBhubaneshwarCoworkingLocations } from './bhubaneswarData.js';
-
-// Pre-looped array (4 copies) for infinite, seamless continuous scrolling
-const loopedSimilarOfficeCards = [
-  ...similarBhubaneshwarOfficeCards,
-  ...similarBhubaneshwarOfficeCards,
-  ...similarBhubaneshwarOfficeCards,
-  ...similarBhubaneshwarOfficeCards
-];
+import { getBhubaneshwarOfficeCardById, allBhubaneshwarOfficeCards, similarBhubaneshwarOfficeCards, topBhubaneshwarCoworkingLocations } from './bhubaneswarData.js';
 
 /**
  * Coworking Office Details Page
@@ -17,6 +9,52 @@ const loopedSimilarOfficeCards = [
  */
 const OfficeDetail = () => {
   const { id } = useParams();
+  const space = getBhubaneshwarOfficeCardById(id);
+
+  // Extract current area of the open card
+  const currentArea = (space?.area || (space?.location ? space.location.split(',')[0].trim() : '')).trim();
+
+  // Filter office cards strictly from the SAME area, excluding the current open card
+  const sameAreaOffices = useMemo(() => {
+    if (!space) return [];
+    const targetAreaLower = currentArea.toLowerCase();
+    const seen = new Set();
+
+    const filtered = allBhubaneshwarOfficeCards.filter((card) => {
+      // 1. Exclude the current/open card by id or name
+      if (Number(card.id) === Number(space.id)) return false;
+      if (card.name && space.name && card.name.trim().toLowerCase() === space.name.trim().toLowerCase()) return false;
+
+      // 2. Check if card belongs strictly to the exact same area
+      const matchesArea = card.area
+        ? card.area.trim().toLowerCase() === targetAreaLower
+        : (card.location && card.location.toLowerCase().includes(targetAreaLower));
+      if (!matchesArea) return false;
+
+      // 3. Deduplicate by unique name + location
+      const uniqueKey = `${card.name?.toLowerCase().trim()}-${card.location?.toLowerCase().trim()}`;
+      if (seen.has(uniqueKey)) return false;
+      seen.add(uniqueKey);
+      return true;
+    });
+
+    // Fallback to other Bhubaneswar cards (excluding current card) only if area has no other cards
+    if (filtered.length === 0) {
+      return allBhubaneshwarOfficeCards.filter((card) => 
+        Number(card.id) !== Number(space.id) &&
+        card.name?.trim().toLowerCase() !== space.name?.trim().toLowerCase()
+      ).slice(0, 10);
+    }
+
+    return filtered;
+  }, [space, currentArea]);
+
+  // Create looped array for infinite, seamless smooth scrolling
+  const loopMultiplier = Math.max(4, Math.ceil(16 / Math.max(sameAreaOffices.length, 1)));
+  const loopedSimilarOfficeCards = useMemo(() => {
+    return Array.from({ length: loopMultiplier }).flatMap(() => sameAreaOffices);
+  }, [sameAreaOffices, loopMultiplier]);
+
   const [isCarouselOpen, setIsCarouselOpen] = useState(false);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
@@ -50,7 +88,7 @@ const OfficeDetail = () => {
     const slider = similarSliderRef.current;
     if (slider) {
       pauseTemporarily(1500);
-      const oneSetWidth = slider.scrollWidth / 4;
+      const oneSetWidth = slider.scrollWidth / loopMultiplier;
       if (slider.scrollLeft <= 50 && oneSetWidth > 0) {
         slider.scrollLeft += oneSetWidth;
       }
@@ -62,7 +100,7 @@ const OfficeDetail = () => {
     const slider = similarSliderRef.current;
     if (slider) {
       pauseTemporarily(1500);
-      const oneSetWidth = slider.scrollWidth / 4;
+      const oneSetWidth = slider.scrollWidth / loopMultiplier;
       if (slider.scrollLeft >= oneSetWidth * 2 && oneSetWidth > 0) {
         slider.scrollLeft -= oneSetWidth;
       }
@@ -86,7 +124,7 @@ const OfficeDetail = () => {
 
       if (!isSliderPausedRef.current && slider) {
         scrollPos += speed * dt;
-        const oneSetWidth = slider.scrollWidth / 4;
+        const oneSetWidth = slider.scrollWidth / loopMultiplier;
         if (oneSetWidth > 0 && scrollPos >= oneSetWidth) {
           scrollPos -= oneSetWidth;
         }
@@ -105,12 +143,13 @@ const OfficeDetail = () => {
       cancelAnimationFrame(animId);
       if (pauseTimerRef.current) clearTimeout(pauseTimerRef.current);
     };
-  }, []);
-
-  const space = getBhubaneshwarOfficeCardById(id);
+  }, [loopMultiplier]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    if (similarSliderRef.current) {
+      similarSliderRef.current.scrollLeft = 0;
+    }
   }, [id]);
 
   const singleImage = (Array.isArray(space?.images) && space.images[0]) || space?.image || '';
@@ -930,7 +969,7 @@ const OfficeDetail = () => {
               Premium Coworking
             </span>
             <h3 className="text-base sm:text-lg font-bold text-slate-900 mt-3 tracking-tight">
-              More Spaces by {space.name.split(' ')[0] || 'Awfis'}
+              Similar Coworking Spaces in {currentArea || 'Bhubaneswar'}
             </h3>
           </div>
 
@@ -967,7 +1006,7 @@ const OfficeDetail = () => {
                   {/* Card Image */}
                   <div className="w-full aspect-[16/10] rounded-2xl overflow-hidden bg-slate-100 shadow-2xs group-hover:shadow-md transition-shadow">
                     <img
-                      src={item.images[0]}
+                      src={(Array.isArray(item.images) && item.images[0]) || item.image || 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80'}
                       alt={item.name}
                       loading="lazy"
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
