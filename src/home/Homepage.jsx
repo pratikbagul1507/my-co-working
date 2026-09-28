@@ -1133,36 +1133,7 @@ const Homepage = () => {
         </div>
       </section>
 
-        <section 
-        aria-label="Why choose mycoworking" 
-        className="w-full bg-[#1123a9] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 select-none"
-      >
-        <div className="max-w-7xl mx-auto">
-          {/* Section Heading */}
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight mb-8 sm:mb-12">
-            {whyChooseData.title}
-          </h2>
-
-          {/* 6-Value Proposition 2-Column Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 sm:gap-y-10 gap-x-12 lg:gap-x-16">
-            {whyChooseData.features.map((feature) => (
-              <div key={feature.id} className="flex items-start gap-4 sm:gap-5 group">
-                <div className="shrink-0 group-hover:scale-105 transition-transform duration-200">
-                  {renderWhyChooseIcon(feature.icon)}
-                </div>
-                <div className="flex flex-col">
-                  <h3 className="text-base sm:text-lg font-bold text-white tracking-tight mb-1.5">
-                    {feature.title}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-white/80 leading-relaxed font-normal">
-                    {feature.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* =================================================================== */}
       {/* SECTION 5: TOP COWORKING SPACES IN INDIA (18 CITIES)                */}
