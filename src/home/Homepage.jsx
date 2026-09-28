@@ -19,7 +19,8 @@ import {
   trustedCompaniesData,
   topCoworkingCitiesData,
   whyChooseData,
-  customerReviewsData
+  customerReviewsData,
+  faqSectionData
 } from './images/homedata.js';
 
 /**
@@ -235,6 +236,16 @@ const Homepage = () => {
 
   const handlePrevReviewSlide = () => {
     setCurrentReviewIndex((prev) => (prev <= 0 ? maxReviewIndex : prev - 1));
+  };
+
+  // -------------------------------------------------------------------------
+  // State for Frequently Asked Questions (FAQ) Accordion (7 cards)
+  // Tracks the index of the currently expanded question (null = all collapsed)
+  // -------------------------------------------------------------------------
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  const toggleFaq = (index) => {
+    setOpenFaqIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
   // =========================================================================
@@ -1446,7 +1457,104 @@ const Homepage = () => {
         </div>
       </section>
 
-    
+      {/* =================================================================== */}
+      {/* SECTION 8: FREQUENTLY ASKED QUESTIONS (FAQ - 7 RECTANGLE CARDS)    */}
+      {/* Data Source: faqSectionData from homedata.js                       */}
+      {/* Features:                                                          */}
+      {/*  - Full-width rectangular cards stacked one below another          */}
+      {/*  - Down arrow on the LEFT side of each card                        */}
+      {/*  - Answer hidden by default, smoothly reveals on click             */}
+      {/* =================================================================== */}
+      <section 
+        aria-label="Frequently Asked Questions" 
+        className="w-full bg-[#fbf9f6] py-14 sm:py-18 lg:py-22 px-4 sm:px-6 lg:px-8 border-t border-slate-200/70 select-none"
+      >
+        <div className="max-w-5xl mx-auto w-full">
+          
+          {/* Section Header */}
+          <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
+            <span className="inline-block text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#007bff] bg-blue-50 px-3.5 py-1 rounded-full mb-3 border border-blue-100/80">
+              {faqSectionData.badge}
+            </span>
+            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-black text-slate-900 tracking-tight leading-tight">
+              {faqSectionData.title}
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-500 font-medium mt-2">
+              {faqSectionData.subtitle}
+            </p>
+          </div>
+
+          {/* 7 Full-Width Stacked Rectangular Cards (One by One) */}
+          <div className="flex flex-col gap-3.5 sm:gap-4 w-full">
+            {faqSectionData.questions.map((faq, index) => {
+              const isOpen = openFaqIndex === index;
+              return (
+                <div
+                  key={faq.id}
+                  className={`w-full bg-white rounded-xl sm:rounded-2xl border transition-all duration-300 overflow-hidden shadow-2xs ${
+                    isOpen
+                      ? 'border-blue-400 ring-2 ring-blue-500/10 shadow-sm'
+                      : 'border-slate-200/90 hover:border-slate-300 hover:shadow-xs'
+                  }`}
+                >
+                  {/* Clickable Header: Down Arrow on LEFT side, Question Text */}
+                  <button
+                    type="button"
+                    onClick={() => toggleFaq(index)}
+                    aria-expanded={isOpen}
+                    className="w-full flex items-center gap-3.5 sm:gap-4.5 p-4 sm:p-5 lg:p-6 text-left cursor-pointer transition-colors hover:bg-slate-50/70 group"
+                  >
+                    {/* Down Arrow on the LEFT side */}
+                    <span
+                      className={`w-8 h-8 sm:w-9 sm:h-9 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 ${
+                        isOpen
+                          ? 'rotate-180 bg-[#007bff] text-white shadow-xs'
+                          : 'bg-slate-100 text-slate-600 group-hover:bg-blue-50 group-hover:text-[#007bff]'
+                      }`}
+                    >
+                      <svg
+                        className="w-4 h-4 sm:w-4.5 sm:h-4.5"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+
+                    {/* Question text */}
+                    <span
+                      className={`text-sm sm:text-base lg:text-[17px] font-bold tracking-tight transition-colors flex-1 leading-snug ${
+                        isOpen ? 'text-[#007bff]' : 'text-slate-900 group-hover:text-[#007bff]'
+                      }`}
+                    >
+                      {faq.question}
+                    </span>
+                  </button>
+
+                  {/* Answer Content: Hidden by default, smooth CSS grid-rows animation */}
+                  <div
+                    className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
+                      isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
+                    }`}
+                  >
+                    <div className="overflow-hidden">
+                      <div className="pl-15 sm:pl-17.5 lg:pl-19.5 pr-5 sm:pr-8 pb-5 pt-1 border-t border-slate-100">
+                        <p className="text-xs sm:text-sm lg:text-[14.5px] text-slate-600 leading-relaxed font-normal">
+                          {faq.answer}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+        </div>
+      </section>
 
       {/* =================================================================== */}
       {/* MODAL OVERLAY: City Selection Options Popup                        */}

@@ -17,6 +17,7 @@
  *  9. Top Coworking Spaces in India Section (topCoworkingCitiesData)
  * 10. Why Choose Us (ANAROCK) Value Propositions (whyChooseData)
  * 11. Customer Testimonials & Reviews (customerReviewsData)
+ * 12. Frequently Asked Questions (faqSectionData)
  * ============================================================================
  */
 
@@ -540,4 +541,55 @@ export const customerReviewsData = {
     }
   ]
 };
+
+// ============================================================================
+// 13. FREQUENTLY ASKED QUESTIONS (FAQ) DATA (7 ACCORDION CARDS)
+// Used by Homepage.jsx to render full-width accordion question cards
+// Features:
+//  - 7 practical customer questions covering coworking, pricing, amenities,
+//    virtual office, day passes, move-in timelines, and multi-city roaming.
+// ============================================================================
+export const faqSectionData = {
+  badge: "FREQUENTLY ASKED QUESTIONS",
+  title: "Got Questions? We've Got Answers",
+  subtitle: "Everything you need to know about booking workspaces, pricing, amenities, and plans",
+  questions: [
+    {
+      id: "faq-1",
+      question: "What is a coworking space and how does it work?",
+      answer: "A coworking space is a shared workspace where professionals, freelancers, startups, and remote teams work in a collaborative environment. Instead of leasing a traditional office with long lock-in periods, you get fully furnished desks, private cabins, high-speed WiFi, conference rooms, housekeeping, and access to a vibrant community with flexible daily, monthly, or yearly plans."
+    },
+    {
+      id: "faq-2",
+      question: "Are there any brokerage or hidden charges when booking through your platform?",
+      answer: "No, our platform operates on a completely zero-brokerage policy. You get direct access to premium workspaces across India with 100% transparent pricing. The rates you see are all-inclusive with no unexpected commissions or documentation fees."
+    },
+    {
+      id: "faq-3",
+      question: "What amenities are included with a coworking membership?",
+      answer: "Standard memberships include enterprise-grade high-speed internet, power backup, air conditioning, daily sanitation, tea/coffee pantry, reception support, meeting and conference room credits, ergonomic seating, printing facilities, and access to networking events."
+    },
+    {
+      id: "faq-4",
+      question: "Can I register my company address or get GST registration with a Virtual Office?",
+      answer: "Yes! Our Virtual Office packages provide a prime commercial business address, official NOC, utility bill, and lease agreement compliant with MCA and GST registration requirements across all major Indian cities. We also offer mail handling and call forwarding services."
+    },
+    {
+      id: "faq-5",
+      question: "Can I book a day pass before committing to a monthly membership?",
+      answer: "Absolutely. We offer flexible 1-day passes and multi-day flexi passes so you can experience the workspace, test the amenities, and meet the community before selecting a dedicated desk or private cabin plan."
+    },
+    {
+      id: "faq-6",
+      question: "How quickly can our team move into a new private cabin or office?",
+      answer: "You can move in as quickly as 24 hours. Once you select your preferred workspace and finalize the plan with our dedicated office consultant, the documentation and desk allocations are processed seamlessly for same-day or next-day onboarding."
+    },
+    {
+      id: "faq-7",
+      question: "Can I access workspaces in multiple cities with a single plan?",
+      answer: "Yes, our multi-city roaming pass allows you to work from any partner coworking hub across 18+ Indian cities including Pune, Bangalore, Mumbai, Delhi, Gurugram, Hyderabad, and more without purchasing separate subscriptions."
+    }
+  ]
+};
+
 
