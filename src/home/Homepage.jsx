@@ -1184,7 +1184,7 @@ const Homepage = () => {
       </section>
 
       {/* =================================================================== */}
-      {/* SECTION 6: WHY CHOOSE mycoworking?                              */}
+      {/* SECTION 6: WHY CHOOSE my?                              */}
       {/* Data Source: whyChooseData from homedata.js                        */}
       {/* =================================================================== */}
       <section 
@@ -1217,11 +1217,6 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-
-
-
-
-      
 
       {/* =================================================================== */}
       {/* MODAL OVERLAY: City Selection Options Popup                        */}
