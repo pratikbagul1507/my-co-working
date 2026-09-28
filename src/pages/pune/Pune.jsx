@@ -407,17 +407,10 @@ const Pune = () => {
       <section aria-label="Coworking spaces list">
         {displayedSpaces.length === 0 ? (
           <div className="py-12 text-center text-slate-500 text-sm">
-            <p>
-              {selectedNeighborhood
-                ? `No coworking spaces found for ${selectedNeighborhood}${selectedPrice ? ' in the selected price range.' : '.'}`
-                : 'No coworking spaces found in the selected price range.'}
-            </p>
+            <p>No coworking spaces found for {selectedNeighborhood}.</p>
             <button
               type="button"
-              onClick={() => {
-                setSelectedNeighborhood(null);
-                setSelectedPrice('');
-              }}
+              onClick={() => setSelectedNeighborhood(null)}
               className="mt-2 text-xs text-blue-600 underline cursor-pointer"
             >
               Show all Pune spaces
