@@ -1184,7 +1184,7 @@ const Homepage = () => {
       </section>
 
       {/* =================================================================== */}
-      {/* SECTION 6: WHY CHOOSE my?                              */}
+      {/* SECTION 6: WHY CHOOSE mycoworking?                              */}
       {/* Data Source: whyChooseData from homedata.js                        */}
       {/* =================================================================== */}
       <section 
