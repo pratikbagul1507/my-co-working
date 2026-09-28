@@ -379,7 +379,7 @@ export const topCoworkingCitiesData = {
 // Used by Homepage.jsx (6 value proposition cards on royal blue background)
 // ============================================================================
 export const whyChooseData = {
-  title: "Why choose myHQ by ANAROCK?",
+  title: "Why choose mycoworking?",
   features: [
     {
       id: "zero-brokerage",
