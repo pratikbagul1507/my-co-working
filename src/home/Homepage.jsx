@@ -21,7 +21,8 @@ import {
   whyChooseData,
   customerReviewsData,
   faqSectionData,
-  homepageDescriptionData
+  homepageDescriptionData,
+  footerQuickLinksData
 } from './images/homedata.js';
 
 /**
@@ -247,6 +248,22 @@ const Homepage = () => {
 
   const toggleFaq = (index) => {
     setOpenFaqIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
+
+  /**
+   * Handles click on any city link from the footer Quick Links directory:
+   * - Finds the city object from availableCities
+   * - Selects the city and opens its space options popup dialog
+   * - Smoothly scrolls to the top of the homepage
+   */
+  const handleFooterCityClick = (cityName) => {
+    const matchedCity = availableCities.find(
+      (c) => c.name.toLowerCase() === cityName.toLowerCase()
+    );
+    if (matchedCity) {
+      selectCityAndOpenPopup(matchedCity, true);
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   // =========================================================================
@@ -1639,6 +1656,102 @@ const Homepage = () => {
 
         </div>
       </section>
+
+      {/* =================================================================== */}
+      {/* SECTION 9: FOOTER DIRECTORY & 18-CITY QUICK LINKS                  */}
+      {/* Data Source: footerQuickLinksData from homedata.js                 */}
+      {/* Features:                                                          */}
+      {/*  - MyCoworking white brand logo card & platform summary            */}
+      {/*  - 3 columns of Quick Links for all 18 top cities                  */}
+      {/*  - Clicking any city smoothly scrolls to top and opens city popup  */}
+      {/* =================================================================== */}
+      <footer 
+        aria-label="Footer Directory and Quick Links" 
+        className="w-full bg-black text-white py-12 sm:py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-900 select-none"
+      >
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 items-start">
+            
+            {/* Column 1: Brand Logo Card & Platform Narrative */}
+            <div className="flex flex-col items-start">
+              {/* White Logo Card Matching Design */}
+              <div className="bg-white rounded-md p-2.5 sm:p-3 w-fit shadow-xs mb-4">
+                <div className="flex items-center gap-2">
+                  <svg className="w-10 h-10 sm:w-11 sm:h-11" viewBox="0 0 48 48" fill="none">
+                    {/* Background Buildings */}
+                    <rect x="18" y="8" width="12" height="28" rx="1" fill="#1e293b" />
+                    <rect x="21" y="11" width="2" height="2" fill="#ffffff" />
+                    <rect x="25" y="11" width="2" height="2" fill="#ffffff" />
+                    <rect x="21" y="15" width="2" height="2" fill="#ffffff" />
+                    <rect x="25" y="15" width="2" height="2" fill="#ffffff" />
+                    <rect x="21" y="19" width="2" height="2" fill="#ffffff" />
+                    <rect x="25" y="19" width="2" height="2" fill="#ffffff" />
+                    <rect x="13" y="14" width="8" height="22" rx="1" fill="#334155" />
+                    <rect x="27" y="16" width="8" height="20" rx="1" fill="#475569" />
+                    {/* Orange House Outline */}
+                    <path d="M12 28 L24 18 L36 28 L34 38 L14 38 Z" fill="none" stroke="#f97316" strokeWidth="2.5" strokeLinejoin="round" />
+                    {/* Person 1 Left */}
+                    <circle cx="8" cy="24" r="3" fill="#f97316" />
+                    <path d="M5 34 C5 30 7 28 10 28 L12 34 Z" fill="#f97316" />
+                    <rect x="9" y="30" width="4" height="2.5" rx="0.5" fill="#1e293b" />
+                    {/* Person 2 Right */}
+                    <circle cx="40" cy="24" r="3" fill="#1e293b" />
+                    <path d="M43 34 C43 30 41 28 38 28 L36 34 Z" fill="#1e293b" />
+                    <rect x="35" y="30" width="4" height="2.5" rx="0.5" fill="#f97316" />
+                    {/* Desk Base */}
+                    <line x1="4" y1="38" x2="44" y2="38" stroke="#f97316" strokeWidth="2" strokeLinecap="round" />
+                  </svg>
+                  <div className="flex flex-col">
+                    <span className="text-base sm:text-lg font-black tracking-tight leading-tight text-slate-900">
+                      <span className="text-[#f97316]">My</span>Coworking
+                    </span>
+                    <span className="h-0.5 bg-[#f97316] w-full mt-0.5 rounded-full" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Brief Description */}
+              <p className="text-xs sm:text-sm text-slate-400 font-normal leading-relaxed max-w-xs">
+                {footerQuickLinksData.brand.description}
+              </p>
+            </div>
+
+            {/* Columns 2, 3, 4: Quick Links Lists for all 18 Cities */}
+            {footerQuickLinksData.columns.map((column) => (
+              <div key={column.id} className="flex flex-col">
+                <h4 className="text-white font-bold text-base sm:text-lg lg:text-xl tracking-tight mb-4 sm:mb-5">
+                  {column.title}
+                </h4>
+                <ul className="flex flex-col space-y-2.5 sm:space-y-3">
+                  {column.cities.map((cityName) => (
+                    <li key={cityName}>
+                      <button
+                        type="button"
+                        onClick={() => handleFooterCityClick(cityName)}
+                        className="text-xs sm:text-sm text-slate-300 hover:text-white hover:underline transition-colors cursor-pointer text-left focus:outline-none flex items-center gap-1.5 group"
+                      >
+                        <span className="text-slate-500 group-hover:text-orange-400 transition-colors text-[10px]">
+                          ›
+                        </span>
+                        <span>{cityName}</span>
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+
+          </div>
+
+          {/* Bottom Copyright Divider Bar */}
+          <div className="pt-8 sm:pt-10 mt-10 sm:mt-14 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+            <p>© {new Date().getFullYear()} MyCoworking. All rights reserved.</p>
+            <p className="text-[11px] text-slate-500">
+              India's flexible workspace network across 18+ cities
+            </p>
+          </div>
+        </div>
+      </footer>
 
       {/* =================================================================== */}
       {/* MODAL OVERLAY: City Selection Options Popup                        */}
