@@ -609,7 +609,7 @@ const Delhi = () => {
             {stillNotFindingBanner.ctaText}
           </button>
         </div>
-      </section>
+      </section>  
 
       {/* Section: Pagination Controls */}
       <nav aria-label="Coworking spaces pagination" className="flex items-center justify-center my-8">
