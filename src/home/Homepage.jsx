@@ -14,8 +14,7 @@ import {
   heroSectionData,
   enquiryFormConfig,
   perkIconSvgPaths,
- 
-} from './images/homedata.js';
+ } from './images/homedata.js';
 
 /**
  * ============================================================================
