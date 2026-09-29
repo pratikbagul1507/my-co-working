@@ -13,19 +13,7 @@ import {
   officeSolutions, 
   perfectWorkspaceBanner, 
   customizedOfficeBanner, 
-  stillNotFindingBanner, 
-  paginationData,
-  pageThreeDehliOfficeCards,
-  pageThreeMoreDehliOfficeCards,
-  pageThreeFinalDehliOfficeCards,
-  pageThreeFeaturedDehliOfficeCards,
-  pageFourDehliOfficeCards,
-  pageFiveDehliOfficeCards,
-  pageSixDehliOfficeCards,
-  pageSevenDehliOfficeCards,
-  pageEightDehliOfficeCards,
-  topDehliCoworkingLocations,
-  areaExtraOfficeCards
+  
 } from './delhiData.js';
 
 /**
