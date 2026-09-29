@@ -15,8 +15,8 @@ export const puneNeighborhoods = [
 'Janakpuri',
 'South Delhi',
 'Dwarka Delhi',
-'Rohini
-Pitampura
+'Rohini',
+'Pitampura',
 Rajouri Garden
 Vasant Kunj
 Laxmi Nagar
