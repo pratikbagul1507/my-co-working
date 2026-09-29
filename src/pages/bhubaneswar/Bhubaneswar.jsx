@@ -1,27 +1,17 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { bhubaneshwarNeighborhoods,
-   bhubaneshwarOfficeCards,
-   moreBhubaneshwarOfficeCards,
-   finalBhubaneshwarOfficeCards, 
-   featuredBhubaneshwarOfficeCards,
-    pageTwoBhubaneshwarOfficeCards, 
-    pageTwoMoreBhubaneshwarOfficeCards, 
-    pageTwoFinalBhubaneshwarOfficeCards, 
-    pageTwoFeaturedBhubaneshwarOfficeCards, 
-    officeSolutions, 
-    perfectWorkspaceBanner, 
-    customizedOfficeBanner, 
-    stillNotFindingBanner, 
-    paginationData,
-    pageThreeBhubaneshwarOfficeCards,
-    pageThreeMoreBhubaneshwarOfficeCards,
-    pageThreeFinalBhubaneshwarOfficeCards,
-    pageThreeFeaturedBhubaneshwarOfficeCards,
-    pageFourBhubaneshwarOfficeCards,
-    topBhubaneshwarCoworkingLocations,
-    areaExtraOfficeCards
-   } from './bhubaneswarData.js';
+import {
+  bhubaneshwarNeighborhoods,
+  bhubaneshwarOfficeCards,
+  officeSolutions,
+  moreBhubaneshwarOfficeCards,
+  perfectWorkspaceBanner,
+  customizedOfficeBanner,
+  stillNotFindingBanner,
+  paginationData,
+  topBhubaneshwarCoworkingLocations,
+  areaExtraOfficeCards
+} from './bhubaneswarData.js';
 
 /**
  * Individual Coworking Space Card with isolated multi-image sliding closure mechanism
@@ -213,13 +203,6 @@ const OfficeCard = ({ space }) => {
 const Bhubaneshwar = () => {
   const [selectedNeighborhood, setSelectedNeighborhood] = useState(null);
   const [selectedPrice, setSelectedPrice] = useState('');
-  const [currentPage, setCurrentPage] = useState(paginationData.initialPage || 1);
-
-  const handlePageChange = (page) => {
-    if (page < 1 || page > paginationData.totalPages || page === currentPage) return;
-    setCurrentPage(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   const handleLocationClick = (locationName) => {
     setSelectedNeighborhood((prev) => (prev?.toLowerCase() === locationName.toLowerCase() ? null : locationName));
@@ -248,73 +231,43 @@ const Bhubaneshwar = () => {
     return true;
   };
 
-  const activeTopSpaces = currentPage === 1 ? bhubaneshwarOfficeCards : currentPage === 2 ? pageTwoBhubaneshwarOfficeCards : currentPage === 3 ? pageThreeBhubaneshwarOfficeCards : currentPage === 4 ? pageFourBhubaneshwarOfficeCards : [];
+  // Helper to check if space matches area
+  const matchesArea = (space, areaName) => {
+    if (!areaName) return true;
+    const target = areaName.toLowerCase();
+    return (
+      space.area?.toLowerCase() === target ||
+      space.location?.toLowerCase().includes(target)
+    );
+  };
 
   // ============================================================================
   // Area Filtering Logic with Extra 10 Real Internet Office Cards per Area
   // ----------------------------------------------------------------------------
-  // 1. Jab koi Area Button ACTIVE ho (selectedNeighborhood != null):
-  //    - Existing cards me se us area ke matching cards filter honge.
-  //    - Sath me internet se laye gaye naye 10 cards (areaExtraOfficeCards[selectedNeighborhood]) judenge.
-  // 2. Jab koi Area Button ACTIVE NAHI ho (All Cards view):
-  //    - Naye 10 cards chup (hidden) rahenge, sirf default existing cards hi dikhenge.
+  // 1. When an Area Button or Location Card is ACTIVE (selectedNeighborhood != null):
+  //    - Displays matching spaces from the 16 base cards.
+  //    - Plus the 10 extra verified internet cards for that specific area.
+  // 2. When NO Area Button is ACTIVE (All Cards / Default view):
+  //    - Extra 10 cards remain hidden, displaying strictly the first 8 and second 8 cards.
   // ============================================================================
 
-  // Current page ke existing top cards me se area match
-  const existingFilteredTopSpaces = selectedNeighborhood
-    ? activeTopSpaces.filter(
-        (space) =>
-          space.area?.toLowerCase() === selectedNeighborhood.toLowerCase() ||
-          space.location?.toLowerCase().includes(selectedNeighborhood.toLowerCase())
-      )
-    : activeTopSpaces;
-
-  // Selected area ke extra 10 real cards (sirf tab milenge jab area button active ho)
-  const extraAreaCards = (selectedNeighborhood && areaExtraOfficeCards && areaExtraOfficeCards[selectedNeighborhood])
-    ? areaExtraOfficeCards[selectedNeighborhood]
-    : [];
-
-  // Combined cards to display in top grid (area filtered):
   const combinedSpaces = selectedNeighborhood
     ? [
-        ...existingFilteredTopSpaces,
-        ...extraAreaCards.filter(
-          (extra) => !existingFilteredTopSpaces.some((ex) => ex.name.toLowerCase() === extra.name.toLowerCase())
-        )
-      ]
-    : activeTopSpaces;
+        ...bhubaneshwarOfficeCards.filter((s) => matchesArea(s, selectedNeighborhood)),
+        ...moreBhubaneshwarOfficeCards.filter((s) => matchesArea(s, selectedNeighborhood)),
+        ...((areaExtraOfficeCards && areaExtraOfficeCards[selectedNeighborhood]) || [])
+      ].filter((space, index, self) => index === self.findIndex((s) => s.id === space.id || s.name.toLowerCase() === space.name.toLowerCase()))
+    : bhubaneshwarOfficeCards;
 
   // Apply price filter to displayedSpaces
   const displayedSpaces = selectedPrice
     ? combinedSpaces.filter(matchesPrice)
     : combinedSpaces;
 
-  const activeMoreSpaces = currentPage === 1 ? moreBhubaneshwarOfficeCards : currentPage === 2 ? pageTwoMoreBhubaneshwarOfficeCards : currentPage === 3 ? pageThreeMoreBhubaneshwarOfficeCards : [];
-
-  const displayedMoreSpaces = activeMoreSpaces.filter((space) => {
-    const matchesArea = !selectedNeighborhood ||
-      space.area?.toLowerCase() === selectedNeighborhood.toLowerCase() ||
-      space.location?.toLowerCase().includes(selectedNeighborhood.toLowerCase());
-    return matchesArea && matchesPrice(space);
-  });
-
-  const activeFinalSpaces = currentPage === 1 ? finalBhubaneshwarOfficeCards : currentPage === 2 ? pageTwoFinalBhubaneshwarOfficeCards : currentPage === 3 ? pageThreeFinalBhubaneshwarOfficeCards : [];
-
-  const displayedFinalSpaces = activeFinalSpaces.filter((space) => {
-    const matchesArea = !selectedNeighborhood ||
-      space.area?.toLowerCase() === selectedNeighborhood.toLowerCase() ||
-      space.location?.toLowerCase().includes(selectedNeighborhood.toLowerCase());
-    return matchesArea && matchesPrice(space);
-  });
-
-  const activeOfficeCards = currentPage === 1 ? featuredBhubaneshwarOfficeCards : currentPage === 2 ? pageTwoFeaturedBhubaneshwarOfficeCards : currentPage === 3 ? pageThreeFeaturedBhubaneshwarOfficeCards : []; 
-
-  const displayedFeaturedSpaces = activeOfficeCards.filter((space) => {
-    const matchesArea = !selectedNeighborhood ||
-      space.area?.toLowerCase() === selectedNeighborhood.toLowerCase() ||
-      space.location?.toLowerCase().includes(selectedNeighborhood.toLowerCase());
-    return matchesArea && matchesPrice(space);
-  });
+  // Second 8 cards grid (shown on default view, or empty when specific area is selected so all area cards display together)
+  const displayedMoreSpaces = selectedNeighborhood
+    ? []
+    : (selectedPrice ? moreBhubaneshwarOfficeCards.filter(matchesPrice) : moreBhubaneshwarOfficeCards);
 
 
   return (
@@ -344,10 +297,11 @@ const Bhubaneshwar = () => {
           <div className="relative">
             <select
               aria-label="Filter by popular locations"
+              value={selectedNeighborhood || ''}
+              onChange={(e) => setSelectedNeighborhood(e.target.value || null)}
               className="text-xs text-slate-700 bg-white border border-slate-200 rounded px-3 py-1.5 pr-6 appearance-none shadow-2xs cursor-pointer focus:outline-none focus:border-blue-500"
-              defaultValue=""
             >
-              <option value="" disabled>Popular Locations</option>
+              <option value="">Popular Locations</option>
               {bhubaneshwarNeighborhoods.map((neighborhood) => (
                 <option key={`opt-${neighborhood}`} value={neighborhood}>
                   {neighborhood}
@@ -378,7 +332,7 @@ const Bhubaneshwar = () => {
         </div>
       </header>
 
-      {/* Section: 18 Neighborhood Filter Pills */}
+      {/* Section: Neighborhood Filter Pills */}
       <section aria-label="Neighborhood filters" className="mb-6">
         <div className="flex flex-wrap gap-1.5 sm:gap-2">
           {bhubaneshwarNeighborhoods.map((neighborhood) => {
@@ -516,17 +470,6 @@ const Bhubaneshwar = () => {
         </div>
       </section>
 
-      {/* Section: Spotlight Coworking Spaces Grid */}
-      {displayedFinalSpaces.length > 0 && (
-        <section aria-label="Spotlight coworking spaces list" className="mb-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
-            {displayedFinalSpaces.map((space) => (
-              <OfficeCard key={space.id} space={space} />
-            ))}
-          </div>
-        </section>
-      )}
-
       {/* Section: Customized Office Solutions Banner */}
       <section
         aria-label="Customized office solutions"
@@ -567,17 +510,6 @@ const Bhubaneshwar = () => {
         </div>
       </section>
 
-      {/* Section: Featured Coworking Spaces Grid */}
-      {displayedFeaturedSpaces.length > 0 && (
-        <section aria-label="Featured coworking spaces list" className="mb-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
-            {displayedFeaturedSpaces.map((space) => (
-              <OfficeCard key={space.id} space={space} />
-            ))}
-          </div>
-        </section>
-      )}
-
       {/* Section: Still Not Finding Coworking Space Banner */}
       <section
         aria-label="Still not able to find coworking space"
@@ -611,50 +543,29 @@ const Bhubaneshwar = () => {
           {/* Previous Button */}
           <button
             type="button"
-            disabled={currentPage === 1}
-            onClick={() => handlePageChange(currentPage - 1)}
+            disabled
             aria-label="Previous page"
-            className={`px-3.5 py-2 font-medium border-r border-slate-200 transition-colors ${
-              currentPage === 1
-                ? 'text-slate-300 cursor-not-allowed bg-slate-50/50'
-                : 'text-slate-700 hover:bg-slate-50 hover:text-blue-600 cursor-pointer'
-            }`}
+            className="px-3.5 py-2 font-medium border-r border-slate-200 transition-colors text-slate-300 cursor-not-allowed bg-slate-50/50"
           >
             Previous
           </button>
 
-          {/* Page Number Buttons */}
-          {Array.from({ length: paginationData.totalPages }, (_, index) => index + 1).map((page) => {
-            const isActive = currentPage === page;
-            return (
-              <button
-                key={`pagination-page-${page}`}
-                type="button"
-                onClick={() => handlePageChange(page)}
-                aria-current={isActive ? 'page' : undefined}
-                aria-label={`Page ${page}`}
-                className={`min-w-[38px] py-2 font-semibold border-r border-slate-200 transition-colors text-center ${
-                  isActive
-                    ? 'bg-[#007bff] text-white cursor-default'
-                    : 'text-slate-700 hover:bg-slate-50 hover:text-blue-600 cursor-pointer'
-                }`}
-              >
-                {page}
-              </button>
-            );
-          })}
+          {/* Page Number Button */}
+          <button
+            type="button"
+            aria-current="page"
+            aria-label="Page 1"
+            className="min-w-[38px] py-2 font-semibold border-r border-slate-200 transition-colors text-center bg-[#007bff] text-white cursor-default"
+          >
+            1
+          </button>
 
           {/* Next Button */}
           <button
             type="button"
-            disabled={currentPage === paginationData.totalPages}
-            onClick={() => handlePageChange(currentPage + 1)}
+            disabled
             aria-label="Next page"
-            className={`px-3.5 py-2 font-medium transition-colors ${
-              currentPage === paginationData.totalPages
-                ? 'text-slate-300 cursor-not-allowed bg-slate-50/50'
-                : 'text-slate-700 hover:bg-slate-50 hover:text-blue-600 cursor-pointer'
-            }`}
+            className="px-3.5 py-2 font-medium transition-colors text-slate-300 cursor-not-allowed bg-slate-50/50"
           >
             Next
           </button>
