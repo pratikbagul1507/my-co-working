@@ -1,4 +1,4 @@
-/ ============================================================================
+// ============================================================================
 // 7. PROMOTIONAL BANNER & WORKSPACE CATEGORY CARDS DATA
 // Used by:
 //  - "List Free with Cofynd" center promotional card
