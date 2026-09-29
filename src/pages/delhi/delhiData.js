@@ -4,24 +4,32 @@
  */
 
 export const puneNeighborhoods = [
-  'Baner',
-  'Kharadi',
-  'Viman Nagar',
-  'Koregaon Park',
-  'Wakad',
-  'Balewadi',
-  'Hinjewadi',
-  'Kothrud',
-  'Aundh',
-  'Pimple Saudagar',
-  'Kalyani Nagar',
-  'Bavdhan',
-  'Magarpatta',
-  'Hadapsar',
-  'Pimpri Chinchwad',
-  'Yerwada',
-  'Karve Nagar',
-  'Shivaji Nagar'
+  Connaught Place
+Malviya Nagar
+Aerocity
+Mohan Cooperative
+Saket
+Okhla
+Netaji Subhash Place
+Nehru Place
+Janakpuri
+South Delhi
+Dwarka Delhi
+Rohini
+Pitampura
+Rajouri Garden
+Vasant Kunj
+Laxmi Nagar
+Hauz Khas
+Green Park
+Pusa Road
+Jasola
+Karol Bagh
+West Delhi
+Defence Colony
+Patel Nagar
+Lajpat Nagar
+Uttam Nagar
 ];
 
 export const puneOfficeCards = [
