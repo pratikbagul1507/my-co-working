@@ -11,8 +11,8 @@ export const puneNeighborhoods = [
 'Saket',
 'Okhla',
 'Netaji Subhash Place',
-'Nehru Place
-Janakpuri
+'Nehru Place',
+'Janakpuri',
 South Delhi
 Dwarka Delhi
 Rohini
