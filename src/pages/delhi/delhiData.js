@@ -4,7 +4,7 @@
  */
 
 export const puneNeighborhoods = [
-  'Connaught Place'
+  'Connaught Place',
 Malviya Nagar
 Aerocity
 Mohan Cooperative
