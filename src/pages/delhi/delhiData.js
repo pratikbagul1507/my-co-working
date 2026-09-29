@@ -18,18 +18,18 @@ export const puneNeighborhoods = [
 'Rohini',
 'Pitampura',
 'Rajouri Garden',
-Vasant Kunj
-Laxmi Nagar
-Hauz Khas
-Green Park
-Pusa Road
-Jasola
-Karol Bagh
-West Delhi
-Defence Colony
-Patel Nagar
-Lajpat Nagar
-Uttam Nagar
+'Vasant Kunj',
+'Laxmi Nagar',
+'Hauz Khas',
+'Green Park',
+'Pusa Road',
+'Jasola',
+'Karol Bagh',
+'West Delhi',
+'Defence Colony',
+'Patel Nagar',
+'Lajpat Nagar',
+'Uttam Nagar'
 ];
 
 export const puneOfficeCards = [
