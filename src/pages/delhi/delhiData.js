@@ -9,8 +9,8 @@ export const puneNeighborhoods = [
 'Aerocity',
 'Mohan Cooperative',
 'Saket',
-'Okhla
-Netaji Subhash Place
+'Okhla',
+'Netaji Subhash Place
 Nehru Place
 Janakpuri
 South Delhi
