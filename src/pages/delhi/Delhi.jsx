@@ -12,15 +12,27 @@ import {
   pageTwoFeaturedDehliOfficeCards, 
   officeSolutions, 
   perfectWorkspaceBanner, 
-  customizedOfficeBanner, 
-  
+  customizedOfficeBanner,
+  stillNotFindingBanner,
+  paginationData,
+  pageThreeDehliOfficeCards,
+  pageThreeMoreDehliOfficeCards,
+  pageThreeFinalDehliOfficeCards,
+  pageThreeFeaturedDehliOfficeCards,
+  pageFourDehliOfficeCards,
+  pageFiveDehliOfficeCards,
+  pageSixDehliOfficeCards,
+  pageSevenDehliOfficeCards,
+  pageEightDehliOfficeCards,
+  topDehliCoworkingLocations,
+  areaExtraOfficeCards,
 } from './delhiData.js';
 
 /**
  * Individual Coworking Space Card with isolated multi-image sliding closure mechanism
  * Implements continuous infinite looping in the same slide direction.
  */
-const OfficeCard = ({ space }) => 
+const OfficeCard = ({ space }) => {
   const hasMultipleImages = Boolean(space.images && space.images.length > 1);
   const extendedImages = hasMultipleImages
     ? [space.images[space.images.length - 1], ...space.images, space.images[0]]
