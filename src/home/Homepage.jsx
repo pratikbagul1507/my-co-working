@@ -23,7 +23,7 @@ import {
   customerReviewsData,
   faqSectionData,
   homepageDescriptionData,
-  footerQuickLinksData} from 
+  footerQuickLinksData} from '../common/common.js'
 
 /**
  * ============================================================================
