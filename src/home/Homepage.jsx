@@ -15,7 +15,15 @@ import {
   enquiryFormConfig,
   perkIconSvgPaths,
  } from './images/homedata.js';
- import 
+ import { homePromotionalData,
+  platformShowcaseData,
+  trustedCompaniesData,
+  topCoworkingCitiesData,
+  whyChooseData,
+  customerReviewsData,
+  faqSectionData,
+  homepageDescriptionData,
+  footerQuickLinksData}
 
 /**
  * ============================================================================
