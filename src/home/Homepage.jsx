@@ -14,15 +14,7 @@ import {
   heroSectionData,
   enquiryFormConfig,
   perkIconSvgPaths,
-  homePromotionalData,
-  platformShowcaseData,
-  trustedCompaniesData,
-  topCoworkingCitiesData,
-  whyChooseData,
-  customerReviewsData,
-  faqSectionData,
-  homepageDescriptionData,
-  footerQuickLinksData
+ 
 } from './images/homedata.js';
 
 /**
