@@ -109,7 +109,7 @@ const OfficeCard = ({ space }) => {
         {/* Sliding images container with continuous infinite looping */}
         <div
           className={`flex h-full w-full ${isTransitionEnabled ? 'transition-transform duration-300 ease-out' : ''}`}
-          style= transform: `translateX(-${currentIndex * 100}%)` }}
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           onTransitionEnd={handleTransitionEnd}
         >
           {extendedImages.map((imageUrl, imageIndex) => {
