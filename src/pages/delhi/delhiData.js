@@ -1,6 +1,5 @@
 // Data store for Delhi
 export const delhiAreas = [
- 
   "Connaught Place",
   "Nehru Place",
   "Saket",
