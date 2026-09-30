@@ -328,7 +328,7 @@ export const topCoworkingCitiesData = {
     Indore: "Cleanest City of India"
   },
   workspaceImages: {
-    Gurugram: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=700&q=80",
+    Gurugram: "https://cofynd.com/coworking/gurugram,
     Hyderabad: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=700&q=80",
     Bangalore: "https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&w=700&q=80",
     Mumbai: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=700&q=80",
