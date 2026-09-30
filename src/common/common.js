@@ -1,16 +1,15 @@
 // ============================================================================
 // 7. PROMOTIONAL BANNER & WORKSPACE CATEGORY CARDS DATA
 // Used by:
-//  - "List Free with Cofynd" center promotional card
-//  - Left cards: Coworking Spaces & Coliving Spaces (Business Plans)
-//  - Right cards: Virtual Offices & Office Spaces
+//  - "List with MyCoworking" center promotional card
+//  - Category cards: Coworking Spaces & Virtual Offices
 // ============================================================================
 export const homePromotionalData = {
   // Center featured card
   centerBanner: {
     titlePrefix: 'List',
     badgeText: 'Free',
-    titleSuffix: 'with Cofynd',
+    titleSuffix: 'with MyCoworking',
     subtitle: 'Reach 10,00,000+ users looking for space across India',
     ctaText: 'List Your Property',
     previewBadge: {
@@ -46,7 +45,7 @@ export const homePromotionalData = {
     ]
   },
 
-  // Left column category cards
+  // Category cards (left column)
   leftCards: [
     {
       id: 'coworking-spaces',
@@ -54,17 +53,10 @@ export const homePromotionalData = {
       titlePart2: 'Spaces',
       image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80',
       type: 'Coworking Spaces'
-    },
-    {
-      id: 'Business Plans',
-      titlePart1: 'Business',
-      titlePart2: 'Plans',
-      image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=800&q=80',
-      type: 'Coliving Spaces'
     }
   ],
 
-  // Right column category cards
+  // Category cards (left column, second card)
   rightCards: [
     {
       id: 'virtual-offices',
@@ -72,49 +64,27 @@ export const homePromotionalData = {
       titlePart2: 'Offices',
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80',
       type: 'Virtual Office Space'
-    },
-    {
-      id: 'office-spaces',
-      titlePart1: 'Office',
-      titlePart2: 'Spaces',
-      image: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80',
-      type: 'Office Spaces'
     }
   ]
 };
 
 // ============================================================================
-// 8. INDIA'S #1 ONLINE PLATFORM SHOWCASE DATA
-// Used by Homepage.jsx (Dark showcase banner with overlapping property cards)
+// 8. "BOOK YOUR VIRTUAL OFFICE" SECTION DATA
+// Used by Homepage.jsx (points on the left, enquiry form on the right)
 // ============================================================================
-export const platformShowcaseData = {
-  headlinePart1: "India's #1 online platform for",
-  headlinePart2: "Coworking & Coliving Spaces",
-  stats: [
-    { value: "1,000+", label: "Locations" },
-    { value: "10,000+", label: "Work Spaces" },
-    { value: "25+", label: "Cities" }
+export const virtualOfficeShowcaseData = {
+  headline: "Book Your Virtual Office",
+  highlight: "with MyCoworking",
+  points: [
+    { id: "company-registration", label: "Company Registration", icon: "M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" },
+    { id: "gst-registration", label: "GST Registration", icon: "M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2z" },
+    { id: "business-address", label: "Business Address", icon: "M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z" },
+    { id: "mailing-address", label: "Mailing Address", icon: "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" },
+    { id: "reception-services", label: "Reception Services", icon: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" },
+    { id: "meeting-room-access", label: "Meeting Room Access", icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" }
   ],
-  cards: [
-    {
-      id: "wework-forum",
-      badge: "Coworking",
-      name: "WeWork Forum",
-      location: "DLF Cyber City, Gurugram",
-      price: "₹ 28,000/ month",
-      image: "https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&w=800&q=80",
-      city: "gurugram"
-    },
-    {
-      id: "stanza-living",
-      badge: "Coliving",
-      name: "Stanza Living Dunkirk House",
-      location: "sector 48, Gurgaon",
-      price: "₹ 11,799 / month",
-      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
-      city: "gurugram"
-    }
-  ]
+  phone: "+91 9028760011",
+  email: "info@mycoworking.in"
 };
 
 // ============================================================================

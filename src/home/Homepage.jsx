@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CityGrid from '../components/city/CityGrid';
 import CityPopup from '../components/city/CityPopup';
+import EnquiryCard from './EnquiryCard';
 
 // ============================================================================
 // DATA STORE IMPORT
@@ -17,7 +18,7 @@ import {
  } from './images/homedata.js';
  
  import { homePromotionalData,
-  platformShowcaseData,
+  virtualOfficeShowcaseData,
   trustedCompaniesData,
   topCoworkingCitiesData,
   whyChooseData,
@@ -423,7 +424,7 @@ const Homepage = () => {
     <article
       key={card.id}
       onClick={() => handleCategoryCardClick(card)}
-      className="relative rounded-2xl overflow-hidden bg-white border border-slate-100 shadow-xs hover:shadow-md transition-all duration-300 group cursor-pointer flex items-center justify-between min-h-[140px] sm:min-h-[148px] h-full"
+      className="relative rounded-2xl overflow-hidden bg-white border border-slate-100 shadow-xs hover:shadow-xl hover:-translate-y-0.5 hover:border-orange-200 transition-all duration-300 group cursor-pointer flex items-center justify-between min-h-[140px] sm:min-h-[148px] h-full"
     >
       <div className="absolute inset-y-0 left-0 w-[58%] overflow-hidden bg-slate-100">
         <img
@@ -436,7 +437,7 @@ const Homepage = () => {
         <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white to-transparent" />
       </div>
       <div className="relative z-10 pr-5 sm:pr-6 text-right ml-auto flex flex-col justify-center select-none">
-        <span className="text-lg sm:text-xl lg:text-[22px] font-light text-slate-600 tracking-tight leading-tight group-hover:text-blue-600 transition-colors">
+        <span className="text-lg sm:text-xl lg:text-[22px] font-light text-slate-600 tracking-tight leading-tight group-hover:text-orange-500 transition-colors">
           {card.titlePart1}
         </span>
         <span className="text-xl sm:text-2xl lg:text-[26px] font-bold text-slate-900 tracking-tight leading-tight">
@@ -829,16 +830,19 @@ const Homepage = () => {
         className="w-full bg-[#f8fafc] py-8 sm:py-10 lg:py-12 px-4 sm:px-6 lg:px-8 border-t border-slate-200/60"
       >
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[280px_1fr_280px] xl:grid-cols-[300px_1fr_300px] gap-4 sm:gap-5 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[300px_1fr] xl:grid-cols-[320px_1fr] gap-4 sm:gap-5 items-stretch">
             
-            {/* 1. LEFT COLUMN: Coworking Spaces & Coliving Spaces */}
+            {/* 1. LEFT COLUMN: Coworking Spaces & Virtual Offices */}
             <div className="flex flex-col gap-4 sm:gap-4.5 justify-between">
-              {homePromotionalData.leftCards.map(renderPromoCard)}
+              {[...homePromotionalData.leftCards, ...homePromotionalData.rightCards].map(renderPromoCard)}
             </div>
 
-            {/* 2. CENTER COLUMN: "List Free with Cofynd" Promotional Banner */}
-            <div className="md:col-span-2 lg:col-span-1 relative rounded-2xl overflow-hidden bg-[#FFF8EC] border border-[#fdecd2] p-5 sm:p-6 lg:p-7 flex flex-col justify-between shadow-xs min-h-[300px]">
+            {/* 2. RIGHT COLUMN: "List Free with MyCoworking" Promotional Banner */}
+            <div className="md:col-span-2 lg:col-span-1 relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#fff4e5] via-[#ffe9cc] to-[#ffd8a8] border border-orange-200 p-6 sm:p-8 lg:p-10 flex flex-col justify-between shadow-lg min-h-[340px]">
               
+              <div className="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-orange-400/20 pointer-events-none" />
+              <div className="absolute -bottom-20 -left-10 w-52 h-52 rounded-full bg-amber-300/25 pointer-events-none" />
+
               {/* Top / Main Banner Row */}
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 relative z-10">
                 
@@ -863,12 +867,12 @@ const Homepage = () => {
                   </div>
 
                   {/* Sub-headline: with Cofynd */}
-                  <h2 className="text-2xl sm:text-3xl lg:text-[32px] font-black text-slate-900 tracking-tight leading-tight mt-0.5">
+                  <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-black text-slate-900 tracking-tight leading-tight mt-0.5">
                     {homePromotionalData.centerBanner.titleSuffix}
                   </h2>
 
                   {/* Subtitle description */}
-                  <p className="text-xs sm:text-[13px] text-slate-500 font-medium leading-relaxed mt-2 max-w-[240px]">
+                  <p className="text-xs sm:text-[13px] text-slate-500 font-medium leading-relaxed mt-2 max-w-[300px]">
                     {homePromotionalData.centerBanner.subtitle}
                   </p>
 
@@ -883,7 +887,7 @@ const Homepage = () => {
                         if (nameInput) nameInput.focus();
                       }
                     }}
-                    className="mt-4 bg-[#1e2329] hover:bg-slate-900 active:scale-95 text-white text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-full flex items-center gap-2 shadow-xs transition-all duration-200 cursor-pointer w-fit group"
+                    className="mt-4 bg-orange-500 hover:bg-orange-600 active:scale-95 text-white text-xs sm:text-sm font-bold px-6 py-3 rounded-full flex items-center gap-2 shadow-xs transition-all duration-200 cursor-pointer w-fit group"
                   >
                     <span>{homePromotionalData.centerBanner.ctaText}</span>
                     <span className="transition-transform duration-200 group-hover:translate-x-1 font-bold">→</span>
@@ -967,22 +971,17 @@ const Homepage = () => {
               </div>
             </div>
 
-            {/* 3. RIGHT COLUMN: Virtual Offices & Office Spaces */}
-            <div className="flex flex-col gap-4 sm:gap-4.5 justify-between">
-              {homePromotionalData.rightCards.map(renderPromoCard)}
-            </div>
-
           </div>
         </div>
       </section>
 
       {/* =================================================================== */}
-      {/* SECTION 3: INDIA'S #1 ONLINE PLATFORM SHOWCASE                     */}
-      {/* Data Source: platformShowcaseData from homedata.js                  */}
+      {/* SECTION 3: BOOK YOUR VIRTUAL OFFICE (points + enquiry form)         */}
+      {/* Data Source: virtualOfficeShowcaseData from common.js               */}
       {/* =================================================================== */}
-      <section 
-        aria-label="India's #1 Online Platform for Coworking & Coliving Spaces" 
-        className="w-full bg-[#050505] relative overflow-hidden py-7 sm:py-9 lg:py-10 px-4 sm:px-6 lg:px-12 select-none border-t border-slate-900"
+      <section
+        aria-label="Book Your Virtual Office with MyCoworking"
+        className="w-full bg-[#050505] relative overflow-hidden py-10 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-12 border-t border-slate-900"
       >
         {/* Subtle Dark Bronze Geometric Rosette on Top Left */}
         <svg 
@@ -1021,102 +1020,53 @@ const Homepage = () => {
             <rect x="-115" y="-115" width="230" height="230" rx="6" transform="rotate(78.75)" fill="#1f0f08" />
           </g>
         </svg>
-
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
-            
-            {/* Left Column: Overlapping Coworking & Coliving Space Cards */}
-            <div className="lg:col-span-6 xl:col-span-5 flex justify-center lg:justify-start">
-              <div className="relative w-[290px] sm:w-[350px] md:w-[370px] h-[270px] sm:h-[310px] md:h-[325px]">
-                
-                {/* Back Card (Coworking - WeWork Forum) */}
-                <article 
-                  onClick={() => navigate(`/coworking/${platformShowcaseData.cards[0].city}`)}
-                  className="absolute top-0 left-0 w-[185px] sm:w-[220px] md:w-[235px] bg-white rounded-[20px] sm:rounded-[22px] p-2 sm:p-2.5 shadow-2xl z-10 cursor-pointer transition-transform duration-300 hover:-translate-y-1 hover:shadow-black/70 group"
-                >
-                  <div className="relative w-full h-26 sm:h-32 md:h-34 rounded-[14px] sm:rounded-[16px] overflow-hidden bg-slate-100">
-                    <img 
-                      src={platformShowcaseData.cards[0].image} 
-                      alt={platformShowcaseData.cards[0].name} 
-                      loading="lazy" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                    />
-                    <span className="absolute top-2 left-2 bg-white/95 backdrop-blur-xs text-slate-800 text-[9px] sm:text-[10px] font-semibold px-2 py-0.5 rounded-full shadow-xs">
-                      {platformShowcaseData.cards[0].badge}
-                    </span>
-                  </div>
-                  <div className="px-1 pt-1.5 sm:pt-2 pb-0.5">
-                    <h3 className="text-xs sm:text-[14px] font-bold text-slate-900 tracking-tight leading-snug group-hover:text-blue-600 transition-colors">
-                      {platformShowcaseData.cards[0].name}
-                    </h3>
-                    <p className="text-[10px] sm:text-[11px] text-slate-500 font-normal leading-normal mt-0.5 truncate">
-                      {platformShowcaseData.cards[0].location}
-                    </p>
-                    <p className="text-[11px] sm:text-xs font-bold text-slate-900 mt-0.5">
-                      {platformShowcaseData.cards[0].price}
-                    </p>
-                  </div>
-                </article>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
-                {/* Front Card (Coliving - Stanza Living Dunkirk House) */}
-                <article 
-                  onClick={() => navigate(`/coworking/${platformShowcaseData.cards[1].city}`)}
-                  className="absolute bottom-0 right-0 w-[185px] sm:w-[220px] md:w-[235px] bg-white rounded-[20px] sm:rounded-[22px] p-2 sm:p-2.5 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.9)] z-20 cursor-pointer transition-transform duration-300 hover:-translate-y-1 group"
-                >
-                  <div className="relative w-full h-26 sm:h-32 md:h-34 rounded-[14px] sm:rounded-[16px] overflow-hidden bg-slate-100">
-                    <img 
-                      src={platformShowcaseData.cards[1].image} 
-                      alt={platformShowcaseData.cards[1].name} 
-                      loading="lazy" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-                    />
-                    <span className="absolute top-2 left-2 bg-white/95 backdrop-blur-xs text-slate-800 text-[9px] sm:text-[10px] font-semibold px-2 py-0.5 rounded-full shadow-xs">
-                      {platformShowcaseData.cards[1].badge}
-                    </span>
-                  </div>
-                  <div className="px-1 pt-1.5 sm:pt-2 pb-0.5">
-                    <h3 className="text-xs sm:text-[14px] font-bold text-slate-900 tracking-tight leading-snug group-hover:text-blue-600 transition-colors">
-                      {platformShowcaseData.cards[1].name}
-                    </h3>
-                    <p className="text-[10px] sm:text-[11px] text-slate-500 font-normal leading-normal mt-0.5 truncate">
-                      {platformShowcaseData.cards[1].location}
-                    </p>
-                    <p className="text-[11px] sm:text-xs font-bold text-slate-900 mt-0.5">
-                      {platformShowcaseData.cards[1].price}
-                    </p>
-                  </div>
-                </article>
+            {/* Left: heading, six service points, contact details */}
+            <div className="lg:col-span-7 flex flex-col">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white tracking-tight leading-tight">
+                {virtualOfficeShowcaseData.headline}{' '}
+                <span className="text-orange-500">{virtualOfficeShowcaseData.highlight}</span>
+              </h2>
 
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 mt-6 sm:mt-8">
+                {virtualOfficeShowcaseData.points.map((point) => (
+                  <li key={point.id} className="flex items-center gap-3">
+                    <span className="w-10 h-10 rounded-lg bg-orange-500/15 border border-orange-500/30 flex items-center justify-center shrink-0">
+                      <svg className="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d={point.icon} />
+                      </svg>
+                    </span>
+                    <span className="text-sm sm:text-base font-medium text-white">{point.label}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-7 text-sm text-white/90">
+                <a href={`tel:${virtualOfficeShowcaseData.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 hover:text-orange-400 transition-colors">
+                  <svg className="w-4 h-4 text-orange-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27 11.72 11.72 0 003.74.6 1 1 0 011 1v3.59a1 1 0 01-1 1A16 16 0 013 4a1 1 0 011-1h3.59a1 1 0 011 1 11.72 11.72 0 00.6 3.74 1 1 0 01-.27 1.1l-2.2 2.2z" />
+                  </svg>
+                  {virtualOfficeShowcaseData.phone}
+                </a>
+                <a href={`mailto:${virtualOfficeShowcaseData.email}`} className="flex items-center gap-2 hover:text-orange-400 transition-colors">
+                  <svg className="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  {virtualOfficeShowcaseData.email}
+                </a>
               </div>
             </div>
 
-            {/* Right Column: Platform Headline & Key Statistics */}
-            <div className="lg:col-span-6 xl:col-span-7 flex flex-col justify-center text-center lg:text-left lg:pl-6 xl:pl-10">
-              <h2 className="text-2xl sm:text-3xl lg:text-[38px] xl:text-[42px] font-black text-white tracking-tight leading-[1.16]">
-                {platformShowcaseData.headlinePart1}
-                <br />
-                {platformShowcaseData.headlinePart2}
-              </h2>
-
-              {/* Live Platform Statistics Row */}
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-7 sm:gap-10 md:gap-12 mt-4 sm:mt-6">
-                {platformShowcaseData.stats.map((stat, index) => (
-                  <div key={index} className="flex flex-col items-center lg:items-start">
-                    <span className="text-2xl sm:text-3xl lg:text-[34px] font-black text-white tracking-tight leading-none">
-                      {stat.value}
-                    </span>
-                    <span className="text-xs sm:text-sm font-serif font-bold text-white/90 mt-1 sm:mt-1.5">
-                      {stat.label}
-                    </span>
-                  </div>
-                ))}
-              </div>
+            {/* Right: enquiry form */}
+            <div className="lg:col-span-5 w-full max-w-md mx-auto lg:max-w-none">
+              <EnquiryCard heading="Enquire About a Virtual Office" />
             </div>
 
           </div>
         </div>
       </section>
-
       {/* =================================================================== */}
       {/* SECTION 4: TRUSTED BY 500+ COMPANIES CAROUSEL                      */}
       {/* Data Source: trustedCompaniesData from homedata.js                 */}
