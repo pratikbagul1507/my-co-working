@@ -9,7 +9,6 @@ import { puneNeighborhoods,
     pageTwoMorePuneOfficeCards, 
     pageTwoFinalPuneOfficeCards, 
     pageTwoFeaturedPuneOfficeCards, 
-    officeSolutions, 
     perfectWorkspaceBanner, 
     customizedOfficeBanner, 
     stillNotFindingBanner, 
@@ -436,52 +435,6 @@ const Pune = () => {
             ))}
           </div>
         )}
-      </section>
-
-      {/* Section: Find Your Perfect Office Solution */}
-      <section aria-label="Office solutions" className="mt-8 sm:mt-12 bg-[#eaf4fb] rounded-2xl p-6 sm:p-8 lg:p-10 mb-8">
-        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-6">
-          Find Your Perfect Office Solution
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
-          {officeSolutions.map((solution) => (
-            <article
-              key={solution.id}
-              className="bg-white rounded-2xl overflow-hidden shadow-xs border border-blue-50/50 flex flex-row items-stretch transition-shadow hover:shadow-md"
-            >
-              {/* Image side */}
-              <div className="w-[45%] shrink-0 overflow-hidden bg-slate-100">
-                <img
-                  src={solution.image}
-                  alt={solution.title}
-                  loading="lazy"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
-              {/* Text & CTA side */}
-              <div className="w-[55%] p-4 sm:p-5 flex flex-col justify-between">
-                <div>
-                  <h3 className="text-sm sm:text-base font-bold text-slate-900 mb-1.5 leading-snug">
-                    {solution.title}
-                  </h3>
-                  <p className="text-xs text-slate-500 leading-relaxed">
-                    {solution.description}
-                  </p>
-                </div>
-
-                <div className="pt-4">
-                  <button
-                    type="button"
-                    className="bg-[#007bff] hover:bg-blue-600 active:scale-95 text-white text-xs font-semibold px-4 py-2 rounded-lg shadow-xs transition-all w-fit cursor-pointer"
-                  >
-                    {solution.ctaText}
-                  </button>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
       </section>
 
       {/* Section: Additional Coworking Spaces Grid */}

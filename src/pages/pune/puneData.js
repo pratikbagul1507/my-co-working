@@ -179,30 +179,6 @@ export const puneOfficeCards = [
   }
 ];
 
-export const officeSolutions = [
-  {
-    id: 1,
-    title: 'Private Office',
-    description: 'Fully furnished Private offices for you and your growing team.',
-    image: 'https://img.cofynd.com/images/latest_images_2024/9b8e91f39b9010e9589f975badfbb23e37e84d3d.webp',
-    ctaText: 'Enquire Now'
-  },
-  {
-    id: 2,
-    title: 'Managed Office',
-    description: 'Customised fully furnished office managed by professionals.',
-    image: 'https://img.cofynd.com/images/latest_images_2024/a905fe92936f861425a0af8e7c2048fc42d58448.webp',
-    ctaText: 'Enquire Now'
-  },
-  {
-    id: 3,
-    title: 'Enterprise Solution',
-    description: 'Fully equipped offices for larger teams with flexibility to scale & customise',
-    image: 'https://img.cofynd.com/images/latest_images_2024/aa2bd09cf90ce784f797aa6412fa47a408227ce0.webp',
-    ctaText: 'Enquire Now'
-  }
-];
-
 export const morePuneOfficeCards = [
   {
     id: 9,
