@@ -1290,12 +1290,12 @@ const Homepage = () => {
           </h2>
 
           {/* 18-City Coworking Spaces Card Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-3 xl:gap-4">
             {availableCities.map((city) => (
               <article
                 key={city.name}
                 onClick={() => selectCityAndOpenPopup(city, true)}
-                className="group relative h-48 sm:h-52 md:h-56 rounded-[22px] overflow-hidden cursor-pointer shadow-xs hover:shadow-xl transition-all duration-300 hover:-translate-y-1 select-none bg-slate-900"
+                className="group relative h-48 sm:h-52 md:h-56 lg:h-44 rounded-[22px] overflow-hidden cursor-pointer shadow-xs hover:shadow-xl transition-all duration-300 hover:-translate-y-1 select-none bg-slate-900"
               >
                 {/* City Workspace Image */}
                 <img
@@ -1310,10 +1310,10 @@ const Homepage = () => {
 
                 {/* Centered City Name & Nickname / Tagline */}
                 <div className="absolute inset-0 flex flex-col items-center justify-end pb-5 px-4 text-center z-10">
-                  <h3 className="text-lg sm:text-xl font-black text-white tracking-tight leading-snug drop-shadow-sm group-hover:text-blue-400 transition-colors">
+                  <h3 className="text-lg sm:text-xl lg:text-base font-black text-white tracking-tight leading-snug drop-shadow-sm group-hover:text-blue-400 transition-colors">
                     {city.name}
                   </h3>
-                  <p className="text-xs sm:text-[13px] text-slate-200 font-medium tracking-tight mt-0.5 drop-shadow-sm">
+                  <p className="text-xs sm:text-[13px] lg:text-[11px] text-slate-200 font-medium tracking-tight mt-0.5 drop-shadow-sm">
                     {topCoworkingCitiesData.taglines[city.name] || topCoworkingCitiesData.defaultTagline}
                   </p>
                 </div>
