@@ -335,6 +335,18 @@ const Bhubaneshwar = () => {
       {/* Section: Neighborhood Filter Pills */}
       <section aria-label="Neighborhood filters" className="mb-6">
         <div className="flex flex-wrap gap-1.5 sm:gap-2">
+          <button
+            type="button"
+            onClick={() => setSelectedNeighborhood(null)}
+            aria-pressed={selectedNeighborhood === null}
+            className={`text-[11px] sm:text-xs px-2.5 py-1 rounded border transition-colors cursor-pointer shadow-2xs ${
+              selectedNeighborhood === null
+                ? "bg-blue-600 text-white border-blue-600 font-semibold"
+                : "bg-white text-slate-700 border-slate-200 hover:border-blue-400 hover:text-blue-600"
+            }`}
+          >
+            All
+          </button>
           {bhubaneshwarNeighborhoods.map((neighborhood) => {
             const isSelected = selectedNeighborhood === neighborhood;
             return (
