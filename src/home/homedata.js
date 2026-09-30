@@ -329,7 +329,7 @@ export const topCoworkingCitiesData = {
   },
   workspaceImages: {
     Gurugram: "https://ik.imagekit.io/qdesq/qdesq/f0776b54cc9938da2b4caa106e028219_50a2sw9BL.jpg",
-    Hyderabad: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=700&q=80",
+    Hyderabad: "https://img.cofynd.com/images/original/14304a80b4fd1c79cd0c09f721d9705ab2c78adf.jpg",
     Bangalore: "https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&w=700&q=80",
     Mumbai: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=700&q=80",
     Pune: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80",
