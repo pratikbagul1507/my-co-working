@@ -345,7 +345,7 @@ export const topCoworkingCitiesData = {
     Kolkata: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80",
     Coimbatore: "https://images.unsplash.com/photo-1571624436279-b272aff752b5?auto=format&fit=crop&w=700&q=80",
     Goa: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=700&q=80",
-    Indore: "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=700&q=80"
+    Indore: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvNm5Pj_snLPrG8MnF7FOnP-9l_oEiamFX8EUx25yfe0r0pHdkwC1a4y63&s=10"
   }
 };
 
