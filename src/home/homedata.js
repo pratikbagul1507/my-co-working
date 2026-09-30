@@ -332,7 +332,7 @@ export const topCoworkingCitiesData = {
     Hyderabad: "https://img.cofynd.com/images/original/14304a80b4fd1c79cd0c09f721d9705ab2c78adf.jpg",
     Bangalore: "https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?auto=format&fit=crop&w=700&q=80",
     Mumbai: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=700&q=80",
-    Pune: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80",
+    Pune: "https://www.goodworks.in/wp-content/uploads/2020/05/How-to-choose-the-best-Coworking-space-in-Bangalore-for-your-Business.-1-scaled.jpg",
     Delhi: "https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=700&q=80",
     Noida: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=700&q=80",
     Lucknow: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=700&q=80",
