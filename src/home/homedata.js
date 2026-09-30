@@ -342,7 +342,7 @@ export const topCoworkingCitiesData = {
     Jaipur: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=700&q=80",
     Chandigarh: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&q=80",
     Kochi: "https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=700&q=80",
-    Kolkata: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80",
+    Kolkata: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqftTEQeeGkDQlX1JYLK0cqTAVgazFWJIu9j3EcTf0QDrjPC38mNmHwh3P&s=10",
     Coimbatore: "https://images.unsplash.com/photo-1571624436279-b272aff752b5?auto=format&fit=crop&w=700&q=80",
     Goa: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=700&q=80",
     Indore: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvNm5Pj_snLPrG8MnF7FOnP-9l_oEiamFX8EUx25yfe0r0pHdkwC1a4y63&s=10"
