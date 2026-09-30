@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import {
   getDehliOfficeCardById,
+  getDehliOfficeSlug,
   allDehliOfficeCards,
   topDehliCoworkingLocations,
   dehliNeighborhoods
@@ -995,7 +996,7 @@ const OfficeDetail = () => {
               {loopedSimilarOfficeCards.map((item, idx) => (
                 <article
                   key={`${item.id}-${idx}`}
-                  onClick={() => window.open(`/coworking/delhi/${item.id}`, '_blank', 'noopener,noreferrer')}
+                  onClick={() => window.open(`/coworking/delhi/${getDehliOfficeSlug(item)}`, '_blank', 'noopener,noreferrer')}
                   className="w-[250px] sm:w-[270px] md:w-[285px] shrink-0 bg-transparent rounded-2xl overflow-hidden cursor-pointer group flex flex-col"
                 >
                   {/* Card Image */}

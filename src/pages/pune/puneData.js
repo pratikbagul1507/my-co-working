@@ -1,3 +1,4 @@
+import { findOfficeBySlug, officeSlug } from "../../common/slug.js";
 /**
  * Pune Coworking Spaces Matrix Layout Data & Neighborhood Filters
  * Sourced from verified active coworking listings in Pune.
@@ -6357,10 +6358,8 @@ export const allPuneOfficeCards = [
  * @param {string|number} id
  * @returns {object|null}
  */
-export const getPuneOfficeCardById = (id) => {
-  const numericId = Number(id);
-  return allPuneOfficeCards.find((card) => card.id === numericId) || null;
-};
+export const getPuneOfficeCardById = (id) => findOfficeBySlug(allPuneOfficeCards, id);
+export const getPuneOfficeSlug = (space) => officeSlug(allPuneOfficeCards, space);
 
 // ============================================================================
 // Top Coworking Locations in Pune (Explore by Neighborhood)

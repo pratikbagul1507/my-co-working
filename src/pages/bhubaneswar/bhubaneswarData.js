@@ -1,3 +1,4 @@
+import { findOfficeBySlug, officeSlug } from "../../common/slug.js";
 /**
  * Bhubaneshwar Coworking Spaces Matrix Layout Data & Neighborhood Filters
  * Sourced from verified active coworking listings in Bhubaneshwar.
@@ -1375,10 +1376,8 @@ export const allBhubaneshwarOfficeCards = [
  * @param {string|number} id
  * @returns {object|null}
  */
-export const getBhubaneshwarOfficeCardById = (id) => {
-  const numericId = Number(id);
-  return allBhubaneshwarOfficeCards.find((card) => card.id === numericId) || null;
-};
+export const getBhubaneshwarOfficeCardById = (id) => findOfficeBySlug(allBhubaneshwarOfficeCards, id);
+export const getBhubaneshwarOfficeSlug = (space) => officeSlug(allBhubaneshwarOfficeCards, space);
 
 export const similarBhubaneshwarOfficeCards = bhubaneshwarOfficeCards.slice(0, 4);
 

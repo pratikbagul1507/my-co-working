@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getBhubaneshwarOfficeCardById, allBhubaneshwarOfficeCards, similarBhubaneshwarOfficeCards, topBhubaneshwarCoworkingLocations } from './bhubaneswarData.js';
+import { getBhubaneshwarOfficeCardById, getBhubaneshwarOfficeSlug, allBhubaneshwarOfficeCards, similarBhubaneshwarOfficeCards, topBhubaneshwarCoworkingLocations } from './bhubaneswarData.js';
 
 /**
  * Coworking Office Details Page
@@ -1000,7 +1000,7 @@ const OfficeDetail = () => {
               {loopedSimilarOfficeCards.map((item, idx) => (
                 <article
                   key={`${item.id}-${idx}`}
-                  onClick={() => window.open(`/coworking/bhubaneshwar/${item.id}`, '_blank', 'noopener,noreferrer')}
+                  onClick={() => window.open(`/coworking/bhubaneshwar/${getBhubaneshwarOfficeSlug(item)}`, '_blank', 'noopener,noreferrer')}
                   className="w-[250px] sm:w-[270px] md:w-[285px] shrink-0 bg-transparent rounded-2xl overflow-hidden cursor-pointer group flex flex-col"
                 >
                   {/* Card Image */}

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
+  getDehliOfficeSlug,
   dehliNeighborhoods,
   dehliOfficeCards,
   moreDehliOfficeCards,
@@ -88,7 +89,7 @@ const OfficeCard = ({ space }) => {
   const handleCardClick = (event) => {
     // Avoid triggering if clicked on inner action buttons
     if (event.target.closest('button')) return;
-    window.open(`/coworking/delhi/${space.id}`, '_blank', 'noopener,noreferrer');
+    window.open(`/coworking/delhi/${getDehliOfficeSlug(space)}`, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -167,7 +168,7 @@ const OfficeCard = ({ space }) => {
           <div className="flex items-start justify-between gap-2">
             <h3 className="text-sm font-bold text-slate-900 leading-snug line-clamp-1 group-hover:text-[#007bff] transition-colors">
               <a
-                href={`/coworking/delhi/${space.id}`}
+                href={`/coworking/delhi/${getDehliOfficeSlug(space)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
@@ -200,7 +201,7 @@ const OfficeCard = ({ space }) => {
             type="button"
             onClick={(e) => {
               e.stopPropagation();
-              window.open(`/coworking/delhi/${space.id}`, '_blank', 'noopener,noreferrer');
+              window.open(`/coworking/delhi/${getDehliOfficeSlug(space)}`, '_blank', 'noopener,noreferrer');
             }}
             className="bg-[#007bff] hover:bg-blue-600 active:scale-95 text-white text-xs font-semibold px-3 py-1.5 rounded-[4px] shadow-2xs transition-all cursor-pointer"
           >
