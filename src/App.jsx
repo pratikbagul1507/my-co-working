@@ -1,6 +1,9 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useParams } from 'react-router-dom';
 import Homepage from './home/Homepage';
 import Navbar from './navbar/Navbar';
+import { getDehliOfficeCardById } from './pages/delhi/delhiData';
+import { getPuneOfficeCardById } from './pages/pune/puneData';
+import { getBhubaneshwarOfficeCardById } from './pages/bhubaneswar/bhubaneswarData';
 import WhatsAppButton from './components/WhatsAppButton';
 
 import AhmedabadPage from './pages/ahmedabad/Ahmedabad';
@@ -24,6 +27,15 @@ import NoidaPage from './pages/noida/Noida';
 import PunePage from './pages/pune/Pune';
 import PuneOfficeDetail from './pages/pune/PuneOfficeDetail';
 import BhubaneshwarOfficeDetail from './pages/bhubaneswar/BhubaneshwarOfficeDetail';
+
+// Resolves root-level office URLs like /futops-cowork-kharadi-pune to the right city's detail page.
+const OfficeRoute = () => {
+  const { id } = useParams();
+  if (getDehliOfficeCardById(id)) return <DelhiOfficeDetails />;
+  if (getPuneOfficeCardById(id)) return <PuneOfficeDetail />;
+  if (getBhubaneshwarOfficeCardById(id)) return <BhubaneshwarOfficeDetail />;
+  return <Homepage />;
+};
 
 const App = () => {
   return (
@@ -54,6 +66,7 @@ const App = () => {
         <Route path="/coworking/noida" element={<NoidaPage />} />
         <Route path="/coworking/pune" element={<PunePage />} />
         <Route path="/coworking/pune/:id" element={<PuneOfficeDetail />} />
+        <Route path="/:id" element={<OfficeRoute />} />
         <Route path="*" element={<Homepage />} />
       </Routes>
       <WhatsAppButton />

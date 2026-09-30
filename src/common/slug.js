@@ -7,31 +7,38 @@ export const slugify = (text = '') =>
 
 const slugMaps = new WeakMap();
 
-// Builds id -> slug for a card list. Names shared by several cards get "-<id>" appended to stay unique.
-const getSlugMap = (cards) => {
+const buildBase = (card, city) => {
+  let base = slugify(card.name);
+  const area = slugify(card.area || (card.location ? card.location.split(',')[0] : ''));
+  const citySlug = slugify(city);
+  if (area && !base.includes(area)) base += `-${area}`;
+  if (citySlug && !base.includes(citySlug)) base += `-${citySlug}`;
+  return base;
+};
+
+// Builds id -> slug ("name-area-city") for a card list. Repeated slugs get "-2", "-3"... appended.
+const getSlugMap = (cards, city) => {
   if (slugMaps.has(cards)) return slugMaps.get(cards);
-  const counts = {};
-  cards.forEach((card) => {
-    const base = slugify(card.name);
-    counts[base] = (counts[base] || 0) + 1;
-  });
+  const used = {};
   const map = new Map();
   cards.forEach((card) => {
     if (map.has(card.id)) return;
-    const base = slugify(card.name);
-    map.set(card.id, counts[base] > 1 ? `${base}-${card.id}` : base);
+    const base = buildBase(card, city);
+    used[base] = (used[base] || 0) + 1;
+    map.set(card.id, used[base] > 1 ? `${base}-${used[base]}` : base);
   });
   slugMaps.set(cards, map);
   return map;
 };
 
-export const officeSlug = (cards, space) =>
-  getSlugMap(cards).get(space.id) || slugify(space.name) || String(space.id);
+// Returns the full site-root path for an office, e.g. "/futops-co-working-kharadi-pune".
+export const officePath = (cards, space, city) =>
+  `/${getSlugMap(cards, city).get(space.id) || slugify(space.name)}`;
 
-// Accepts a name slug (preferred) or a legacy numeric id.
-export const findOfficeBySlug = (cards, param) => {
+// Accepts a slug (preferred) or a legacy numeric id.
+export const findOfficeBySlug = (cards, param, city) => {
   if (param == null) return null;
-  const map = getSlugMap(cards);
+  const map = getSlugMap(cards, city);
   const bySlug = cards.find((card) => map.get(card.id) === param);
   if (bySlug) return bySlug;
   if (/^\d+$/.test(param)) return cards.find((card) => card.id === Number(param)) || null;

@@ -1,4 +1,4 @@
-import { findOfficeBySlug, officeSlug } from "../../common/slug.js";
+import { findOfficeBySlug, officePath } from "../../common/slug.js";
 /**
  * Delhi Coworking Spaces Matrix Layout Data & Neighborhood Filters
  * Sourced from verified active coworking listings in Delhi.
@@ -8961,8 +8961,8 @@ export const allDehliOfficeCards = [
 ].filter((card, index, list) => list.findIndex((other) => other.id === card.id) === index);
 export const allDelhiOfficeCards = allDehliOfficeCards;
 
-export const getDehliOfficeCardById = (id) => findOfficeBySlug(allDehliOfficeCards, id);
-export const getDehliOfficeSlug = (space) => officeSlug(allDehliOfficeCards, space);
+export const getDehliOfficeCardById = (id) => findOfficeBySlug(allDehliOfficeCards, id, "delhi");
+export const getDehliOfficeSlug = (space) => officePath(allDehliOfficeCards, space, "delhi");
 export const getDelhiOfficeCardById = getDehliOfficeCardById;
 
 export const topDehliCoworkingLocations = [

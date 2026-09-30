@@ -1,4 +1,4 @@
-import { findOfficeBySlug, officeSlug } from "../../common/slug.js";
+import { findOfficeBySlug, officePath } from "../../common/slug.js";
 /**
  * Bhubaneshwar Coworking Spaces Matrix Layout Data & Neighborhood Filters
  * Sourced from verified active coworking listings in Bhubaneshwar.
@@ -1376,8 +1376,8 @@ export const allBhubaneshwarOfficeCards = [
  * @param {string|number} id
  * @returns {object|null}
  */
-export const getBhubaneshwarOfficeCardById = (id) => findOfficeBySlug(allBhubaneshwarOfficeCards, id);
-export const getBhubaneshwarOfficeSlug = (space) => officeSlug(allBhubaneshwarOfficeCards, space);
+export const getBhubaneshwarOfficeCardById = (id) => findOfficeBySlug(allBhubaneshwarOfficeCards, id, "bhubaneswar");
+export const getBhubaneshwarOfficeSlug = (space) => officePath(allBhubaneshwarOfficeCards, space, "bhubaneswar");
 
 export const similarBhubaneshwarOfficeCards = bhubaneshwarOfficeCards.slice(0, 4);
 
