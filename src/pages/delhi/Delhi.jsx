@@ -420,7 +420,7 @@ const Delhi = () => {
       <section aria-label="Coworking spaces list">
         {displayedSpaces.length === 0 ? (
           <div className="py-12 text-center text-slate-500 text-sm">
-            <p>No coworking spaces found for {selectedNeighborhood}.</p>
+            <p>No coworking spaces found{selectedNeighborhood ? ` for ${selectedNeighborhood}` : ""}{selectedPrice ? " in this price range" : ""}.</p>
             <button
               type="button"
               onClick={() => setSelectedNeighborhood(null)}
@@ -430,7 +430,7 @@ const Delhi = () => {
             </button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(270px,1fr))] gap-4 sm:gap-5">
             {displayedSpaces.map((space) => (
               <OfficeCard key={space.id} space={space} />
             ))}
@@ -487,7 +487,7 @@ const Delhi = () => {
       {/* Section: Additional Coworking Spaces Grid */}
       {displayedMoreSpaces.length > 0 && (
         <section aria-label="Additional coworking spaces list" className="mb-10 sm:mb-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(270px,1fr))] gap-4 sm:gap-5">
             {displayedMoreSpaces.map((space) => (
               <OfficeCard key={space.id} space={space} />
             ))}
@@ -525,7 +525,7 @@ const Delhi = () => {
       {/* Section: Spotlight Coworking Spaces Grid */}
       {displayedFinalSpaces.length > 0 && (
         <section aria-label="Spotlight coworking spaces list" className="mb-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(270px,1fr))] gap-4 sm:gap-5">
             {displayedFinalSpaces.map((space) => (
               <OfficeCard key={space.id} space={space} />
             ))}
@@ -576,7 +576,7 @@ const Delhi = () => {
       {/* Section: Featured Coworking Spaces Grid */}
       {displayedFeaturedSpaces.length > 0 && (
         <section aria-label="Featured coworking spaces list" className="mb-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(270px,1fr))] gap-4 sm:gap-5">
             {displayedFeaturedSpaces.map((space) => (
               <OfficeCard key={space.id} space={space} />
             ))}
