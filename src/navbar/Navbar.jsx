@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import logo from './company-logo.png';
+import discount from './discount.jpg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,7 +43,7 @@ const Navbar = () => {
   return (
     <header ref={navRef} className="w-full bg-white border-b border-gray-100 sticky top-0 z-50 select-none shadow-2xs">
       {/* 1. Mobile & Desktop Header: strictly single row, flex-row, justify-between, items-center */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex flex-row justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex flex-row justify-between items-center gap-4">
         
         {/* 2. Far Left: Logo */}
         <Link 
@@ -49,10 +51,7 @@ const Navbar = () => {
           onClick={closeMenu}
           className="flex items-center cursor-pointer shrink-0"
         >
-          <span className="text-xl sm:text-2xl font-black text-slate-800 tracking-tight">
-            my<span className="text-orange-500">coworking</span>
-            <span className="text-orange-500 text-2xl sm:text-3xl font-extrabold leading-none">.</span>
-          </span>
+          <img src={logo} alt="mycoworking" className="h-10 sm:h-14 w-auto object-contain" />
         </Link>
 
         {/* 3. Desktop Contact Info Box: visible on large screens (lg+) */}
@@ -67,7 +66,7 @@ const Navbar = () => {
         </div>
 
         {/* 3. Middle Tabs: Desktop only (hidden on mobile views, visible on lg and above) */}
-        <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+        <nav className="hidden lg:flex items-center space-x-8 xl:space-x-12 mx-6 xl:mx-10">
           {navItems.map((item) => (
             <div key={item.name} className="relative">
               <button
@@ -112,9 +111,9 @@ const Navbar = () => {
           <Link
             to="/#services"
             onClick={closeMenu}
-            className="bg-orange-500 hover:bg-orange-600 active:bg-orange-700 text-white font-bold text-xs sm:text-sm px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg transition-colors shadow-xs tracking-wide cursor-pointer whitespace-nowrap"
+            className="shrink-0 cursor-pointer"
           >
-            List of Services
+            <img src={discount} alt="Discount offer - List of Services" className="h-10 sm:h-12 w-auto object-contain rounded-lg hover:opacity-90 transition-opacity" />
           </Link>
 
           {/* 4. Hamburger Icon: three bars icon, visible on small screens (< lg) */}
