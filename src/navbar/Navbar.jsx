@@ -64,12 +64,7 @@ const Navbar = () => {
             </svg>
             <span className="font-semibold">+91 9028760011</span>
           </a>
-          <a href="mailto:info@mycoworking.in" className="flex items-center space-x-1.5 hover:text-blue-600 transition-colors">
-            <svg className="w-3.5 h-3.5 text-blue-600 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-            </svg>
-            <span>info@mycoworking.in</span>
-          </a>
+        
         </div>
 
         {/* 3. Middle Tabs: Desktop only (hidden on mobile views, visible on lg and above) */}
