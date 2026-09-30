@@ -335,7 +335,7 @@ export const topCoworkingCitiesData = {
     Pune: "https://www.goodworks.in/wp-content/uploads/2020/05/How-to-choose-the-best-Coworking-space-in-Bangalore-for-your-Business.-1-scaled.jpg",
     Delhi: "https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=700&q=80",
     Noida: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=700&q=80",
-    Lucknow: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=700&q=80",
+    Lucknow: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhVeu7xOaDkhGhfp5R7-fvQe2SYvPbGWrCW5tTzR_GHxcJoJu-ogGB9FA&s=10",
     Bhubaneswar: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=700&q=80",
     Chennai: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=700&q=80",
     Ahmedabad: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=700&q=80",
