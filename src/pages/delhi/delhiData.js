@@ -2939,6 +2939,157 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/583abb1afbdee568e56b5f054139eee1ae78391d.webp",
         "https://img.cofynd.com/images/original/bc7bd3f646c4c5d411809810bc0c475bf657fa63.jpg"
       ]
+    },
+    {
+      "id": 182,
+      "name": "Workingdom Connaught Place",
+      "badge": "Popular",
+      "rating": 4.5,
+      "area": "Connaught Place",
+      "location": "Connaught Place, Delhi",
+      "price": "₹13,999",
+      "period": "/ Month",
+      "priceFormatted": "₹13,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/6c24de7c545a4db751bd20f1d1e42862a5318fdb.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8e0e00bfca414880d2be58026544e865f597af4b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c2ddd4e668d494bce41ccb7748fd627c4c0f7ce2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5d849f6a1d13cce29f49140290ddef3e9e89a783.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b46e32e06c1f387db2cbeb886a08e9fa6136e1d0.webp"
+      ]
+    },
+    {
+      "id": 183,
+      "name": "Cube 8 Connaught Place",
+      "badge": "Popular",
+      "rating": 4.5,
+      "area": "Connaught Place",
+      "location": "Connaught Place, Delhi",
+      "price": "₹12,999",
+      "period": "/ Month",
+      "priceFormatted": "₹12,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/5408dd7258dcb26ead87cefba9c1742211684577.webp",
+        "https://img.cofynd.com/images/latest_images_2024/fc14267447b89900c6e75a52e35c874ec9d590fd.webp",
+        "https://img.cofynd.com/images/latest_images_2024/375bf43ee7e1f86794e11cf5aa07ab537d5fe7f9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/aee600d6e9aec9254955b91376fcc2e4152c9329.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6924252d18e6b43eeedf9492b3cfbee563652499.webp"
+      ]
+    },
+    {
+      "id": 184,
+      "name": "Skootr Connaught Place",
+      "badge": "Popular",
+      "rating": 4.6,
+      "area": "Connaught Place",
+      "location": "Connaught Place, Delhi",
+      "price": "₹26,999",
+      "period": "/ Month",
+      "priceFormatted": "₹26,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/d38037d0e7fcce087b9de85b791562c2c375b44c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/dc82c3d6020e92cef7b242308aea3be2dbee5803.webp",
+        "https://img.cofynd.com/images/latest_images_2024/91a3ac75e5e39d2cdf5505ffb1e819afc0f2ae42.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c28810a0aaf699f0c5277724cae6cf361c843736.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e723e322d6f8b7235bcd651626370151709906c1.webp"
+      ]
+    },
+    {
+      "id": 185,
+      "name": "Innov8 B Connaught Place",
+      "badge": "Verified",
+      "rating": null,
+      "area": "Connaught Place",
+      "location": "Connaught Place, Delhi",
+      "price": "₹13,499",
+      "period": "/ Month",
+      "priceFormatted": "₹13,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/66ca33ce68992b9021d7c97dabd603b6db476534.webp",
+        "https://img.cofynd.com/images/latest_images_2024/87a6e64e96357d712ad27b3a5078b7ec2b01c3e2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/3cba3cbfc2411aff3664a85a52680c40ac05559e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/35fdc383d2eecca63e4641b705df9dd952ab21e9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/3938c9069aa4f5ee050dfc7b62b2db49e66a996b.webp"
+      ]
+    },
+    {
+      "id": 186,
+      "name": "Pinnacle Spaces Connaught Place",
+      "badge": "Verified",
+      "rating": 4.6,
+      "area": "Connaught Place",
+      "location": "Connaught Place, Delhi",
+      "price": "₹16,999",
+      "period": "/ Month",
+      "priceFormatted": "₹16,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/f74b5bc79c407ab44916ea9cfb1973daab8abc31.webp",
+        "https://img.cofynd.com/images/latest_images_2024/1aba3b87271326d6e01b9d0a1b2554ce652217db.webp",
+        "https://img.cofynd.com/images/latest_images_2024/58dc87fd09efccd205b008f60d132d24e4994028.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f80a2e523726dc6e987f6b71ad874c60f8906e1b.webp"
+      ]
+    },
+    {
+      "id": 187,
+      "name": "ConnectHQ Connaught Place",
+      "badge": "Popular",
+      "rating": 4,
+      "area": "Connaught Place",
+      "location": "Connaught Place, Delhi",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/25e8fa343c41a6586883a867c1788109f0cb05ff.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f3c19b11c8b9449b41cf4b2c5eb15f2848c148b8.webp",
+        "https://img.cofynd.com/images/latest_images_2024/875b48d71e8dac37099e89789a5dafbfb184be53.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a1235c6d93058719910f2bc651d994b276da26a5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5545e75a11debd3bb804bc1bc55391ef86279cdf.webp"
+      ]
+    },
+    {
+      "id": 188,
+      "name": "Onward Workspaces Connaught Place",
+      "badge": "Popular",
+      "rating": 4.5,
+      "area": "Connaught Place",
+      "location": "Connaught Place, Delhi",
+      "price": "₹42,999",
+      "period": "/ Month",
+      "priceFormatted": "₹42,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/3682f2f0b184315c519a8589a5317df6912c8ea8.webp",
+        "https://img.cofynd.com/images/latest_images_2024/783e91f3d42c59109389c09ff290b4b1763b78d9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7b7625cc873b31746230dc8b84b7736146e09ed2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7919687cf84bf76a81731bb1d328823a3698cf7d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/44e659ee0deea18849009576675ebf0db06bb623.webp"
+      ]
+    },
+    {
+      "id": 189,
+      "name": "Nukleus Shivaji Stadium Connaught Place",
+      "badge": "Premium",
+      "rating": 4.5,
+      "area": "Connaught Place",
+      "location": "Connaught Place, Delhi",
+      "price": "₹21,999",
+      "period": "/ Month",
+      "priceFormatted": "₹21,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/cbd90126476ec3c13dff799d24e0283950db1fdf.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9adbbd255300a5e257ef6c34a413695c63b28053.webp",
+        "https://img.cofynd.com/images/latest_images_2024/209939aeca3389ce325dcef0e23d170556f67cee.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e46c5af922372d53641658a4558d1a2c425fa3c7.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f1912d23bbf6cd1d0dfa68efdb9d81714d83a8c5.webp"
+      ]
     }
   ],
   "Malviya Nagar": [
@@ -3130,6 +3281,25 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/bf4d8811f196a59a5e52e3803a475302334ca6af.webp",
         "https://img.cofynd.com/images/latest_images_2024/a2386255b0167aafba010b42238a355fbba1e6d3.webp",
         "https://img.cofynd.com/images/latest_images_2024/b46a3f417a2eec1b2d2a59e57b56f138afcefb6a.webp"
+      ]
+    },
+    {
+      "id": 190,
+      "name": "Spacetime Saket",
+      "badge": "Popular",
+      "rating": 4.7,
+      "area": "Saket",
+      "location": "Saket, Delhi",
+      "price": "₹12,499",
+      "period": "/ Month",
+      "priceFormatted": "₹12,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/a0a8ffe99e53280ca9cecc2024975d56f75a9b64.webp",
+        "https://img.cofynd.com/images/latest_images_2024/098f68a0133d8dde6de73331b214a5b12d2268f0.webp",
+        "https://img.cofynd.com/images/latest_images_2024/fd29a724cbba291a4f6e0a376c3cdfb018b7157f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/946ba701996f83289fe768373bf75bee50a41f9a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d7f90fea3ec17e6e98bebd790ecd1c3fb3c0f1bb.webp"
       ]
     }
   ],
@@ -3323,6 +3493,82 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/original/3276f68ed207fa1c81a40f7709c3c0e3f29558ae.jpg",
         "https://img.cofynd.com/images/original/0c6f16043d233b60a0773f2e2fe070cf6afa2d03.jpg"
       ]
+    },
+    {
+      "id": 191,
+      "name": "Awfis Ambience Mall Cyber City",
+      "badge": "Popular",
+      "rating": 4.1,
+      "area": "Cyber City",
+      "location": "Cyber City, Delhi",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/ca33925bfadb653441c1c98512db11e8496913ff.webp",
+        "https://img.cofynd.com/images/latest_images_2024/82dc3985a12802f5257e3242d7b698174ce7461d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/3f7ae804b6d0d5a0ea41145a133040990555d75c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/40983a0c1f36b7ddba49e43d65f792e0493a6da1.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5ad5ca6d5ddf10919472cc1341cab90646640a01.webp"
+      ]
+    },
+    {
+      "id": 192,
+      "name": "IREP Workspaces Iconic Quattro Udyog Vihar",
+      "badge": "Verified",
+      "rating": 4,
+      "area": "Udyog Vihar",
+      "location": "Udyog Vihar, Delhi",
+      "price": "₹7,499",
+      "period": "/ Month",
+      "priceFormatted": "₹7,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/f218849992c5519dc5f13f3731946fa547c76203.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f869616f893d648ea07d13ff2fd7b2ea168b897b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5469e79b63917c33ffc836acc895e757f1b879be.webp",
+        "https://img.cofynd.com/images/latest_images_2024/55792afb390e9209d20388ca71075282dead4246.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c9f6dbcc76f1d7fc54de741adccaa2e894b9bc27.webp"
+      ]
+    },
+    {
+      "id": 193,
+      "name": "The Executive Center DLF Downtown DLF Cyber City",
+      "badge": "Premium",
+      "rating": 5,
+      "area": "DLF Cyber City",
+      "location": "DLF Cyber City, Delhi",
+      "price": "₹59,999",
+      "period": "/ Month",
+      "priceFormatted": "₹59,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/0f418830f9b2b71f4d500acc7ebbcbfc0dd73e18.webp",
+        "https://img.cofynd.com/images/latest_images_2024/53f73f3d4c4fa4eb6515c4ec40ec042d2e30be4f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0e01224f9b0972c129f0aaeae816430a560ea06d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2bd002a1553ffd64a5a974225f5b65bb5bb4a8e6.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9ced7a77e67f5f5287571a27aad04844cefcfe52.webp"
+      ]
+    },
+    {
+      "id": 194,
+      "name": "Mooz Coworking Sector 24",
+      "badge": "Premium",
+      "rating": 4.3,
+      "area": "Sector 24",
+      "location": "Sector 24, Delhi",
+      "price": "₹13,999",
+      "period": "/ Month",
+      "priceFormatted": "₹13,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/c70dc9dac716ca3b4762a958716c4eb1aba106bd.webp",
+        "https://img.cofynd.com/images/latest_images_2024/85dcf736558203f395c318bcfb80ae243b96385e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f7e9c4acfc58b590047574b8288ca082000670ba.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b9459c913183fe7428fd69bb063ffc4ace3cde76.webp",
+        "https://img.cofynd.com/images/latest_images_2024/1134ece2f74e3cda16feebd179cec62a5e69399a.webp"
+      ]
     }
   ],
   "Mohan Cooperative": [
@@ -3514,6 +3760,25 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/f6cb5472258425f629123c4a8c89fba2888f10b2.webp",
         "https://img.cofynd.com/images/latest_images_2024/7a055e87e60dc31598f481ff1f282286709e7842.webp",
         "https://img.cofynd.com/images/latest_images_2024/6b20b80e81a4014070026d6f85c70a361ac14422.webp"
+      ]
+    },
+    {
+      "id": 195,
+      "name": "Kiteworx Mathura Road",
+      "badge": "Popular",
+      "rating": 4,
+      "area": "Mathura Road",
+      "location": "Mathura Road, Delhi",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/e995450fef1b4194b9a2f6431d67d755ea426646.webp",
+        "https://img.cofynd.com/images/latest_images_2024/80df948b9454c12f658e6c2c81d3fd90e05341fc.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8df4b86b0f678552deff593fec488aedced0d21a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8508ee32bdef14d78f0b5ffc14d2191787dd8199.webp",
+        "https://img.cofynd.com/images/latest_images_2024/14a4493a4d5265c3468be0fa661513d04a62cef8.webp"
       ]
     }
   ],
@@ -3899,6 +4164,25 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/9f6ad6318039346dc5bb84dbc263a2e70476be99.webp",
         "https://img.cofynd.com/images/latest_images_2024/486ae504662ec26f7632d03549fc8268fe93ff4d.webp"
       ]
+    },
+    {
+      "id": 196,
+      "name": "Wizworks KS Corporate Tower Sector 16",
+      "badge": "Popular",
+      "rating": 4.2,
+      "area": "Sector 16",
+      "location": "Sector 16, Delhi",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/8081c06ed7e3ad0fcdb5b2799b907c9168c67137.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9fb7628c7308569954855457ef4ff6134a3418dc.webp",
+        "https://img.cofynd.com/images/latest_images_2024/fbdf98d9288b6521e969319d87ad9012c9662580.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9af8883a36dd226745203c1b66ca73271abdeb75.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c889394abd60c8b5de99e9b50922dd4aa10f0c60.webp"
+      ]
     }
   ],
   "Netaji Subhash Place": [
@@ -4089,6 +4373,41 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/a4d552b078351ada52256444a46c41e9706ac203.webp",
         "https://img.cofynd.com/images/latest_images_2024/ca7a53d3993993d9882de2591b084fd83a1ddbc9.webp",
         "https://img.cofynd.com/images/latest_images_2024/72f8a49307d8a60ad88464895ee00aba630c972a.webp"
+      ]
+    },
+    {
+      "id": 197,
+      "name": "Oahfeo DeVibe Ashok Vihar",
+      "badge": "Premium",
+      "rating": 4.4,
+      "area": "Ashok Vihar",
+      "location": "Ashok Vihar, Delhi",
+      "price": "₹7,499",
+      "period": "/ Month",
+      "priceFormatted": "₹7,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/c0cc6eca7e84f1eb0c9bca7abb51ffb140eef41c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/21f589dbfa16532b777cdcdb0aea1dce5798fb91.webp",
+        "https://img.cofynd.com/images/latest_images_2024/af29449a483e818a4eabd4cbb85601118b1170c0.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8567fd35c63a0de543adf0ca43a236f94e9ba08c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6ced0229ba8a119de0edf0678d06bb025f50b9a1.webp"
+      ]
+    },
+    {
+      "id": 198,
+      "name": "Oahfeo Node Ashok Vihar",
+      "badge": "Popular",
+      "rating": 4.6,
+      "area": "Ashok Vihar",
+      "location": "Ashok Vihar, Delhi",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/0cfd68dbc479ce47f23b7c20324ea46f29353c45.webp",
+        "https://img.cofynd.com/images/latest_images_2024/3b55f4f5b4e59eeabf0b007bc65cbd39470dc406.webp"
       ]
     }
   ],
@@ -4474,6 +4793,63 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/3cf2b742a6bfe6770b6b8a87bc9960f629125cf3.webp",
         "https://img.cofynd.com/images/latest_images_2024/4fc108c185ae48573a116ccec2cad4295c758689.webp"
       ]
+    },
+    {
+      "id": 199,
+      "name": "Work & Thrive Dwarka",
+      "badge": "Premium",
+      "rating": 4.6,
+      "area": "Dwarka",
+      "location": "Dwarka, Delhi",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/1719e9861e88946e2e3909053645885259e6967b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2c454a18b3cdf74069a21e07e7e947a6d5fd3462.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d38485e2f769cc51c563fdc72c2c0bef5dcd2a46.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2fda6eeb93c413dbcc019ab2750105e88d2be322.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b3a3ebb890ca42fa967deca737006bb16f311ea9.webp"
+      ]
+    },
+    {
+      "id": 200,
+      "name": "U.S.Coworking Dwarka",
+      "badge": "Popular",
+      "rating": 4.1,
+      "area": "Dwarka",
+      "location": "Dwarka, Delhi",
+      "price": "₹4,999",
+      "period": "/ Month",
+      "priceFormatted": "₹4,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/6d392a8b1d1de4a164c8c1f563a4e1aca0a0d37d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f6491e47b35d65f6d56bed14070f64624c012f5c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/64a6541d2c5f3760a9f309106d898f20bff11de0.webp",
+        "https://img.cofynd.com/images/latest_images_2024/79b4745ed143bad894212370f94ca19fd2c5a5f5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/113cbe3f96892b643d9e5535208ff194e1e11a49.webp"
+      ]
+    },
+    {
+      "id": 235,
+      "name": "Cozywork Tilak Nagar",
+      "badge": "Verified",
+      "rating": null,
+      "area": "Tilak Nagar",
+      "location": "Tilak Nagar, Delhi",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/ba2b316469a0df11cb9a1fbbf105436d1975c47c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c3e84975d1dc754460ae013a6d063d77e6f03f56.webp",
+        "https://img.cofynd.com/images/latest_images_2024/886c5e2e0c72286d053af402bb3d18a66a79236b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/3f594f369ba5b30f76578e0bd2df66c76f775e4e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/292e80440affea9ec5103077befccccd889b8333.webp"
+      ]
     }
   ],
   "South Delhi": [
@@ -4858,6 +5234,44 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/63fb84a18a1968c47279d1fc5fc0dcc3f3ed9a90.webp",
         "https://img.cofynd.com/images/latest_images_2024/676a0e503d21453bc73c51f8787bd57d8a1c8619.webp"
       ]
+    },
+    {
+      "id": 201,
+      "name": "Master Space Najafgarh",
+      "badge": "Popular",
+      "rating": 4.9,
+      "area": "Najafgarh",
+      "location": "Najafgarh, Delhi",
+      "price": "₹6,499",
+      "period": "/ Month",
+      "priceFormatted": "₹6,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/b00944caa51d6cdf475ce00951b59af5a1f1dd14.jpg",
+        "https://img.cofynd.com/images/original/88ded92dfc64728bd55b2ab36c2ef1187cd5c68a.jpg",
+        "https://img.cofynd.com/images/original/f1c2dc3e9c222b4a8a2ae6ec8ec678c12ce55846.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/64deb54e1c02dd65b413d5503bb6aaad432cf8c4.webp",
+        "https://img.cofynd.com/images/original/c73eacf5ab611d5d349346e77582a7298dc6dd08.jpg"
+      ]
+    },
+    {
+      "id": 227,
+      "name": "Cowynd Sector 19 Dwarka",
+      "badge": "Popular",
+      "rating": null,
+      "area": "Sector 19 Dwarka",
+      "location": "Sector 19 Dwarka, Delhi",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/fa3a2a284981f661a5bf31570876588c15357f2a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/92722834ac4cc100b735dfe9ca0c20968adb1532.webp",
+        "https://img.cofynd.com/images/latest_images_2024/eaa73a0bcbfda21d4ecd49ec7f48b3d4f2091be4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/be6ceb629dd1d996c46d15053f3a72ef7bf10c3c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/68f86daa1cf4f3e92f9be00219433b73cacc73c8.webp"
+      ]
     }
   ],
   "Rohini": [
@@ -5045,6 +5459,63 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/3af0c723ce4bf75728c8c0faa2446f94c29d70df.webp",
         "https://img.cofynd.com/images/latest_images_2024/153787e412f5874129a6d25c6be6c5f9a08ae86e.webp",
         "https://img.cofynd.com/images/latest_images_2024/cbcfa9e3bbcb8932b7cd371ab2badef74d6a7df0.webp"
+      ]
+    },
+    {
+      "id": 202,
+      "name": "Folk us Paschim Vihar",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Paschim Vihar",
+      "location": "Paschim Vihar, Delhi",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/d536dd61f4d1e893f8e99bb60f28ce94b94943a3.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b30dcc07ee6a933dde61a60814ee4ef0dbd1f439.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f3185138f573bff82d3a230e0c77978ac92b84a3.webp",
+        "https://img.cofynd.com/images/latest_images_2024/02b3350acf3de4f6240275a58b26eb9a96c81399.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f6f253e83a039faf022e482aff8fa281ac134d8d.webp"
+      ]
+    },
+    {
+      "id": 203,
+      "name": "Office Cabin Paschim Vihar",
+      "badge": "Premium",
+      "rating": 4.9,
+      "area": "Paschim Vihar",
+      "location": "Paschim Vihar, Delhi",
+      "price": "₹10,999",
+      "period": "/ Month",
+      "priceFormatted": "₹10,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/d0b2763f5fb19fb470720f3342287a5a2c997efc.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bef99c659eb29b9dbd249cba0643e4988a02dc0b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9e12e3cc059989c07a90495465bb0643c83bd9f3.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e200ef437803506e7b2394d0c732be43ac709aba.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b0d8986ee371534b84724495a40b0cdccd3f8eec.webp"
+      ]
+    },
+    {
+      "id": 225,
+      "name": "Vistara Co Work Space Rohini Sector 22",
+      "badge": "Verified",
+      "rating": null,
+      "area": "Rohini Sector 22",
+      "location": "Rohini Sector 22, Delhi",
+      "price": "₹5,499",
+      "period": "/ Month",
+      "priceFormatted": "₹5,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/69c34b8616b7aebb036b4a5cfaef920d324def81.webp",
+        "https://img.cofynd.com/images/latest_images_2024/235bcae3b50614eeadc3c1741cfa2aac6bcc255f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2c0a757e8cf40e393b6995a5959aa0d8d6c4c21b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/39fa8d66c17d94983c37fd3dc27ce5bda6b82cec.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8141da294469a84baf67fde5e56a3d59fdf5c7ae.webp"
       ]
     }
   ],
@@ -5237,6 +5708,63 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/f0161291ac783ffd8e9ab1c25c7d4267955dd20f.webp",
         "https://img.cofynd.com/images/latest_images_2024/0d9b1b6185bda7047280e372f19a54e24beb440c.webp"
       ]
+    },
+    {
+      "id": 204,
+      "name": "Nyro Workclub Moti Nagar",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Moti Nagar",
+      "location": "Moti Nagar, Delhi",
+      "price": "₹8,499",
+      "period": "/ Month",
+      "priceFormatted": "₹8,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/63293ffbaa28ad5de18c85be3d3d83d654ad96a8.webp",
+        "https://img.cofynd.com/images/latest_images_2024/607c154b615123fb1a35cee77be3699484a47d75.webp",
+        "https://img.cofynd.com/images/latest_images_2024/51bd66518ddb3405038bcda391267999717b510a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a9b85b9945f59afb596f702c32c35893f99f219e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/568420511291c03c16c80458f424942d3fdf1824.webp"
+      ]
+    },
+    {
+      "id": 218,
+      "name": "Daftar Cowork 1.0 North Delhi",
+      "badge": "Popular",
+      "rating": 4.7,
+      "area": "North Delhi",
+      "location": "North Delhi, Delhi",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/4ec418e8448d9d509ff86ce158cfb40bc59b2632.webp",
+        "https://img.cofynd.com/images/original/c0ca5e4b39d126c32c5e3f7c6455e865af4a1f50.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/9d3cd3acce6913cd4e006301b02f9f6988ee1c62.webp",
+        "https://img.cofynd.com/images/original/b7d29e939596c261aeef7a8ea09b8ad7c9bb6f91.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/35b26f3d97fe8766362863962e43b1250751827e.webp"
+      ]
+    },
+    {
+      "id": 232,
+      "name": "Daftar Cowork (2.0 Elevate) North Delhi",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "North Delhi",
+      "location": "North Delhi, Delhi",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/a611589d948718aebd439a5882cb27046771641f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/96ce40194b690ba3927ff256bab675ac6d83dc7a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c183787fe685c6ba764658ad705ea362732d1da6.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7938945d5a9198961960eeefe03928e426463706.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4e37f4e4ca075dc59c5e0c7a4d51645f05364fff.webp"
+      ]
     }
   ],
   "Rajouri Garden": [
@@ -5426,6 +5954,44 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/9592e5ef3c786902e984719dc0599768caffa9a2.webp",
         "https://img.cofynd.com/images/latest_images_2024/5865b73dd55f7d3a344841982ca7ae6b9cd092e7.webp",
         "https://img.cofynd.com/images/latest_images_2024/6c1ac119aec3ba9554fab8221437279dab5e7efc.webp"
+      ]
+    },
+    {
+      "id": 205,
+      "name": "Covork Paschim Vihar",
+      "badge": "Verified",
+      "rating": null,
+      "area": "Paschim Vihar",
+      "location": "Paschim Vihar, Delhi",
+      "price": "₹7,499",
+      "period": "/ Month",
+      "priceFormatted": "₹7,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/44117323dfb530dfa6d9eb4bc0c892b3e0385384.jpg",
+        "https://img.cofynd.com/images/original/61314e30a58b91131c35a14f7c20193a5ac2a2af.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/9de180b46d9267ae4ee0d10ba7a3f6a5ef9f8b20.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e2b20a865647a9e72002dc21a64048a33434ed5e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ca138e1b7896bbfc5ea0fb6b02a558ce65d2d97f.webp"
+      ]
+    },
+    {
+      "id": 219,
+      "name": "G Connect Spaces Mayapuri",
+      "badge": "Popular",
+      "rating": 4.5,
+      "area": "Mayapuri",
+      "location": "Mayapuri, Delhi",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/6c7f75366107f47b1b0ca14434d3bd0db1c1f04e.webp",
+        "https://img.cofynd.com/images/original/4907f56bc63af5cfea57261beb406534e4fa467c.jpg",
+        "https://img.cofynd.com/images/original/d1b4f3ac7520a8adbea060f2daa152c490f00e46.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/cf035a6cb41619ca842ba176a7f907f4af5c01c0.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b41cb9e2141118e2cb4717059e8e4bf980aba553.webp"
       ]
     }
   ],
@@ -5617,6 +6183,63 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/16534b892da774f6b6da6261bdd4dba772fe73db.webp",
         "https://img.cofynd.com/images/latest_images_2024/76af7296283445ae8aafb9e9a5b9593f05153e55.webp",
         "https://img.cofynd.com/images/latest_images_2024/35cde1abb4445baeb9742548abb4e0904cd75689.webp"
+      ]
+    },
+    {
+      "id": 206,
+      "name": "Livance Coworking Ghitorni",
+      "badge": "Verified",
+      "rating": 4.5,
+      "area": "Ghitorni",
+      "location": "Ghitorni, Delhi",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/affe6768bfa0bd065ff19de06331ee75fcf0fb4f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d8f3a66bb09d2bc3c367617c0451d0c10c8a32be.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4725be173ff7d5ac41ab334facb73a0a0b5c5e02.webp",
+        "https://img.cofynd.com/images/latest_images_2024/027513e8de3a4fac2e78b4d2a79b7574029e6a24.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d327b6daf9ee568230b4421e087123a1f9adcfbf.webp"
+      ]
+    },
+    {
+      "id": 221,
+      "name": "Peer Share Vasant Vihar",
+      "badge": "Verified",
+      "rating": 4.7,
+      "area": "Vasant Vihar",
+      "location": "Vasant Vihar, Delhi",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/da7f54b5ed269a9420459039cde7eb0ea75f3c38.jpg",
+        "https://img.cofynd.com/images/original/8c296e81be9c7c70f5c090f767f53433d6fd80a2.jpg",
+        "https://img.cofynd.com/images/original/0075d9a3d21011a4a51310c1aded0f010cd9145e.jpg",
+        "https://img.cofynd.com/images/original/fe921336049779ed67c1dbe6eacbc23394d5335f.jpg",
+        "https://img.cofynd.com/images/original/742bb1fdcbc8b8b247b3dd272a9d2731736b3fb6.jpg"
+      ]
+    },
+    {
+      "id": 229,
+      "name": "Zing Space 401 Ghitorni",
+      "badge": "Special Offer",
+      "rating": 4.6,
+      "area": "Ghitorni",
+      "location": "Ghitorni, Delhi",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/39683054cca57e5164a0e7b2b28061aa2bbb33e4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e43a282c484a12f22b2a261d3fcaba5955ee0f0d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/365685cb402793a06c9dad2294cf304aa9c51683.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0bc7e0d93facc4abf45fa0e6441c9def543ffecd.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7f817da0500746e6820bdda7fc53b6237eeb23d9.webp"
       ]
     }
   ],
@@ -5810,6 +6433,177 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/301f8668bd69050a21f3bd58ecc20bad190c8f00.webp",
         "https://img.cofynd.com/images/original/ae5103a03e466506d6c53735c179a2be0c741198.jpg"
       ]
+    },
+    {
+      "id": 207,
+      "name": "Cowork Mayur Vihar",
+      "badge": "Popular",
+      "rating": 4.4,
+      "area": "Mayur Vihar",
+      "location": "Mayur Vihar, Delhi",
+      "price": "₹6,499",
+      "period": "/ Month",
+      "priceFormatted": "₹6,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/4c66fd9592cc2d520d840abf1377285f90522bf0.jpg",
+        "https://img.cofynd.com/images/original/ee34e119662e6e6b2e7e6abecb7cf6419af5ca9d.jpg",
+        "https://img.cofynd.com/images/original/628e8bf0547b2048963749a334e9b553f13716d2.jpg",
+        "https://img.cofynd.com/images/original/048eb2cfcb62ce5565ec35b2e63207a1eb35a782.jpg",
+        "https://img.cofynd.com/images/original/1af2d83e99f6b3476ed27744d4c275b8db255e54.jpg"
+      ]
+    },
+    {
+      "id": 208,
+      "name": "Abhiwan Coworking Sector 62",
+      "badge": "Verified",
+      "rating": null,
+      "area": "Sector 62",
+      "location": "Sector 62, Delhi",
+      "price": "₹5,500",
+      "period": "/ Month",
+      "priceFormatted": "₹5,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/9f3be684cb92bcb9c54c0ab75bb4df2030dd148f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bdcb42ecbd6a609e5e44e990c930e413e65d043f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/650ec9b3f17b35022e92d0f19bd9585f1bc68215.webp",
+        "https://img.cofynd.com/images/latest_images_2024/24448ca70d8e62ea9f9f55a178d3e0eeb8155c31.webp",
+        "https://img.cofynd.com/images/latest_images_2024/115ea106b0db757578fcca4ea698728406f26938.webp"
+      ]
+    },
+    {
+      "id": 209,
+      "name": "Cocoweave Preet Vihar",
+      "badge": "Popular",
+      "rating": 4.8,
+      "area": "Preet Vihar",
+      "location": "Preet Vihar, Delhi",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/e47316cf9b217b3f01b50141eb5ad1e8546fcdfe.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bffd430e3fc2c491d8039556533d59892dd9cb25.webp",
+        "https://img.cofynd.com/images/latest_images_2024/fe4fce86e11eade4b9f48d35ac00665fad648387.webp",
+        "https://img.cofynd.com/images/latest_images_2024/82b36154fe613d358c50a18faf147091f42b8459.webp",
+        "https://img.cofynd.com/images/original/e15d283defbcf3bcb7b37df6159b309d68529875.jpg"
+      ]
+    },
+    {
+      "id": 210,
+      "name": "Cobox iThum Tower Sector 62",
+      "badge": "Popular",
+      "rating": 4.6,
+      "area": "Sector 62",
+      "location": "Sector 62, Delhi",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/b2ca3b302ea74ea692d64a154442a4b2b46c19d0.jpg",
+        "https://img.cofynd.com/images/original/9519a0ce4ea9fef2c3fee4fa07a5c9c314cdce54.jpg",
+        "https://img.cofynd.com/images/original/f009340b6414c3b05beac9508eab8d87b141339c.jpg",
+        "https://img.cofynd.com/images/original/d1667108e30d3b4b465923bfe1db82ed51b635bf.jpg",
+        "https://img.cofynd.com/images/original/a9bd121522135cd44a8124fd8db7136f4a5c4b35.jpg"
+      ]
+    },
+    {
+      "id": 211,
+      "name": "Regus District Center Mayur Vihar",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Mayur Vihar",
+      "location": "Mayur Vihar, Delhi",
+      "price": "₹15,999",
+      "period": "/ Month",
+      "priceFormatted": "₹15,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/211bea9ee8f2558fed4791f5feecba021907ed53.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6fc8c7aaa415d6193a5c0c711a49f17fdda7b783.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f988b0651f6c81ec8b95bbda71467fdd764fa8cb.webp",
+        "https://img.cofynd.com/images/latest_images_2024/646c1c45ba841a080f89d28929d6acf1ec85e28e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/1209fccc1168477f62cbcf8aa3017a7b85a6216a.webp"
+      ]
+    },
+    {
+      "id": 212,
+      "name": "Workhive Mayur Vihar",
+      "badge": "Popular",
+      "rating": 4.3,
+      "area": "Mayur Vihar",
+      "location": "Mayur Vihar, Delhi",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/b48a43177937eedbe006ee3061d9ec84fbe979fd.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6eed29a572da75a3fefd3c8cfbfa9748d7ae410c.webp",
+        "https://img.cofynd.com/images/original/b2d9b4512c2ab7a3e6c8d17ed126ad987ed9c8c3.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/7d8671ec32c95e46bfef2da40e33e7e6867599be.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a1832dbd99aebdba46d7e326d54b589863ccfb61.webp"
+      ]
+    },
+    {
+      "id": 224,
+      "name": "Bollco Co-working East Delhi",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "East Delhi",
+      "location": "East Delhi, Delhi",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/8eac05460107855219bead614a112de6a9f5e7e9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/94b2271ec8db3b9bb144a8ed9f40186b81a77606.webp",
+        "https://img.cofynd.com/images/latest_images_2024/cc1e4365c0d3e4bb8345cb28a5d7a31a979905be.webp",
+        "https://img.cofynd.com/images/latest_images_2024/82445c3ed8320f499f7c7f892a6a8e25f2d60602.webp",
+        "https://img.cofynd.com/images/latest_images_2024/800345583ca8906866b7cbc3cc800cb20525d375.webp"
+      ]
+    },
+    {
+      "id": 226,
+      "name": "Bollco Anand Vihar",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Anand Vihar",
+      "location": "Anand Vihar, Delhi",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/b3f3bc90ad8236a540601c9e316bf1e4163f965e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c9c6af0ae6e3dd6e052d5ac21ca66fafc510e38b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/4feb0996ccf1fef102c06368f8b2f2caef78b61a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/91e57fdef010ca369fe44ce13b07db5444d27cd2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b4e202815c7a0e5cba01c9fcb957bca56265fcc2.webp"
+      ]
+    },
+    {
+      "id": 234,
+      "name": "The Bright Vibes Dayanand Vihar",
+      "badge": "Popular",
+      "rating": 4.9,
+      "area": "Dayanand Vihar",
+      "location": "Dayanand Vihar, Delhi",
+      "price": "₹6,999",
+      "period": "/ Month",
+      "priceFormatted": "₹6,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/d7b6009b35c917e4c2a4e2c974a5a18eca01db77.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e94f54b39d3b5a1f254d4c0ef86187f8c79795c8.webp",
+        "https://img.cofynd.com/images/latest_images_2024/aab2e354a7333a9f0bfd89519a7bdc51119d74b4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2d192853668a8a8e5d457657493726649bf59c99.webp",
+        "https://img.cofynd.com/images/latest_images_2024/18721ff5d6ef9b29ae91b17366c38dd487760cdf.webp"
+      ]
     }
   ],
   "Hauz Khas": [
@@ -5999,6 +6793,25 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/712e444fc0fabebad8bfcada5c36ac2a8b99c3bb.webp",
         "https://img.cofynd.com/images/latest_images_2024/7edec7a7b2bb151a1c1311fd55b7a0f961e98698.webp",
         "https://img.cofynd.com/images/latest_images_2024/2ea0ed9df603fd56c90b7ef93dfe423b318d9f92.webp"
+      ]
+    },
+    {
+      "id": 213,
+      "name": "SupremeWork Bhikaji Cama Place",
+      "badge": "Near Metro",
+      "rating": 2.8,
+      "area": "Bhikaji Cama Place",
+      "location": "Bhikaji Cama Place, Delhi",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/32b92af946bd9aa432dffdea6caac37a00ad5f9d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a65a87186486139b5bc6eac407cb3743c94020f1.webp",
+        "https://img.cofynd.com/images/original/f466996d409eafc01b3d1aaac142a8bc3cd4f63a.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/df33fd054b26fa126948e9b663bcf81b93035085.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f832fbf3b042198db9ada36195a3a293f5074bc3.webp"
       ]
     }
   ],
@@ -6758,6 +7571,25 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/c78ce2d8399b1e53dbc2c70bb6944d9ebba5d613.webp",
         "https://img.cofynd.com/images/latest_images_2024/1fdaa9ee9216d21d495ad16a57fd500d322d4c23.webp"
       ]
+    },
+    {
+      "id": 216,
+      "name": "91Springboard Jhandewalan",
+      "badge": "Premium",
+      "rating": 4.3,
+      "area": "Jhandewalan",
+      "location": "Jhandewalan, Delhi",
+      "price": "₹12,999",
+      "period": "/ Month",
+      "priceFormatted": "₹12,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/c3ec27a8c326f6ca7bb31f2ecc6b39a64029c480.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d5f029683fd746d452f70502a4839ba6eff93d87.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c7d3150f3b83f961418afeb0d8e069310fcf8a78.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8e5cfa233691b61bdac2061aaa19e04c86c38d49.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f7ecb71d456f4f0b5e129a05615771337c7ebf31.webp"
+      ]
     }
   ],
   "West Delhi": [
@@ -7334,6 +8166,44 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/1ee358d8af17c7a6ec040f9dad82a7259789c574.webp",
         "https://img.cofynd.com/images/latest_images_2024/ae2a145b41eb64746c71a9a0f5419071478ea6dd.webp"
       ]
+    },
+    {
+      "id": 217,
+      "name": "Kovark Moti Nagar",
+      "badge": "Verified",
+      "rating": null,
+      "area": "Moti Nagar",
+      "location": "Moti Nagar, Delhi",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/3c703e4b3123d056b57faec0845da141068028bf.webp",
+        "https://img.cofynd.com/images/latest_images_2024/15a49a285d41defdaea69819d50a7d669432ab2e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e22cda799ef929c76bc58e832bfa4df832b54e52.webp",
+        "https://img.cofynd.com/images/latest_images_2024/2d52d23fd0d9984fd292d4f0e5f06c908a691919.webp",
+        "https://img.cofynd.com/images/latest_images_2024/559454a1e1523b9848722074aa756a5ad5e8b4ef.webp"
+      ]
+    },
+    {
+      "id": 230,
+      "name": "Incospaces Kirti Nagar",
+      "badge": "Verified",
+      "rating": null,
+      "area": "Kirti Nagar",
+      "location": "Kirti Nagar, Delhi",
+      "price": "₹5,499",
+      "period": "/ Month",
+      "priceFormatted": "₹5,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/a518b96764ceccf0dac1b6890395aebcac8edbb7.webp",
+        "https://img.cofynd.com/images/latest_images_2024/587eee0c72278bf7bd2f8fb485747ace2ed62a1c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8c7b263b8fd4db1c9332da67eeec22f04e26d84a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b8b49fafd08ce8a545394415ac018e87f3e0a933.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e441d8f9d3c6c93026259975d0d7ac682bee686e.webp"
+      ]
     }
   ],
   "Lajpat Nagar": [
@@ -7526,6 +8396,119 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/607fb761bb524256bf15a9f92da972a79acd7e68.webp",
         "https://img.cofynd.com/images/latest_images_2024/f9a6953a5621c8423e819c5c422c71b2414d4f76.webp"
       ]
+    },
+    {
+      "id": 220,
+      "name": "Spacetime Savitri Premises Greater Kailash II",
+      "badge": "Premium",
+      "rating": 4.4,
+      "area": "Greater Kailash II",
+      "location": "Greater Kailash II, Delhi",
+      "price": "₹15,999",
+      "period": "/ Month",
+      "priceFormatted": "₹15,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/d590c95197e23f823f8baa248e22a248fe0c2d75.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ff777a7261aaba899b84a2d17d1515be1803f93c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/536e33be3d40c87ed93bab92c1c8d505774643c8.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7ad02600eb792b37a58f3c68a4e79b18e14284a4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d9676b821d9575a2a226066a18dd77035cb8fa8a.webp"
+      ]
+    },
+    {
+      "id": 222,
+      "name": "Spacetime Deizen House Greater Kailash",
+      "badge": "Premium",
+      "rating": 4.4,
+      "area": "Greater Kailash",
+      "location": "Greater Kailash, Delhi",
+      "price": "₹15,999",
+      "period": "/ Month",
+      "priceFormatted": "₹15,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/ca24f2284dea5d7228299e36c00da27b1159ad56.webp",
+        "https://img.cofynd.com/images/latest_images_2024/458166ee79bb39638ab57f44fcb619724361283e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c60516bc19916b635158212217430e3c3fdc351f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/da5bd71b3300a9aa076c9b97774606d25bc25816.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f69de416282c00db75e402e36c7ca900f4cadd4b.webp"
+      ]
+    },
+    {
+      "id": 223,
+      "name": "Gemba Coworks Greater Kailash II",
+      "badge": "Popular",
+      "rating": 5,
+      "area": "Greater Kailash II",
+      "location": "Greater Kailash II, Delhi",
+      "price": "₹11,999",
+      "period": "/ Month",
+      "priceFormatted": "₹11,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/7d37f260f0104760f0d6eb35f14e1e3063913131.webp",
+        "https://img.cofynd.com/images/latest_images_2024/fcc460bf35bbb6f662662a83d1eb0a8b22607a7b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/211ed408da34621b7585f289b4360cf15a5899cf.webp",
+        "https://img.cofynd.com/images/latest_images_2024/386ba5f5b6923476744de71095dc4ab83aa40237.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ef8e22ca7a0c426e3ce56dc4d4a25feacce1bda0.webp"
+      ]
+    },
+    {
+      "id": 231,
+      "name": "Third Place Greater Kailash",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Greater Kailash",
+      "location": "Greater Kailash, Delhi",
+      "price": "₹17,999",
+      "period": "/ Month",
+      "priceFormatted": "₹17,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/9be4f12a998e5e62a5f50a1f23455adc5a9dc789.webp",
+        "https://img.cofynd.com/images/latest_images_2024/25903a873cfc0777659b4e9a8bcf00bf84217d38.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a16589ede47ea395eb394bbfac7bb5922b961320.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c3102ae125c598b32063035a83882cd1c837e8a1.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ecadc497116d94243ec50d40bbf09d555c817012.webp"
+      ]
+    },
+    {
+      "id": 233,
+      "name": "Megamind Lajpat Nagar Iii",
+      "badge": "Premium",
+      "rating": 4.8,
+      "area": "Lajpat Nagar Iii",
+      "location": "Lajpat Nagar Iii, Delhi",
+      "price": "₹13,999",
+      "period": "/ Month",
+      "priceFormatted": "₹13,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/6d9c6801c349ec257a377001695c9c4663038c3f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bea0cd937d4559de9fffc2d9df33b943230d8713.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c3b262d12f260b0df8197fd5251f0ee2e8c1a4ec.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bac6f08871173040f04c7585ec5ba5f61e34983a.webp"
+      ]
+    },
+    {
+      "id": 236,
+      "name": "Bollco Co-working Greater Kailash II",
+      "badge": "Premium",
+      "rating": 4.7,
+      "area": "Greater Kailash II",
+      "location": "Greater Kailash II, Delhi",
+      "price": "₹11,999",
+      "period": "/ Month",
+      "priceFormatted": "₹11,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/c1a450d49c7efcff4a52291ebf509c2499db57a5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9182450eb3b6ce8766168fa9bee528edfdb69bf4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/91879dbbcf43c4acccf4ae3af4e888556358d3a3.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b21a10ae475e2a0f166a45471b90f9c8b82ad202.webp",
+        "https://img.cofynd.com/images/latest_images_2024/673ac92677d9ed5a7e1513b47028212ed2f8e82b.webp"
+      ]
     }
   ],
   "Uttam Nagar": [
@@ -7717,6 +8700,63 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/67ca7a0f65a04f59ccecc1b49892f00e31b0f9f7.webp",
         "https://img.cofynd.com/images/latest_images_2024/ede1b9d4ce3825ab5240d211e2d9b2d96ccf9cc0.webp",
         "https://img.cofynd.com/images/latest_images_2024/11006c141883bc059e003a631d2cad7aa9ed937a.webp"
+      ]
+    },
+    {
+      "id": 214,
+      "name": "Smart Square Dwarka",
+      "badge": "Popular",
+      "rating": 4.7,
+      "area": "Dwarka",
+      "location": "Dwarka, Delhi",
+      "price": "₹6,499",
+      "period": "/ Month",
+      "priceFormatted": "₹6,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/d7399bc2ac8276d57e0915c004818fdf2b5b2ca2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/080f3bd67095b72df76f45d36a4398e60f5c7a4c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/e838164c268c31c09af485c67bff2dc2317173ae.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ca7a30bef58ab16fbcd12b4f2a3ef47a348b8b77.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b07a92c33e66a58a74f5541863f36739a0ae9fdd.webp"
+      ]
+    },
+    {
+      "id": 215,
+      "name": "Worklikeboss Dwarka",
+      "badge": "Popular",
+      "rating": 4.8,
+      "area": "Dwarka",
+      "location": "Dwarka, Delhi",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/ae9e471cf09b9ee4f4b3639a22b9036766cfdeeb.webp",
+        "https://img.cofynd.com/images/latest_images_2024/39a746d55e6bc0befb72136594cdb44d3c97f11d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6a657b009f14f7754b7a95d3105d67f77e688a95.webp",
+        "https://img.cofynd.com/images/latest_images_2024/6db380c20d53d3f233705913f88496fa4b2af4cb.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d0b99f6b0510448753fac40b000d2458f4a77e6e.webp"
+      ]
+    },
+    {
+      "id": 228,
+      "name": "Hoblix Space Najafgarh",
+      "badge": "Popular",
+      "rating": null,
+      "area": "Najafgarh",
+      "location": "Najafgarh, Delhi",
+      "price": "₹4,999",
+      "period": "/ Month",
+      "priceFormatted": "₹4,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/35f0a08d60d779990ec33ac713a1cf9474c1488d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a31908714a8cdae804fb6fa2d969a0b6167184b7.webp",
+        "https://img.cofynd.com/images/latest_images_2024/aaea486e1add6ebeaefcd360176a04b4d5d2163d.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a7aa81fadee0403ada3e7d56cabbcb624b6f9b52.webp",
+        "https://img.cofynd.com/images/latest_images_2024/0e6a74ab5d05a7bdf330d5c9c29f64e73b66a9ae.webp"
       ]
     }
   ]
