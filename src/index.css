@@ -1,5 +1,36 @@
 @import "tailwindcss";
 
+/* Floating WhatsApp button animations */
+.whatsapp-float {
+  animation: whatsapp-bounce 2.4s ease-in-out infinite;
+  transition: transform 0.2s ease;
+}
+.whatsapp-float:hover {
+  animation-play-state: paused;
+  transform: scale(1.06);
+}
+.whatsapp-pulse::before,
+.whatsapp-pulse::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: rgba(37, 211, 102, 0.6);
+  animation: whatsapp-ripple 2s ease-out infinite;
+  z-index: -1;
+}
+.whatsapp-pulse::after {
+  animation-delay: 1s;
+}
+@keyframes whatsapp-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+@keyframes whatsapp-ripple {
+  0% { transform: scale(1); opacity: 0.7; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
 html, body {
   overflow-x: hidden;
   max-width: 100%;

@@ -35,7 +35,6 @@ const Navbar = () => {
   const navItems = [
     { name: 'Coworking', links: ['#hot-desk', '#dedicated-desk', '#private-cabin'] },
     { name: 'Virtual Office', links: ['#gst-registration', '#business-address', '#mailing-address'] },
-    { name: 'Business Services', links: ['#company-registration', '#accounting', '#legal-compliance'] },
     { name: 'Business Plans', links: ['#enterprise', '#startup', '#freelancer'] }
   ];
 
@@ -58,7 +57,7 @@ const Navbar = () => {
 
         {/* 3. Desktop Contact Info Box: visible on large screens (lg+) */}
         <div className="hidden lg:flex items-center border border-slate-200 rounded-lg px-2.5 sm:px-3 py-1.5 space-x-2.5 sm:space-x-3 text-xs font-medium text-slate-700 shrink-0">
-          <a href="tel:+919028760011" className="flex items-center space-x-1.5 hover:text-blue-600 transition-colors border-r border-slate-200 pr-2.5 sm:pr-3">
+          <a href="tel:+919028760011" className="flex items-center space-x-1.5 hover:text-blue-600 transition-colors">
             <svg className="w-3.5 h-3.5 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 24 24">
               <path d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27 11.72 11.72 0 003.74.6 1 1 0 011 1v3.59a1 1 0 01-1 1A16 16 0 013 4a1 1 0 011-1h3.59a1 1 0 011 1 11.72 11.72 0 00.6 3.74 1 1 0 01-.27 1.1l-2.2 2.2z"/>
             </svg>
@@ -109,13 +108,14 @@ const Navbar = () => {
 
         {/* 2 & 4. Far Right: Blue "Contact Us" Button + Hamburger Menu Icon */}
         <div className="flex items-center gap-2.5 sm:gap-3 shrink-0">
-          {/* Blue "Contact Us" button - always visible */}
-          <button 
-            type="button"
-            className="bg-[#007bff] hover:bg-blue-600 active:bg-blue-700 text-white font-bold text-xs sm:text-sm px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg transition-colors shadow-xs tracking-wide cursor-pointer whitespace-nowrap"
+          {/* Orange "List of Services" button - always visible */}
+          <Link
+            to="/#services"
+            onClick={closeMenu}
+            className="bg-orange-500 hover:bg-orange-600 active:bg-orange-700 text-white font-bold text-xs sm:text-sm px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg transition-colors shadow-xs tracking-wide cursor-pointer whitespace-nowrap"
           >
-            Contact Us
-          </button>
+            List of Services
+          </Link>
 
           {/* 4. Hamburger Icon: three bars icon, visible on small screens (< lg) */}
           <button

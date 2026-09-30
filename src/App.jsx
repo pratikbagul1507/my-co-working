@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Homepage from './home/Homepage';
 import Navbar from './navbar/Navbar';
+import WhatsAppButton from './components/WhatsAppButton';
 
 import AhmedabadPage from './pages/ahmedabad/Ahmedabad';
 import BangalorePage from './pages/bangalore/Bangalore';
@@ -55,6 +56,7 @@ const App = () => {
         <Route path="/coworking/pune/:id" element={<PuneOfficeDetail />} />
         <Route path="*" element={<Homepage />} />
       </Routes>
+      <WhatsAppButton />
     </div>
   );
 };
