@@ -43,7 +43,7 @@ const Navbar = () => {
   return (
     <header ref={navRef} className="w-full bg-white border-b border-gray-100 sticky top-0 z-50 select-none shadow-2xs">
       {/* 1. Mobile & Desktop Header: strictly single row, flex-row, justify-between, items-center */}
-      <div "className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-28 flex flex-row justify-between items-center gap-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-28 flex flex-row justify-between items-center gap-4">
         
         {/* 2. Far Left: Logo */}
         <Link 
