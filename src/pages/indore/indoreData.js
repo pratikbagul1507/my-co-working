@@ -14,9 +14,9 @@ export const indoreNeighborhoods = [
   "M.G. Road",
   "Jawahar Marg",
   "Bhawarkua",
-  "Scheme 54",
   "Mahalaxmi Nagar",
   "New Palasia",
+  "Scheme 54",
   "Pipliyahana"
 ];
 
@@ -574,23 +574,6 @@ export const featuredIndoreOfficeCards = [
   },
   {
     "id": 31,
-    "name": "TechWinners InfoSystem CoWorking Space",
-    "area": "Scheme 54",
-    "location": "Scheme 54, Indore",
-    "price": "₹2,299",
-    "period": "/ Month",
-    "priceFormatted": "₹2,299 / Month",
-    "ctaText": "Get Quote",
-    "images": [
-      "https://img.cofynd.com/images/latest_images_2024/1d069318286d599f6196fff6130d5cb6a6932d3f.webp",
-      "https://img.cofynd.com/images/latest_images_2024/749bf7db8ff110844101fddae930b3ad447abe6f.webp",
-      "https://img.cofynd.com/images/latest_images_2024/101d1a81da08198ff70f89e72497ffa076a0356f.webp",
-      "https://img.cofynd.com/images/latest_images_2024/dd862340b62ce2bf0b9af40e07bf50c01182a6a5.webp",
-      "https://img.cofynd.com/images/latest_images_2024/883831828a32a4e01e0561f94db703a2b519ea30.webp"
-    ]
-  },
-  {
-    "id": 32,
     "name": "CO-Workspace",
     "area": "Bhawarkua",
     "location": "Bhawarkua, Indore",
@@ -605,12 +588,9 @@ export const featuredIndoreOfficeCards = [
       "https://img.cofynd.com/images/latest_images_2024/5c1108b7d39bc868465d4152acbb12456c9655b6.webp",
       "https://img.cofynd.com/images/latest_images_2024/b71cc51e2026be38bb68422b581e061f21610bb6.webp"
     ]
-  }
-];
-
-export const pageTwoIndoreOfficeCards = [
+  },
   {
-    "id": 33,
+    "id": 32,
     "name": "Nextcoworks Office Space",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -627,9 +607,12 @@ export const pageTwoIndoreOfficeCards = [
       "https://img.cofynd.com/images/latest_images_2024/54cbf0b725256b9ae2b880f7e5fa08a905a4cd51.webp",
       "https://img.cofynd.com/images/latest_images_2024/688174d23afefd0674def9142b39cf80e2d7caac.webp"
     ]
-  },
+  }
+];
+
+export const pageTwoIndoreOfficeCards = [
   {
-    "id": 34,
+    "id": 33,
     "name": "Workdesq Coworking",
     "area": "Mahalaxmi Nagar",
     "location": "Mahalaxmi Nagar, Indore",
@@ -647,7 +630,7 @@ export const pageTwoIndoreOfficeCards = [
     ]
   },
   {
-    "id": 35,
+    "id": 34,
     "name": "ThinkNTap Coworks",
     "area": "AB Road",
     "location": "AB Road, Indore",
@@ -664,7 +647,7 @@ export const pageTwoIndoreOfficeCards = [
     ]
   },
   {
-    "id": 36,
+    "id": 35,
     "name": "Flexihub",
     "badge": "Special Offer",
     "rating": 4.9,
@@ -683,7 +666,7 @@ export const pageTwoIndoreOfficeCards = [
     ]
   },
   {
-    "id": 37,
+    "id": 36,
     "name": "Space X",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -703,7 +686,213 @@ export const pageTwoIndoreOfficeCards = [
     ]
   },
   {
+    "id": 37,
+    "name": "Work Studio Coworking",
+    "rating": 4.6,
+    "area": "Ratna Lok Colony",
+    "location": "Ratna Lok Colony, Indore",
+    "price": "₹4,999",
+    "period": "/ Month",
+    "priceFormatted": "₹4,999 / Month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/work-studio-coworking-ratnalokcolony/dedicated/6eenuw.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/work-studio-coworking-ratnalokcolony/dedicated/amn62g.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/work-studio-coworking-ratnalokcolony/dedicated/98b543.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/work-studio-coworking-ratnalokcolony/dedicated/wjfgv8.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/work-studio-coworking-ratnalokcolony/dedicated/68xrus.jpg"
+    ]
+  },
+  {
     "id": 38,
+    "name": "TechWinners InfoSystem CoWorking Space",
+    "area": "Ratna Lok Colony",
+    "location": "Ratna Lok Colony, Indore",
+    "price": "₹7,999",
+    "period": "/ Month",
+    "priceFormatted": "₹7,999 / Month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/techwinners-infosystem-coworking-space-ratnalokcolony/pd2r8h.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/techwinners-infosystem-coworking-space-ratnalokcolony/vra599.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/techwinners-infosystem-coworking-space-ratnalokcolony/2gejd7.jpg"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Regus Sapna Sangeeta Mall",
+    "area": "Ratna Lok Colony",
+    "location": "Ratna Lok Colony, Indore",
+    "price": "₹7,999",
+    "period": "/ Month",
+    "priceFormatted": "₹7,999 / Month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/regus-ratnalokcolony/3yuxgt.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/regus-ratnalokcolony/7a9z46.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/regus-ratnalokcolony/4muyye.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/regus-ratnalokcolony/yfnwby.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/regus-ratnalokcolony/ka2c5z.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/regus-ratnalokcolony/577kg7.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/regus-ratnalokcolony/8bt4pb.jpg"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "The Address Ravindra Nagar",
+    "rating": 4.9,
+    "area": "Ravindra Nagar",
+    "location": "Ravindra Nagar, Indore",
+    "price": "₹7,999",
+    "period": "/ Month",
+    "priceFormatted": "₹7,999 / Month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/hywa9h.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/rnu8pg.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/gau9mh.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/qa7a2t.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/7uy7yb.jpg"
+    ]
+  }
+];
+
+export const pageTwoMoreIndoreOfficeCards = [
+  {
+    "id": 41,
+    "name": "Adited House",
+    "rating": 4.4,
+    "area": "Ravindra Nagar",
+    "location": "Ravindra Nagar, Indore",
+    "price": "₹7,999",
+    "period": "/ Month",
+    "priceFormatted": "₹7,999 / Month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/kguxnn.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/mkra2f.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/uu99xt.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/497avg.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/cke9pe.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/enruy5.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/svq3z6.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/9dq8yv.jpg"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "ADITED X",
+    "rating": 3.6,
+    "area": "Ravindra Nagar",
+    "location": "Ravindra Nagar, Indore",
+    "price": "₹7,999",
+    "period": "/ Month",
+    "priceFormatted": "₹7,999 / Month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/zs72tf.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/hwxzj3.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/g9axng.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/4sa5u9.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/xyubg8.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/h6av8z.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/mqmmyq.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/rxznxs.jpg"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "United Spaces Ravindra Nagar",
+    "rating": 5,
+    "area": "Ravindra Nagar",
+    "location": "Ravindra Nagar, Indore",
+    "price": "₹7,999",
+    "period": "/ Month",
+    "priceFormatted": "₹7,999 / Month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/u3zz5p.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/ffzdzq.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/ev6bqm.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/fhex4y.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/f7qj4q.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/wfe74x.jpg"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Smartworks AB Road",
+    "rating": 4.8,
+    "area": "AB Road",
+    "location": "AB Road, Indore",
+    "price": "₹7,999",
+    "period": "/ Month",
+    "priceFormatted": "₹7,999 / Month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/je2svc.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/8bqeyh.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/k4ajkz.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/jnjmyr.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/xc7n99.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/y6um98.jpg"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Antares Business Centre",
+    "rating": 4.7,
+    "area": "AB Road",
+    "location": "AB Road, Indore",
+    "price": "₹7,999",
+    "period": "/ Month",
+    "priceFormatted": "₹7,999 / Month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/antares-business-centre-abroad/dedicated/n5mrs3.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/antares-business-centre-abroad/dedicated/px7568.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/antares-business-centre-abroad/dedicated/nkqdsy.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/antares-business-centre-abroad/dedicated/p9v94b.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/antares-business-centre-abroad/dedicated/c5erdv.jpg"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Stark Spaces South Tukoganj",
+    "rating": 4.6,
+    "area": "South Tukoganj",
+    "location": "South Tukoganj, Indore",
+    "price": "₹7,999",
+    "period": "/ Month",
+    "priceFormatted": "₹7,999 / Month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/vembuq.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/sft67c.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/jcx224.jpg",
+      "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/6tkxh5.jpg"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "My Workbox LIG Colony",
+    "area": "LIC Colony",
+    "location": "LIC Colony, Indore",
+    "price": "₹6,000",
+    "period": "/ Month",
+    "priceFormatted": "₹6,000 / Month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://ik.imagekit.io/qdesq/qdesq/3cff2d2d44985571b22ac15ad11a4201_vGdD207EH.jpg",
+      "https://ik.imagekit.io/qdesq/qdesq/f3087fe80fde6a2a6c4dd07aea3dc45d_eNJ_Lcvua.jpg",
+      "https://ik.imagekit.io/qdesq/qdesq/0591c4a5ec7bf8efbcdb163577a1e805_Fl6VKuxEx.jpg",
+      "https://ik.imagekit.io/qdesq/qdesq/99565ee3ba9c6960f8020bb2aad0a3cc_dimJFk2Qj.jpg",
+      "https://ik.imagekit.io/qdesq/qdesq/5870b32709cab653370a61e47db9582b_Bnb1yD5MO4.jpg",
+      "https://ik.imagekit.io/qdesq/qdesq/a2188b8993e6b033f38f9df492dacf3b_Tz0O-NBfIA.jpg"
+    ]
+  },
+  {
+    "id": 48,
     "name": "MyBranch Commerce House",
     "area": "New Palasia",
     "location": "New Palasia, Indore",
@@ -721,9 +910,12 @@ export const pageTwoIndoreOfficeCards = [
       "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/5-1755679195.webp",
       "https://imgcdn.houssed.com/assets/Files/Projects/147412/Location/Hou-1755679204.webp"
     ]
-  },
+  }
+];
+
+export const pageTwoFinalIndoreOfficeCards = [
   {
-    "id": 39,
+    "id": 49,
     "name": "Antares Princes Business Skypark",
     "area": "Scheme 54",
     "location": "Scheme 54, Indore",
@@ -739,7 +931,7 @@ export const pageTwoIndoreOfficeCards = [
     ]
   },
   {
-    "id": 40,
+    "id": 50,
     "name": "Workie C21 Business Park",
     "area": "Scheme No 131",
     "location": "Scheme No 131, Indore",
@@ -754,12 +946,9 @@ export const pageTwoIndoreOfficeCards = [
       "https://imgcdn.houssed.com/assets/Files/Projects/147403/Project%20Image/2-1755677831.webp",
       "https://imgcdn.houssed.com/assets/Files/Projects/147403/Location/MAP-1755677839.webp"
     ]
-  }
-];
-
-export const pageTwoMoreIndoreOfficeCards = [
+  },
   {
-    "id": 41,
+    "id": 51,
     "name": "Workie Swastika Urbane",
     "area": "Scheme 54",
     "location": "Scheme 54, Indore",
@@ -776,7 +965,7 @@ export const pageTwoMoreIndoreOfficeCards = [
     ]
   },
   {
-    "id": 42,
+    "id": 52,
     "name": "Worksthan Orbit Mall",
     "area": "Scheme 54",
     "location": "Scheme 54, Indore",
@@ -796,7 +985,7 @@ export const pageTwoMoreIndoreOfficeCards = [
     ]
   },
   {
-    "id": 43,
+    "id": 53,
     "name": "Workie Sewani Corporate House",
     "area": "New Palasia",
     "location": "New Palasia, Indore",
@@ -815,7 +1004,7 @@ export const pageTwoMoreIndoreOfficeCards = [
     ]
   },
   {
-    "id": 44,
+    "id": 54,
     "name": "The Address BPK Titanium",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -831,7 +1020,7 @@ export const pageTwoMoreIndoreOfficeCards = [
     ]
   },
   {
-    "id": 45,
+    "id": 55,
     "name": "BCM Zodiac Co-Working",
     "area": "Mahalaxmi Nagar",
     "location": "Mahalaxmi Nagar, Indore",
@@ -851,7 +1040,7 @@ export const pageTwoMoreIndoreOfficeCards = [
     ]
   },
   {
-    "id": 46,
+    "id": 56,
     "name": "United Spaces Virendra Heights",
     "area": "New Palasia",
     "location": "New Palasia, Indore",
@@ -869,9 +1058,12 @@ export const pageTwoMoreIndoreOfficeCards = [
       "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/6-1755759163.webp",
       "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/7-1755759163.webp"
     ]
-  },
+  }
+];
+
+export const pageTwoFeaturedIndoreOfficeCards = [
   {
-    "id": 47,
+    "id": 57,
     "name": "ThinkNTap Shekhar Central",
     "area": "Manorama Ganj",
     "location": "Manorama Ganj, Indore",
@@ -891,7 +1083,7 @@ export const pageTwoMoreIndoreOfficeCards = [
     ]
   },
   {
-    "id": 48,
+    "id": 58,
     "name": "Workviaa Corporate House",
     "area": "South Tukoganj",
     "location": "South Tukoganj, Indore",
@@ -908,12 +1100,9 @@ export const pageTwoMoreIndoreOfficeCards = [
       "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/5-1755759424.webp",
       "https://imgcdn.houssed.com/assets/Files/Projects/147509/Location/MAP-1755759433.webp"
     ]
-  }
-];
-
-export const pageTwoFinalIndoreOfficeCards = [
+  },
   {
-    "id": 49,
+    "id": 59,
     "name": "Fusion Co-Space Classic Gold",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -929,7 +1118,7 @@ export const pageTwoFinalIndoreOfficeCards = [
     ]
   },
   {
-    "id": 50,
+    "id": 60,
     "name": "Flexi Business Hub Atulya IT Park",
     "area": "Pipliyahana",
     "location": "Pipliyahana, Indore",
@@ -945,7 +1134,7 @@ export const pageTwoFinalIndoreOfficeCards = [
     ]
   },
   {
-    "id": 51,
+    "id": 61,
     "name": "SCI Co Works The Collab",
     "area": "Pipliyahana",
     "location": "Pipliyahana, Indore",
@@ -961,7 +1150,7 @@ export const pageTwoFinalIndoreOfficeCards = [
     ]
   },
   {
-    "id": 52,
+    "id": 62,
     "name": "S.PACE Co Working",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -978,7 +1167,7 @@ export const pageTwoFinalIndoreOfficeCards = [
     ]
   },
   {
-    "id": 53,
+    "id": 63,
     "name": "My Stay Spaces Vishal Cube",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -998,7 +1187,7 @@ export const pageTwoFinalIndoreOfficeCards = [
     ]
   },
   {
-    "id": 54,
+    "id": 64,
     "name": "The Dice Skye Corporate Park",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -1016,9 +1205,12 @@ export const pageTwoFinalIndoreOfficeCards = [
       "https://imgcdn.houssed.com/assets/Files/Projects/147393/Project%20Image/6-1755670675.webp",
       "https://imgcdn.houssed.com/assets/Files/Projects/147393/Location/MAP-1755670690.webp"
     ]
-  },
+  }
+];
+
+export const pageThreeIndoreOfficeCards = [
   {
-    "id": 55,
+    "id": 65,
     "name": "The Dice Apollo premier",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -1037,7 +1229,7 @@ export const pageTwoFinalIndoreOfficeCards = [
     ]
   },
   {
-    "id": 56,
+    "id": 66,
     "name": "Sky Space PU4",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -1052,12 +1244,9 @@ export const pageTwoFinalIndoreOfficeCards = [
       "https://imgcdn.houssed.com/assets/Files/Projects/147391/Project%20Image/3-1755670599.webp",
       "https://imgcdn.houssed.com/assets/Files/Projects/147391/Location/MAP-1755670607.webp"
     ]
-  }
-];
-
-export const pageTwoFeaturedIndoreOfficeCards = [
+  },
   {
-    "id": 57,
+    "id": 67,
     "name": "Sky Space Premium",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -1075,7 +1264,7 @@ export const pageTwoFeaturedIndoreOfficeCards = [
     ]
   },
   {
-    "id": 58,
+    "id": 68,
     "name": "Sky Space Brilliant Platina",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -1093,7 +1282,7 @@ export const pageTwoFeaturedIndoreOfficeCards = [
     ]
   },
   {
-    "id": 59,
+    "id": 69,
     "name": "Coworking Krishna Business Centre",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -1112,7 +1301,7 @@ export const pageTwoFeaturedIndoreOfficeCards = [
     ]
   },
   {
-    "id": 60,
+    "id": 70,
     "name": "Workie Apollo Premier",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -1132,7 +1321,7 @@ export const pageTwoFeaturedIndoreOfficeCards = [
     ]
   },
   {
-    "id": 61,
+    "id": 71,
     "name": "Spacetime The Hub",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -1150,7 +1339,7 @@ export const pageTwoFeaturedIndoreOfficeCards = [
     ]
   },
   {
-    "id": 62,
+    "id": 72,
     "name": "Workie Tower SP 365 Building",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -1168,9 +1357,12 @@ export const pageTwoFeaturedIndoreOfficeCards = [
       "https://imgcdn.houssed.com/assets/Files/Projects/147408/Project%20Image/7-1755678904.webp",
       "https://imgcdn.houssed.com/assets/Files/Projects/147408/Project%20Image/9-1755678904.webp"
     ]
-  },
+  }
+];
+
+export const pageThreeMoreIndoreOfficeCards = [
   {
-    "id": 63,
+    "id": 73,
     "name": "Regus Unity One",
     "area": "Sarvanad Nagar",
     "location": "Sarvanad Nagar, Indore",
@@ -1190,7 +1382,7 @@ export const pageTwoFeaturedIndoreOfficeCards = [
     ]
   },
   {
-    "id": 64,
+    "id": 74,
     "name": "Regus DNR 90",
     "area": "South Tukoganj",
     "location": "South Tukoganj, Indore",
@@ -1208,12 +1400,9 @@ export const pageTwoFeaturedIndoreOfficeCards = [
       "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/2-1755594920.webp",
       "https://imgcdn.houssed.com/assets/Files/Projects/147325/Location/MAP-1755594933.webp"
     ]
-  }
-];
-
-export const pageThreeIndoreOfficeCards = [
+  },
   {
-    "id": 65,
+    "id": 75,
     "name": "Regus Honda BigWing",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -1232,7 +1421,7 @@ export const pageThreeIndoreOfficeCards = [
     ]
   },
   {
-    "id": 66,
+    "id": 76,
     "name": "Regus Maloo 1",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -1250,7 +1439,7 @@ export const pageThreeIndoreOfficeCards = [
     ]
   },
   {
-    "id": 67,
+    "id": 77,
     "name": "Nexus Manas Mayfair",
     "area": "South Tukoganj",
     "location": "South Tukoganj, Indore",
@@ -1270,7 +1459,7 @@ export const pageThreeIndoreOfficeCards = [
     ]
   },
   {
-    "id": 68,
+    "id": 78,
     "name": "Ardor Edge Shagun Arcade",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -1287,7 +1476,7 @@ export const pageThreeIndoreOfficeCards = [
     ]
   },
   {
-    "id": 69,
+    "id": 79,
     "name": "Smartwork Brilliant Centre",
     "area": "New Palasia",
     "location": "New Palasia, Indore",
@@ -1307,7 +1496,7 @@ export const pageThreeIndoreOfficeCards = [
     ]
   },
   {
-    "id": 70,
+    "id": 80,
     "name": "Awfis Brilliant Sapphire 2",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -1324,8 +1513,6 @@ export const pageThreeIndoreOfficeCards = [
     ]
   }
 ];
-
-export const pageThreeMoreIndoreOfficeCards = [];
 
 export const pageThreeFinalIndoreOfficeCards = [];
 
@@ -1500,7 +1687,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 35,
+      "id": 34,
       "name": "ThinkNTap Coworks",
       "area": "AB Road",
       "location": "AB Road, Indore",
@@ -1515,11 +1702,200 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/d41dc37ce23a8ad06ff4d6b45aab7fc4bbecbcd2.webp",
         "https://img.cofynd.com/images/latest_images_2024/1ae7180d916061d4c13e3a8c25ee13966ca3ee98.webp"
       ]
+    },
+    {
+      "id": 44,
+      "name": "Smartworks AB Road",
+      "rating": 4.8,
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/je2svc.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/8bqeyh.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/k4ajkz.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/jnjmyr.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/xc7n99.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/y6um98.jpg"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Antares Business Centre",
+      "rating": 4.7,
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/antares-business-centre-abroad/dedicated/n5mrs3.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/antares-business-centre-abroad/dedicated/px7568.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/antares-business-centre-abroad/dedicated/nkqdsy.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/antares-business-centre-abroad/dedicated/p9v94b.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/antares-business-centre-abroad/dedicated/c5erdv.jpg"
+      ]
     }
   ],
-  "LIC Colony": [],
-  "Ratna Lok Colony": [],
-  "Ravindra Nagar": [],
+  "LIC Colony": [
+    {
+      "id": 47,
+      "name": "My Workbox LIG Colony",
+      "area": "LIC Colony",
+      "location": "LIC Colony, Indore",
+      "price": "₹6,000",
+      "period": "/ Month",
+      "priceFormatted": "₹6,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://ik.imagekit.io/qdesq/qdesq/3cff2d2d44985571b22ac15ad11a4201_vGdD207EH.jpg",
+        "https://ik.imagekit.io/qdesq/qdesq/f3087fe80fde6a2a6c4dd07aea3dc45d_eNJ_Lcvua.jpg",
+        "https://ik.imagekit.io/qdesq/qdesq/0591c4a5ec7bf8efbcdb163577a1e805_Fl6VKuxEx.jpg",
+        "https://ik.imagekit.io/qdesq/qdesq/99565ee3ba9c6960f8020bb2aad0a3cc_dimJFk2Qj.jpg",
+        "https://ik.imagekit.io/qdesq/qdesq/5870b32709cab653370a61e47db9582b_Bnb1yD5MO4.jpg",
+        "https://ik.imagekit.io/qdesq/qdesq/a2188b8993e6b033f38f9df492dacf3b_Tz0O-NBfIA.jpg"
+      ]
+    }
+  ],
+  "Ratna Lok Colony": [
+    {
+      "id": 37,
+      "name": "Work Studio Coworking",
+      "rating": 4.6,
+      "area": "Ratna Lok Colony",
+      "location": "Ratna Lok Colony, Indore",
+      "price": "₹4,999",
+      "period": "/ Month",
+      "priceFormatted": "₹4,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/work-studio-coworking-ratnalokcolony/dedicated/6eenuw.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/work-studio-coworking-ratnalokcolony/dedicated/amn62g.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/work-studio-coworking-ratnalokcolony/dedicated/98b543.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/work-studio-coworking-ratnalokcolony/dedicated/wjfgv8.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/work-studio-coworking-ratnalokcolony/dedicated/68xrus.jpg"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "TechWinners InfoSystem CoWorking Space",
+      "area": "Ratna Lok Colony",
+      "location": "Ratna Lok Colony, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/techwinners-infosystem-coworking-space-ratnalokcolony/pd2r8h.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/techwinners-infosystem-coworking-space-ratnalokcolony/vra599.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/techwinners-infosystem-coworking-space-ratnalokcolony/2gejd7.jpg"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Regus Sapna Sangeeta Mall",
+      "area": "Ratna Lok Colony",
+      "location": "Ratna Lok Colony, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/regus-ratnalokcolony/3yuxgt.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/regus-ratnalokcolony/7a9z46.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/regus-ratnalokcolony/4muyye.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/regus-ratnalokcolony/yfnwby.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/regus-ratnalokcolony/ka2c5z.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/regus-ratnalokcolony/577kg7.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/regus-ratnalokcolony/8bt4pb.jpg"
+      ]
+    }
+  ],
+  "Ravindra Nagar": [
+    {
+      "id": 40,
+      "name": "The Address Ravindra Nagar",
+      "rating": 4.9,
+      "area": "Ravindra Nagar",
+      "location": "Ravindra Nagar, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/hywa9h.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/rnu8pg.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/gau9mh.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/qa7a2t.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/7uy7yb.jpg"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Adited House",
+      "rating": 4.4,
+      "area": "Ravindra Nagar",
+      "location": "Ravindra Nagar, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/kguxnn.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/mkra2f.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/uu99xt.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/497avg.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/cke9pe.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/enruy5.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/svq3z6.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/9dq8yv.jpg"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "ADITED X",
+      "rating": 3.6,
+      "area": "Ravindra Nagar",
+      "location": "Ravindra Nagar, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/zs72tf.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/hwxzj3.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/g9axng.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/4sa5u9.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/xyubg8.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/h6av8z.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/mqmmyq.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/rxznxs.jpg"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "United Spaces Ravindra Nagar",
+      "rating": 5,
+      "area": "Ravindra Nagar",
+      "location": "Ravindra Nagar, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/u3zz5p.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/ffzdzq.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/ev6bqm.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/fhex4y.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/f7qj4q.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/wfe74x.jpg"
+      ]
+    }
+  ],
   "South Tukoganj": [
     {
       "id": 18,
@@ -1539,7 +1915,24 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 48,
+      "id": 46,
+      "name": "Stark Spaces South Tukoganj",
+      "rating": 4.6,
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/vembuq.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/sft67c.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/jcx224.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/6tkxh5.jpg"
+      ]
+    },
+    {
+      "id": 58,
       "name": "Workviaa Corporate House",
       "area": "South Tukoganj",
       "location": "South Tukoganj, Indore",
@@ -1558,7 +1951,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 64,
+      "id": 74,
       "name": "Regus DNR 90",
       "area": "South Tukoganj",
       "location": "South Tukoganj, Indore",
@@ -1578,7 +1971,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 67,
+      "id": 77,
       "name": "Nexus Manas Mayfair",
       "area": "South Tukoganj",
       "location": "South Tukoganj, Indore",
@@ -1929,7 +2322,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 33,
+      "id": 32,
       "name": "Nextcoworks Office Space",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -1948,7 +2341,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 37,
+      "id": 36,
       "name": "Space X",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -1968,7 +2361,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 44,
+      "id": 54,
       "name": "The Address BPK Titanium",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -1984,7 +2377,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 49,
+      "id": 59,
       "name": "Fusion Co-Space Classic Gold",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -2000,7 +2393,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 52,
+      "id": 62,
       "name": "S.PACE Co Working",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -2017,7 +2410,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 53,
+      "id": 63,
       "name": "My Stay Spaces Vishal Cube",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -2037,7 +2430,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 54,
+      "id": 64,
       "name": "The Dice Skye Corporate Park",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -2057,7 +2450,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 55,
+      "id": 65,
       "name": "The Dice Apollo premier",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -2076,7 +2469,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 56,
+      "id": 66,
       "name": "Sky Space PU4",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -2093,7 +2486,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 57,
+      "id": 67,
       "name": "Sky Space Premium",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -2111,7 +2504,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 58,
+      "id": 68,
       "name": "Sky Space Brilliant Platina",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -2129,7 +2522,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 59,
+      "id": 69,
       "name": "Coworking Krishna Business Centre",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -2148,7 +2541,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 60,
+      "id": 70,
       "name": "Workie Apollo Premier",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -2168,7 +2561,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 61,
+      "id": 71,
       "name": "Spacetime The Hub",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -2186,7 +2579,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 62,
+      "id": 72,
       "name": "Workie Tower SP 365 Building",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -2206,7 +2599,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 65,
+      "id": 75,
       "name": "Regus Honda BigWing",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -2225,7 +2618,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 66,
+      "id": 76,
       "name": "Regus Maloo 1",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -2243,7 +2636,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 68,
+      "id": 78,
       "name": "Ardor Edge Shagun Arcade",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -2260,7 +2653,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 70,
+      "id": 80,
       "name": "Awfis Brilliant Sapphire 2",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -2353,7 +2746,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 32,
+      "id": 31,
       "name": "CO-Workspace",
       "area": "Bhawarkua",
       "location": "Bhawarkua, Indore",
@@ -2370,7 +2763,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 36,
+      "id": 35,
       "name": "Flexihub",
       "badge": "Special Offer",
       "rating": 4.9,
@@ -2389,81 +2782,9 @@ export const areaExtraOfficeCards = {
       ]
     }
   ],
-  "Scheme 54": [
-    {
-      "id": 31,
-      "name": "TechWinners InfoSystem CoWorking Space",
-      "area": "Scheme 54",
-      "location": "Scheme 54, Indore",
-      "price": "₹2,299",
-      "period": "/ Month",
-      "priceFormatted": "₹2,299 / Month",
-      "ctaText": "Get Quote",
-      "images": [
-        "https://img.cofynd.com/images/latest_images_2024/1d069318286d599f6196fff6130d5cb6a6932d3f.webp",
-        "https://img.cofynd.com/images/latest_images_2024/749bf7db8ff110844101fddae930b3ad447abe6f.webp",
-        "https://img.cofynd.com/images/latest_images_2024/101d1a81da08198ff70f89e72497ffa076a0356f.webp",
-        "https://img.cofynd.com/images/latest_images_2024/dd862340b62ce2bf0b9af40e07bf50c01182a6a5.webp",
-        "https://img.cofynd.com/images/latest_images_2024/883831828a32a4e01e0561f94db703a2b519ea30.webp"
-      ]
-    },
-    {
-      "id": 39,
-      "name": "Antares Princes Business Skypark",
-      "area": "Scheme 54",
-      "location": "Scheme 54, Indore",
-      "price": "₹8,000",
-      "period": "/ Month",
-      "priceFormatted": "₹8,000 / Month",
-      "ctaText": "Get Quote",
-      "images": [
-        "https://imgcdn.houssed.com/assets/Files/Projects/147299/Project%20Image/1-1755588107.webp",
-        "https://imgcdn.houssed.com/assets/Files/Projects/147299/Project%20Image/2-1755588107.webp",
-        "https://imgcdn.houssed.com/assets/Files/Projects/147299/Project%20Image/3-1755588107.webp",
-        "https://imgcdn.houssed.com/assets/Files/Projects/147299/Location/MAP-1755588120.webp"
-      ]
-    },
-    {
-      "id": 41,
-      "name": "Workie Swastika Urbane",
-      "area": "Scheme 54",
-      "location": "Scheme 54, Indore",
-      "price": "₹7,000",
-      "period": "/ Month",
-      "priceFormatted": "₹7,000 / Month",
-      "ctaText": "Get Quote",
-      "images": [
-        "https://imgcdn.houssed.com/assets/Files/Projects/147406/Project%20Image/4-1755678631.webp",
-        "https://imgcdn.houssed.com/assets/Files/Projects/147406/Project%20Image/1-1755678631.webp",
-        "https://imgcdn.houssed.com/assets/Files/Projects/147406/Project%20Image/2-1755678631.webp",
-        "https://imgcdn.houssed.com/assets/Files/Projects/147406/Project%20Image/3-1755678631.webp",
-        "https://imgcdn.houssed.com/assets/Files/Projects/147406/Location/MAP-1755678639.webp"
-      ]
-    },
-    {
-      "id": 42,
-      "name": "Worksthan Orbit Mall",
-      "area": "Scheme 54",
-      "location": "Scheme 54, Indore",
-      "price": "₹8,000",
-      "period": "/ Month",
-      "priceFormatted": "₹8,000 / Month",
-      "ctaText": "Get Quote",
-      "images": [
-        "https://imgcdn.houssed.com/assets/Files/Projects/147497/Project%20Image/4-1755756161.webp",
-        "https://imgcdn.houssed.com/assets/Files/Projects/147497/Project%20Image/2-1755756161.webp",
-        "https://imgcdn.houssed.com/assets/Files/Projects/147497/Project%20Image/9-1755756161.webp",
-        "https://imgcdn.houssed.com/assets/Files/Projects/147497/Project%20Image/1-1755756161.webp",
-        "https://imgcdn.houssed.com/assets/Files/Projects/147497/Project%20Image/3-1755756161.webp",
-        "https://imgcdn.houssed.com/assets/Files/Projects/147497/Project%20Image/5-1755756161.webp",
-        "https://imgcdn.houssed.com/assets/Files/Projects/147497/Project%20Image/6-1755756161.webp",
-        "https://imgcdn.houssed.com/assets/Files/Projects/147497/Project%20Image/7-1755756161.webp"
-      ]
-    }
-  ],
   "Mahalaxmi Nagar": [
     {
-      "id": 34,
+      "id": 33,
       "name": "Workdesq Coworking",
       "area": "Mahalaxmi Nagar",
       "location": "Mahalaxmi Nagar, Indore",
@@ -2481,7 +2802,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 45,
+      "id": 55,
       "name": "BCM Zodiac Co-Working",
       "area": "Mahalaxmi Nagar",
       "location": "Mahalaxmi Nagar, Indore",
@@ -2503,7 +2824,7 @@ export const areaExtraOfficeCards = {
   ],
   "New Palasia": [
     {
-      "id": 38,
+      "id": 48,
       "name": "MyBranch Commerce House",
       "area": "New Palasia",
       "location": "New Palasia, Indore",
@@ -2523,7 +2844,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 43,
+      "id": 53,
       "name": "Workie Sewani Corporate House",
       "area": "New Palasia",
       "location": "New Palasia, Indore",
@@ -2542,7 +2863,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 46,
+      "id": 56,
       "name": "United Spaces Virendra Heights",
       "area": "New Palasia",
       "location": "New Palasia, Indore",
@@ -2562,7 +2883,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 69,
+      "id": 79,
       "name": "Smartwork Brilliant Centre",
       "area": "New Palasia",
       "location": "New Palasia, Indore",
@@ -2582,9 +2903,64 @@ export const areaExtraOfficeCards = {
       ]
     }
   ],
+  "Scheme 54": [
+    {
+      "id": 49,
+      "name": "Antares Princes Business Skypark",
+      "area": "Scheme 54",
+      "location": "Scheme 54, Indore",
+      "price": "₹8,000",
+      "period": "/ Month",
+      "priceFormatted": "₹8,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147299/Project%20Image/1-1755588107.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147299/Project%20Image/2-1755588107.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147299/Project%20Image/3-1755588107.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147299/Location/MAP-1755588120.webp"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Workie Swastika Urbane",
+      "area": "Scheme 54",
+      "location": "Scheme 54, Indore",
+      "price": "₹7,000",
+      "period": "/ Month",
+      "priceFormatted": "₹7,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147406/Project%20Image/4-1755678631.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147406/Project%20Image/1-1755678631.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147406/Project%20Image/2-1755678631.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147406/Project%20Image/3-1755678631.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147406/Location/MAP-1755678639.webp"
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Worksthan Orbit Mall",
+      "area": "Scheme 54",
+      "location": "Scheme 54, Indore",
+      "price": "₹8,000",
+      "period": "/ Month",
+      "priceFormatted": "₹8,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147497/Project%20Image/4-1755756161.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147497/Project%20Image/2-1755756161.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147497/Project%20Image/9-1755756161.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147497/Project%20Image/1-1755756161.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147497/Project%20Image/3-1755756161.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147497/Project%20Image/5-1755756161.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147497/Project%20Image/6-1755756161.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147497/Project%20Image/7-1755756161.webp"
+      ]
+    }
+  ],
   "Pipliyahana": [
     {
-      "id": 50,
+      "id": 60,
       "name": "Flexi Business Hub Atulya IT Park",
       "area": "Pipliyahana",
       "location": "Pipliyahana, Indore",
@@ -2600,7 +2976,7 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 51,
+      "id": 61,
       "name": "SCI Co Works The Collab",
       "area": "Pipliyahana",
       "location": "Pipliyahana, Indore",
@@ -2821,14 +3197,14 @@ export const topIndoreCoworkingLocations = [
     "id": "loc-lic-colony",
     "name": "LIC Colony",
     "title": "Coworking Space in LIC Colony",
-    "image": "https://img.cofynd.com/images/latest_images_2024/cebdaa16c044508e7616f5a0f463c78244522044.webp",
+    "image": "https://ik.imagekit.io/qdesq/qdesq/3cff2d2d44985571b22ac15ad11a4201_vGdD207EH.jpg",
     "ctaText": "Explore Spaces"
   },
   {
     "id": "loc-ratna-lok-colony",
     "name": "Ratna Lok Colony",
     "title": "Coworking Space in Ratna Lok Colony",
-    "image": "https://img.cofynd.com/images/latest_images_2024/cebdaa16c044508e7616f5a0f463c78244522044.webp",
+    "image": "https://res.cloudinary.com/myhq/image/upload/workspaces/work-studio-coworking-ratnalokcolony/dedicated/6eenuw.jpg",
     "ctaText": "Explore Spaces"
   },
   {
@@ -2874,13 +3250,6 @@ export const topIndoreCoworkingLocations = [
     "ctaText": "Explore Spaces"
   },
   {
-    "id": "loc-scheme-54",
-    "name": "Scheme 54",
-    "title": "Coworking Space in Scheme 54",
-    "image": "https://img.cofynd.com/images/latest_images_2024/1d069318286d599f6196fff6130d5cb6a6932d3f.webp",
-    "ctaText": "Explore Spaces"
-  },
-  {
     "id": "loc-mahalaxmi-nagar",
     "name": "Mahalaxmi Nagar",
     "title": "Coworking Space in Mahalaxmi Nagar",
@@ -2892,6 +3261,13 @@ export const topIndoreCoworkingLocations = [
     "name": "New Palasia",
     "title": "Coworking Space in New Palasia",
     "image": "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/2-1755679195.webp",
+    "ctaText": "Explore Spaces"
+  },
+  {
+    "id": "loc-scheme-54",
+    "name": "Scheme 54",
+    "title": "Coworking Space in Scheme 54",
+    "image": "https://imgcdn.houssed.com/assets/Files/Projects/147299/Project%20Image/1-1755588107.webp",
     "ctaText": "Explore Spaces"
   },
   {
