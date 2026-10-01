@@ -12,14 +12,17 @@ export const indoreNeighborhoods = [
   "South Tukoganj",
   "Vijay Nagar",
   "M.G. Road",
-  "Jawahar Marg"
+  "Jawahar Marg",
+  "Bhawarkua",
+  "Scheme No 54",
+  "Mahalaxmi Nagar"
 ];
 
 export const indoreOfficeCards = [
   {
     "id": 1,
-    "name": "Nextcoworks Vijay Nagar",
-    "badge": "Verified",
+    "name": "Nextcoworks",
+    "badge": "Premium Coworking",
     "rating": 4.8,
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -40,14 +43,13 @@ export const indoreOfficeCards = [
   },
   {
     "id": 2,
-    "name": "Incuspaze Apollo Vijay Nagar",
-    "badge": "Popular",
+    "name": "Incuspaze Apollo",
     "rating": 4.5,
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
-    "price": "₹2,499",
-    "period": "/ Month",
-    "priceFormatted": "₹2,499 / Month",
+    "price": "On Request",
+    "period": "",
+    "priceFormatted": "On Request",
     "ctaText": "Get Quote",
     "images": [
       "https://img.cofynd.com/images/original/e85426ce071a8de598c3d0e7f16adb4aaf056d13.jpg",
@@ -61,7 +63,6 @@ export const indoreOfficeCards = [
   {
     "id": 3,
     "name": "Incuspaze Princes Business Skyline",
-    "badge": "Special Offer",
     "rating": 4.5,
     "area": "AB Road",
     "location": "AB Road, Indore",
@@ -83,7 +84,6 @@ export const moreIndoreOfficeCards = [
   {
     "id": 4,
     "name": "Incuspaze Brilliant Platina",
-    "badge": "Near Metro",
     "rating": 4.5,
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -102,7 +102,6 @@ export const moreIndoreOfficeCards = [
   {
     "id": 5,
     "name": "Incuspaze Metro Tower",
-    "badge": "Verified",
     "rating": 4.5,
     "area": "AB Road",
     "location": "AB Road, Indore",
@@ -120,9 +119,7 @@ export const moreIndoreOfficeCards = [
   },
   {
     "id": 6,
-    "name": "Adited Coworking 1.0 AB Road",
-    "badge": "Popular",
-    "rating": 4.5,
+    "name": "Adited Coworking 1.0",
     "area": "AB Road",
     "location": "AB Road, Indore",
     "price": "₹5,999",
@@ -142,9 +139,7 @@ export const moreIndoreOfficeCards = [
 export const finalIndoreOfficeCards = [
   {
     "id": 7,
-    "name": "Work Jar Coworking Vijay Nagar",
-    "badge": "Special Offer",
-    "rating": 4.5,
+    "name": "Work Jar Coworking",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
     "price": "₹5,000",
@@ -161,9 +156,7 @@ export const finalIndoreOfficeCards = [
   },
   {
     "id": 8,
-    "name": "Workvistar Vijay Nagar",
-    "badge": "Near Metro",
-    "rating": 4.5,
+    "name": "Workvistar",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
     "price": "₹5,000",
@@ -183,9 +176,7 @@ export const finalIndoreOfficeCards = [
 export const featuredIndoreOfficeCards = [
   {
     "id": 9,
-    "name": "YBox.Work Vijay Nagar",
-    "badge": "Verified",
-    "rating": 4.5,
+    "name": "YBox.Work",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
     "price": "₹4,500",
@@ -202,9 +193,7 @@ export const featuredIndoreOfficeCards = [
   },
   {
     "id": 10,
-    "name": "Virtual Coworks Vijay Nagar",
-    "badge": "Popular",
-    "rating": 4.5,
+    "name": "Virtual Coworks",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
     "price": "₹4,000",
@@ -224,9 +213,7 @@ export const featuredIndoreOfficeCards = [
 export const pageTwoIndoreOfficeCards = [
   {
     "id": 11,
-    "name": "Paskola Vijay Nagar",
-    "badge": "Special Offer",
-    "rating": 4.5,
+    "name": "Paskola",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
     "price": "₹3,000",
@@ -243,9 +230,7 @@ export const pageTwoIndoreOfficeCards = [
   },
   {
     "id": 12,
-    "name": "Worksthan AB Road",
-    "badge": "Near Metro",
-    "rating": 4.5,
+    "name": "Worksthan",
     "area": "AB Road",
     "location": "AB Road, Indore",
     "price": "₹4,500",
@@ -264,9 +249,7 @@ export const pageTwoIndoreOfficeCards = [
   },
   {
     "id": 13,
-    "name": "BIZZI.B Vijay Nagar",
-    "badge": "Verified",
-    "rating": 4.5,
+    "name": "BIZZI.B",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
     "price": "₹8,000",
@@ -286,9 +269,7 @@ export const pageTwoIndoreOfficeCards = [
 export const pageTwoMoreIndoreOfficeCards = [
   {
     "id": 14,
-    "name": "The Dice AB Road",
-    "badge": "Popular",
-    "rating": 4.5,
+    "name": "The Dice",
     "area": "AB Road",
     "location": "AB Road, Indore",
     "price": "₹5,999",
@@ -308,9 +289,7 @@ export const pageTwoMoreIndoreOfficeCards = [
   },
   {
     "id": 15,
-    "name": "SPADIFY CO-WORK Vijay Nagar",
-    "badge": "Special Offer",
-    "rating": 4.5,
+    "name": "SPADIFY CO-WORK",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
     "price": "₹3,000",
@@ -330,9 +309,7 @@ export const pageTwoMoreIndoreOfficeCards = [
 export const pageTwoFinalIndoreOfficeCards = [
   {
     "id": 16,
-    "name": "Cliffton Corporate Vijay Nagar",
-    "badge": "Premium",
-    "rating": 4.5,
+    "name": "Cliffton Corporate",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
     "price": "₹10,000",
@@ -352,8 +329,6 @@ export const pageTwoFinalIndoreOfficeCards = [
   {
     "id": 17,
     "name": "Nexus Spaces AB Road",
-    "badge": "Verified",
-    "rating": 4.5,
     "area": "AB Road",
     "location": "AB Road, Indore",
     "price": "₹6,000",
@@ -374,8 +349,6 @@ export const pageTwoFeaturedIndoreOfficeCards = [
   {
     "id": 18,
     "name": "Nexus Spaces South Tukoganj",
-    "badge": "Popular",
-    "rating": 4.5,
     "area": "South Tukoganj",
     "location": "South Tukoganj, Indore",
     "price": "₹7,500",
@@ -392,11 +365,10 @@ export const pageTwoFeaturedIndoreOfficeCards = [
   },
   {
     "id": 19,
-    "name": "The Address Indore",
-    "badge": "Special Offer",
+    "name": "The Address - Your Destination of Growth Indore",
     "rating": 4.6,
-    "area": "Ravindra Nagar",
-    "location": "Ravindra Nagar, Indore",
+    "area": "Vijay Nagar",
+    "location": "Vijay Nagar, Indore",
     "price": "₹7,000",
     "period": "/ Month",
     "priceFormatted": "₹7,000 / Month",
@@ -415,9 +387,7 @@ export const pageTwoFeaturedIndoreOfficeCards = [
 export const pageThreeIndoreOfficeCards = [
   {
     "id": 20,
-    "name": "Melange Marketing Jawahar Marg",
-    "badge": "Premium",
-    "rating": 4.5,
+    "name": "Melange Marketing",
     "area": "Jawahar Marg",
     "location": "Jawahar Marg, Indore",
     "price": "₹9,900",
@@ -433,9 +403,7 @@ export const pageThreeIndoreOfficeCards = [
   },
   {
     "id": 21,
-    "name": "Zero Gravito Vijay Nagar",
-    "badge": "Verified",
-    "rating": 4.5,
+    "name": "Zero Gravito",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
     "price": "₹6,000",
@@ -452,11 +420,9 @@ export const pageThreeIndoreOfficeCards = [
   },
   {
     "id": 22,
-    "name": "Karyasthal AB Road",
-    "badge": "Popular",
-    "rating": 4.5,
-    "area": "AB Road",
-    "location": "AB Road, Indore",
+    "name": "Karyasthal",
+    "area": "Bhawarkua",
+    "location": "Bhawarkua, Indore",
     "price": "₹7,000",
     "period": "/ Month",
     "priceFormatted": "₹7,000 / Month",
@@ -477,9 +443,7 @@ export const pageThreeIndoreOfficeCards = [
 export const pageThreeMoreIndoreOfficeCards = [
   {
     "id": 23,
-    "name": "Youth Cowork M.G. Road",
-    "badge": "Special Offer",
-    "rating": 4.5,
+    "name": "Youth Cowork",
     "area": "M.G. Road",
     "location": "M.G. Road, Indore",
     "price": "₹3,999",
@@ -497,11 +461,9 @@ export const pageThreeMoreIndoreOfficeCards = [
   },
   {
     "id": 24,
-    "name": "Workbox LIC Colony",
-    "badge": "Near Metro",
-    "rating": 4.5,
-    "area": "LIC Colony",
-    "location": "LIC Colony, Indore",
+    "name": "Workbox",
+    "area": "Vijay Nagar",
+    "location": "Vijay Nagar, Indore",
     "price": "₹5,000",
     "period": "/ Month",
     "priceFormatted": "₹5,000 / Month",
@@ -522,9 +484,7 @@ export const pageThreeMoreIndoreOfficeCards = [
 export const pageThreeFinalIndoreOfficeCards = [
   {
     "id": 25,
-    "name": "Stark Spaces AB Road",
-    "badge": "Premium",
-    "rating": 4.5,
+    "name": "Stark Spaces",
     "area": "AB Road",
     "location": "AB Road, Indore",
     "price": "₹9,999",
@@ -541,14 +501,12 @@ export const pageThreeFinalIndoreOfficeCards = [
   },
   {
     "id": 26,
-    "name": "Melange Coworks Jawahar Marg",
-    "badge": "Popular",
-    "rating": 4.5,
+    "name": "Melange Coworks",
     "area": "Jawahar Marg",
     "location": "Jawahar Marg, Indore",
-    "price": "₹3,000",
+    "price": "₹2,000",
     "period": "/ Month",
-    "priceFormatted": "₹3,000 / Month",
+    "priceFormatted": "₹2,000 / Month",
     "ctaText": "Get Quote",
     "images": [
       "https://img.cofynd.com/images/latest_images_2024/0d8fae158a7e8065c877c524557e3fdb2cf8ea35.webp",
@@ -563,7 +521,6 @@ export const pageThreeFeaturedIndoreOfficeCards = [
   {
     "id": 27,
     "name": "Incuspaze Apollo Premier",
-    "badge": "Special Offer",
     "rating": 4.5,
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -585,7 +542,6 @@ export const pageThreeFeaturedIndoreOfficeCards = [
   {
     "id": 28,
     "name": "Incuspaze Princess Business Skyline",
-    "badge": "Near Metro",
     "rating": 4.5,
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -607,9 +563,7 @@ export const pageThreeFeaturedIndoreOfficeCards = [
 export const pageFourIndoreOfficeCards = [
   {
     "id": 29,
-    "name": "Estancia Pro Working Space",
-    "badge": "Verified",
-    "rating": 4.5,
+    "name": "Estancia Pro working space",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
     "price": "₹4,300",
@@ -626,8 +580,7 @@ export const pageFourIndoreOfficeCards = [
   },
   {
     "id": 30,
-    "name": "Awfis Winway World Offices Vijay Nagar",
-    "badge": "Premium",
+    "name": "Awfis Winway World Offices",
     "rating": 4.8,
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -647,10 +600,8 @@ export const pageFourIndoreOfficeCards = [
   {
     "id": 31,
     "name": "TechWinners InfoSystem CoWorking Space",
-    "badge": "Special Offer",
-    "rating": 4.5,
-    "area": "Ratna Lok Colony",
-    "location": "Ratna Lok Colony, Indore",
+    "area": "Scheme No 54",
+    "location": "Scheme No 54, Indore",
     "price": "₹2,299",
     "period": "/ Month",
     "priceFormatted": "₹2,299 / Month",
@@ -668,11 +619,9 @@ export const pageFourIndoreOfficeCards = [
 export const pageFourMoreIndoreOfficeCards = [
   {
     "id": 32,
-    "name": "CO-Workspace AB Road",
-    "badge": "Near Metro",
-    "rating": 4.5,
-    "area": "AB Road",
-    "location": "AB Road, Indore",
+    "name": "CO-Workspace",
+    "area": "Bhawarkua",
+    "location": "Bhawarkua, Indore",
     "price": "₹6,000",
     "period": "/ Month",
     "priceFormatted": "₹6,000 / Month",
@@ -687,11 +636,9 @@ export const pageFourMoreIndoreOfficeCards = [
   },
   {
     "id": 33,
-    "name": "Nextcoworks Office Space AB Road",
-    "badge": "Verified",
-    "rating": 4.5,
-    "area": "AB Road",
-    "location": "AB Road, Indore",
+    "name": "Nextcoworks Office Space",
+    "area": "Vijay Nagar",
+    "location": "Vijay Nagar, Indore",
     "price": "₹5,500",
     "period": "/ Month",
     "priceFormatted": "₹5,500 / Month",
@@ -711,11 +658,9 @@ export const pageFourMoreIndoreOfficeCards = [
 export const pageFourFinalIndoreOfficeCards = [
   {
     "id": 34,
-    "name": "Workdesq Coworking AB Road",
-    "badge": "Popular",
-    "rating": 4.5,
-    "area": "AB Road",
-    "location": "AB Road, Indore",
+    "name": "Workdesq Coworking",
+    "area": "Mahalaxmi Nagar",
+    "location": "Mahalaxmi Nagar, Indore",
     "price": "₹4,200",
     "period": "/ Month",
     "priceFormatted": "₹4,200 / Month",
@@ -731,9 +676,7 @@ export const pageFourFinalIndoreOfficeCards = [
   },
   {
     "id": 35,
-    "name": "ThinkNTap Coworks AB Road",
-    "badge": "Special Offer",
-    "rating": 4.5,
+    "name": "ThinkNTap Coworks",
     "area": "AB Road",
     "location": "AB Road, Indore",
     "price": "₹6,000",
@@ -753,11 +696,11 @@ export const pageFourFinalIndoreOfficeCards = [
 export const pageFourFeaturedIndoreOfficeCards = [
   {
     "id": 36,
-    "name": "Flexihub AB Road",
-    "badge": "Near Metro",
+    "name": "Flexihub",
+    "badge": "Special Offer",
     "rating": 4.9,
-    "area": "AB Road",
-    "location": "AB Road, Indore",
+    "area": "Bhawarkua",
+    "location": "Bhawarkua, Indore",
     "price": "₹6,499",
     "period": "/ Month",
     "priceFormatted": "₹6,499 / Month",
@@ -772,9 +715,7 @@ export const pageFourFeaturedIndoreOfficeCards = [
   },
   {
     "id": 37,
-    "name": "Space X Vijay Nagar",
-    "badge": "Verified",
-    "rating": 4.5,
+    "name": "Space X",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
     "price": "₹6,499",
@@ -831,7 +772,6 @@ export const areaExtraOfficeCards = {
     {
       "id": 3,
       "name": "Incuspaze Princes Business Skyline",
-      "badge": "Special Offer",
       "rating": 4.5,
       "area": "AB Road",
       "location": "AB Road, Indore",
@@ -850,7 +790,6 @@ export const areaExtraOfficeCards = {
     {
       "id": 5,
       "name": "Incuspaze Metro Tower",
-      "badge": "Verified",
       "rating": 4.5,
       "area": "AB Road",
       "location": "AB Road, Indore",
@@ -868,9 +807,7 @@ export const areaExtraOfficeCards = {
     },
     {
       "id": 6,
-      "name": "Adited Coworking 1.0 AB Road",
-      "badge": "Popular",
-      "rating": 4.5,
+      "name": "Adited Coworking 1.0",
       "area": "AB Road",
       "location": "AB Road, Indore",
       "price": "₹5,999",
@@ -887,9 +824,7 @@ export const areaExtraOfficeCards = {
     },
     {
       "id": 12,
-      "name": "Worksthan AB Road",
-      "badge": "Near Metro",
-      "rating": 4.5,
+      "name": "Worksthan",
       "area": "AB Road",
       "location": "AB Road, Indore",
       "price": "₹4,500",
@@ -908,9 +843,7 @@ export const areaExtraOfficeCards = {
     },
     {
       "id": 14,
-      "name": "The Dice AB Road",
-      "badge": "Popular",
-      "rating": 4.5,
+      "name": "The Dice",
       "area": "AB Road",
       "location": "AB Road, Indore",
       "price": "₹5,999",
@@ -931,8 +864,6 @@ export const areaExtraOfficeCards = {
     {
       "id": 17,
       "name": "Nexus Spaces AB Road",
-      "badge": "Verified",
-      "rating": 4.5,
       "area": "AB Road",
       "location": "AB Road, Indore",
       "price": "₹6,000",
@@ -948,32 +879,8 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 22,
-      "name": "Karyasthal AB Road",
-      "badge": "Popular",
-      "rating": 4.5,
-      "area": "AB Road",
-      "location": "AB Road, Indore",
-      "price": "₹7,000",
-      "period": "/ Month",
-      "priceFormatted": "₹7,000 / Month",
-      "ctaText": "Get Quote",
-      "images": [
-        "https://img.cofynd.com/images/original/e786a2ce11b5a1c43fb64ba7e444a03396994c74.jpg",
-        "https://img.cofynd.com/images/original/c75929be3c06514af1adc8365463ef4a8f8b9d84.jpg",
-        "https://img.cofynd.com/images/original/694e8f7f66aa73cf9034d05007d8a7a1efff0429.jpg",
-        "https://img.cofynd.com/images/original/d91ae660f43ccda386f18dc2f9e8338b4effba21.jpg",
-        "https://img.cofynd.com/images/original/88c7d38f9b30a61ac37cfa3c5b340fb58541960f.jpg",
-        "https://img.cofynd.com/images/original/8232c5e40a297f3cbda881b60d434773b630d75b.jpg",
-        "https://img.cofynd.com/images/original/b52dcb1f4abd0e138aeaad7787892c25feefb637.jpg",
-        "https://img.cofynd.com/images/original/2d1753cd6f0a1cbdf02000540f9ea0a819a7b6b7.jpg"
-      ]
-    },
-    {
       "id": 25,
-      "name": "Stark Spaces AB Road",
-      "badge": "Premium",
-      "rating": 4.5,
+      "name": "Stark Spaces",
       "area": "AB Road",
       "location": "AB Road, Indore",
       "price": "₹9,999",
@@ -989,70 +896,8 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
-      "id": 32,
-      "name": "CO-Workspace AB Road",
-      "badge": "Near Metro",
-      "rating": 4.5,
-      "area": "AB Road",
-      "location": "AB Road, Indore",
-      "price": "₹6,000",
-      "period": "/ Month",
-      "priceFormatted": "₹6,000 / Month",
-      "ctaText": "Get Quote",
-      "images": [
-        "https://img.cofynd.com/images/latest_images_2024/c9cda30d53f4cfcb8b13f05d6ba54143fad2b426.webp",
-        "https://img.cofynd.com/images/latest_images_2024/f0586d5089a555475c85eba4fcce60db86e68e16.webp",
-        "https://img.cofynd.com/images/latest_images_2024/9cd1696da66532fa354c5cf3c4f392c0056cb8fb.webp",
-        "https://img.cofynd.com/images/latest_images_2024/5c1108b7d39bc868465d4152acbb12456c9655b6.webp",
-        "https://img.cofynd.com/images/latest_images_2024/b71cc51e2026be38bb68422b581e061f21610bb6.webp"
-      ]
-    },
-    {
-      "id": 33,
-      "name": "Nextcoworks Office Space AB Road",
-      "badge": "Verified",
-      "rating": 4.5,
-      "area": "AB Road",
-      "location": "AB Road, Indore",
-      "price": "₹5,500",
-      "period": "/ Month",
-      "priceFormatted": "₹5,500 / Month",
-      "ctaText": "Get Quote",
-      "images": [
-        "https://img.cofynd.com/images/latest_images_2024/22b6e09dac408e41b0e03d7abc0ca9252ed3ff1a.webp",
-        "https://img.cofynd.com/images/latest_images_2024/108db6f0cd414c1c29e69596bc26d91ee7813378.webp",
-        "https://img.cofynd.com/images/latest_images_2024/dc9ecb32cee01b64de5c3956b6c43ff873bf7e94.webp",
-        "https://img.cofynd.com/images/latest_images_2024/152ad39a82df6068c4ca2320ed6b93c6ed1469d3.webp",
-        "https://img.cofynd.com/images/latest_images_2024/8a12c40f29db633122ce7d2a95d588be2094c931.webp",
-        "https://img.cofynd.com/images/latest_images_2024/54cbf0b725256b9ae2b880f7e5fa08a905a4cd51.webp",
-        "https://img.cofynd.com/images/latest_images_2024/688174d23afefd0674def9142b39cf80e2d7caac.webp"
-      ]
-    },
-    {
-      "id": 34,
-      "name": "Workdesq Coworking AB Road",
-      "badge": "Popular",
-      "rating": 4.5,
-      "area": "AB Road",
-      "location": "AB Road, Indore",
-      "price": "₹4,200",
-      "period": "/ Month",
-      "priceFormatted": "₹4,200 / Month",
-      "ctaText": "Get Quote",
-      "images": [
-        "https://img.cofynd.com/images/latest_images_2024/c3acdfb0071397ea73ebd552b8aea0ee1d47a21e.webp",
-        "https://img.cofynd.com/images/latest_images_2024/ff03f114db9ed782d1346b14f7bfd2c3b1230a5b.webp",
-        "https://img.cofynd.com/images/latest_images_2024/35711c4a0a20d73a2053d512c63091f0e73c6883.webp",
-        "https://img.cofynd.com/images/latest_images_2024/fddadef1c2606631daa0e9e538af70fda2658c68.webp",
-        "https://img.cofynd.com/images/latest_images_2024/fecd9b7128c0336e495995298b28c2e50be8fbab.webp",
-        "https://img.cofynd.com/images/latest_images_2024/aeae00d0fcda1d8193020483efaa3a3fab306560.webp"
-      ]
-    },
-    {
       "id": 35,
-      "name": "ThinkNTap Coworks AB Road",
-      "badge": "Special Offer",
-      "rating": 4.5,
+      "name": "ThinkNTap Coworks",
       "area": "AB Road",
       "location": "AB Road, Indore",
       "price": "₹6,000",
@@ -1066,100 +911,15 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/d41dc37ce23a8ad06ff4d6b45aab7fc4bbecbcd2.webp",
         "https://img.cofynd.com/images/latest_images_2024/1ae7180d916061d4c13e3a8c25ee13966ca3ee98.webp"
       ]
-    },
-    {
-      "id": 36,
-      "name": "Flexihub AB Road",
-      "badge": "Near Metro",
-      "rating": 4.9,
-      "area": "AB Road",
-      "location": "AB Road, Indore",
-      "price": "₹6,499",
-      "period": "/ Month",
-      "priceFormatted": "₹6,499 / Month",
-      "ctaText": "Get Quote",
-      "images": [
-        "https://img.cofynd.com/images/latest_images_2024/b40f2bb0f48a2581e0755bcb43ce053763e88b51.webp",
-        "https://img.cofynd.com/images/latest_images_2024/966e87074b63806d64518104af3d7816db424ee4.webp",
-        "https://img.cofynd.com/images/latest_images_2024/c41422700426242646f2ec615a3ba475a57dd7e8.webp",
-        "https://img.cofynd.com/images/latest_images_2024/360eac5f552171011922d7ae702ed9845cd71933.webp",
-        "https://img.cofynd.com/images/latest_images_2024/7dbc49373022c7d2aa0ea4dfb636e421f54e8c62.webp"
-      ]
     }
   ],
-  "LIC Colony": [
-    {
-      "id": 24,
-      "name": "Workbox LIC Colony",
-      "badge": "Near Metro",
-      "rating": 4.5,
-      "area": "LIC Colony",
-      "location": "LIC Colony, Indore",
-      "price": "₹5,000",
-      "period": "/ Month",
-      "priceFormatted": "₹5,000 / Month",
-      "ctaText": "Get Quote",
-      "images": [
-        "https://img.cofynd.com/images/original/b744d4e7674732f085d32142291f7221f3d31816.jpg",
-        "https://img.cofynd.com/images/original/7a1d3e7c164c3a49b3c645e5b68da5d800f13129.jpg",
-        "https://img.cofynd.com/images/original/ca421a13a7982aa8fda25ee5b08ae3f948e8a1af.jpg",
-        "https://img.cofynd.com/images/original/5fdd3a1ab4cb02d08cb9d73bf7bacff445419a7c.jpg",
-        "https://img.cofynd.com/images/original/07bce204fef177adc23e76bf1030e37b443a1812.jpg",
-        "https://img.cofynd.com/images/original/5abacbdcd580d8461a5ac0927ff591fa9632fbba.jpg",
-        "https://img.cofynd.com/images/original/67ffcf0c6fbb56d5a3549aa81efbde0105ea5a56.jpg",
-        "https://img.cofynd.com/images/original/78760e5acf688fdae5f883521077ebff6c55ea88.jpg"
-      ]
-    }
-  ],
-  "Ratna Lok Colony": [
-    {
-      "id": 31,
-      "name": "TechWinners InfoSystem CoWorking Space",
-      "badge": "Special Offer",
-      "rating": 4.5,
-      "area": "Ratna Lok Colony",
-      "location": "Ratna Lok Colony, Indore",
-      "price": "₹2,299",
-      "period": "/ Month",
-      "priceFormatted": "₹2,299 / Month",
-      "ctaText": "Get Quote",
-      "images": [
-        "https://img.cofynd.com/images/latest_images_2024/1d069318286d599f6196fff6130d5cb6a6932d3f.webp",
-        "https://img.cofynd.com/images/latest_images_2024/749bf7db8ff110844101fddae930b3ad447abe6f.webp",
-        "https://img.cofynd.com/images/latest_images_2024/101d1a81da08198ff70f89e72497ffa076a0356f.webp",
-        "https://img.cofynd.com/images/latest_images_2024/dd862340b62ce2bf0b9af40e07bf50c01182a6a5.webp",
-        "https://img.cofynd.com/images/latest_images_2024/883831828a32a4e01e0561f94db703a2b519ea30.webp"
-      ]
-    }
-  ],
-  "Ravindra Nagar": [
-    {
-      "id": 19,
-      "name": "The Address Indore",
-      "badge": "Special Offer",
-      "rating": 4.6,
-      "area": "Ravindra Nagar",
-      "location": "Ravindra Nagar, Indore",
-      "price": "₹7,000",
-      "period": "/ Month",
-      "priceFormatted": "₹7,000 / Month",
-      "ctaText": "Get Quote",
-      "images": [
-        "https://img.cofynd.com/images/original/2e9fec93159bdae59bf162164bbc6f28b58e801d.jpg",
-        "https://img.cofynd.com/images/original/b08b6d8e96babb9f2addde2375eb243f96482ca2.jpg",
-        "https://img.cofynd.com/images/original/967b7ad5eaf4b7437386a714eafafd2b66264331.jpg",
-        "https://img.cofynd.com/images/original/e868ca754a3d772277d52f8ac64e8c4b67460438.jpg",
-        "https://img.cofynd.com/images/original/aba8baa1b109a820ee9ec1d0338fc3a50abe5aed.jpg",
-        "https://img.cofynd.com/images/original/dad736cea1cdf73a2e865fd2d865148ca93bac50.jpg"
-      ]
-    }
-  ],
+  "LIC Colony": [],
+  "Ratna Lok Colony": [],
+  "Ravindra Nagar": [],
   "South Tukoganj": [
     {
       "id": 18,
       "name": "Nexus Spaces South Tukoganj",
-      "badge": "Popular",
-      "rating": 4.5,
       "area": "South Tukoganj",
       "location": "South Tukoganj, Indore",
       "price": "₹7,500",
@@ -1178,8 +938,8 @@ export const areaExtraOfficeCards = {
   "Vijay Nagar": [
     {
       "id": 1,
-      "name": "Nextcoworks Vijay Nagar",
-      "badge": "Verified",
+      "name": "Nextcoworks",
+      "badge": "Premium Coworking",
       "rating": 4.8,
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -1200,14 +960,13 @@ export const areaExtraOfficeCards = {
     },
     {
       "id": 2,
-      "name": "Incuspaze Apollo Vijay Nagar",
-      "badge": "Popular",
+      "name": "Incuspaze Apollo",
       "rating": 4.5,
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
-      "price": "₹2,499",
-      "period": "/ Month",
-      "priceFormatted": "₹2,499 / Month",
+      "price": "On Request",
+      "period": "",
+      "priceFormatted": "On Request",
       "ctaText": "Get Quote",
       "images": [
         "https://img.cofynd.com/images/original/e85426ce071a8de598c3d0e7f16adb4aaf056d13.jpg",
@@ -1221,7 +980,6 @@ export const areaExtraOfficeCards = {
     {
       "id": 4,
       "name": "Incuspaze Brilliant Platina",
-      "badge": "Near Metro",
       "rating": 4.5,
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -1239,9 +997,7 @@ export const areaExtraOfficeCards = {
     },
     {
       "id": 7,
-      "name": "Work Jar Coworking Vijay Nagar",
-      "badge": "Special Offer",
-      "rating": 4.5,
+      "name": "Work Jar Coworking",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
       "price": "₹5,000",
@@ -1258,9 +1014,7 @@ export const areaExtraOfficeCards = {
     },
     {
       "id": 8,
-      "name": "Workvistar Vijay Nagar",
-      "badge": "Near Metro",
-      "rating": 4.5,
+      "name": "Workvistar",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
       "price": "₹5,000",
@@ -1277,9 +1031,7 @@ export const areaExtraOfficeCards = {
     },
     {
       "id": 9,
-      "name": "YBox.Work Vijay Nagar",
-      "badge": "Verified",
-      "rating": 4.5,
+      "name": "YBox.Work",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
       "price": "₹4,500",
@@ -1296,9 +1048,7 @@ export const areaExtraOfficeCards = {
     },
     {
       "id": 10,
-      "name": "Virtual Coworks Vijay Nagar",
-      "badge": "Popular",
-      "rating": 4.5,
+      "name": "Virtual Coworks",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
       "price": "₹4,000",
@@ -1315,9 +1065,7 @@ export const areaExtraOfficeCards = {
     },
     {
       "id": 11,
-      "name": "Paskola Vijay Nagar",
-      "badge": "Special Offer",
-      "rating": 4.5,
+      "name": "Paskola",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
       "price": "₹3,000",
@@ -1334,9 +1082,7 @@ export const areaExtraOfficeCards = {
     },
     {
       "id": 13,
-      "name": "BIZZI.B Vijay Nagar",
-      "badge": "Verified",
-      "rating": 4.5,
+      "name": "BIZZI.B",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
       "price": "₹8,000",
@@ -1353,9 +1099,7 @@ export const areaExtraOfficeCards = {
     },
     {
       "id": 15,
-      "name": "SPADIFY CO-WORK Vijay Nagar",
-      "badge": "Special Offer",
-      "rating": 4.5,
+      "name": "SPADIFY CO-WORK",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
       "price": "₹3,000",
@@ -1372,9 +1116,7 @@ export const areaExtraOfficeCards = {
     },
     {
       "id": 16,
-      "name": "Cliffton Corporate Vijay Nagar",
-      "badge": "Premium",
-      "rating": 4.5,
+      "name": "Cliffton Corporate",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
       "price": "₹10,000",
@@ -1392,10 +1134,27 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
+      "id": 19,
+      "name": "The Address - Your Destination of Growth Indore",
+      "rating": 4.6,
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹7,000",
+      "period": "/ Month",
+      "priceFormatted": "₹7,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/2e9fec93159bdae59bf162164bbc6f28b58e801d.jpg",
+        "https://img.cofynd.com/images/original/b08b6d8e96babb9f2addde2375eb243f96482ca2.jpg",
+        "https://img.cofynd.com/images/original/967b7ad5eaf4b7437386a714eafafd2b66264331.jpg",
+        "https://img.cofynd.com/images/original/e868ca754a3d772277d52f8ac64e8c4b67460438.jpg",
+        "https://img.cofynd.com/images/original/aba8baa1b109a820ee9ec1d0338fc3a50abe5aed.jpg",
+        "https://img.cofynd.com/images/original/dad736cea1cdf73a2e865fd2d865148ca93bac50.jpg"
+      ]
+    },
+    {
       "id": 21,
-      "name": "Zero Gravito Vijay Nagar",
-      "badge": "Verified",
-      "rating": 4.5,
+      "name": "Zero Gravito",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
       "price": "₹6,000",
@@ -1411,9 +1170,28 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
+      "id": 24,
+      "name": "Workbox",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹5,000",
+      "period": "/ Month",
+      "priceFormatted": "₹5,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/b744d4e7674732f085d32142291f7221f3d31816.jpg",
+        "https://img.cofynd.com/images/original/7a1d3e7c164c3a49b3c645e5b68da5d800f13129.jpg",
+        "https://img.cofynd.com/images/original/ca421a13a7982aa8fda25ee5b08ae3f948e8a1af.jpg",
+        "https://img.cofynd.com/images/original/5fdd3a1ab4cb02d08cb9d73bf7bacff445419a7c.jpg",
+        "https://img.cofynd.com/images/original/07bce204fef177adc23e76bf1030e37b443a1812.jpg",
+        "https://img.cofynd.com/images/original/5abacbdcd580d8461a5ac0927ff591fa9632fbba.jpg",
+        "https://img.cofynd.com/images/original/67ffcf0c6fbb56d5a3549aa81efbde0105ea5a56.jpg",
+        "https://img.cofynd.com/images/original/78760e5acf688fdae5f883521077ebff6c55ea88.jpg"
+      ]
+    },
+    {
       "id": 27,
       "name": "Incuspaze Apollo Premier",
-      "badge": "Special Offer",
       "rating": 4.5,
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -1435,7 +1213,6 @@ export const areaExtraOfficeCards = {
     {
       "id": 28,
       "name": "Incuspaze Princess Business Skyline",
-      "badge": "Near Metro",
       "rating": 4.5,
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -1454,9 +1231,7 @@ export const areaExtraOfficeCards = {
     },
     {
       "id": 29,
-      "name": "Estancia Pro Working Space",
-      "badge": "Verified",
-      "rating": 4.5,
+      "name": "Estancia Pro working space",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
       "price": "₹4,300",
@@ -1473,8 +1248,7 @@ export const areaExtraOfficeCards = {
     },
     {
       "id": 30,
-      "name": "Awfis Winway World Offices Vijay Nagar",
-      "badge": "Premium",
+      "name": "Awfis Winway World Offices",
       "rating": 4.8,
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
@@ -1492,10 +1266,27 @@ export const areaExtraOfficeCards = {
       ]
     },
     {
+      "id": 33,
+      "name": "Nextcoworks Office Space",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹5,500",
+      "period": "/ Month",
+      "priceFormatted": "₹5,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/22b6e09dac408e41b0e03d7abc0ca9252ed3ff1a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/108db6f0cd414c1c29e69596bc26d91ee7813378.webp",
+        "https://img.cofynd.com/images/latest_images_2024/dc9ecb32cee01b64de5c3956b6c43ff873bf7e94.webp",
+        "https://img.cofynd.com/images/latest_images_2024/152ad39a82df6068c4ca2320ed6b93c6ed1469d3.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8a12c40f29db633122ce7d2a95d588be2094c931.webp",
+        "https://img.cofynd.com/images/latest_images_2024/54cbf0b725256b9ae2b880f7e5fa08a905a4cd51.webp",
+        "https://img.cofynd.com/images/latest_images_2024/688174d23afefd0674def9142b39cf80e2d7caac.webp"
+      ]
+    },
+    {
       "id": 37,
-      "name": "Space X Vijay Nagar",
-      "badge": "Verified",
-      "rating": 4.5,
+      "name": "Space X",
       "area": "Vijay Nagar",
       "location": "Vijay Nagar, Indore",
       "price": "₹6,499",
@@ -1517,9 +1308,7 @@ export const areaExtraOfficeCards = {
   "M.G. Road": [
     {
       "id": 23,
-      "name": "Youth Cowork M.G. Road",
-      "badge": "Special Offer",
-      "rating": 4.5,
+      "name": "Youth Cowork",
       "area": "M.G. Road",
       "location": "M.G. Road, Indore",
       "price": "₹3,999",
@@ -1539,9 +1328,7 @@ export const areaExtraOfficeCards = {
   "Jawahar Marg": [
     {
       "id": 20,
-      "name": "Melange Marketing Jawahar Marg",
-      "badge": "Premium",
-      "rating": 4.5,
+      "name": "Melange Marketing",
       "area": "Jawahar Marg",
       "location": "Jawahar Marg, Indore",
       "price": "₹9,900",
@@ -1557,20 +1344,115 @@ export const areaExtraOfficeCards = {
     },
     {
       "id": 26,
-      "name": "Melange Coworks Jawahar Marg",
-      "badge": "Popular",
-      "rating": 4.5,
+      "name": "Melange Coworks",
       "area": "Jawahar Marg",
       "location": "Jawahar Marg, Indore",
-      "price": "₹3,000",
+      "price": "₹2,000",
       "period": "/ Month",
-      "priceFormatted": "₹3,000 / Month",
+      "priceFormatted": "₹2,000 / Month",
       "ctaText": "Get Quote",
       "images": [
         "https://img.cofynd.com/images/latest_images_2024/0d8fae158a7e8065c877c524557e3fdb2cf8ea35.webp",
         "https://img.cofynd.com/images/latest_images_2024/47b7b101f8e6b4119c669e2647b668676872e666.webp",
         "https://img.cofynd.com/images/latest_images_2024/93e67d7f8c21374da50979128a5acd6ee96a5866.webp",
         "https://img.cofynd.com/images/latest_images_2024/32386b6f439e77f07d75106df94f662238d018b9.webp"
+      ]
+    }
+  ],
+  "Bhawarkua": [
+    {
+      "id": 22,
+      "name": "Karyasthal",
+      "area": "Bhawarkua",
+      "location": "Bhawarkua, Indore",
+      "price": "₹7,000",
+      "period": "/ Month",
+      "priceFormatted": "₹7,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/e786a2ce11b5a1c43fb64ba7e444a03396994c74.jpg",
+        "https://img.cofynd.com/images/original/c75929be3c06514af1adc8365463ef4a8f8b9d84.jpg",
+        "https://img.cofynd.com/images/original/694e8f7f66aa73cf9034d05007d8a7a1efff0429.jpg",
+        "https://img.cofynd.com/images/original/d91ae660f43ccda386f18dc2f9e8338b4effba21.jpg",
+        "https://img.cofynd.com/images/original/88c7d38f9b30a61ac37cfa3c5b340fb58541960f.jpg",
+        "https://img.cofynd.com/images/original/8232c5e40a297f3cbda881b60d434773b630d75b.jpg",
+        "https://img.cofynd.com/images/original/b52dcb1f4abd0e138aeaad7787892c25feefb637.jpg",
+        "https://img.cofynd.com/images/original/2d1753cd6f0a1cbdf02000540f9ea0a819a7b6b7.jpg"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "CO-Workspace",
+      "area": "Bhawarkua",
+      "location": "Bhawarkua, Indore",
+      "price": "₹6,000",
+      "period": "/ Month",
+      "priceFormatted": "₹6,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/c9cda30d53f4cfcb8b13f05d6ba54143fad2b426.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f0586d5089a555475c85eba4fcce60db86e68e16.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9cd1696da66532fa354c5cf3c4f392c0056cb8fb.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5c1108b7d39bc868465d4152acbb12456c9655b6.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b71cc51e2026be38bb68422b581e061f21610bb6.webp"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Flexihub",
+      "badge": "Special Offer",
+      "rating": 4.9,
+      "area": "Bhawarkua",
+      "location": "Bhawarkua, Indore",
+      "price": "₹6,499",
+      "period": "/ Month",
+      "priceFormatted": "₹6,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/b40f2bb0f48a2581e0755bcb43ce053763e88b51.webp",
+        "https://img.cofynd.com/images/latest_images_2024/966e87074b63806d64518104af3d7816db424ee4.webp",
+        "https://img.cofynd.com/images/latest_images_2024/c41422700426242646f2ec615a3ba475a57dd7e8.webp",
+        "https://img.cofynd.com/images/latest_images_2024/360eac5f552171011922d7ae702ed9845cd71933.webp",
+        "https://img.cofynd.com/images/latest_images_2024/7dbc49373022c7d2aa0ea4dfb636e421f54e8c62.webp"
+      ]
+    }
+  ],
+  "Scheme No 54": [
+    {
+      "id": 31,
+      "name": "TechWinners InfoSystem CoWorking Space",
+      "area": "Scheme No 54",
+      "location": "Scheme No 54, Indore",
+      "price": "₹2,299",
+      "period": "/ Month",
+      "priceFormatted": "₹2,299 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/1d069318286d599f6196fff6130d5cb6a6932d3f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/749bf7db8ff110844101fddae930b3ad447abe6f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/101d1a81da08198ff70f89e72497ffa076a0356f.webp",
+        "https://img.cofynd.com/images/latest_images_2024/dd862340b62ce2bf0b9af40e07bf50c01182a6a5.webp",
+        "https://img.cofynd.com/images/latest_images_2024/883831828a32a4e01e0561f94db703a2b519ea30.webp"
+      ]
+    }
+  ],
+  "Mahalaxmi Nagar": [
+    {
+      "id": 34,
+      "name": "Workdesq Coworking",
+      "area": "Mahalaxmi Nagar",
+      "location": "Mahalaxmi Nagar, Indore",
+      "price": "₹4,200",
+      "period": "/ Month",
+      "priceFormatted": "₹4,200 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/c3acdfb0071397ea73ebd552b8aea0ee1d47a21e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/ff03f114db9ed782d1346b14f7bfd2c3b1230a5b.webp",
+        "https://img.cofynd.com/images/latest_images_2024/35711c4a0a20d73a2053d512c63091f0e73c6883.webp",
+        "https://img.cofynd.com/images/latest_images_2024/fddadef1c2606631daa0e9e538af70fda2658c68.webp",
+        "https://img.cofynd.com/images/latest_images_2024/fecd9b7128c0336e495995298b28c2e50be8fbab.webp",
+        "https://img.cofynd.com/images/latest_images_2024/aeae00d0fcda1d8193020483efaa3a3fab306560.webp"
       ]
     }
   ]
@@ -1580,8 +1462,8 @@ export const areaExtraOfficeCards = {
 export const similarIndoreOfficeCards = [
   {
     "id": 1,
-    "name": "Nextcoworks Vijay Nagar",
-    "badge": "Verified",
+    "name": "Nextcoworks",
+    "badge": "Premium Coworking",
     "rating": 4.8,
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -1602,14 +1484,13 @@ export const similarIndoreOfficeCards = [
   },
   {
     "id": 2,
-    "name": "Incuspaze Apollo Vijay Nagar",
-    "badge": "Popular",
+    "name": "Incuspaze Apollo",
     "rating": 4.5,
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
-    "price": "₹2,499",
-    "period": "/ Month",
-    "priceFormatted": "₹2,499 / Month",
+    "price": "On Request",
+    "period": "",
+    "priceFormatted": "On Request",
     "ctaText": "Get Quote",
     "images": [
       "https://img.cofynd.com/images/original/e85426ce071a8de598c3d0e7f16adb4aaf056d13.jpg",
@@ -1623,7 +1504,6 @@ export const similarIndoreOfficeCards = [
   {
     "id": 3,
     "name": "Incuspaze Princes Business Skyline",
-    "badge": "Special Offer",
     "rating": 4.5,
     "area": "AB Road",
     "location": "AB Road, Indore",
@@ -1642,7 +1522,6 @@ export const similarIndoreOfficeCards = [
   {
     "id": 4,
     "name": "Incuspaze Brilliant Platina",
-    "badge": "Near Metro",
     "rating": 4.5,
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
@@ -1661,7 +1540,6 @@ export const similarIndoreOfficeCards = [
   {
     "id": 5,
     "name": "Incuspaze Metro Tower",
-    "badge": "Verified",
     "rating": 4.5,
     "area": "AB Road",
     "location": "AB Road, Indore",
@@ -1679,9 +1557,7 @@ export const similarIndoreOfficeCards = [
   },
   {
     "id": 6,
-    "name": "Adited Coworking 1.0 AB Road",
-    "badge": "Popular",
-    "rating": 4.5,
+    "name": "Adited Coworking 1.0",
     "area": "AB Road",
     "location": "AB Road, Indore",
     "price": "₹5,999",
@@ -1698,9 +1574,7 @@ export const similarIndoreOfficeCards = [
   },
   {
     "id": 7,
-    "name": "Work Jar Coworking Vijay Nagar",
-    "badge": "Special Offer",
-    "rating": 4.5,
+    "name": "Work Jar Coworking",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
     "price": "₹5,000",
@@ -1717,9 +1591,7 @@ export const similarIndoreOfficeCards = [
   },
   {
     "id": 8,
-    "name": "Workvistar Vijay Nagar",
-    "badge": "Near Metro",
-    "rating": 4.5,
+    "name": "Workvistar",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
     "price": "₹5,000",
@@ -1736,9 +1608,7 @@ export const similarIndoreOfficeCards = [
   },
   {
     "id": 9,
-    "name": "YBox.Work Vijay Nagar",
-    "badge": "Verified",
-    "rating": 4.5,
+    "name": "YBox.Work",
     "area": "Vijay Nagar",
     "location": "Vijay Nagar, Indore",
     "price": "₹4,500",
@@ -1791,14 +1661,14 @@ export const topIndoreCoworkingLocations = [
     "id": "loc-lic-colony",
     "name": "LIC Colony",
     "title": "Coworking Space in LIC Colony",
-    "image": "https://img.cofynd.com/images/original/b744d4e7674732f085d32142291f7221f3d31816.jpg",
+    "image": "https://img.cofynd.com/images/latest_images_2024/cebdaa16c044508e7616f5a0f463c78244522044.webp",
     "ctaText": "Explore Spaces"
   },
   {
     "id": "loc-ratna-lok-colony",
     "name": "Ratna Lok Colony",
     "title": "Coworking Space in Ratna Lok Colony",
-    "image": "https://img.cofynd.com/images/latest_images_2024/1d069318286d599f6196fff6130d5cb6a6932d3f.webp",
+    "image": "https://img.cofynd.com/images/latest_images_2024/cebdaa16c044508e7616f5a0f463c78244522044.webp",
     "ctaText": "Explore Spaces"
   },
   {
@@ -1834,6 +1704,27 @@ export const topIndoreCoworkingLocations = [
     "name": "Jawahar Marg",
     "title": "Coworking Space in Jawahar Marg",
     "image": "https://img.cofynd.com/images/latest_images_2024/b7e629080ec74739e437d5e8aa5a00d77f6a0ec9.webp",
+    "ctaText": "Explore Spaces"
+  },
+  {
+    "id": "loc-bhawarkua",
+    "name": "Bhawarkua",
+    "title": "Coworking Space in Bhawarkua",
+    "image": "https://img.cofynd.com/images/original/e786a2ce11b5a1c43fb64ba7e444a03396994c74.jpg",
+    "ctaText": "Explore Spaces"
+  },
+  {
+    "id": "loc-scheme-no-54",
+    "name": "Scheme No 54",
+    "title": "Coworking Space in Scheme No 54",
+    "image": "https://img.cofynd.com/images/latest_images_2024/1d069318286d599f6196fff6130d5cb6a6932d3f.webp",
+    "ctaText": "Explore Spaces"
+  },
+  {
+    "id": "loc-mahalaxmi-nagar",
+    "name": "Mahalaxmi Nagar",
+    "title": "Coworking Space in Mahalaxmi Nagar",
+    "image": "https://img.cofynd.com/images/latest_images_2024/c3acdfb0071397ea73ebd552b8aea0ee1d47a21e.webp",
     "ctaText": "Explore Spaces"
   }
 ];

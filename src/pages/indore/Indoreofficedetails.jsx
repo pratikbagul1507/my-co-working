@@ -1015,10 +1015,12 @@ const OfficeDetail = () => {
                       <h4 className="text-xs sm:text-sm font-bold text-slate-900 truncate group-hover:text-[#007bff] transition-colors" title={item.name}>
                         {item.name}
                       </h4>
-                      <div className="flex items-center gap-1 text-xs font-bold text-amber-500 shrink-0">
-                        <span>★</span>
-                        <span className="text-slate-700 text-[11px] font-semibold">{item.rating}</span>
-                      </div>
+                      {item.rating && (
+                        <div className="flex items-center gap-1 text-xs font-bold text-amber-500 shrink-0">
+                          <span>★</span>
+                          <span className="text-slate-700 text-[11px] font-semibold">{item.rating}</span>
+                        </div>
+                      )}
                     </div>
                     <p className="text-[11px] sm:text-xs text-slate-500 truncate">
                       {item.location}

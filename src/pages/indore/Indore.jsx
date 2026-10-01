@@ -243,6 +243,7 @@ const Indore = () => {
   const matchesPrice = (card) => {
     if (!selectedPrice) return true; // No price filter active
     const priceNum = parsePrice(card.price);
+    if (!priceNum) return false; // "On Request" listings have no price to compare
     if (selectedPrice === '5000') return priceNum <= 5000;
     if (selectedPrice === '10000') return priceNum <= 10000;
     if (selectedPrice === '15000') return priceNum >= 10000;
