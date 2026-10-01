@@ -308,7 +308,7 @@ const OfficeDetail = () => {
   ];
 
   return (
-    <main className="w-full min-h-screen bg-white antialiased font-sans flex flex-col pb-16">
+    <main className="w-full min-h-screen bg-white antialiased font-sans flex flex-col pb-8">
       <div className="w-full mx-auto px-4 sm:px-6 md:px-8 lg:px-[2cm] py-3 sm:py-4 flex flex-col gap-4 sm:gap-5">
         
         {/* Breadcrumb Navigation */}
@@ -1048,7 +1048,7 @@ const OfficeDetail = () => {
         </section>
 
         {/* Section: Explore Top Coworking Locations in Bhubaneshwar */}
-        <section aria-label="Explore top coworking locations in Bhubaneshwar" className="my-10 pt-4 border-t border-slate-200/80">
+        <section aria-label="Explore top coworking locations in Bhubaneshwar" className="my-6 pt-4 border-t border-slate-200/80">
           <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-5">
             Explore Top Coworking Locations in Bhubaneshwar
           </h2>

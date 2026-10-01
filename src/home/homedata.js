@@ -181,9 +181,9 @@ export const enquiryFormConfig = {
 // Used by Homepage.jsx to render SVG icons in the "List Free" center banner
 // ============================================================================
 export const perkIconSvgPaths = {
-  enquiries: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4',
-  visibility: 'M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z',
-  growth: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6'
+  enquiries: 'M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.86 9.86 0 01-4-.83L3 20l1.3-3.9C3.48 14.86 3 13.47 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z',
+  visibility: 'M15 12a3 3 0 11-6 0 3 3 0 016 0z M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z',
+  growth: 'M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z'
 };
 
 
@@ -209,23 +209,23 @@ export const homePromotionalData = {
     perks: [
       {
         id: 'enquiries',
-        line1: 'Get',
-        line2: 'Enquiries',
+        line1: 'Get Verified',
+        line2: 'Leads & Enquiries',
         bg: 'bg-[#ffe8ec]',
         color: 'text-[#ff4b72]',
         icon: 'enquiries'
       },
       {
         id: 'visibility',
-        line1: 'Increase',
-        line2: 'Visibility',
+        line1: 'Boost Your',
+        line2: 'Online Visibility',
         bg: 'bg-[#e0f2fe]',
         color: 'text-[#0284c7]',
         icon: 'visibility'
       },
       {
         id: 'growth',
-        line1: 'Grow',
+        line1: 'Scale Up',
         line2: 'Your Business',
         bg: 'bg-[#ede9fe]',
         color: 'text-[#7c3aed]',

@@ -400,7 +400,7 @@ const Bhubaneshwar = () => {
 
       {/* Section: Additional Coworking Spaces Grid */}
       {displayedMoreSpaces.length > 0 && (
-        <section aria-label="Additional coworking spaces list" className="mt-8 sm:mt-12 mb-10 sm:mb-12">
+        <section aria-label="Additional coworking spaces list" className="mt-6 sm:mt-8 mb-6 sm:mb-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
             {displayedMoreSpaces.map((space) => (
               <OfficeCard key={space.id} space={space} />
@@ -539,7 +539,7 @@ const Bhubaneshwar = () => {
       </nav>
 
       {/* Section: Explore Top Coworking Locations in Bhubaneshwar */}
-      <section aria-label="Explore top coworking locations in Bhubaneshwar" className="my-10 pt-4 border-t border-slate-200/80">
+      <section aria-label="Explore top coworking locations in Bhubaneshwar" className="my-6 pt-4 border-t border-slate-200/80">
         <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-5">
           Explore Top Coworking Locations in Bhubaneshwar
         </h2>

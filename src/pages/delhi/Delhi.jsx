@@ -452,7 +452,7 @@ const Delhi = () => {
 
       {/* Section: Additional Coworking Spaces Grid */}
       {displayedMoreSpaces.length > 0 && (
-        <section aria-label="Additional coworking spaces list" className="mt-8 sm:mt-12 mb-10 sm:mb-12">
+        <section aria-label="Additional coworking spaces list" className="mt-6 sm:mt-8 mb-6 sm:mb-8">
           <div className="grid grid-cols-[repeat(auto-fill,minmax(270px,1fr))] gap-4 sm:gap-5">
             {displayedMoreSpaces.map((space) => (
               <OfficeCard key={space.id} space={space} />
@@ -490,7 +490,7 @@ const Delhi = () => {
 
       {/* Section: Spotlight Coworking Spaces Grid */}
       {displayedFinalSpaces.length > 0 && (
-        <section aria-label="Spotlight coworking spaces list" className="mb-12">
+        <section aria-label="Spotlight coworking spaces list" className="mb-6">
           <div className="grid grid-cols-[repeat(auto-fill,minmax(270px,1fr))] gap-4 sm:gap-5">
             {displayedFinalSpaces.map((space) => (
               <OfficeCard key={space.id} space={space} />
@@ -541,7 +541,7 @@ const Delhi = () => {
 
       {/* Section: Featured Coworking Spaces Grid */}
       {displayedFeaturedSpaces.length > 0 && (
-        <section aria-label="Featured coworking spaces list" className="mb-12">
+        <section aria-label="Featured coworking spaces list" className="mb-6">
           <div className="grid grid-cols-[repeat(auto-fill,minmax(270px,1fr))] gap-4 sm:gap-5">
             {displayedFeaturedSpaces.map((space) => (
               <OfficeCard key={space.id} space={space} />
@@ -634,7 +634,7 @@ const Delhi = () => {
       </nav>
 
       {/* Section: Explore Top Coworking Locations in Delhi */}
-      <section aria-label="Explore top coworking locations in Delhi" className="my-10 pt-4 border-t border-slate-200/80">
+      <section aria-label="Explore top coworking locations in Delhi" className="my-6 pt-4 border-t border-slate-200/80">
         <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-5">
           Explore Top Coworking Locations in Delhi
         </h2>

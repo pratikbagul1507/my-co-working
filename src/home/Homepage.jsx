@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CityGrid from '../components/city/CityGrid';
 import CityPopup from '../components/city/CityPopup';
+import virtualOfficeBg from '../assets/images/virtual-office-bg.jpg';
 
 // ============================================================================
 // DATA STORE IMPORT
@@ -176,63 +177,20 @@ const EnquiryCard = ({ heading = 'Get a Free Quote' }) => {
 // HELPER: Renders vector SVG icons for "Why choose mycoworking" features
 // ----------------------------------------------------------------------------
 const renderWhyChooseIcon = (iconType) => {
-  switch (iconType) {
-    case 'brokerage':
-      return (
-        <svg className="w-8 h-8 sm:w-9 sm:h-9 text-white shrink-0 mt-0.5" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-          <circle cx="16" cy="16" r="13" />
-          <line x1="7" y1="7" x2="25" y2="25" />
-          <path d="M12.5 11.5h6.5M12.5 14.5h5.5M12.5 11.5v6.5M15.5 14.5c1.4 0 2.5-.7 2.5-1.8s-1.1-1.7-2.5-1.7M14.5 18l3.5 4" strokeWidth="1.6" />
-        </svg>
-      );
-    case 'turnaround':
-      return (
-        <svg className="w-8 h-8 sm:w-9 sm:h-9 text-white shrink-0 mt-0.5" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-          <circle cx="16" cy="16" r="13" />
-          <path d="M12 11h8M12 21h8M13 11c0 3 3 4.5 3 5s-3 2-3 5M19 11c0 3-3 4.5-3 5s3 2 3 5" />
-          <circle cx="16" cy="16" r="1" fill="currentColor" stroke="none" />
-        </svg>
-      );
-    case 'network':
-      return (
-        <svg className="w-8 h-8 sm:w-9 sm:h-9 text-white shrink-0 mt-0.5" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-          <path d="M5 11l6.5-3 7 3 7.5-3v15l-7.5 3-7-3L5 26V11z" />
-          <path d="M11.5 8v15M18.5 11v15" />
-          <circle cx="9" cy="7" r="2.5" />
-          <path d="M9 9.5v2" />
-        </svg>
-      );
-    case 'consultant':
-      return (
-        <svg className="w-8 h-8 sm:w-9 sm:h-9 text-white shrink-0 mt-0.5" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-          <circle cx="12" cy="11" r="4.5" />
-          <path d="M5 25c0-4 3.2-7 7-7 1.5 0 2.8.5 3.8 1.3" />
-          <circle cx="22" cy="20" r="5" />
-          <path d="M22 17.5l.8 1.5 1.7.3-1.2 1.2.3 1.7-1.6-.8-1.6.8.3-1.7-1.2-1.2 1.7-.3.8-1.5z" fill="currentColor" stroke="none" />
-        </svg>
-      );
-    case 'ethics':
-      return (
-        <svg className="w-8 h-8 sm:w-9 sm:h-9 text-white shrink-0 mt-0.5" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-          <path d="M18.5 14l3.5-3.5a2.5 2.5 0 0 1 3.5 3.5L22 17.5" />
-          <path d="M13.5 14l-3.5-3.5a2.5 2.5 0 0 0-3.5 3.5L10 17.5" />
-          <path d="M11.5 15.5l4 4a2 2 0 0 0 2.8 0l3.7-3.7" />
-          <path d="M8.5 18.5l3.5 3.5a3 3 0 0 0 4.2 0L20 18.2" />
-          <path d="M5.5 21.5l3 3a4 4 0 0 0 5.6 0L17 21.7" />
-        </svg>
-      );
-    case 'design':
-      return (
-        <svg className="w-8 h-8 sm:w-9 sm:h-9 text-white shrink-0 mt-0.5" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-          <rect x="5" y="6" width="22" height="20" rx="2.5" />
-          <line x1="16" y1="6" x2="16" y2="26" />
-          <line x1="16" y1="16" x2="27" y2="16" />
-          <line x1="5" y1="16" x2="16" y2="16" />
-        </svg>
-      );
-    default:
-      return null;
-  }
+  const paths = {
+    brokerage: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
+    turnaround: 'M13 10V3L4 14h7v7l9-11h-7z',
+    network: 'M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
+    consultant: 'M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z',
+    ethics: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
+    design: 'M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z'
+  };
+  if (!paths[iconType]) return null;
+  return (
+    <svg className="w-7 h-7 sm:w-8 sm:h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d={paths[iconType]} />
+    </svg>
+  );
 };
 
 const Homepage = () => {
@@ -945,7 +903,7 @@ const Homepage = () => {
       {/* =================================================================== */}
       <section 
         aria-label="Workspace Categories and Property Listing" 
-        className="w-full bg-[#f8fafc] py-8 sm:py-10 lg:py-12 px-4 sm:px-6 lg:px-8 border-t border-slate-200/60"
+        className="w-full bg-[#f8fafc] py-6 sm:py-8 px-4 sm:px-6 lg:px-8 border-t border-slate-200/60"
       >
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[300px_1fr] xl:grid-cols-[320px_1fr] gap-4 sm:gap-5 items-stretch">
@@ -956,7 +914,7 @@ const Homepage = () => {
             </div>
 
             {/* 2. RIGHT COLUMN: "List Free with MyCoworking" Promotional Banner */}
-            <div className="md:col-span-2 lg:col-span-1 relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#fff4e5] via-[#ffe9cc] to-[#ffd8a8] border border-orange-200 p-6 sm:p-8 lg:p-10 flex flex-col justify-between shadow-lg min-h-[340px]">
+            <div className="md:col-span-2 lg:col-span-1 relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#fff4e5] via-[#ffe9cc] to-[#ffd8a8] border border-orange-200 p-6 sm:p-8 lg:p-12 flex flex-col justify-between shadow-lg min-h-[380px] lg:min-h-[480px]">
               
               <div className="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-orange-400/20 pointer-events-none" />
               <div className="absolute -bottom-20 -left-10 w-52 h-52 rounded-full bg-amber-300/25 pointer-events-none" />
@@ -969,7 +927,7 @@ const Homepage = () => {
                   
                   {/* Title Row with "Free" Badge */}
                   <div className="flex items-center">
-                    <span className="text-2xl sm:text-3xl lg:text-[32px] font-black text-slate-900 tracking-tight leading-none">
+                    <span className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-none">
                       {homePromotionalData.centerBanner.titlePrefix}
                     </span>
                     
@@ -985,12 +943,12 @@ const Homepage = () => {
                   </div>
 
                   {/* Sub-headline: with Cofynd */}
-                  <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-black text-slate-900 tracking-tight leading-tight mt-0.5">
+                  <h2 className="text-3xl sm:text-4xl lg:text-[56px] font-black text-slate-900 tracking-tight leading-tight mt-1">
                     {homePromotionalData.centerBanner.titleSuffix}
                   </h2>
 
                   {/* Subtitle description */}
-                  <p className="text-xs sm:text-[13px] text-slate-500 font-medium leading-relaxed mt-2 max-w-[300px]">
+                  <p className="text-sm sm:text-base lg:text-lg text-slate-600 font-medium leading-relaxed mt-3 max-w-[380px]">
                     {homePromotionalData.centerBanner.subtitle}
                   </p>
 
@@ -1005,7 +963,7 @@ const Homepage = () => {
                         if (nameInput) nameInput.focus();
                       }
                     }}
-                    className="mt-4 bg-orange-500 hover:bg-orange-600 active:scale-95 text-white text-xs sm:text-sm font-bold px-6 py-3 rounded-full flex items-center gap-2 shadow-xs transition-all duration-200 cursor-pointer w-fit group"
+                    className="mt-6 bg-orange-500 hover:bg-orange-600 active:scale-95 text-white text-sm sm:text-base font-bold px-8 py-3.5 rounded-full flex items-center gap-2 shadow-xs transition-all duration-200 cursor-pointer w-fit group"
                   >
                     <span>{homePromotionalData.centerBanner.ctaText}</span>
                     <span className="transition-transform duration-200 group-hover:translate-x-1 font-bold">→</span>
@@ -1013,7 +971,7 @@ const Homepage = () => {
                 </div>
 
                 {/* Right Side: Custom Perspective Frame & Decorative Arrows */}
-                <div className="relative w-44 sm:w-48 lg:w-52 h-34 sm:h-38 shrink-0 self-center sm:self-auto my-1 sm:my-0">
+                <div className="relative w-52 sm:w-64 lg:w-80 h-40 sm:h-48 lg:h-60 shrink-0 self-center sm:self-auto my-1 sm:my-0">
                   
                   {/* Yellow Ray Bursts Above Frame */}
                   <div className="absolute -top-3.5 right-6 flex gap-1 text-amber-400 select-none pointer-events-none">
@@ -1072,15 +1030,15 @@ const Homepage = () => {
               </div>
 
               {/* Bottom Row: 3 Feature Benefit Badges */}
-              <div className="grid grid-cols-3 gap-2 sm:gap-4 pt-3.5 mt-3.5 border-t border-[#f8e0be]/60 relative z-10">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-5 mt-6 border-t border-[#f8e0be]/60 relative z-10">
                 {homePromotionalData.centerBanner.perks.map((perk) => (
-                  <div key={perk.id} className="flex items-center gap-2 sm:gap-2.5">
-                    <div className={`w-8 h-8 rounded-lg ${perk.bg} flex items-center justify-center shrink-0 shadow-2xs`}>
-                      <svg className={`w-4 h-4 ${perk.color}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <div key={perk.id} className="flex items-center gap-3 sm:gap-4 bg-white/70 hover:bg-white border border-white rounded-2xl px-4 py-4 sm:py-5 shadow-sm transition-colors">
+                    <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl ${perk.bg} flex items-center justify-center shrink-0 shadow-2xs`}>
+                      <svg className={`w-6 h-6 sm:w-7 sm:h-7 ${perk.color}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" d={perkIconSvgPaths[perk.icon]} />
                       </svg>
                     </div>
-                    <div className="flex flex-col text-[11px] sm:text-xs font-bold text-slate-800 leading-snug">
+                    <div className="flex flex-col text-sm sm:text-base font-bold text-slate-800 leading-snug">
                       <span>{perk.line1}</span>
                       <span>{perk.line2}</span>
                     </div>
@@ -1099,45 +1057,11 @@ const Homepage = () => {
       {/* =================================================================== */}
       <section
         aria-label="Book Your Virtual Office with MyCoworking"
-        className="w-full bg-[#050505] relative overflow-hidden py-10 sm:py-12 lg:py-14 px-4 sm:px-6 lg:px-12 border-t border-slate-900"
+        style={{ backgroundImage: `url(${virtualOfficeBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+        className="w-full bg-[#050505] relative overflow-hidden py-6 sm:py-8 px-4 sm:px-6 lg:px-12 border-t border-slate-900"
       >
-        {/* Subtle Dark Bronze Geometric Rosette on Top Left */}
-        <svg 
-          className="absolute -top-16 -left-16 sm:-top-20 sm:-left-20 w-44 sm:w-56 h-44 sm:h-56 text-[#26140b] pointer-events-none opacity-85 select-none" 
-          viewBox="0 0 300 300" 
-          fill="currentColor"
-          aria-hidden="true"
-        >
-          <g transform="translate(150, 150)">
-            <rect x="-95" y="-95" width="190" height="190" rx="6" transform="rotate(0)" />
-            <rect x="-95" y="-95" width="190" height="190" rx="6" transform="rotate(22.5)" />
-            <rect x="-95" y="-95" width="190" height="190" rx="6" transform="rotate(45)" />
-            <rect x="-95" y="-95" width="190" height="190" rx="6" transform="rotate(67.5)" />
-            <rect x="-75" y="-75" width="150" height="150" rx="4" transform="rotate(11.25)" fill="#1a0c06" />
-            <rect x="-75" y="-75" width="150" height="150" rx="4" transform="rotate(33.75)" fill="#1a0c06" />
-            <rect x="-75" y="-75" width="150" height="150" rx="4" transform="rotate(56.25)" fill="#1a0c06" />
-            <rect x="-75" y="-75" width="150" height="150" rx="4" transform="rotate(78.75)" fill="#1a0c06" />
-          </g>
-        </svg>
-
-        {/* Large Layered Geometric Star / Blossom on Right Side */}
-        <svg 
-          className="absolute -right-20 -bottom-20 sm:-right-12 sm:-bottom-16 lg:-right-8 lg:-bottom-10 w-[320px] sm:w-[420px] lg:w-[480px] h-[320px] sm:h-[420px] lg:h-[480px] text-[#2c170e] pointer-events-none opacity-90 select-none" 
-          viewBox="0 0 400 400" 
-          fill="currentColor"
-          aria-hidden="true"
-        >
-          <g transform="translate(200, 200)">
-            <rect x="-140" y="-140" width="280" height="280" rx="8" transform="rotate(0)" />
-            <rect x="-140" y="-140" width="280" height="280" rx="8" transform="rotate(22.5)" />
-            <rect x="-140" y="-140" width="280" height="280" rx="8" transform="rotate(45)" />
-            <rect x="-140" y="-140" width="280" height="280" rx="8" transform="rotate(67.5)" />
-            <rect x="-115" y="-115" width="230" height="230" rx="6" transform="rotate(11.25)" fill="#1f0f08" />
-            <rect x="-115" y="-115" width="230" height="230" rx="6" transform="rotate(33.75)" fill="#1f0f08" />
-            <rect x="-115" y="-115" width="230" height="230" rx="6" transform="rotate(56.25)" fill="#1f0f08" />
-            <rect x="-115" y="-115" width="230" height="230" rx="6" transform="rotate(78.75)" fill="#1f0f08" />
-          </g>
-        </svg>
+        {/* Dark overlay keeps text readable over the background photo */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/50 pointer-events-none" aria-hidden="true" />
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
@@ -1191,7 +1115,7 @@ const Homepage = () => {
       {/* =================================================================== */}
       <section 
         aria-label="Trusted Companies"
-        className="w-full bg-[#fbfcfd] border-t border-b border-slate-200/60 py-8 sm:py-10 select-none overflow-hidden"
+        className="w-full bg-[#fbfcfd] border-t border-b border-slate-200/60 py-5 sm:py-6 select-none overflow-hidden"
         onMouseEnter={() => setIsCompanySliderPaused(true)}
         onMouseLeave={() => setIsCompanySliderPaused(false)}
       >
@@ -1280,12 +1204,12 @@ const Homepage = () => {
       {/* =================================================================== */}
       <section 
         aria-label="Top Coworking Spaces in India" 
-        className="w-full bg-[#fbf9f6] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-200/60 select-none"
+        className="w-full bg-[#fbf9f6] py-6 sm:py-8 px-4 sm:px-6 lg:px-8 border-t border-slate-200/60 select-none"
       >
         <div className="max-w-7xl mx-auto">
           
           {/* Section Heading */}
-          <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-black text-slate-900 tracking-tight text-center mb-8 sm:mb-10">
+          <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-black text-slate-900 tracking-tight text-center mb-5 sm:mb-6">
             {topCoworkingCitiesData.title}
           </h2>
 
@@ -1331,28 +1255,39 @@ const Homepage = () => {
       {/* SECTION 7: WHY CHOOSE mycoworking?                              */}
       {/* Data Source: whyChooseData from homedata.js                        */}
       {/* =================================================================== */}
-      <section 
-        aria-label="Why choose mycoworking" 
-        className="w-full bg-[#1123a9] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 select-none"
+      <section
+        aria-label="Why choose mycoworking"
+        className="w-full relative overflow-hidden bg-gradient-to-br from-[#fff7ed] via-white to-[#eff6ff] py-6 sm:py-8 px-4 sm:px-6 lg:px-8 border-t border-slate-200/70 select-none"
       >
-        <div className="max-w-7xl mx-auto">
+        <div className="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-orange-200/40 pointer-events-none" />
+        <div className="absolute -bottom-24 -left-24 w-72 h-72 rounded-full bg-blue-200/40 pointer-events-none" />
+        <div className="max-w-7xl mx-auto relative z-10">
           {/* Section Heading */}
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight mb-8 sm:mb-12">
-            {whyChooseData.title}
-          </h2>
+          <div className="flex flex-col items-center text-center mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight">
+              {whyChooseData.title}
+            </h2>
+            <span className="mt-2 h-1 w-16 rounded-full bg-gradient-to-r from-orange-500 to-amber-400" />
+          </div>
 
-          {/* 6-Value Proposition 2-Column Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 sm:gap-y-10 gap-x-12 lg:gap-x-16">
-            {whyChooseData.features.map((feature) => (
-              <div key={feature.id} className="flex items-start gap-4 sm:gap-5 group">
-                <div className="shrink-0 group-hover:scale-105 transition-transform duration-200">
+          {/* Value Proposition Card Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
+            {whyChooseData.features.map((feature, index) => (
+              <div
+                key={feature.id}
+                className="relative flex items-start gap-4 sm:gap-5 bg-white rounded-2xl border border-slate-200/80 p-5 sm:p-6 shadow-sm hover:shadow-lg hover:-translate-y-0.5 hover:border-orange-300 transition-all duration-300 group overflow-hidden"
+              >
+                <span className="absolute top-2 right-4 text-5xl font-black text-slate-100 group-hover:text-orange-100 transition-colors leading-none">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <div className="shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-orange-500 to-amber-400 text-white flex items-center justify-center shadow-md group-hover:rotate-6 transition-transform duration-300 relative z-10">
                   {renderWhyChooseIcon(feature.icon)}
                 </div>
-                <div className="flex flex-col">
-                  <h3 className="text-base sm:text-lg font-bold text-white tracking-tight mb-1.5">
+                <div className="flex flex-col relative z-10">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight mb-1.5 group-hover:text-orange-600 transition-colors">
                     {feature.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-white/80 leading-relaxed font-normal">
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                     {feature.description}
                   </p>
                 </div>
@@ -1369,7 +1304,7 @@ const Homepage = () => {
       {/* =================================================================== */}
       <section 
         aria-label="Customer Reviews and Testimonials" 
-        className="w-full bg-[#f8fafc] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-200/70 select-none overflow-hidden"
+        className="w-full bg-[#f8fafc] py-6 sm:py-8 px-4 sm:px-6 lg:px-8 border-t border-slate-200/70 select-none overflow-hidden"
         onMouseEnter={() => setIsReviewSliderPaused(true)}
         onMouseLeave={() => setIsReviewSliderPaused(false)}
       >
@@ -1553,12 +1488,12 @@ const Homepage = () => {
       {/* =================================================================== */}
       <section 
         aria-label="Frequently Asked Questions" 
-        className="w-full bg-[#fbf9f6] py-14 sm:py-18 lg:py-22 px-4 sm:px-6 lg:px-8 border-t border-slate-200/70 select-none"
+        className="w-full bg-[#fbf9f6] py-6 sm:py-8 px-4 sm:px-6 lg:px-8 border-t border-slate-200/70 select-none"
       >
         <div className="max-w-5xl mx-auto w-full">
           
           {/* Section Header */}
-          <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
+          <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-8">
             <span className="inline-block text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#007bff] bg-blue-50 px-3.5 py-1 rounded-full mb-3 border border-blue-100/80">
               {faqSectionData.badge}
             </span>
@@ -1643,10 +1578,10 @@ const Homepage = () => {
           {/* PLATFORM OVERVIEW & ECOSYSTEM DESCRIPTION (UNDER QUESTION CARDS) */}
           {/* Data Source: homepageDescriptionData from homedata.js            */}
           {/* =============================================================== */}
-          <div className="mt-14 sm:mt-18 pt-12 sm:pt-14 border-t border-slate-200/80">
+          <div className="mt-8 sm:mt-10 pt-6 sm:pt-8 border-t border-slate-200/80">
             
             {/* Description Header */}
-            <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+            <div className="text-center max-w-3xl mx-auto mb-5 sm:mb-6">
               <span className="inline-block text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#007bff] bg-blue-50 px-3.5 py-1 rounded-full mb-3 border border-blue-100/80">
                 {homepageDescriptionData.badge}
               </span>
@@ -1735,7 +1670,7 @@ const Homepage = () => {
       {/* =================================================================== */}
       <footer 
         aria-label="Footer Directory and Quick Links" 
-        className="w-full bg-black text-white py-12 sm:py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-900 select-none"
+        className="w-full bg-black text-white py-8 sm:py-10 px-4 sm:px-6 lg:px-8 border-t border-slate-900 select-none"
       >
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 items-start">
@@ -1784,35 +1719,31 @@ const Homepage = () => {
               </p>
             </div>
 
-            {/* Columns 2, 3, 4: Quick Links Lists for all 18 Cities */}
-            {footerQuickLinksData.columns.map((column) => (
-              <div key={column.id} className="flex flex-col">
-                <h4 className="text-white font-bold text-base sm:text-lg lg:text-xl tracking-tight mb-4 sm:mb-5">
-                  {column.title}
-                </h4>
-                <ul className="flex flex-col space-y-2.5 sm:space-y-3">
-                  {column.cities.map((cityName) => (
-                    <li key={cityName}>
-                      <button
-                        type="button"
-                        onClick={() => handleFooterCityClick(cityName)}
-                        className="text-xs sm:text-sm text-slate-300 hover:text-white hover:underline transition-colors cursor-pointer text-left focus:outline-none flex items-center gap-1.5 group"
-                      >
-                        <span className="text-slate-500 group-hover:text-orange-400 transition-colors text-[10px]">
-                          ›
-                        </span>
-                        <span>{cityName}</span>
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            {/* Top Coworking Space in India: all city links as one inline paragraph */}
+            <div className="flex flex-col sm:col-span-1 lg:col-span-3">
+              <h4 className="text-white font-bold text-base sm:text-lg lg:text-xl tracking-tight mb-3 sm:mb-4">
+                Top Coworking Space in India
+              </h4>
+              <p className="text-xs sm:text-sm text-slate-300 leading-loose">
+                {footerQuickLinksData.columns.flatMap((column) => column.cities).map((cityName, index, all) => (
+                  <span key={cityName}>
+                    <button
+                      type="button"
+                      onClick={() => handleFooterCityClick(cityName)}
+                      className="hover:text-white hover:underline transition-colors cursor-pointer focus:outline-none"
+                    >
+                      {cityName}
+                    </button>
+                    {index < all.length - 1 && <span className="text-slate-500 mx-2">|</span>}
+                  </span>
+                ))}
+              </p>
+            </div>
 
           </div>
 
           {/* Bottom Copyright Divider Bar */}
-          <div className="pt-8 sm:pt-10 mt-10 sm:mt-14 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+          <div className="pt-5 sm:pt-6 mt-6 sm:mt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
             <p>© {new Date().getFullYear()} MyCoworking. All rights reserved.</p>
             <p className="text-[11px] text-slate-500">
               India's flexible workspace network across 18+ cities
