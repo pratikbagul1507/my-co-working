@@ -276,9 +276,18 @@ const Indore = () => {
       )
     : activeTopSpaces;
 
+  const activeMoreSpaces = currentPage === 1 ? moreIndoreOfficeCards : currentPage === 2 ? pageTwoMoreIndoreOfficeCards : currentPage === 3 ? pageThreeMoreIndoreOfficeCards : [];
+
+  const activeFinalSpaces = currentPage === 1 ? finalIndoreOfficeCards : currentPage === 2 ? pageTwoFinalIndoreOfficeCards : currentPage === 3 ? pageThreeFinalIndoreOfficeCards : [];
+
+  const activeOfficeCards = currentPage === 1 ? featuredIndoreOfficeCards : currentPage === 2 ? pageTwoFeaturedIndoreOfficeCards : currentPage === 3 ? pageThreeFeaturedIndoreOfficeCards : []; 
+
   // Selected area ke extra 10 real cards (sirf tab milenge jab area button active ho)
   const extraAreaCards = (selectedNeighborhood && areaExtraOfficeCards && areaExtraOfficeCards[selectedNeighborhood])
-    ? areaExtraOfficeCards[selectedNeighborhood]
+    ? areaExtraOfficeCards[selectedNeighborhood].filter(
+        // cards already shown in this page's other sections are not repeated
+        (card) => ![...activeMoreSpaces, ...activeFinalSpaces, ...activeOfficeCards].some((other) => other.id === card.id)
+      )
     : [];
 
   // Combined cards to display in top grid (area filtered):
@@ -296,8 +305,6 @@ const Indore = () => {
     ? combinedSpaces.filter(matchesPrice)
     : combinedSpaces;
 
-  const activeMoreSpaces = currentPage === 1 ? moreIndoreOfficeCards : currentPage === 2 ? pageTwoMoreIndoreOfficeCards : currentPage === 3 ? pageThreeMoreIndoreOfficeCards : [];
-
   const displayedMoreSpaces = activeMoreSpaces.filter((space) => {
     const matchesArea = !selectedNeighborhood ||
       space.area?.toLowerCase() === selectedNeighborhood.toLowerCase() ||
@@ -305,16 +312,12 @@ const Indore = () => {
     return matchesArea && matchesPrice(space);
   });
 
-  const activeFinalSpaces = currentPage === 1 ? finalIndoreOfficeCards : currentPage === 2 ? pageTwoFinalIndoreOfficeCards : currentPage === 3 ? pageThreeFinalIndoreOfficeCards : [];
-
   const displayedFinalSpaces = activeFinalSpaces.filter((space) => {
     const matchesArea = !selectedNeighborhood ||
       space.area?.toLowerCase() === selectedNeighborhood.toLowerCase() ||
       space.location?.toLowerCase().includes(selectedNeighborhood.toLowerCase());
     return matchesArea && matchesPrice(space);
   });
-
-  const activeOfficeCards = currentPage === 1 ? featuredIndoreOfficeCards : currentPage === 2 ? pageTwoFeaturedIndoreOfficeCards : currentPage === 3 ? pageThreeFeaturedIndoreOfficeCards : []; 
 
   const displayedFeaturedSpaces = activeOfficeCards.filter((space) => {
     const matchesArea = !selectedNeighborhood ||
