@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import CityGrid from '../components/city/CityGrid';
 import CityPopup from '../components/city/CityPopup';
 import virtualOfficeBg from '../assets/images/virtual-office-bg.jpg';
@@ -195,6 +195,7 @@ const renderWhyChooseIcon = (iconType) => {
 
 const Homepage = () => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   // =========================================================================
   // 1. APPLICATION STATE (Initialized with centralized config defaults)
@@ -468,6 +469,17 @@ const Homepage = () => {
   const closeCityPopup = () => {
     setOpenedCityForPopup(null);
   };
+
+  // A city picked from the navbar "Coworking" dropdown arrives via router state:
+  // handle it exactly like a city click on this page, then clear the state.
+  useEffect(() => {
+    const cityName = location.state?.openCity;
+    if (!cityName) return;
+    const matchedCity = availableCities.find((c) => c.name.toLowerCase() === cityName.toLowerCase());
+    if (matchedCity) selectCityAndOpenPopup(matchedCity, true);
+    navigate(location.pathname, { replace: true, state: null });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.state]);
 
   /**
    * Handles space type selection from within the popup dialog,
@@ -914,7 +926,7 @@ const Homepage = () => {
             </div>
 
             {/* 2. RIGHT COLUMN: "List Free with MyCoworking" Promotional Banner */}
-            <div className="md:col-span-2 lg:col-span-1 relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#fff4e5] via-[#ffe9cc] to-[#ffd8a8] border border-orange-200 p-6 sm:p-8 lg:p-12 flex flex-col justify-between shadow-lg min-h-[380px] lg:min-h-[480px]">
+            <div className="md:col-span-2 lg:col-span-1 relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#fff4e5] via-[#ffe9cc] to-[#ffd8a8] border border-orange-200 p-4 sm:p-5 lg:p-6 flex flex-col justify-between shadow-lg">
               
               <div className="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-orange-400/20 pointer-events-none" />
               <div className="absolute -bottom-20 -left-10 w-52 h-52 rounded-full bg-amber-300/25 pointer-events-none" />
@@ -927,7 +939,7 @@ const Homepage = () => {
                   
                   {/* Title Row with "Free" Badge */}
                   <div className="flex items-center">
-                    <span className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-none">
+                    <span className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight leading-none">
                       {homePromotionalData.centerBanner.titlePrefix}
                     </span>
                     
@@ -943,12 +955,12 @@ const Homepage = () => {
                   </div>
 
                   {/* Sub-headline: with Cofynd */}
-                  <h2 className="text-3xl sm:text-4xl lg:text-[56px] font-black text-slate-900 tracking-tight leading-tight mt-1">
+                  <h2 className="text-2xl sm:text-3xl lg:text-[42px] font-black text-slate-900 tracking-tight leading-tight mt-0.5">
                     {homePromotionalData.centerBanner.titleSuffix}
                   </h2>
 
                   {/* Subtitle description */}
-                  <p className="text-sm sm:text-base lg:text-lg text-slate-600 font-medium leading-relaxed mt-3 max-w-[380px]">
+                  <p className="text-sm sm:text-[15px] text-slate-600 font-medium leading-snug mt-1.5 max-w-[340px]">
                     {homePromotionalData.centerBanner.subtitle}
                   </p>
 
@@ -963,7 +975,7 @@ const Homepage = () => {
                         if (nameInput) nameInput.focus();
                       }
                     }}
-                    className="mt-6 bg-orange-500 hover:bg-orange-600 active:scale-95 text-white text-sm sm:text-base font-bold px-8 py-3.5 rounded-full flex items-center gap-2 shadow-xs transition-all duration-200 cursor-pointer w-fit group"
+                    className="mt-3 bg-orange-500 hover:bg-orange-600 active:scale-95 text-white text-sm font-bold px-6 py-2.5 rounded-full flex items-center gap-2 shadow-xs transition-all duration-200 cursor-pointer w-fit group"
                   >
                     <span>{homePromotionalData.centerBanner.ctaText}</span>
                     <span className="transition-transform duration-200 group-hover:translate-x-1 font-bold">→</span>
@@ -971,7 +983,7 @@ const Homepage = () => {
                 </div>
 
                 {/* Right Side: Custom Perspective Frame & Decorative Arrows */}
-                <div className="relative w-52 sm:w-64 lg:w-80 h-40 sm:h-48 lg:h-60 shrink-0 self-center sm:self-auto my-1 sm:my-0">
+                <div className="relative w-44 sm:w-52 lg:w-60 h-32 sm:h-36 lg:h-40 shrink-0 self-center sm:self-auto my-1 sm:my-0">
                   
                   {/* Yellow Ray Bursts Above Frame */}
                   <div className="absolute -top-3.5 right-6 flex gap-1 text-amber-400 select-none pointer-events-none">
@@ -1030,15 +1042,15 @@ const Homepage = () => {
               </div>
 
               {/* Bottom Row: 3 Feature Benefit Badges */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-5 mt-6 border-t border-[#f8e0be]/60 relative z-10">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3 pt-3 mt-3 border-t border-[#f8e0be]/60 relative z-10">
                 {homePromotionalData.centerBanner.perks.map((perk) => (
-                  <div key={perk.id} className="flex items-center gap-3 sm:gap-4 bg-white/70 hover:bg-white border border-white rounded-2xl px-4 py-4 sm:py-5 shadow-sm transition-colors">
-                    <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl ${perk.bg} flex items-center justify-center shrink-0 shadow-2xs`}>
-                      <svg className={`w-6 h-6 sm:w-7 sm:h-7 ${perk.color}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <div key={perk.id} className="flex items-center gap-2.5 bg-white/70 hover:bg-white border border-white rounded-xl px-3 py-2 shadow-sm transition-colors">
+                    <div className={`w-10 h-10 rounded-lg ${perk.bg} flex items-center justify-center shrink-0 shadow-2xs`}>
+                      <svg className={`w-5 h-5 ${perk.color}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" d={perkIconSvgPaths[perk.icon]} />
                       </svg>
                     </div>
-                    <div className="flex flex-col text-sm sm:text-base font-bold text-slate-800 leading-snug">
+                    <div className="flex flex-col text-xs sm:text-sm font-bold text-slate-800 leading-snug">
                       <span>{perk.line1}</span>
                       <span>{perk.line2}</span>
                     </div>
@@ -1719,31 +1731,33 @@ const Homepage = () => {
               </p>
             </div>
 
-            {/* Top Coworking Space in India: all city links as one inline paragraph */}
-            <div className="flex flex-col sm:col-span-1 lg:col-span-3">
-              <h4 className="text-white font-bold text-base sm:text-lg lg:text-xl tracking-tight mb-3 sm:mb-4">
-                Top Coworking Space in India
-              </h4>
-              <p className="text-xs sm:text-sm text-slate-300 leading-loose">
-                {footerQuickLinksData.columns.flatMap((column) => column.cities).map((cityName, index, all) => (
-                  <span key={cityName}>
-                    <button
-                      type="button"
-                      onClick={() => handleFooterCityClick(cityName)}
-                      className="hover:text-white hover:underline transition-colors cursor-pointer focus:outline-none"
-                    >
-                      {cityName}
-                    </button>
-                    {index < all.length - 1 && <span className="text-slate-500 mx-2">|</span>}
-                  </span>
-                ))}
-              </p>
-            </div>
-
           </div>
 
-          {/* Bottom Copyright Divider Bar */}
-          <div className="pt-5 sm:pt-6 mt-6 sm:mt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+          {/* Horizontal line, then the city links paragraph, then copyright */}
+          <div className="pt-5 sm:pt-6 mt-6 sm:mt-8 border-t border-slate-800">
+          {/* Top Coworking Space in India: all city links as one inline paragraph */}
+          <div className="flex flex-col mt-5 sm:mt-6">
+            <h4 className="text-white font-bold text-base sm:text-lg lg:text-xl tracking-tight mb-3 sm:mb-4">
+              Top Coworking Space in India
+            </h4>
+            <p className="text-xs sm:text-sm text-slate-300 leading-loose">
+              {footerQuickLinksData.columns.flatMap((column) => column.cities).map((cityName, index, all) => (
+                <span key={cityName}>
+                  <button
+                    type="button"
+                    onClick={() => handleFooterCityClick(cityName)}
+                    className="hover:text-white hover:underline transition-colors cursor-pointer focus:outline-none"
+                  >
+                    {cityName}
+                  </button>
+                  {index < all.length - 1 && <span className="text-slate-500 mx-2">|</span>}
+                </span>
+              ))}
+            </p>
+          </div>
+
+          </div>
+          <div className="pt-4 mt-5 sm:mt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
             <p>© {new Date().getFullYear()} MyCoworking. All rights reserved.</p>
             <p className="text-[11px] text-slate-500">
               India's flexible workspace network across 18+ cities

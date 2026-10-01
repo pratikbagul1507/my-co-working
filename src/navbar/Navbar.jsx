@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { cityNames } from '../home/homedata';
 import logo from './company-logo.png';
 import discount from './discount.jpg';
 
@@ -8,6 +9,13 @@ const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [mobileExpandedTab, setMobileExpandedTab] = useState(null);
   const navRef = useRef(null);
+  const navigate = useNavigate();
+
+  // Same behaviour as clicking a city on the home page: open that city's space-type popup
+  const handleCityClick = (cityName) => {
+    closeMenu();
+    navigate('/', { state: { openCity: cityName } });
+  };
 
   const toggleDropdown = (menu) => {
     setActiveDropdown(activeDropdown === menu ? null : menu);
@@ -88,8 +96,22 @@ const Navbar = () => {
 
               {/* Desktop Dropdown Menu */}
               {activeDropdown === item.name && (
-                <div className="absolute left-0 mt-1 w-64 bg-white border border-slate-100 rounded-xl shadow-xl py-2 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
-                  {item.links.map((link) => (
+                <div className={`absolute left-0 mt-1 bg-white border border-slate-100 rounded-xl shadow-xl z-50 animate-in fade-in slide-in-from-top-1 duration-150 ${item.name === 'Coworking' ? 'w-[620px] p-5' : 'w-64 py-2'}`}>
+                  {item.name === 'Coworking' ? (
+                <div className="grid grid-cols-6 gap-x-3 gap-y-4">
+                  {cityNames.map((city) => (
+                    <button
+                      key={city.name}
+                      type="button"
+                      onClick={() => handleCityClick(city.name)}
+                      className="flex flex-col items-center gap-1.5 group cursor-pointer focus:outline-none"
+                    >
+                      <img src={city.image} alt={city.name} loading="lazy" className="w-14 h-14 rounded-full object-cover border-2 border-slate-100 group-hover:border-orange-400 group-hover:scale-105 transition-all" />
+                      <span className="text-[11px] font-semibold text-slate-700 group-hover:text-orange-600 text-center leading-tight">{city.name}</span>
+                    </button>
+                  ))}
+                </div>
+                  ) : item.links.map((link) => (
                     <Link
                       key={link}
                       to={item.name === 'Coworking' ? '/coworking' : link}
@@ -167,8 +189,22 @@ const Navbar = () => {
 
                 {/* Sub-links dropdown */}
                 {isExpanded && (
-                  <div className="pl-3 pt-2 pb-1 flex flex-col space-y-2">
-                    {item.links.map((link) => (
+                  <div className={item.name === 'Coworking' ? 'pt-3 pb-1' : 'pl-3 pt-2 pb-1 flex flex-col space-y-2'}>
+                    {item.name === 'Coworking' ? (
+                <div className="grid grid-cols-3 gap-x-2 gap-y-3">
+                  {cityNames.map((city) => (
+                    <button
+                      key={city.name}
+                      type="button"
+                      onClick={() => handleCityClick(city.name)}
+                      className="flex flex-col items-center gap-1.5 group cursor-pointer focus:outline-none"
+                    >
+                      <img src={city.image} alt={city.name} loading="lazy" className="w-14 h-14 rounded-full object-cover border-2 border-slate-100 group-hover:border-orange-400 group-hover:scale-105 transition-all" />
+                      <span className="text-[11px] font-semibold text-slate-700 group-hover:text-orange-600 text-center leading-tight">{city.name}</span>
+                    </button>
+                  ))}
+                </div>
+                    ) : item.links.map((link) => (
                       <Link
                         key={link}
                         to={item.name === 'Coworking' ? '/coworking' : link}
