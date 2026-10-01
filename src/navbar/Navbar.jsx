@@ -43,7 +43,7 @@ const Navbar = () => {
   return (
     <header ref={navRef} className="w-full bg-white border-b border-gray-100 sticky top-0 z-50 select-none shadow-2xs">
       {/* 1. Mobile & Desktop Header: strictly single row, flex-row, justify-between, items-center */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex flex-row justify-between items-center gap-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-28 flex flex-row justify-between items-center gap-4">
         
         {/* 2. Far Left: Logo */}
         <Link 
@@ -51,13 +51,13 @@ const Navbar = () => {
           onClick={closeMenu}
           className="flex items-center cursor-pointer shrink-0"
         >
-          <img src={logo} alt="mycoworking" className="h-10 sm:h-14 w-auto object-contain" />
+          <img src={logo} alt="mycoworking" className="h-12 sm:h-20 w-auto object-contain" />
         </Link>
 
         {/* 3. Desktop Contact Info Box: visible on large screens (lg+) */}
-        <div className="hidden lg:flex items-center border border-slate-200 rounded-lg px-2.5 sm:px-3 py-1.5 space-x-2.5 sm:space-x-3 text-xs font-medium text-slate-700 shrink-0">
+        <div className="hidden lg:flex items-center border border-slate-200 rounded-lg px-4 py-2.5 space-x-3 text-base font-medium text-slate-700 shrink-0">
           <a href="tel:+919028760011" className="flex items-center space-x-1.5 hover:text-blue-600 transition-colors">
-            <svg className="w-3.5 h-3.5 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 24 24">
               <path d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27 11.72 11.72 0 003.74.6 1 1 0 011 1v3.59a1 1 0 01-1 1A16 16 0 013 4a1 1 0 011-1h3.59a1 1 0 011 1 11.72 11.72 0 00.6 3.74 1 1 0 01-.27 1.1l-2.2 2.2z"/>
             </svg>
             <span className="font-semibold">+91 9028760011</span>
@@ -66,17 +66,17 @@ const Navbar = () => {
         </div>
 
         {/* 3. Middle Tabs: Desktop only (hidden on mobile views, visible on lg and above) */}
-        <nav className="hidden lg:flex items-center space-x-8 xl:space-x-12 mx-6 xl:mx-10">
+        <nav className="hidden lg:flex items-center space-x-6 xl:space-x-10 mx-4 xl:mx-6">
           {navItems.map((item) => (
             <div key={item.name} className="relative">
               <button
                 type="button"
                 onClick={() => toggleDropdown(item.name)}
-                className="flex items-center space-x-1 text-sm font-semibold text-slate-700 hover:text-slate-900 transition-colors focus:outline-none cursor-pointer py-2 whitespace-nowrap"
+                className="flex items-center space-x-1 text-lg font-semibold text-slate-700 hover:text-slate-900 transition-colors focus:outline-none cursor-pointer py-3 whitespace-nowrap"
               >
                 <span>{item.name}</span>
                 <svg 
-                  className={`w-3 h-3 text-slate-400 transition-transform duration-200 ${activeDropdown === item.name ? 'rotate-180 text-blue-600' : ''}`} 
+                  className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${activeDropdown === item.name ? 'rotate-180 text-blue-600' : ''}`} 
                   fill="none" 
                   stroke="currentColor" 
                   strokeWidth="2.5" 
@@ -88,12 +88,12 @@ const Navbar = () => {
 
               {/* Desktop Dropdown Menu */}
               {activeDropdown === item.name && (
-                <div className="absolute left-0 mt-1 w-52 bg-white border border-slate-100 rounded-xl shadow-xl py-2 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
+                <div className="absolute left-0 mt-1 w-64 bg-white border border-slate-100 rounded-xl shadow-xl py-2 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
                   {item.links.map((link) => (
                     <Link
                       key={link}
                       to={item.name === 'Coworking' ? '/coworking' : link}
-                      className="block px-4 py-2.5 text-xs font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600 transition-colors"
+                      className="block px-5 py-3 text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600 transition-colors"
                       onClick={closeMenu}
                     >
                       {link.replace('#', '').replace('-', ' ').replace(/\b\w/g, (c) => c.toUpperCase())}
@@ -113,7 +113,7 @@ const Navbar = () => {
             onClick={closeMenu}
             className="shrink-0 cursor-pointer"
           >
-            <img src={discount} alt="Discount offer - List of Services" className="h-10 sm:h-12 w-auto object-contain rounded-lg hover:opacity-90 transition-opacity" />
+            <img src={discount} alt="Discount offer - List of Services" className="h-12 sm:h-16 w-auto object-contain rounded-lg hover:opacity-90 transition-opacity" />
           </Link>
 
           {/* 4. Hamburger Icon: three bars icon, visible on small screens (< lg) */}
