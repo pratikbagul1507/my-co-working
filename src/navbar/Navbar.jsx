@@ -66,17 +66,17 @@ const Navbar = () => {
         </div>
 
         {/* 3. Middle Tabs: Desktop only (hidden on mobile views, visible on lg and above) */}
-        <nav className="hidden lg:flex items-center space-x-6 xl:space-x-10 mx-4 xl:mx-6">
+        <nav className="hidden lg:flex items-center space-x-8 xl:space-x-12 mx-4 xl:mx-6">
           {navItems.map((item) => (
             <div key={item.name} className="relative">
               <button
                 type="button"
                 onClick={() => toggleDropdown(item.name)}
-                className="flex items-center space-x-1 text-lg font-semibold text-slate-700 hover:text-slate-900 transition-colors focus:outline-none cursor-pointer py-3 whitespace-nowrap"
+                className="flex items-center space-x-2 text-xl font-bold text-slate-800 hover:text-blue-600 transition-colors focus:outline-none cursor-pointer py-4 px-2 whitespace-nowrap"
               >
                 <span>{item.name}</span>
                 <svg 
-                  className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${activeDropdown === item.name ? 'rotate-180 text-blue-600' : ''}`} 
+                  className={`w-5 h-5 text-slate-400 transition-transform duration-200 ${activeDropdown === item.name ? 'rotate-180 text-blue-600' : ''}`} 
                   fill="none" 
                   stroke="currentColor" 
                   strokeWidth="2.5" 
@@ -93,7 +93,7 @@ const Navbar = () => {
                     <Link
                       key={link}
                       to={item.name === 'Coworking' ? '/coworking' : link}
-                      className="block px-5 py-3 text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600 transition-colors"
+                      className="block px-5 py-3.5 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600 transition-colors"
                       onClick={closeMenu}
                     >
                       {link.replace('#', '').replace('-', ' ').replace(/\b\w/g, (c) => c.toUpperCase())}
