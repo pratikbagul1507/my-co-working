@@ -1739,6 +1739,47 @@ export const areaExtraOfficeCards = {
         "https://res.cloudinary.com/myhq/image/upload/workspaces/antares-business-centre-abroad/dedicated/p9v94b.jpg",
         "https://res.cloudinary.com/myhq/image/upload/workspaces/antares-business-centre-abroad/dedicated/c5erdv.jpg"
       ]
+    },
+    {
+      "id": 1,
+      "name": "Nextcoworks",
+      "badge": "Premium Coworking",
+      "rating": 4.8,
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹5,500",
+      "period": "/ Month",
+      "priceFormatted": "₹5,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/cebdaa16c044508e7616f5a0f463c78244522044.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bca89c4cd39ac0dbca23ec5cc0754a822b54bb8a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f05d0c2eac60a690a8b9f2dc3b1ceb9ac41c40c9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b1544faff4dd3dc2f7a7b5ec7e425d59e5a19c59.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8612338f4f05bfb868bb96a679374be25bf7f5a6.webp",
+        "https://img.cofynd.com/images/latest_images_2024/01bd993a3005a307e1b3f90d193756ef05b1f849.webp",
+        "https://img.cofynd.com/images/latest_images_2024/278137df85e651aa2c9d4405e2788704a358bfba.webp",
+        "https://img.cofynd.com/images/latest_images_2024/02aa649f2ef0f3500e8d6137bdc5503ce6514f6e.webp"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Incuspaze Apollo",
+      "rating": 4.5,
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "On Request",
+      "period": "",
+      "priceFormatted": "On Request",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/e85426ce071a8de598c3d0e7f16adb4aaf056d13.jpg",
+        "https://img.cofynd.com/images/original/b1702e02cba6a7e8244a54e0e6a58acba5004923.jpg",
+        "https://img.cofynd.com/images/original/c0f1c5ff530c8616ebe2bb2265c6e3f8cf2b3a0f.jpg",
+        "https://img.cofynd.com/images/original/e6915cb5e08196700dc39f8a265ceb84636852c9.jpg",
+        "https://img.cofynd.com/images/original/ea807ca73f1f0f8884b96193b289c18203100335.jpg",
+        "https://img.cofynd.com/images/original/cd4b42f3b4627f5815f179f965b74e331a239d45.jpg"
+      ]
     }
   ],
   "LIC Colony": [
@@ -1758,6 +1799,203 @@ export const areaExtraOfficeCards = {
         "https://ik.imagekit.io/qdesq/qdesq/99565ee3ba9c6960f8020bb2aad0a3cc_dimJFk2Qj.jpg",
         "https://ik.imagekit.io/qdesq/qdesq/5870b32709cab653370a61e47db9582b_Bnb1yD5MO4.jpg",
         "https://ik.imagekit.io/qdesq/qdesq/a2188b8993e6b033f38f9df492dacf3b_Tz0O-NBfIA.jpg"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Nextcoworks",
+      "badge": "Premium Coworking",
+      "rating": 4.8,
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹5,500",
+      "period": "/ Month",
+      "priceFormatted": "₹5,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/cebdaa16c044508e7616f5a0f463c78244522044.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bca89c4cd39ac0dbca23ec5cc0754a822b54bb8a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f05d0c2eac60a690a8b9f2dc3b1ceb9ac41c40c9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b1544faff4dd3dc2f7a7b5ec7e425d59e5a19c59.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8612338f4f05bfb868bb96a679374be25bf7f5a6.webp",
+        "https://img.cofynd.com/images/latest_images_2024/01bd993a3005a307e1b3f90d193756ef05b1f849.webp",
+        "https://img.cofynd.com/images/latest_images_2024/278137df85e651aa2c9d4405e2788704a358bfba.webp",
+        "https://img.cofynd.com/images/latest_images_2024/02aa649f2ef0f3500e8d6137bdc5503ce6514f6e.webp"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Incuspaze Apollo",
+      "rating": 4.5,
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "On Request",
+      "period": "",
+      "priceFormatted": "On Request",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/e85426ce071a8de598c3d0e7f16adb4aaf056d13.jpg",
+        "https://img.cofynd.com/images/original/b1702e02cba6a7e8244a54e0e6a58acba5004923.jpg",
+        "https://img.cofynd.com/images/original/c0f1c5ff530c8616ebe2bb2265c6e3f8cf2b3a0f.jpg",
+        "https://img.cofynd.com/images/original/e6915cb5e08196700dc39f8a265ceb84636852c9.jpg",
+        "https://img.cofynd.com/images/original/ea807ca73f1f0f8884b96193b289c18203100335.jpg",
+        "https://img.cofynd.com/images/original/cd4b42f3b4627f5815f179f965b74e331a239d45.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Incuspaze Brilliant Platina",
+      "rating": 4.5,
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹6,499",
+      "period": "/ Month",
+      "priceFormatted": "₹6,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/e3968f9d719e9f59b3bf5e8037ac1df3329da2bd.jpg",
+        "https://img.cofynd.com/images/original/c177625b3ebd7cb710215421b77fa4290a5ed767.jpg",
+        "https://img.cofynd.com/images/original/55edf08ec595b25d532da9d94c8885b646354827.jpg",
+        "https://img.cofynd.com/images/original/3382a8ad450944e08c6f4de01afef1a6ed18e3da.jpg",
+        "https://img.cofynd.com/images/original/eb6127274f92a2e24b2fc67d6f5088e5acc37e18.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Work Jar Coworking",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹5,000",
+      "period": "/ Month",
+      "priceFormatted": "₹5,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/9a2e0d80c47371515102ecb7543f1f8af58338bd.jpg",
+        "https://img.cofynd.com/images/original/8cfbda62db1c0caf549ff88d58e1dc3d8356e54b.jpg",
+        "https://img.cofynd.com/images/original/1fe04de035e19a40a619a2d2b50d73dff32799cb.jpg",
+        "https://img.cofynd.com/images/original/73de0375d6f4a9e7442f882d4796ef61fe715877.jpg",
+        "https://img.cofynd.com/images/original/fb98cb1cc76929a02d716afd27141f049dc1b291.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Workvistar",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹5,000",
+      "period": "/ Month",
+      "priceFormatted": "₹5,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/23b80d614693142dc6d27fb9ea739f859db8f606.jpg",
+        "https://img.cofynd.com/images/original/a49863cb704c9ceae3621b8eeca709bdf877332f.jpg",
+        "https://img.cofynd.com/images/original/3477017057f76f8663d89becec31a5a0d27de91a.jpg",
+        "https://img.cofynd.com/images/original/25e5a08900fa08baf0b3f6efe6dd6c65214ac2c6.jpg",
+        "https://img.cofynd.com/images/original/8da57b82c475ef368e3841e6348666db5a32b28a.jpg"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "YBox.Work",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹4,500",
+      "period": "/ Month",
+      "priceFormatted": "₹4,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/aa61999951aef590967b8d33e36003d17e7e9f29.jpg",
+        "https://img.cofynd.com/images/original/af0c60b9f1c51eb83388accb47116e17d883bbdb.jpg",
+        "https://img.cofynd.com/images/original/15dabfe40d580efdb9a3b73e0636c75392a475a9.jpg",
+        "https://img.cofynd.com/images/original/13d776ca793563b51faeb11e043d6a3e23258124.jpg",
+        "https://img.cofynd.com/images/original/a68c3a0daa1c22ad5cb5d57f549378f492389087.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Virtual Coworks",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹4,000",
+      "period": "/ Month",
+      "priceFormatted": "₹4,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/8c1c9d98567dcf4c1da0ab14fc5e01c026f087b4.jpg",
+        "https://img.cofynd.com/images/original/5e988e80868c0669fe8f53b30c039c77032f6729.jpg",
+        "https://img.cofynd.com/images/original/4dc86cb26f63a5e11e05d3c6f0cee65578db71b9.jpg",
+        "https://img.cofynd.com/images/original/54afe209bd127f83a6b63f4dd245e59ba198f128.jpg",
+        "https://img.cofynd.com/images/original/0eb993cdbd015561ceb31bf68a300ed50c55a858.jpg"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Paskola",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹3,000",
+      "period": "/ Month",
+      "priceFormatted": "₹3,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/30bf54f4089ccebbe5a8f7fb0350eea9294e5a82.jpg",
+        "https://img.cofynd.com/images/original/091d32b4aa85620821b459d888f58160b87869cf.jpg",
+        "https://img.cofynd.com/images/original/b71f7da315b2bd61063e4a857d77eef387df013b.jpg",
+        "https://img.cofynd.com/images/original/0bbf5113faba1ce7ac27cff952682248ea43202a.jpg",
+        "https://img.cofynd.com/images/original/dc6b6880031dbdc49fbb45ad5994f989f805b824.jpg"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "BIZZI.B",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹8,000",
+      "period": "/ Month",
+      "priceFormatted": "₹8,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/76753b23784a9fbd545de2fd0b25ef1ef6d26eec.jpg",
+        "https://img.cofynd.com/images/original/05ea243041381e0d778476c38d8bdd321e355660.jpg",
+        "https://img.cofynd.com/images/original/e80920911c998b981e8baabf2369ab12a018f49f.jpg",
+        "https://img.cofynd.com/images/original/39eaff45f769343292f95435a515200d0d7dd848.jpg",
+        "https://img.cofynd.com/images/original/a2896cfa258eb38841b981b44e52d62410daadb7.jpg"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "SPADIFY CO-WORK",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹3,000",
+      "period": "/ Month",
+      "priceFormatted": "₹3,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/3d5c026bc421052fbe97c93091abd8d3a0b2d1af.jpg",
+        "https://img.cofynd.com/images/original/d6e074dfd8583ea6f1e23783ce992d8aae51a046.jpg",
+        "https://img.cofynd.com/images/original/45aed836c07117cd035531d2637e37b5885a0434.jpg",
+        "https://img.cofynd.com/images/original/0c210e3acd03d73ae36640118d4e64b80376840a.jpg",
+        "https://img.cofynd.com/images/original/190cbed81663f01b565c949d20ea77ef158e7f4d.jpg"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Cliffton Corporate",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹10,000",
+      "period": "/ Month",
+      "priceFormatted": "₹10,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/2e08593fbdc5e7364bd9993bcc2a0f06ddc22bdb.jpg",
+        "https://img.cofynd.com/images/original/8aa14aaff8e342b5fbef870e3c8621e4216d5ac2.jpg",
+        "https://img.cofynd.com/images/original/f4e595f9c6aa0aa51177d35f65ff27ee70ca2dc1.jpg",
+        "https://img.cofynd.com/images/original/5b3dadca5532aa9a594b5b7422aef4a42fe9ac0e.jpg",
+        "https://img.cofynd.com/images/original/1f5ea692f3b860cceeb78de9257acbf0d1e39379.jpg",
+        "https://img.cofynd.com/images/original/f58695c55b1f8f490f7b02653bdef0453045bb3e.jpg",
+        "https://img.cofynd.com/images/original/24b4740a313da435887ff387c8273f41ae4b724b.jpg"
       ]
     }
   ],
@@ -1812,6 +2050,167 @@ export const areaExtraOfficeCards = {
         "https://res.cloudinary.com/myhq/image/upload/workspaces/regus-ratnalokcolony/ka2c5z.jpg",
         "https://res.cloudinary.com/myhq/image/upload/workspaces/regus-ratnalokcolony/577kg7.jpg",
         "https://res.cloudinary.com/myhq/image/upload/workspaces/regus-ratnalokcolony/8bt4pb.jpg"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Nextcoworks",
+      "badge": "Premium Coworking",
+      "rating": 4.8,
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹5,500",
+      "period": "/ Month",
+      "priceFormatted": "₹5,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/cebdaa16c044508e7616f5a0f463c78244522044.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bca89c4cd39ac0dbca23ec5cc0754a822b54bb8a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f05d0c2eac60a690a8b9f2dc3b1ceb9ac41c40c9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b1544faff4dd3dc2f7a7b5ec7e425d59e5a19c59.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8612338f4f05bfb868bb96a679374be25bf7f5a6.webp",
+        "https://img.cofynd.com/images/latest_images_2024/01bd993a3005a307e1b3f90d193756ef05b1f849.webp",
+        "https://img.cofynd.com/images/latest_images_2024/278137df85e651aa2c9d4405e2788704a358bfba.webp",
+        "https://img.cofynd.com/images/latest_images_2024/02aa649f2ef0f3500e8d6137bdc5503ce6514f6e.webp"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Incuspaze Apollo",
+      "rating": 4.5,
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "On Request",
+      "period": "",
+      "priceFormatted": "On Request",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/e85426ce071a8de598c3d0e7f16adb4aaf056d13.jpg",
+        "https://img.cofynd.com/images/original/b1702e02cba6a7e8244a54e0e6a58acba5004923.jpg",
+        "https://img.cofynd.com/images/original/c0f1c5ff530c8616ebe2bb2265c6e3f8cf2b3a0f.jpg",
+        "https://img.cofynd.com/images/original/e6915cb5e08196700dc39f8a265ceb84636852c9.jpg",
+        "https://img.cofynd.com/images/original/ea807ca73f1f0f8884b96193b289c18203100335.jpg",
+        "https://img.cofynd.com/images/original/cd4b42f3b4627f5815f179f965b74e331a239d45.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Incuspaze Brilliant Platina",
+      "rating": 4.5,
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹6,499",
+      "period": "/ Month",
+      "priceFormatted": "₹6,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/e3968f9d719e9f59b3bf5e8037ac1df3329da2bd.jpg",
+        "https://img.cofynd.com/images/original/c177625b3ebd7cb710215421b77fa4290a5ed767.jpg",
+        "https://img.cofynd.com/images/original/55edf08ec595b25d532da9d94c8885b646354827.jpg",
+        "https://img.cofynd.com/images/original/3382a8ad450944e08c6f4de01afef1a6ed18e3da.jpg",
+        "https://img.cofynd.com/images/original/eb6127274f92a2e24b2fc67d6f5088e5acc37e18.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Work Jar Coworking",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹5,000",
+      "period": "/ Month",
+      "priceFormatted": "₹5,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/9a2e0d80c47371515102ecb7543f1f8af58338bd.jpg",
+        "https://img.cofynd.com/images/original/8cfbda62db1c0caf549ff88d58e1dc3d8356e54b.jpg",
+        "https://img.cofynd.com/images/original/1fe04de035e19a40a619a2d2b50d73dff32799cb.jpg",
+        "https://img.cofynd.com/images/original/73de0375d6f4a9e7442f882d4796ef61fe715877.jpg",
+        "https://img.cofynd.com/images/original/fb98cb1cc76929a02d716afd27141f049dc1b291.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Workvistar",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹5,000",
+      "period": "/ Month",
+      "priceFormatted": "₹5,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/23b80d614693142dc6d27fb9ea739f859db8f606.jpg",
+        "https://img.cofynd.com/images/original/a49863cb704c9ceae3621b8eeca709bdf877332f.jpg",
+        "https://img.cofynd.com/images/original/3477017057f76f8663d89becec31a5a0d27de91a.jpg",
+        "https://img.cofynd.com/images/original/25e5a08900fa08baf0b3f6efe6dd6c65214ac2c6.jpg",
+        "https://img.cofynd.com/images/original/8da57b82c475ef368e3841e6348666db5a32b28a.jpg"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "YBox.Work",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹4,500",
+      "period": "/ Month",
+      "priceFormatted": "₹4,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/aa61999951aef590967b8d33e36003d17e7e9f29.jpg",
+        "https://img.cofynd.com/images/original/af0c60b9f1c51eb83388accb47116e17d883bbdb.jpg",
+        "https://img.cofynd.com/images/original/15dabfe40d580efdb9a3b73e0636c75392a475a9.jpg",
+        "https://img.cofynd.com/images/original/13d776ca793563b51faeb11e043d6a3e23258124.jpg",
+        "https://img.cofynd.com/images/original/a68c3a0daa1c22ad5cb5d57f549378f492389087.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Virtual Coworks",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹4,000",
+      "period": "/ Month",
+      "priceFormatted": "₹4,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/8c1c9d98567dcf4c1da0ab14fc5e01c026f087b4.jpg",
+        "https://img.cofynd.com/images/original/5e988e80868c0669fe8f53b30c039c77032f6729.jpg",
+        "https://img.cofynd.com/images/original/4dc86cb26f63a5e11e05d3c6f0cee65578db71b9.jpg",
+        "https://img.cofynd.com/images/original/54afe209bd127f83a6b63f4dd245e59ba198f128.jpg",
+        "https://img.cofynd.com/images/original/0eb993cdbd015561ceb31bf68a300ed50c55a858.jpg"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Paskola",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹3,000",
+      "period": "/ Month",
+      "priceFormatted": "₹3,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/30bf54f4089ccebbe5a8f7fb0350eea9294e5a82.jpg",
+        "https://img.cofynd.com/images/original/091d32b4aa85620821b459d888f58160b87869cf.jpg",
+        "https://img.cofynd.com/images/original/b71f7da315b2bd61063e4a857d77eef387df013b.jpg",
+        "https://img.cofynd.com/images/original/0bbf5113faba1ce7ac27cff952682248ea43202a.jpg",
+        "https://img.cofynd.com/images/original/dc6b6880031dbdc49fbb45ad5994f989f805b824.jpg"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "BIZZI.B",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹8,000",
+      "period": "/ Month",
+      "priceFormatted": "₹8,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/76753b23784a9fbd545de2fd0b25ef1ef6d26eec.jpg",
+        "https://img.cofynd.com/images/original/05ea243041381e0d778476c38d8bdd321e355660.jpg",
+        "https://img.cofynd.com/images/original/e80920911c998b981e8baabf2369ab12a018f49f.jpg",
+        "https://img.cofynd.com/images/original/39eaff45f769343292f95435a515200d0d7dd848.jpg",
+        "https://img.cofynd.com/images/original/a2896cfa258eb38841b981b44e52d62410daadb7.jpg"
       ]
     }
   ],
@@ -1893,6 +2292,158 @@ export const areaExtraOfficeCards = {
         "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/fhex4y.jpg",
         "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/f7qj4q.jpg",
         "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/wfe74x.jpg"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Nexus Spaces South Tukoganj",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹7,500",
+      "period": "/ Month",
+      "priceFormatted": "₹7,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/6a4736f86d95a33b7e57f91fa806db10dfff54b2.jpg",
+        "https://img.cofynd.com/images/original/bb199d50402f34e04ef1dad0f50e8e6cab4eee85.jpg",
+        "https://img.cofynd.com/images/original/74384690fa00e36e41f36c84d86bd20cd8bffda3.jpg",
+        "https://img.cofynd.com/images/original/9fb7d8a3f3820b223f440cfb14ecd512e6f4a6b5.jpg",
+        "https://img.cofynd.com/images/original/4e8141c3c189c83996c9e685799d5654ee6b6f96.jpg"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Stark Spaces South Tukoganj",
+      "rating": 4.6,
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/vembuq.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/sft67c.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/jcx224.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/6tkxh5.jpg"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Workviaa Corporate House",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹6,500",
+      "period": "/ Month",
+      "priceFormatted": "₹6,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/3-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/6-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/1-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/2-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/4-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/5-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Location/MAP-1755759433.webp"
+      ]
+    },
+    {
+      "id": 74,
+      "name": "Regus DNR 90",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹10,100",
+      "period": "/ Month",
+      "priceFormatted": "₹10,100 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/3-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/8-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/6-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/4-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/7-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/5-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/2-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Location/MAP-1755594933.webp"
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Nexus Manas Mayfair",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹12,000",
+      "period": "/ Month",
+      "priceFormatted": "₹12,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/2-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/8-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/3-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/1-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/4-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/7-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/5-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/6-1755597636.webp"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "MyBranch Commerce House",
+      "area": "New Palasia",
+      "location": "New Palasia, Indore",
+      "price": "₹6,000",
+      "period": "/ Month",
+      "priceFormatted": "₹6,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/2-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Project%20Image/1-1755679189.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/6-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/4-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/7-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/3-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/5-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Location/Hou-1755679204.webp"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Workie Sewani Corporate House",
+      "area": "New Palasia",
+      "location": "New Palasia, Indore",
+      "price": "₹6,500",
+      "period": "/ Month",
+      "priceFormatted": "₹6,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/6-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/5-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/2-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/4-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/3-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/1-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Location/MAP-1755678166.webp"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "United Spaces Virendra Heights",
+      "area": "New Palasia",
+      "location": "New Palasia, Indore",
+      "price": "₹8,000",
+      "period": "/ Month",
+      "priceFormatted": "₹8,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/1-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/8-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/3-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/2-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/4-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/5-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/6-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/7-1755759163.webp"
       ]
     }
   ],
@@ -1988,6 +2539,135 @@ export const areaExtraOfficeCards = {
         "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/7-1755597636.webp",
         "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/5-1755597636.webp",
         "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/6-1755597636.webp"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Youth Cowork",
+      "area": "M.G. Road",
+      "location": "M.G. Road, Indore",
+      "price": "₹3,999",
+      "period": "/ Month",
+      "priceFormatted": "₹3,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/7d326793f8cd97485edaeb149765a0ce45d6f94d.jpg",
+        "https://img.cofynd.com/images/original/bfeda4aa0202764019dba287273696aaddf48891.jpg",
+        "https://img.cofynd.com/images/original/639f8da4a56df6f3ebc2e55b650a9ba4f169ade7.jpg",
+        "https://img.cofynd.com/images/original/ef0a8839b19f3882f8656aff54bff8b3bd9c0a1f.jpg",
+        "https://img.cofynd.com/images/original/593ec01b8469efddac15e6fe27b995d92ee8eb87.jpg",
+        "https://img.cofynd.com/images/original/85efe5b295c09bf950b188491b83867476f2b873.jpg"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "MyBranch Commerce House",
+      "area": "New Palasia",
+      "location": "New Palasia, Indore",
+      "price": "₹6,000",
+      "period": "/ Month",
+      "priceFormatted": "₹6,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/2-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Project%20Image/1-1755679189.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/6-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/4-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/7-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/3-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/5-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Location/Hou-1755679204.webp"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Workie Sewani Corporate House",
+      "area": "New Palasia",
+      "location": "New Palasia, Indore",
+      "price": "₹6,500",
+      "period": "/ Month",
+      "priceFormatted": "₹6,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/6-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/5-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/2-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/4-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/3-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/1-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Location/MAP-1755678166.webp"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "United Spaces Virendra Heights",
+      "area": "New Palasia",
+      "location": "New Palasia, Indore",
+      "price": "₹8,000",
+      "period": "/ Month",
+      "priceFormatted": "₹8,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/1-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/8-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/3-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/2-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/4-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/5-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/6-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/7-1755759163.webp"
+      ]
+    },
+    {
+      "id": 79,
+      "name": "Smartwork Brilliant Centre",
+      "area": "New Palasia",
+      "location": "New Palasia, Indore",
+      "price": "₹6,000",
+      "period": "/ Month",
+      "priceFormatted": "₹6,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Sample%20Apartment/1-1754223302.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Project%20Image/5-1754223287.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Project%20Image/6-1754223287.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Sample%20Apartment/4-1754223302.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Sample%20Apartment/7-1754223302.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Sample%20Apartment/2-1754223302.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Sample%20Apartment/3-1754223302.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Location/Hou-1754223317.webp"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Melange Marketing",
+      "area": "Jawahar Marg",
+      "location": "Jawahar Marg, Indore",
+      "price": "₹9,900",
+      "period": "/ Month",
+      "priceFormatted": "₹9,900 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/37bc6a96cbb759dc3526cb78ce319137c37363fb.jpg",
+        "https://img.cofynd.com/images/original/7e06657c2dbdba9198ceaa407e4499a64332af0f.jpg",
+        "https://img.cofynd.com/images/original/5480a4a30a291227eebcbf21a5487568626dedfc.jpg",
+        "https://img.cofynd.com/images/original/7c0e825cbbec0bdf445f8380261bc45c8e8a8a9a.jpg"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Melange Coworks",
+      "area": "Jawahar Marg",
+      "location": "Jawahar Marg, Indore",
+      "price": "₹2,000",
+      "period": "/ Month",
+      "priceFormatted": "₹2,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/0d8fae158a7e8065c877c524557e3fdb2cf8ea35.webp",
+        "https://img.cofynd.com/images/latest_images_2024/47b7b101f8e6b4119c669e2647b668676872e666.webp",
+        "https://img.cofynd.com/images/latest_images_2024/93e67d7f8c21374da50979128a5acd6ee96a5866.webp",
+        "https://img.cofynd.com/images/latest_images_2024/32386b6f439e77f07d75106df94f662238d018b9.webp"
       ]
     }
   ],
@@ -2688,6 +3368,210 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/original/593ec01b8469efddac15e6fe27b995d92ee8eb87.jpg",
         "https://img.cofynd.com/images/original/85efe5b295c09bf950b188491b83867476f2b873.jpg"
       ]
+    },
+    {
+      "id": 18,
+      "name": "Nexus Spaces South Tukoganj",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹7,500",
+      "period": "/ Month",
+      "priceFormatted": "₹7,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/6a4736f86d95a33b7e57f91fa806db10dfff54b2.jpg",
+        "https://img.cofynd.com/images/original/bb199d50402f34e04ef1dad0f50e8e6cab4eee85.jpg",
+        "https://img.cofynd.com/images/original/74384690fa00e36e41f36c84d86bd20cd8bffda3.jpg",
+        "https://img.cofynd.com/images/original/9fb7d8a3f3820b223f440cfb14ecd512e6f4a6b5.jpg",
+        "https://img.cofynd.com/images/original/4e8141c3c189c83996c9e685799d5654ee6b6f96.jpg"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Stark Spaces South Tukoganj",
+      "rating": 4.6,
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/vembuq.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/sft67c.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/jcx224.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/6tkxh5.jpg"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Workviaa Corporate House",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹6,500",
+      "period": "/ Month",
+      "priceFormatted": "₹6,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/3-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/6-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/1-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/2-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/4-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/5-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Location/MAP-1755759433.webp"
+      ]
+    },
+    {
+      "id": 74,
+      "name": "Regus DNR 90",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹10,100",
+      "period": "/ Month",
+      "priceFormatted": "₹10,100 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/3-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/8-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/6-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/4-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/7-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/5-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/2-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Location/MAP-1755594933.webp"
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Nexus Manas Mayfair",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹12,000",
+      "period": "/ Month",
+      "priceFormatted": "₹12,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/2-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/8-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/3-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/1-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/4-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/7-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/5-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/6-1755597636.webp"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Melange Marketing",
+      "area": "Jawahar Marg",
+      "location": "Jawahar Marg, Indore",
+      "price": "₹9,900",
+      "period": "/ Month",
+      "priceFormatted": "₹9,900 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/37bc6a96cbb759dc3526cb78ce319137c37363fb.jpg",
+        "https://img.cofynd.com/images/original/7e06657c2dbdba9198ceaa407e4499a64332af0f.jpg",
+        "https://img.cofynd.com/images/original/5480a4a30a291227eebcbf21a5487568626dedfc.jpg",
+        "https://img.cofynd.com/images/original/7c0e825cbbec0bdf445f8380261bc45c8e8a8a9a.jpg"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Melange Coworks",
+      "area": "Jawahar Marg",
+      "location": "Jawahar Marg, Indore",
+      "price": "₹2,000",
+      "period": "/ Month",
+      "priceFormatted": "₹2,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/0d8fae158a7e8065c877c524557e3fdb2cf8ea35.webp",
+        "https://img.cofynd.com/images/latest_images_2024/47b7b101f8e6b4119c669e2647b668676872e666.webp",
+        "https://img.cofynd.com/images/latest_images_2024/93e67d7f8c21374da50979128a5acd6ee96a5866.webp",
+        "https://img.cofynd.com/images/latest_images_2024/32386b6f439e77f07d75106df94f662238d018b9.webp"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "MyBranch Commerce House",
+      "area": "New Palasia",
+      "location": "New Palasia, Indore",
+      "price": "₹6,000",
+      "period": "/ Month",
+      "priceFormatted": "₹6,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/2-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Project%20Image/1-1755679189.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/6-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/4-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/7-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/3-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/5-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Location/Hou-1755679204.webp"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Workie Sewani Corporate House",
+      "area": "New Palasia",
+      "location": "New Palasia, Indore",
+      "price": "₹6,500",
+      "period": "/ Month",
+      "priceFormatted": "₹6,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/6-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/5-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/2-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/4-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/3-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/1-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Location/MAP-1755678166.webp"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "United Spaces Virendra Heights",
+      "area": "New Palasia",
+      "location": "New Palasia, Indore",
+      "price": "₹8,000",
+      "period": "/ Month",
+      "priceFormatted": "₹8,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/1-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/8-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/3-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/2-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/4-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/5-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/6-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/7-1755759163.webp"
+      ]
+    },
+    {
+      "id": 79,
+      "name": "Smartwork Brilliant Centre",
+      "area": "New Palasia",
+      "location": "New Palasia, Indore",
+      "price": "₹6,000",
+      "period": "/ Month",
+      "priceFormatted": "₹6,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Sample%20Apartment/1-1754223302.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Project%20Image/5-1754223287.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Project%20Image/6-1754223287.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Sample%20Apartment/4-1754223302.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Sample%20Apartment/7-1754223302.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Sample%20Apartment/2-1754223302.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Sample%20Apartment/3-1754223302.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Location/Hou-1754223317.webp"
+      ]
     }
   ],
   "Jawahar Marg": [
@@ -2721,6 +3605,196 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/47b7b101f8e6b4119c669e2647b668676872e666.webp",
         "https://img.cofynd.com/images/latest_images_2024/93e67d7f8c21374da50979128a5acd6ee96a5866.webp",
         "https://img.cofynd.com/images/latest_images_2024/32386b6f439e77f07d75106df94f662238d018b9.webp"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Youth Cowork",
+      "area": "M.G. Road",
+      "location": "M.G. Road, Indore",
+      "price": "₹3,999",
+      "period": "/ Month",
+      "priceFormatted": "₹3,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/7d326793f8cd97485edaeb149765a0ce45d6f94d.jpg",
+        "https://img.cofynd.com/images/original/bfeda4aa0202764019dba287273696aaddf48891.jpg",
+        "https://img.cofynd.com/images/original/639f8da4a56df6f3ebc2e55b650a9ba4f169ade7.jpg",
+        "https://img.cofynd.com/images/original/ef0a8839b19f3882f8656aff54bff8b3bd9c0a1f.jpg",
+        "https://img.cofynd.com/images/original/593ec01b8469efddac15e6fe27b995d92ee8eb87.jpg",
+        "https://img.cofynd.com/images/original/85efe5b295c09bf950b188491b83867476f2b873.jpg"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Nexus Spaces South Tukoganj",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹7,500",
+      "period": "/ Month",
+      "priceFormatted": "₹7,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/6a4736f86d95a33b7e57f91fa806db10dfff54b2.jpg",
+        "https://img.cofynd.com/images/original/bb199d50402f34e04ef1dad0f50e8e6cab4eee85.jpg",
+        "https://img.cofynd.com/images/original/74384690fa00e36e41f36c84d86bd20cd8bffda3.jpg",
+        "https://img.cofynd.com/images/original/9fb7d8a3f3820b223f440cfb14ecd512e6f4a6b5.jpg",
+        "https://img.cofynd.com/images/original/4e8141c3c189c83996c9e685799d5654ee6b6f96.jpg"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Stark Spaces South Tukoganj",
+      "rating": 4.6,
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/vembuq.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/sft67c.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/jcx224.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/6tkxh5.jpg"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Workviaa Corporate House",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹6,500",
+      "period": "/ Month",
+      "priceFormatted": "₹6,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/3-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/6-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/1-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/2-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/4-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/5-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Location/MAP-1755759433.webp"
+      ]
+    },
+    {
+      "id": 74,
+      "name": "Regus DNR 90",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹10,100",
+      "period": "/ Month",
+      "priceFormatted": "₹10,100 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/3-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/8-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/6-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/4-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/7-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/5-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/2-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Location/MAP-1755594933.webp"
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Nexus Manas Mayfair",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹12,000",
+      "period": "/ Month",
+      "priceFormatted": "₹12,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/2-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/8-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/3-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/1-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/4-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/7-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/5-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/6-1755597636.webp"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "MyBranch Commerce House",
+      "area": "New Palasia",
+      "location": "New Palasia, Indore",
+      "price": "₹6,000",
+      "period": "/ Month",
+      "priceFormatted": "₹6,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/2-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Project%20Image/1-1755679189.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/6-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/4-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/7-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/3-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Sample%20Apartment/5-1755679195.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147412/Location/Hou-1755679204.webp"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Workie Sewani Corporate House",
+      "area": "New Palasia",
+      "location": "New Palasia, Indore",
+      "price": "₹6,500",
+      "period": "/ Month",
+      "priceFormatted": "₹6,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/6-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/5-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/2-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/4-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/3-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Project%20Image/1-1755678156.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147405/Location/MAP-1755678166.webp"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "United Spaces Virendra Heights",
+      "area": "New Palasia",
+      "location": "New Palasia, Indore",
+      "price": "₹8,000",
+      "period": "/ Month",
+      "priceFormatted": "₹8,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/1-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/8-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/3-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/2-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/4-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/5-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/6-1755759163.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147507/Project%20Image/7-1755759163.webp"
+      ]
+    },
+    {
+      "id": 79,
+      "name": "Smartwork Brilliant Centre",
+      "area": "New Palasia",
+      "location": "New Palasia, Indore",
+      "price": "₹6,000",
+      "period": "/ Month",
+      "priceFormatted": "₹6,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Sample%20Apartment/1-1754223302.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Project%20Image/5-1754223287.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Project%20Image/6-1754223287.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Sample%20Apartment/4-1754223302.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Sample%20Apartment/7-1754223302.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Sample%20Apartment/2-1754223302.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Sample%20Apartment/3-1754223302.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/145524/Location/Hou-1754223317.webp"
       ]
     }
   ],
@@ -2780,6 +3854,168 @@ export const areaExtraOfficeCards = {
         "https://img.cofynd.com/images/latest_images_2024/360eac5f552171011922d7ae702ed9845cd71933.webp",
         "https://img.cofynd.com/images/latest_images_2024/7dbc49373022c7d2aa0ea4dfb636e421f54e8c62.webp"
       ]
+    },
+    {
+      "id": 3,
+      "name": "Incuspaze Princes Business Skyline",
+      "rating": 4.5,
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹5,499",
+      "period": "/ Month",
+      "priceFormatted": "₹5,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/3d951919efd3a31194f66951440dc9f301fcc53c.jpg",
+        "https://img.cofynd.com/images/original/1552dc2b639d5266606b16784fda7a87c9d17a22.jpg",
+        "https://img.cofynd.com/images/original/dc0dfeb1aa0d6403f6a2049fa7113c145b81a022.jpg",
+        "https://img.cofynd.com/images/original/e66871836b68bf4ac79120096a87777ac47f8ef3.jpg",
+        "https://img.cofynd.com/images/original/5fb20a658639188bf735d7a826209c0c566b4ef4.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Incuspaze Metro Tower",
+      "rating": 4.5,
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹5,499",
+      "period": "/ Month",
+      "priceFormatted": "₹5,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/9a77947d04ddacf2731007500e2bdec2dbcfe336.jpg",
+        "https://img.cofynd.com/images/original/eff3a147c3f212107aa125870e63e1cbc2e18c82.jpg",
+        "https://img.cofynd.com/images/original/13f660e0dc2f4f0b39a960da9eac1ff891db4827.jpg",
+        "https://img.cofynd.com/images/original/dae1b62039a3d1fd72aa320a9cba7e9751dc8196.jpg",
+        "https://img.cofynd.com/images/original/86e3add5caf136da865a4ad6a9b56d5c54189da0.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Adited Coworking 1.0",
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/79cb04ff48a91c1039479a6433cdcda04477a3c9.jpg",
+        "https://img.cofynd.com/images/original/f7cd616f5056b7a8144547f1e92fed4a384a3880.jpg",
+        "https://img.cofynd.com/images/original/9f08d9e480403ec85cf9dd6e39aa83cc7e26b6ed.jpg",
+        "https://img.cofynd.com/images/original/4ce4627285e42ed36a2b39db6d91eb70df100eef.jpg",
+        "https://img.cofynd.com/images/original/879d988cbfa9d8c06f0b642fba72f305e64bd966.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Worksthan",
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹4,500",
+      "period": "/ Month",
+      "priceFormatted": "₹4,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/5cacf83dfb43b7eb6882f6271898b0e05eead724.jpg",
+        "https://img.cofynd.com/images/original/41f2e5c9415d01433c3d52a4fa9f67d91449e898.jpg",
+        "https://img.cofynd.com/images/original/4afcfaaa496f358bb872ae640eb3f896936b35c8.jpg",
+        "https://img.cofynd.com/images/original/3f9eaed03a6a4e02ac74c47c2efe46d434a0b3a4.jpg",
+        "https://img.cofynd.com/images/original/2839e3922f335a66aaecfe90e585bb087ca61ac0.jpg",
+        "https://img.cofynd.com/images/original/81e560d0040e6e91df4ab7f5543bb6c87f7985d4.jpg",
+        "https://img.cofynd.com/images/original/4ede9b640ca3286410d4724f71044ade4ad7a175.jpg"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "The Dice",
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/24fd3539a991b91614d9181fe9e5becacfd3e2f9.jpg",
+        "https://img.cofynd.com/images/original/13b08d83775f884234c0bf83438d99b879d91c6c.jpg",
+        "https://img.cofynd.com/images/original/c99637e14b70bb90eb23e69a9e668aa6e44a386f.jpg",
+        "https://img.cofynd.com/images/original/954b965757f1a994841ddad28f96331ef70a32a6.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/b67ba48e25c4388206cd44d3d52ebe8d021d19ff.webp",
+        "https://img.cofynd.com/images/latest_images_2024/23b8e938bdc54f6ac4b1fd9ad9af7ca8e2302a32.webp",
+        "https://img.cofynd.com/images/latest_images_2024/808a31deb57baf20d09f5dbaafd37f52f20c37e9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/26c8ecb1f7190b14f846475ca1ddbd7044c8294c.webp"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Nexus Spaces AB Road",
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹6,000",
+      "period": "/ Month",
+      "priceFormatted": "₹6,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/e3535be480db4c0c4dc89131e5e255fb419bf6dd.jpg",
+        "https://img.cofynd.com/images/original/176e405a071100cfd07f2778392d2f6595996b2e.jpg",
+        "https://img.cofynd.com/images/original/ac1662631043ed88ca9aba83053aec22ecb7b236.jpg",
+        "https://img.cofynd.com/images/original/9d5725d27d12410a8a3e065649dbae21cf671fb1.jpg",
+        "https://img.cofynd.com/images/original/824a553195bdf5f968453cf7ab1fb15d715abd42.jpg"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Stark Spaces",
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/76d6b5128985a640d2d8637a3e4a1615f30b48bf.webp",
+        "https://img.cofynd.com/images/latest_images_2024/db77ba0d94a8174bcc160cdcf9130242d34e1981.webp",
+        "https://img.cofynd.com/images/latest_images_2024/319b11c04282bbd409a975af46370ae5ab4e469a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9971f7f6efbdb6c1c9e076c8a7832e8a7d1f9125.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a8f5c8b1055b0f8073eb69b0f96c2ccc5526c13b.webp"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "ThinkNTap Coworks",
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹6,000",
+      "period": "/ Month",
+      "priceFormatted": "₹6,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/15751578a49bf67e00ee3c940f881486d3ef767c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/de42b4068b50300d6fa7fa8a439ff4fe6bc33f3e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5c572f0b243bcd55718ea2e26ab3d4a528b36257.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d41dc37ce23a8ad06ff4d6b45aab7fc4bbecbcd2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/1ae7180d916061d4c13e3a8c25ee13966ca3ee98.webp"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Smartworks AB Road",
+      "rating": 4.8,
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/je2svc.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/8bqeyh.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/k4ajkz.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/jnjmyr.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/xc7n99.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/y6um98.jpg"
+      ]
     }
   ],
   "Mahalaxmi Nagar": [
@@ -2819,6 +4055,186 @@ export const areaExtraOfficeCards = {
         "https://imgcdn.houssed.com/assets/Files/Projects/147301/Project%20Image/1-1755588287.webp",
         "https://imgcdn.houssed.com/assets/Files/Projects/147301/Project%20Image/3-1755588287.webp",
         "https://imgcdn.houssed.com/assets/Files/Projects/147301/Project%20Image/10-1755588287.webp"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Incuspaze Princes Business Skyline",
+      "rating": 4.5,
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹5,499",
+      "period": "/ Month",
+      "priceFormatted": "₹5,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/3d951919efd3a31194f66951440dc9f301fcc53c.jpg",
+        "https://img.cofynd.com/images/original/1552dc2b639d5266606b16784fda7a87c9d17a22.jpg",
+        "https://img.cofynd.com/images/original/dc0dfeb1aa0d6403f6a2049fa7113c145b81a022.jpg",
+        "https://img.cofynd.com/images/original/e66871836b68bf4ac79120096a87777ac47f8ef3.jpg",
+        "https://img.cofynd.com/images/original/5fb20a658639188bf735d7a826209c0c566b4ef4.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Incuspaze Metro Tower",
+      "rating": 4.5,
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹5,499",
+      "period": "/ Month",
+      "priceFormatted": "₹5,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/9a77947d04ddacf2731007500e2bdec2dbcfe336.jpg",
+        "https://img.cofynd.com/images/original/eff3a147c3f212107aa125870e63e1cbc2e18c82.jpg",
+        "https://img.cofynd.com/images/original/13f660e0dc2f4f0b39a960da9eac1ff891db4827.jpg",
+        "https://img.cofynd.com/images/original/dae1b62039a3d1fd72aa320a9cba7e9751dc8196.jpg",
+        "https://img.cofynd.com/images/original/86e3add5caf136da865a4ad6a9b56d5c54189da0.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Adited Coworking 1.0",
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/79cb04ff48a91c1039479a6433cdcda04477a3c9.jpg",
+        "https://img.cofynd.com/images/original/f7cd616f5056b7a8144547f1e92fed4a384a3880.jpg",
+        "https://img.cofynd.com/images/original/9f08d9e480403ec85cf9dd6e39aa83cc7e26b6ed.jpg",
+        "https://img.cofynd.com/images/original/4ce4627285e42ed36a2b39db6d91eb70df100eef.jpg",
+        "https://img.cofynd.com/images/original/879d988cbfa9d8c06f0b642fba72f305e64bd966.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Worksthan",
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹4,500",
+      "period": "/ Month",
+      "priceFormatted": "₹4,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/5cacf83dfb43b7eb6882f6271898b0e05eead724.jpg",
+        "https://img.cofynd.com/images/original/41f2e5c9415d01433c3d52a4fa9f67d91449e898.jpg",
+        "https://img.cofynd.com/images/original/4afcfaaa496f358bb872ae640eb3f896936b35c8.jpg",
+        "https://img.cofynd.com/images/original/3f9eaed03a6a4e02ac74c47c2efe46d434a0b3a4.jpg",
+        "https://img.cofynd.com/images/original/2839e3922f335a66aaecfe90e585bb087ca61ac0.jpg",
+        "https://img.cofynd.com/images/original/81e560d0040e6e91df4ab7f5543bb6c87f7985d4.jpg",
+        "https://img.cofynd.com/images/original/4ede9b640ca3286410d4724f71044ade4ad7a175.jpg"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "The Dice",
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹5,999",
+      "period": "/ Month",
+      "priceFormatted": "₹5,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/24fd3539a991b91614d9181fe9e5becacfd3e2f9.jpg",
+        "https://img.cofynd.com/images/original/13b08d83775f884234c0bf83438d99b879d91c6c.jpg",
+        "https://img.cofynd.com/images/original/c99637e14b70bb90eb23e69a9e668aa6e44a386f.jpg",
+        "https://img.cofynd.com/images/original/954b965757f1a994841ddad28f96331ef70a32a6.jpg",
+        "https://img.cofynd.com/images/latest_images_2024/b67ba48e25c4388206cd44d3d52ebe8d021d19ff.webp",
+        "https://img.cofynd.com/images/latest_images_2024/23b8e938bdc54f6ac4b1fd9ad9af7ca8e2302a32.webp",
+        "https://img.cofynd.com/images/latest_images_2024/808a31deb57baf20d09f5dbaafd37f52f20c37e9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/26c8ecb1f7190b14f846475ca1ddbd7044c8294c.webp"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Nexus Spaces AB Road",
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹6,000",
+      "period": "/ Month",
+      "priceFormatted": "₹6,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/e3535be480db4c0c4dc89131e5e255fb419bf6dd.jpg",
+        "https://img.cofynd.com/images/original/176e405a071100cfd07f2778392d2f6595996b2e.jpg",
+        "https://img.cofynd.com/images/original/ac1662631043ed88ca9aba83053aec22ecb7b236.jpg",
+        "https://img.cofynd.com/images/original/9d5725d27d12410a8a3e065649dbae21cf671fb1.jpg",
+        "https://img.cofynd.com/images/original/824a553195bdf5f968453cf7ab1fb15d715abd42.jpg"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Stark Spaces",
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹9,999",
+      "period": "/ Month",
+      "priceFormatted": "₹9,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/76d6b5128985a640d2d8637a3e4a1615f30b48bf.webp",
+        "https://img.cofynd.com/images/latest_images_2024/db77ba0d94a8174bcc160cdcf9130242d34e1981.webp",
+        "https://img.cofynd.com/images/latest_images_2024/319b11c04282bbd409a975af46370ae5ab4e469a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/9971f7f6efbdb6c1c9e076c8a7832e8a7d1f9125.webp",
+        "https://img.cofynd.com/images/latest_images_2024/a8f5c8b1055b0f8073eb69b0f96c2ccc5526c13b.webp"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "ThinkNTap Coworks",
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹6,000",
+      "period": "/ Month",
+      "priceFormatted": "₹6,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/15751578a49bf67e00ee3c940f881486d3ef767c.webp",
+        "https://img.cofynd.com/images/latest_images_2024/de42b4068b50300d6fa7fa8a439ff4fe6bc33f3e.webp",
+        "https://img.cofynd.com/images/latest_images_2024/5c572f0b243bcd55718ea2e26ab3d4a528b36257.webp",
+        "https://img.cofynd.com/images/latest_images_2024/d41dc37ce23a8ad06ff4d6b45aab7fc4bbecbcd2.webp",
+        "https://img.cofynd.com/images/latest_images_2024/1ae7180d916061d4c13e3a8c25ee13966ca3ee98.webp"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Smartworks AB Road",
+      "rating": 4.8,
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/je2svc.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/8bqeyh.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/k4ajkz.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/jnjmyr.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/xc7n99.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/smartworks-abroad/dedicated/y6um98.jpg"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Antares Business Centre",
+      "rating": 4.7,
+      "area": "AB Road",
+      "location": "AB Road, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/antares-business-centre-abroad/dedicated/n5mrs3.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/antares-business-centre-abroad/dedicated/px7568.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/antares-business-centre-abroad/dedicated/nkqdsy.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/antares-business-centre-abroad/dedicated/p9v94b.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/antares-business-centre-abroad/dedicated/c5erdv.jpg"
       ]
     }
   ],
@@ -2901,6 +4317,159 @@ export const areaExtraOfficeCards = {
         "https://imgcdn.houssed.com/assets/Files/Projects/145524/Sample%20Apartment/3-1754223302.webp",
         "https://imgcdn.houssed.com/assets/Files/Projects/145524/Location/Hou-1754223317.webp"
       ]
+    },
+    {
+      "id": 18,
+      "name": "Nexus Spaces South Tukoganj",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹7,500",
+      "period": "/ Month",
+      "priceFormatted": "₹7,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/6a4736f86d95a33b7e57f91fa806db10dfff54b2.jpg",
+        "https://img.cofynd.com/images/original/bb199d50402f34e04ef1dad0f50e8e6cab4eee85.jpg",
+        "https://img.cofynd.com/images/original/74384690fa00e36e41f36c84d86bd20cd8bffda3.jpg",
+        "https://img.cofynd.com/images/original/9fb7d8a3f3820b223f440cfb14ecd512e6f4a6b5.jpg",
+        "https://img.cofynd.com/images/original/4e8141c3c189c83996c9e685799d5654ee6b6f96.jpg"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Stark Spaces South Tukoganj",
+      "rating": 4.6,
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/vembuq.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/sft67c.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/jcx224.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/6tkxh5.jpg"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Workviaa Corporate House",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹6,500",
+      "period": "/ Month",
+      "priceFormatted": "₹6,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/3-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/6-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/1-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/2-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/4-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/5-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Location/MAP-1755759433.webp"
+      ]
+    },
+    {
+      "id": 74,
+      "name": "Regus DNR 90",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹10,100",
+      "period": "/ Month",
+      "priceFormatted": "₹10,100 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/3-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/8-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/6-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/4-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/7-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/5-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/2-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Location/MAP-1755594933.webp"
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Nexus Manas Mayfair",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹12,000",
+      "period": "/ Month",
+      "priceFormatted": "₹12,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/2-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/8-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/3-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/1-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/4-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/7-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/5-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/6-1755597636.webp"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "The Address Ravindra Nagar",
+      "rating": 4.9,
+      "area": "Ravindra Nagar",
+      "location": "Ravindra Nagar, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/hywa9h.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/rnu8pg.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/gau9mh.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/qa7a2t.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/7uy7yb.jpg"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Adited House",
+      "rating": 4.4,
+      "area": "Ravindra Nagar",
+      "location": "Ravindra Nagar, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/kguxnn.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/mkra2f.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/uu99xt.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/497avg.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/cke9pe.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/enruy5.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/svq3z6.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/9dq8yv.jpg"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "ADITED X",
+      "rating": 3.6,
+      "area": "Ravindra Nagar",
+      "location": "Ravindra Nagar, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/zs72tf.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/hwxzj3.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/g9axng.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/4sa5u9.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/xyubg8.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/h6av8z.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/mqmmyq.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/rxznxs.jpg"
+      ]
     }
   ],
   "Scheme 54": [
@@ -2956,6 +4525,167 @@ export const areaExtraOfficeCards = {
         "https://imgcdn.houssed.com/assets/Files/Projects/147497/Project%20Image/6-1755756161.webp",
         "https://imgcdn.houssed.com/assets/Files/Projects/147497/Project%20Image/7-1755756161.webp"
       ]
+    },
+    {
+      "id": 1,
+      "name": "Nextcoworks",
+      "badge": "Premium Coworking",
+      "rating": 4.8,
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹5,500",
+      "period": "/ Month",
+      "priceFormatted": "₹5,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/latest_images_2024/cebdaa16c044508e7616f5a0f463c78244522044.webp",
+        "https://img.cofynd.com/images/latest_images_2024/bca89c4cd39ac0dbca23ec5cc0754a822b54bb8a.webp",
+        "https://img.cofynd.com/images/latest_images_2024/f05d0c2eac60a690a8b9f2dc3b1ceb9ac41c40c9.webp",
+        "https://img.cofynd.com/images/latest_images_2024/b1544faff4dd3dc2f7a7b5ec7e425d59e5a19c59.webp",
+        "https://img.cofynd.com/images/latest_images_2024/8612338f4f05bfb868bb96a679374be25bf7f5a6.webp",
+        "https://img.cofynd.com/images/latest_images_2024/01bd993a3005a307e1b3f90d193756ef05b1f849.webp",
+        "https://img.cofynd.com/images/latest_images_2024/278137df85e651aa2c9d4405e2788704a358bfba.webp",
+        "https://img.cofynd.com/images/latest_images_2024/02aa649f2ef0f3500e8d6137bdc5503ce6514f6e.webp"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Incuspaze Apollo",
+      "rating": 4.5,
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "On Request",
+      "period": "",
+      "priceFormatted": "On Request",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/e85426ce071a8de598c3d0e7f16adb4aaf056d13.jpg",
+        "https://img.cofynd.com/images/original/b1702e02cba6a7e8244a54e0e6a58acba5004923.jpg",
+        "https://img.cofynd.com/images/original/c0f1c5ff530c8616ebe2bb2265c6e3f8cf2b3a0f.jpg",
+        "https://img.cofynd.com/images/original/e6915cb5e08196700dc39f8a265ceb84636852c9.jpg",
+        "https://img.cofynd.com/images/original/ea807ca73f1f0f8884b96193b289c18203100335.jpg",
+        "https://img.cofynd.com/images/original/cd4b42f3b4627f5815f179f965b74e331a239d45.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Incuspaze Brilliant Platina",
+      "rating": 4.5,
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹6,499",
+      "period": "/ Month",
+      "priceFormatted": "₹6,499 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/e3968f9d719e9f59b3bf5e8037ac1df3329da2bd.jpg",
+        "https://img.cofynd.com/images/original/c177625b3ebd7cb710215421b77fa4290a5ed767.jpg",
+        "https://img.cofynd.com/images/original/55edf08ec595b25d532da9d94c8885b646354827.jpg",
+        "https://img.cofynd.com/images/original/3382a8ad450944e08c6f4de01afef1a6ed18e3da.jpg",
+        "https://img.cofynd.com/images/original/eb6127274f92a2e24b2fc67d6f5088e5acc37e18.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Work Jar Coworking",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹5,000",
+      "period": "/ Month",
+      "priceFormatted": "₹5,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/9a2e0d80c47371515102ecb7543f1f8af58338bd.jpg",
+        "https://img.cofynd.com/images/original/8cfbda62db1c0caf549ff88d58e1dc3d8356e54b.jpg",
+        "https://img.cofynd.com/images/original/1fe04de035e19a40a619a2d2b50d73dff32799cb.jpg",
+        "https://img.cofynd.com/images/original/73de0375d6f4a9e7442f882d4796ef61fe715877.jpg",
+        "https://img.cofynd.com/images/original/fb98cb1cc76929a02d716afd27141f049dc1b291.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Workvistar",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹5,000",
+      "period": "/ Month",
+      "priceFormatted": "₹5,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/23b80d614693142dc6d27fb9ea739f859db8f606.jpg",
+        "https://img.cofynd.com/images/original/a49863cb704c9ceae3621b8eeca709bdf877332f.jpg",
+        "https://img.cofynd.com/images/original/3477017057f76f8663d89becec31a5a0d27de91a.jpg",
+        "https://img.cofynd.com/images/original/25e5a08900fa08baf0b3f6efe6dd6c65214ac2c6.jpg",
+        "https://img.cofynd.com/images/original/8da57b82c475ef368e3841e6348666db5a32b28a.jpg"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "YBox.Work",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹4,500",
+      "period": "/ Month",
+      "priceFormatted": "₹4,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/aa61999951aef590967b8d33e36003d17e7e9f29.jpg",
+        "https://img.cofynd.com/images/original/af0c60b9f1c51eb83388accb47116e17d883bbdb.jpg",
+        "https://img.cofynd.com/images/original/15dabfe40d580efdb9a3b73e0636c75392a475a9.jpg",
+        "https://img.cofynd.com/images/original/13d776ca793563b51faeb11e043d6a3e23258124.jpg",
+        "https://img.cofynd.com/images/original/a68c3a0daa1c22ad5cb5d57f549378f492389087.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Virtual Coworks",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹4,000",
+      "period": "/ Month",
+      "priceFormatted": "₹4,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/8c1c9d98567dcf4c1da0ab14fc5e01c026f087b4.jpg",
+        "https://img.cofynd.com/images/original/5e988e80868c0669fe8f53b30c039c77032f6729.jpg",
+        "https://img.cofynd.com/images/original/4dc86cb26f63a5e11e05d3c6f0cee65578db71b9.jpg",
+        "https://img.cofynd.com/images/original/54afe209bd127f83a6b63f4dd245e59ba198f128.jpg",
+        "https://img.cofynd.com/images/original/0eb993cdbd015561ceb31bf68a300ed50c55a858.jpg"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Paskola",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹3,000",
+      "period": "/ Month",
+      "priceFormatted": "₹3,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/30bf54f4089ccebbe5a8f7fb0350eea9294e5a82.jpg",
+        "https://img.cofynd.com/images/original/091d32b4aa85620821b459d888f58160b87869cf.jpg",
+        "https://img.cofynd.com/images/original/b71f7da315b2bd61063e4a857d77eef387df013b.jpg",
+        "https://img.cofynd.com/images/original/0bbf5113faba1ce7ac27cff952682248ea43202a.jpg",
+        "https://img.cofynd.com/images/original/dc6b6880031dbdc49fbb45ad5994f989f805b824.jpg"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "BIZZI.B",
+      "area": "Vijay Nagar",
+      "location": "Vijay Nagar, Indore",
+      "price": "₹8,000",
+      "period": "/ Month",
+      "priceFormatted": "₹8,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/76753b23784a9fbd545de2fd0b25ef1ef6d26eec.jpg",
+        "https://img.cofynd.com/images/original/05ea243041381e0d778476c38d8bdd321e355660.jpg",
+        "https://img.cofynd.com/images/original/e80920911c998b981e8baabf2369ab12a018f49f.jpg",
+        "https://img.cofynd.com/images/original/39eaff45f769343292f95435a515200d0d7dd848.jpg",
+        "https://img.cofynd.com/images/original/a2896cfa258eb38841b981b44e52d62410daadb7.jpg"
+      ]
     }
   ],
   "Pipliyahana": [
@@ -2989,6 +4719,198 @@ export const areaExtraOfficeCards = {
         "https://imgcdn.houssed.com/assets/Files/Projects/147523/Project%20Image/1-1755764893.webp",
         "https://imgcdn.houssed.com/assets/Files/Projects/147523/Project%20Image/4-1755764893.webp",
         "https://imgcdn.houssed.com/assets/Files/Projects/147523/Location/MAP-1755764902.webp"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Nexus Spaces South Tukoganj",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹7,500",
+      "period": "/ Month",
+      "priceFormatted": "₹7,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/6a4736f86d95a33b7e57f91fa806db10dfff54b2.jpg",
+        "https://img.cofynd.com/images/original/bb199d50402f34e04ef1dad0f50e8e6cab4eee85.jpg",
+        "https://img.cofynd.com/images/original/74384690fa00e36e41f36c84d86bd20cd8bffda3.jpg",
+        "https://img.cofynd.com/images/original/9fb7d8a3f3820b223f440cfb14ecd512e6f4a6b5.jpg",
+        "https://img.cofynd.com/images/original/4e8141c3c189c83996c9e685799d5654ee6b6f96.jpg"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Stark Spaces South Tukoganj",
+      "rating": 4.6,
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/vembuq.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/sft67c.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/jcx224.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/stark-spaces-southtukoganj/dedicated/6tkxh5.jpg"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Workviaa Corporate House",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹6,500",
+      "period": "/ Month",
+      "priceFormatted": "₹6,500 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/3-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/6-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/1-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/2-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/4-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Project%20Image/5-1755759424.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147509/Location/MAP-1755759433.webp"
+      ]
+    },
+    {
+      "id": 74,
+      "name": "Regus DNR 90",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹10,100",
+      "period": "/ Month",
+      "priceFormatted": "₹10,100 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/3-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/8-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/6-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/4-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/7-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/5-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Project%20Image/2-1755594920.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147325/Location/MAP-1755594933.webp"
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Nexus Manas Mayfair",
+      "area": "South Tukoganj",
+      "location": "South Tukoganj, Indore",
+      "price": "₹12,000",
+      "period": "/ Month",
+      "priceFormatted": "₹12,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/2-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/8-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/3-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/1-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/4-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/7-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/5-1755597636.webp",
+        "https://imgcdn.houssed.com/assets/Files/Projects/147335/Project%20Image/6-1755597636.webp"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "The Address Ravindra Nagar",
+      "rating": 4.9,
+      "area": "Ravindra Nagar",
+      "location": "Ravindra Nagar, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/hywa9h.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/rnu8pg.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/gau9mh.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/qa7a2t.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/the-address-ravindranagar/7uy7yb.jpg"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Adited House",
+      "rating": 4.4,
+      "area": "Ravindra Nagar",
+      "location": "Ravindra Nagar, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/kguxnn.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/mkra2f.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/uu99xt.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/497avg.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/cke9pe.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/enruy5.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/svq3z6.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-house-ravindranagar/dedicated/9dq8yv.jpg"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "ADITED X",
+      "rating": 3.6,
+      "area": "Ravindra Nagar",
+      "location": "Ravindra Nagar, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/zs72tf.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/hwxzj3.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/g9axng.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/4sa5u9.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/xyubg8.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/h6av8z.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/mqmmyq.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/adited-x-ravindranagar/dedicated/rxznxs.jpg"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "United Spaces Ravindra Nagar",
+      "rating": 5,
+      "area": "Ravindra Nagar",
+      "location": "Ravindra Nagar, Indore",
+      "price": "₹7,999",
+      "period": "/ Month",
+      "priceFormatted": "₹7,999 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/u3zz5p.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/ffzdzq.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/ev6bqm.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/fhex4y.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/f7qj4q.jpg",
+        "https://res.cloudinary.com/myhq/image/upload/workspaces/united-spaces-ravindranagar/dedicated/wfe74x.jpg"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Karyasthal",
+      "area": "Bhawarkua",
+      "location": "Bhawarkua, Indore",
+      "price": "₹7,000",
+      "period": "/ Month",
+      "priceFormatted": "₹7,000 / Month",
+      "ctaText": "Get Quote",
+      "images": [
+        "https://img.cofynd.com/images/original/e786a2ce11b5a1c43fb64ba7e444a03396994c74.jpg",
+        "https://img.cofynd.com/images/original/c75929be3c06514af1adc8365463ef4a8f8b9d84.jpg",
+        "https://img.cofynd.com/images/original/694e8f7f66aa73cf9034d05007d8a7a1efff0429.jpg",
+        "https://img.cofynd.com/images/original/d91ae660f43ccda386f18dc2f9e8338b4effba21.jpg",
+        "https://img.cofynd.com/images/original/88c7d38f9b30a61ac37cfa3c5b340fb58541960f.jpg",
+        "https://img.cofynd.com/images/original/8232c5e40a297f3cbda881b60d434773b630d75b.jpg",
+        "https://img.cofynd.com/images/original/b52dcb1f4abd0e138aeaad7787892c25feefb637.jpg",
+        "https://img.cofynd.com/images/original/2d1753cd6f0a1cbdf02000540f9ea0a819a7b6b7.jpg"
       ]
     }
   ]

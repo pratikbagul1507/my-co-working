@@ -257,47 +257,16 @@ const Indore = () => {
     currentPage === 4 ? pageFourIndoreOfficeCards :
     [];
 
-  // ============================================================================
-  // Area Filtering Logic with Extra 10 Real Internet Office Cards per Area
-  // ----------------------------------------------------------------------------
-  // 1. Jab koi Area Button ACTIVE ho (selectedNeighborhood != null):
-  //    - Existing cards me se us area ke matching cards filter honge.
-  //    - Sath me internet se laye gaye naye 10 cards (areaExtraOfficeCards[selectedNeighborhood]) judenge.
-  // 2. Jab koi Area Button ACTIVE NAHI ho (All Cards view):
-  //    - Naye 10 cards chup (hidden) rahenge, sirf default existing cards hi dikhenge.
-  // ============================================================================
-
-  // Current page ke existing top cards me se area match
-  const existingFilteredTopSpaces = selectedNeighborhood
-    ? activeTopSpaces.filter(
-        (space) =>
-          space.area?.toLowerCase() === selectedNeighborhood.toLowerCase() ||
-          space.location?.toLowerCase().includes(selectedNeighborhood.toLowerCase())
-      )
-    : activeTopSpaces;
-
+  // Area filter: selecting an area lists every space for it (own spaces first, then nearby ones)
   const activeMoreSpaces = currentPage === 1 ? moreIndoreOfficeCards : currentPage === 2 ? pageTwoMoreIndoreOfficeCards : currentPage === 3 ? pageThreeMoreIndoreOfficeCards : [];
 
   const activeFinalSpaces = currentPage === 1 ? finalIndoreOfficeCards : currentPage === 2 ? pageTwoFinalIndoreOfficeCards : currentPage === 3 ? pageThreeFinalIndoreOfficeCards : [];
 
   const activeOfficeCards = currentPage === 1 ? featuredIndoreOfficeCards : currentPage === 2 ? pageTwoFeaturedIndoreOfficeCards : currentPage === 3 ? pageThreeFeaturedIndoreOfficeCards : []; 
 
-  // Selected area ke extra 10 real cards (sirf tab milenge jab area button active ho)
-  const extraAreaCards = (selectedNeighborhood && areaExtraOfficeCards && areaExtraOfficeCards[selectedNeighborhood])
-    ? areaExtraOfficeCards[selectedNeighborhood].filter(
-        // cards already shown in this page's other sections are not repeated
-        (card) => ![...activeMoreSpaces, ...activeFinalSpaces, ...activeOfficeCards].some((other) => other.id === card.id)
-      )
-    : [];
-
   // Combined cards to display in top grid (area filtered):
   const combinedSpaces = selectedNeighborhood
-    ? [
-        ...existingFilteredTopSpaces,
-        ...extraAreaCards.filter(
-          (extra) => !existingFilteredTopSpaces.some((ex) => ex.name.toLowerCase() === extra.name.toLowerCase())
-        )
-      ]
+    ? (areaExtraOfficeCards[selectedNeighborhood] || [])
     : activeTopSpaces;
 
   // Apply price filter to displayedSpaces
@@ -305,21 +274,22 @@ const Indore = () => {
     ? combinedSpaces.filter(matchesPrice)
     : combinedSpaces;
 
-  const displayedMoreSpaces = activeMoreSpaces.filter((space) => {
+  // With an area selected, every space for that area (plus nearby ones) is listed in the main grid above
+  const displayedMoreSpaces = selectedNeighborhood ? [] : activeMoreSpaces.filter((space) => {
     const matchesArea = !selectedNeighborhood ||
       space.area?.toLowerCase() === selectedNeighborhood.toLowerCase() ||
       space.location?.toLowerCase().includes(selectedNeighborhood.toLowerCase());
     return matchesArea && matchesPrice(space);
   });
 
-  const displayedFinalSpaces = activeFinalSpaces.filter((space) => {
+  const displayedFinalSpaces = selectedNeighborhood ? [] : activeFinalSpaces.filter((space) => {
     const matchesArea = !selectedNeighborhood ||
       space.area?.toLowerCase() === selectedNeighborhood.toLowerCase() ||
       space.location?.toLowerCase().includes(selectedNeighborhood.toLowerCase());
     return matchesArea && matchesPrice(space);
   });
 
-  const displayedFeaturedSpaces = activeOfficeCards.filter((space) => {
+  const displayedFeaturedSpaces = selectedNeighborhood ? [] : activeOfficeCards.filter((space) => {
     const matchesArea = !selectedNeighborhood ||
       space.area?.toLowerCase() === selectedNeighborhood.toLowerCase() ||
       space.location?.toLowerCase().includes(selectedNeighborhood.toLowerCase());
@@ -427,6 +397,12 @@ const Indore = () => {
 
       {/* Section: Coworking Spaces Grid */}
       <section aria-label="Coworking spaces list">
+        {selectedNeighborhood && displayedSpaces.length > 0 && (
+          <p className="mb-3 text-xs sm:text-sm text-slate-600">
+            Showing {displayedSpaces.length} coworking spaces in {selectedNeighborhood} and nearby areas
+            ({displayedSpaces.filter((space) => space.area === selectedNeighborhood).length} in {selectedNeighborhood}).
+          </p>
+        )}
         {displayedSpaces.length === 0 ? (
           <div className="py-12 text-center text-slate-500 text-sm">
             <p>No coworking spaces found{selectedNeighborhood ? ` for ${selectedNeighborhood}` : ""}{selectedPrice ? " in this price range" : ""}.</p>
@@ -574,7 +550,8 @@ const Indore = () => {
         </div>
       </section>  
 
-      {/* Section: Pagination Controls */}
+      {/* Section: Pagination Controls (hidden while an area filter is active) */}
+      {!selectedNeighborhood && (
       <nav aria-label="Coworking spaces pagination" className="flex items-center justify-center my-8">
         <div className="inline-flex items-center rounded-md border border-slate-200 shadow-2xs overflow-hidden bg-white text-xs sm:text-sm">
           {/* Previous Button */}
@@ -629,6 +606,7 @@ const Indore = () => {
           </button>
         </div>
       </nav>
+      )}
 
       {/* Section: Explore Top Coworking Locations in Indore */}
       <section aria-label="Explore top coworking locations in Indore" className="my-6 pt-4 border-t border-slate-200/80">
