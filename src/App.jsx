@@ -3,6 +3,7 @@ import Homepage from './home/Homepage';
 import Navbar from './navbar/Navbar';
 import { getDehliOfficeCardById } from './pages/delhi/delhiData';
 import { getPuneOfficeCardById } from './pages/pune/puneData';
+import { getIndoreOfficeCardById } from './pages/indore/indoreData';
 import { getBhubaneshwarOfficeCardById } from './pages/bhubaneswar/bhubaneswarData';
 import WhatsAppButton from './components/WhatsAppButton';
 
@@ -18,6 +19,7 @@ import GoaPage from './pages/goa/Goa';
 import GurugramPage from './pages/gurugram/Gurugram';
 import HyderabadPage from './pages/hyderabad/Hyderabad';
 import IndorePage from './pages/indore/Indore';
+import IndoreOfficeDetails from './pages/indore/Indoreofficedetails';
 import JaipurPage from './pages/jaipur/Jaipur';
 import KochiPage from './pages/kochi/Kochi';
 import KolkataPage from './pages/kolkata/Kolkata';
@@ -33,6 +35,7 @@ const OfficeRoute = () => {
   const { id } = useParams();
   if (getDehliOfficeCardById(id)) return <DelhiOfficeDetails />;
   if (getPuneOfficeCardById(id)) return <PuneOfficeDetail />;
+  if (getIndoreOfficeCardById(id)) return <IndoreOfficeDetails />;
   if (getBhubaneshwarOfficeCardById(id)) return <BhubaneshwarOfficeDetail />;
   return <Homepage />;
 };
@@ -58,6 +61,7 @@ const App = () => {
         <Route path="/coworking/gurugram" element={<GurugramPage />} />
         <Route path="/coworking/hyderabad" element={<HyderabadPage />} />
         <Route path="/coworking/indore" element={<IndorePage />} />
+        <Route path="/coworking/indore/:id" element={<IndoreOfficeDetails />} />
         <Route path="/coworking/jaipur" element={<JaipurPage />} />
         <Route path="/coworking/kochi" element={<KochiPage />} />
         <Route path="/coworking/kolkata" element={<KolkataPage />} />

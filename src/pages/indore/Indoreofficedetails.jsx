@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import {
-  getDehliOfficeCardById,
-  getDehliOfficeSlug,
-  allDehliOfficeCards,
-  topDehliCoworkingLocations,
-  dehliNeighborhoods
-} from './delhiData.js';
+  getIndoreOfficeCardById,
+  getIndoreOfficeSlug,
+  allIndoreOfficeCards,
+  topIndoreCoworkingLocations,
+  indoreNeighborhoods
+} from './indoreData.js';
 
 /**
  * Coworking Office Details Page
@@ -15,7 +15,7 @@ import {
  */
 const OfficeDetail = () => {
   const { id } = useParams();
-  const space = getDehliOfficeCardById(id);
+  const space = getIndoreOfficeCardById(id);
 
   // Extract current area of the open card
   const currentArea = (space?.area || (space?.location ? space.location.split(',')[0].trim() : '')).trim();
@@ -24,7 +24,7 @@ const OfficeDetail = () => {
   const normalizeArea = (str) => {
     if (!str) return '';
     let s = str.trim().toLowerCase().replace(/[-_]/g, ' ').replace(/\s+/g, ' ');
-    if (s === 'delhi' || s === 'new delhi' || s === 'dehli') return 'delhi';
+    if (s === 'indore' || s === 'new indore' || s === 'indore') return 'indore';
     return s;
   };
 
@@ -34,7 +34,7 @@ const OfficeDetail = () => {
     const targetAreaNorm = normalizeArea(currentArea);
     const seen = new Set();
 
-    const cardList = allDehliOfficeCards;
+    const cardList = allIndoreOfficeCards;
     const filtered = cardList.filter((card) => {
       // 1. Exclude the current/open card by id or exact name
       if (Number(card.id) === Number(space.id)) return false;
@@ -50,8 +50,8 @@ const OfficeDetail = () => {
 
       if (!matchesArea) return false;
 
-      // Ensure card location does not explicitly mention another major Delhi neighborhood
-      const currentNeighborhoods = dehliNeighborhoods;
+      // Ensure card location does not explicitly mention another major Indore neighborhood
+      const currentNeighborhoods = indoreNeighborhoods;
       const isOtherArea = currentNeighborhoods?.some((n) => {
         const normN = normalizeArea(n);
         return normN !== targetAreaNorm && cardLocationNorm.includes(normN);
@@ -266,10 +266,10 @@ const OfficeDetail = () => {
         <h1 className="text-2xl font-bold text-slate-800 mb-2">Office Space Not Found</h1>
         <p className="text-sm text-slate-500 mb-6">The requested coworking space could not be found.</p>
         <Link
-          to="/coworking/delhi"
+          to="/coworking/indore"
           className="bg-[#007bff] hover:bg-blue-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg shadow-xs transition-colors"
         >
-          Back to Delhi Coworking Spaces
+          Back to Indore Coworking Spaces
         </Link>
       </main>
     );
@@ -335,7 +335,7 @@ const OfficeDetail = () => {
           <ol className="flex items-center gap-1.5 text-xs sm:text-sm text-slate-500">
             <li><Link to="/" className="hover:text-blue-600 transition-colors">Home</Link></li>
             <li>/</li>
-            <li><Link to="/coworking/delhi" className="hover:text-blue-600 transition-colors">Coworking</Link></li>
+            <li><Link to="/coworking/indore" className="hover:text-blue-600 transition-colors">Coworking</Link></li>
             <li>/</li>
             <li className="text-slate-700 font-medium truncate max-w-[200px] sm:max-w-md">{space.name}</li>
           </ol>
@@ -965,7 +965,7 @@ const OfficeDetail = () => {
           <div className="flex flex-col items-center justify-center text-center mb-6 sm:mb-8 select-none">
             
             <h3 className="text-base sm:text-lg font-bold text-slate-900 mt-3 tracking-tight">
-              Similar Coworking Spaces in {currentArea || 'Delhi'}
+              Similar Coworking Spaces in {currentArea || 'Indore'}
             </h3>
           </div>
 
@@ -996,7 +996,7 @@ const OfficeDetail = () => {
               {loopedSimilarOfficeCards.map((item, idx) => (
                 <article
                   key={`${item.id}-${idx}`}
-                  onClick={() => window.open(`${getDehliOfficeSlug(item)}`, '_blank', 'noopener,noreferrer')}
+                  onClick={() => window.open(`${getIndoreOfficeSlug(item)}`, '_blank', 'noopener,noreferrer')}
                   className="w-[250px] sm:w-[270px] md:w-[285px] shrink-0 bg-transparent rounded-2xl overflow-hidden cursor-pointer group flex flex-col"
                 >
                   {/* Card Image */}
@@ -1043,23 +1043,23 @@ const OfficeDetail = () => {
           </div>
         </section>
 
-        {/* Section: Explore Top Coworking Locations in Delhi */}
-        <section aria-label="Explore top coworking locations in Delhi" className="my-6 pt-4 border-t border-slate-200/80">
+        {/* Section: Explore Top Coworking Locations in Indore */}
+        <section aria-label="Explore top coworking locations in Indore" className="my-6 pt-4 border-t border-slate-200/80">
           <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-5">
-            Explore Top Coworking Locations in Delhi
+            Explore Top Coworking Locations in Indore
           </h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5 sm:gap-4.5">
-            {topDehliCoworkingLocations.map((location) => (
+            {topIndoreCoworkingLocations.map((location) => (
               <div
                 key={location.id}
                 role="button"
                 tabIndex={0}
-                onClick={() => window.open('/coworking/delhi', '_blank', 'noopener,noreferrer')}
+                onClick={() => window.open('/coworking/indore', '_blank', 'noopener,noreferrer')}
                 onKeyDown={(e) => {
                   if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
-                    window.open('/coworking/delhi', '_blank', 'noopener,noreferrer');
+                    window.open('/coworking/indore', '_blank', 'noopener,noreferrer');
                   }
                 }}
                 className="group bg-white rounded-lg border border-slate-200 hover:border-blue-300 overflow-hidden shadow-2xs hover:shadow-md transition-all duration-200 cursor-pointer flex flex-col"

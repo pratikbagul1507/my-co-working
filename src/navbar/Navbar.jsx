@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { cityNames } from '../home/homedata';
 import logo from './company-logo.png';
 import discount from './discount.jpg';
+import { navItems } from './navLinks';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,12 +42,6 @@ const Navbar = () => {
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
-
-  const navItems = [
-    { name: 'Coworking', links: ['#hot-desk', '#dedicated-desk', '#private-cabin'] },
-    { name: 'Virtual Office', links: ['#gst-registration', '#business-address', '#mailing-address'] },
-    { name: 'Business Plans', links: ['#enterprise', '#startup', '#freelancer'] }
-  ];
 
   return (
     <header ref={navRef} className="w-full bg-white border-b border-gray-100 sticky top-0 z-50 select-none shadow-2xs">

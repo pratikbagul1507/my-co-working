@@ -1,32 +1,28 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  getDehliOfficeSlug,
-  dehliNeighborhoods,
-  dehliOfficeCards,
-  moreDehliOfficeCards,
-  finalDehliOfficeCards, 
-  featuredDehliOfficeCards,
-  pageTwoDehliOfficeCards, 
-  pageTwoMoreDehliOfficeCards, 
-  pageTwoFinalDehliOfficeCards, 
-  pageTwoFeaturedDehliOfficeCards, 
+  getIndoreOfficeSlug,
+  indoreNeighborhoods,
+  indoreOfficeCards,
+  moreIndoreOfficeCards,
+  finalIndoreOfficeCards, 
+  featuredIndoreOfficeCards,
+  pageTwoIndoreOfficeCards, 
+  pageTwoMoreIndoreOfficeCards, 
+  pageTwoFinalIndoreOfficeCards, 
+  pageTwoFeaturedIndoreOfficeCards, 
   perfectWorkspaceBanner, 
   customizedOfficeBanner,
   stillNotFindingBanner,
   paginationData,
-  pageThreeDehliOfficeCards,
-  pageThreeMoreDehliOfficeCards,
-  pageThreeFinalDehliOfficeCards,
-  pageThreeFeaturedDehliOfficeCards,
-  pageFourDehliOfficeCards,
-  pageFiveDehliOfficeCards,
-  pageSixDehliOfficeCards,
-  pageSevenDehliOfficeCards,
-  pageEightDehliOfficeCards,
-  topDehliCoworkingLocations,
+  pageThreeIndoreOfficeCards,
+  pageThreeMoreIndoreOfficeCards,
+  pageThreeFinalIndoreOfficeCards,
+  pageThreeFeaturedIndoreOfficeCards,
+  pageFourIndoreOfficeCards,
+  topIndoreCoworkingLocations,
   areaExtraOfficeCards,
-} from './delhiData.js';
+} from './indoreData.js';
 
 /**
  * Individual Coworking Space Card with isolated multi-image sliding closure mechanism
@@ -88,7 +84,7 @@ const OfficeCard = ({ space }) => {
   const handleCardClick = (event) => {
     // Avoid triggering if clicked on inner action buttons
     if (event.target.closest('button')) return;
-    window.open(`${getDehliOfficeSlug(space)}`, '_blank', 'noopener,noreferrer');
+    window.open(`${getIndoreOfficeSlug(space)}`, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -167,7 +163,7 @@ const OfficeCard = ({ space }) => {
           <div className="flex items-start justify-between gap-2">
             <h3 className="text-sm font-bold text-slate-900 leading-snug line-clamp-1 group-hover:text-[#007bff] transition-colors">
               <a
-                href={`${getDehliOfficeSlug(space)}`}
+                href={`${getIndoreOfficeSlug(space)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
@@ -200,7 +196,7 @@ const OfficeCard = ({ space }) => {
             type="button"
             onClick={(e) => {
               e.stopPropagation();
-              window.open(`${getDehliOfficeSlug(space)}`, '_blank', 'noopener,noreferrer');
+              window.open(`${getIndoreOfficeSlug(space)}`, '_blank', 'noopener,noreferrer');
             }}
             className="bg-[#007bff] hover:bg-blue-600 active:scale-95 text-white text-xs font-semibold px-3 py-1.5 rounded-[4px] shadow-2xs transition-all cursor-pointer"
           >
@@ -213,9 +209,9 @@ const OfficeCard = ({ space }) => {
 };
 
 /**
- * Main Delhi Coworking Listings Page Container
+ * Main Indore Coworking Listings Page Container
  */
-const Delhi = () => {
+const Indore = () => {
   const [selectedNeighborhood, setSelectedNeighborhood] = useState(null);
   const [selectedPrice, setSelectedPrice] = useState('');
   const [currentPage, setCurrentPage] = useState(paginationData.initialPage || 1);
@@ -254,14 +250,11 @@ const Delhi = () => {
   };
 
   const activeTopSpaces =
-    currentPage === 1 ? dehliOfficeCards :
-    currentPage === 2 ? pageTwoDehliOfficeCards :
-    currentPage === 3 ? pageThreeDehliOfficeCards :
-    currentPage === 4 ? pageFourDehliOfficeCards :
-    currentPage === 5 ? pageFiveDehliOfficeCards :
-    currentPage === 6 ? pageSixDehliOfficeCards :
-    currentPage === 7 ? pageSevenDehliOfficeCards :
-    currentPage === 8 ? pageEightDehliOfficeCards : [];
+    currentPage === 1 ? indoreOfficeCards :
+    currentPage === 2 ? pageTwoIndoreOfficeCards :
+    currentPage === 3 ? pageThreeIndoreOfficeCards :
+    currentPage === 4 ? pageFourIndoreOfficeCards :
+    [];
 
   // ============================================================================
   // Area Filtering Logic with Extra 10 Real Internet Office Cards per Area
@@ -302,7 +295,7 @@ const Delhi = () => {
     ? combinedSpaces.filter(matchesPrice)
     : combinedSpaces;
 
-  const activeMoreSpaces = currentPage === 1 ? moreDehliOfficeCards : currentPage === 2 ? pageTwoMoreDehliOfficeCards : currentPage === 3 ? pageThreeMoreDehliOfficeCards : [];
+  const activeMoreSpaces = currentPage === 1 ? moreIndoreOfficeCards : currentPage === 2 ? pageTwoMoreIndoreOfficeCards : currentPage === 3 ? pageThreeMoreIndoreOfficeCards : [];
 
   const displayedMoreSpaces = activeMoreSpaces.filter((space) => {
     const matchesArea = !selectedNeighborhood ||
@@ -311,7 +304,7 @@ const Delhi = () => {
     return matchesArea && matchesPrice(space);
   });
 
-  const activeFinalSpaces = currentPage === 1 ? finalDehliOfficeCards : currentPage === 2 ? pageTwoFinalDehliOfficeCards : currentPage === 3 ? pageThreeFinalDehliOfficeCards : [];
+  const activeFinalSpaces = currentPage === 1 ? finalIndoreOfficeCards : currentPage === 2 ? pageTwoFinalIndoreOfficeCards : currentPage === 3 ? pageThreeFinalIndoreOfficeCards : [];
 
   const displayedFinalSpaces = activeFinalSpaces.filter((space) => {
     const matchesArea = !selectedNeighborhood ||
@@ -320,7 +313,7 @@ const Delhi = () => {
     return matchesArea && matchesPrice(space);
   });
 
-  const activeOfficeCards = currentPage === 1 ? featuredDehliOfficeCards : currentPage === 2 ? pageTwoFeaturedDehliOfficeCards : currentPage === 3 ? pageThreeFeaturedDehliOfficeCards : []; 
+  const activeOfficeCards = currentPage === 1 ? featuredIndoreOfficeCards : currentPage === 2 ? pageTwoFeaturedIndoreOfficeCards : currentPage === 3 ? pageThreeFeaturedIndoreOfficeCards : []; 
 
   const displayedFeaturedSpaces = activeOfficeCards.filter((space) => {
     const matchesArea = !selectedNeighborhood ||
@@ -340,10 +333,10 @@ const Delhi = () => {
           </li>
           <li aria-hidden="true">/</li>
           <li>
-            <Link to="/coworking/delhi" className="hover:text-blue-600 transition-colors">Coworking</Link>
+            <Link to="/coworking/indore" className="hover:text-blue-600 transition-colors">Coworking</Link>
           </li>
           <li aria-hidden="true">/</li>
-          <li className="text-slate-800 font-medium" aria-current="page">Delhi</li>
+          <li className="text-slate-800 font-medium" aria-current="page">Indore</li>
           <li aria-hidden="true">/</li>
         </ol>
       </nav>
@@ -351,7 +344,7 @@ const Delhi = () => {
       {/* Header Section: Title and Filter Controls */}
       <header id="coworking-listings-header" className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
         <h1 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
-          Coworking Spaces In Delhi
+          Coworking Spaces In Indore
         </h1>
         <div className="flex items-center gap-2">
           <div className="relative">
@@ -361,7 +354,7 @@ const Delhi = () => {
               defaultValue=""
             >
               <option value="" disabled>Popular Locations</option>
-              {dehliNeighborhoods.map((neighborhood) => (
+              {indoreNeighborhoods.map((neighborhood) => (
                 <option key={`opt-${neighborhood}`} value={neighborhood}>
                   {neighborhood}
                 </option>
@@ -406,7 +399,7 @@ const Delhi = () => {
           >
             All
           </button>
-          {dehliNeighborhoods.map((neighborhood) => {
+          {indoreNeighborhoods.map((neighborhood) => {
             const isSelected = selectedNeighborhood === neighborhood;
             return (
               <button
@@ -438,7 +431,7 @@ const Delhi = () => {
               onClick={() => setSelectedNeighborhood(null)}
               className="mt-2 text-xs text-blue-600 underline cursor-pointer"
             >
-              Show all Delhi spaces
+              Show all Indore spaces
             </button>
           </div>
         ) : (
@@ -633,14 +626,14 @@ const Delhi = () => {
         </div>
       </nav>
 
-      {/* Section: Explore Top Coworking Locations in Delhi */}
-      <section aria-label="Explore top coworking locations in Delhi" className="my-6 pt-4 border-t border-slate-200/80">
+      {/* Section: Explore Top Coworking Locations in Indore */}
+      <section aria-label="Explore top coworking locations in Indore" className="my-6 pt-4 border-t border-slate-200/80">
         <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-5">
-          Explore Top Coworking Locations in Delhi
+          Explore Top Coworking Locations in Indore
         </h2>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5 sm:gap-4.5">
-          {topDehliCoworkingLocations.map((location) => {
+          {topIndoreCoworkingLocations.map((location) => {
             const isSelected = selectedNeighborhood?.toLowerCase() === location.name.toLowerCase();
             return (
               <div
@@ -701,6 +694,4 @@ const Delhi = () => {
   );
 };
 
-const Dehli = Delhi;
-export { Dehli };
-export default Delhi;
+export default Indore;

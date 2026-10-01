@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
+import { navItems, navLinkLabel, navLinkTarget } from '../navbar/navLinks';
+import footerLogo from '../navbar/company-logo-footer.png';
 import CityGrid from '../components/city/CityGrid';
 import CityPopup from '../components/city/CityPopup';
 import virtualOfficeBg from '../assets/images/virtual-office-bg.jpg';
@@ -1685,50 +1687,42 @@ const Homepage = () => {
         className="w-full bg-black text-white py-8 sm:py-10 px-4 sm:px-6 lg:px-8 border-t border-slate-900 select-none"
       >
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 items-start">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[30%_1fr] gap-8 lg:gap-12 items-start">
             
-            {/* Column 1: Brand Logo Card & Platform Narrative */}
+            {/* Left (30%): transparent logo straight on the black footer + platform summary */}
             <div className="flex flex-col items-start">
-              {/* White Logo Card Matching Design */}
-              <div className="bg-white rounded-md p-2.5 sm:p-3 w-fit shadow-xs mb-4">
-                <div className="flex items-center gap-2">
-                  <svg className="w-10 h-10 sm:w-11 sm:h-11" viewBox="0 0 48 48" fill="none">
-                    {/* Background Buildings */}
-                    <rect x="18" y="8" width="12" height="28" rx="1" fill="#1e293b" />
-                    <rect x="21" y="11" width="2" height="2" fill="#ffffff" />
-                    <rect x="25" y="11" width="2" height="2" fill="#ffffff" />
-                    <rect x="21" y="15" width="2" height="2" fill="#ffffff" />
-                    <rect x="25" y="15" width="2" height="2" fill="#ffffff" />
-                    <rect x="21" y="19" width="2" height="2" fill="#ffffff" />
-                    <rect x="25" y="19" width="2" height="2" fill="#ffffff" />
-                    <rect x="13" y="14" width="8" height="22" rx="1" fill="#334155" />
-                    <rect x="27" y="16" width="8" height="20" rx="1" fill="#475569" />
-                    {/* Orange House Outline */}
-                    <path d="M12 28 L24 18 L36 28 L34 38 L14 38 Z" fill="none" stroke="#f97316" strokeWidth="2.5" strokeLinejoin="round" />
-                    {/* Person 1 Left */}
-                    <circle cx="8" cy="24" r="3" fill="#f97316" />
-                    <path d="M5 34 C5 30 7 28 10 28 L12 34 Z" fill="#f97316" />
-                    <rect x="9" y="30" width="4" height="2.5" rx="0.5" fill="#1e293b" />
-                    {/* Person 2 Right */}
-                    <circle cx="40" cy="24" r="3" fill="#1e293b" />
-                    <path d="M43 34 C43 30 41 28 38 28 L36 34 Z" fill="#1e293b" />
-                    <rect x="35" y="30" width="4" height="2.5" rx="0.5" fill="#f97316" />
-                    {/* Desk Base */}
-                    <line x1="4" y1="38" x2="44" y2="38" stroke="#f97316" strokeWidth="2" strokeLinecap="round" />
-                  </svg>
-                  <div className="flex flex-col">
-                    <span className="text-base sm:text-lg font-black tracking-tight leading-tight text-slate-900">
-                      <span className="text-[#f97316]">My</span>Coworking
-                    </span>
-                    <span className="h-0.5 bg-[#f97316] w-full mt-0.5 rounded-full" />
-                  </div>
-                </div>
-              </div>
-
-              {/* Brief Description */}
+              <img src={footerLogo} alt="MyCoworking" className="h-24 sm:h-28 w-auto object-contain mb-3" />
               <p className="text-xs sm:text-sm text-slate-400 font-normal leading-relaxed max-w-xs">
                 {footerQuickLinksData.brand.description}
               </p>
+            </div>
+
+            {/* Right: Quick links - every navbar tab with its links; clicking jumps to the top of the page */}
+            <div className="flex flex-col">
+              <h4 className="text-white font-bold text-base sm:text-lg lg:text-xl tracking-tight mb-4">
+                Quick links
+              </h4>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                {navItems.map((item) => (
+                  <div key={item.name} className="flex flex-col">
+                    <span className="text-white/90 font-semibold text-sm mb-2.5">{item.name}</span>
+                    <ul className="flex flex-col space-y-2">
+                      {item.links.map((link) => (
+                        <li key={link}>
+                          <Link
+                            to={navLinkTarget(item, link)}
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                            className="text-xs sm:text-sm text-slate-300 hover:text-white hover:underline transition-colors flex items-center gap-1.5 group"
+                          >
+                            <span className="text-slate-500 group-hover:text-orange-400 transition-colors text-[10px]">›</span>
+                            <span>{navLinkLabel(link)}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
             </div>
 
           </div>
