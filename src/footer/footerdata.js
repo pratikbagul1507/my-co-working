@@ -24,7 +24,8 @@ export const navLinkTarget = (item, link) => (item.name === 'Coworking' ? '/cowo
 export const footerQuickLinksData = {
   brand: {
     name: "MyCoworking",
-    description: "Mycoworking stands as India’s leading and fastest-growing marketplace for flexible workspaces, delivering tailored, ready-to-move-in office solutions to corporate occupiers nationwide. Our extensive network features over 6,000 listed centres across 140+ cities, providing unparalleled pan-India coverage. Currently, we facilitate a monthly booking run rate of 6,500 desks and proudly support more than 10,000 corporate clients every year."
+    description: "Mycoworking stands as India’s leading and fastest-growing marketplace for flexible
+     workspaces, delivering tailored, ready-to-move-in office solutions to corporate occupiers nationwide. Our extensive network features over 6,000 listed centres across 140+ cities, providing unparalleled pan-India coverage. Currently, we facilitate a monthly booking run rate of 6,500 desks and proudly support more than 10,000 corporate clients every year."
   },
   columns: [
     {
