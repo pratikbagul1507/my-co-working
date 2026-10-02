@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getPuneOfficeCardById, getPuneOfficeSlug, allPuneOfficeCards, similarPuneOfficeCards, topPuneCoworkingLocations, puneNeighborhoods } from './puneData.js';
+import { getPuneOfficeCardById, getPuneOfficeSlug, allPuneOfficeCards, similarPuneOfficeCards, topPuneCoworkingLocations } from './puneData.js';
 
 /**
  * Coworking Office Details Page
@@ -35,20 +35,7 @@ const OfficeDetail = () => {
 
       // 2. Check if card belongs strictly to the exact same area
       const cardAreaNorm = normalizeArea(card.area || (card.location ? card.location.split(',')[0].trim() : ''));
-      const cardLocationNorm = normalizeArea(card.location || '');
-
-      const matchesArea = cardAreaNorm === targetAreaNorm ||
-        cardLocationNorm.includes(targetAreaNorm) ||
-        (targetAreaNorm && targetAreaNorm.includes(cardAreaNorm));
-
-      if (!matchesArea) return false;
-
-      // Ensure card location does not explicitly mention another major Pune neighborhood
-      const isOtherArea = puneNeighborhoods?.some((n) => {
-        const normN = normalizeArea(n);
-        return normN !== targetAreaNorm && cardLocationNorm.includes(normN);
-      });
-      if (isOtherArea) return false;
+      if (!targetAreaNorm || cardAreaNorm !== targetAreaNorm) return false;
 
       // 3. Deduplicate by unique name + location
       const uniqueKey = `${card.name?.toLowerCase().trim()}-${card.location?.toLowerCase().trim()}`;

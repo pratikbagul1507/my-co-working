@@ -4,8 +4,7 @@ import {
   getIndoreOfficeCardById,
   getIndoreOfficeSlug,
   allIndoreOfficeCards,
-  topIndoreCoworkingLocations,
-  indoreNeighborhoods
+  topIndoreCoworkingLocations
 } from './indoreData.js';
 
 /**
@@ -42,21 +41,7 @@ const OfficeDetail = () => {
 
       // 2. Check if card belongs strictly to the exact same area
       const cardAreaNorm = normalizeArea(card.area || (card.location ? card.location.split(',')[0].trim() : ''));
-      const cardLocationNorm = normalizeArea(card.location || '');
-
-      const matchesArea = cardAreaNorm === targetAreaNorm ||
-        cardLocationNorm.includes(targetAreaNorm) ||
-        (targetAreaNorm && targetAreaNorm.includes(cardAreaNorm));
-
-      if (!matchesArea) return false;
-
-      // Ensure card location does not explicitly mention another major Indore neighborhood
-      const currentNeighborhoods = indoreNeighborhoods;
-      const isOtherArea = currentNeighborhoods?.some((n) => {
-        const normN = normalizeArea(n);
-        return normN !== targetAreaNorm && cardLocationNorm.includes(normN);
-      });
-      if (isOtherArea) return false;
+      if (!targetAreaNorm || cardAreaNorm !== targetAreaNorm) return false;
 
       // 3. Deduplicate by unique name + location
       const uniqueKey = `${card.name?.toLowerCase().trim()}-${card.location?.toLowerCase().trim()}`;
