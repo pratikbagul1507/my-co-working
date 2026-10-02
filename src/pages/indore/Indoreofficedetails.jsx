@@ -485,7 +485,7 @@ const OfficeDetail = () => {
               </h3>
               {/* 4 Trust Points + CTA buttons */}
               <div className="mb-3.5 py-2.5 border-y border-blue-200/50 select-none">
-                <div className="grid grid-cols-2 gap-x-3 gap-y-3 mb-4">
+                <div className="grid grid-cols-2 gap-x-3 gap-y-3">
                 <div className="flex items-center gap-2 text-xs sm:text-[13px] text-slate-800 font-medium leading-tight">
                   <svg className="w-5 h-5 text-orange-500 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                   <span>Zero Brokerage</span>
@@ -506,23 +506,6 @@ const OfficeDetail = () => {
                   <span>Expert Advisors</span>
                 </div>
                 </div>
-                <button
-                  type="button"
-                  onClick={() => formRef.current?.querySelector('input[name="name"]')?.focus()}
-                  className="w-full bg-[#ff5f00] hover:bg-[#e65600] active:scale-[0.98] text-white font-bold tracking-wide uppercase py-3 rounded-xl text-sm shadow-xs transition-all cursor-pointer"
-                >
-                  Get Quote
-                </button>
-                <button
-                  type="button"
-                  onClick={() => {
-                    const subject = encodeURIComponent(`Schedule a visit - ${space?.name || 'Office'}`);
-                    window.location.href = `mailto:info@mycoworking.in?subject=${subject}`;
-                  }}
-                  className="w-full mt-2.5 bg-white border border-[#0b1b4d] text-[#0b1b4d] hover:bg-slate-50 active:scale-[0.98] font-bold tracking-wide uppercase py-3 rounded-xl text-sm transition-all cursor-pointer"
-                >
-                  Schedule a Visit
-                </button>
               </div>
 
               {isSubmitted ? (
@@ -620,12 +603,22 @@ const OfficeDetail = () => {
                     </div>
                   </div>
 
-                  {/* Enquire Now Submit Button */}
+                  {/* Get Quote (submit) & Schedule a Visit buttons */}
                   <button
                     type="submit"
-                    className="w-full bg-[#007bff] hover:bg-blue-600 active:scale-[0.98] text-white font-semibold py-2.5 rounded-lg text-xs sm:text-sm shadow-xs transition-all cursor-pointer mt-1"
+                    className="w-full bg-[#ff5f00] hover:bg-[#e65600] active:scale-[0.98] text-white font-bold tracking-wide uppercase py-3 rounded-xl text-sm shadow-xs transition-all cursor-pointer mt-1"
                   >
-                    Enquire Now
+                    Get Quote
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const subject = encodeURIComponent(`Schedule a visit - ${space?.name || 'Office'}`);
+                      window.location.href = `mailto:info@mycoworking.in?subject=${subject}`;
+                    }}
+                    className="w-full bg-white border border-[#0b1b4d] text-[#0b1b4d] hover:bg-slate-50 active:scale-[0.98] font-bold tracking-wide uppercase py-3 rounded-xl text-sm transition-all cursor-pointer"
+                  >
+                    Schedule a Visit
                   </button>
                 </form>
               )}
