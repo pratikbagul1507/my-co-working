@@ -5,7 +5,7 @@
 // Navbar tabs and their links, shared by the navbar and the footer "Quick links"
 export const navItems = [
   { name: 'Coworking', },
-  { name: 'Virtual Office', links: ['#gst-registration', '#business-address', '#mailing-address'] },
+  { name: 'Virtual Office', },
   { name: 'Business Plans', links: ['#enterprise', '#startup', '#freelancer'] }
 ];
 
