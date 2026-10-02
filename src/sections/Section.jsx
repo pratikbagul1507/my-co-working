@@ -1116,11 +1116,6 @@ const Section = ({ onCategoryCardClick, onCitySelect }) => {
             })}
           </div>
 
-          {/* =============================================================== */}
-          {/* PLATFORM OVERVIEW & ECOSYSTEM DESCRIPTION (UNDER QUESTION CARDS) */}
-          {/* Data Source: homepageDescriptionData from homedata.js            */}
-          {/* =============================================================== */}
-          */}
 
         </div>
       </section>
