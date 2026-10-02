@@ -2,7 +2,8 @@ import { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { cityNames } from '../home/homedata';
 import logo from './company-logo.png';
-import discount from './label.jpg';
+import discount from '<div className="" />
+<label htmlFor=""></label>.jpg';
 import { navItems } from './navLinks';
 
 const Navbar = () => {
