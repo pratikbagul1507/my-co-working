@@ -12,7 +12,7 @@ import {
   whyChooseData,
   customerReviewsData,
   faqSectionData,
-  homepageDescriptionData
+
 } from './sectionData.js';
 
 // ----------------------------------------------------------------------------
