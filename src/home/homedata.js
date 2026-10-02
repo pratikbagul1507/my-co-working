@@ -107,7 +107,7 @@ export const heroSectionData = {
     prefix: "Choose from",
     highlight1: "10,000+",
     middleText: "spaces to",
-    highlight2: "Work & Live"
+    highlight2: "Work"
   },
 
   // Dropdown filter box labels & search action button
