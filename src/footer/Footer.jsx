@@ -33,20 +33,7 @@ const Footer = ({ onCityClick }) => {
               {navItems.map((item) => (
                 <div key={item.name} className="flex flex-col">
                   <span className="text-white/90 font-semibold text-sm mb-2.5">{item.name}</span>
-                  <ul className="flex flex-col space-y-2">
-                    {item.links.map((link) => (
-                      <li key={link}>
-                        <Link
-                          to={navLinkTarget(item, link)}
-                          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                          className="text-xs sm:text-sm text-slate-300 hover:text-white hover:underline transition-colors flex items-center gap-1.5 group"
-                        >
-                          <span className="text-slate-500 group-hover:text-orange-400 transition-colors text-[10px]">›</span>
-                          <span>{navLinkLabel(link)}</span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                  
                 </div>
               ))}
             </div>
