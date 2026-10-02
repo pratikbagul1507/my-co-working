@@ -83,7 +83,7 @@ export const homePromotionalData = {
     badgeText: 'Free',
     titleSuffix: 'with MyCoworking',
     subtitle: 'Reach 10,00,000+ users looking for space across India',
-    ctaText: 'List Your Property',
+    ctaText: 'List Your Property ',
     previewBadge: {
       line1: 'Your Space',
       line2: 'Here'
