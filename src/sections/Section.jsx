@@ -12,7 +12,6 @@ import {
   whyChooseData,
   customerReviewsData,
   faqSectionData,
-
 } from './sectionData.js';
 
 // ----------------------------------------------------------------------------
