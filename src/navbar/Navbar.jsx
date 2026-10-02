@@ -130,7 +130,7 @@ const Navbar = () => {
             onClick={closeMenu}
             className="shrink-0 cursor-pointer"
           >
-            <img src={label} alt="Discount offer - List of Services" className="h-12 sm:h-16 w-auto object-contain rounded-lg hover:opacity-90 transition-opacity" />
+            <img src={label} alt="Discount offer - List of Services" className="h-14 sm:h-20 w-auto object-contain rounded-lg shadow-lg ring-2 ring-orange-400 hover:scale-105 transition-transform" />
           </Link>
 
           {/* 4. Hamburger Icon: three bars icon, visible on small screens (< lg) */}
