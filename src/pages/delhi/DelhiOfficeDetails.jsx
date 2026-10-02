@@ -4,8 +4,7 @@ import {
   getDehliOfficeCardById,
   getDehliOfficeSlug,
   allDehliOfficeCards,
-  topDehliCoworkingLocations,
-  dehliNeighborhoods
+  topDehliCoworkingLocations
 } from './delhiData.js';
 
 /**
@@ -25,7 +24,7 @@ const OfficeDetail = () => {
     if (!str) return '';
     let s = str.trim().toLowerCase().replace(/[-_]/g, ' ').replace(/\s+/g, ' ');
     if (s === 'delhi' || s === 'new delhi' || s === 'dehli') return 'delhi';
-    return s;
+    return s.replace(/ delhi$/, '');
   };
 
   // Filter office cards strictly from the SAME area, excluding the current open card
@@ -42,21 +41,7 @@ const OfficeDetail = () => {
 
       // 2. Check if card belongs strictly to the exact same area
       const cardAreaNorm = normalizeArea(card.area || (card.location ? card.location.split(',')[0].trim() : ''));
-      const cardLocationNorm = normalizeArea(card.location || '');
-
-      const matchesArea = cardAreaNorm === targetAreaNorm ||
-        cardLocationNorm.includes(targetAreaNorm) ||
-        (targetAreaNorm && targetAreaNorm.includes(cardAreaNorm));
-
-      if (!matchesArea) return false;
-
-      // Ensure card location does not explicitly mention another major Delhi neighborhood
-      const currentNeighborhoods = dehliNeighborhoods;
-      const isOtherArea = currentNeighborhoods?.some((n) => {
-        const normN = normalizeArea(n);
-        return normN !== targetAreaNorm && cardLocationNorm.includes(normN);
-      });
-      if (isOtherArea) return false;
+      if (!targetAreaNorm || cardAreaNorm !== targetAreaNorm) return false;
 
       // 3. Deduplicate by unique name + location
       const uniqueKey = `${card.name?.toLowerCase().trim()}-${card.location?.toLowerCase().trim()}`;
