@@ -33,7 +33,6 @@ const Footer = ({ onCityClick }) => {
               {navItems.map((item) => (
                 <div key={item.name} className="flex flex-col">
                   <span className="text-white/90 font-semibold text-sm mb-2.5">{item.name}</span>
-                  
                 </div>
               ))}
             </div>
