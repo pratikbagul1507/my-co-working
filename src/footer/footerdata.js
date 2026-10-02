@@ -7,7 +7,7 @@ export const navItems = [
   { name: 'Coworking', },
   { name: 'Virtual Office', },
   { name: 'Business Plans', },
-  { name: 'Li', }
+  { name: 'List Your Space Free', }
 ];
 
 export const navLinkLabel = (link) =>
