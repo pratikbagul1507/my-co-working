@@ -1120,7 +1120,7 @@ const Section = ({ onCategoryCardClick, onCitySelect }) => {
           {/* PLATFORM OVERVIEW & ECOSYSTEM DESCRIPTION (UNDER QUESTION CARDS) */}
           {/* Data Source: homepageDescriptionData from homedata.js            */}
           {/* =============================================================== */}
-          <div className="mt-8 sm:mt-10 pt-6 sm:pt-8 border-t border-slate-200/80">
+          {/* <div className="mt-8 sm:mt-10 pt-6 sm:pt-8 border-t border-slate-200/80">
             
             {/* Description Header */}
             <div className="text-center max-w-3xl mx-auto mb-5 sm:mb-6">
@@ -1197,7 +1197,7 @@ const Section = ({ onCategoryCardClick, onCitySelect }) => {
               </div>
             </div>
 
-          </div>
+          </div> */}
 
         </div>
       </section>
