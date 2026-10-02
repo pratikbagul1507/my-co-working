@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import footerLogo from './company-logo-footer.jpg';
+import footerLogo from './company-logo-footer.png';
 import { navItems, navLinkLabel, navLinkTarget, footerQuickLinksData } from './footerdata.js';
 
 /**
