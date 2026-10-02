@@ -4,7 +4,7 @@
 // ============================================================================
 // Navbar tabs and their links, shared by the navbar and the footer "Quick links"
 export const navItems = [
-  { name: 'Coworking', },
+  { name: 'Coworking'},
   { name: 'Virtual Office'},
   { name: 'Business Plans'},
   { name: 'List Your Space Free'}
