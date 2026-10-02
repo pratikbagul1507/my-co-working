@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import expertImg from '../../assets/expert.jpg';
 import { getBhubaneshwarOfficeCardById, getBhubaneshwarOfficeSlug, allBhubaneshwarOfficeCards, similarBhubaneshwarOfficeCards, topBhubaneshwarCoworkingLocations } from './bhubaneswarData.js';
 
 /**
@@ -214,7 +215,6 @@ const OfficeDetail = () => {
     e.preventDefault();
     const errors = {};
     if (!formData.name.trim()) errors.name = 'This field can not be blank.';
-    if (!formData.email.trim()) errors.email = 'This field can not be blank.';
     if (!formData.phone.trim()) errors.phone = 'This field can not be blank.';
     if (!formData.type) errors.type = 'This field can not be blank.';
     if (!formData.seats) errors.seats = 'This field can not be blank.';
@@ -232,7 +232,6 @@ const OfficeDetail = () => {
     const body = encodeURIComponent(
       `Property: ${space?.name || ''} (${space?.location || ''})\n` +
       `Client Name: ${formData.name}\n` +
-      `Email: ${formData.email}\n` +
       `Phone: +91 ${formData.phone}\n` +
       `Workspace Type: ${formData.type}\n` +
       `Number of Seats: ${formData.seats}\n` +
@@ -295,16 +294,6 @@ const OfficeDetail = () => {
     { name: 'Tea/Coffee', icon: 'M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3' },
     { name: 'Phone Booth', icon: 'M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z' },
     { name: 'Lounge', icon: 'M4 11V7a3 3 0 013-3h10a3 3 0 013 3v4M4 11h16M4 11v6a2 2 0 002 2h12a2 2 0 002-2v-6M2 13h2v4H2zm18 0h2v4h-2z' }
-  ];
-
-  // Community Events list matching reference layout
-  const communityEventsList = [
-    { name: 'Innovation & Creativity', icon: 'M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z' },
-    { name: 'Workshop & Training', icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4' },
-    { name: 'Meeting & Gatherings', icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z' },
-    { name: 'Networking Events', icon: 'M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1' },
-    { name: 'Community Building', icon: 'M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z' },
-    { name: 'Health & Wellness', icon: 'M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z' }
   ];
 
   return (
@@ -415,13 +404,6 @@ const OfficeDetail = () => {
             <span>Verified Coworking Space</span>
           </div>
 
-          <button
-            type="button"
-            onClick={() => formRef.current?.scrollIntoView({ behavior: 'smooth' })}
-            className="bg-[#007bff] hover:bg-blue-600 active:scale-95 text-white text-xs sm:text-sm font-semibold px-5 sm:px-6 py-2 rounded-lg shadow-xs transition-all cursor-pointer"
-          >
-            {space.ctaText || 'Get Quote'}
-          </button>
         </section>
 
         {/* Top Trust Ribbon */}
@@ -497,39 +479,46 @@ const OfficeDetail = () => {
               <h3 className="text-base sm:text-lg font-bold text-slate-900">
                 Interested in this Property
               </h3>
-              <p className="text-xs text-slate-500 mb-2.5 mt-0.5">
-                Fill your details for a customized quote
-              </p>
-
-              {/* 4 Trust Points */}
-              <div className="grid grid-cols-2 gap-x-2.5 gap-y-2 mb-3.5 py-2 border-y border-blue-200/50 select-none">
-                <div className="flex items-start gap-1.5 text-[11px] text-slate-700 font-medium leading-tight">
-                  <svg className="w-3.5 h-3.5 text-[#007bff] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span>Exclusive Pricing & Zero Booking fee</span>
+              {/* 4 Trust Points + CTA buttons */}
+              <div className="mb-3.5 py-2.5 border-y border-blue-200/50 select-none">
+                <div className="grid grid-cols-2 gap-x-3 gap-y-3 mb-4">
+                <div className="flex items-center gap-2 text-xs sm:text-[13px] text-slate-800 font-medium leading-tight">
+                  <svg className="w-5 h-5 text-orange-500 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  <span>Zero Brokerage</span>
                 </div>
 
-                <div className="flex items-start gap-1.5 text-[11px] text-slate-700 font-medium leading-tight">
-                  <svg className="w-3.5 h-3.5 text-[#007bff] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span>Guided Office Space Tours</span>
+                <div className="flex items-center gap-2 text-xs sm:text-[13px] text-slate-800 font-medium leading-tight">
+                  <svg className="w-5 h-5 text-orange-500 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  <span>Best Deals</span>
                 </div>
 
-                <div className="flex items-start gap-1.5 text-[11px] text-slate-700 font-medium leading-tight">
-                  <svg className="w-3.5 h-3.5 text-[#007bff] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span>Verified Spaces and Trusted Operators</span>
+                <div className="flex items-center gap-2 text-xs sm:text-[13px] text-slate-800 font-medium leading-tight">
+                  <svg className="w-5 h-5 text-orange-500 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  <span>1000+ Clients Served</span>
                 </div>
 
-                <div className="flex items-start gap-1.5 text-[11px] text-slate-700 font-medium leading-tight">
-                  <svg className="w-3.5 h-3.5 text-[#007bff] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span>Dedicated Relationship Manager</span>
+                <div className="flex items-center gap-2 text-xs sm:text-[13px] text-slate-800 font-medium leading-tight">
+                  <svg className="w-5 h-5 text-orange-500 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  <span>Expert Advisors</span>
                 </div>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => formRef.current?.querySelector('input[name="name"]')?.focus()}
+                  className="w-full bg-[#ff5f00] hover:bg-[#e65600] active:scale-[0.98] text-white font-bold tracking-wide uppercase py-3 rounded-xl text-sm shadow-xs transition-all cursor-pointer"
+                >
+                  Get Quote
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    const subject = encodeURIComponent(`Schedule a visit - ${space?.name || 'Office'}`);
+                    window.location.href = `mailto:info@mycoworking.in?subject=${subject}`;
+                  }}
+                  className="w-full mt-2.5 bg-white border border-[#0b1b4d] text-[#0b1b4d] hover:bg-slate-50 active:scale-[0.98] font-bold tracking-wide uppercase py-3 rounded-xl text-sm transition-all cursor-pointer"
+                >
+                  Schedule a Visit
+                </button>
               </div>
 
               {isSubmitted ? (
@@ -567,21 +556,6 @@ const OfficeDetail = () => {
                     )}
                   </div>
 
-                  {/* Email Field */}
-                  <div>
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Email Address"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className="w-full bg-white border border-slate-200 rounded-lg px-3.5 py-2 text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-blue-500 transition-colors"
-                    />
-                    {formErrors.email && (
-                      <span className="text-[10px] text-red-500 mt-0.5 block">{formErrors.email}</span>
-                    )}
-                  </div>
-
                   {/* Phone Field with +91 Prefix */}
                   <div>
                     <div className="flex bg-white border border-slate-200 rounded-lg overflow-hidden focus-within:border-blue-500 transition-colors">
@@ -616,7 +590,6 @@ const OfficeDetail = () => {
                         <option value="Dedicated Desk">Dedicated Desk</option>
                         <option value="Private Cabin">Private Cabin</option>
                         <option value="Virtual Office">Virtual Office</option>
-                        <option value="Managed Office">Managed Office</option>
                       </select>
                       {formErrors.type && (
                         <span className="text-[10px] text-red-500 mt-0.5 block leading-tight">{formErrors.type}</span>
@@ -655,25 +628,11 @@ const OfficeDetail = () => {
 
               {/* Connect with our space expert */}
               <div className="flex items-center gap-3 pt-3.5 border-t border-blue-200/60 mt-3.5">
-                {/* Navbar logo badge beside contacts */}
-                <div className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center shrink-0 shadow-xs border border-slate-700 select-none">
-                  <span className="text-xs font-black text-white tracking-tight">
-                    my<span className="text-orange-500">c</span><span className="text-orange-500 font-black">.</span>
-                  </span>
-                </div>
+                <img src={expertImg} alt="Space expert" className="w-12 h-12 rounded-full object-cover object-top shrink-0 shadow-xs border border-slate-200" />
                 <div className="flex flex-col min-w-0">
                   <span className="text-[11px] sm:text-xs text-slate-600 font-medium">
-                    Connect with our space expert
+                    Speak To our space expert
                   </span>
-                  <a
-                    href="mailto:info@mycoworking.in"
-                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#007bff] hover:underline truncate"
-                  >
-                    <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                    </svg>
-                    info@mycoworking.in
-                  </a>
                   <a
                     href="tel:+919028760011"
                     className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-700 hover:text-blue-600 mt-0.5"
@@ -920,24 +879,6 @@ const OfficeDetail = () => {
             </button>
           </div>
 
-          {/* 6. Community Events */}
-          <div className="pt-6 sm:pt-7">
-            <h3 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight mb-4 sm:mb-5">
-              Community Events
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-3.5 sm:gap-y-4 gap-x-6">
-              {communityEventsList.map((event) => (
-                <div key={event.name} className="flex items-center gap-2.5 text-xs sm:text-sm text-slate-700 font-medium">
-                  <div className="w-8 h-8 rounded-lg bg-sky-50 border border-sky-100 flex items-center justify-center shrink-0 text-[#007bff]">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d={event.icon} />
-                    </svg>
-                  </div>
-                  <span>{event.name}</span>
-                </div>
-              ))}
-            </div>
-          </div>
         </section>
 
         {/* Similar Coworking Spaces Section - Matching Reference */}
