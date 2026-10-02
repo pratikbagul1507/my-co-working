@@ -489,7 +489,7 @@ const Homepage = () => {
 
       <Section
         onCategoryCardClick={handleCategoryCardClick}
-        onCitySelect={(city) => selectCityAndOpenPopup(city, true)}
+        onCitySelect={(cityName) => selectCityAndOpenPopup(availableCities.find((city) => city.name === cityName), true)}
       />
 
       <Footer onCityClick={handleFooterCityClick} />

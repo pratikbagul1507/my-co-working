@@ -1,4 +1,65 @@
 // ============================================================================
+// SHARED OPTIONS: CITY NAMES, SPACE TYPES & ENQUIRY FORM CONFIG
+// Used by Section.jsx (top cities grid, Virtual Office enquiry card)
+// ============================================================================
+export const cityNames = [
+  { name: "Gurugram" },
+  { name: "Bhubaneswar" },
+  { name: "Bangalore" },
+  { name: "Hyderabad" },
+  { name: "Chennai" },
+  { name: "Lucknow" },
+  { name: "Pune" },
+  { name: "Noida" },
+  { name: "Delhi" },
+  { name: "Indore" },
+  { name: "Ahmedabad" },
+  { name: "Jaipur" },
+  { name: "Chandigarh" },
+  { name: "Kochi" },
+  { name: "Kolkata" },
+  { name: "Coimbatore" },
+  { name: "Goa" },
+  { name: "Mumbai" }
+];
+
+export const spaceOptions = ['Coworking Spaces', 'Virtual Office Space'];
+
+export const enquiryFormConfig = {
+  // Support email address where enquiries are mailed
+  contactEmail: "info@mycoworking.in",
+
+  // Default initial values when form is loaded or reset
+  defaultValues: {
+    city: "Pune",
+    spaceType: "Coworking Spaces",
+    countryFallback: "India"
+  },
+
+  // Input field placeholders
+  placeholders: {
+    name: "Enter Your Name",
+    email: "Enter Your Email",
+    phone: "Phone Number",
+    spaceType: "Type Of Space",
+    city: "City"
+  },
+
+  // Submit button text labels
+  buttons: {
+    idle: "Submit",
+    submitted: "Submitted"
+  },
+
+  // Submission confirmation banner config
+  feedback: {
+    getSuccessText: (name) => `Thanks, ${name || 'there'}! We'll be in touch shortly.`,
+    displayDurationMs: 3000,
+    fadeTransitionMs: 500
+  }
+};
+
+// ============================================================================
 // 6. SVG PATHS FOR PROMOTIONAL BENEFIT BADGES
 // Used by Homepage.jsx to render SVG icons in the "List Free" center banner
 // ============================================================================

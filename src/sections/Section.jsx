@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react';
-import virtualOfficeBg from '../assets/images/virtual-office-bg.jpg';
+import virtualOfficeBg from './virtual-office-bg.jpg';
 import {
   cityNames as availableCities,
   spaceOptions as availableSpaceTypes,
-  enquiryFormConfig
-} from '../home/homedata.js';
-import {
+  enquiryFormConfig,
   perkIconSvgPaths,
   homePromotionalData,
   virtualOfficeShowcaseData,
@@ -162,7 +160,7 @@ const renderWhyChooseIcon = (iconType) => {
  * trusted companies, top cities, why choose us, reviews, FAQ and advisory banner.
  *
  * @param {Function} onCategoryCardClick - called with the clicked promo card
- * @param {Function} onCitySelect - called with the clicked city object
+ * @param {Function} onCitySelect - called with the clicked city name
  */
 const Section = ({ onCategoryCardClick, onCitySelect }) => {
   // State for "Trusted by more than 500+ Companies" carousel
@@ -762,12 +760,12 @@ const Section = ({ onCategoryCardClick, onCitySelect }) => {
             {availableCities.map((city) => (
               <article
                 key={city.name}
-                onClick={() => onCitySelect(city)}
+                onClick={() => onCitySelect(city.name)}
                 className="group relative h-48 sm:h-52 md:h-56 lg:h-44 rounded-[22px] overflow-hidden cursor-pointer shadow-xs hover:shadow-xl transition-all duration-300 hover:-translate-y-1 select-none bg-slate-900"
               >
                 {/* City Workspace Image */}
                 <img
-                  src={topCoworkingCitiesData.workspaceImages[city.name] || city.image}
+                  src={topCoworkingCitiesData.workspaceImages[city.name]}
                   alt={`Coworking spaces in ${city.name}`}
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"

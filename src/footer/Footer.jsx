@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
-import { navItems, navLinkLabel, navLinkTarget } from '../navbar/navLinks';
-import footerLogo from '../navbar/company-logo-footer.png';
-import { footerQuickLinksData } from './footerdata.js';
+import footerLogo from './company-logo-footer.png';
+import { navItems, navLinkLabel, navLinkTarget, footerQuickLinksData } from './footerdata.js';
 
 /**
  * Site footer: brand summary, navbar quick links and the top-cities directory.
