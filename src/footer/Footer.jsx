@@ -14,22 +14,22 @@ const Footer = ({ onCityClick }) => {
       className="w-full bg-black text-white py-8 sm:py-10 px-4 sm:px-6 lg:px-8 border-t border-slate-900 select-none"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[30%_1fr] gap-8 lg:gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_220px] gap-8 lg:gap-16 items-start">
           
-          {/* Left (30%): transparent logo straight on the black footer + platform summary */}
+          {/* Left (wide): transparent logo straight on the black footer + platform summary */}
           <div className="flex flex-col items-start">
             <img src={footerLogo} alt="MyCoworking" className="h-24 sm:h-28 w-auto object-contain mb-3" />
-            <p className="text-xs sm:text-sm text-slate-400 font-normal leading-relaxed max-w-xs">
+            <p className="text-xs sm:text-sm text-slate-400 font-normal leading-relaxed max-w-none">
               {footerQuickLinksData.brand.description}
             </p>
           </div>
 
           {/* Right: Quick links - every navbar tab with its links; clicking jumps to the top of the page */}
-          <div className="flex flex-col">
+          <div className="flex flex-col lg:justify-self-end w-full lg:w-[220px]">
             <h4 className="text-white font-bold text-base sm:text-lg lg:text-xl tracking-tight mb-4">
               Quick links
             </h4>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="flex flex-col gap-6">
               {navItems.map((item) => (
                 <div key={item.name} className="flex flex-col">
                   <span className="text-white/90 font-semibold text-sm mb-2.5">{item.name}</span>
