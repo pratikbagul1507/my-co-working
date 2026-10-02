@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import footerLogo from '.';
+import footerLogo from './';
 import { navItems, navLinkLabel, navLinkTarget, footerQuickLinksData } from './footerdata.js';
 
 /**
