@@ -1,11 +1,9 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import expertImg from '../assets/expert.jpg';
 import { enquiryFormConfig } from '../home/homedata.js';
 import {
   getVirtualOfficeCity,
-  virtualOfficeCities,
-  virtualOfficePath,
   virtualOfficeContent as content,
   virtualOfficeHeroImage
 } from './virtual.js';
@@ -25,13 +23,10 @@ const CheckIcon = ({ className = 'w-5 h-5 text-orange-500' }) => (
  */
 const VirtualOfficePage = ({ citySlug }) => {
   const city = getVirtualOfficeCity(citySlug);
-  const plansRef = useRef(null);
-  const formRef = useRef(null);
 
   const [formData, setFormData] = useState({ name: '', email: '', phone: '' });
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [openFaq, setOpenFaq] = useState(0);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -51,7 +46,7 @@ const VirtualOfficePage = ({ citySlug }) => {
     setFormData((prev) => ({ ...prev, [name]: name === 'phone' ? value.replace(/\D/g, '') : value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e, intent = content.form.primaryButton) => {
     e.preventDefault();
     const next = {};
     if (!formData.name.trim()) next.name = 'This field can not be blank.';
@@ -60,7 +55,7 @@ const VirtualOfficePage = ({ citySlug }) => {
     setErrors(next);
     if (Object.keys(next).length > 0) return;
 
-    const subject = encodeURIComponent(`Virtual Office Enquiry - ${city.name}`);
+    const subject = encodeURIComponent(`Virtual Office ${intent} - ${city.name}`);
     const body = encodeURIComponent(
       `New Virtual Office Enquiry:\n\n` +
       `City: ${city.name}\n` +
@@ -71,11 +66,6 @@ const VirtualOfficePage = ({ citySlug }) => {
     );
     setIsSubmitted(true);
     window.location.href = `mailto:${enquiryFormConfig.contactEmail}?subject=${subject}&body=${body}`;
-  };
-
-  const focusForm = () => {
-    formRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    formRef.current?.querySelector('input[name="name"]')?.focus({ preventScroll: true });
   };
 
   return (
@@ -118,7 +108,7 @@ const VirtualOfficePage = ({ citySlug }) => {
           </div>
 
           {/* Right: enquiry card */}
-          <div ref={formRef} className="bg-white rounded-2xl shadow-2xl p-5 sm:p-6">
+          <div className="bg-white rounded-2xl shadow-2xl p-5 sm:p-6">
             <h2 className="text-lg font-bold text-slate-900">{content.form.title(city)}</h2>
             <p className="text-xs sm:text-sm text-slate-500 mt-0.5">{content.form.subtitle}</p>
 
@@ -167,7 +157,7 @@ const VirtualOfficePage = ({ citySlug }) => {
                   </button>
                   <button
                     type="button"
-                    onClick={() => plansRef.current?.scrollIntoView({ behavior: 'smooth' })}
+                    onClick={(e) => handleSubmit(e, content.form.secondaryButton)}
                     className="bg-white border border-[#0b1b4d] text-[#0b1b4d] hover:bg-slate-50 active:scale-[0.98] font-bold py-2.5 rounded-lg text-sm transition-all cursor-pointer"
                   >
                     {content.form.secondaryButton}
@@ -189,155 +179,6 @@ const VirtualOfficePage = ({ citySlug }) => {
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex flex-col gap-12 sm:gap-16 py-10 sm:py-14">
-        {/* ================= DISTRICTS ================= */}
-        <section aria-label="Business districts">
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">{content.districts.title(city)}</h2>
-          <p className="text-sm text-slate-500 mt-1">{content.districts.subtitle}</p>
-          <div className="flex flex-wrap gap-2.5 mt-5">
-            {city.districts.map((district) => (
-              <button
-                key={district}
-                type="button"
-                onClick={focusForm}
-                className="px-4 py-2 rounded-full bg-orange-50 border border-orange-200 text-orange-700 text-sm font-semibold hover:bg-orange-100 transition-colors cursor-pointer"
-              >
-                📍 {district}
-              </button>
-            ))}
-          </div>
-        </section>
-
-        {/* ================= BENEFITS ================= */}
-        <section aria-label="Benefits">
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">{content.benefits.title}</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 mt-5">
-            {content.benefits.items.map((item) => (
-              <div key={item.title} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-2xs hover:shadow-md transition-shadow">
-                <div className="w-11 h-11 rounded-xl bg-orange-50 flex items-center justify-center text-xl">{item.icon}</div>
-                <h3 className="text-base font-bold text-slate-900 mt-3">{item.title}</h3>
-                <p className="text-sm text-slate-600 mt-1 leading-relaxed">{item.text}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* ================= HOW IT WORKS + DOCUMENTS ================= */}
-        <section aria-label="How it works" className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-6 sm:gap-8">
-          <div className="rounded-2xl bg-slate-900 text-white p-6 sm:p-8">
-            <h2 className="text-xl sm:text-2xl font-bold tracking-tight">{content.steps.title}</h2>
-            <ol className="mt-5 flex flex-col gap-5">
-              {content.steps.items.map((step, index) => (
-                <li key={step.title} className="flex gap-4">
-                  <span className="w-9 h-9 rounded-full bg-orange-500 text-white font-bold flex items-center justify-center shrink-0">{index + 1}</span>
-                  <div>
-                    <h3 className="font-bold">{step.title}</h3>
-                    <p className="text-sm text-white/75 mt-0.5 leading-relaxed">{step.text}</p>
-                  </div>
-                </li>
-              ))}
-            </ol>
-          </div>
-          <div className="rounded-2xl bg-orange-50 border border-orange-100 p-6 sm:p-8">
-            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">{content.documents.title}</h2>
-            <ul className="mt-5 flex flex-col gap-3">
-              {content.documents.items.map((item) => (
-                <li key={item} className="flex items-center gap-2.5 text-sm sm:text-[15px] text-slate-800 font-medium">
-                  <CheckIcon />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-
-        {/* ================= PLANS ================= */}
-        <section ref={plansRef} aria-label="Plans" className="scroll-mt-28">
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">{content.plans.title}</h2>
-          <p className="text-sm text-slate-500 mt-1">{content.plans.subtitle}</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5 mt-5">
-            {content.plans.items.map((plan) => (
-              <div key={plan.name} className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-6 flex flex-col shadow-2xs">
-                <span className="self-start text-[11px] font-bold uppercase tracking-wide bg-amber-50 text-amber-700 border border-amber-200 rounded-full px-2.5 py-0.5">
-                  {plan.tag}
-                </span>
-                <h3 className="text-lg font-bold text-slate-900 mt-3">{plan.name}</h3>
-                <p className="text-xs text-slate-500">in {city.name}</p>
-                <ul className="mt-4 flex flex-col gap-2.5 flex-1">
-                  {plan.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-2 text-sm text-slate-700">
-                      <CheckIcon className="w-4 h-4 mt-0.5 text-orange-500" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <button
-                  type="button"
-                  onClick={focusForm}
-                  className="mt-5 w-full bg-[#ff5f00] hover:bg-[#e65600] active:scale-[0.98] text-white font-bold py-2.5 rounded-lg text-sm transition-all cursor-pointer"
-                >
-                  {content.form.primaryButton}
-                </button>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* ================= FAQ ================= */}
-        <section aria-label="FAQ" className="max-w-3xl w-full">
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">{content.faqs.title}</h2>
-          <div className="mt-5 flex flex-col divide-y divide-slate-200 border border-slate-200 rounded-2xl overflow-hidden">
-            {content.faqs.items.map((faq, index) => {
-              const isOpen = openFaq === index;
-              return (
-                <div key={faq.q} className="bg-white">
-                  <button
-                    type="button"
-                    onClick={() => setOpenFaq(isOpen ? -1 : index)}
-                    aria-expanded={isOpen}
-                    className="w-full flex items-center justify-between gap-4 text-left px-5 py-4 text-sm sm:text-base font-semibold text-slate-900 cursor-pointer"
-                  >
-                    <span>{faq.q}</span>
-                    <span className={`text-orange-500 text-xl leading-none transition-transform ${isOpen ? 'rotate-45' : ''}`}>+</span>
-                  </button>
-                  {isOpen && <p className="px-5 pb-4 text-sm text-slate-600 leading-relaxed">{faq.a}</p>}
-                </div>
-              );
-            })}
-          </div>
-        </section>
-
-        {/* ================= OTHER CITIES ================= */}
-        <section aria-label="Other cities">
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">Virtual offices in other cities</h2>
-          <div className="flex flex-wrap gap-2.5 mt-5">
-            {virtualOfficeCities.filter((c) => c.slug !== city.slug).map((c) => (
-              <Link
-                key={c.slug}
-                to={virtualOfficePath(c.name)}
-                className="px-4 py-2 rounded-full border border-slate-200 text-sm font-medium text-slate-700 hover:border-orange-400 hover:text-orange-600 transition-colors"
-              >
-                {c.name}
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        {/* ================= CTA ================= */}
-        <section aria-label="Get a quote" className="rounded-2xl bg-gradient-to-r from-orange-500 to-amber-500 text-white p-6 sm:p-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
-          <div>
-            <h2 className="text-xl sm:text-2xl font-bold tracking-tight">{content.cta.title(city)}</h2>
-            <p className="text-sm sm:text-base text-white/90 mt-1">{content.cta.text}</p>
-          </div>
-          <button
-            type="button"
-            onClick={focusForm}
-            className="bg-white text-orange-600 hover:bg-orange-50 active:scale-[0.98] font-bold px-7 py-3 rounded-xl text-sm shadow-md transition-all cursor-pointer shrink-0"
-          >
-            {content.cta.button}
-          </button>
-        </section>
-      </div>
     </main>
   );
 };

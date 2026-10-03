@@ -5,12 +5,8 @@
  * All copy for the city "Virtual Office" page lives here; Virtualoffice.jsx only renders it.
  *
  *  1. Per-city data (business districts, state for GST, image)  -> virtualOfficeCities
- *  2. Shared page copy (hero text, benefits, steps, plans, FAQ)   -> virtualOfficeContent
+ *  2. Shared page copy (hero text and enquiry form)               -> virtualOfficeContent
  *  3. Helpers (slug, lookup, text templates)
- *
- * Content is general public information about Indian virtual offices (business
- * address, GST / MCA registration support, mail handling). It is not scraped
- * from any one website, and no prices are listed: the team quotes per city.
  * ============================================================================
  */
 import heroImage from '../assets/images/virtual-office-bg.jpg';
@@ -78,65 +74,5 @@ export const virtualOfficeContent = {
     secondaryButton: 'Buy Now',
     expertLabel: 'Speak To our space expert',
     phone: '+91 9028760011'
-  },
-
-  districts: {
-    title: (city) => `Business addresses available across ${city.name}`,
-    subtitle: 'Pick the micro-market that suits your brand, we match you with a verified address there.'
-  },
-
-  benefits: {
-    title: 'Why take a virtual office',
-    items: [
-      { icon: '📍', title: 'Prime business address', text: 'Show a professional address on your website, invoices and visiting cards without paying for a full office.' },
-      { icon: '🧾', title: 'GST & MCA ready', text: 'Documents are prepared so the address can be used for GST registration and company incorporation.' },
-      { icon: '📬', title: 'Mail & courier handling', text: 'Letters and parcels received in your company name are held and forwarded or collected by you.' },
-      { icon: '💰', title: 'Save up to 80% on rent', text: 'Skip deposits, fit-outs and utilities. Pay one simple annual fee instead of a monthly lease.' },
-      { icon: '🏢', title: 'Meeting rooms on demand', text: 'Book a meeting room or day desk at partner centres whenever you need to meet clients.' },
-      { icon: '⚡', title: 'Quick setup', text: 'Most addresses are activated within 24 to 72 hours once your documents are verified.' }
-    ]
-  },
-
-  steps: {
-    title: 'How it works',
-    items: [
-      { title: 'Share your requirement', text: 'Tell us your city, purpose (GST, MCA or just a business address) and preferred area.' },
-      { title: 'Choose your address', text: 'Our expert shares verified options with a clear quote and what is included.' },
-      { title: 'Submit KYC', text: 'Upload the PAN, ID proof and address proof of the owner or directors.' },
-      { title: 'Get your documents', text: 'Receive the agreement, NOC and utility bill and use them for your registration.' }
-    ]
-  },
-
-  documents: {
-    title: 'What you receive',
-    items: ['Rent / service agreement', 'No-Objection Certificate (NOC)', 'Utility bill copy', 'Mail & courier handling', 'Support for GST address verification']
-  },
-
-  plans: {
-    title: 'Virtual office plans',
-    subtitle: 'Final pricing depends on the city and address. Request a quote for exact rates.',
-    items: [
-      { name: 'GST Registration', tag: 'Most popular', features: ['Address for GST registration', 'Agreement + NOC + utility bill', 'Help with address verification'] },
-      { name: 'Company / MCA Registration', tag: 'For startups', features: ['Registered office address', 'Accepted for Pvt Ltd, LLP and OPC', 'Documents ready for ROC filing'] },
-      { name: 'Business Address + Mail', tag: 'All-in-one', features: ['Address on website and invoices', 'Mail & courier handling', 'Meeting room access on request'] }
-    ]
-  },
-
-  faqs: {
-    title: 'Frequently asked questions',
-    items: [
-      { q: 'Is a virtual office address valid for GST registration?', a: 'Yes. A virtual office address backed by a rent or service agreement, NOC and a utility bill is commonly accepted for GST registration. Final acceptance rests with the tax authority.' },
-      { q: 'Can I register a company with a virtual office?', a: 'Yes. Private Limited companies, LLPs and OPCs can use it as the registered office address when the required documents are provided.' },
-      { q: 'How long does it take to get started?', a: 'Usually 24 to 72 hours after your KYC documents are verified.' },
-      { q: 'Do I get to use a physical desk?', a: 'A virtual office does not include a fixed desk, but you can book meeting rooms and day desks at partner centres when needed.' },
-      { q: 'How is my mail handled?', a: 'Letters and parcels addressed to your business are received at the centre and held for pickup or forwarded to you.' },
-      { q: 'Are there any hidden charges?', a: 'No. Your quote lists what is included. Add-ons such as meeting rooms are charged only if you use them.' }
-    ]
-  },
-
-  cta: {
-    title: (city) => `Ready to get your ${city.name} business address?`,
-    text: 'Talk to our space expert and get a custom quote today.',
-    button: 'Get Quote'
   }
 };
