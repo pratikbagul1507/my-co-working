@@ -186,24 +186,36 @@ const VirtualOfficePage = ({ citySlug }) => {
         <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">{content.locations.title(city)}</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-6">
           {city.subLocations.map((location) => (
-            <article key={location} className="rounded-xl border border-slate-200 bg-white p-5 sm:p-6 flex flex-col shadow-2xs hover:shadow-md transition-shadow">
-              <h3 className="text-lg sm:text-xl font-bold text-slate-900">{location}</h3>
-              <ul className="mt-4 flex flex-col gap-3">
-                {content.locations.features.map((feature) => (
-                  <li key={feature} className="flex items-center gap-2.5 text-xs sm:text-[13px] text-slate-600">
-                    <CheckIcon className="w-4 h-4 text-sky-500" />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-5 text-sm sm:text-base font-bold text-slate-900">{content.locations.priceText}</p>
-              <button
-                type="button"
-                onClick={() => setQuoteLocation(location)}
-                className="mt-5 w-full border border-[#007bff] text-[#007bff] hover:bg-[#007bff] hover:text-white active:scale-[0.98] font-semibold py-2.5 rounded-lg text-sm transition-all cursor-pointer"
-              >
-                {content.locations.button}
-              </button>
+            <article key={location} className="group relative rounded-2xl border border-slate-200 bg-white overflow-hidden flex flex-col shadow-2xs hover:shadow-lg hover:-translate-y-0.5 hover:border-orange-300 transition-all">
+              <div className="h-1.5 w-full bg-gradient-to-r from-orange-500 to-amber-400" />
+              <div className="p-5 sm:p-6 flex flex-col flex-1">
+                <div className="flex items-start gap-3">
+                  <span className="w-10 h-10 rounded-full bg-orange-50 text-orange-500 flex items-center justify-center shrink-0 text-lg">📍</span>
+                  <div className="min-w-0">
+                    <h3 className="text-lg font-bold text-slate-900 leading-snug">{location}</h3>
+                    <p className="text-xs text-slate-500">{city.name}, {city.state}</p>
+                  </div>
+                </div>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {content.locations.features.map((feature) => (
+                    <span key={feature} className="inline-flex items-center gap-1.5 rounded-full bg-slate-50 border border-slate-200 px-3 py-1 text-[11px] sm:text-xs font-medium text-slate-700">
+                      <CheckIcon className="w-3.5 h-3.5 text-orange-500" />
+                      {feature}
+                    </span>
+                  ))}
+                </div>
+                <div className="mt-5 flex items-center justify-between gap-3 pt-4 border-t border-dashed border-slate-200">
+                  <span className="text-sm font-bold text-slate-900">{content.locations.priceText}</span>
+                  <button
+                    type="button"
+                    onClick={() => setQuoteLocation(location)}
+                    className="inline-flex items-center gap-1.5 bg-[#ff5f00] hover:bg-[#e65600] active:scale-[0.97] text-white font-semibold px-4 py-2 rounded-lg text-xs sm:text-sm transition-all cursor-pointer"
+                  >
+                    {content.locations.button}
+                    <span aria-hidden="true">→</span>
+                  </button>
+                </div>
+              </div>
             </article>
           ))}
         </div>

@@ -11,24 +11,24 @@
  */
 import heroImage from '../assets/images/virtual-office-bg.jpg';
 import { cityNames } from '../home/homedata.js';
-import { ahmedabadAreas } from '../pages/ahmedabad/ahmedabadData.js';
-import { bangaloreAreas } from '../pages/bangalore/bangaloreData.js';
-import { bhubaneshwarNeighborhoods } from '../pages/bhubaneswar/bhubaneswarData.js';
-import { chandigarhAreas } from '../pages/chandigarh/chandigarhData.js';
-import { chennaiAreas } from '../pages/chennai/chennaiData.js';
-import { coimbatoreAreas } from '../pages/coimbatore/coimbatoreData.js';
-import { dehliNeighborhoods } from '../pages/delhi/delhiData.js';
-import { goaAreas } from '../pages/goa/goaData.js';
-import { gurugramAreas } from '../pages/gurugram/gurugramData.js';
-import { hyderabadAreas } from '../pages/hyderabad/hyderabadData.js';
-import { indoreNeighborhoods } from '../pages/indore/indoreData.js';
-import { jaipurAreas } from '../pages/jaipur/jaipurData.js';
-import { kochiAreas } from '../pages/kochi/kochiData.js';
-import { kolkataAreas } from '../pages/kolkata/kolkataData.js';
-import { lucknowAreas } from '../pages/lucknow/lucknowData.js';
-import { mumbaiAreas } from '../pages/mumbai/mumbaiData.js';
-import { noidaAreas } from '../pages/noida/noidaData.js';
-import { puneNeighborhoods } from '../pages/pune/puneData.js';
+import { ahmedabadAreas, ahmedabadSpaces } from '../pages/ahmedabad/ahmedabadData.js';
+import { bangaloreAreas, bangaloreSpaces } from '../pages/bangalore/bangaloreData.js';
+import { bhubaneshwarNeighborhoods, allBhubaneshwarOfficeCards } from '../pages/bhubaneswar/bhubaneswarData.js';
+import { chandigarhAreas, chandigarhSpaces } from '../pages/chandigarh/chandigarhData.js';
+import { chennaiAreas, chennaiSpaces } from '../pages/chennai/chennaiData.js';
+import { coimbatoreAreas, coimbatoreSpaces } from '../pages/coimbatore/coimbatoreData.js';
+import { dehliNeighborhoods, allDehliOfficeCards } from '../pages/delhi/delhiData.js';
+import { goaAreas, goaSpaces } from '../pages/goa/goaData.js';
+import { gurugramAreas, gurugramSpaces } from '../pages/gurugram/gurugramData.js';
+import { hyderabadAreas, hyderabadSpaces } from '../pages/hyderabad/hyderabadData.js';
+import { indoreNeighborhoods, allIndoreOfficeCards } from '../pages/indore/indoreData.js';
+import { jaipurAreas, jaipurSpaces } from '../pages/jaipur/jaipurData.js';
+import { kochiAreas, kochiSpaces } from '../pages/kochi/kochiData.js';
+import { kolkataAreas, kolkataSpaces } from '../pages/kolkata/kolkataData.js';
+import { lucknowAreas, lucknowSpaces } from '../pages/lucknow/lucknowData.js';
+import { mumbaiAreas, mumbaiSpaces } from '../pages/mumbai/mumbaiData.js';
+import { noidaAreas, noidaSpaces } from '../pages/noida/noidaData.js';
+import { puneNeighborhoods, allPuneOfficeCards } from '../pages/pune/puneData.js';
 
 export const virtualOfficeHeroImage = heroImage;
 
@@ -56,36 +56,39 @@ const cityDetails = {
   Mumbai: { state: 'Maharashtra', districts: ['BKC', 'Andheri East', 'Lower Parel', 'Nariman Point', 'Powai'] }
 };
 
-// Sub-locations come from each city's own data file (its area / neighbourhood list)
+// Sub-locations come from each city's own data file: its area list plus the area of every listed space.
+// Add an area (or a space in a new area) to the city file and a new card appears automatically.
 const citySubLocations = {
-  Gurugram: gurugramAreas,
-  Bhubaneswar: bhubaneshwarNeighborhoods,
-  Bangalore: bangaloreAreas,
-  Hyderabad: hyderabadAreas,
-  Chennai: chennaiAreas,
-  Lucknow: lucknowAreas,
-  Pune: puneNeighborhoods,
-  Noida: noidaAreas,
-  Delhi: dehliNeighborhoods,
-  Indore: indoreNeighborhoods,
-  Ahmedabad: ahmedabadAreas,
-  Jaipur: jaipurAreas,
-  Chandigarh: chandigarhAreas,
-  Kochi: kochiAreas,
-  Kolkata: kolkataAreas,
-  Coimbatore: coimbatoreAreas,
-  Goa: goaAreas,
-  Mumbai: mumbaiAreas
+  Gurugram: [gurugramAreas, gurugramSpaces],
+  Bhubaneswar: [bhubaneshwarNeighborhoods, allBhubaneshwarOfficeCards],
+  Bangalore: [bangaloreAreas, bangaloreSpaces],
+  Hyderabad: [hyderabadAreas, hyderabadSpaces],
+  Chennai: [chennaiAreas, chennaiSpaces],
+  Lucknow: [lucknowAreas, lucknowSpaces],
+  Pune: [puneNeighborhoods, allPuneOfficeCards],
+  Noida: [noidaAreas, noidaSpaces],
+  Delhi: [dehliNeighborhoods, allDehliOfficeCards],
+  Indore: [indoreNeighborhoods, allIndoreOfficeCards],
+  Ahmedabad: [ahmedabadAreas, ahmedabadSpaces],
+  Jaipur: [jaipurAreas, jaipurSpaces],
+  Chandigarh: [chandigarhAreas, chandigarhSpaces],
+  Kochi: [kochiAreas, kochiSpaces],
+  Kolkata: [kolkataAreas, kolkataSpaces],
+  Coimbatore: [coimbatoreAreas, coimbatoreSpaces],
+  Goa: [goaAreas, goaSpaces],
+  Mumbai: [mumbaiAreas, mumbaiSpaces]
 };
 
 const buildSubLocations = (cityName) => {
+  const [areas = [], spaces = []] = citySubLocations[cityName] || [];
+  const names = [...areas, ...spaces.map((space) => space.area)];
   const seen = new Set();
-  return (citySubLocations[cityName] || []).filter((name) => {
-    const key = String(name).trim().toLowerCase();
+  return names.filter((name) => {
+    const key = String(name || '').trim().toLowerCase();
     if (!key || key === 'all' || key === cityName.toLowerCase() || seen.has(key)) return false;
     seen.add(key);
     return true;
-  });
+  }).map((name) => String(name).trim());
 };
 
 export const toVirtualSlug = (cityName) => cityName.trim().toLowerCase().replace(/\s+/g, '-');
