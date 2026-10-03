@@ -4,6 +4,7 @@ import CityGrid from '../components/city/CityGrid';
 import CityPopup from '../components/city/CityPopup';
 import Section from '../sections/Section';
 import Footer from '../footer/Footer';
+import { virtualOfficePath } from '../virtual/virtual.js';
 
 // ============================================================================
 // DATA STORE IMPORT
@@ -247,6 +248,8 @@ const Homepage = () => {
     closeCityPopup();
     if (chosenSpaceType === 'Coworking Spaces') {
       navigate(`/coworking/${city.name.toLowerCase()}`);
+    } else if (chosenSpaceType === 'Virtual Office Space') {
+      navigate(virtualOfficePath(city.name));
     }
   };
 

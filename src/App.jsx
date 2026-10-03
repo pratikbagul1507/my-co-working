@@ -6,6 +6,7 @@ import { getPuneOfficeCardById } from './pages/pune/puneData';
 import { getIndoreOfficeCardById } from './pages/indore/indoreData';
 import { getBhubaneshwarOfficeCardById } from './pages/bhubaneswar/bhubaneswarData';
 import WhatsAppButton from './components/WhatsAppButton';
+import VirtualOffice from './virtual/Virtualoffice';
 
 import AhmedabadPage from './pages/ahmedabad/Ahmedabad';
 import BangalorePage from './pages/bangalore/Bangalore';
@@ -70,6 +71,7 @@ const App = () => {
         <Route path="/coworking/noida" element={<NoidaPage />} />
         <Route path="/coworking/pune" element={<PunePage />} />
         <Route path="/coworking/pune/:id" element={<PuneOfficeDetail />} />
+        <Route path="/virtual-office/:city" element={<VirtualOffice />} />
         <Route path="/:id" element={<OfficeRoute />} />
         <Route path="*" element={<Homepage />} />
       </Routes>

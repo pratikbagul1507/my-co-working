@@ -4,6 +4,7 @@ import { cityNames } from '../home/homedata';
 import logo from './company-logo.png';
 import label from './label.jpg';
 import { navItems } from './navLinks';
+import { virtualOfficePath } from '../virtual/virtual';
 
 // Tabs whose dropdown shows the city picker
 const CITY_TABS = ['Coworking', 'Virtual Office'];
@@ -16,8 +17,12 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   // Same behaviour as clicking a city on the home page: open that city's space-type popup
-  const handleCityClick = (cityName) => {
+  const handleCityClick = (cityName, tabName) => {
     closeMenu();
+    if (tabName === 'Virtual Office') {
+      navigate(virtualOfficePath(cityName));
+      return;
+    }
     navigate('/', { state: { openCity: cityName } });
   };
 
@@ -34,7 +39,7 @@ const Navbar = () => {
             <button
               key={city.name}
               type="button"
-              onClick={() => handleCityClick(city.name)}
+              onClick={() => handleCityClick(city.name, tabName)}
               className="flex flex-col items-center gap-1.5 group cursor-pointer focus:outline-none"
             >
               <img
