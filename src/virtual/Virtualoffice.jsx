@@ -5,6 +5,8 @@ import QuoteModal from '../components/QuoteModal.jsx';
 import { enquiryFormConfig } from '../home/homedata.js';
 import {
   getVirtualOfficeCity,
+  virtualOfficeCities,
+  virtualOfficePath,
   virtualOfficeContent as content,
   virtualOfficeHeroImage
 } from './virtual.js';
@@ -247,6 +249,43 @@ const VirtualOfficePage = ({ citySlug }) => {
               className="bg-[#ff5f00] hover:bg-[#e65600] active:scale-[0.97] text-white font-bold px-8 py-3 rounded-xl text-sm sm:text-base shadow-md transition-all cursor-pointer"
             >
               {content.benefits.button}
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= EXPLORE OTHER CITIES ================= */}
+      <section aria-label="Explore top cities for virtual offices" className="w-full bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+          <div className="text-center">
+            <h2 className="text-xl sm:text-2xl lg:text-[28px] font-bold text-slate-900 tracking-tight">{content.cities.title}</h2>
+            <div className="mx-auto mt-3 h-1 w-16 rounded-full bg-gradient-to-r from-orange-500 to-amber-400" />
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5 mt-8 sm:mt-10">
+            {virtualOfficeCities.filter((c) => c.slug !== city.slug).map((c) => (
+              <Link
+                key={c.slug}
+                to={virtualOfficePath(c.name)}
+                aria-label={`Virtual office in ${c.name}`}
+                className="group flex flex-col items-center rounded-2xl border border-slate-200 bg-slate-50 px-3 pt-6 pb-4 shadow-2xs hover:bg-white hover:border-orange-300 hover:shadow-lg hover:-translate-y-1 transition-all"
+              >
+                <span className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-4 border-white ring-2 ring-orange-200 group-hover:ring-orange-400 shadow-md transition-all">
+                  <img src={c.image} alt={`${c.name} city`} loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+                </span>
+                <span className="mt-3 text-sm sm:text-base font-bold text-slate-900 group-hover:text-orange-600 transition-colors">{c.name}</span>
+                <span className="mt-1 text-[11px] sm:text-xs font-medium text-slate-500 group-hover:text-orange-500 transition-colors">
+                  {content.cities.cardLabel} →
+                </span>
+              </Link>
+            ))}
+          </div>
+          <div className="flex justify-center mt-8 sm:mt-10">
+            <button
+              type="button"
+              onClick={() => setQuoteSpace({ name: 'Virtual Office - across India', location: 'India' })}
+              className="bg-[#ff5f00] hover:bg-[#e65600] active:scale-[0.97] text-white font-bold px-7 py-3 rounded-xl text-sm shadow-md transition-all cursor-pointer"
+            >
+              {content.cities.button}
             </button>
           </div>
         </div>

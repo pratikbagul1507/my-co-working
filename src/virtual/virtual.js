@@ -139,6 +139,12 @@ export const virtualOfficeContent = {
     ]
   },
 
+  cities: {
+    title: 'Explore Top Cities For Virtual Offices',
+    cardLabel: 'Virtual Office',
+    button: 'Get Quote for virtual office across India'
+  },
+
   form: {
     title: (city) => `Get your ${city.name} address`,
     subtitle: 'Get virtual office options and pricing that fit your business',
