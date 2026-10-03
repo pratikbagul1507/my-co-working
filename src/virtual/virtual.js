@@ -127,6 +127,18 @@ export const virtualOfficeContent = {
     button: 'Get Address Details'
   },
 
+  benefits: {
+    title: (city) => `Benefits of Virtual Office in ${city.name}`,
+    button: 'Get Your Virtual Office',
+    items: [
+      { icon: '🏢', tint: 'bg-sky-50', title: 'Prime Business Address', text: (city) => `Use a prestigious ${city.name} address to build credibility with clients and partners.` },
+      { icon: '📄', tint: 'bg-orange-50', title: 'GST & MCA Compliance', text: () => 'Addresses prepared for GST and company registration, with the documents authorities ask for.' },
+      { icon: '📬', tint: 'bg-rose-50', title: 'Mail & Courier Handling', text: () => 'Never miss important documents or notices. We receive and hold your correspondence.' },
+      { icon: '⚡', tint: 'bg-amber-50', title: 'Fast & Hassle-Free Setup', text: () => 'Documentation support with minimal effort. Get started in 24-72 hours.' },
+      { icon: '🏦', tint: 'bg-emerald-50', title: 'Business Bank Account', text: () => 'Rent agreement, NOC and utility bill included to support current-account KYC.' }
+    ]
+  },
+
   form: {
     title: (city) => `Get your ${city.name} address`,
     subtitle: 'Get virtual office options and pricing that fit your business',

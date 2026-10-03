@@ -28,7 +28,7 @@ const VirtualOfficePage = ({ citySlug }) => {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '' });
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [quoteLocation, setQuoteLocation] = useState(null);
+  const [quoteSpace, setQuoteSpace] = useState(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -208,7 +208,7 @@ const VirtualOfficePage = ({ citySlug }) => {
                   <span className="text-sm font-bold text-slate-900">{content.locations.priceText}</span>
                   <button
                     type="button"
-                    onClick={() => setQuoteLocation(location)}
+                    onClick={() => setQuoteSpace({ name: `Virtual Office - ${location}, ${city.name}`, location: `${location}, ${city.name}` })}
                     className="inline-flex items-center gap-1.5 bg-[#ff5f00] hover:bg-[#e65600] active:scale-[0.97] text-white font-semibold px-4 py-2 rounded-lg text-xs sm:text-sm transition-all cursor-pointer"
                   >
                     {content.locations.button}
@@ -221,11 +221,38 @@ const VirtualOfficePage = ({ citySlug }) => {
         </div>
       </section>
 
-      {quoteLocation && (
-        <QuoteModal
-          space={{ name: `Virtual Office - ${quoteLocation}, ${city.name}`, location: `${quoteLocation}, ${city.name}` }}
-          onClose={() => setQuoteLocation(null)} />
-      )}
+      {/* ================= BENEFITS ================= */}
+      <section aria-label="Benefits of virtual office" className="w-full bg-gradient-to-b from-orange-50/70 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+          <h2 className="text-center text-xl sm:text-2xl lg:text-[28px] font-bold text-slate-900 tracking-tight">
+            {content.benefits.title(city)}
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-5 mt-8 sm:mt-10">
+            {content.benefits.items.map((item, index) => (
+              <div
+                key={item.title}
+                className="relative rounded-2xl bg-white border border-slate-200 p-5 pt-6 shadow-2xs hover:shadow-lg hover:-translate-y-1 transition-all"
+              >
+                <span className="absolute top-3 right-4 text-3xl font-black text-slate-100 select-none">{index + 1}</span>
+                <div className={`w-14 h-14 rounded-2xl flex items-center justify-center text-3xl ${item.tint}`}>{item.icon}</div>
+                <h3 className="text-base font-bold text-slate-900 mt-4 leading-snug">{item.title}</h3>
+                <p className="text-sm text-slate-600 mt-2 leading-relaxed">{item.text(city)}</p>
+              </div>
+            ))}
+          </div>
+          <div className="flex justify-center mt-8 sm:mt-10">
+            <button
+              type="button"
+              onClick={() => setQuoteSpace({ name: `Virtual Office - ${city.name}`, location: `${city.name}, ${city.state}` })}
+              className="bg-[#ff5f00] hover:bg-[#e65600] active:scale-[0.97] text-white font-bold px-8 py-3 rounded-xl text-sm sm:text-base shadow-md transition-all cursor-pointer"
+            >
+              {content.benefits.button}
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {quoteSpace && <QuoteModal space={quoteSpace} onClose={() => setQuoteSpace(null)} />}
     </main>
   );
 };
