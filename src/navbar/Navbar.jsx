@@ -5,6 +5,9 @@ import logo from './company-logo.png';
 import label from './label.jpg';
 import { navItems } from './navLinks';
 
+// Tabs whose dropdown shows the city picker
+const CITY_TABS = ['Coworking', 'Virtual Office'];
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -16,6 +19,38 @@ const Navbar = () => {
   const handleCityClick = (cityName) => {
     closeMenu();
     navigate('/', { state: { openCity: cityName } });
+  };
+
+  // City picker for the Coworking / Virtual Office tabs; each tab has its own heading and style
+  const renderCityGrid = (tabName, cols) => {
+    const isVirtual = tabName === 'Virtual Office';
+    return (
+      <div className={isVirtual ? 'rounded-lg bg-blue-50/60 p-3' : ''}>
+        <p className={`text-xs font-bold uppercase tracking-wide mb-3 ${isVirtual ? 'text-blue-700' : 'text-orange-600'}`}>
+          {isVirtual ? 'Virtual Office in your city' : 'Coworking Spaces in your city'}
+        </p>
+        <div className={cols === 6 ? 'grid grid-cols-6 gap-x-3 gap-y-4' : 'grid grid-cols-3 gap-x-2 gap-y-3'}>
+          {cityNames.map((city) => (
+            <button
+              key={city.name}
+              type="button"
+              onClick={() => handleCityClick(city.name)}
+              className="flex flex-col items-center gap-1.5 group cursor-pointer focus:outline-none"
+            >
+              <img
+                src={city.image}
+                alt={city.name}
+                loading="lazy"
+                className={isVirtual
+                  ? 'w-14 h-14 rounded-xl object-cover border-2 border-blue-100 group-hover:border-blue-500 group-hover:scale-105 transition-all'
+                  : 'w-14 h-14 rounded-full object-cover border-2 border-slate-100 group-hover:border-orange-400 group-hover:scale-105 transition-all'}
+              />
+              <span className={`text-[11px] font-semibold text-slate-700 text-center leading-tight ${isVirtual ? 'group-hover:text-blue-600' : 'group-hover:text-orange-600'}`}>{city.name}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+    );
   };
 
   const toggleDropdown = (menu) => {
@@ -91,21 +126,9 @@ const Navbar = () => {
 
               {/* Desktop Dropdown Menu */}
               {activeDropdown === item.name && (
-                <div className={`absolute left-0 mt-1 bg-white border border-slate-100 rounded-xl shadow-xl z-50 animate-in fade-in slide-in-from-top-1 duration-150 ${item.name === 'Coworking' ? 'w-[620px] p-5' : 'w-64 py-2'}`}>
-                  {item.name === 'Coworking' ? (
-                <div className="grid grid-cols-6 gap-x-3 gap-y-4">
-                  {cityNames.map((city) => (
-                    <button
-                      key={city.name}
-                      type="button"
-                      onClick={() => handleCityClick(city.name)}
-                      className="flex flex-col items-center gap-1.5 group cursor-pointer focus:outline-none"
-                    >
-                      <img src={city.image} alt={city.name} loading="lazy" className="w-14 h-14 rounded-full object-cover border-2 border-slate-100 group-hover:border-orange-400 group-hover:scale-105 transition-all" />
-                      <span className="text-[11px] font-semibold text-slate-700 group-hover:text-orange-600 text-center leading-tight">{city.name}</span>
-                    </button>
-                  ))}
-                </div>
+                <div className={`absolute left-0 mt-1 bg-white border border-slate-100 rounded-xl shadow-xl z-50 animate-in fade-in slide-in-from-top-1 duration-150 ${CITY_TABS.includes(item.name) ? 'w-[620px] p-5' : 'w-64 py-2'}`}>
+                  {CITY_TABS.includes(item.name) ? (
+                renderCityGrid(item.name, 6)
                   ) : item.links.map((link) => (
                     <Link
                       key={link}
@@ -184,21 +207,9 @@ const Navbar = () => {
 
                 {/* Sub-links dropdown */}
                 {isExpanded && (
-                  <div className={item.name === 'Coworking' ? 'pt-3 pb-1' : 'pl-3 pt-2 pb-1 flex flex-col space-y-2'}>
-                    {item.name === 'Coworking' ? (
-                <div className="grid grid-cols-3 gap-x-2 gap-y-3">
-                  {cityNames.map((city) => (
-                    <button
-                      key={city.name}
-                      type="button"
-                      onClick={() => handleCityClick(city.name)}
-                      className="flex flex-col items-center gap-1.5 group cursor-pointer focus:outline-none"
-                    >
-                      <img src={city.image} alt={city.name} loading="lazy" className="w-14 h-14 rounded-full object-cover border-2 border-slate-100 group-hover:border-orange-400 group-hover:scale-105 transition-all" />
-                      <span className="text-[11px] font-semibold text-slate-700 group-hover:text-orange-600 text-center leading-tight">{city.name}</span>
-                    </button>
-                  ))}
-                </div>
+                  <div className={CITY_TABS.includes(item.name) ? 'pt-3 pb-1' : 'pl-3 pt-2 pb-1 flex flex-col space-y-2'}>
+                    {CITY_TABS.includes(item.name) ? (
+                renderCityGrid(item.name, 3)
                     ) : item.links.map((link) => (
                       <Link
                         key={link}
