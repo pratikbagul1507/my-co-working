@@ -11,6 +11,24 @@
  */
 import heroImage from '../assets/images/virtual-office-bg.jpg';
 import { cityNames } from '../home/homedata.js';
+import { ahmedabadAreas } from '../pages/ahmedabad/ahmedabadData.js';
+import { bangaloreAreas } from '../pages/bangalore/bangaloreData.js';
+import { bhubaneshwarNeighborhoods } from '../pages/bhubaneswar/bhubaneswarData.js';
+import { chandigarhAreas } from '../pages/chandigarh/chandigarhData.js';
+import { chennaiAreas } from '../pages/chennai/chennaiData.js';
+import { coimbatoreAreas } from '../pages/coimbatore/coimbatoreData.js';
+import { dehliNeighborhoods } from '../pages/delhi/delhiData.js';
+import { goaAreas } from '../pages/goa/goaData.js';
+import { gurugramAreas } from '../pages/gurugram/gurugramData.js';
+import { hyderabadAreas } from '../pages/hyderabad/hyderabadData.js';
+import { indoreNeighborhoods } from '../pages/indore/indoreData.js';
+import { jaipurAreas } from '../pages/jaipur/jaipurData.js';
+import { kochiAreas } from '../pages/kochi/kochiData.js';
+import { kolkataAreas } from '../pages/kolkata/kolkataData.js';
+import { lucknowAreas } from '../pages/lucknow/lucknowData.js';
+import { mumbaiAreas } from '../pages/mumbai/mumbaiData.js';
+import { noidaAreas } from '../pages/noida/noidaData.js';
+import { puneNeighborhoods } from '../pages/pune/puneData.js';
 
 export const virtualOfficeHeroImage = heroImage;
 
@@ -38,6 +56,38 @@ const cityDetails = {
   Mumbai: { state: 'Maharashtra', districts: ['BKC', 'Andheri East', 'Lower Parel', 'Nariman Point', 'Powai'] }
 };
 
+// Sub-locations come from each city's own data file (its area / neighbourhood list)
+const citySubLocations = {
+  Gurugram: gurugramAreas,
+  Bhubaneswar: bhubaneshwarNeighborhoods,
+  Bangalore: bangaloreAreas,
+  Hyderabad: hyderabadAreas,
+  Chennai: chennaiAreas,
+  Lucknow: lucknowAreas,
+  Pune: puneNeighborhoods,
+  Noida: noidaAreas,
+  Delhi: dehliNeighborhoods,
+  Indore: indoreNeighborhoods,
+  Ahmedabad: ahmedabadAreas,
+  Jaipur: jaipurAreas,
+  Chandigarh: chandigarhAreas,
+  Kochi: kochiAreas,
+  Kolkata: kolkataAreas,
+  Coimbatore: coimbatoreAreas,
+  Goa: goaAreas,
+  Mumbai: mumbaiAreas
+};
+
+const buildSubLocations = (cityName) => {
+  const seen = new Set();
+  return (citySubLocations[cityName] || []).filter((name) => {
+    const key = String(name).trim().toLowerCase();
+    if (!key || key === 'all' || key === cityName.toLowerCase() || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+};
+
 export const toVirtualSlug = (cityName) => cityName.trim().toLowerCase().replace(/\s+/g, '-');
 
 export const virtualOfficeCities = cityNames
@@ -46,7 +96,8 @@ export const virtualOfficeCities = cityNames
     name: city.name,
     slug: toVirtualSlug(city.name),
     image: city.image,
-    ...cityDetails[city.name]
+    ...cityDetails[city.name],
+    subLocations: buildSubLocations(city.name)
   }));
 
 export const getVirtualOfficeCity = (slug) =>
@@ -64,6 +115,13 @@ export const virtualOfficeContent = {
     subtitle: (city) =>
       `A verified ${city.name} business address with rent agreement, NOC and utility bill, accepted for GST and company registration in ${city.state}.`,
     points: ['Govt-compliant address', 'GST & MCA accepted', '10,000+ businesses served', 'Setup in 24–72 hours']
+  },
+
+  locations: {
+    title: (city) => `Virtual office locations in ${city.name}`,
+    features: ['Business Address', 'GST Registration', 'Company Registration'],
+    priceText: 'Price on request',
+    button: 'Get Address Details'
   },
 
   form: {

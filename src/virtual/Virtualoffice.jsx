@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import expertImg from '../assets/expert.jpg';
+import QuoteModal from '../components/QuoteModal.jsx';
 import { enquiryFormConfig } from '../home/homedata.js';
 import {
   getVirtualOfficeCity,
@@ -27,6 +28,7 @@ const VirtualOfficePage = ({ citySlug }) => {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '' });
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [quoteLocation, setQuoteLocation] = useState(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -179,6 +181,39 @@ const VirtualOfficePage = ({ citySlug }) => {
         </div>
       </section>
 
+      {/* ================= SUB-LOCATIONS ================= */}
+      <section aria-label="Virtual office locations" className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">{content.locations.title(city)}</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-6">
+          {city.subLocations.map((location) => (
+            <article key={location} className="rounded-xl border border-slate-200 bg-white p-5 sm:p-6 flex flex-col shadow-2xs hover:shadow-md transition-shadow">
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900">{location}</h3>
+              <ul className="mt-4 flex flex-col gap-3">
+                {content.locations.features.map((feature) => (
+                  <li key={feature} className="flex items-center gap-2.5 text-xs sm:text-[13px] text-slate-600">
+                    <CheckIcon className="w-4 h-4 text-sky-500" />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-5 text-sm sm:text-base font-bold text-slate-900">{content.locations.priceText}</p>
+              <button
+                type="button"
+                onClick={() => setQuoteLocation(location)}
+                className="mt-5 w-full border border-[#007bff] text-[#007bff] hover:bg-[#007bff] hover:text-white active:scale-[0.98] font-semibold py-2.5 rounded-lg text-sm transition-all cursor-pointer"
+              >
+                {content.locations.button}
+              </button>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {quoteLocation && (
+        <QuoteModal
+          space={{ name: `Virtual Office - ${quoteLocation}, ${city.name}`, location: `${quoteLocation}, ${city.name}` }}
+          onClose={() => setQuoteLocation(null)} />
+      )}
     </main>
   );
 };
