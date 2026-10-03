@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import QuoteModal from '../QuoteModal.jsx';
 
 const FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80';
 
 const CoWorkingOfficeCard = ({ space }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isQuoteOpen, setIsQuoteOpen] = useState(false);
 
   const images = space.images && space.images.length > 0 ? space.images : [FALLBACK_IMAGE];
 
@@ -99,10 +101,12 @@ const CoWorkingOfficeCard = ({ space }) => {
           </div>
           <button
             type="button"
+            onClick={() => setIsQuoteOpen(true)}
             className="bg-[#007bff] hover:bg-blue-600 active:bg-blue-700 text-white text-xs sm:text-sm font-medium px-4 py-2 rounded-lg shadow-xs transition-colors cursor-pointer"
           >
             Get Quote
           </button>
+          {isQuoteOpen && <QuoteModal space={space} onClose={() => setIsQuoteOpen(false)} />}
         </div>
       </div>
     </article>

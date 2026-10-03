@@ -22,12 +22,14 @@ import { puneNeighborhoods,
     areaExtraOfficeCards,
     getPuneOfficeSlug
    } from './puneData.js';
+import QuoteModal from '../../components/QuoteModal.jsx';
 
 /**
  * Individual Coworking Space Card with isolated multi-image sliding closure mechanism
  * Implements continuous infinite looping in the same slide direction.
  */
 const OfficeCard = ({ space }) => {
+  const [isQuoteOpen, setIsQuoteOpen] = useState(false);
   const hasMultipleImages = Boolean(space.images && space.images.length > 1);
   const extendedImages = hasMultipleImages
     ? [space.images[space.images.length - 1], ...space.images, space.images[0]]
@@ -195,12 +197,13 @@ const OfficeCard = ({ space }) => {
             type="button"
             onClick={(e) => {
               e.stopPropagation();
-              window.open(`${getPuneOfficeSlug(space)}`, '_blank', 'noopener,noreferrer');
+              setIsQuoteOpen(true);
             }}
             className="bg-[#007bff] hover:bg-blue-600 active:scale-95 text-white text-xs font-semibold px-3 py-1.5 rounded-[4px] shadow-2xs transition-all cursor-pointer"
           >
             {space.ctaText}
           </button>
+          {isQuoteOpen && <QuoteModal space={space} onClose={() => setIsQuoteOpen(false)} />}
         </div>
       </div>
     </article>
