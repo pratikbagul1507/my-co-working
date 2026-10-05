@@ -22,7 +22,9 @@ export const gurugramSpaces = [
     address: 'Golf Course Road, Gurugram',
     price: 8999,
     priceFormatted: '₹8,999',
-    images: []
+    images: [
+      https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmwqbiToe3fHaSPeMxo78YrK_-fXu44FF57Iz1NKuvWcdZ_XeTvNQEKZgJDu3g9kl8W7uW_IiW0W99eVoqIDRJSRciy84mqBy6OQuFwZ_wDuZnUNQTa6OkM0x0RiFqYiSzrE5vOgw=s680-w680-h510-rw
+    ]
   }
 ];
 
