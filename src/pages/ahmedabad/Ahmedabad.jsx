@@ -211,7 +211,7 @@ const OfficeCard = ({ space }) => {
 };
 
 /**
- * Main Pune Coworking Listings Page Container
+ * Main Ahmedabad Coworking Listings Page Container
  */
 const Ahmedabad = () => {
   const [selectedNeighborhood, setSelectedNeighborhood] = useState(null);
@@ -330,10 +330,10 @@ const Ahmedabad = () => {
           </li>
           <li aria-hidden="true">/</li>
           <li>
-            <Link to="/coworking/pune" className="hover:text-blue-600 transition-colors">Coworking</Link>
+            <Link to="/coworking/ahmedabad" className="hover:text-blue-600 transition-colors">Coworking</Link>
           </li>
           <li aria-hidden="true">/</li>
-          <li className="text-slate-800 font-medium" aria-current="page">Pune</li>
+          <li className="text-slate-800 font-medium" aria-current="page">Ahmedabad</li>
           <li aria-hidden="true">/</li>
         </ol>
       </nav>
@@ -341,7 +341,7 @@ const Ahmedabad = () => {
       {/* Header Section: Title and Filter Controls */}
       <header id="coworking-listings-header" className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
         <h1 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
-          Coworking Spaces In Pune
+          Coworking Spaces In Ahmedabad
         </h1>
         <div className="flex items-center gap-2">
           <div className="relative">
@@ -428,7 +428,7 @@ const Ahmedabad = () => {
               onClick={() => setSelectedNeighborhood(null)}
               className="mt-2 text-xs text-blue-600 underline cursor-pointer"
             >
-              Show all Pune spaces
+              Show all Ahmedabad spaces
             </button>
           </div>
         ) : (
@@ -623,10 +623,10 @@ const Ahmedabad = () => {
         </div>
       </nav>
 
-      {/* Section: Explore Top Coworking Locations in Pune */}
-      <section aria-label="Explore top coworking locations in Pune" className="my-6 pt-4 border-t border-slate-200/80">
+      {/* Section: Explore Top Coworking Locations in Ahmedabad */}
+      <section aria-label="Explore top coworking locations in Ahmedabad" className="my-6 pt-4 border-t border-slate-200/80">
         <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-5">
-          Explore Top Coworking Locations in Pune
+          Explore Top Coworking Locations in Ahmedabad
         </h2>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5 sm:gap-4.5">

@@ -19,7 +19,7 @@ const OfficeDetail = () => {
   const normalizeArea = (str) => {
     if (!str) return '';
     let s = str.trim().toLowerCase().replace(/[-_]/g, ' ').replace(/\s+/g, ' ');
-    if (s === 'pune camp' || s === 'camp pune') return 'camp';
+    if (s === 'ahmedabad sg highway' || s === 'sg highway ahmedabad') return 'sg highway';
     return s;
   };
 
@@ -244,10 +244,10 @@ const OfficeDetail = () => {
         <h1 className="text-2xl font-bold text-slate-800 mb-2">Office Space Not Found</h1>
         <p className="text-sm text-slate-500 mb-6">The requested coworking space could not be found.</p>
         <Link
-          to="/coworking/pune"
+          to="/coworking/ahmedabad"
           className="bg-[#007bff] hover:bg-blue-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg shadow-xs transition-colors"
         >
-          Back to Pune Coworking Spaces
+          Back to Ahmedabad Coworking Spaces
         </Link>
       </main>
     );
@@ -303,7 +303,7 @@ const OfficeDetail = () => {
           <ol className="flex items-center gap-1.5 text-xs sm:text-sm text-slate-500">
             <li><Link to="/" className="hover:text-blue-600 transition-colors">Home</Link></li>
             <li>/</li>
-            <li><Link to="/coworking/pune" className="hover:text-blue-600 transition-colors">Coworking</Link></li>
+            <li><Link to="/coworking/ahmedabad" className="hover:text-blue-600 transition-colors">Coworking</Link></li>
             <li>/</li>
             <li className="text-slate-700 font-medium truncate max-w-[200px] sm:max-w-md">{space.name}</li>
           </ol>
@@ -878,7 +878,7 @@ const OfficeDetail = () => {
           <div className="flex flex-col items-center justify-center text-center mb-6 sm:mb-8 select-none">
             
             <h3 className="text-base sm:text-lg font-bold text-slate-900 mt-3 tracking-tight">
-              Similar Coworking Spaces in {currentArea || 'Pune'}
+              Similar Coworking Spaces in {currentArea || 'Ahmedabad'}
             </h3>
           </div>
 
@@ -956,10 +956,10 @@ const OfficeDetail = () => {
           </div>
         </section>
 
-        {/* Section: Explore Top Coworking Locations in Pune */}
-        <section aria-label="Explore top coworking locations in Pune" className="my-6 pt-4 border-t border-slate-200/80">
+        {/* Section: Explore Top Coworking Locations in Ahmedabad */}
+        <section aria-label="Explore top coworking locations in Ahmedabad" className="my-6 pt-4 border-t border-slate-200/80">
           <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-5">
-            Explore Top Coworking Locations in Pune
+            Explore Top Coworking Locations in Ahmedabad
           </h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5 sm:gap-4.5">
@@ -968,11 +968,11 @@ const OfficeDetail = () => {
                 key={location.id}
                 role="button"
                 tabIndex={0}
-                onClick={() => window.open('/coworking/pune', '_blank', 'noopener,noreferrer')}
+                onClick={() => window.open('/coworking/ahmedabad', '_blank', 'noopener,noreferrer')}
                 onKeyDown={(e) => {
                   if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
-                    window.open('/coworking/pune', '_blank', 'noopener,noreferrer');
+                    window.open('/coworking/ahmedabad', '_blank', 'noopener,noreferrer');
                   }
                 }}
                 className="group bg-white rounded-lg border border-slate-200 hover:border-blue-300 overflow-hidden shadow-2xs hover:shadow-md transition-all duration-200 cursor-pointer flex flex-col"
