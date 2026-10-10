@@ -1095,7 +1095,7 @@ const OfficeDetail = () => {
                 ›
               </button>
             )}
-          </div>
+              </div>
 
           {/* Modal Bottom: Thumbnail Strip */}
           {images.length > 1 && (
