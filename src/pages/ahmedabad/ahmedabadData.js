@@ -5,25 +5,16 @@ import { findOfficeBySlug, officePath } from "../../common/slug.js";
  */
 
 export const ahmedabadNeighborhoods = [
-  'Baner',
-  'Kharadi',
-  'Viman Nagar',
-  'Koregaon Park',
-  'Wakad',
-  'Balewadi',
-  'Hinjewadi',
-  'Kothrud',
-  'Aundh',
-  'Pimple Saudagar',
-  'Kalyani Nagar',
-  'Bavdhan',
-  'Magarpatta',
-  'Hadapsar',
-  'Pimpri Chinchwad',
-  'Yerwada',
-  'Karve Nagar',
-  'Shivaji Nagar'
-];
+  "SG Highway",
+  "Navrangpura",
+  "Vastrapur",
+  "Prahlad Nagar",
+  "Satellite",
+  "Ellisbridge",
+  "Makarba",
+  "Bopal"
+]
+;
 
 export const ahmedabadOfficeCards = [
   {
