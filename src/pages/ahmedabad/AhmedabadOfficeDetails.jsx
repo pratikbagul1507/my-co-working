@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import expertImg from '../../assets/expert.jpg';
-import { getPuneOfficeCardById, getPuneOfficeSlug, allPuneOfficeCards, similarPuneOfficeCards, topPuneCoworkingLocations } from './puneData.js';
+import { getAhmedabadOfficeCardById, getAhmedabadOfficeSlug, allAhmedabadOfficeCards, similarAhmedabadOfficeCards, topAhmedabadCoworkingLocations } from './ahmedabadData.js';
 
 /**
  * Coworking Office Details Page
@@ -10,7 +10,7 @@ import { getPuneOfficeCardById, getPuneOfficeSlug, allPuneOfficeCards, similarPu
  */
 const OfficeDetail = () => {
   const { id } = useParams();
-  const space = getPuneOfficeCardById(id);
+  const space = getAhmedabadOfficeCardById(id);
 
   // Extract current area of the open card
   const currentArea = (space?.area || (space?.location ? space.location.split(',')[0].trim() : '')).trim();
@@ -29,7 +29,7 @@ const OfficeDetail = () => {
     const targetAreaNorm = normalizeArea(currentArea);
     const seen = new Set();
 
-    const filtered = allPuneOfficeCards.filter((card) => {
+    const filtered = allAhmedabadOfficeCards.filter((card) => {
       // 1. Exclude the current/open card by id or exact name
       if (Number(card.id) === Number(space.id)) return false;
       if (card.name && space.name && card.name.trim().toLowerCase() === space.name.trim().toLowerCase()) return false;
@@ -909,7 +909,7 @@ const OfficeDetail = () => {
               {loopedSimilarOfficeCards.map((item, idx) => (
                 <article
                   key={`${item.id}-${idx}`}
-                  onClick={() => window.open(`${getPuneOfficeSlug(item)}`, '_blank', 'noopener,noreferrer')}
+                  onClick={() => window.open(`${getAhmedabadOfficeSlug(item)}`, '_blank', 'noopener,noreferrer')}
                   className="w-[250px] sm:w-[270px] md:w-[285px] shrink-0 bg-transparent rounded-2xl overflow-hidden cursor-pointer group flex flex-col"
                 >
                   {/* Card Image */}
@@ -963,7 +963,7 @@ const OfficeDetail = () => {
           </h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5 sm:gap-4.5">
-            {topPuneCoworkingLocations.map((location) => (
+            {topAhmedabadCoworkingLocations.map((location) => (
               <div
                 key={location.id}
                 role="button"

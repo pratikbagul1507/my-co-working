@@ -4,7 +4,7 @@ import { findOfficeBySlug, officePath } from "../../common/slug.js";
  * Sourced from verified active coworking listings in Pune.
  */
 
-export const puneNeighborhoods = [
+export const ahmedabadNeighborhoods = [
   'Baner',
   'Kharadi',
   'Viman Nagar',
@@ -25,7 +25,7 @@ export const puneNeighborhoods = [
   'Shivaji Nagar'
 ];
 
-export const puneOfficeCards = [
+export const ahmedabadOfficeCards = [
   {
     id: 1,
     name: 'Tag Co-Works',
@@ -179,7 +179,7 @@ export const puneOfficeCards = [
   }
 ];
 
-export const morePuneOfficeCards = [
+export const moreAhmedabadOfficeCards = [
   {
     id: 9,
     name: '91springboard Sadanand Business Center',
@@ -334,7 +334,7 @@ export const morePuneOfficeCards = [
   }
 ];
 
-//export const allPuneOfficeCards = [...puneOfficeCards, ...morePuneOfficeCards];
+//export const allAhmedabadOfficeCards = [...ahmedabadOfficeCards, ...moreAhmedabadOfficeCards];
 
 export const perfectWorkspaceBanner = {
   title: 'Discover your perfect workspace with Mycoworking',
@@ -343,7 +343,7 @@ export const perfectWorkspaceBanner = {
   bgImage: 'https://img.cofynd.com/images/latest_images_2024/28f41de2ee6c67528d528dc3b55fc7ad2801dcbc.webp'
 };
 
-export const finalPuneOfficeCards = [
+export const finalAhmedabadOfficeCards = [
   {
     id: 17,
     name: 'IndiQube Park Plaza',
@@ -497,7 +497,7 @@ export const finalPuneOfficeCards = [
   }
 ];
 
-export const featuredPuneOfficeCards = [
+export const featuredAhmedabadOfficeCards = [
   {
     id: 25,
     name: 'Bootstart Coworking - Pride Icon',
@@ -652,10 +652,10 @@ export const featuredPuneOfficeCards = [
 ];
 
 // Aliases for compatibility
-export const puneAreas = puneNeighborhoods;
-export const puneSpaces = puneOfficeCards;
-export const areas = puneNeighborhoods;
-export const spaces = puneOfficeCards;
+export const ahmedabadAreas = ahmedabadNeighborhoods;
+export const ahmedabadSpaces = ahmedabadOfficeCards;
+export const areas = ahmedabadNeighborhoods;
+export const spaces = ahmedabadOfficeCards;
 
 export const customizedOfficeBanner = {
   title: 'Customized office solutions for your team',
@@ -686,10 +686,10 @@ export const paginationData = {
 // ----------------------------------------------------------------------------
 // Jab user pagination me button '2' par click karega, tab top 8 cards ki jagah
 // ye 8 naye cards display honge.
-// Button '1' click karne par wapas pehle wale 8 cards (puneOfficeCards) aa jayenge.
+// Button '1' click karne par wapas pehle wale 8 cards (ahmedabadOfficeCards) aa jayenge.
 // Har card me real internet images, badge, rating, location aur price di gayi hai.
 // ============================================================================
-export const pageTwoPuneOfficeCards = [
+export const pageTwoAhmedabadOfficeCards = [
   // 1. Share A Space - Aundh, Pune
   {
     id: 33,
@@ -856,10 +856,10 @@ export const pageTwoPuneOfficeCards = [
 // ----------------------------------------------------------------------------
 // Jab user pagination me button '2' par click karega, tab "Find Your Perfect Office
 // Solution" box ke niche wale second 8 cards ki jagah ye 8 naye cards display honge.
-// Button '1' click karne par wapas pehle wale 8 cards (morePuneOfficeCards) aa jayenge.
+// Button '1' click karne par wapas pehle wale 8 cards (moreAhmedabadOfficeCards) aa jayenge.
 // Sabhi cards me real internet images, badge, rating, location aur price di gayi hai.
 // ============================================================================
-export const pageTwoMorePuneOfficeCards = [
+export const pageTwoMoreAhmedabadOfficeCards = [
   // 1. Inscape Cowork - Koregaon Park, Pune
   {
     id: 41,
@@ -1027,10 +1027,10 @@ export const pageTwoMorePuneOfficeCards = [
 // ----------------------------------------------------------------------------
 // Jab user pagination me button '2' par click karega, tab "Discover your perfect
 // workspace with Mycoworking" banner ke niche wale third 8 cards ki jagah ye 8 naye cards display honge.
-// Button '1' click karne par wapas pehle wale 8 cards (finalPuneOfficeCards) aa jayenge.
+// Button '1' click karne par wapas pehle wale 8 cards (finalAhmedabadOfficeCards) aa jayenge.
 // Sabhi cards me real internet images, badge, rating, location aur price di gayi hai.
 // ============================================================================
-export const pageTwoFinalPuneOfficeCards = [
+export const pageTwoFinalAhmedabadOfficeCards = [
   // 1. EFC Prime Offices - Baner, Pune
   {
     id: 49,
@@ -1198,10 +1198,10 @@ export const pageTwoFinalPuneOfficeCards = [
 // ----------------------------------------------------------------------------
 // Jab user pagination me button '2' par click karega, tab "Customized office
 // solutions for your team" banner ke niche wale fourth 8 cards ki jagah ye 8 naye cards display honge.
-// Button '1' click karne par wapas pehle wale 8 cards (featuredPuneOfficeCards) aa jayenge.
+// Button '1' click karne par wapas pehle wale 8 cards (featuredAhmedabadOfficeCards) aa jayenge.
 // Sabhi cards me real internet images, badge, rating, location aur price di gayi hai.
 // ============================================================================
-export const pageTwoFeaturedPuneOfficeCards = [
+export const pageTwoFeaturedAhmedabadOfficeCards = [
   // 1. Awfis Baner Business Bay - Baner, Pune
   {
     id: 57,
@@ -1385,10 +1385,10 @@ export const pageTwoFeaturedPuneOfficeCards = [
 // ----------------------------------------------------------------------------
 // Jab user pagination me button '3' par click karega, tab top 8 cards ki jagah
 // ye 8 naye cards display honge.
-// Button '1' click karne par wapas pehle wale 8 cards (puneOfficeCards) aa jayenge.
+// Button '1' click karne par wapas pehle wale 8 cards (ahmedabadOfficeCards) aa jayenge.
 // Har card me real internet images, badge, rating, location aur price di gayi hai.
 // ============================================================================
-export const pageThreePuneOfficeCards = [
+export const pageThreeAhmedabadOfficeCards = [
   // 1. Trios Balaji Business Centre - Baner, Pune
   {
     id: 65,
@@ -1555,10 +1555,10 @@ export const pageThreePuneOfficeCards = [
 // ----------------------------------------------------------------------------
 // Jab user pagination me button '3' par click karega, tab "Find Your Perfect Office
 // Solution" box ke niche wale second 8 cards ki jagah ye 8 naye cards display honge.
-// Button '1' click karne par wapas pehle wale 8 cards (morePuneOfficeCards) aa jayenge.
+// Button '1' click karne par wapas pehle wale 8 cards (moreAhmedabadOfficeCards) aa jayenge.
 // Sabhi cards me real internet images, badge, rating, location aur price di gayi hai.
 // ============================================================================
-export const pageThreeMorePuneOfficeCards = [
+export const pageThreeMoreAhmedabadOfficeCards = [
   // 1. TRIOS Lalwani House - Sakore Nagar, Viman Nagar, Pune
   {
     id: 73,
@@ -1726,10 +1726,10 @@ export const pageThreeMorePuneOfficeCards = [
 // ----------------------------------------------------------------------------
 // Jab user pagination me button '3' par click karega, tab "Discover your perfect
 // workspace with Mycoworking" banner ke niche wale third 8 cards ki jagah ye 8 naye cards display honge.
-// Button '1' click karne par wapas pehle wale 8 cards (finalPuneOfficeCards) aa jayenge.
+// Button '1' click karne par wapas pehle wale 8 cards (finalAhmedabadOfficeCards) aa jayenge.
 // Sabhi cards me real internet images, badge, rating, location aur price di gayi hai.
 // ============================================================================
-export const pageThreeFinalPuneOfficeCards = [
+export const pageThreeFinalAhmedabadOfficeCards = [
   // 1. Bootstart Coworking – Clover Hills Plaza - NIBM, Pune
   {
     id: 81,
@@ -1897,10 +1897,10 @@ export const pageThreeFinalPuneOfficeCards = [
 // ----------------------------------------------------------------------------
 // Jab user pagination me button '3' par click karega, tab "Customized office
 // solutions for your team" banner ke niche wale fourth 8 cards ki jagah ye 8 naye cards display honge.
-// Button '1' click karne par wapas pehle wale 8 cards (featuredPuneOfficeCards) aa jayenge.
+// Button '1' click karne par wapas pehle wale 8 cards (featuredAhmedabadOfficeCards) aa jayenge.
 // Sabhi cards me real internet images, badge, rating, location aur price di gayi hai.
 // ============================================================================
-export const pageThreeFeaturedPuneOfficeCards = [
+export const pageThreeFeaturedAhmedabadOfficeCards = [
   // 1. TODO COWORKING - Wakad, Pune
   {
     id: 89,
@@ -2078,10 +2078,10 @@ export const pageThreeFeaturedPuneOfficeCards = [
 // ----------------------------------------------------------------------------
 // Jab user pagination me button '4' par click karega, tab top 8 cards ki jagah
 // ye 8 naye cards display honge.
-// Button '1' click karne par wapas pehle wale 8 cards (puneOfficeCards) aa jayenge.
+// Button '1' click karne par wapas pehle wale 8 cards (ahmedabadOfficeCards) aa jayenge.
 // Har card me real internet images, badge, rating, location aur price di gayi hai.
 // ============================================================================
-export const pageFourPuneOfficeCards = [
+export const pageFourAhmedabadOfficeCards = [
   // 1. Trios Balaji Business Centre - Baner, Pune
   {
     id: 65,
@@ -6141,7 +6141,7 @@ export const areaExtraOfficeCards = {
 // Sourced from verified active coworking listings across Pune
 // Recognized by ID range 9001 - 9009
 // ============================================================================
-export const similarPuneOfficeCards = [
+export const similarAhmedabadOfficeCards = [
   {
     id: 9001,
     name: 'Awfis Nucleus Mall Center 2',
@@ -6309,22 +6309,22 @@ export const similarPuneOfficeCards = [
 // ============================================================================
 // Comprehensive Pune Office Cards Aggregator & Lookup Helper
 // ============================================================================
-export const allPuneOfficeCards = [
-  ...puneOfficeCards,
-  ...morePuneOfficeCards,
-  ...finalPuneOfficeCards,
-  ...featuredPuneOfficeCards,
-  ...pageTwoPuneOfficeCards,
-  ...pageTwoMorePuneOfficeCards,
-  ...pageTwoFinalPuneOfficeCards,
-  ...pageTwoFeaturedPuneOfficeCards,
-  ...pageThreePuneOfficeCards,
-  ...pageThreeMorePuneOfficeCards,
-  ...pageThreeFinalPuneOfficeCards,
-  ...pageThreeFeaturedPuneOfficeCards,
-  ...(typeof pageFourPuneOfficeCards !== 'undefined' ? pageFourPuneOfficeCards : []),
+export const allAhmedabadOfficeCards = [
+  ...ahmedabadOfficeCards,
+  ...moreAhmedabadOfficeCards,
+  ...finalAhmedabadOfficeCards,
+  ...featuredAhmedabadOfficeCards,
+  ...pageTwoAhmedabadOfficeCards,
+  ...pageTwoMoreAhmedabadOfficeCards,
+  ...pageTwoFinalAhmedabadOfficeCards,
+  ...pageTwoFeaturedAhmedabadOfficeCards,
+  ...pageThreeAhmedabadOfficeCards,
+  ...pageThreeMoreAhmedabadOfficeCards,
+  ...pageThreeFinalAhmedabadOfficeCards,
+  ...pageThreeFeaturedAhmedabadOfficeCards,
+  ...(typeof pageFourAhmedabadOfficeCards !== 'undefined' ? pageFourAhmedabadOfficeCards : []),
   // Include all 9 recognized similar spaces for detail page lookup
-  ...similarPuneOfficeCards,
+  ...similarAhmedabadOfficeCards,
   // Include all area-specific extra cards for detail page lookup
   ...(typeof areaExtraOfficeCards !== 'undefined' ? Object.values(areaExtraOfficeCards).flat() : [])
 ];
@@ -6334,14 +6334,14 @@ export const allPuneOfficeCards = [
  * @param {string|number} id
  * @returns {object|null}
  */
-export const getPuneOfficeCardById = (id) => findOfficeBySlug(allPuneOfficeCards, id, "pune");
-export const getPuneOfficeSlug = (space) => officePath(allPuneOfficeCards, space, "pune");
+export const getAhmedabadOfficeCardById = (id) => findOfficeBySlug(allAhmedabadOfficeCards, id, "ahmedabad");
+export const getAhmedabadOfficeSlug = (space) => officePath(allAhmedabadOfficeCards, space, "ahmedabad");
 
 // ============================================================================
 // Top Coworking Locations in Pune (Explore by Neighborhood)
 // Sourced from verified active coworking spaces in each key hub
 // ============================================================================
-export const topPuneCoworkingLocations = [
+export const topAhmedabadCoworkingLocations = [
   {
     id: 'loc-baner',
     name: 'Baner',

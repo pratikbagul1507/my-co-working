@@ -1,27 +1,27 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { puneNeighborhoods,
-   puneOfficeCards,
-   morePuneOfficeCards,
-   finalPuneOfficeCards, 
-   featuredPuneOfficeCards,
-    pageTwoPuneOfficeCards, 
-    pageTwoMorePuneOfficeCards, 
-    pageTwoFinalPuneOfficeCards, 
-    pageTwoFeaturedPuneOfficeCards, 
+import { ahmedabadNeighborhoods,
+   ahmedabadOfficeCards,
+   moreAhmedabadOfficeCards,
+   finalAhmedabadOfficeCards, 
+   featuredAhmedabadOfficeCards,
+    pageTwoAhmedabadOfficeCards, 
+    pageTwoMoreAhmedabadOfficeCards, 
+    pageTwoFinalAhmedabadOfficeCards, 
+    pageTwoFeaturedAhmedabadOfficeCards, 
     perfectWorkspaceBanner, 
     customizedOfficeBanner, 
     stillNotFindingBanner, 
     paginationData,
-    pageThreePuneOfficeCards,
-    pageThreeMorePuneOfficeCards,
-    pageThreeFinalPuneOfficeCards,
-    pageThreeFeaturedPuneOfficeCards,
-    pageFourPuneOfficeCards,
-    topPuneCoworkingLocations,
+    pageThreeAhmedabadOfficeCards,
+    pageThreeMoreAhmedabadOfficeCards,
+    pageThreeFinalAhmedabadOfficeCards,
+    pageThreeFeaturedAhmedabadOfficeCards,
+    pageFourAhmedabadOfficeCards,
+    topAhmedabadCoworkingLocations,
     areaExtraOfficeCards,
-    getPuneOfficeSlug
-   } from './puneData.js';
+    getAhmedabadOfficeSlug
+   } from './ahmedabadData.js';
 import QuoteModal from '../../components/QuoteModal.jsx';
 
 /**
@@ -85,7 +85,7 @@ const OfficeCard = ({ space }) => {
   const handleCardClick = (event) => {
     // Avoid triggering if clicked on inner action buttons
     if (event.target.closest('button')) return;
-    window.open(`${getPuneOfficeSlug(space)}`, '_blank', 'noopener,noreferrer');
+    window.open(`${getAhmedabadOfficeSlug(space)}`, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -164,7 +164,7 @@ const OfficeCard = ({ space }) => {
           <div className="flex items-start justify-between gap-2">
             <h3 className="text-sm font-bold text-slate-900 leading-snug line-clamp-1 group-hover:text-[#007bff] transition-colors">
               <a
-                href={`${getPuneOfficeSlug(space)}`}
+                href={`${getAhmedabadOfficeSlug(space)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
@@ -213,7 +213,7 @@ const OfficeCard = ({ space }) => {
 /**
  * Main Pune Coworking Listings Page Container
  */
-const Pune = () => {
+const Ahmedabad = () => {
   const [selectedNeighborhood, setSelectedNeighborhood] = useState(null);
   const [selectedPrice, setSelectedPrice] = useState('');
   const [currentPage, setCurrentPage] = useState(paginationData.initialPage || 1);
@@ -251,7 +251,7 @@ const Pune = () => {
     return true;
   };
 
-  const activeTopSpaces = currentPage === 1 ? puneOfficeCards : currentPage === 2 ? pageTwoPuneOfficeCards : currentPage === 3 ? pageThreePuneOfficeCards : currentPage === 4 ? pageFourPuneOfficeCards : [];
+  const activeTopSpaces = currentPage === 1 ? ahmedabadOfficeCards : currentPage === 2 ? pageTwoAhmedabadOfficeCards : currentPage === 3 ? pageThreeAhmedabadOfficeCards : currentPage === 4 ? pageFourAhmedabadOfficeCards : [];
 
   // ============================================================================
   // Area Filtering Logic with Extra 10 Real Internet Office Cards per Area
@@ -292,7 +292,7 @@ const Pune = () => {
     ? combinedSpaces.filter(matchesPrice)
     : combinedSpaces;
 
-  const activeMoreSpaces = currentPage === 1 ? morePuneOfficeCards : currentPage === 2 ? pageTwoMorePuneOfficeCards : currentPage === 3 ? pageThreeMorePuneOfficeCards : [];
+  const activeMoreSpaces = currentPage === 1 ? moreAhmedabadOfficeCards : currentPage === 2 ? pageTwoMoreAhmedabadOfficeCards : currentPage === 3 ? pageThreeMoreAhmedabadOfficeCards : [];
 
   const displayedMoreSpaces = activeMoreSpaces.filter((space) => {
     const matchesArea = !selectedNeighborhood ||
@@ -301,7 +301,7 @@ const Pune = () => {
     return matchesArea && matchesPrice(space);
   });
 
-  const activeFinalSpaces = currentPage === 1 ? finalPuneOfficeCards : currentPage === 2 ? pageTwoFinalPuneOfficeCards : currentPage === 3 ? pageThreeFinalPuneOfficeCards : [];
+  const activeFinalSpaces = currentPage === 1 ? finalAhmedabadOfficeCards : currentPage === 2 ? pageTwoFinalAhmedabadOfficeCards : currentPage === 3 ? pageThreeFinalAhmedabadOfficeCards : [];
 
   const displayedFinalSpaces = activeFinalSpaces.filter((space) => {
     const matchesArea = !selectedNeighborhood ||
@@ -310,7 +310,7 @@ const Pune = () => {
     return matchesArea && matchesPrice(space);
   });
 
-  const activeOfficeCards = currentPage === 1 ? featuredPuneOfficeCards : currentPage === 2 ? pageTwoFeaturedPuneOfficeCards : currentPage === 3 ? pageThreeFeaturedPuneOfficeCards : []; 
+  const activeOfficeCards = currentPage === 1 ? featuredAhmedabadOfficeCards : currentPage === 2 ? pageTwoFeaturedAhmedabadOfficeCards : currentPage === 3 ? pageThreeFeaturedAhmedabadOfficeCards : []; 
 
   const displayedFeaturedSpaces = activeOfficeCards.filter((space) => {
     const matchesArea = !selectedNeighborhood ||
@@ -351,7 +351,7 @@ const Pune = () => {
               defaultValue=""
             >
               <option value="" disabled>Popular Locations</option>
-              {puneNeighborhoods.map((neighborhood) => (
+              {ahmedabadNeighborhoods.map((neighborhood) => (
                 <option key={`opt-${neighborhood}`} value={neighborhood}>
                   {neighborhood}
                 </option>
@@ -396,7 +396,7 @@ const Pune = () => {
           >
             All
           </button>
-          {puneNeighborhoods.map((neighborhood) => {
+          {ahmedabadNeighborhoods.map((neighborhood) => {
             const isSelected = selectedNeighborhood === neighborhood;
             return (
               <button
@@ -630,7 +630,7 @@ const Pune = () => {
         </h2>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3.5 sm:gap-4.5">
-          {topPuneCoworkingLocations.map((location) => {
+          {topAhmedabadCoworkingLocations.map((location) => {
             const isSelected = selectedNeighborhood?.toLowerCase() === location.name.toLowerCase();
             return (
               <div
@@ -691,4 +691,4 @@ const Pune = () => {
   );
 };
 
-export default Pune;
+export default Ahmedabad;
