@@ -30,12 +30,15 @@ import NoidaPage from './pages/noida/Noida';
 import PunePage from './pages/pune/Pune';
 import PuneOfficeDetail from './pages/pune/PuneOfficeDetail';
 import BhubaneshwarOfficeDetail from './pages/bhubaneswar/BhubaneshwarOfficeDetail';
+import AhmedabadOfficeDetails from './pages/ahmedabad/AhmedabadOfficeDetails';
+import { getAhmedabadOfficeCardById } from './pages/ahmedabad/ahmedabadData';
 
 // Resolves root-level office URLs like /futops-cowork-kharadi-pune to the right city's detail page.
 const OfficeRoute = () => {
   const { id } = useParams();
   if (getDehliOfficeCardById(id)) return <DelhiOfficeDetails />;
   if (getPuneOfficeCardById(id)) return <PuneOfficeDetail />;
+  if (getAhmedabadOfficeCardById(id)) return <AhmedabadOfficeDetails />;
   if (getIndoreOfficeCardById(id)) return <IndoreOfficeDetails />;
   if (getBhubaneshwarOfficeCardById(id)) return <BhubaneshwarOfficeDetail />;
   return <Homepage />;
@@ -48,6 +51,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/coworking/ahmedabad" element={<AhmedabadPage />} />
+        <Route path="/coworking/ahmedabad/:id" element={<AhmedabadOfficeDetails />} />
         <Route path="/coworking/bangalore" element={<BangalorePage />} />
         <Route path="/coworking/bhubaneswar" element={<BhubaneswarPage />} />
         <Route path="/coworking/bhubaneshwar" element={<BhubaneswarPage />} />

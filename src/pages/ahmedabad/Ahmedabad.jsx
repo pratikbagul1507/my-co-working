@@ -20,6 +20,7 @@ import { ahmedabadNeighborhoods,
     pageFourAhmedabadOfficeCards,
     topAhmedabadCoworkingLocations,
     areaExtraOfficeCards,
+    allAhmedabadOfficeCards,
     getAhmedabadOfficeSlug
    } from './ahmedabadData.js';
 import QuoteModal from '../../components/QuoteModal.jsx';
@@ -277,15 +278,22 @@ const Ahmedabad = () => {
     ? areaExtraOfficeCards[selectedNeighborhood]
     : [];
 
+  // Selected area: every card of that area from ALL pages (not only the current page)
+  const areaAllCards = selectedNeighborhood
+    ? allAhmedabadOfficeCards.filter(
+        (space) =>
+          space.area?.toLowerCase() === selectedNeighborhood.toLowerCase() ||
+          space.location?.toLowerCase().includes(selectedNeighborhood.toLowerCase())
+      )
+    : [];
+
   // Combined cards to display in top grid (area filtered):
-  const combinedSpaces = selectedNeighborhood
-    ? [
-        ...existingFilteredTopSpaces,
-        ...extraAreaCards.filter(
-          (extra) => !existingFilteredTopSpaces.some((ex) => ex.name.toLowerCase() === extra.name.toLowerCase())
-        )
-      ]
-    : activeTopSpaces;
+  const combinedSpaces = selectedNeighborhood ? areaAllCards : activeTopSpaces;
+
+  // Nearby cards (other areas) shown below the selected area's own cards
+  const nearbyAreaCards = extraAreaCards.filter(
+    (extra) => matchesPrice(extra) && !areaAllCards.some((own) => own.id === extra.id)
+  );
 
   // Apply price filter to displayedSpaces
   const displayedSpaces = selectedPrice
@@ -294,7 +302,8 @@ const Ahmedabad = () => {
 
   const activeMoreSpaces = currentPage === 1 ? moreAhmedabadOfficeCards : currentPage === 2 ? pageTwoMoreAhmedabadOfficeCards : currentPage === 3 ? pageThreeMoreAhmedabadOfficeCards : [];
 
-  const displayedMoreSpaces = activeMoreSpaces.filter((space) => {
+  // While an area is selected, all its cards are already in the main grid above
+  const displayedMoreSpaces = selectedNeighborhood ? [] : activeMoreSpaces.filter((space) => {
     const matchesArea = !selectedNeighborhood ||
       space.area?.toLowerCase() === selectedNeighborhood.toLowerCase() ||
       space.location?.toLowerCase().includes(selectedNeighborhood.toLowerCase());
@@ -303,7 +312,7 @@ const Ahmedabad = () => {
 
   const activeFinalSpaces = currentPage === 1 ? finalAhmedabadOfficeCards : currentPage === 2 ? pageTwoFinalAhmedabadOfficeCards : currentPage === 3 ? pageThreeFinalAhmedabadOfficeCards : [];
 
-  const displayedFinalSpaces = activeFinalSpaces.filter((space) => {
+  const displayedFinalSpaces = selectedNeighborhood ? [] : activeFinalSpaces.filter((space) => {
     const matchesArea = !selectedNeighborhood ||
       space.area?.toLowerCase() === selectedNeighborhood.toLowerCase() ||
       space.location?.toLowerCase().includes(selectedNeighborhood.toLowerCase());
@@ -312,7 +321,7 @@ const Ahmedabad = () => {
 
   const activeOfficeCards = currentPage === 1 ? featuredAhmedabadOfficeCards : currentPage === 2 ? pageTwoFeaturedAhmedabadOfficeCards : currentPage === 3 ? pageThreeFeaturedAhmedabadOfficeCards : []; 
 
-  const displayedFeaturedSpaces = activeOfficeCards.filter((space) => {
+  const displayedFeaturedSpaces = selectedNeighborhood ? [] : activeOfficeCards.filter((space) => {
     const matchesArea = !selectedNeighborhood ||
       space.area?.toLowerCase() === selectedNeighborhood.toLowerCase() ||
       space.location?.toLowerCase().includes(selectedNeighborhood.toLowerCase());
@@ -348,7 +357,8 @@ const Ahmedabad = () => {
             <select
               aria-label="Filter by popular locations"
               className="text-xs text-slate-700 bg-white border border-slate-200 rounded px-3 py-1.5 pr-6 appearance-none shadow-2xs cursor-pointer focus:outline-none focus:border-blue-500"
-              defaultValue=""
+              value={selectedNeighborhood || ''}
+              onChange={(e) => setSelectedNeighborhood(e.target.value || null)}
             >
               <option value="" disabled>Popular Locations</option>
               {ahmedabadNeighborhoods.map((neighborhood) => (
@@ -439,6 +449,20 @@ const Ahmedabad = () => {
           </div>
         )}
       </section>
+
+      {/* Section: More cards near the selected area (only while an area filter is active) */}
+      {selectedNeighborhood && nearbyAreaCards.length > 0 && (
+        <section aria-label={`More coworking spaces near ${selectedNeighborhood}`} className="mt-6 sm:mt-8 mb-6 sm:mb-8">
+          <h2 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight mb-3">
+            More coworking spaces near {selectedNeighborhood}
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+            {nearbyAreaCards.map((space) => (
+              <OfficeCard key={space.id} space={space} />
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Section: Additional Coworking Spaces Grid */}
       {displayedMoreSpaces.length > 0 && (
