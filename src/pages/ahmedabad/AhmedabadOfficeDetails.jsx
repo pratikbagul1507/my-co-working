@@ -253,33 +253,47 @@ const OfficeDetail = () => {
     );
   }
 
-  // 3 Seating Plans sourced from this particular card
+  // Opening hours of this space from cofynd
+  const formatHours = (day, fallback) => {
+    if (!day) return fallback;
+    if (day.closed) return 'Closed';
+    if (day.open24) return 'Open 24 hours';
+    return `${day.from} to ${day.to}`;
+  };
+
+  // Seating plans with the real cofynd plan prices of this particular space
+  const planPrice = (title) => {
+    const plan = (space.plans || []).find((p) => p.title === title && p.duration === 'month')
+      || (space.plans || []).find((p) => p.title === title);
+    if (!plan) return 'Get Quote';
+    return `₹${plan.price.toLocaleString('en-IN')}/* ${plan.duration === 'year' ? 'year' : title === 'Virtual Office' ? 'month' : 'seat'}`;
+  };
   const seatingPlans = [
     {
       title: 'Dedicated Desk',
       description: 'Fixed workspace in a Coworking Office with all amenities',
       seating: 'Seating : 1 - 100+ Seats',
-      price: `${space.price}/* seat`,
+      price: planPrice('Dedicated Desk'),
       image: images[1] || images[0] || singleImage
     },
     {
       title: 'Private Cabin',
       description: 'Ready to move fully furnished private office with all amenities',
       seating: 'Seating : 4, 6, 8, 10+ (Customization Available)',
-      price: '₹9,999/* seat',
+      price: planPrice('Private Cabin'),
       image: images[2] || images[0] || singleImage
     },
     {
       title: 'Virtual Office',
       description: 'Build your Company presence with Virtual Office in any city across India',
       seating: 'Company Registration & Mailing Address',
-      price: '₹19,999/* year',
+      price: planPrice('Virtual Office'),
       image: images[3] || images[0] || singleImage
     }
   ];
 
   // Amenities list matching reference layout
-  const amenitiesList = [
+  const defaultAmenitiesList = [
     { name: 'High Speed WiFi', icon: 'M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.14 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0' },
     { name: 'Meeting Rooms', icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z' },
     { name: 'Ergo Workstations', icon: 'M4 6h16M4 10h16M4 14h16M8 18h8M12 14v4' },
@@ -293,6 +307,22 @@ const OfficeDetail = () => {
     { name: 'Phone Booth', icon: 'M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z' },
     { name: 'Lounge', icon: 'M4 11V7a3 3 0 013-3h10a3 3 0 013 3v4M4 11h16M4 11v6a2 2 0 002 2h12a2 2 0 002-2v-6M2 13h2v4H2zm18 0h2v4h-2z' }
   ];
+
+  // Real amenities of this space from cofynd (falls back to the default list)
+  const iconOf = (name) => defaultAmenitiesList.find((a) => a.name === name).icon;
+  const amenityIcons = {
+    'wi-fi': iconOf('High Speed WiFi'), meeting: iconOf('Meeting Rooms'), printer: iconOf('Printer'),
+    parking: iconOf('Car / Bike Parking'), kitchen: iconOf('Pantry'), refrigerator: iconOf('Pantry'),
+    housekeeping: iconOf('Housekeeping'), reception: iconOf('Reception'), 'air-cond': iconOf('Air Conditioning'),
+    coffee: iconOf('Tea/Coffee'), cafe: iconOf('Tea/Coffee'), phone: iconOf('Phone Booth'), lounge: iconOf('Lounge')
+  };
+  const checkIcon = 'M5 13l4 4L19 7';
+  const amenitiesList = (space.amenities && space.amenities.length > 0)
+    ? space.amenities.map((name) => {
+        const key = Object.keys(amenityIcons).find((k) => name.toLowerCase().includes(k));
+        return { name, icon: key ? amenityIcons[key] : checkIcon };
+      })
+    : defaultAmenitiesList;
 
   return (
     <main className="w-full min-h-screen bg-white antialiased font-sans flex flex-col pb-8">
@@ -724,7 +754,7 @@ const OfficeDetail = () => {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-xs sm:text-sm font-semibold text-slate-800">Mon - Fri</span>
-                  <span className="text-xs text-slate-500">08:00 AM to 08:00 PM</span>
+                  <span className="text-xs text-slate-500">{formatHours(space.hours?.monday, '08:00 AM to 08:00 PM')}</span>
                 </div>
               </div>
 
@@ -742,7 +772,7 @@ const OfficeDetail = () => {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-xs sm:text-sm font-semibold text-slate-800">Sat</span>
-                  <span className="text-xs text-slate-500">08:00 AM to 08:00 PM</span>
+                  <span className="text-xs text-slate-500">{formatHours(space.hours?.saturday, '08:00 AM to 08:00 PM')}</span>
                 </div>
               </div>
 
@@ -760,7 +790,7 @@ const OfficeDetail = () => {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-xs sm:text-sm font-semibold text-slate-800">Sun</span>
-                  <span className="text-xs text-slate-500">Closed</span>
+                  <span className="text-xs text-slate-500">{formatHours(space.hours?.sunday, 'Closed')}</span>
                 </div>
               </div>
             </div>
@@ -849,8 +879,8 @@ const OfficeDetail = () => {
               </div>
             </div>
 
-            <p className={`text-xs sm:text-sm text-slate-600 leading-relaxed ${!isAboutExpanded ? 'line-clamp-3 sm:line-clamp-none' : ''}`}>
-              {space.name} helps businesses with the largest flexible workspaces all over India, ranging from single seats to multiple seats. Coworking space solutions by {space.name} are present in 48 micro markets in India, covering the topmost 16 cities. They provide a wide spectrum of solutions to help all types of industries be it startups, small companies (SMEs), or large corporations. {space.name} Coworking solutions are interactive and uniquely designed to enhance productivity so that your business can grow in the target market.
+            <p className={`text-xs sm:text-sm text-slate-600 leading-relaxed whitespace-pre-line ${!isAboutExpanded ? 'line-clamp-3 sm:line-clamp-none' : ''}`}>
+              {space.description || `${space.name} offers flexible coworking workspace in ${currentArea || 'Ahmedabad'}, Ahmedabad.`}
             </p>
 
             <button
