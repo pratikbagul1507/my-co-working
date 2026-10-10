@@ -13,8 +13,7 @@ export const ahmedabadNeighborhoods = [
   "Ellisbridge",
   "Makarba",
   "Bopal"
-]
-;
+];
 
 export const ahmedabadOfficeCards = [
   {
