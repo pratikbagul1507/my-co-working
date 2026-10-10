@@ -290,11 +290,6 @@ const Ahmedabad = () => {
   // Combined cards to display in top grid (area filtered):
   const combinedSpaces = selectedNeighborhood ? areaAllCards : activeTopSpaces;
 
-  // Nearby cards (other areas) shown below the selected area's own cards
-  const nearbyAreaCards = extraAreaCards.filter(
-    (extra) => matchesPrice(extra) && !areaAllCards.some((own) => own.id === extra.id)
-  );
-
   // Apply price filter to displayedSpaces
   const displayedSpaces = selectedPrice
     ? combinedSpaces.filter(matchesPrice)
@@ -449,20 +444,6 @@ const Ahmedabad = () => {
           </div>
         )}
       </section>
-
-      {/* Section: More cards near the selected area (only while an area filter is active) */}
-      {selectedNeighborhood && nearbyAreaCards.length > 0 && (
-        <section aria-label={`More coworking spaces near ${selectedNeighborhood}`} className="mt-6 sm:mt-8 mb-6 sm:mb-8">
-          <h2 className="text-base sm:text-lg font-bold text-slate-900 tracking-tight mb-3">
-            More coworking spaces near {selectedNeighborhood}
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
-            {nearbyAreaCards.map((space) => (
-              <OfficeCard key={space.id} space={space} />
-            ))}
-          </div>
-        </section>
-      )}
 
       {/* Section: Additional Coworking Spaces Grid */}
       {displayedMoreSpaces.length > 0 && (

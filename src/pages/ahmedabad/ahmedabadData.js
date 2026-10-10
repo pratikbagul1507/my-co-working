@@ -24,6 +24,98 @@ export const ahmedabadNeighborhoods = [
 export const ahmedabadOfficeCards = [
   {
     "name": "Awfis Coworking",
+    "badge": "Trending",
+    "rating": 4.5,
+    "area": "SG Highway",
+    "location": "Sindhu Bhavan Road, Ahmedabad",
+    "price": "₹10,000",
+    "period": "/ month",
+    "priceFormatted": "₹10,000 / month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://img.cofynd.com/images/latest_images_2024/7503585345e773254beeaff7382a517e91954c90.webp",
+      "https://img.cofynd.com/images/latest_images_2024/c0ebcdbc552676aa70c10d600bc1d8d3a3d39219.webp",
+      "https://img.cofynd.com/images/latest_images_2024/13a038b062a739f1b0e3c208f82ce9ea1d3bd957.webp",
+      "https://img.cofynd.com/images/latest_images_2024/d404ecfc3ee83d17323278e43780662e19e10fa8.webp",
+      "https://img.cofynd.com/images/latest_images_2024/dd9adb4642a540c58a41b0a16e75de2bdc3ed475.webp",
+      "https://img.cofynd.com/images/latest_images_2024/6a64cefc926a10480489d6166ce547fe83fb3d69.webp"
+    ],
+    "address": "Sindhu Bhavan Road, Ahmedabad",
+    "landmark": "Thaltej Metro Station",
+    "description": "Step into our center, where modern amenities meet sleek design. Here we offer spacious meeting rooms equipped with state-of-the-art infrastructure, perfect for hosting your team meetings and brainstorming sessions. With high-quality video projection and conferencing facilities, collaboration has never been easier. Whether you're planning, strategizing, or mapping out your next big idea, our dynamic work environment is designed to foster teamwork and productivity.",
+    "amenities": [
+      "Community Events",
+      "Printer & Scanner",
+      "Refrigerator",
+      "Housekeeping",
+      "Wi-Fi",
+      "Cafe",
+      "Coffee & Beverages",
+      "24x7 Security",
+      "Power Backup",
+      "Air-Conditioning",
+      "CCTV",
+      "Reception",
+      "Meeting Rooms",
+      "Meeting Room",
+      "Video Conferencing Capabilities",
+      "Workshops",
+      "Parking",
+      "Lift",
+      "Lounge"
+    ],
+    "hours": {
+      "monday": {
+        "from": "08:00 AM",
+        "to": "08:00 PM",
+        "closed": false,
+        "open24": false
+      },
+      "saturday": {
+        "from": "08:00 AM",
+        "to": "08:00 PM",
+        "closed": false,
+        "open24": false
+      },
+      "sunday": {
+        "from": "",
+        "to": "",
+        "closed": true,
+        "open24": false
+      }
+    },
+    "seats": 505,
+    "plans": [
+      {
+        "title": "Dedicated Desk",
+        "price": 10000,
+        "duration": "month"
+      },
+      {
+        "title": "Private Cabin",
+        "price": 10000,
+        "duration": "month"
+      },
+      {
+        "title": "Business Address",
+        "price": 849,
+        "duration": "month"
+      },
+      {
+        "title": "GST Registration",
+        "price": 1199,
+        "duration": "month"
+      }
+    ],
+    "brandName": "Awfis",
+    "latitude": 23.048833673834295,
+    "longitude": 72.50869477722225,
+    "sourceUrl": "https://cofynd.com/coworking/awfis-space-solutions-sindhu-bhavan-road",
+    "locality": "Sindhu Bhavan Road",
+    "id": 1
+  },
+  {
+    "name": "Awfis Coworking",
     "badge": "Premium Space",
     "rating": 4.3,
     "area": "SG Highway",
@@ -114,67 +206,7 @@ export const ahmedabadOfficeCards = [
     "latitude": 23.097626455030905,
     "longitude": 72.53181787633822,
     "sourceUrl": "https://cofynd.com/coworking/awfis-space-solutions-ahmedabad-sg-highway",
-    "id": 1
-  },
-  {
-    "name": "Paragraph",
-    "badge": null,
-    "rating": null,
-    "area": "SG Highway",
-    "location": "S.G. Highway, Ahmedabad",
-    "price": "₹15,899",
-    "period": "/ month",
-    "priceFormatted": "₹15,899 / month",
-    "ctaText": "Get Quote",
-    "images": [
-      "https://img.cofynd.com/images/original/3d1ddc816f331edfe3077f6fb20c50874116e49e.jpg",
-      "https://img.cofynd.com/images/original/8f4c1d829b9ecc142583dabc8383a13b218f5ab6.jpg",
-      "https://img.cofynd.com/images/original/530b959430659df310ad79ebe6e437a2e2a35e20.jpg",
-      "https://img.cofynd.com/images/original/c95e2e17548afaa52d4cc82869c754436374e3a0.jpg",
-      "https://img.cofynd.com/images/original/c6f8f7f0e4bc195211e379351adde25822ca9ac4.jpg",
-      "https://img.cofynd.com/images/original/dd2ba71a5380d91dbe679701f323f5c836429f9a.jpg"
-    ],
-    "address": "S.G. Highway, Ahmedabad",
-    "landmark": null,
-    "description": "Paragraph Coworking is an iconic workspace located near Novotel hotel, Ahmadabad. It is designed with a classy interior, stylish standing desks, Ergonomic chairs, polished wooden furnishings and more. This elegant workspace offers private cabins for better privacy and focus, hot desks for good links and connection, and dedicated desks for a superior collaborating working environment.\nIt is ideal for new companies, working professionals, freelancers, corporate and large enterprises. Along with this, you also get access to high-quality meeting rooms for team or client meetups on an hourly basis. Come and experience a healthy and encouraging working environment at the Paragraph Coworking. Located in a prime location, it provides easy access to each mode of transport like cabs, auto and bus. Expand your business with us today, do not wait anymore. Book now!",
-    "amenities": [],
-    "hours": {
-      "monday": {
-        "from": "12:00 AM",
-        "to": "12:00 PM",
-        "closed": false,
-        "open24": true
-      },
-      "saturday": {
-        "from": "12:00 AM",
-        "to": "12:00 PM",
-        "closed": false,
-        "open24": true
-      },
-      "sunday": {
-        "from": "12:00 AM",
-        "to": "12:00 PM",
-        "closed": false,
-        "open24": true
-      }
-    },
-    "seats": 66,
-    "plans": [
-      {
-        "title": "Dedicated Desk",
-        "price": 15899,
-        "duration": "month"
-      },
-      {
-        "title": "Private Cabin",
-        "price": 22000,
-        "duration": "month"
-      }
-    ],
-    "brandName": "Other Coworking",
-    "latitude": 23.0230532,
-    "longitude": 72.5067671,
-    "sourceUrl": "https://cofynd.com/coworking/paragraph",
+    "locality": "SG Highway",
     "id": 2
   },
   {
@@ -255,6 +287,7 @@ export const ahmedabadOfficeCards = [
     "latitude": 23.0486846,
     "longitude": 72.52499999999999,
     "sourceUrl": "https://cofynd.com/coworking/connekt-ahmedabad",
+    "locality": "Navrangpura",
     "id": 3
   },
   {
@@ -339,6 +372,7 @@ export const ahmedabadOfficeCards = [
     "latitude": 23.0426736,
     "longitude": 72.5488147,
     "sourceUrl": "https://cofynd.com/coworking/incuspaze-vijay-cross-road",
+    "locality": "Navrangpura",
     "id": 4
   },
   {
@@ -414,7 +448,658 @@ export const ahmedabadOfficeCards = [
     "latitude": 23.030633,
     "longitude": 72.5302038,
     "sourceUrl": "https://cofynd.com/coworking/devx-ahmedabad",
+    "locality": "Vastrapur",
     "id": 5
+  },
+  {
+    "name": "Opulence",
+    "badge": null,
+    "rating": null,
+    "area": "Vastrapur",
+    "location": "Vikram Nagar, Ahmedabad",
+    "price": "₹9,500",
+    "period": "/ month",
+    "priceFormatted": "₹9,500 / month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://img.cofynd.com/images/original/cee1a52b4ab38037a3086599e8d96f87d35272e8.jpg",
+      "https://img.cofynd.com/images/original/ee54e214c7c27280516089abfbc2d4c7ff18c74d.jpg",
+      "https://img.cofynd.com/images/original/3db2ad64a8d627649455c031e4a9f3eee6578408.jpg",
+      "https://img.cofynd.com/images/original/c96eb2f8e349b7afc2f3172e5a74361ca09a0b64.jpg",
+      "https://img.cofynd.com/images/original/0277164b153dc8c1d6a1dee3d99b88c54cf29ee8.jpg"
+    ],
+    "address": "Vikram Nagar, Ahmedabad",
+    "landmark": null,
+    "description": "Opulence Privilon is a 180 seater workspace located on Iscon Cross Road, Ahmedabad, Gujarat. It offers hot desks, dedicated desks, private cabins, manager cabins & day passes with state-of-the-art amenities like spacious rooms, complete CCTV surveillance, centralized air conditioning, huge pantry area, car parking, events space, trained housekeeping, cafeteria, regular sanitization and high-speed internet connection among others. Prominent residential localities, schools, hospitals, grocery stores and recreational spots lie in the vicinity. Located in the western part of the city, the space also offers smooth connectivity with all modes of transport.",
+    "amenities": [],
+    "hours": {
+      "monday": {
+        "from": "12:00 AM",
+        "to": "12:00 PM",
+        "closed": false,
+        "open24": true
+      },
+      "saturday": {
+        "from": "12:00 AM",
+        "to": "12:00 PM",
+        "closed": false,
+        "open24": true
+      },
+      "sunday": {
+        "from": "12:00 AM",
+        "to": "12:00 PM",
+        "closed": false,
+        "open24": true
+      }
+    },
+    "seats": 200,
+    "plans": [
+      {
+        "title": "Hot Desk",
+        "price": 8500,
+        "duration": "month"
+      },
+      {
+        "title": "Dedicated Desk",
+        "price": 9500,
+        "duration": "month"
+      },
+      {
+        "title": "Private Cabin",
+        "price": 10000,
+        "duration": "month"
+      },
+      {
+        "title": "Business Address",
+        "price": 5499,
+        "duration": "month"
+      },
+      {
+        "title": "GST Registration",
+        "price": 5499,
+        "duration": "month"
+      },
+      {
+        "title": "Company Registration",
+        "price": 5499,
+        "duration": "month"
+      }
+    ],
+    "brandName": "Other Coworking",
+    "latitude": 23.0278725,
+    "longitude": 72.5055751,
+    "sourceUrl": "https://cofynd.com/coworking/opulence-privilon",
+    "locality": "Vikram Nagar",
+    "id": 6
+  },
+  {
+    "name": "312 Sangrilla",
+    "badge": null,
+    "rating": null,
+    "area": "Prahlad Nagar",
+    "location": "Shyamal Cross Road, Ahmedabad",
+    "price": "₹7,000",
+    "period": "/ month",
+    "priceFormatted": "₹7,000 / month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://img.cofynd.com/images/original/d4dbd0d5cde1eec211706ec6965c36e5195c6334.jpg",
+      "https://img.cofynd.com/images/original/968693a41033346b277ff5d64c026a04846a3c37.jpg",
+      "https://img.cofynd.com/images/original/d4e54756ebd3d88828bc5e60a6c731078f034a99.jpg",
+      "https://img.cofynd.com/images/original/8a6774a50a12b00ceaa940dcde435031e51cc6a1.jpg",
+      "https://img.cofynd.com/images/original/fe349a713d59ac27af784d65e772e8989b270d47.jpg"
+    ],
+    "address": "Shyamal Cross Road, Ahmedabad",
+    "landmark": null,
+    "description": "312 Sangrilla Complex is ideal for freelancers, startups and small businesses. It offers all flexible seating options equipped with a wide range of office amenities from High-Speed Wifi, Tea, Coffee, Printer, 24 hrs access, Meeting Rooms and Parking Space. Centrally located near Shyamal Cross Road, this space has easy access to all local modes of transport.",
+    "amenities": [],
+    "hours": {
+      "monday": {
+        "from": "",
+        "to": "",
+        "closed": false,
+        "open24": true
+      },
+      "saturday": {
+        "from": "",
+        "to": "",
+        "closed": false,
+        "open24": true
+      },
+      "sunday": {
+        "from": "",
+        "to": "",
+        "closed": true,
+        "open24": false
+      }
+    },
+    "seats": 50,
+    "plans": [
+      {
+        "title": "Dedicated Desk",
+        "price": 15000,
+        "duration": "month"
+      },
+      {
+        "title": "Private Cabin",
+        "price": 7000,
+        "duration": "month"
+      },
+      {
+        "title": "Business Address",
+        "price": 999,
+        "duration": "month"
+      },
+      {
+        "title": "GST Registration",
+        "price": 1099,
+        "duration": "month"
+      },
+      {
+        "title": "Company Registration",
+        "price": 2499,
+        "duration": "month"
+      }
+    ],
+    "brandName": "Other Coworking",
+    "latitude": 23.012023,
+    "longitude": 72.528415,
+    "sourceUrl": "https://cofynd.com/coworking/312-sangrilla-complex",
+    "locality": "Prahlad Nagar",
+    "id": 7
+  },
+  {
+    "name": "Miswa Coworking",
+    "badge": null,
+    "rating": null,
+    "area": "Satellite",
+    "location": "Ratnanjali Square, Jodhpur, Satellite, Ahmedabad",
+    "price": "₹5,000",
+    "period": "/ month",
+    "priceFormatted": "₹5,000 / month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://img.cofynd.com/images/original/15e925460faff5cfc5ad5eb6d59a6ecfc40ee356.jpg",
+      "https://img.cofynd.com/images/original/4a467f2da4ff27f81daa509021ca2e276c059d84.jpg",
+      "https://img.cofynd.com/images/original/cb7149b8e4a86616757b15f59707f3b1f11d936d.jpg",
+      "https://img.cofynd.com/images/original/e7d16cfd14312e7912914845c428568e2887848a.jpg"
+    ],
+    "address": "Ratnanjali Square, Jodhpur, Satellite, Ahmedabad",
+    "landmark": null,
+    "description": "Miswa Coworking is a newly launched shared office space in Jodhpur Satellite, Gandhinagar. It is best in a class flexible workspace, in the heart of Gandhinagar, near Jivraj Park Metro Station. This is a premium coworking space for freelancers, small-scale businesses, and GenZ entrepreneurs with a variety of hot desks & dedicated desks. Miswa Coworking is a flawless option to rent flexible workspace and virtual office space, starting from just INR 4,200/month.\nIn addition, Miswa Coworking - Gandhinagar is equipped with high-end facilities and offers housekeeping assistance, business-grade internet, parking space, bike racks, security staff, and a lot more with the subscription of the desk. Try it out and book your desk in Miswa Coworking - Gandhinagar now with CoFynd with exciting coupons.",
+    "amenities": [],
+    "hours": {
+      "monday": {
+        "from": "10:00 AM",
+        "to": "10:00 PM",
+        "closed": false,
+        "open24": false
+      },
+      "saturday": {
+        "from": "10:00 AM",
+        "to": "10:00 PM",
+        "closed": false,
+        "open24": false
+      },
+      "sunday": {
+        "from": "",
+        "to": "",
+        "closed": true,
+        "open24": false
+      }
+    },
+    "seats": 9,
+    "plans": [
+      {
+        "title": "Hot Desk",
+        "price": 4200,
+        "duration": "month"
+      },
+      {
+        "title": "Dedicated Desk",
+        "price": 5000,
+        "duration": "month"
+      }
+    ],
+    "brandName": null,
+    "latitude": 23.0144586,
+    "longitude": 72.5173852,
+    "sourceUrl": "https://cofynd.com/coworking/miswa-coworking-satellite",
+    "locality": "Satellite",
+    "id": 8
+  }
+];
+
+export const moreAhmedabadOfficeCards = [
+  {
+    "name": "Samaan Complex",
+    "badge": null,
+    "rating": null,
+    "area": "Satellite",
+    "location": "Samaan Complex, Ahmedabad",
+    "price": "₹5,000",
+    "period": "/ month",
+    "priceFormatted": "₹5,000 / month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://img.cofynd.com/images/original/9e21b205d392d6a582de30b8d9fbd14d93fdc8e9.jpg",
+      "https://img.cofynd.com/images/original/0848291f85b3d4e9615a1732904270f934f422f5.jpg",
+      "https://img.cofynd.com/images/original/dc6375331fae44dfac396caef387b241100ba3a9.jpg",
+      "https://img.cofynd.com/images/original/a07aa90dec799942b3be21723a3acdca3e7fc5ea.jpg",
+      "https://img.cofynd.com/images/original/f49fe6d5dc9a60a333ebba1edb3c625a92b7f9b6.jpg"
+    ],
+    "address": "Samaan Complex, Ahmedabad",
+    "landmark": null,
+    "description": "Samaan Complex is a mind-blowing coworking space located in Ahmedabad's Satellite. This is a small size shared office space with a wide variety of private & managerial cabins. It also offers you access to conference rooms, high-speed WiFi, parking space, wellness rooms, event space, unique common areas, phone booths, printing facilities, etc. This coworking space looks glittering in the evening as the space turns into an exciting night with fav bars & restaurants nearby.\nIn addition to surroundings, it also has flea markets, exhibitions & food festivals in the vicinity which makes it a premier place to work elegantly. Furthermore, Samaan Complex is located in the heart of the city, just off to the Sudarshan Bungalows bus stop & only a 10-minute drive from Vastrapur railway station. Explore it out and book your seats now in Samaan Complex with CoFynd at only INR 5,000.",
+    "amenities": [
+      "Printer & Scanner",
+      "Air-Conditioning",
+      "Wi-Fi"
+    ],
+    "hours": {
+      "monday": {
+        "from": "10:00 AM",
+        "to": "07:00 PM",
+        "closed": false,
+        "open24": false
+      },
+      "saturday": {
+        "from": "10:00 AM",
+        "to": "07:00 PM",
+        "closed": false,
+        "open24": false
+      },
+      "sunday": {
+        "from": "",
+        "to": "",
+        "closed": true,
+        "open24": false
+      }
+    },
+    "seats": 9,
+    "plans": [
+      {
+        "title": "Private Cabin",
+        "price": 5000,
+        "duration": "month"
+      }
+    ],
+    "brandName": "Other Coliving",
+    "latitude": 23.02998685,
+    "longitude": 72.526801462,
+    "sourceUrl": "https://cofynd.com/coworking/samaan-complex-coworking",
+    "locality": "Satellite",
+    "id": 9
+  },
+  {
+    "name": "5B Colab",
+    "badge": null,
+    "rating": null,
+    "area": "Ellisbridge",
+    "location": "Vishwabharti society, Ahmedabad",
+    "price": "₹8,000",
+    "period": "/ month",
+    "priceFormatted": "₹8,000 / month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://img.cofynd.com/images/original/364783ebcfc48e10bae468efe3de7549db0bc7c5.jpg",
+      "https://img.cofynd.com/images/original/e9e62ddaf02fe5c7275703313a49bb5b4d6aa73a.jpg",
+      "https://img.cofynd.com/images/original/9d63ad078c104b5fd3df2eb4d2fc868b6c45b1e3.jpg",
+      "https://img.cofynd.com/images/original/b0040486c1c4496c986e982ad89c94eb4cfc6815.jpg",
+      "https://img.cofynd.com/images/original/0af2dbebc135d849162c585b0c12c9f6477f8658.jpg",
+      "https://img.cofynd.com/images/original/9c764658ece56c0af4769882a2678297b68c2bde.jpg"
+    ],
+    "address": "Vishwabharti society, Ahmedabad",
+    "landmark": null,
+    "description": "5B Colab is a thriving community of freelancers, professionals and small businesses. It offers Day Passes, Hot Desks and Dedicated Desks with a number of amenities like High-Speed Wifi, Printer, Tea, Coffee, Meeting Rooms, Parking Space and various networking opportunities. 5B Colab is the perfect place to grow your business and skills. So, join 5B Colab in Ellisbridge and put your business into the action.",
+    "amenities": [],
+    "hours": {
+      "monday": {
+        "from": "10:00 AM",
+        "to": "07:00 PM",
+        "closed": false,
+        "open24": false
+      },
+      "saturday": {
+        "from": "10:00 AM",
+        "to": "07:00 PM",
+        "closed": false,
+        "open24": false
+      },
+      "sunday": {
+        "from": "",
+        "to": "",
+        "closed": true,
+        "open24": false
+      }
+    },
+    "seats": 40,
+    "plans": [
+      {
+        "title": "Hot Desk",
+        "price": 6500,
+        "duration": "month"
+      },
+      {
+        "title": "Dedicated Desk",
+        "price": 8000,
+        "duration": "month"
+      },
+      {
+        "title": "Business Address",
+        "price": 999,
+        "duration": "month"
+      },
+      {
+        "title": "GST Registration",
+        "price": 1099,
+        "duration": "month"
+      },
+      {
+        "title": "Company Registration",
+        "price": 2499,
+        "duration": "month"
+      }
+    ],
+    "brandName": "Other Coworking",
+    "latitude": 23.031569,
+    "longitude": 72.559113,
+    "sourceUrl": "https://cofynd.com/coworking/5b-colab-ahmedabad",
+    "locality": "Ellisbridge",
+    "id": 10
+  },
+  {
+    "name": "D9ITHUB",
+    "badge": null,
+    "rating": null,
+    "area": "Ellisbridge",
+    "location": "Nehru Nagar, Ahmedabad",
+    "price": "₹6,000",
+    "period": "/ month",
+    "priceFormatted": "₹6,000 / month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://img.cofynd.com/images/original/b6fa1ce57a0a06675e14b1454189b260cbb0d09d.jpg",
+      "https://img.cofynd.com/images/original/eba411ea1fe7237f4f287f2f9a387968caa7f336.jpg",
+      "https://img.cofynd.com/images/original/fe5c3bcba6933267adab615729db007de829e4e7.jpg",
+      "https://img.cofynd.com/images/original/e990ede4468f581e7fb0ef81ce693f5e2f38d095.jpg",
+      "https://img.cofynd.com/images/original/b0863178dd85c72004c96bd43e17f370765cd8cc.jpg",
+      "https://img.cofynd.com/images/original/e427c8cf167e69171c87c142932900549894b981.jpg"
+    ],
+    "address": "Nehru Nagar, Ahmedabad",
+    "landmark": null,
+    "description": "D9ithHub is a mind-blowing coworking space located in Nehru Nagar, Ahmedabad. This workspace is offering a wide-range of seating arrangements such as hot desks, dedicated desks, manager cabins, meeting rooms, etc all are budget-friendly. \nThis coworking space offers a wide range of modern amenities such as ample parking space, recreational facilities which include AC, Internet, Atrium Ara, etc along with meeting rooms at ₹4500/- per day for 5-6 people. Reserve this amazing workspace and start your business journey in a collaborative environment with people from all walks of life.",
+    "amenities": [
+      "Air-Conditioning",
+      "Bathroom",
+      "Bike Parking",
+      "Cupboard",
+      "Parking",
+      "CCTV",
+      "24x7 Security",
+      "Power Backup",
+      "Reception"
+    ],
+    "hours": {
+      "monday": {
+        "from": "09:30 AM",
+        "to": "07:00 PM",
+        "closed": false,
+        "open24": false
+      },
+      "saturday": {
+        "from": "",
+        "to": "",
+        "closed": true,
+        "open24": false
+      },
+      "sunday": {
+        "from": "",
+        "to": "",
+        "closed": true,
+        "open24": false
+      }
+    },
+    "seats": 50,
+    "plans": [
+      {
+        "title": "Hot Desk",
+        "price": 5500,
+        "duration": "month"
+      },
+      {
+        "title": "Dedicated Desk",
+        "price": 6000,
+        "duration": "month"
+      }
+    ],
+    "brandName": "Other Coliving",
+    "latitude": 23.0607859,
+    "longitude": 72.5317619,
+    "sourceUrl": "https://cofynd.com/coworking/d9ithhub-ahemdabad",
+    "locality": "Nehru Nagar",
+    "id": 11
+  },
+  {
+    "name": "Business park",
+    "badge": null,
+    "rating": null,
+    "area": "Makarba",
+    "location": "Makarba, Ahmedabad",
+    "price": "₹5,000",
+    "period": "/ month",
+    "priceFormatted": "₹5,000 / month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://img.cofynd.com/images/original/d088ccbd560018ab4c9c0448aa4eedb67b52a92e.jpg",
+      "https://img.cofynd.com/images/original/99c5a4c143a8f5f16346e32364f71dc66acbd184.jpg",
+      "https://img.cofynd.com/images/original/24e3c7a0e61d8b242507ed0ff5ce3b98ad314833.jpg",
+      "https://img.cofynd.com/images/original/6dd8f257c41ea74d0356871cd2b366f0f783d487.jpg",
+      "https://img.cofynd.com/images/original/28a9d323b985e48b59293cc2caa4eacd56008a06.jpg"
+    ],
+    "address": "Makarba, Ahmedabad",
+    "landmark": null,
+    "description": "It’s designed for all working professional who want there own desk for co working space and one boss cabin the location of the following co working space is at a very good location near by sg highway and corporate road, its a good place for all the freelance to work peacefully.",
+    "amenities": [
+      "Wi-Fi",
+      "Coffee & Beverages",
+      "Meeting Rooms"
+    ],
+    "hours": {
+      "monday": {
+        "from": "09:00 AM",
+        "to": "08:00 PM",
+        "closed": false,
+        "open24": false
+      },
+      "saturday": {
+        "from": "09:00 AM",
+        "to": "08:00 PM",
+        "closed": false,
+        "open24": false
+      },
+      "sunday": {
+        "from": "",
+        "to": "",
+        "closed": true,
+        "open24": false
+      }
+    },
+    "seats": 8,
+    "plans": [
+      {
+        "title": "Dedicated Desk",
+        "price": 5000,
+        "duration": "month"
+      },
+      {
+        "title": "Private Cabin",
+        "price": 10000,
+        "duration": "month"
+      }
+    ],
+    "brandName": "Other Coworking",
+    "latitude": 22.997557830363352,
+    "longitude": 72.50263637642918,
+    "sourceUrl": "https://cofynd.com/coworking/business-park-makarba-ahmedabad",
+    "locality": "Makarba",
+    "id": 12
+  },
+  {
+    "name": "Pravel Coworking",
+    "badge": null,
+    "rating": null,
+    "area": "Bopal",
+    "location": "Bopal, Ahmedabad",
+    "price": "₹5,000",
+    "period": "/ month",
+    "priceFormatted": "₹5,000 / month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://img.cofynd.com/images/original/65b64f1e4f34fb8e4f273a5849c649ae4375eb85.jpg",
+      "https://img.cofynd.com/images/original/3f2c4c78b2907b58ab0f7353c999cab9a29916a7.jpg",
+      "https://img.cofynd.com/images/original/69b1340a8f7522ad412c063b866882d54979c520.jpg",
+      "https://img.cofynd.com/images/original/339e5c134c8d3e1a8962914410b711efb8fffb8e.jpg",
+      "https://img.cofynd.com/images/original/c0ca4f5171bf140b767ed0d6cfc817d9a518953e.jpg"
+    ],
+    "address": "Bopal, Ahmedabad",
+    "landmark": "Thaltej Metro Station",
+    "description": "Pravel is an extraordinary coworking space located near TRP mall, Bhopal, Ahmedabad. This space is exclusively designed for all working professionals, startups, freelancers, and more. This seems to be a perfect place to collaborate and build new connections with people from different professional backgrounds.\nIt comprises an expansive collection of setting arrangements like dedicated desks, private cabins, and more starting from ₹5000/month. Moreover, the entire workspace is equipped with modern amenities & facilities like high-speed internet, 24*7 power backup, reserved parking space, CCTV surveillance, a cafeteria, air-conditioned work areas, top-class housekeeping services, a lounge, and more. \nThis workspace is close to various locations, such as TRP mall(shopping complex), TRP mall movie theatre, Central Park, H2O cafe, 369 the cafe & restaurant, Saraswati multispecialty hospital, AUROVILLE- All about the food. The nearest railway station to this location is Ambli Road & Goraghuma, both within a 7-10 km of radius. Explore CoFynd to know more about this coworking space and reserve the best suitable space for your business at no brokerage fee.",
+    "amenities": [
+      "Meeting Rooms",
+      "Printer & Scanner",
+      "Parking",
+      "Bike Parking",
+      "Power Backup",
+      "Air-Conditioning",
+      "Lift",
+      "Housekeeping",
+      "24x7 Security",
+      "Wi-Fi",
+      "Gym",
+      "Cafe",
+      "Game Zone",
+      "Cupboard",
+      "Reception"
+    ],
+    "hours": {
+      "monday": {
+        "from": "10:00 AM",
+        "to": "08:00 PM",
+        "closed": false,
+        "open24": false
+      },
+      "saturday": {
+        "from": "10:00 AM",
+        "to": "08:00 PM",
+        "closed": false,
+        "open24": false
+      },
+      "sunday": {
+        "from": "",
+        "to": "",
+        "closed": true,
+        "open24": false
+      }
+    },
+    "seats": 6,
+    "plans": [
+      {
+        "title": "Dedicated Desk",
+        "price": 5000,
+        "duration": "month"
+      },
+      {
+        "title": "Private Cabin",
+        "price": 10000,
+        "duration": "month"
+      }
+    ],
+    "brandName": null,
+    "latitude": 23.0314065,
+    "longitude": 72.4709135,
+    "sourceUrl": "https://cofynd.com/coworking/pravel-coworking-ahmedabad",
+    "locality": "Bopal",
+    "id": 13
+  },
+  {
+    "name": "SoBo Center",
+    "badge": null,
+    "rating": null,
+    "area": "Bopal",
+    "location": "South Bopal, Ahmedabad",
+    "price": "₹3,500",
+    "period": "/ month",
+    "priceFormatted": "₹3,500 / month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://img.cofynd.com/images/latest_images_2024/035fbdc6ea553718892659824f1f03c44377ffd8.webp",
+      "https://img.cofynd.com/images/latest_images_2024/d493f5c71649e06953f5cd51349f7f3b6087c79b.webp",
+      "https://img.cofynd.com/images/latest_images_2024/a1f4752e9dfd580afb12fe2b7a07ed38d23de822.webp",
+      "https://img.cofynd.com/images/latest_images_2024/4584546b280ee0ef559f0b1e6171220da097b42f.webp"
+    ],
+    "address": "South Bopal, Ahmedabad",
+    "landmark": "Thaltej",
+    "description": "Well-known Sobo Center South Bopal, well furnished with A C natural air window good sunlight, private washroom, easy approach to Spring Road, parking,24X7 access .restaurants tea coffee easily available in Sobo Center, users friendly property, WIFI, 24X7 power, safe and secure, silent zone, no any disturbance",
+    "amenities": [
+      "Printer & Scanner",
+      "Parking",
+      "Bike Parking",
+      "Power Backup",
+      "Air-Conditioning",
+      "Lift",
+      "Housekeeping",
+      "24x7 Security",
+      "Wi-Fi",
+      "CCTV",
+      "Cafe",
+      "Refrigerator",
+      "Cupboard"
+    ],
+    "hours": {
+      "monday": {
+        "from": "09:00 AM",
+        "to": "11:45 PM",
+        "closed": false,
+        "open24": false
+      },
+      "saturday": {
+        "from": "09:00 AM",
+        "to": "10:45 PM",
+        "closed": false,
+        "open24": false
+      },
+      "sunday": {
+        "from": "09:00 AM",
+        "to": "11:45 PM",
+        "closed": false,
+        "open24": false
+      }
+    },
+    "seats": 5,
+    "plans": [
+      {
+        "title": "Dedicated Desk",
+        "price": 3500,
+        "duration": "month"
+      },
+      {
+        "title": "Private Cabin",
+        "price": 15000,
+        "duration": "month"
+      },
+      {
+        "title": "Hot Desk",
+        "price": 3000,
+        "duration": "month"
+      }
+    ],
+    "brandName": "Other Coworking",
+    "latitude": 23.0172232,
+    "longitude": 72.4756136,
+    "sourceUrl": "https://cofynd.com/coworking/sobo-center-south-bopal-ahmedabad",
+    "locality": "South Bopal",
+    "id": 14
   },
   {
     "name": "Karma Workspaces",
@@ -498,682 +1183,30 @@ export const ahmedabadOfficeCards = [
     "latitude": 23.0401975,
     "longitude": 72.503796,
     "sourceUrl": "https://cofynd.com/coworking/karma-workspaces",
-    "id": 6
-  },
-  {
-    "name": "312 Sangrilla",
-    "badge": null,
-    "rating": null,
-    "area": "Prahlad Nagar",
-    "location": "Shyamal Cross Road, Ahmedabad",
-    "price": "₹7,000",
-    "period": "/ month",
-    "priceFormatted": "₹7,000 / month",
-    "ctaText": "Get Quote",
-    "images": [
-      "https://img.cofynd.com/images/original/d4dbd0d5cde1eec211706ec6965c36e5195c6334.jpg",
-      "https://img.cofynd.com/images/original/968693a41033346b277ff5d64c026a04846a3c37.jpg",
-      "https://img.cofynd.com/images/original/d4e54756ebd3d88828bc5e60a6c731078f034a99.jpg",
-      "https://img.cofynd.com/images/original/8a6774a50a12b00ceaa940dcde435031e51cc6a1.jpg",
-      "https://img.cofynd.com/images/original/fe349a713d59ac27af784d65e772e8989b270d47.jpg"
-    ],
-    "address": "Shyamal Cross Road, Ahmedabad",
-    "landmark": null,
-    "description": "312 Sangrilla Complex is ideal for freelancers, startups and small businesses. It offers all flexible seating options equipped with a wide range of office amenities from High-Speed Wifi, Tea, Coffee, Printer, 24 hrs access, Meeting Rooms and Parking Space. Centrally located near Shyamal Cross Road, this space has easy access to all local modes of transport.",
-    "amenities": [],
-    "hours": {
-      "monday": {
-        "from": "",
-        "to": "",
-        "closed": false,
-        "open24": true
-      },
-      "saturday": {
-        "from": "",
-        "to": "",
-        "closed": false,
-        "open24": true
-      },
-      "sunday": {
-        "from": "",
-        "to": "",
-        "closed": true,
-        "open24": false
-      }
-    },
-    "seats": 50,
-    "plans": [
-      {
-        "title": "Dedicated Desk",
-        "price": 15000,
-        "duration": "month"
-      },
-      {
-        "title": "Private Cabin",
-        "price": 7000,
-        "duration": "month"
-      },
-      {
-        "title": "Business Address",
-        "price": 999,
-        "duration": "month"
-      },
-      {
-        "title": "GST Registration",
-        "price": 1099,
-        "duration": "month"
-      },
-      {
-        "title": "Company Registration",
-        "price": 2499,
-        "duration": "month"
-      }
-    ],
-    "brandName": "Other Coworking",
-    "latitude": 23.012023,
-    "longitude": 72.528415,
-    "sourceUrl": "https://cofynd.com/coworking/312-sangrilla-complex",
-    "id": 7
-  },
-  {
-    "name": "Miswa Coworking",
-    "badge": null,
-    "rating": null,
-    "area": "Satellite",
-    "location": "Ratnanjali Square, Jodhpur, Satellite, Ahmedabad",
-    "price": "₹5,000",
-    "period": "/ month",
-    "priceFormatted": "₹5,000 / month",
-    "ctaText": "Get Quote",
-    "images": [
-      "https://img.cofynd.com/images/original/15e925460faff5cfc5ad5eb6d59a6ecfc40ee356.jpg",
-      "https://img.cofynd.com/images/original/4a467f2da4ff27f81daa509021ca2e276c059d84.jpg",
-      "https://img.cofynd.com/images/original/cb7149b8e4a86616757b15f59707f3b1f11d936d.jpg",
-      "https://img.cofynd.com/images/original/e7d16cfd14312e7912914845c428568e2887848a.jpg"
-    ],
-    "address": "Ratnanjali Square, Jodhpur, Satellite, Ahmedabad",
-    "landmark": null,
-    "description": "Miswa Coworking is a newly launched shared office space in Jodhpur Satellite, Gandhinagar. It is best in a class flexible workspace, in the heart of Gandhinagar, near Jivraj Park Metro Station. This is a premium coworking space for freelancers, small-scale businesses, and GenZ entrepreneurs with a variety of hot desks & dedicated desks. Miswa Coworking is a flawless option to rent flexible workspace and virtual office space, starting from just INR 4,200/month.\nIn addition, Miswa Coworking - Gandhinagar is equipped with high-end facilities and offers housekeeping assistance, business-grade internet, parking space, bike racks, security staff, and a lot more with the subscription of the desk. Try it out and book your desk in Miswa Coworking - Gandhinagar now with CoFynd with exciting coupons.",
-    "amenities": [],
-    "hours": {
-      "monday": {
-        "from": "10:00 AM",
-        "to": "10:00 PM",
-        "closed": false,
-        "open24": false
-      },
-      "saturday": {
-        "from": "10:00 AM",
-        "to": "10:00 PM",
-        "closed": false,
-        "open24": false
-      },
-      "sunday": {
-        "from": "",
-        "to": "",
-        "closed": true,
-        "open24": false
-      }
-    },
-    "seats": 9,
-    "plans": [
-      {
-        "title": "Hot Desk",
-        "price": 4200,
-        "duration": "month"
-      },
-      {
-        "title": "Dedicated Desk",
-        "price": 5000,
-        "duration": "month"
-      }
-    ],
-    "brandName": null,
-    "latitude": 23.0144586,
-    "longitude": 72.5173852,
-    "sourceUrl": "https://cofynd.com/coworking/miswa-coworking-satellite",
-    "id": 8
-  }
-];
-
-export const moreAhmedabadOfficeCards = [
-  {
-    "name": "Samaan Complex",
-    "badge": null,
-    "rating": null,
-    "area": "Satellite",
-    "location": "Samaan Complex, Ahmedabad",
-    "price": "₹5,000",
-    "period": "/ month",
-    "priceFormatted": "₹5,000 / month",
-    "ctaText": "Get Quote",
-    "images": [
-      "https://img.cofynd.com/images/original/9e21b205d392d6a582de30b8d9fbd14d93fdc8e9.jpg",
-      "https://img.cofynd.com/images/original/0848291f85b3d4e9615a1732904270f934f422f5.jpg",
-      "https://img.cofynd.com/images/original/dc6375331fae44dfac396caef387b241100ba3a9.jpg",
-      "https://img.cofynd.com/images/original/a07aa90dec799942b3be21723a3acdca3e7fc5ea.jpg",
-      "https://img.cofynd.com/images/original/f49fe6d5dc9a60a333ebba1edb3c625a92b7f9b6.jpg"
-    ],
-    "address": "Samaan Complex, Ahmedabad",
-    "landmark": null,
-    "description": "Samaan Complex is a mind-blowing coworking space located in Ahmedabad's Satellite. This is a small size shared office space with a wide variety of private & managerial cabins. It also offers you access to conference rooms, high-speed WiFi, parking space, wellness rooms, event space, unique common areas, phone booths, printing facilities, etc. This coworking space looks glittering in the evening as the space turns into an exciting night with fav bars & restaurants nearby.\nIn addition to surroundings, it also has flea markets, exhibitions & food festivals in the vicinity which makes it a premier place to work elegantly. Furthermore, Samaan Complex is located in the heart of the city, just off to the Sudarshan Bungalows bus stop & only a 10-minute drive from Vastrapur railway station. Explore it out and book your seats now in Samaan Complex with CoFynd at only INR 5,000.",
-    "amenities": [
-      "Printer & Scanner",
-      "Air-Conditioning",
-      "Wi-Fi"
-    ],
-    "hours": {
-      "monday": {
-        "from": "10:00 AM",
-        "to": "07:00 PM",
-        "closed": false,
-        "open24": false
-      },
-      "saturday": {
-        "from": "10:00 AM",
-        "to": "07:00 PM",
-        "closed": false,
-        "open24": false
-      },
-      "sunday": {
-        "from": "",
-        "to": "",
-        "closed": true,
-        "open24": false
-      }
-    },
-    "seats": 9,
-    "plans": [
-      {
-        "title": "Private Cabin",
-        "price": 5000,
-        "duration": "month"
-      }
-    ],
-    "brandName": "Other Coliving",
-    "latitude": 23.02998685,
-    "longitude": 72.526801462,
-    "sourceUrl": "https://cofynd.com/coworking/samaan-complex-coworking",
-    "id": 9
-  },
-  {
-    "name": "5B Colab",
-    "badge": null,
-    "rating": null,
-    "area": "Ellisbridge",
-    "location": "Vishwabharti society, Ahmedabad",
-    "price": "₹8,000",
-    "period": "/ month",
-    "priceFormatted": "₹8,000 / month",
-    "ctaText": "Get Quote",
-    "images": [
-      "https://img.cofynd.com/images/original/364783ebcfc48e10bae468efe3de7549db0bc7c5.jpg",
-      "https://img.cofynd.com/images/original/e9e62ddaf02fe5c7275703313a49bb5b4d6aa73a.jpg",
-      "https://img.cofynd.com/images/original/9d63ad078c104b5fd3df2eb4d2fc868b6c45b1e3.jpg",
-      "https://img.cofynd.com/images/original/b0040486c1c4496c986e982ad89c94eb4cfc6815.jpg",
-      "https://img.cofynd.com/images/original/0af2dbebc135d849162c585b0c12c9f6477f8658.jpg",
-      "https://img.cofynd.com/images/original/9c764658ece56c0af4769882a2678297b68c2bde.jpg"
-    ],
-    "address": "Vishwabharti society, Ahmedabad",
-    "landmark": null,
-    "description": "5B Colab is a thriving community of freelancers, professionals and small businesses. It offers Day Passes, Hot Desks and Dedicated Desks with a number of amenities like High-Speed Wifi, Printer, Tea, Coffee, Meeting Rooms, Parking Space and various networking opportunities. 5B Colab is the perfect place to grow your business and skills. So, join 5B Colab in Ellisbridge and put your business into the action.",
-    "amenities": [],
-    "hours": {
-      "monday": {
-        "from": "10:00 AM",
-        "to": "07:00 PM",
-        "closed": false,
-        "open24": false
-      },
-      "saturday": {
-        "from": "10:00 AM",
-        "to": "07:00 PM",
-        "closed": false,
-        "open24": false
-      },
-      "sunday": {
-        "from": "",
-        "to": "",
-        "closed": true,
-        "open24": false
-      }
-    },
-    "seats": 40,
-    "plans": [
-      {
-        "title": "Hot Desk",
-        "price": 6500,
-        "duration": "month"
-      },
-      {
-        "title": "Dedicated Desk",
-        "price": 8000,
-        "duration": "month"
-      },
-      {
-        "title": "Business Address",
-        "price": 999,
-        "duration": "month"
-      },
-      {
-        "title": "GST Registration",
-        "price": 1099,
-        "duration": "month"
-      },
-      {
-        "title": "Company Registration",
-        "price": 2499,
-        "duration": "month"
-      }
-    ],
-    "brandName": "Other Coworking",
-    "latitude": 23.031569,
-    "longitude": 72.559113,
-    "sourceUrl": "https://cofynd.com/coworking/5b-colab-ahmedabad",
-    "id": 10
-  },
-  {
-    "name": "Connekt",
-    "badge": null,
-    "rating": null,
-    "area": "Ellisbridge",
-    "location": "Netaji Rd, Ahmedabad",
-    "price": "₹9,000",
-    "period": "/ month",
-    "priceFormatted": "₹9,000 / month",
-    "ctaText": "Get Quote",
-    "images": [
-      "https://img.cofynd.com/images/original/28588fe2e27ccc5cf0a605b72b5c9512da66eb80.jpg",
-      "https://img.cofynd.com/images/original/40997b7d948847adb47ecc717fafa0b92d1eb8b3.jpg",
-      "https://img.cofynd.com/images/original/54973e6476118015ce35c7a7f17592cbc55690f9.jpg",
-      "https://img.cofynd.com/images/original/1d4662321269bcde572977fbe39ea74daef221e9.jpg",
-      "https://img.cofynd.com/images/original/02559002d822cd1b166d6a60d737414611b00fab.jpg",
-      "https://img.cofynd.com/images/original/ed9aedb0183a78f143bf8a629403891cb8cdfaa5.jpg",
-      "https://img.cofynd.com/images/original/a86896e46b82e11443dfddf325f34979a8153fb6.jpg",
-      "https://img.cofynd.com/images/original/6ba715fd59fd2e0bcc45db5d5443b0436a7128f4.jpg"
-    ],
-    "address": "Netaji Rd, Ahmedabad",
-    "landmark": null,
-    "description": "Connekt is among the top coworking spaces in Ahmedabad. It is a prominently situated workspace, easily accesible by Bus, Taxi, & Metro. This is a premier type of coworking space on the 4th floor of the Achalraj Building at Netaji Road, just opposite the Mayor's Bungalow. It offers you a variety of private cabins that are ideal options for small, medium, and large size enterprises.\nIn addition, along with the workspace, it also provides you with high-speed internet, unlimited beverages, a printing & scanning facility, office supplies, a private phone booth, conference room, meeting room, event space, cafeteria, smart reception desk, mail & courier handling service, etc. This is a perfect workspace that can maximize your productivity and lift your business to the next level.\nAlternatively, the strategic location of this workspace is one of its best features. It is close to Law Garden and only a 10 to 15 minutes walk away from Gandhigram Bus & Metro Station. A top-notch infrastructure surrounds Conneckt, which is suitable for working professionals of every type. Ultimately, it is the perfect property in all aspects, so explore, compare, and book your desk now in Connekt with CoFynd.",
-    "amenities": [],
-    "hours": {
-      "monday": {
-        "from": "09:00 AM",
-        "to": "09:00 PM",
-        "closed": false,
-        "open24": false
-      },
-      "saturday": {
-        "from": "09:00 AM",
-        "to": "09:00 PM",
-        "closed": false,
-        "open24": false
-      },
-      "sunday": {
-        "from": "",
-        "to": "",
-        "closed": true,
-        "open24": false
-      }
-    },
-    "seats": 100,
-    "plans": [
-      {
-        "title": "Private Cabin",
-        "price": 9000,
-        "duration": "month"
-      },
-      {
-        "title": "Business Address",
-        "price": 749,
-        "duration": "month"
-      },
-      {
-        "title": "GST Registration",
-        "price": 899,
-        "duration": "month"
-      },
-      {
-        "title": "Company Registration",
-        "price": 999,
-        "duration": "month"
-      }
-    ],
-    "brandName": "Other Coworking",
-    "latitude": 23.0290152,
-    "longitude": 72.5610791,
-    "sourceUrl": "https://cofynd.com/coworking/connekt-ellisbridge",
-    "id": 11
-  },
-  {
-    "name": "Business park",
-    "badge": null,
-    "rating": null,
-    "area": "Makarba",
-    "location": "Makarba, Ahmedabad",
-    "price": "₹5,000",
-    "period": "/ month",
-    "priceFormatted": "₹5,000 / month",
-    "ctaText": "Get Quote",
-    "images": [
-      "https://img.cofynd.com/images/original/d088ccbd560018ab4c9c0448aa4eedb67b52a92e.jpg",
-      "https://img.cofynd.com/images/original/99c5a4c143a8f5f16346e32364f71dc66acbd184.jpg",
-      "https://img.cofynd.com/images/original/24e3c7a0e61d8b242507ed0ff5ce3b98ad314833.jpg",
-      "https://img.cofynd.com/images/original/6dd8f257c41ea74d0356871cd2b366f0f783d487.jpg",
-      "https://img.cofynd.com/images/original/28a9d323b985e48b59293cc2caa4eacd56008a06.jpg"
-    ],
-    "address": "Makarba, Ahmedabad",
-    "landmark": null,
-    "description": "It’s designed for all working professional who want there own desk for co working space and one boss cabin the location of the following co working space is at a very good location near by sg highway and corporate road, its a good place for all the freelance to work peacefully.",
-    "amenities": [
-      "Wi-Fi",
-      "Coffee & Beverages",
-      "Meeting Rooms"
-    ],
-    "hours": {
-      "monday": {
-        "from": "09:00 AM",
-        "to": "08:00 PM",
-        "closed": false,
-        "open24": false
-      },
-      "saturday": {
-        "from": "09:00 AM",
-        "to": "08:00 PM",
-        "closed": false,
-        "open24": false
-      },
-      "sunday": {
-        "from": "",
-        "to": "",
-        "closed": true,
-        "open24": false
-      }
-    },
-    "seats": 8,
-    "plans": [
-      {
-        "title": "Dedicated Desk",
-        "price": 5000,
-        "duration": "month"
-      },
-      {
-        "title": "Private Cabin",
-        "price": 10000,
-        "duration": "month"
-      }
-    ],
-    "brandName": "Other Coworking",
-    "latitude": 22.997557830363352,
-    "longitude": 72.50263637642918,
-    "sourceUrl": "https://cofynd.com/coworking/business-park-makarba-ahmedabad",
-    "id": 12
-  },
-  {
-    "name": "Pravel Coworking",
-    "badge": null,
-    "rating": null,
-    "area": "Bopal",
-    "location": "Bopal, Ahmedabad",
-    "price": "₹5,000",
-    "period": "/ month",
-    "priceFormatted": "₹5,000 / month",
-    "ctaText": "Get Quote",
-    "images": [
-      "https://img.cofynd.com/images/original/65b64f1e4f34fb8e4f273a5849c649ae4375eb85.jpg",
-      "https://img.cofynd.com/images/original/3f2c4c78b2907b58ab0f7353c999cab9a29916a7.jpg",
-      "https://img.cofynd.com/images/original/69b1340a8f7522ad412c063b866882d54979c520.jpg",
-      "https://img.cofynd.com/images/original/339e5c134c8d3e1a8962914410b711efb8fffb8e.jpg",
-      "https://img.cofynd.com/images/original/c0ca4f5171bf140b767ed0d6cfc817d9a518953e.jpg"
-    ],
-    "address": "Bopal, Ahmedabad",
-    "landmark": "Thaltej Metro Station",
-    "description": "Pravel is an extraordinary coworking space located near TRP mall, Bhopal, Ahmedabad. This space is exclusively designed for all working professionals, startups, freelancers, and more. This seems to be a perfect place to collaborate and build new connections with people from different professional backgrounds.\nIt comprises an expansive collection of setting arrangements like dedicated desks, private cabins, and more starting from ₹5000/month. Moreover, the entire workspace is equipped with modern amenities & facilities like high-speed internet, 24*7 power backup, reserved parking space, CCTV surveillance, a cafeteria, air-conditioned work areas, top-class housekeeping services, a lounge, and more. \nThis workspace is close to various locations, such as TRP mall(shopping complex), TRP mall movie theatre, Central Park, H2O cafe, 369 the cafe & restaurant, Saraswati multispecialty hospital, AUROVILLE- All about the food. The nearest railway station to this location is Ambli Road & Goraghuma, both within a 7-10 km of radius. Explore CoFynd to know more about this coworking space and reserve the best suitable space for your business at no brokerage fee.",
-    "amenities": [
-      "Meeting Rooms",
-      "Printer & Scanner",
-      "Parking",
-      "Bike Parking",
-      "Power Backup",
-      "Air-Conditioning",
-      "Lift",
-      "Housekeeping",
-      "24x7 Security",
-      "Wi-Fi",
-      "Gym",
-      "Cafe",
-      "Game Zone",
-      "Cupboard",
-      "Reception"
-    ],
-    "hours": {
-      "monday": {
-        "from": "10:00 AM",
-        "to": "08:00 PM",
-        "closed": false,
-        "open24": false
-      },
-      "saturday": {
-        "from": "10:00 AM",
-        "to": "08:00 PM",
-        "closed": false,
-        "open24": false
-      },
-      "sunday": {
-        "from": "",
-        "to": "",
-        "closed": true,
-        "open24": false
-      }
-    },
-    "seats": 6,
-    "plans": [
-      {
-        "title": "Dedicated Desk",
-        "price": 5000,
-        "duration": "month"
-      },
-      {
-        "title": "Private Cabin",
-        "price": 10000,
-        "duration": "month"
-      }
-    ],
-    "brandName": null,
-    "latitude": 23.0314065,
-    "longitude": 72.4709135,
-    "sourceUrl": "https://cofynd.com/coworking/pravel-coworking-ahmedabad",
-    "id": 13
-  },
-  {
-    "name": "SoBo Center",
-    "badge": null,
-    "rating": null,
-    "area": "South Bopal",
-    "location": "South Bopal, Ahmedabad",
-    "price": "₹3,500",
-    "period": "/ month",
-    "priceFormatted": "₹3,500 / month",
-    "ctaText": "Get Quote",
-    "images": [
-      "https://img.cofynd.com/images/latest_images_2024/035fbdc6ea553718892659824f1f03c44377ffd8.webp",
-      "https://img.cofynd.com/images/latest_images_2024/d493f5c71649e06953f5cd51349f7f3b6087c79b.webp",
-      "https://img.cofynd.com/images/latest_images_2024/a1f4752e9dfd580afb12fe2b7a07ed38d23de822.webp",
-      "https://img.cofynd.com/images/latest_images_2024/4584546b280ee0ef559f0b1e6171220da097b42f.webp"
-    ],
-    "address": "South Bopal, Ahmedabad",
-    "landmark": "Thaltej",
-    "description": "Well-known Sobo Center South Bopal, well furnished with A C natural air window good sunlight, private washroom, easy approach to Spring Road, parking,24X7 access .restaurants tea coffee easily available in Sobo Center, users friendly property, WIFI, 24X7 power, safe and secure, silent zone, no any disturbance",
-    "amenities": [
-      "Printer & Scanner",
-      "Parking",
-      "Bike Parking",
-      "Power Backup",
-      "Air-Conditioning",
-      "Lift",
-      "Housekeeping",
-      "24x7 Security",
-      "Wi-Fi",
-      "CCTV",
-      "Cafe",
-      "Refrigerator",
-      "Cupboard"
-    ],
-    "hours": {
-      "monday": {
-        "from": "09:00 AM",
-        "to": "11:45 PM",
-        "closed": false,
-        "open24": false
-      },
-      "saturday": {
-        "from": "09:00 AM",
-        "to": "10:45 PM",
-        "closed": false,
-        "open24": false
-      },
-      "sunday": {
-        "from": "09:00 AM",
-        "to": "11:45 PM",
-        "closed": false,
-        "open24": false
-      }
-    },
-    "seats": 5,
-    "plans": [
-      {
-        "title": "Dedicated Desk",
-        "price": 3500,
-        "duration": "month"
-      },
-      {
-        "title": "Private Cabin",
-        "price": 15000,
-        "duration": "month"
-      },
-      {
-        "title": "Hot Desk",
-        "price": 3000,
-        "duration": "month"
-      }
-    ],
-    "brandName": "Other Coworking",
-    "latitude": 23.0172232,
-    "longitude": 72.4756136,
-    "sourceUrl": "https://cofynd.com/coworking/sobo-center-south-bopal-ahmedabad",
-    "id": 14
-  },
-  {
-    "name": "Awfis Coworking",
-    "badge": "Trending",
-    "rating": 4.5,
-    "area": "Sindhu Bhavan Road",
-    "location": "Sindhu Bhavan Road, Ahmedabad",
-    "price": "₹10,000",
-    "period": "/ month",
-    "priceFormatted": "₹10,000 / month",
-    "ctaText": "Get Quote",
-    "images": [
-      "https://img.cofynd.com/images/latest_images_2024/7503585345e773254beeaff7382a517e91954c90.webp",
-      "https://img.cofynd.com/images/latest_images_2024/c0ebcdbc552676aa70c10d600bc1d8d3a3d39219.webp",
-      "https://img.cofynd.com/images/latest_images_2024/13a038b062a739f1b0e3c208f82ce9ea1d3bd957.webp",
-      "https://img.cofynd.com/images/latest_images_2024/d404ecfc3ee83d17323278e43780662e19e10fa8.webp",
-      "https://img.cofynd.com/images/latest_images_2024/dd9adb4642a540c58a41b0a16e75de2bdc3ed475.webp",
-      "https://img.cofynd.com/images/latest_images_2024/6a64cefc926a10480489d6166ce547fe83fb3d69.webp"
-    ],
-    "address": "Sindhu Bhavan Road, Ahmedabad",
-    "landmark": "Thaltej Metro Station",
-    "description": "Step into our center, where modern amenities meet sleek design. Here we offer spacious meeting rooms equipped with state-of-the-art infrastructure, perfect for hosting your team meetings and brainstorming sessions. With high-quality video projection and conferencing facilities, collaboration has never been easier. Whether you're planning, strategizing, or mapping out your next big idea, our dynamic work environment is designed to foster teamwork and productivity.",
-    "amenities": [
-      "Community Events",
-      "Printer & Scanner",
-      "Refrigerator",
-      "Housekeeping",
-      "Wi-Fi",
-      "Cafe",
-      "Coffee & Beverages",
-      "24x7 Security",
-      "Power Backup",
-      "Air-Conditioning",
-      "CCTV",
-      "Reception",
-      "Meeting Rooms",
-      "Meeting Room",
-      "Video Conferencing Capabilities",
-      "Workshops",
-      "Parking",
-      "Lift",
-      "Lounge"
-    ],
-    "hours": {
-      "monday": {
-        "from": "08:00 AM",
-        "to": "08:00 PM",
-        "closed": false,
-        "open24": false
-      },
-      "saturday": {
-        "from": "08:00 AM",
-        "to": "08:00 PM",
-        "closed": false,
-        "open24": false
-      },
-      "sunday": {
-        "from": "",
-        "to": "",
-        "closed": true,
-        "open24": false
-      }
-    },
-    "seats": 505,
-    "plans": [
-      {
-        "title": "Dedicated Desk",
-        "price": 10000,
-        "duration": "month"
-      },
-      {
-        "title": "Private Cabin",
-        "price": 10000,
-        "duration": "month"
-      },
-      {
-        "title": "Business Address",
-        "price": 849,
-        "duration": "month"
-      },
-      {
-        "title": "GST Registration",
-        "price": 1199,
-        "duration": "month"
-      }
-    ],
-    "brandName": "Awfis",
-    "latitude": 23.048833673834295,
-    "longitude": 72.50869477722225,
-    "sourceUrl": "https://cofynd.com/coworking/awfis-space-solutions-sindhu-bhavan-road",
+    "locality": "Vastrapur",
     "id": 15
   },
   {
-    "name": "Opulence",
+    "name": "Paragraph",
     "badge": null,
     "rating": null,
-    "area": "Vikram Nagar",
-    "location": "Vikram Nagar, Ahmedabad",
-    "price": "₹9,500",
+    "area": "SG Highway",
+    "location": "S.G. Highway, Ahmedabad",
+    "price": "₹15,899",
     "period": "/ month",
-    "priceFormatted": "₹9,500 / month",
+    "priceFormatted": "₹15,899 / month",
     "ctaText": "Get Quote",
     "images": [
-      "https://img.cofynd.com/images/original/cee1a52b4ab38037a3086599e8d96f87d35272e8.jpg",
-      "https://img.cofynd.com/images/original/ee54e214c7c27280516089abfbc2d4c7ff18c74d.jpg",
-      "https://img.cofynd.com/images/original/3db2ad64a8d627649455c031e4a9f3eee6578408.jpg",
-      "https://img.cofynd.com/images/original/c96eb2f8e349b7afc2f3172e5a74361ca09a0b64.jpg",
-      "https://img.cofynd.com/images/original/0277164b153dc8c1d6a1dee3d99b88c54cf29ee8.jpg"
+      "https://img.cofynd.com/images/original/3d1ddc816f331edfe3077f6fb20c50874116e49e.jpg",
+      "https://img.cofynd.com/images/original/8f4c1d829b9ecc142583dabc8383a13b218f5ab6.jpg",
+      "https://img.cofynd.com/images/original/530b959430659df310ad79ebe6e437a2e2a35e20.jpg",
+      "https://img.cofynd.com/images/original/c95e2e17548afaa52d4cc82869c754436374e3a0.jpg",
+      "https://img.cofynd.com/images/original/c6f8f7f0e4bc195211e379351adde25822ca9ac4.jpg",
+      "https://img.cofynd.com/images/original/dd2ba71a5380d91dbe679701f323f5c836429f9a.jpg"
     ],
-    "address": "Vikram Nagar, Ahmedabad",
+    "address": "S.G. Highway, Ahmedabad",
     "landmark": null,
-    "description": "Opulence Privilon is a 180 seater workspace located on Iscon Cross Road, Ahmedabad, Gujarat. It offers hot desks, dedicated desks, private cabins, manager cabins & day passes with state-of-the-art amenities like spacious rooms, complete CCTV surveillance, centralized air conditioning, huge pantry area, car parking, events space, trained housekeeping, cafeteria, regular sanitization and high-speed internet connection among others. Prominent residential localities, schools, hospitals, grocery stores and recreational spots lie in the vicinity. Located in the western part of the city, the space also offers smooth connectivity with all modes of transport.",
+    "description": "Paragraph Coworking is an iconic workspace located near Novotel hotel, Ahmadabad. It is designed with a classy interior, stylish standing desks, Ergonomic chairs, polished wooden furnishings and more. This elegant workspace offers private cabins for better privacy and focus, hot desks for good links and connection, and dedicated desks for a superior collaborating working environment.\nIt is ideal for new companies, working professionals, freelancers, corporate and large enterprises. Along with this, you also get access to high-quality meeting rooms for team or client meetups on an hourly basis. Come and experience a healthy and encouraging working environment at the Paragraph Coworking. Located in a prime location, it provides easy access to each mode of transport like cabs, auto and bus. Expand your business with us today, do not wait anymore. Book now!",
     "amenities": [],
     "hours": {
       "monday": {
@@ -1195,43 +1228,24 @@ export const moreAhmedabadOfficeCards = [
         "open24": true
       }
     },
-    "seats": 200,
+    "seats": 66,
     "plans": [
       {
-        "title": "Hot Desk",
-        "price": 8500,
-        "duration": "month"
-      },
-      {
         "title": "Dedicated Desk",
-        "price": 9500,
+        "price": 15899,
         "duration": "month"
       },
       {
         "title": "Private Cabin",
-        "price": 10000,
-        "duration": "month"
-      },
-      {
-        "title": "Business Address",
-        "price": 5499,
-        "duration": "month"
-      },
-      {
-        "title": "GST Registration",
-        "price": 5499,
-        "duration": "month"
-      },
-      {
-        "title": "Company Registration",
-        "price": 5499,
+        "price": 22000,
         "duration": "month"
       }
     ],
     "brandName": "Other Coworking",
-    "latitude": 23.0278725,
-    "longitude": 72.5055751,
-    "sourceUrl": "https://cofynd.com/coworking/opulence-privilon",
+    "latitude": 23.0230532,
+    "longitude": 72.5067671,
+    "sourceUrl": "https://cofynd.com/coworking/paragraph",
+    "locality": "SG Highway",
     "id": 16
   }
 ];
@@ -1307,6 +1321,7 @@ export const finalAhmedabadOfficeCards = [
     "latitude": 23.0032247,
     "longitude": 72.50141099999999,
     "sourceUrl": "https://cofynd.com/coworking/the-address",
+    "locality": "SG Highway",
     "id": 17
   },
   {
@@ -1367,78 +1382,8 @@ export const finalAhmedabadOfficeCards = [
     "latitude": 23.0294221,
     "longitude": 72.5292601,
     "sourceUrl": "https://cofynd.com/coworking/incuspaze-the-first",
+    "locality": "Vastrapur",
     "id": 18
-  },
-  {
-    "name": "D9ITHUB",
-    "badge": null,
-    "rating": null,
-    "area": "Nehru Nagar",
-    "location": "Nehru Nagar, Ahmedabad",
-    "price": "₹6,000",
-    "period": "/ month",
-    "priceFormatted": "₹6,000 / month",
-    "ctaText": "Get Quote",
-    "images": [
-      "https://img.cofynd.com/images/original/b6fa1ce57a0a06675e14b1454189b260cbb0d09d.jpg",
-      "https://img.cofynd.com/images/original/eba411ea1fe7237f4f287f2f9a387968caa7f336.jpg",
-      "https://img.cofynd.com/images/original/fe5c3bcba6933267adab615729db007de829e4e7.jpg",
-      "https://img.cofynd.com/images/original/e990ede4468f581e7fb0ef81ce693f5e2f38d095.jpg",
-      "https://img.cofynd.com/images/original/b0863178dd85c72004c96bd43e17f370765cd8cc.jpg",
-      "https://img.cofynd.com/images/original/e427c8cf167e69171c87c142932900549894b981.jpg"
-    ],
-    "address": "Nehru Nagar, Ahmedabad",
-    "landmark": null,
-    "description": "D9ithHub is a mind-blowing coworking space located in Nehru Nagar, Ahmedabad. This workspace is offering a wide-range of seating arrangements such as hot desks, dedicated desks, manager cabins, meeting rooms, etc all are budget-friendly. \nThis coworking space offers a wide range of modern amenities such as ample parking space, recreational facilities which include AC, Internet, Atrium Ara, etc along with meeting rooms at ₹4500/- per day for 5-6 people. Reserve this amazing workspace and start your business journey in a collaborative environment with people from all walks of life.",
-    "amenities": [
-      "Air-Conditioning",
-      "Bathroom",
-      "Bike Parking",
-      "Cupboard",
-      "Parking",
-      "CCTV",
-      "24x7 Security",
-      "Power Backup",
-      "Reception"
-    ],
-    "hours": {
-      "monday": {
-        "from": "09:30 AM",
-        "to": "07:00 PM",
-        "closed": false,
-        "open24": false
-      },
-      "saturday": {
-        "from": "",
-        "to": "",
-        "closed": true,
-        "open24": false
-      },
-      "sunday": {
-        "from": "",
-        "to": "",
-        "closed": true,
-        "open24": false
-      }
-    },
-    "seats": 50,
-    "plans": [
-      {
-        "title": "Hot Desk",
-        "price": 5500,
-        "duration": "month"
-      },
-      {
-        "title": "Dedicated Desk",
-        "price": 6000,
-        "duration": "month"
-      }
-    ],
-    "brandName": "Other Coliving",
-    "latitude": 23.0607859,
-    "longitude": 72.5317619,
-    "sourceUrl": "https://cofynd.com/coworking/d9ithhub-ahemdabad",
-    "id": 19
   },
   {
     "name": "Opulence",
@@ -1537,13 +1482,88 @@ export const finalAhmedabadOfficeCards = [
     "latitude": 23.033863,
     "longitude": 72.585022,
     "sourceUrl": "https://cofynd.com/coworking/opulence",
+    "locality": "Vastrapur",
+    "id": 19
+  },
+  {
+    "name": "Connekt",
+    "badge": null,
+    "rating": null,
+    "area": "Ellisbridge",
+    "location": "Netaji Rd, Ahmedabad",
+    "price": "₹9,000",
+    "period": "/ month",
+    "priceFormatted": "₹9,000 / month",
+    "ctaText": "Get Quote",
+    "images": [
+      "https://img.cofynd.com/images/original/28588fe2e27ccc5cf0a605b72b5c9512da66eb80.jpg",
+      "https://img.cofynd.com/images/original/40997b7d948847adb47ecc717fafa0b92d1eb8b3.jpg",
+      "https://img.cofynd.com/images/original/54973e6476118015ce35c7a7f17592cbc55690f9.jpg",
+      "https://img.cofynd.com/images/original/1d4662321269bcde572977fbe39ea74daef221e9.jpg",
+      "https://img.cofynd.com/images/original/02559002d822cd1b166d6a60d737414611b00fab.jpg",
+      "https://img.cofynd.com/images/original/ed9aedb0183a78f143bf8a629403891cb8cdfaa5.jpg",
+      "https://img.cofynd.com/images/original/a86896e46b82e11443dfddf325f34979a8153fb6.jpg",
+      "https://img.cofynd.com/images/original/6ba715fd59fd2e0bcc45db5d5443b0436a7128f4.jpg"
+    ],
+    "address": "Netaji Rd, Ahmedabad",
+    "landmark": null,
+    "description": "Connekt is among the top coworking spaces in Ahmedabad. It is a prominently situated workspace, easily accesible by Bus, Taxi, & Metro. This is a premier type of coworking space on the 4th floor of the Achalraj Building at Netaji Road, just opposite the Mayor's Bungalow. It offers you a variety of private cabins that are ideal options for small, medium, and large size enterprises.\nIn addition, along with the workspace, it also provides you with high-speed internet, unlimited beverages, a printing & scanning facility, office supplies, a private phone booth, conference room, meeting room, event space, cafeteria, smart reception desk, mail & courier handling service, etc. This is a perfect workspace that can maximize your productivity and lift your business to the next level.\nAlternatively, the strategic location of this workspace is one of its best features. It is close to Law Garden and only a 10 to 15 minutes walk away from Gandhigram Bus & Metro Station. A top-notch infrastructure surrounds Conneckt, which is suitable for working professionals of every type. Ultimately, it is the perfect property in all aspects, so explore, compare, and book your desk now in Connekt with CoFynd.",
+    "amenities": [],
+    "hours": {
+      "monday": {
+        "from": "09:00 AM",
+        "to": "09:00 PM",
+        "closed": false,
+        "open24": false
+      },
+      "saturday": {
+        "from": "09:00 AM",
+        "to": "09:00 PM",
+        "closed": false,
+        "open24": false
+      },
+      "sunday": {
+        "from": "",
+        "to": "",
+        "closed": true,
+        "open24": false
+      }
+    },
+    "seats": 100,
+    "plans": [
+      {
+        "title": "Private Cabin",
+        "price": 9000,
+        "duration": "month"
+      },
+      {
+        "title": "Business Address",
+        "price": 749,
+        "duration": "month"
+      },
+      {
+        "title": "GST Registration",
+        "price": 899,
+        "duration": "month"
+      },
+      {
+        "title": "Company Registration",
+        "price": 999,
+        "duration": "month"
+      }
+    ],
+    "brandName": "Other Coworking",
+    "latitude": 23.0290152,
+    "longitude": 72.5610791,
+    "sourceUrl": "https://cofynd.com/coworking/connekt-ellisbridge",
+    "locality": "Ellisbridge",
     "id": 20
   },
   {
     "name": "NULL WorkSpace",
     "badge": null,
     "rating": null,
-    "area": "Sola",
+    "area": "SG Highway",
     "location": "Science City Rd, Sola, Ahmedabad",
     "price": "₹5,000",
     "period": "/ month",
@@ -1605,13 +1625,14 @@ export const finalAhmedabadOfficeCards = [
     "latitude": 23.07309,
     "longitude": 72.5109884,
     "sourceUrl": "https://cofynd.com/coworking/null-workspace",
+    "locality": "Sola",
     "id": 21
   },
   {
     "name": "Sentient",
     "badge": null,
     "rating": null,
-    "area": "Thaltej",
+    "area": "SG Highway",
     "location": "Thaltej, Ahmedabad",
     "price": "₹8,500",
     "period": "/ month",
@@ -1691,13 +1712,14 @@ export const finalAhmedabadOfficeCards = [
     "latitude": 23.045728,
     "longitude": 72.5076604,
     "sourceUrl": "https://cofynd.com/coworking/sentient-offices",
+    "locality": "Thaltej",
     "id": 22
   },
   {
     "name": "SR Coworking",
     "badge": null,
     "rating": null,
-    "area": "Thaltej",
+    "area": "SG Highway",
     "location": "Thaltej Shilaj Road, Ahmedabad",
     "price": "₹4,500",
     "period": "/ month",
@@ -1762,6 +1784,7 @@ export const finalAhmedabadOfficeCards = [
     "latitude": 23.052700221015005,
     "longitude": 72.48070331095971,
     "sourceUrl": "https://cofynd.com/coworking/sr-coworking-thaltej-shilaj-road-ahmedabad",
+    "locality": "Thaltej",
     "id": 23
   },
   {
@@ -1841,6 +1864,7 @@ export const finalAhmedabadOfficeCards = [
     "latitude": 23.097990211,
     "longitude": 72.5455784,
     "sourceUrl": "https://cofynd.com/coworking/315-radhe-fortune",
+    "locality": "Navrangpura",
     "id": 24
   }
 ];
@@ -1850,7 +1874,7 @@ export const featuredAhmedabadOfficeCards = [
     "name": "Mahendra Coworking",
     "badge": null,
     "rating": null,
-    "area": "Sola",
+    "area": "SG Highway",
     "location": "Sola, Ahmedabad",
     "price": "₹6,000",
     "period": "/ month",
@@ -1930,13 +1954,14 @@ export const featuredAhmedabadOfficeCards = [
     "latitude": 23.07917868,
     "longitude": 72.501519855,
     "sourceUrl": "https://cofynd.com/coworking/mahendra-coworking",
+    "locality": "Sola",
     "id": 25
   },
   {
     "name": "Karma Workspaces",
     "badge": null,
     "rating": null,
-    "area": "Bodakdev",
+    "area": "Vastrapur",
     "location": "Bodakdev, Ahmedabad",
     "price": "₹10,000",
     "period": "/ month",
@@ -2022,13 +2047,14 @@ export const featuredAhmedabadOfficeCards = [
     "latitude": 23.040237982819846,
     "longitude": 72.50382269343386,
     "sourceUrl": "https://cofynd.com/coworking/karma-workspaces-ahmedabad",
+    "locality": "Bodakdev",
     "id": 26
   },
   {
     "name": "The Address - Your Destination for Growth",
     "badge": null,
     "rating": null,
-    "area": "Shyamal",
+    "area": "Satellite",
     "location": "Shyamal Cross Roads, Ahmedabad",
     "price": "₹7,000",
     "period": "/ month",
@@ -2116,6 +2142,7 @@ export const featuredAhmedabadOfficeCards = [
     "latitude": 23.015291695112957,
     "longitude": 72.53097573987985,
     "sourceUrl": "https://cofynd.com/coworking/the-address-your-destination-of-growth",
+    "locality": "Shyamal",
     "id": 27
   },
   {
@@ -2183,13 +2210,14 @@ export const featuredAhmedabadOfficeCards = [
     "latitude": 23.0584914,
     "longitude": 72.5174536,
     "sourceUrl": "https://cofynd.com/coworking/spxcoworking-sg-highway-ahmedabad",
+    "locality": "SG Highway",
     "id": 28
   },
   {
     "name": "Dev Co working space",
     "badge": null,
     "rating": null,
-    "area": "Thaltej",
+    "area": "SG Highway",
     "location": "Thaltej, Ahmedabad",
     "price": "₹3,000",
     "period": "/ month",
@@ -2255,6 +2283,7 @@ export const featuredAhmedabadOfficeCards = [
     "latitude": 23.0433755,
     "longitude": 72.5121121,
     "sourceUrl": "https://cofynd.com/coworking/dev-co-working-spae-thaltej-ahmedabad",
+    "locality": "Thaltej",
     "id": 29
   },
   {
@@ -2357,6 +2386,7 @@ export const featuredAhmedabadOfficeCards = [
     "latitude": 23.040046385632238,
     "longitude": 72.52958637048792,
     "sourceUrl": "https://cofynd.com/coworking/luxuria-clubs-coworks-vastrapur-ahmedabad",
+    "locality": "Vastrapur",
     "id": 30
   },
   {
@@ -2425,13 +2455,14 @@ export const featuredAhmedabadOfficeCards = [
     "latitude": 23.012451955270077,
     "longitude": 72.50331636677595,
     "sourceUrl": "https://cofynd.com/coworking/mondeal-square-sg-highway-ahmedabad",
+    "locality": "SG Highway",
     "id": 31
   },
   {
     "name": "Krik System Co-Working",
     "badge": null,
     "rating": null,
-    "area": "Nikol",
+    "area": "Navrangpura",
     "location": "Nikol, Ahmedabad",
     "price": "₹5,000",
     "period": "/ month",
@@ -2487,6 +2518,7 @@ export const featuredAhmedabadOfficeCards = [
     "latitude": 23.0399426,
     "longitude": 72.4226461,
     "sourceUrl": "https://cofynd.com/coworking/krik-system-co-working-nikol-ahmedabad",
+    "locality": "Nikol",
     "id": 32
   }
 ];
@@ -2540,7 +2572,7 @@ export const pageTwoAhmedabadOfficeCards = [
     "name": "URSA Workspaces",
     "badge": null,
     "rating": null,
-    "area": "Sindhu Bhavan Road",
+    "area": "SG Highway",
     "location": "SBR, Ahmedabad",
     "price": "₹9,500",
     "period": "/ month",
@@ -2629,13 +2661,14 @@ export const pageTwoAhmedabadOfficeCards = [
     "latitude": 23.0411675,
     "longitude": 72.4987942,
     "sourceUrl": "https://cofynd.com/coworking/ursa-workspaces-sindhu-bhavan-road-ahmedabad",
+    "locality": "Sindhu Bhavan Road",
     "id": 33
   },
   {
     "name": "Co-Desk",
     "badge": null,
     "rating": null,
-    "area": "Ashram Road",
+    "area": "Navrangpura",
     "location": "Ashram Road, Ahmedabad",
     "price": "₹4,000",
     "period": "/ month",
@@ -2698,6 +2731,7 @@ export const pageTwoAhmedabadOfficeCards = [
     "latitude": 23.0446855,
     "longitude": 72.5675787,
     "sourceUrl": "https://cofynd.com/coworking/co-desk-ashram-road-ahmedabad",
+    "locality": "Ashram Road",
     "id": 34
   },
   {
@@ -2783,13 +2817,14 @@ export const pageTwoAhmedabadOfficeCards = [
     "latitude": 23.045140880701098,
     "longitude": 72.55129349325347,
     "sourceUrl": "https://cofynd.com/coworking/kolloco-navrangpura-ahmedabad",
+    "locality": "Navrangpura",
     "id": 35
   },
   {
     "name": "Ganesh Glory 11",
     "badge": null,
     "rating": null,
-    "area": "Gota",
+    "area": "SG Highway",
     "location": "Gota, Ahmedabad",
     "price": "₹5,400",
     "period": "/ month",
@@ -2855,13 +2890,14 @@ export const pageTwoAhmedabadOfficeCards = [
     "latitude": 23.11426092479394,
     "longitude": 72.54033493980245,
     "sourceUrl": "https://cofynd.com/coworking/ganesh-glory-gota-ahemdabad",
+    "locality": "Gota",
     "id": 36
   },
   {
     "name": "BSQUARE FLEXI OFFICES",
     "badge": null,
     "rating": null,
-    "area": "Iim",
+    "area": "Vastrapur",
     "location": "University Area, Ahmedabad",
     "price": "₹8,000",
     "period": "/ month",
@@ -2960,6 +2996,7 @@ export const pageTwoAhmedabadOfficeCards = [
     "latitude": 23.028514014313767,
     "longitude": 72.54370281390543,
     "sourceUrl": "https://cofynd.com/coworking/bsquare-flexi-offices-university-area-ahmedabad",
+    "locality": "Iim",
     "id": 37
   },
   {
@@ -3070,13 +3107,14 @@ export const pageTwoAhmedabadOfficeCards = [
     "latitude": 23.03252091511003,
     "longitude": 72.54492938261856,
     "sourceUrl": "https://cofynd.com/coworking/bsquare-co-works-sindhu-bhavan-road-ahemdabad",
+    "locality": "SG Highway",
     "id": 38
   },
   {
     "name": "Windson Organic",
     "badge": null,
     "rating": null,
-    "area": "Science City",
+    "area": "SG Highway",
     "location": "Science City, Ahmedabad",
     "price": "₹7,000",
     "period": "/ month",
@@ -3132,13 +3170,14 @@ export const pageTwoAhmedabadOfficeCards = [
     "latitude": 23.075360483263726,
     "longitude": 72.51054718354683,
     "sourceUrl": "https://cofynd.com/coworking/windson-organic-pvt-ltd-science-city-ahemdabad",
+    "locality": "Science City",
     "id": 39
   },
   {
     "name": "RB Coworking Space",
     "badge": null,
     "rating": null,
-    "area": "Jodhpur Gam",
+    "area": "Satellite",
     "location": "Jodhpur Village, Ahmedabad",
     "price": "₹4,500",
     "period": "/ month",
@@ -3201,6 +3240,7 @@ export const pageTwoAhmedabadOfficeCards = [
     "latitude": 23.0120125,
     "longitude": 72.5231931,
     "sourceUrl": "https://cofynd.com/coworking/rb-coworking-space-jodhpur-village-ahmedabad",
+    "locality": "Jodhpur Gam",
     "id": 40
   }
 ];
@@ -3312,6 +3352,7 @@ export const pageTwoMoreAhmedabadOfficeCards = [
     "latitude": 23.034887687502316,
     "longitude": 72.5028914764001,
     "sourceUrl": "https://cofynd.com/coworking/bsquare-business-center-sg-highway-ahemdabad",
+    "locality": "SG Highway",
     "id": 41
   },
   {
@@ -3394,6 +3435,7 @@ export const pageTwoMoreAhmedabadOfficeCards = [
     "latitude": 23.034628585593943,
     "longitude": 72.53288898369401,
     "sourceUrl": "https://cofynd.com/coworking/iima-ventures-vastrapur-ahmedabad",
+    "locality": "Vastrapur",
     "id": 42
   },
   {
@@ -3452,6 +3494,7 @@ export const pageTwoMoreAhmedabadOfficeCards = [
     "latitude": 23.0584914,
     "longitude": 72.5174536,
     "sourceUrl": "https://cofynd.com/coworking/sod-sg-highway-ahmedabad",
+    "locality": "SG Highway",
     "id": 43
   },
   {
@@ -3538,13 +3581,14 @@ export const pageTwoMoreAhmedabadOfficeCards = [
     "latitude": 23.0426377,
     "longitude": 72.5487903,
     "sourceUrl": "https://cofynd.com/coworking/incuspaze-the-link-navrangpura-ahmedabad",
+    "locality": "Navrangpura",
     "id": 44
   },
   {
     "name": "Incuspaze Coworking - Shilp Zaveri",
     "badge": null,
     "rating": null,
-    "area": "Shilp Zaveri",
+    "area": "Satellite",
     "location": "Shilp Zaveri, Ahmedabad",
     "price": "₹7,500",
     "period": "/ month",
@@ -3608,13 +3652,14 @@ export const pageTwoMoreAhmedabadOfficeCards = [
     "latitude": 23.01529180804676,
     "longitude": 72.5309922998388,
     "sourceUrl": "https://cofynd.com/coworking/incuspaze-shilp-zaveri-ahmedabad",
+    "locality": "Shilp Zaveri",
     "id": 45
   },
   {
     "name": "Incuspaze - Krish Cubicals",
     "badge": null,
     "rating": null,
-    "area": "Sindhu Bhavan Road",
+    "area": "SG Highway",
     "location": "Sindhu Bhavan Marg, Ahmedabad",
     "price": "₹7,500",
     "period": "/ month",
@@ -3686,13 +3731,14 @@ export const pageTwoMoreAhmedabadOfficeCards = [
     "latitude": 23.0489289,
     "longitude": 72.5087729,
     "sourceUrl": "https://cofynd.com/coworking/incuspaze-krish-cubicals-sindhu-bhavan-road-ahmedabad",
+    "locality": "Sindhu Bhavan Road",
     "id": 46
   },
   {
     "name": "Crazy Plant Lady Coworking",
     "badge": null,
     "rating": null,
-    "area": "Naranpura",
+    "area": "Navrangpura",
     "location": "Naranpura, Ahmedabad",
     "price": "₹3,400",
     "period": "/ month",
@@ -3754,6 +3800,7 @@ export const pageTwoMoreAhmedabadOfficeCards = [
     "latitude": 23.06739750533545,
     "longitude": 72.56164130713366,
     "sourceUrl": "https://cofynd.com/coworking/crazy-plant-lady-co-working-space-naranpura-ahmedabad",
+    "locality": "Naranpura",
     "id": 47
   },
   {
@@ -3829,6 +3876,7 @@ export const pageTwoMoreAhmedabadOfficeCards = [
     "latitude": 23.0338739,
     "longitude": 72.504656,
     "sourceUrl": "https://cofynd.com/coworking/co-working-at-shilp-corporate-park-sg-highway-ahmedabad",
+    "locality": "SG Highway",
     "id": 48
   }
 ];
@@ -3919,6 +3967,7 @@ export const pageTwoFinalAhmedabadOfficeCards = [
     "latitude": 23.0371407,
     "longitude": 72.5104074,
     "sourceUrl": "https://cofynd.com/coworking/titanium-one-sg-higway-ahmedabad",
+    "locality": "SG Highway",
     "id": 49
   },
   {
@@ -3985,13 +4034,14 @@ export const pageTwoFinalAhmedabadOfficeCards = [
     "latitude": 23.1142521,
     "longitude": 72.540331,
     "sourceUrl": "https://cofynd.com/coworking/ganesh-glory-11-sg-highway-ahmedabad",
+    "locality": "SG Highway",
     "id": 50
   },
   {
     "name": "Sspacia - Mercado",
     "badge": null,
     "rating": null,
-    "area": "Cg Road",
+    "area": "Navrangpura",
     "location": "C.G Road Ahmedabad",
     "price": "₹8,000",
     "period": "/ month",
@@ -4099,6 +4149,7 @@ export const pageTwoFinalAhmedabadOfficeCards = [
     "latitude": 23.02824838853248,
     "longitude": 72.55781630859602,
     "sourceUrl": "https://cofynd.com/coworking/sspacia-mercado-cg-road-ahmedabad",
+    "locality": "Cg Road",
     "id": 51
   },
   {
@@ -4209,6 +4260,7 @@ export const pageTwoFinalAhmedabadOfficeCards = [
     "latitude": 23.04492056226675,
     "longitude": 72.51567542208909,
     "sourceUrl": "https://cofynd.com/coworking/sspacia-premier-house-sg-highway-ahmedabad",
+    "locality": "SG Highway",
     "id": 52
   },
   {
@@ -4311,6 +4363,7 @@ export const pageTwoFinalAhmedabadOfficeCards = [
     "latitude": 23.035099543866494,
     "longitude": 72.56107533558217,
     "sourceUrl": "https://cofynd.com/coworking/sspacia-navrangpura-ahmedabad",
+    "locality": "Navrangpura",
     "id": 53
   },
   {
@@ -4409,13 +4462,14 @@ export const pageTwoFinalAhmedabadOfficeCards = [
     "latitude": 23.0417069,
     "longitude": 72.5518686,
     "sourceUrl": "https://cofynd.com/coworking/uncubate-coworking-navrangpura-ahmedabad",
+    "locality": "Navrangpura",
     "id": 54
   },
   {
     "name": "Opulence co-working spaces",
     "badge": null,
     "rating": null,
-    "area": "Sindhu Bhavan Road",
+    "area": "SG Highway",
     "location": "Sindhu Bhavan Road, Ahmedabad",
     "price": "₹9,000",
     "period": "/ month",
@@ -4498,13 +4552,14 @@ export const pageTwoFinalAhmedabadOfficeCards = [
     "latitude": 23.0414785,
     "longitude": 72.5006748,
     "sourceUrl": "https://cofynd.com/coworking/opulence-co-working-spaces-sindhu-bhavan-road-ahmedabad",
+    "locality": "Sindhu Bhavan Road",
     "id": 55
   },
   {
     "name": "The Map Stores",
     "badge": null,
     "rating": null,
-    "area": "Jagatpur",
+    "area": "SG Highway",
     "location": "Jagatpur Road, Ahmedabad",
     "price": "₹6,000",
     "period": "/ month",
@@ -4577,6 +4632,7 @@ export const pageTwoFinalAhmedabadOfficeCards = [
     "latitude": 23.1142668,
     "longitude": 72.5386955,
     "sourceUrl": "https://cofynd.com/coworking/the-map-stores-jagatpur-ahmedabad",
+    "locality": "Jagatpur",
     "id": 56
   }
 ];
@@ -4586,7 +4642,7 @@ export const pageTwoFeaturedAhmedabadOfficeCards = [
     "name": "Kasturi Pride Co-Working",
     "badge": null,
     "rating": null,
-    "area": "Nikol",
+    "area": "Navrangpura",
     "location": "Nikol, Ahmedabad",
     "price": "₹2,999",
     "period": "/ month",
@@ -4644,6 +4700,7 @@ export const pageTwoFeaturedAhmedabadOfficeCards = [
     "latitude": 23.0450753,
     "longitude": 72.680076,
     "sourceUrl": "https://cofynd.com/coworking/kasturi-pride-co-working-nikol-ahmedabad",
+    "locality": "Nikol",
     "id": 57
   },
   {
@@ -4707,6 +4764,7 @@ export const pageTwoFeaturedAhmedabadOfficeCards = [
     "latitude": 23.0974291,
     "longitude": 72.5314531,
     "sourceUrl": "https://cofynd.com/coworking/whatsbetter-sg-highway-ahmedabad ",
+    "locality": "SG Highway",
     "id": 58
   },
   {
@@ -4808,13 +4866,14 @@ export const pageTwoFeaturedAhmedabadOfficeCards = [
     "latitude": 23.045174486754178,
     "longitude": 72.5514402947856,
     "sourceUrl": "https://cofynd.com/coworking/agile-labs-coworking-navrangpura-ahmedabad",
+    "locality": "Navrangpura",
     "id": 59
   },
   {
     "name": "VistaWork",
     "badge": null,
     "rating": null,
-    "area": "Iscon-Ambli Road",
+    "area": "SG Highway",
     "location": "Ambli, Ahmedabad",
     "price": "₹8,999",
     "period": "/ month",
@@ -4900,6 +4959,7 @@ export const pageTwoFeaturedAhmedabadOfficeCards = [
     "latitude": 23.026487552418576,
     "longitude": 72.48002218179035,
     "sourceUrl": "https://cofynd.com/coworking/vistawork-ambli-ahmedabad",
+    "locality": "Iscon-Ambli Road",
     "id": 60
   },
   {
@@ -4998,6 +5058,7 @@ export const pageTwoFeaturedAhmedabadOfficeCards = [
     "latitude": 23.035168657477517,
     "longitude": 72.56173515897396,
     "sourceUrl": "https://cofynd.com/coworking/sspacia-agarwal-complex-navrangpura-ahmedabad",
+    "locality": "Navrangpura",
     "id": 61
   },
   {
@@ -5079,6 +5140,7 @@ export const pageTwoFeaturedAhmedabadOfficeCards = [
     "latitude": 22.9929931,
     "longitude": 72.4989465,
     "sourceUrl": "https://cofynd.com/coworking/uncubate-coworking-sg-highway-ahmedabad",
+    "locality": "SG Highway",
     "id": 62
   },
   {
@@ -5140,6 +5202,7 @@ export const pageTwoFeaturedAhmedabadOfficeCards = [
     "latitude": 23.0473271,
     "longitude": 72.5439911,
     "sourceUrl": "https://cofynd.com/coworking/kendra-coworking-memnagar-ahmedabad",
+    "locality": "Navrangpura",
     "id": 63
   },
   {
@@ -5219,6 +5282,7 @@ export const pageTwoFeaturedAhmedabadOfficeCards = [
     "latitude": 23.0460819,
     "longitude": 72.5592222,
     "sourceUrl": "https://cofynd.com/coworking/sweet-spot-spaces-navrangpura-ahmedabad",
+    "locality": "Navrangpura",
     "id": 64
   }
 ];
@@ -5300,6 +5364,7 @@ export const pageThreeAhmedabadOfficeCards = [
     "latitude": 23.049347,
     "longitude": 72.4874556,
     "sourceUrl": "https://cofynd.com/coworking/opulence-navratna-corporate-park",
+    "locality": "SG Highway",
     "id": 65
   },
   {
@@ -5360,6 +5425,7 @@ export const pageThreeAhmedabadOfficeCards = [
     "latitude": 23.0397094,
     "longitude": 72.5296868,
     "sourceUrl": "https://cofynd.com/coworking/station27-coworking-hub-vastrapur-ahmedabad",
+    "locality": "Vastrapur",
     "id": 66
   },
   {
@@ -5443,13 +5509,14 @@ export const pageThreeAhmedabadOfficeCards = [
     "latitude": 23.0974407,
     "longitude": 72.528883,
     "sourceUrl": "https://cofynd.com/coworking/solitaire-connect-sg-highway-ahmedabad",
+    "locality": "SG Highway",
     "id": 67
   },
   {
     "name": "Prodesk",
     "badge": "Popular",
     "rating": 4.8,
-    "area": "Chandkheda",
+    "area": "SG Highway",
     "location": "Chandkheda Ahmedabad",
     "price": "₹7,699",
     "period": "/ month",
@@ -5518,6 +5585,7 @@ export const pageThreeAhmedabadOfficeCards = [
     "latitude": 23.1124947,
     "longitude": 72.5818106,
     "sourceUrl": "https://cofynd.com/coworking/prodesk-chandkheda-ahmedabad",
+    "locality": "Chandkheda",
     "id": 68
   }
 ];
@@ -5556,20 +5624,20 @@ const cardsByIds = (ids) => ids.map((id) => ahmedabadCardPool.find((card) => car
 // shown together with the area's own cards when that area filter is selected
 // ============================================================================
 export const areaExtraOfficeCards = {
-  "SG Highway": cardsByIds([24,56,36,39,21,25,19,47,3,63,46,15]),
-  "Navrangpura": cardsByIds([10,11,34,51,38,20,37,42,47,5,66,30]),
-  "Vastrapur": cardsByIds([37,38,9,45,27,44,4,63,54,35,59,51]),
-  "Prahlad Nagar": cardsByIds([12,17,62,31,8,40,2,16,27,45,14,60]),
-  "Satellite": cardsByIds([16,2,48,41,49,6,26,31,55,33,29,22]),
-  "Ellisbridge": cardsByIds([51,61,53,20,34,64,54,37,38,44,4,59]),
-  "Makarba": cardsByIds([62,17,31,8,40,2,7,27,45,16,14,60]),
-  "Bopal": cardsByIds([60,65,23,33,41,31,16,55,48,2,6,26])
+  "SG Highway": cardsByIds([]),
+  "Navrangpura": cardsByIds([]),
+  "Vastrapur": cardsByIds([]),
+  "Prahlad Nagar": cardsByIds([]),
+  "Satellite": cardsByIds([]),
+  "Ellisbridge": cardsByIds([]),
+  "Makarba": cardsByIds([]),
+  "Bopal": cardsByIds([])
 };
 
 // ============================================================================
 // Similar spaces (top rated listings)
 // ============================================================================
-export const similarAhmedabadOfficeCards = cardsByIds([1,15,54,62,63,65,66,67,68]);
+export const similarAhmedabadOfficeCards = cardsByIds([1,2,54,62,63,65,66,67,68]);
 
 // Aggregator & lookup helper
 export const allAhmedabadOfficeCards = ahmedabadCardPool;
