@@ -111,6 +111,7 @@ export const ahmedabadOfficeCards = [
     "latitude": 23.048833673834295,
     "longitude": 72.50869477722225,
     "sourceUrl": "https://cofynd.com/coworking/awfis-space-solutions-sindhu-bhavan-road",
+    "cofyndId": "6645f2ef0c3fd2f8ee2b3707",
     "locality": "Sindhu Bhavan Road",
     "id": 1
   },
@@ -206,6 +207,7 @@ export const ahmedabadOfficeCards = [
     "latitude": 23.097626455030905,
     "longitude": 72.53181787633822,
     "sourceUrl": "https://cofynd.com/coworking/awfis-space-solutions-ahmedabad-sg-highway",
+    "cofyndId": "6645edc90c3fd2f8ee281299",
     "locality": "SG Highway",
     "id": 2
   },
@@ -287,6 +289,7 @@ export const ahmedabadOfficeCards = [
     "latitude": 23.0486846,
     "longitude": 72.52499999999999,
     "sourceUrl": "https://cofynd.com/coworking/connekt-ahmedabad",
+    "cofyndId": "5fdb41491be4d8562d3be87d",
     "locality": "Navrangpura",
     "id": 3
   },
@@ -372,6 +375,7 @@ export const ahmedabadOfficeCards = [
     "latitude": 23.0426736,
     "longitude": 72.5488147,
     "sourceUrl": "https://cofynd.com/coworking/incuspaze-vijay-cross-road",
+    "cofyndId": "5f7d4d6e8c4e6961990e6ae6",
     "locality": "Navrangpura",
     "id": 4
   },
@@ -448,6 +452,7 @@ export const ahmedabadOfficeCards = [
     "latitude": 23.030633,
     "longitude": 72.5302038,
     "sourceUrl": "https://cofynd.com/coworking/devx-ahmedabad",
+    "cofyndId": "5f7af5758c4e6961990e625d",
     "locality": "Vastrapur",
     "id": 5
   },
@@ -529,6 +534,7 @@ export const ahmedabadOfficeCards = [
     "latitude": 23.0278725,
     "longitude": 72.5055751,
     "sourceUrl": "https://cofynd.com/coworking/opulence-privilon",
+    "cofyndId": "5f7b196a8c4e6961990e64b9",
     "locality": "Vikram Nagar",
     "id": 6
   },
@@ -605,6 +611,7 @@ export const ahmedabadOfficeCards = [
     "latitude": 23.012023,
     "longitude": 72.528415,
     "sourceUrl": "https://cofynd.com/coworking/312-sangrilla-complex",
+    "cofyndId": "5f7b1e5b8c4e6961990e64cc",
     "locality": "Prahlad Nagar",
     "id": 7
   },
@@ -665,6 +672,7 @@ export const ahmedabadOfficeCards = [
     "latitude": 23.0144586,
     "longitude": 72.5173852,
     "sourceUrl": "https://cofynd.com/coworking/miswa-coworking-satellite",
+    "cofyndId": "64119003c69694731aab96e2",
     "locality": "Satellite",
     "id": 8
   }
@@ -728,6 +736,7 @@ export const moreAhmedabadOfficeCards = [
     "latitude": 23.02998685,
     "longitude": 72.526801462,
     "sourceUrl": "https://cofynd.com/coworking/samaan-complex-coworking",
+    "cofyndId": "64252ca39bce2737a7a9e78d",
     "locality": "Satellite",
     "id": 9
   },
@@ -805,6 +814,7 @@ export const moreAhmedabadOfficeCards = [
     "latitude": 23.031569,
     "longitude": 72.559113,
     "sourceUrl": "https://cofynd.com/coworking/5b-colab-ahmedabad",
+    "cofyndId": "5f7b040c8c4e6961990e643d",
     "locality": "Ellisbridge",
     "id": 10
   },
@@ -877,6 +887,7 @@ export const moreAhmedabadOfficeCards = [
     "latitude": 23.0607859,
     "longitude": 72.5317619,
     "sourceUrl": "https://cofynd.com/coworking/d9ithhub-ahemdabad",
+    "cofyndId": "62f0e5479c58b604bf5afd4a",
     "locality": "Nehru Nagar",
     "id": 11
   },
@@ -942,6 +953,7 @@ export const moreAhmedabadOfficeCards = [
     "latitude": 22.997557830363352,
     "longitude": 72.50263637642918,
     "sourceUrl": "https://cofynd.com/coworking/business-park-makarba-ahmedabad",
+    "cofyndId": "6517cef694b30a410b2519dd",
     "locality": "Makarba",
     "id": 12
   },
@@ -1019,6 +1031,7 @@ export const moreAhmedabadOfficeCards = [
     "latitude": 23.0314065,
     "longitude": 72.4709135,
     "sourceUrl": "https://cofynd.com/coworking/pravel-coworking-ahmedabad",
+    "cofyndId": "63f70654381a176f650fdc8f",
     "locality": "Bopal",
     "id": 13
   },
@@ -1098,6 +1111,7 @@ export const moreAhmedabadOfficeCards = [
     "latitude": 23.0172232,
     "longitude": 72.4756136,
     "sourceUrl": "https://cofynd.com/coworking/sobo-center-south-bopal-ahmedabad",
+    "cofyndId": "65a78783ba0273726c87de0e",
     "locality": "South Bopal",
     "id": 14
   },
@@ -1183,6 +1197,7 @@ export const moreAhmedabadOfficeCards = [
     "latitude": 23.0401975,
     "longitude": 72.503796,
     "sourceUrl": "https://cofynd.com/coworking/karma-workspaces",
+    "cofyndId": "5f7d4ea28c4e6961990e6b18",
     "locality": "Vastrapur",
     "id": 15
   },
@@ -1245,6 +1260,7 @@ export const moreAhmedabadOfficeCards = [
     "latitude": 23.0230532,
     "longitude": 72.5067671,
     "sourceUrl": "https://cofynd.com/coworking/paragraph",
+    "cofyndId": "5f7af3eb8c4e6961990e621a",
     "locality": "SG Highway",
     "id": 16
   }
@@ -1321,6 +1337,7 @@ export const finalAhmedabadOfficeCards = [
     "latitude": 23.0032247,
     "longitude": 72.50141099999999,
     "sourceUrl": "https://cofynd.com/coworking/the-address",
+    "cofyndId": "5f7b001f8c4e6961990e63da",
     "locality": "SG Highway",
     "id": 17
   },
@@ -1382,6 +1399,7 @@ export const finalAhmedabadOfficeCards = [
     "latitude": 23.0294221,
     "longitude": 72.5292601,
     "sourceUrl": "https://cofynd.com/coworking/incuspaze-the-first",
+    "cofyndId": "61a9e5661491a66edf577ae5",
     "locality": "Vastrapur",
     "id": 18
   },
@@ -1482,6 +1500,7 @@ export const finalAhmedabadOfficeCards = [
     "latitude": 23.033863,
     "longitude": 72.585022,
     "sourceUrl": "https://cofynd.com/coworking/opulence",
+    "cofyndId": "6378802ab037cc3a5c47fa2d",
     "locality": "Vastrapur",
     "id": 19
   },
@@ -1556,6 +1575,7 @@ export const finalAhmedabadOfficeCards = [
     "latitude": 23.0290152,
     "longitude": 72.5610791,
     "sourceUrl": "https://cofynd.com/coworking/connekt-ellisbridge",
+    "cofyndId": "63bfd44ba4524a34aee488cc",
     "locality": "Ellisbridge",
     "id": 20
   },
@@ -1625,6 +1645,7 @@ export const finalAhmedabadOfficeCards = [
     "latitude": 23.07309,
     "longitude": 72.5109884,
     "sourceUrl": "https://cofynd.com/coworking/null-workspace",
+    "cofyndId": "63eb802ee3552c2cec079263",
     "locality": "Sola",
     "id": 21
   },
@@ -1712,6 +1733,7 @@ export const finalAhmedabadOfficeCards = [
     "latitude": 23.045728,
     "longitude": 72.5076604,
     "sourceUrl": "https://cofynd.com/coworking/sentient-offices",
+    "cofyndId": "63f75669381a176f6579e10d",
     "locality": "Thaltej",
     "id": 22
   },
@@ -1784,6 +1806,7 @@ export const finalAhmedabadOfficeCards = [
     "latitude": 23.052700221015005,
     "longitude": 72.48070331095971,
     "sourceUrl": "https://cofynd.com/coworking/sr-coworking-thaltej-shilaj-road-ahmedabad",
+    "cofyndId": "6416f5d5c69694731a316b06",
     "locality": "Thaltej",
     "id": 23
   },
@@ -1864,6 +1887,7 @@ export const finalAhmedabadOfficeCards = [
     "latitude": 23.097990211,
     "longitude": 72.5455784,
     "sourceUrl": "https://cofynd.com/coworking/315-radhe-fortune",
+    "cofyndId": "6443c4eb1dcad0098b11d901",
     "locality": "Navrangpura",
     "id": 24
   }
@@ -1954,6 +1978,7 @@ export const featuredAhmedabadOfficeCards = [
     "latitude": 23.07917868,
     "longitude": 72.501519855,
     "sourceUrl": "https://cofynd.com/coworking/mahendra-coworking",
+    "cofyndId": "6450ddb44e19d019be1f0ee7",
     "locality": "Sola",
     "id": 25
   },
@@ -2047,6 +2072,7 @@ export const featuredAhmedabadOfficeCards = [
     "latitude": 23.040237982819846,
     "longitude": 72.50382269343386,
     "sourceUrl": "https://cofynd.com/coworking/karma-workspaces-ahmedabad",
+    "cofyndId": "646b3d766ab83d0f8e2bd683",
     "locality": "Bodakdev",
     "id": 26
   },
@@ -2142,6 +2168,7 @@ export const featuredAhmedabadOfficeCards = [
     "latitude": 23.015291695112957,
     "longitude": 72.53097573987985,
     "sourceUrl": "https://cofynd.com/coworking/the-address-your-destination-of-growth",
+    "cofyndId": "647db319cbdb225065d05b1f",
     "locality": "Shyamal",
     "id": 27
   },
@@ -2210,6 +2237,7 @@ export const featuredAhmedabadOfficeCards = [
     "latitude": 23.0584914,
     "longitude": 72.5174536,
     "sourceUrl": "https://cofynd.com/coworking/spxcoworking-sg-highway-ahmedabad",
+    "cofyndId": "64a8f9976dde461b2b14d7f3",
     "locality": "SG Highway",
     "id": 28
   },
@@ -2283,6 +2311,7 @@ export const featuredAhmedabadOfficeCards = [
     "latitude": 23.0433755,
     "longitude": 72.5121121,
     "sourceUrl": "https://cofynd.com/coworking/dev-co-working-spae-thaltej-ahmedabad",
+    "cofyndId": "64b521e3ee4bdc71473a5bc8",
     "locality": "Thaltej",
     "id": 29
   },
@@ -2386,6 +2415,7 @@ export const featuredAhmedabadOfficeCards = [
     "latitude": 23.040046385632238,
     "longitude": 72.52958637048792,
     "sourceUrl": "https://cofynd.com/coworking/luxuria-clubs-coworks-vastrapur-ahmedabad",
+    "cofyndId": "64bd4bbe666dd74f06e41402",
     "locality": "Vastrapur",
     "id": 30
   },
@@ -2455,6 +2485,7 @@ export const featuredAhmedabadOfficeCards = [
     "latitude": 23.012451955270077,
     "longitude": 72.50331636677595,
     "sourceUrl": "https://cofynd.com/coworking/mondeal-square-sg-highway-ahmedabad",
+    "cofyndId": "64c7819cafab272f618199b4",
     "locality": "SG Highway",
     "id": 31
   },
@@ -2518,6 +2549,7 @@ export const featuredAhmedabadOfficeCards = [
     "latitude": 23.0399426,
     "longitude": 72.4226461,
     "sourceUrl": "https://cofynd.com/coworking/krik-system-co-working-nikol-ahmedabad",
+    "cofyndId": "64e09a0ec78e9016fc0f7431",
     "locality": "Nikol",
     "id": 32
   }
@@ -2661,6 +2693,7 @@ export const pageTwoAhmedabadOfficeCards = [
     "latitude": 23.0411675,
     "longitude": 72.4987942,
     "sourceUrl": "https://cofynd.com/coworking/ursa-workspaces-sindhu-bhavan-road-ahmedabad",
+    "cofyndId": "64e85200f6bd0b738c49019d",
     "locality": "Sindhu Bhavan Road",
     "id": 33
   },
@@ -2731,6 +2764,7 @@ export const pageTwoAhmedabadOfficeCards = [
     "latitude": 23.0446855,
     "longitude": 72.5675787,
     "sourceUrl": "https://cofynd.com/coworking/co-desk-ashram-road-ahmedabad",
+    "cofyndId": "6521189ea04c8c0e888a897f",
     "locality": "Ashram Road",
     "id": 34
   },
@@ -2817,6 +2851,7 @@ export const pageTwoAhmedabadOfficeCards = [
     "latitude": 23.045140880701098,
     "longitude": 72.55129349325347,
     "sourceUrl": "https://cofynd.com/coworking/kolloco-navrangpura-ahmedabad",
+    "cofyndId": "658571cea64faeebaf35d32d",
     "locality": "Navrangpura",
     "id": 35
   },
@@ -2890,6 +2925,7 @@ export const pageTwoAhmedabadOfficeCards = [
     "latitude": 23.11426092479394,
     "longitude": 72.54033493980245,
     "sourceUrl": "https://cofynd.com/coworking/ganesh-glory-gota-ahemdabad",
+    "cofyndId": "659f02cde4ba0019b562c804",
     "locality": "Gota",
     "id": 36
   },
@@ -2996,6 +3032,7 @@ export const pageTwoAhmedabadOfficeCards = [
     "latitude": 23.028514014313767,
     "longitude": 72.54370281390543,
     "sourceUrl": "https://cofynd.com/coworking/bsquare-flexi-offices-university-area-ahmedabad",
+    "cofyndId": "65af6fe8116832b212ded602",
     "locality": "Iim",
     "id": 37
   },
@@ -3107,6 +3144,7 @@ export const pageTwoAhmedabadOfficeCards = [
     "latitude": 23.03252091511003,
     "longitude": 72.54492938261856,
     "sourceUrl": "https://cofynd.com/coworking/bsquare-co-works-sindhu-bhavan-road-ahemdabad",
+    "cofyndId": "65af8f20116832b212ecdd06",
     "locality": "SG Highway",
     "id": 38
   },
@@ -3170,6 +3208,7 @@ export const pageTwoAhmedabadOfficeCards = [
     "latitude": 23.075360483263726,
     "longitude": 72.51054718354683,
     "sourceUrl": "https://cofynd.com/coworking/windson-organic-pvt-ltd-science-city-ahemdabad",
+    "cofyndId": "65bcd390c1bab6b1d2b4a819",
     "locality": "Science City",
     "id": 39
   },
@@ -3240,6 +3279,7 @@ export const pageTwoAhmedabadOfficeCards = [
     "latitude": 23.0120125,
     "longitude": 72.5231931,
     "sourceUrl": "https://cofynd.com/coworking/rb-coworking-space-jodhpur-village-ahmedabad",
+    "cofyndId": "65c20f91517056128f955a7a",
     "locality": "Jodhpur Gam",
     "id": 40
   }
@@ -3352,6 +3392,7 @@ export const pageTwoMoreAhmedabadOfficeCards = [
     "latitude": 23.034887687502316,
     "longitude": 72.5028914764001,
     "sourceUrl": "https://cofynd.com/coworking/bsquare-business-center-sg-highway-ahemdabad",
+    "cofyndId": "65c9ccc73075b87d9ec37b9a",
     "locality": "SG Highway",
     "id": 41
   },
@@ -3435,6 +3476,7 @@ export const pageTwoMoreAhmedabadOfficeCards = [
     "latitude": 23.034628585593943,
     "longitude": 72.53288898369401,
     "sourceUrl": "https://cofynd.com/coworking/iima-ventures-vastrapur-ahmedabad",
+    "cofyndId": "65ddc4386685b28cbbba1114",
     "locality": "Vastrapur",
     "id": 42
   },
@@ -3494,6 +3536,7 @@ export const pageTwoMoreAhmedabadOfficeCards = [
     "latitude": 23.0584914,
     "longitude": 72.5174536,
     "sourceUrl": "https://cofynd.com/coworking/sod-sg-highway-ahmedabad",
+    "cofyndId": "65f57ad05eeb421385bcecb3",
     "locality": "SG Highway",
     "id": 43
   },
@@ -3581,6 +3624,7 @@ export const pageTwoMoreAhmedabadOfficeCards = [
     "latitude": 23.0426377,
     "longitude": 72.5487903,
     "sourceUrl": "https://cofynd.com/coworking/incuspaze-the-link-navrangpura-ahmedabad",
+    "cofyndId": "66126b125eeb421385835ae9",
     "locality": "Navrangpura",
     "id": 44
   },
@@ -3652,6 +3696,7 @@ export const pageTwoMoreAhmedabadOfficeCards = [
     "latitude": 23.01529180804676,
     "longitude": 72.5309922998388,
     "sourceUrl": "https://cofynd.com/coworking/incuspaze-shilp-zaveri-ahmedabad",
+    "cofyndId": "6613d6a65eeb421385de69c9",
     "locality": "Shilp Zaveri",
     "id": 45
   },
@@ -3731,6 +3776,7 @@ export const pageTwoMoreAhmedabadOfficeCards = [
     "latitude": 23.0489289,
     "longitude": 72.5087729,
     "sourceUrl": "https://cofynd.com/coworking/incuspaze-krish-cubicals-sindhu-bhavan-road-ahmedabad",
+    "cofyndId": "66167a705eeb4213858ed137",
     "locality": "Sindhu Bhavan Road",
     "id": 46
   },
@@ -3800,6 +3846,7 @@ export const pageTwoMoreAhmedabadOfficeCards = [
     "latitude": 23.06739750533545,
     "longitude": 72.56164130713366,
     "sourceUrl": "https://cofynd.com/coworking/crazy-plant-lady-co-working-space-naranpura-ahmedabad",
+    "cofyndId": "6638f4b49347033da2bb382b",
     "locality": "Naranpura",
     "id": 47
   },
@@ -3876,6 +3923,7 @@ export const pageTwoMoreAhmedabadOfficeCards = [
     "latitude": 23.0338739,
     "longitude": 72.504656,
     "sourceUrl": "https://cofynd.com/coworking/co-working-at-shilp-corporate-park-sg-highway-ahmedabad",
+    "cofyndId": "6640c26b0c3fd2f8ee2ab78c",
     "locality": "SG Highway",
     "id": 48
   }
@@ -3967,6 +4015,7 @@ export const pageTwoFinalAhmedabadOfficeCards = [
     "latitude": 23.0371407,
     "longitude": 72.5104074,
     "sourceUrl": "https://cofynd.com/coworking/titanium-one-sg-higway-ahmedabad",
+    "cofyndId": "6647424c0c3fd2f8eea6fb14",
     "locality": "SG Highway",
     "id": 49
   },
@@ -4034,6 +4083,7 @@ export const pageTwoFinalAhmedabadOfficeCards = [
     "latitude": 23.1142521,
     "longitude": 72.540331,
     "sourceUrl": "https://cofynd.com/coworking/ganesh-glory-11-sg-highway-ahmedabad",
+    "cofyndId": "664ae7760127b15624788685",
     "locality": "SG Highway",
     "id": 50
   },
@@ -4149,6 +4199,7 @@ export const pageTwoFinalAhmedabadOfficeCards = [
     "latitude": 23.02824838853248,
     "longitude": 72.55781630859602,
     "sourceUrl": "https://cofynd.com/coworking/sspacia-mercado-cg-road-ahmedabad",
+    "cofyndId": "6655c97625a76984edc1ff1f",
     "locality": "Cg Road",
     "id": 51
   },
@@ -4260,6 +4311,7 @@ export const pageTwoFinalAhmedabadOfficeCards = [
     "latitude": 23.04492056226675,
     "longitude": 72.51567542208909,
     "sourceUrl": "https://cofynd.com/coworking/sspacia-premier-house-sg-highway-ahmedabad",
+    "cofyndId": "6655cefd25a76984edc6ed88",
     "locality": "SG Highway",
     "id": 52
   },
@@ -4363,6 +4415,7 @@ export const pageTwoFinalAhmedabadOfficeCards = [
     "latitude": 23.035099543866494,
     "longitude": 72.56107533558217,
     "sourceUrl": "https://cofynd.com/coworking/sspacia-navrangpura-ahmedabad",
+    "cofyndId": "6655d07025a76984edc7c9d4",
     "locality": "Navrangpura",
     "id": 53
   },
@@ -4462,6 +4515,7 @@ export const pageTwoFinalAhmedabadOfficeCards = [
     "latitude": 23.0417069,
     "longitude": 72.5518686,
     "sourceUrl": "https://cofynd.com/coworking/uncubate-coworking-navrangpura-ahmedabad",
+    "cofyndId": "666c1a45ad47fd730e812a4f",
     "locality": "Navrangpura",
     "id": 54
   },
@@ -4552,6 +4606,7 @@ export const pageTwoFinalAhmedabadOfficeCards = [
     "latitude": 23.0414785,
     "longitude": 72.5006748,
     "sourceUrl": "https://cofynd.com/coworking/opulence-co-working-spaces-sindhu-bhavan-road-ahmedabad",
+    "cofyndId": "667bf21be49edbdc9383ef04",
     "locality": "Sindhu Bhavan Road",
     "id": 55
   },
@@ -4632,6 +4687,7 @@ export const pageTwoFinalAhmedabadOfficeCards = [
     "latitude": 23.1142668,
     "longitude": 72.5386955,
     "sourceUrl": "https://cofynd.com/coworking/the-map-stores-jagatpur-ahmedabad",
+    "cofyndId": "66a9e1aff3917cb1c887f422",
     "locality": "Jagatpur",
     "id": 56
   }
@@ -4700,6 +4756,7 @@ export const pageTwoFeaturedAhmedabadOfficeCards = [
     "latitude": 23.0450753,
     "longitude": 72.680076,
     "sourceUrl": "https://cofynd.com/coworking/kasturi-pride-co-working-nikol-ahmedabad",
+    "cofyndId": "66ac43b7f3917cb1c8c001c3",
     "locality": "Nikol",
     "id": 57
   },
@@ -4764,6 +4821,7 @@ export const pageTwoFeaturedAhmedabadOfficeCards = [
     "latitude": 23.0974291,
     "longitude": 72.5314531,
     "sourceUrl": "https://cofynd.com/coworking/whatsbetter-sg-highway-ahmedabad ",
+    "cofyndId": "66b70d78ed89a2a30fdf0600",
     "locality": "SG Highway",
     "id": 58
   },
@@ -4866,6 +4924,7 @@ export const pageTwoFeaturedAhmedabadOfficeCards = [
     "latitude": 23.045174486754178,
     "longitude": 72.5514402947856,
     "sourceUrl": "https://cofynd.com/coworking/agile-labs-coworking-navrangpura-ahmedabad",
+    "cofyndId": "66e4277ef6c0478e73a01237",
     "locality": "Navrangpura",
     "id": 59
   },
@@ -4959,6 +5018,7 @@ export const pageTwoFeaturedAhmedabadOfficeCards = [
     "latitude": 23.026487552418576,
     "longitude": 72.48002218179035,
     "sourceUrl": "https://cofynd.com/coworking/vistawork-ambli-ahmedabad",
+    "cofyndId": "67515d2131ce8dfbd8a7d1f9",
     "locality": "Iscon-Ambli Road",
     "id": 60
   },
@@ -5058,6 +5118,7 @@ export const pageTwoFeaturedAhmedabadOfficeCards = [
     "latitude": 23.035168657477517,
     "longitude": 72.56173515897396,
     "sourceUrl": "https://cofynd.com/coworking/sspacia-agarwal-complex-navrangpura-ahmedabad",
+    "cofyndId": "675d113031ce8dfbd87b75ac",
     "locality": "Navrangpura",
     "id": 61
   },
@@ -5140,6 +5201,7 @@ export const pageTwoFeaturedAhmedabadOfficeCards = [
     "latitude": 22.9929931,
     "longitude": 72.4989465,
     "sourceUrl": "https://cofynd.com/coworking/uncubate-coworking-sg-highway-ahmedabad",
+    "cofyndId": "67e13a79864c9c6e840ebf2d",
     "locality": "SG Highway",
     "id": 62
   },
@@ -5202,6 +5264,7 @@ export const pageTwoFeaturedAhmedabadOfficeCards = [
     "latitude": 23.0473271,
     "longitude": 72.5439911,
     "sourceUrl": "https://cofynd.com/coworking/kendra-coworking-memnagar-ahmedabad",
+    "cofyndId": "68245af11f0ddb0a76d9e4a2",
     "locality": "Navrangpura",
     "id": 63
   },
@@ -5282,6 +5345,7 @@ export const pageTwoFeaturedAhmedabadOfficeCards = [
     "latitude": 23.0460819,
     "longitude": 72.5592222,
     "sourceUrl": "https://cofynd.com/coworking/sweet-spot-spaces-navrangpura-ahmedabad",
+    "cofyndId": "6826d89dae725308632d8c08",
     "locality": "Navrangpura",
     "id": 64
   }
@@ -5364,6 +5428,7 @@ export const pageThreeAhmedabadOfficeCards = [
     "latitude": 23.049347,
     "longitude": 72.4874556,
     "sourceUrl": "https://cofynd.com/coworking/opulence-navratna-corporate-park",
+    "cofyndId": "682dcb0e2de5ca1155b4e38f",
     "locality": "SG Highway",
     "id": 65
   },
@@ -5425,6 +5490,7 @@ export const pageThreeAhmedabadOfficeCards = [
     "latitude": 23.0397094,
     "longitude": 72.5296868,
     "sourceUrl": "https://cofynd.com/coworking/station27-coworking-hub-vastrapur-ahmedabad",
+    "cofyndId": "68301d282de5ca1155500483",
     "locality": "Vastrapur",
     "id": 66
   },
@@ -5509,6 +5575,7 @@ export const pageThreeAhmedabadOfficeCards = [
     "latitude": 23.0974407,
     "longitude": 72.528883,
     "sourceUrl": "https://cofynd.com/coworking/solitaire-connect-sg-highway-ahmedabad",
+    "cofyndId": "6a102f0e36b501c3d9dadce0",
     "locality": "SG Highway",
     "id": 67
   },
@@ -5585,6 +5652,7 @@ export const pageThreeAhmedabadOfficeCards = [
     "latitude": 23.1124947,
     "longitude": 72.5818106,
     "sourceUrl": "https://cofynd.com/coworking/prodesk-chandkheda-ahmedabad",
+    "cofyndId": "6a15c022186b2f52d52a157d",
     "locality": "Chandkheda",
     "id": 68
   }
@@ -5625,13 +5693,13 @@ const cardsByIds = (ids) => ids.map((id) => ahmedabadCardPool.find((card) => car
 // ============================================================================
 export const areaExtraOfficeCards = {
   "SG Highway": cardsByIds([]),
-  "Navrangpura": cardsByIds([]),
-  "Vastrapur": cardsByIds([]),
-  "Prahlad Nagar": cardsByIds([]),
-  "Satellite": cardsByIds([]),
-  "Ellisbridge": cardsByIds([]),
-  "Makarba": cardsByIds([]),
-  "Bopal": cardsByIds([])
+  "Navrangpura": cardsByIds([10,20]),
+  "Vastrapur": cardsByIds([38,9,45,27,44,4]),
+  "Prahlad Nagar": cardsByIds([12,17,62,31,8,40,16,6,27,45,14,60,48,41]),
+  "Satellite": cardsByIds([6,16,48,41,49,15,26,31,55,33,29,22,52]),
+  "Ellisbridge": cardsByIds([51,61,53,19,34,64,54,37,38,44,4,59,35,63,42]),
+  "Makarba": cardsByIds([62,17,31,8,40,16,7,27,45,6,14,60,48,41]),
+  "Bopal": cardsByIds([60,65,23,33,41,31,6,55,48,16,15,26,17,49])
 };
 
 // ============================================================================
